@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<!-- By George Webster  -->
+<head>
+    <title>George Webster</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color:#42e8f4">
+    <main> 
+        <div id="title">
+            <h1>George Webster's - CV</h1>
+        </div>
+        
+        <br>
+        <p style="text-align:center">Send me an <a href="mailto:george.webster@nology.io?subject=Job offer">email</a> or complete the form below:</p>
+        <br>
+        <br>
+        <div id="form">
+            <form 
+            action="mailto:george.webster@nology.io?subject=Online form"
+            method="POST"
+            enctype="multipart/form-data"
+            name="EmailTestForm">
+                Your name:<br>
+                <input type="text" name="Name"><br>
+                Job offer description:<br>
+                <input type="text" name="jobDescription"><br>
+                Salary:<br>
+                <input list="salary" name="salary">
+                <datalist id="salary">
+                        <option value="£100,000">
+                        <option value="£150,000">
+                        <option value="£200,000">
+                        <option value="£250,000">
+                </datalist>
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </main>
+</body>
+</html>
