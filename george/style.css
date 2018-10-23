@@ -1,0 +1,27 @@
+#title{
+    color:white;
+    text-align: center;
+    background-color: black;
+}
+
+input, select{
+    width: 100%;
+    margin: auto;
+    padding: 12px 20px;
+    background-color:#f0eff2;
+
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+}
+
+#form{
+    margin: auto;
+    width: 50%;
+}
