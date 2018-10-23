@@ -1,0 +1,10 @@
+{
+  "ignore": [
+    "ids",
+    "box-sizing
+  ],
+  "warnings": [
+  ],
+  "errors": [
+  ]
+}
