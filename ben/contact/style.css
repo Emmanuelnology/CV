@@ -44,6 +44,8 @@ body{
 #message{ 
     font-size: 20px;
     border-radius: 20px;
+    padding: 7px 17px;
+    margin: 10px;
     width: 230px;
 }
 
@@ -61,5 +63,6 @@ h2{
 
 .fab{
     color: slateblue;
+    margin: 5px;
     font-size: 50px;
 }
