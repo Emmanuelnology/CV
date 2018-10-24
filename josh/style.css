@@ -3,13 +3,14 @@ body{
  font-family: 'Montserrat', sans-serif;
  color:white;
 }
-ul {
+ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  border: 1px solid #e7e7e7;
-  background-color: #f3f3f3;
+  background-color: #ffffff;
+   position: sticky;
+  top: 0;
 }
 
 li {
@@ -34,7 +35,9 @@ li a.active {
 }
 
 
-
+.firstname{
+  text-transform: capitalize;
+}
 textarea{
   width:500px;
   height:300px;
@@ -42,7 +45,7 @@ textarea{
   margin-bottom:15px;
 }
 .socials i{
-  font-size:150px;
+  font-size:100px;
   text-align:center;
   }
 .socials-link{
@@ -51,19 +54,24 @@ textarea{
 }
 .fa-facebook{
     color:#3B5998;
-    padding:60px;
+    padding:50px;
 }
 .fa-twitter{
   color:#00aced;
-  padding:60px;
+  padding:50px;
+}
+
+.fa-envelope{
+    color:#ffffff;
+    padding:50px;
 }
 .fa-spotify{
   color: #1ed760;
-  padding:60px;
+  padding:50px;
 }
 .fa-instagram{
   color:#7232bd;
-  padding:60px;
+  padding:50px;
 }
 .footer{
   text-align:center;
