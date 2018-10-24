@@ -1,0 +1,48 @@
+
+.headaf {font-family: 'Bitter', serif;
+        color:white;
+        font-size:5em;
+        background-color:#3B7080;
+        text-align:center;
+        border-radius:20px;
+        padding:20px;
+        margin:20px 50px 20px 50px;
+        }
+h2 { background-color: #3B7080;
+    padding: 10px;
+    border-radius:20px;
+    color: white;}
+
+body {font-family: 'Oxygen', sans-serif;
+    color:#3B7080;
+    background-color:#FCEC52}
+
+.button {
+  cursor: pointer;
+  background-color: #3B7080;
+  color: white;
+  font-size: 30px;
+  border-radius: 20px;
+  text-align:left;
+  text-decoration:none;
+  padding: 2px 20px 2px 20px;
+  margin-bottom: 10px;
+  margin-left:20px;
+  width:250px;
+  
+  
+  
+}
+
+.button:hover {
+  background-color: #ff4457;
+  color: white;
+  font-size: 30px;
+  border-radius: 20px;
+  text-align:left;
+  text-decoration:none;
+  padding: 2px 20px 2px 20px;
+  
+  width:250px;
+  
+}

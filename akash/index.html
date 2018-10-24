@@ -1,91 +1,57 @@
 <!DOCTYPE html>
 <html>
-<!-- By Craig Livings  -->
-<head>
-        <link href="https://fonts.googleapis.com/css?family=Barlow|Concert+One|Roboto" rel="stylesheet">
-    <title>Akash Mair</title>
-<style>
-  
-    ul.square {
-    list-style-type: square;
-    }
-    ul.none {
-    list-style-type: none;
-    }
-    body {
-        background-color:rgb(250, 250, 250)55, 255, 240);
-        font-family: 'Barlow';
-    }
-    .button {
-    width: 25%;
-    height: 25px;
-    background: rgb(97, 158, 173);
-    padding: 5px;
-    text-align: center;
-    color: white;
-    font-weight: bold;
-    float: left;
-    border-radius: 5px;
-    
-    }
-    .button:hover{
-        color: black;
-        transform:scale(1.1);
 
-    }
-    .underline{
-        text-decoration:none;
-    }
-   
-</style>
+<head>
+        <link href="styles.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Barlow|Concert+One|Roboto" rel="stylesheet">
+    <title>Akash Mair CV</title>
+
 </head>
 <body>
+   <header style="font-size:50px">Akash Mair</header>
    
-    <main> 
-        <h1>Akash Mair - CV</h1>
         <nav>
                 <a class = "underline" href="/"><button class="button">Home</button></a>
-                <a class = "underline" href="#"><button class="button">Education</button></a>
-                <a class = "underline" href="#"><button class="button">Work Experiece</button></a>
+                <a class = "underline" href="#education-section"><button class="button">Education</button></a>
+                <a class = "underline" href="#work-section"><button class="button">Work Experiece</button></a>
                 <a class = "underline" href="#"><button class="button">Contact me</button></a>
 
         </nav>
-        
-       <div>        
+    <main>  
+       <div id=education-section>        
         <h2><u>Education</u></h2>
         
-       
-
             <h3>London School of Economics (2014-2017):</h3>
             <ul class = "square">
-                <li><b>Bsc Mathematics and Economics:</b></li>
+                <li><strong>Bsc Mathematics and Economics</strong></li>
             </ul>
 
             <h3>Cranford Communiy College (2007-2014):</h3>
                 <ul class = "square">
-                    <li><b>A-level:</b> A* A  (Mathematics, Economics, Chemistry</li>
-                    <li><b>GCSE:</b> 6 A*'s 5 A's (including Mathematics and English</li>
+                    <li><strong>A-level:</strong> A* A  (Mathematics, Economics, Chemistry</li>
+                    <li><strong>GCSE:</strong> 6 A*'s 5 A's (including Mathematics and English</li>
                 </ul>
         </div>
             <hr>
-        
+        <div id=work-section> 
         <h2><u>Work Experiece</u></h2>
      
-        <div>
+        
             <h4>Software Developer (Sept 2018-):</h4>
                 <ul class = "square">
                     <li>Currently working as a developer for Nationwides Re-mortgagining journey</li>
+                    <li>You can do anything your heart can imagine. No worries. No cares. Just float and wait for the wind to blow you around</li>
 
                 </ul>
             <h4>Contractor for Deloitte (Sept 2017- Sept 2018):</h4>
                 <ul class = "none">
-                    <li><b>PMO Administrator (June 2018 - Sept 2018):</b></li>
+                    <li><strong>PMO Administrator (June 2018 - Sept 2018):</strong></li>
                         <ul class = "square">
                             <li>Dealing with a number of stakeholders from Quality, Change and MI teams to ensure weekly targets are met and keep the project on track</li>
-                            <li></li>
+                            <li>I started painting as a hobby when I was little. I didn't know I had any talent. I believe talent is just a pursued interest. Anybody can do what I do. Now we don't want him to get lonely, so we'll give him a little friend. We'll do another happy little painting. See. We take the corner of the brush and let it play back-and-forth.</li>
 
                          </ul>
-                    <li><b>Graduate Administrator (Sept 2017 - June 2018):</b></li>
+                    <li><strong>Graduate Administrator (Sept 2017 - June 2018):</strong></li>
                          <ul class = "square">
                              <li>Responsible for ensuring that deadlines for audits are met by retrieving all relevant information from banks and building relationships with those banks to help improve the flow of information between our teams.</li>
                              <li> Moved teams to help with the submission of audit requests, this involved looking at numerous spreadsheets and making sure all the relevant information had been added/removed. Also correcting any issues previously faced last year so this year audit runs smoother. Later made the head of the team and checking the team’s progress.</li>
@@ -100,10 +66,11 @@
 
         </div>
             <hr>
-            
-
-
-            
     </main>
+    <footer>
+        <blockquote>Talent is a pursued interest. Anything that you're willing to practice, you can do. 
+            </blockquote>
+            <cite>Bob Ross</cite>
+        </footer>
 </body>
 </html>

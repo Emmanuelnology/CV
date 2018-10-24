@@ -1,0 +1,55 @@
+/* CSS Styles for Clare Marsh's Interactive CV */
+/* -----------------
+   Import statements 
+   ----------------- */
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,900');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+header {
+    width: 100%;
+    background-color: #000;
+}
+
+h1 {
+    font-weight: 900;
+    color: #fff;
+}
+
+h2, h3, h4 {
+    font-weight: 400;
+}
+
+p {
+    font-weight: 100;
+}
+
+li {
+    font-weight: 100;
+    list-style: circle;
+}
+
+/* Grid Container */
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 50%);
+}
+
+/* Grid Item */
+.item {
+    padding: 2%;
+}
+
+footer {
+    padding: 2em;
+}
