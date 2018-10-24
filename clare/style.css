@@ -38,19 +38,18 @@ li {
     list-style: circle;
 }
 
-/* Flex Container */
+/* Grid Container */
 .container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 1em;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: flex-center;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 50%);
 }
 
-/* Flex Item */
+/* Grid Item */
 .item {
-    flex: 1 0 25%;
-    padding: 0.5em;
+    padding: 2%;
+}
+
+footer {
+    padding: 2em;
 }
