@@ -41,12 +41,28 @@ body{
     background-color: darkslateblue;
 }
 
+#message{ 
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 7px 17px;
+    margin: 10px;
+    width: 230px;
+}
+
 h1{
     font-size: 100px;
 }
 
-.fab
-{
+h2{
+    font-size: 36px;
+}
+
+.capital{
+    text-transform: capitalize;
+}
+
+.fab{
     color: slateblue;
+    margin: 5px;
     font-size: 50px;
 }
