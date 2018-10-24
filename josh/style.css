@@ -9,7 +9,11 @@ body{
   padding: 0;
   overflow: hidden;
   background-color: #ffffff;
-   position: sticky;
+}
+
+nav {
+  position: -webkit-sticky;
+  position: sticky;
   top: 0;
 }
 
