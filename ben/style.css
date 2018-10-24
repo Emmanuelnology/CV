@@ -1,0 +1,83 @@
+body{
+    background-color: skyblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    text-align: center;
+}
+
+.button{
+    background-color: darkslateblue;
+    color: skyblue;
+    border: none;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    width: 130px;
+    border-radius: 15px;
+    padding: 10px 25px;
+    margin: 10px;
+}
+
+.button:hover {
+    opacity: 0.8;
+    color: white;
+}
+
+.wide{
+    width: 90%;
+}
+
+#myname{
+    font-size: 36px;
+    border-radius: 30px;
+    width: 100%;
+}
+
+/*#contact{
+    position: fixed;
+    left: 220px;
+    top: 105px;
+}
+
+#aboutme{
+    position: fixed;
+    left: 440px;
+    top: 105px;
+}
+
+#skills{
+    position: fixed;
+    left: 660px;
+    top: 105px;
+}
+
+#qualifications{
+    position: fixed;
+    left: 880px;
+    top: 105px;
+}
+
+#hobbies{
+    position: fixed;
+    left: 220px;
+    top: 170px;
+}
+
+#experience{
+    position: fixed;
+    left: 440px;
+    top: 170px;
+}
+
+#references{
+    position: fixed;
+    left: 660px;
+    top: 170px;
+}
+
+#home{
+    position: fixed;
+    left: 880px;
+    top: 170px;
+}*/
