@@ -1,5 +1,5 @@
 
-.headaf {font-family:Arial;
+.headaf {font-family: 'Bitter', serif;
         color:white;
         font-size:5em;
         background-color:#3B7080;
@@ -8,11 +8,12 @@
         padding:20px;
         margin:20px 50px 20px 50px;
         }
-h2 { background-color: #ADE25D;
+h2 { background-color: #3B7080;
     padding: 10px;
-    border-radius:20px;}
+    border-radius:20px;
+    color: white;}
 
-body {font-family:Arial;
+body {font-family: 'Oxygen', sans-serif;
     color:#3B7080;
     background-color:#FCEC52}
 
