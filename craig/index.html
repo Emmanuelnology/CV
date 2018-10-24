@@ -2,12 +2,23 @@
 <html>
 <!-- By Craig Livings  -->
 <head>
+    <script src="https://smtpjs.com/v2/smtp.js"></script>
     <title>Craig Livings</title>
 </head>
 <body>
     <main> 
-        <h1>Craig Livings - CV</h1>
-        <a href="/">Home</a>
+        <h1>Craig Livings</h1>
+        <button>Send</button>
+        <a href="/">Home</button>
     </main>
+    <script>
+    var result = Email.send("craiglivings@localhost",
+    "craig@nology.io",
+    "This is a subject",
+    "this is the body",
+    {token: "524d2092-a766-4d03-ab2e-7303a38d30aa"});
+    console.log(result);
+    console.log(Email);
+    </script>
 </body>
 </html>

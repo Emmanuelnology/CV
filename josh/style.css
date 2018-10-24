@@ -1,6 +1,78 @@
+body{
+ background:#645754 url(footer_lodyas.png) top left repeat;
+ font-family: 'Montserrat', sans-serif;
+ color:white;
+}
+ ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffffff;
+   position: sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #666;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+li a.active {
+  color: white;
+  background-color: #4CAF50;
+}
+
+
+.firstname{
+  text-transform: capitalize;
+}
+textarea{
+  width:500px;
+  height:300px;
+  padding:5px;
+  margin-bottom:15px;
+}
 .socials i{
-  font-size:150px;
+  font-size:100px;
+  text-align:center;
   }
+.socials-link{
+  margin:auto;
+  width:85%;
+}
 .fa-facebook{
-    color:blue;
+    color:#3B5998;
+    padding:50px;
+}
+.fa-twitter{
+  color:#00aced;
+  padding:50px;
+}
+
+.fa-envelope{
+    color:#ffffff;
+    padding:50px;
+}
+.fa-spotify{
+  color: #1ed760;
+  padding:50px;
+}
+.fa-instagram{
+  color:#7232bd;
+  padding:50px;
+}
+.footer{
+  text-align:center;
 }

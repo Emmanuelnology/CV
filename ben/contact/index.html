@@ -1,32 +1,68 @@
 <!DOCTYPE html>
 <html>
 <!-- By Ben Tomaney  -->
+
 <head>
-    <title>Ben Tomaney</title>
+    <title>Ben Tomaney - Contact Me</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <main> 
-        <h1>Contact Me</h1>
-        <h3>Message Me Directly</h3>
-        <form>
-            Full name:<br>
-            <input type="text" name="fullname"><br>
-            Email address:<br>
-            <input type="text" name="email"><br>
-            Subject:<br>
-            <input type="text" name="subject"><br>
-            Message:<br>
-            <input type="text" name="message"><br>
-        </form>
-        <h3>My Information</h3>
-        <ul>
-            <li>Ben Tomaney</li>
-            <li>ben.tomaney@hotmail.com</li>
-            <li>Ben.Tomaney@nology.io</li>
-            <li>07904001054</li>
-        </ul>
-        <p><button><a href="/ben/" > Ben Tomaney</a></button></p>
-        <p><button><a href="/" > Home</a></button></p>
+    <header>
+        <div class="wide"><a class="button" id="myname" href="/ben/"> Ben Tomaney's CV</a></div>
+    </header>
+    <nav>
+        <div class="wide">
+            <a class="button" id="contact" href="/ben/contact/"> Contact Me</a>
+            <a class="button" id="aboutme" href="/ben/about_me/"> About Me</a>
+            <a class="button" id="skills" href="/ben/key_skills/"> Key Skills</a>
+            <a class="button" id="experience" href="/ben/work_volunteering_experience/"> Work & Volunteering Experience</a>
+            <a class="button" id="qualifications" href="/ben/qualifications/"> Qualifications</a>
+            <a class="button" id="hobbies" href="/ben/hobbies/"> Hobbies</a>
+            <a class="button" id="references" href="/ben/references/"> References</a>
+            <a class="button" id="home" href="/"> Home</a>
+        </div>
+    </nav>
+    <main>
+        <h1 class="capital">Contact me</h1>
+        <section id="my_info">
+            <h2 class="capital">My information</h2>
+            <p>Ben Tomaney</p>
+            <p>ben.tomaney@hotmail.com</p>
+            <p>Ben.Tomaney@nology.io</p>
+            <p>07904001054</p>
+            <p>
+                <address>
+                    Ground Floor Flat
+                    16 Thornbank Place
+                    Bath
+                    BA2 3HH
+                </address>
+            </p>
+        </section>
+        <section id="social_media">
+            <h2 class="capital">Social media</h2>
+            <article>
+                <a href="https://uk.linkedin.com/in/ben-tomaney-974464159"><i class="fab fa-linkedin"></i></a>
+            </article>
+            <article>
+                <a href="https://www.facebook.com/ben3296"><i class="fab fa-facebook-square"></i></a>
+            </article>
+        </section>
+        <section id="message_me">
+            <form action="mailto:ben.tomaney@hotmail.com" method="post" enctype="text/plain">
+                <input class="button capital" id="message" type="submit" value="Message me directly">
+            </form>
+        </section>
     </main>
+    <aside>
+        Here is some aside information
+    </aside>
+    <footer>
+        Here is the footer
+    </footer>
 </body>
+
 </html>
