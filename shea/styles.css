@@ -46,11 +46,14 @@ body{
  
  button:hover{
      color: blue;
+     cursor: pointer;
  }
- .homelnk{
-     width: ;
-     background-color: red;
-     text-align: center;
-     margin: 0 0 0 15%;
-     border: solid;
- }
+
+ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+#navbttns li{
+    display: inline;
+}
