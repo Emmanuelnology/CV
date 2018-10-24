@@ -40,17 +40,13 @@ li {
 
 /* Flex Container */
 .container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 1em;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: flex-center;
-    justify-content: space-around;
+    display: grid;
+    grid-column-gap: 1em;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
 }
 
 /* Flex Item */
 .item {
-    flex: 1 0 25%;
     padding: 0.5em;
 }

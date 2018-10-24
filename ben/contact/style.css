@@ -1,8 +1,8 @@
 body{
     background-color: #eaeaff;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 22px;
     text-align: center;
+    color: darkslateblue;
 }
 
 .button{
@@ -30,7 +30,6 @@ body{
 }
 
 #myname{
-    background-color: darkslateblue; 
     font-size: 36px;
     border-radius: 30px;
     padding: 10px 25px;
@@ -38,50 +37,16 @@ body{
     width: 90%;
 }
 
-/*#contact{
-    position: fixed;
-    left: 220px;
-    top: 105px;
+#contact{
+    background-color: darkslateblue;
 }
 
-#aboutme{
-    position: fixed;
-    left: 440px;
-    top: 105px;
+h1{
+    font-size: 100px;
 }
 
-#skills{
-    position: fixed;
-    left: 660px;
-    top: 105px;
+.fab
+{
+    color: slateblue;
+    font-size: 50px;
 }
-
-#qualifications{
-    position: fixed;
-    left: 880px;
-    top: 105px;
-}
-
-#hobbies{
-    position: fixed;
-    left: 220px;
-    top: 170px;
-}
-
-#experience{
-    position: fixed;
-    left: 440px;
-    top: 170px;
-}
-
-#references{
-    position: fixed;
-    left: 660px;
-    top: 170px;
-}
-
-#home{
-    position: fixed;
-    left: 880px;
-    top: 170px;
-}*/
