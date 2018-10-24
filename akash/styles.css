@@ -1,0 +1,37 @@
+  
+    ul.square {
+        list-style-type: square;
+        }
+        ul.none {
+        list-style-type: none;
+        }
+        .button {
+        width: 25%;
+        height: 25px;
+        background: rgb(207, 44, 47);
+        padding: 5px;
+        text-align: center;
+        color: black;
+        font-weight: bold;
+        float: left;
+        border-radius: 5px;
+        
+        }
+        .button:hover{
+            color: white;
+            transform:scale(1.1);
+    
+        }
+        .underline{
+            text-decoration:none;
+        }
+    body { background-image: url('https://newevolutiondesigns.com/images/freebies/white-wallpaper-8.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: rgb(4, 29, 66);
+        font-family:'Barlow';
+
+    }
+    h2{
+        text-align: center;
+    }
