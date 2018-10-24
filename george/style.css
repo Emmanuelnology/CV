@@ -2,6 +2,7 @@
     color:white;
     text-align: center;
     background-color: black;
+    margin-bottom:0px;
 }
 h2{
     text-align: center;
@@ -31,7 +32,7 @@ input[type=submit] {
 }
 
 #footer {
-    position: fixed;
+    
     bottom: 0;
     width: 100%;
     background-color: black;
@@ -54,4 +55,44 @@ input[type=submit] {
     #footer i{
         font-size:7vw;
     }
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+@media only screen and (min-device-width: 601px) {
+    .bgimg-1 {
+        background-image: url("David Cameron.jpg");
+    }
+}
+/* 
+WORK OUT WHY U NO WORK
+@media only screen and (min-device-width: 600px) {
+    .bgimg-1 {
+        background-image: url("10DS.jpg");
+    }
+}
+*/
+  
+.caption {
+  position: absolute;
+  left: 0;
+  top: 70%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 15px;
+    letter-spacing: 10px;
 }

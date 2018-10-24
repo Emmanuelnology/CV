@@ -1,22 +1,23 @@
 body{
-    background-color: skyblue;
+    background-color: #eaeaff;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 22px;
     text-align: center;
 }
 
 .button{
-    background-color: darkslateblue;
-    color: skyblue;
+    background-color: slateblue;
+    color: #eaeaff;
     border: none;
     display: inline-block;
+    font-size: 16px;
     text-align: center;
     text-decoration: none;
     cursor: pointer;
-    width: 130px;
+    width: 100px;
     border-radius: 15px;
-    padding: 10px 25px;
-    margin: 10px;
+    padding: 5px 15px;
+    margin: 5px;
 }
 
 .button:hover {
@@ -25,38 +26,50 @@ body{
 }
 
 .wide{
-    width: 90%;
-}
-
-#myname{
-    font-size: 36px;
-    border-radius: 30px;
     width: 100%;
 }
 
+#myname{
+    background-color: darkslateblue; 
+    font-size: 36px;
+    border-radius: 30px;
+    padding: 10px 25px;
+    margin: 10px 0px;
+    width: 90%;
+}
+
 /*#contact{
-    position: fixed;
-    left: 220px;
-    top: 105px;
+    border-radius: 0px;
+    margin: 0px;
+    width: 25%;
+    height: 100px;
+    font-size: 36px;
 }
 
 #aboutme{
-    position: fixed;
-    left: 440px;
-    top: 105px;
+    border-radius: 0px;
+    margin: 0px;
+    width: 25%;
+    height: 100px;
+    font-size: 36px
 }
 
 #skills{
-    position: fixed;
-    left: 660px;
-    top: 105px;
+    border-radius: 0px;
+    margin: 0px;
+    width: 25%;
+    height: 100px;
+    font-size: 36px;
 }
 
 #qualifications{
-    position: fixed;
-    left: 880px;
-    top: 105px;
+    border-radius: 0px;
+    margin: 0px;
+    width: 25%;
+    height: 100px;
+    font-size: 36px;
 }
+
 
 #hobbies{
     position: fixed;
