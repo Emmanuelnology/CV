@@ -3,6 +3,10 @@
     text-align: center;
     background-color: black;
 }
+h2{
+    text-align: center;
+    padding-bottom: 10px;
+}
 
 input, select{
     width: 100%;
@@ -24,4 +28,30 @@ input[type=submit] {
 #form{
     margin: auto;
     width: 50%;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+ }
+
+ #footer a{
+     color:white;
+     padding:0 20px;
+ }
+ #footer a:hover{
+    color:yellow;
+}
+#footer i{
+    font-size:15vw;
+}
+
+@media only screen and (min-width: 800px) {
+    #footer i{
+        font-size:7vw;
+    }
 }
