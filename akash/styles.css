@@ -5,10 +5,6 @@
         ul.none {
         list-style-type: none;
         }
-        body {
-            color: rgb(4, 29, 66))
-            font-family: 'Barlow';
-        }
         .button {
         width: 25%;
         height: 25px;
@@ -30,9 +26,10 @@
             text-decoration:none;
         }
     body { background-image: url('https://newevolutiondesigns.com/images/freebies/white-wallpaper-8.jpg');
-        float: right;
         background-repeat: no-repeat;
         background-size: cover;
+        color: rgb(4, 29, 66);
+        font-family:'Barlow';
 
     }
     h2{
