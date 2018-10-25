@@ -84,14 +84,17 @@ ul{
 .one-of-two-cols{
     width:48%;
     float:left;
-    height:150px;
     text-align: right;
 }
 .two-of-two-cols{
     width:48%;
     float:right;
-    height:150px;
 }
+
+.clearfix {
+    clear:both;
+}
+
 h2{
     text-align: center;
 }
