@@ -46,8 +46,12 @@ li {
 }
 
 /* Grid Item */
-.item {
+.container > section {
     padding: 2%;
+}
+
+.full-width {
+    grid-column: 1/2;
 }
 
 footer {
