@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+}
+
+.bold {
+    font-weight:800;
+    text-transform:uppercase;
+    
+    
+}
+
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+    
+    
+    }     
+
+  
+h1 {
+    text-align: center;
+    margin:0;
+    padding:30px;
+    font-size:80px;
+    text-transform: capitalize;
+    background-color: #7a97ff;
+    font-family: 'Crimson Text', serif;
+    font-weight: 800;
+}
+
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    margin:0;
+    background-color:pink;
+
+    
+    }
+
+
+
+nav {
+    background-color:#7a97ff;
+    text-transform: lowercase;
+    padding:0;
+    height:40px;
+
+ 
+    
+    }
+
+
+
+nav .brand {
+    margin-right:1em;
+    
+}    
+
+nav ul {
+    height: 40px;
+    margin:0;
+    list-style-type:none;
+    text-transform: uppercase;
+    font-size: smaller;
+    float: right;
+
+    
+    
+    }
+
+nav li {
+
+    display: inline-block;
+    margin: 0 2em;
+    background-color:lightgreen;
+    height:40px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding-top: 10px;
+    border-top:2px solid black;
+    border-left:2px solid black;
+    border-right:2px solid black;
+     
+    
+
+    }
+
+nav > * {
+    display: inline;
+}  
+
+nav li:hover {
+    color:white;
+
+}  
+nav a {
+    padding:0 0.5em;
+} 
+
+
+
+
+
+main{
+    
+    margin:0;
+    padding:40px;
+    border-top:2px solid black;
+    font-family: 'Crimson Text', serif;
+}
+
+main div.leftpara {
+    display:inline-block;
+    width: 50%;
+    float: left;
+}
+
+main div.rightpara {
+    display:inline-block;
+    width: 50%;
+    float: right;
+}
+
+.aboutmelabel {
+    background-color:pink;
+
+}
+
+.worklabel {
+    background-color: lightgreen;
+}
+
+.contactlabel {
+    background-color:yellow;
+}
