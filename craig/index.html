@@ -9,16 +9,18 @@
     <main> 
         <h1>Craig Livings</h1>
         <button>Send</button>
-        <a href="/">Home</button>
+        <a href="/">Home</a>
     </main>
     <script>
-    var result = Email.send("craiglivings@localhost",
-    "craig@nology.io",
-    "This is a subject",
-    "this is the body",
-    {token: "524d2092-a766-4d03-ab2e-7303a38d30aa"});
-    console.log(result);
-    console.log(Email);
+        var result = Email.send(
+            "craiglivings@localhost",
+            "craig@nology.io",
+            "This is a subject",
+            "this is the body",
+            {token: "524d2092-a766-4d03-ab2e-7303a38d30aa"}
+        );
+        console.log(result);
+        console.log(Email);
     </script>
 </body>
 </html>

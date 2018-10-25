@@ -1,8 +1,23 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    text-align: center;
+}
+
+
 body{
     background-color: #eaeaff;
     font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
     color: darkslateblue;
+    /*background-image: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 95vh;
+    min-width: 95vw;*/
 }
 
 .button{
@@ -11,10 +26,8 @@ body{
     border: none;
     display: inline-block;
     font-size: 16px;
-    text-align: center;
-    text-decoration: none;
     cursor: pointer;
-    width: 100px;
+    width: 120px;
     border-radius: 15px;
     padding: 5px 15px;
     margin: 5px;
@@ -25,16 +38,22 @@ body{
     color: white;
 }
 
-.wide{
-    width: 100%;
-}
-
-#myname{
+header>a{
+    background-color: slateblue;
+    color: #eaeaff;
+    border: none;
+    display: inline-block;
     font-size: 36px;
+    cursor: pointer;
     border-radius: 30px;
     padding: 10px 25px;
     margin: 10px 0px;
     width: 90%;
+}
+
+header>a:hover {
+    opacity: 0.8;
+    color: white;
 }
 
 #contact{
@@ -44,7 +63,17 @@ body{
 #message{ 
     font-size: 20px;
     border-radius: 20px;
+    padding: 7px 17px;
+    margin: 10px;
     width: 230px;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    padding: 2px;
 }
 
 h1{
@@ -62,4 +91,13 @@ h2{
 .fab{
     color: slateblue;
     font-size: 50px;
+    margin: 0px 5px;
+}
+
+main>section{
+    margin: 5px;
+    }
+
+article{
+    display: inline;
 }
