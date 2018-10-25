@@ -117,6 +117,9 @@ input[type=submit] {
         margin: auto;
         width: 80%;
     }
+    .caption span.border, .scroll span.border {
+    
+    }
 }
 
 .caption {
@@ -128,8 +131,8 @@ input[type=submit] {
   color: #000;
 }
 
-.caption span.border {
-    background-color: #111;
+.caption span.border, .scroll span.border {
+    background-color: rgb(71, 71, 71);
     color: #fff;
     padding: 18px;
     font-size: 15px;
@@ -143,8 +146,4 @@ input[type=submit] {
     width: 100%;
     text-align: center;
     color:white;
-  }
-
-  .scroll p{
-      
   }
