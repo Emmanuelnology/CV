@@ -8,6 +8,7 @@
     }
     body>*{
         float:left;
+        
     }
     nav {
         background-color:red;
@@ -15,7 +16,8 @@
     }
     main {
         width:50%;
-        background-image: url(pink_rice.png);
+        background: pink url(pink_rice.png) top left repeat;
+        
     }
     h1{
         font-family: 'Lobster' , cursive;
@@ -31,26 +33,29 @@
      }
      ul{
         list-style-type: none;
+        float: left;
+
 
      }
         
     .info{
-        text-align: center;
         font-size: 20px;
-        margin: 2px;
+        margin-bottom; 3px;
         color: black;
-    }
-    .info .text {
-
     }
 
     .info i {
-        font-size:70px;
+        font-size:40px;
     }
 
     a:link{
         color:black;
         text-decoration-line: none;
+        margin-right: 30px;
+    }
+    i:link{
+        margin-right: 30px;
+
     }
 
     .fa-map-marker-altt{
