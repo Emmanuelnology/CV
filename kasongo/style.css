@@ -7,10 +7,12 @@ body{
 } 
 nav ul{
     list-style-type: none;
-    margin: 20px;
+    margin-left: 280px;
     padding: 0;
-    background-color: grey;
+    background-color:lightgrey;
     overflow: hidden;
+    width: 710px;
+    border-style: groove;
 }
 nav li {
     display: block;
@@ -30,4 +32,12 @@ nav li a:hover {
 }
 nav .active {
     background-color: #4CAF50;
+}
+input {
+    display: block;
+    background-color: lightgrey;
+}
+.copyright{
+    font-size: 0.8em;
+    font-style: oblique;
 }
