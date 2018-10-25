@@ -31,8 +31,10 @@ nav li a {
 nav li a:hover {
     background-color: lightblue;
 }
-nav .active {
-    background-color: #4CAF50;
+nav ul {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
 }
 #kasface{
     padding-right: 8em;
