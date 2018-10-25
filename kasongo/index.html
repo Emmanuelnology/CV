@@ -1,61 +1,78 @@
 <!DOCTYPE html>
 <html>
 <!-- By Shutsha Kasongo  -->
+
 <head>
     <title>Shutsha Kasongo Resume</title>
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<nav>
-    <section>
-        <ul>
-            <li><a href="contact/contactinfo.html">Contact information</a></li>
-            <li><a href="about/aboutme.html">About me</a></li>
-            <li><a href="skills/skill.html">Skills</a></li>
-            <li><a href="employment/employment.html">Employment history</a></li>
-            <li><a href="education/education.html">Education</a></li>
-            <li><a href="awards/award.html">Awards</a></li>
-            
-          </ul>
-    </section>
-    
-</nav>
-<img src="kasongophoto.jfif" alt="Italian Trulli" style="width:120px;height:130px;float:right">
+
 <body>
-    <main> 
-        <nav class="link">
-                <a href="contact information/contactinfo.html">Contact information</a>
-                <a href="about me/aboutme.html">About me</a>
-        </nav>
-        <h1 class= heading align=center style="font-style:oblique">Shutsha Kasongo Emmanuel Resume</h1>
-        <h2 style="color:blue">Contact Information</h2>
-        <ul>        
-            <li>Full name: Shutsha Kasongo Emmanuel</li>
-            <li>Email: emmanuel.shutsha@nology.io</li>
-            <li>Phone number: 0744/727/28/12</li>
-            <li>Permanent address: 3 Davison Street, BS7 2LU, Bristol, United Kingdom</li>  
-            <li>Candidate willing to relocate</li>
-        <a href="https://uk.linkedin.com/in/kasongo-emmanuel-shutsha-8b531a16a">LinkedIn</a>
-        </ul>
-        <img src="linkedinphoto.png" alt="Italian Trulli" style="width:70px;height:80px;">
-        <h2 style="color:blue">About me</h2>
-            <p>I am a graduate developer with a master’s degree in climate change sciences from the University of Bristol and a 2.1 undergraduate degree in geographical sciences from the Free University of Brussels. After living for 21 years in Belgium, I moved to England in 2017 to pursue my studies and career, I am currently based in Bristol. 
-            I have work experience in various fields such as weather forecasting, brand marketing and fundraising for communities. I have also volunteered for conserving the environment and I have taken part in projects at the university to promote sustainable activities. I am a competitive person keen on sport, more particularly athletics and karate. My career aim is to use my skills in climate sciences and programming to help in the development of technologies to tackle climate change.</p></li>
-        <h3 style="color:blue">Skills</h3>
-        <ul>
-            <li>Working knowledge of ArcGIS, flood dynamics model LIS-FLOOD-FP, Microsoft Word and Excel, programming language Python and R</li>
-            <li>Proficient in using Earth system and climate models GENIE-2 and HadCM3</li>
-            <li>Team leadership</li>
-            <li>Extremely organised</li>
-            <li>Self-motivated</li>
-            <li>Strong verbal communication</li>
-        </ul>
-        <div class="form"> 
-            <input type="text" class="name"/>
-            <input type="text" class="firstname"/>
-            <input type="text" class="comment"/>
+    <nav>
+        <section>
+            <ul>
+                <li><a href="#contactkas">Contact information</a></li>
+                <li><a href="#aboutkas">About me</a></li>
+                <li><a href="#skillkas">Skills</a></li>
+                <li><a href="#employmentkas">Employment history</a></li>
+                <li><a href="#educationkas">Education</a></li>
+                <li><a href="#awardkas">Awards</a></li>
+                        
+            </ul>
+        </section>
+    </nav>
+            
+    <img src="kasongophoto.jfif" alt="Italian Trulli" style="width:120px;height:130px;float:right">
+
+    <main>
+        <h1 class= "heading" style="font-style:oblique">Shutsha Kasongo Emmanuel Resume</h1>
+        <section id="contactkas">
+            <h2 style="color:darkblue">Contact Information</h2>
+                <ul>        
+                    <li>Full name: Shutsha Kasongo Emmanuel</li>
+                    <li>Email: emmanuel.shutsha@nology.io</li>
+                    <li>Phone number: 0744/727/28/12</li>
+                    <li>Permanent address: 3 Davison Street, BS7 2LU, Bristol, United Kingdom</li>  
+                    <li>Candidate willing to relocate</li>
+                </ul>
+        </section>        
+        
+    
+        <p class="social">
+            <a href="https://uk.linkedin.com/in/kasongo-emmanuel-shutsha-8b531a16a">
+                <img alt="Linkedin" src="linkedinphoto.png"  height="60">
+            </a>
+        </p>
+        <section id="aboutkas">
+            <h2 style="color:darkblue">About me</h2>
+                <p>I am a graduate developer with a master’s degree in climate change sciences from the University of Bristol and a 2.1 undergraduate degree in geographical sciences from the Free University of Brussels. After living for 21 years in Belgium, I moved to England in 2017 to pursue my studies and career, I am currently based in Bristol. I have work experience in various fields such as weather forecasting, brand marketing and fundraising for communities. I have also volunteered for conserving the environment and I have taken part in projects at the university to promote sustainable activities. I am a competitive person keen on sport, more particularly athletics and karate. My career aim is to use my skills in climate sciences and programming to help in the development of technologies to tackle climate change.</p></li>
+        </section>
+        <section id="skillkas">
+            <h3 style="color:darkblue">Skills</h3>
+            <ul>
+                <li>Working knowledge of ArcGIS, flood dynamics model LIS-FLOOD-FP, Microsoft Word and Excel, programming language Python and R</li>
+                <li>Proficient in using Earth system and climate models GENIE-2 and HadCM3</li>
+                <li>Team leadership</li>
+                <li>Extremely organised</li>
+                <li>Self-motivated</li>
+                <li>Strong verbal communication</li>
+            </ul>
+        </section>
+
+        <div class="form">
+            <p>Surname:</p>
+            <input type="nameinfo" class="name">
+            <p>First name:</p>
+            <input type="nameinfo" class="name">
+            <p>Comments:</p>
+            <input type="com" class="comment">
         </div>
-        <a href="/">Home</button>
+        <ul class="emailad">
+            <li>Please contact me if you have any questions or you are interested in discussing my resume</li>
+            <li><a href="mailto:emmanuel.shutsha@nology.io">Email me</a></li>
+        </ul>
+        <a href="/">Home</a>
     </main>
     <footer>
         <p class="copyright">Copyright © 2018 Shutsha Kasongo Emmanuel. All rights reserved.</p>

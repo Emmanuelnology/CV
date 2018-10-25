@@ -9,6 +9,7 @@ body{
  background:#645754 url(footer_lodyas.png) top left repeat;
  font-family: 'Montserrat', sans-serif;
  color:white;
+ 
 }
 nav{
   position: sticky;
@@ -16,14 +17,17 @@ nav{
 }
 nav ul {
   list-style-type: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   overflow: hidden;
   background-color: #ffffff;
+  display:inline-block;
+  
+  
 }
 
 nav li {
-  float: left;
+  float:left;
   
 }
 
@@ -86,7 +90,11 @@ textarea{
   padding:50px;
 }
 .fa-instagram{
-  color:#7232bd;
+  /*color:#7232bd;*/
+  background: -webkit-gradient(linear, left top, left bottom, from(#7232bd), to(#4c5fd7));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: initial;
   padding:50px;
 }
 .footer{
