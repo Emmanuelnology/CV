@@ -33,11 +33,6 @@ body{
     margin: 5px;
 }
 
-.button:hover {
-    opacity: 0.8;
-    color: white;
-}
-
 header>a{
     background-color: slateblue;
     color: #eaeaff;
@@ -51,21 +46,16 @@ header>a{
     width: 90%;
 }
 
-header>a:hover {
-    opacity: 0.8;
-    color: white;
-}
-
 #contact{
     background-color: darkslateblue;
 }
 
-#message{ 
-    font-size: 20px;
+#message-me{ 
+    font-size: 18px;
     border-radius: 20px;
     padding: 7px 17px;
     margin: 10px;
-    width: 230px;
+    width: 200px;
 }
 
 ul{
@@ -77,7 +67,7 @@ li{
 }
 
 h1{
-    font-size: 100px;
+    font-size: 72px;
 }
 
 h2{
@@ -100,4 +90,41 @@ main>section{
 
 article{
     display: inline;
+}
+
+.button:hover, header>a:hover, nav li:hover {
+    opacity: 0.8;
+    color: white;
+    cursor: pointer;
+}
+
+nav {
+    background-color: #eaeaff;
+}
+
+nav ul{
+    list-style: none;
+    display:flex;
+}
+
+nav li{
+    background-color: slateblue;
+    flex:1;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.3em;
+}
+
+nav a {
+    color: #eaeaff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#darker{
+    background-color: darkslateblue;
 }
