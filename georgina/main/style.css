@@ -11,23 +11,27 @@
         
     }
     nav {
-        background-color:red;
-        width:50%;
+        background-color:lightgrey;
+        width:35%;
+        height: 100%;
     }
     main {
-        width:50%;
+        width:65%;
     }
     h1{
         font-family: 'Lobster' , cursive;
         text-align: center;
         font-size: 50px;
-        margin: 10px;
+        padding: 0;
+        display: block;
+        
      } 
      h2{
          text-align: center;
          font-family: 'Lobster' , cursive;
          font-size: 30px;
-         margin:10px;
+         color: #d91a1a;
+         
      }
      ul{
         list-style-type: none;
@@ -51,13 +55,15 @@
         margin-right: 30px;
     }
 
-
-
     footer{
         font-size: small;
         text-align: center;
     }
 
+    .copyright{
+        height:2px
+    }
+    
     
     
     
