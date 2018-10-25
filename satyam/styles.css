@@ -30,15 +30,14 @@ nav ul{
     display: inline-block;
 }
 nav li {
-    display:inline;
     float: left;
 }
 nav li a{
     display: inline;
-    padding: 12px;
+    padding: 8px 12px;
     text-decoration: none;
-    color: rgb(165, 200, 223);
-    background-color: rgb(79, 87, 100);
+    color: #000;
+    background-color: #516f92;
 }
 nav a:hover{
     background-color: rgb(24, 68, 119);
