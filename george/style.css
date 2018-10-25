@@ -8,14 +8,15 @@ body{
 }
 
 nav{
-    background-color: rgb(250, 250, 78);
+    background-color:black;
+    
 }
 
 nav li{
     display: inline;
     padding: 10px;
-    color: gray;
     text-transform: uppercase;
+    
 }
 
 nav ul, nav li{
@@ -23,19 +24,14 @@ nav ul, nav li{
 }
 
 nav a:hover{
-    background-color:black;
-    color:white;    
+    color:black;
+    background-color:white;    
 }
 nav a{
     padding: 10px;
     text-decoration: none;
-    color: gray;
-}
-#checkers{
-    width:100%;
-    height:30px;
-    background-image: url('checkers.png');
-    background-repeat: repeat-x;
+    color: white;
+    overflow: hidden;
 }
 
 #title{
@@ -108,11 +104,16 @@ input[type=submit] {
 
 @media (min-width: 601px) {
     .bgimg-1 {
-        background-image: url("taxi.jpg");
+        background-image: url("David\ Cameron.jpg");
     }
     #form{
         margin: auto;
         width: 50%;
+    }
+    .caption span.border, .scroll span.border {
+        padding: 18px;
+        font-size: 15px;
+        letter-spacing: 10px;
     }
 }
 
@@ -123,6 +124,11 @@ input[type=submit] {
     #form{
         margin: auto;
         width: 80%;
+    }
+    .caption span.border, .scroll span.border {
+        padding: 10px;
+        font-size: 13px;
+        letter-spacing: 8px;
     }
 }
 
@@ -135,10 +141,18 @@ input[type=submit] {
   color: #000;
 }
 
-.caption span.border {
-    background-color: #111;
+.caption span.border, .scroll span.border {
+    background-color: rgb(71, 71, 71);
     color: #fff;
-    padding: 18px;
-    font-size: 15px;
-    letter-spacing: 10px;
 }
+
+
+
+.scroll {
+    position: absolute;
+    left: 0;
+    top: 80%;
+    width: 100%;
+    text-align: center;
+    color:white;
+  }
