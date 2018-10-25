@@ -25,20 +25,26 @@ body {
 }
 
 nav {
+    margin-top: 0px;
     background-color:#7a97ff;
     text-transform: lowercase;
-    padding:1em;
+    padding:0px;
+    height: 40px;
     
 }
 
-.theme-light 
+.home {
+    vertical-align: 
 
+    margin:0;
+    list-style-type:none;
+    text-transform: uppercase;
+    font-size: smaller;
+    float: left;
+    
+}
 
-nav .brand {
-    margin-right:2em;
-}    
-
-nav ul {padding:0;
+nav ul.navlinks {padding:0;
     margin:0;
     list-style-type:none;
     text-transform: uppercase;
@@ -46,10 +52,12 @@ nav ul {padding:0;
     float: right;
 }
 
+
+
 nav li {
     
     display: inline-block;
-    margin: 0 0.5em;
+    margin: 0 0;
 }
 
 nav>* {
@@ -61,8 +69,11 @@ nav li:hover {
     
 }  
 nav a {
-    padding:0.5em;
+    padding:0 0.5em;
+    padding-top:0;
 } 
+
+
 
 
 
