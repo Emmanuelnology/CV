@@ -40,9 +40,10 @@ body{
  .navbnnr{
     background-color: rgb(2, 124, 249);
     border-radius: 10px;
-    padding: 10 0 10 0px;
+    padding: 15 0 10 0px;
     margin: 10px;
-    height: 1.25em;
+    margin-bottom: 0px;
+    height: 1.5em;
 }
 
 #navbttns li{
@@ -51,13 +52,14 @@ body{
     text-align: center;
     text-decoration: none;
     padding-left: 1em;
+    padding-top: 0.2em;
     border-radius: 10px;
 }
 
 a{
     text-decoration: none;
     color: inherit;
-    height: 1.25em;
+    height: 1.5em;
     width: 100%;
 }
 
@@ -77,6 +79,15 @@ button:hover{
     border-radius: 10px;
 }
 
+ .aboutme{
+    font-size: 20px;
+    width: 25%;
+    height: 40%;
+    float: left;
+    margin: 10px;
+    margin-bottom: 25px;
+ }
+
  h2{
     color: #fff;
     background-color: rgb(2, 124, 249);
@@ -87,15 +98,6 @@ button:hover{
     font-size: 40px;
     margin-bottom: 15px;
     padding-left: 15px;
- }
-
- .aboutme{
-    font-size: 20px;
-    width: 25%;
-    height: 40%;
-    float: left;
-    margin: 10px;
-    margin-bottom: 40px;
  }
 
 #aboutme-content{
