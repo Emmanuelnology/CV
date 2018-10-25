@@ -2,6 +2,12 @@
     * {
         box-sizing: border-box;
     }
+
+    a, a:visited{
+        color:inherit;
+        text-decoration-line: none;
+    }
+
     body {
         margin: 0;
         font-family: 'Encode Sans', sans-serif;
@@ -23,6 +29,7 @@
         text-align: center;
         font-size: 50px;
         padding: 0;
+        margin:100px 0 0 0;
         
      } 
      h2{
@@ -30,10 +37,11 @@
          font-family: 'Lobster' , cursive;
          font-size: 30px;
          color: #d91a1a;
-         
+         margin:0;
      }
      ul{
         list-style-type: none;
+        padding-left: 180px;
      }
         
     .info{
@@ -42,17 +50,17 @@
         color: black;
     }
 
+    .info li {
+        margin: 20px 0;
+    }
+
     .info i {
         font-size:40px;
-        padding: 10px;
-
+        width: 50px;
+        text-align:center;
     }
 
-    a:link{
-        color:black;
-        text-decoration-line: none;
-        margin-right: 30px;
-    }
+  
 
     footer{
         font-size: small;
