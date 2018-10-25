@@ -60,9 +60,21 @@ body{
 #contact-me ul{
     list-style-type: none;
     padding: 0;
+    text-decoration: none;
 }
 #contact-me li{
-    margin:20px, 10px, 20px, 0;
+    margin:20px;
+    text-decoration: none;
+}
+#contact-me{
+    text-decoration: none;
+}
+.contact-links:hover{
+    opacity:0.5;
+    cursor: pointer;
+}
+#work-experience{
+    background-color: lightgray;
 }
 
 
