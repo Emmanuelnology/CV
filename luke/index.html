@@ -1,13 +1,13 @@
-<link rel="stylesheet" type="text/css" href="styling.css">
-<link rel="stylesheet" type="text/css" href="buttons.css">
-<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-<!-- ALL STYLESHEETS GO ABOVE HERE-->
-
 <!DOCTYPE HTML>
 <html>
 
 <head>
-  <title> Academic & Work</title>
+  <link rel="stylesheet" type="text/css" href="styling.css">
+  <link rel="stylesheet" type="text/css" href="buttons.css">
+  <link rel="stylesheet" type="text/css" href="box_model.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <!-- ALL STYLESHEETS GO ABOVE HERE-->
+  <title> C.V</title>
 </head>
 
 <div>
@@ -16,42 +16,55 @@
   </header>
 
   <nav id="container">
-    <a href="#">
+    <a href="#about">
       <button class="buttons">About me</button>
     </a>
-    <a href="#">
-      <button class="buttons">Experience</button>
+    <a href="#experience">
+      <button class="buttons">Work and Academic Experience</button>
     </a>
-    <a href="#">
+    <a href="#contact">
       <button class="buttons">Contact me</button>
     </a>
-    <a href="#">
+    <a href="#pwork">
       <button class="buttons">Previous work</button>
     </a>
   </nav>
   <main>
-    <h2> Work and Academic Experience</h2>
+    <!-- About me section -->
+    <div id="about">
+      <h2>About Me</h2>
+    </div>
     <hr>
+    <!-- Work and academic experience -->
+    <h2 id="experience"> Work and Academic Experience</h2>
 
     <body>
-      <section>
+      <section id="container-1">
         <p>
           <h3>Education</h3>
-          <div>GCSE & A-level: 2006-2013 St Albans R.C. High School, The Park, Pontypool, Torfaen</div>
-          <div>Degree: 2013- 2017 University of South Wales (formerly Glamorgan)</div>
+          <ul>
+            <li>GCSE & A-level: 2006-2013 St Albans R.C. High School, Pontypool</li>
+            <li>Degree: 2013- 2017 University of South Wales (formerly Glamorgan)</li>
+          </ul>
         </p>
-        <div>
-          <h3>Qualifications</h3>
-          <p>
-            <div>GCSE: (grades C-E) English, maths, science, RE, Media, welsh (short course), ICT (obtained summer
-              2011) </div>
-            <div>BTEC: Business (distinction*) Music (distinction) (obtained summer 2011) </div>
-            <div>A-level: business D music BTEC distinction (obtained summer 2013) </div>
-            <div> Degree: BA forensic accounting 2:2 (obtained summer 2017) </div>
-          </p>
-          <hr>
-
       </section>
+      <section id="container-2">
+        <p>
+          <h3>Qualifications</h3>
+          <ul>
+            <li id="a"> Obtained 2011</li>
+            <li>GCSE: (grades C-E) English, maths, science, RE, Media, welsh (short course), ICT  </li>
+            <li>BTEC: Business (distinction*) Music (distinction)</li>
+            <li id="a"> Obtained 2013</li>
+            <li>A-level: business D music BTEC distinction</li>
+            <li id="a"> Obtained 2017</li>
+            <li> Degree: BA forensic accounting 2:2</li>
+          </ul>
+        </p>
+      </section>
+      <hr>
+
+
 
       <h3>Work Experience</h3>
       <section>
@@ -107,7 +120,7 @@
 </section>
 <hr>
 <!-- contact information -->
-<h1>Contact me</h1>
+<h2 id="contact">Contact me</h2>
 
 </main>
 <footer> &copy;2018 Luke Delaney</footer>
