@@ -1,0 +1,12 @@
+#container-1{
+    box-sizing: border-box;
+    width: 50%;
+    height: 100%;
+    float:right;
+}
+#container-2{
+    box-sizing: border-box;
+    width: 50%;
+    height: 100%;
+    float:right;
+}

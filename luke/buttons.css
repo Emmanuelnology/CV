@@ -1,4 +1,4 @@
-.buttons {
+button {
   background-color: red;
   color: white;
   border: 0px;
@@ -8,21 +8,22 @@
   float: left;
 }
 
-.buttons.sticky{
+nav {
   position: sticky;
   top: 0;
 }
-.buttons:hover {
+
+button:hover {
   background-color: white;
   color: red;
+  cursor: pointer;
   border: 1px red solid;
 }
 
-.buttons:active {
+button:active {
   background-color: rgb(247, 242, 242);
 }
 
 #container {
   padding: 0px 0px 30px 0px;
-
 }

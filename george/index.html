@@ -1,68 +1,74 @@
 <!DOCTYPE html>
 <html>
-    <!-- By George Webster  -->
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>George Webster</title>
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     </head>
-    <body style="background-color:#42e8f4">
-        <main> 
-            <div class="bgimg-1">
+    <body>
+        <main>
+            <nav>
+                <ul>
+                    <li><i class="fa fa-taxi"></i></li>
+                    <li>George's Taxi Co</li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                </ul>
+                <p style="color: gray; text-align: center; font-size: 40px; padding-bottom: 10px">Our journey is your journey&trade;</p>
+                <div id="checkers"></div>
+            </nav>
+
+            <section class="bgimg-1">
                <div class="caption">
-                      <header><span class="border"> SCROLL DOWN</span></header>
-                    </div>
+                    <header><span class="border"> SCROLL DOWN</span></header>
                 </div>
-            <section class="container-fluid">
-                <!-- About me  -->
-                <h2>About me</h2>
-                <p>I'm a Computer Science student at Lancaster University (top 10 of all UK universities - Guardian/Complete University guide). But there's so much more to me than that.</p>
-                <br>
-                <p>With a passion for youth work, politics and actively making the world a better place, I'm not just a typical student. I've travelled up and down the country working on various projects helping young people get their voices heard in heart of politics and helping develop their skills to make them more employable. </p>
-                <br>
-                <br>
-                <p style="text-align:center">Send me an <a href="mailto:george.webster@nology.io?subject=Job offer">email</a> or complete the form below:</p>
-                <br>
-                <br>
-                <section id="form">
-                    <form 
-                    action="mailto:george.webster@nology.io?subject=Online form"
-                    method="POST"
-                    enctype="multipart/form-data"
-                    name="EmailTestForm">
-                        Your name:<br>
-                        <input type="text" name="Name"><br>
-                        Job offer description:<br>
-                        <input type="text" name="jobDescription"><br>
-                        Salary:<br>
-                        <input list="salary" name="salary">
-                        <datalist id="salary">
-                                <option value="£100,000">
-                                <option value="£150,000">
-                                <option value="£200,000">
-                                <option value="£250,000">
-                        </datalist>
-                        <br>
-                        <input type="submit" value="Submit">
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-
-
-                    </form>
-                </section>
+            </section>
+            <h2>About me</h2>
+            <p>I'm a Computer Science student at Lancaster University (top 10 of all UK universities - Guardian/Complete University guide). But there's so much more to me than that.</p>
+            <br />
+            <p>With a passion for youth work, politics and actively making the world a better place, I'm not just a typical student. I've travelled up and down the country working on various projects helping young people get their voices heard in heart of politics and helping develop their skills to make them more employable. </p>
+            <h2>Education</h2>
+            <section>Education</section>
+            <h2>Work experience</h2>
+            <h2>Voluntary experience</h2> 
+            <h2>Skills</h2>
+            <h2>References</h2>
+            <h2>Contact me</h2>
+            <p style="text-align:center">Send me an <a href="mailto:george.webster@nology.io?subject=Job offer">email</a> or complete the form below:</p>
+            <br />
+            <br />
+            <section id="form">
+                <form 
+                action="mailto:george.webster@nology.io?subject=Online form"
+                method="POST"
+                enctype="multipart/form-data"
+                name="EmailTestForm">
+                    Your name:<br />
+                    <input type="text" name="Name" placeholder="Enter your name..."><br />
+                    Job offer description:<br />
+                    <input type="text" name="jobDescription" placeholder="Sell me this job offer..."><br />
+                    Salary:
+                    <input list="salary" name="salary" placeholder="£££">
+                    <datalist id="salary">
+                            <option value="£100,000">
+                            <option value="£150,000">
+                            <option value="£200,000">
+                            <option value="£250,000">
+                    </datalist>
+                    <input type="submit" value="Submit">
+                </form>
             </section>
             <footer id="footer">
                 <a href="mailto:george.webster@nology.io?subject=Job offer"><i class="fas fa-envelope"></i></a>
                 <a href="https://www.facebook.com/webby268"><i class="fab fa-facebook-square"></i></a>
                 <a href="https://www.instagram.com/webstar95/"><i class="fab fa-instagram"></i></a>
             </footer>
+
+
+            
         </main>
     </body>
 </html>
