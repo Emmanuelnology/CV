@@ -87,7 +87,9 @@
     .work h1 {
         margin-top: 100px;
     }
-  
+    .career{
+        text-align: center;
+    }
 
     footer{
         font-size: small;
@@ -97,6 +99,7 @@
     .copyright{
         height:2px
     }
+    
     
     
     
