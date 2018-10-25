@@ -17,6 +17,10 @@ nav li{
     color: gray;
     text-transform: uppercase;
 }
+
+nav ul, nav li{
+    padding: 10px;
+}
 #checkers{
     width:100%;
     height:30px;
