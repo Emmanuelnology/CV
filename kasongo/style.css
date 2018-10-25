@@ -1,0 +1,33 @@
+body{
+    font-size: 1em;
+    font-style: normal;
+    font-family: 'Lato', sans-serif;
+    background-image:url('https://windsim.com/images/sky/sky_107.bmp');
+    background-size:cover;
+} 
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+    overflow: hidden;
+}
+nav li {
+    display: block;
+    display: inline;
+    float:left;
+}
+nav li a {
+    display: block;
+    color:darkblue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/* Change the link color to light blue on hover */
+nav li a:hover {
+    background-color: lightblue;
+}
+nav .active {
+    background-color: #4CAF50;
+}
