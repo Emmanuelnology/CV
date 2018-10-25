@@ -15,7 +15,7 @@ nav ul{
 nav li {
     display: block;
     display: inline;
-    float:left;
+    float: left;
 }
 nav li a {
     display: block;
