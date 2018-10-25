@@ -42,7 +42,9 @@ h1 {
 input {
     display: block;
     background-color: lightgrey;
-    margin:2em;
+}
+.emailad{
+    list-style-type: none;
 }
 .copyright{
     font-size: 0.8em;
