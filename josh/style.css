@@ -9,6 +9,7 @@ body{
  background:#645754 url(footer_lodyas.png) top left repeat;
  font-family: 'Montserrat', sans-serif;
  color:white;
+ margin:0;
 }
 nav{
   position: sticky;
@@ -16,14 +17,17 @@ nav{
 }
 nav ul {
   list-style-type: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   overflow: hidden;
   background-color: #ffffff;
+  display:inline-block;
+  
+  
 }
 
 nav li {
-  float: left;
+  float:left;
   
 }
 
