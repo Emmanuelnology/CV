@@ -1,9 +1,20 @@
+h1{
+  text-align:center;
+}
+.logo{
+  height:130px;
+}
+
 body{
  background:#645754 url(footer_lodyas.png) top left repeat;
  font-family: 'Montserrat', sans-serif;
  color:white;
 }
- ul {
+nav{
+  position: sticky;
+  top: 0;
+}
+nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -11,21 +22,18 @@ body{
   background-color: #ffffff;
 }
 
-nav{
-  position: sticky;
-  top: 0;
-}
-
-li {
+nav li {
   float: left;
+  
 }
 
-li a {
+nav li a {
   display: block;
   color: #666;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  
 }
 
 li a:hover:not(.active) {
@@ -56,8 +64,9 @@ textarea{
   text-align:center;
   }
 .socials-link{
-  margin:auto;
+  margin:0 auto;
   width:85%;
+  text-align:center ;
 }
 .fa-facebook{
     color:#3B5998;
