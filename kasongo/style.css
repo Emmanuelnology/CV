@@ -26,6 +26,7 @@ nav li a {
     padding: 14px 16px;
     text-decoration: none;
 }
+
 /* Change the link color to light blue on hover */
 nav li a:hover {
     background-color: lightblue;
@@ -33,8 +34,14 @@ nav li a:hover {
 nav .active {
     background-color: #4CAF50;
 }
+#kasface{
+    padding-right: 8em;
+    padding-top: 3em;
+}
 .social {
     margin-left: 2em;
+    border:0;
+    width: 3px;
 }
 h1 {
     text-align: center;
@@ -43,8 +50,25 @@ input {
     display: block;
     background-color: lightgrey;
 }
+.name {
+    width: 17em;
+    margin: 0;
+}
+.comment {
+    height: 10em;
+    width:25em;
+    margin:0;
+}
+.envoyer{
+    margin-top: 4px;
+    background-color:lightblue;
+}
 .emailad{
     list-style-type: none;
+    padding-top: 2em;
+    padding-bottom: 0.5em;
+    padding-left: 0;
+    margin-left: 0;
 }
 .copyright{
     font-size: 0.8em;

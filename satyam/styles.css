@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-    padding: 0.2em;
+    padding: 0.2em 1.2em;
     margin: 0.5em
 }
 body{
@@ -10,9 +10,13 @@ body{
     text-align: center;
     border: 1px white;
     background-image:url('folk-pattern.png') ;
-    min-height: 100vh;
     background-position: bottom;
     background-attachment: fixed;
+}
+h1{
+    color: #516f92;
+    font-size: 4em;
+    font-family: Josefin Sans;
 }
 nav {
     position: -webkit-sticky;
@@ -22,40 +26,38 @@ nav {
 nav ul{
     text-transform: initial;
     list-style-type:none;
-    padding:0em;
-    margin:0em;
+    padding:0;
+    margin:0;
+    display: inline;
 }
 nav li {
     display:inline;
     float:left;
 }
-li a {
-    display: block;
-    color: #516f92;
-    text-align: center;
-    padding: 14px 16px;
+nav li a{
+    display: inline;
+    padding: 12px;
     text-decoration: none;
+    color: rgb(165, 200, 223);
+    background-color: none;
 }
-    li a:hover:not(.active) {
-    background-color: #fff;
-}
-li a.active {
-    color: rgb(187, 219, 240);
+nav a:hover{
     background-color: rgb(24, 68, 119);
+    border-radius: 2px;
 }
-h1{
-    color: #516f92;
-    font-size: 3em;
-    font-family: Josefin Sans;
+p{
+    text-indent:2px;
+    font-size:1em;
 }
-#statement{
-text-align: none;
-color: red;
+#aboutme{
+text-align: center;
+color: white;
 }
 #contactdetails{
 text-align: left;
 }
-.introtext{
-padding: 85px;
-color:red;
+img{
+    position: left;
+    width: 20%;
+    height: auto;
 }
