@@ -16,8 +16,6 @@
     }
     main {
         width:50%;
-        background: pink url(pink_rice.png) top left repeat;
-        
     }
     h1{
         font-family: 'Lobster' , cursive;
@@ -33,9 +31,6 @@
      }
      ul{
         list-style-type: none;
-        float: left;
-
-
      }
         
     .info{
@@ -46,6 +41,8 @@
 
     .info i {
         font-size:40px;
+        padding: 10px;
+
     }
 
     a:link{
@@ -53,17 +50,13 @@
         text-decoration-line: none;
         margin-right: 30px;
     }
-    i:link{
-        margin-right: 30px;
 
+
+
+    footer{
+        font-size: small;
+        text-align: center;
     }
-
-    .fa-map-marker-altt{
-        color:
-
-    }
-
-    
 
     
     
