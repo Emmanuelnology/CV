@@ -24,3 +24,12 @@ ul {
   text-align: center;
   font-size: 18px;
 }
+
+span p {
+  font-size: 30px;
+  text-align: center;
+}
+
+.fa{
+  color:white;
+}
