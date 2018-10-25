@@ -21,11 +21,7 @@ body{
     text-align: justify;
     background-color: white;
     color: rgb(2, 124, 249);
-    background-image: url(g-ink3.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right;
- }
+}
 
  h1{
     font-family: sans-serif;
