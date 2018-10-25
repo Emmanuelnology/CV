@@ -23,13 +23,14 @@
     }
     main {
         width:65%;
+        height:100vh;
     }
     h1{
         font-family: 'Lobster' , cursive;
         text-align: center;
         font-size: 50px;
         padding: 0;
-        margin:100px 0 0 0;
+        margin:0;
         
      } 
      h2{
@@ -41,13 +42,19 @@
      }
      ul{
         list-style-type: none;
-        padding-left: 180px;
+        margin:0 auto;
+
+     }
+
+     header {
+         margin-top:100px;
      }
         
     .info{
         font-size: 20px;
-        margin-bottom; 3px;
+        margin-bottom: 3px;
         color: black;
+        width:60%;
     }
 
     .info li {
