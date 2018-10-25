@@ -1,0 +1,43 @@
+body{
+    font-size: 1em;
+    font-style: normal;
+    font-family: 'Lato', sans-serif;
+    background-image:url('https://windsim.com/images/sky/sky_107.bmp');
+    background-size:cover;
+} 
+nav ul{
+    list-style-type: none;
+    margin-left: 280px;
+    padding: 0;
+    background-color:lightgrey;
+    overflow: hidden;
+    width: 710px;
+    border-style: groove;
+}
+nav li {
+    display: block;
+    display: inline;
+    float: left;
+}
+nav li a {
+    display: block;
+    color:darkblue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/* Change the link color to light blue on hover */
+nav li a:hover {
+    background-color: lightblue;
+}
+nav .active {
+    background-color: #4CAF50;
+}
+input {
+    display: block;
+    background-color: lightgrey;
+}
+.copyright{
+    font-size: 0.8em;
+    font-style: oblique;
+}

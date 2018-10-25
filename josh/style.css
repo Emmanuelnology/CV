@@ -11,8 +11,7 @@ body{
   background-color: #ffffff;
 }
 
-nav {
-  position: -webkit-sticky;
+nav{
   position: sticky;
   top: 0;
 }
@@ -36,6 +35,10 @@ li a:hover:not(.active) {
 li a.active {
   color: white;
   background-color: #4CAF50;
+}
+
+.contact-icon{
+  text-align: center;
 }
 
 
