@@ -4,23 +4,34 @@ main>section{
     padding:20px;
 }
 
-.button {
+.top-panel{
+    background-color: rgb(9, 139, 133);
+    border: none;
+    color: white;
+    text-align: center;
+}
+
+nav>a{
     background-color: rgb(9, 139, 133);
     border: none;
     color: white;
     padding: 15px 32px;
-    text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 1%;
+    margin-bottom: 10px;
     cursor: pointer;
     box-align: centre;
     border-radius: 5px;
-    width:10%;
-    cursor:pointer;
+    width:auto;
+    box-sizing: border-box;
 }
-.button:hover {
+div>header{
+    padding: 0.05em;
+    font-size: 30px;
+    margin:10px 10px 0 10px;
+}
+nav>a:hover {
     opacity: 0.8;
 }
 .heading{
@@ -38,3 +49,14 @@ h3{
     font-size:1.1em;
     text-transform:capitalize;
 }
+h1{
+    text-align:center;
+}
+body{
+    background-color: beige;
+    margin:0;
+    background-size: cover;
+} 
+
+
+
