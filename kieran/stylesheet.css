@@ -20,6 +20,9 @@ nav {
   border: 1px solid black;
   margin: 0 auto;
   text-align: center;
+  width:auto;
+  height: 100px;
+  max-width: 2000px;
 }
 
 h2 { background-color: #3B7080;
@@ -36,18 +39,20 @@ body {font-family: 'Oxygen', sans-serif;
 
 .button {
   cursor: pointer;
-  background-color: #3B7080;
+  background-color: red;
   color: white;
   font-size: 30px;
-  border-radius: 20px;
-  text-align:left;
+  border-radius: 0px;
+  text-align:center;
   text-decoration:none;
-  padding: 2px 20px 2px 20px;
+  padding: 2px ;
   margin-bottom: 10px;
-  width:250px;
+  width:auto;
+  height: 100px;
   margin-top: 0px;
-  margin: 0 auto;
-  border: 1px solid black;
+  margin: 0 ;
+  border: 0px solid black;
+  vertical-align: 0px;
   
   
   
@@ -57,7 +62,7 @@ body {font-family: 'Oxygen', sans-serif;
   background-color: #ff4457;
   color: white;
   font-size: 30px;
-  border-radius: 20px;
+  border-radius: 0px;
   text-align:left;
   text-decoration:none;
   padding: 2px 20px 2px 20px;

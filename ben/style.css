@@ -1,8 +1,23 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    text-align: center;
+}
+
+
 body{
     background-color: #eaeaff;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 22px;
-    text-align: center;
+    color: darkslateblue;
+    /*background-image: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 95vh;
+    min-width: 95vw;*/
 }
 
 .button{
@@ -11,86 +26,47 @@ body{
     border: none;
     display: inline-block;
     font-size: 16px;
-    text-align: center;
-    text-decoration: none;
     cursor: pointer;
-    width: 100px;
+    width: 120px;
     border-radius: 15px;
     padding: 5px 15px;
     margin: 5px;
 }
 
-.button:hover {
-    opacity: 0.8;
-    color: white;
-}
-
-.wide{
-    width: 100%;
-}
-
-#myname{
-    background-color: darkslateblue; 
+header>a{
+    background-color: darkslateblue;
+    color: #eaeaff;
+    border: none;
+    display: inline-block;
     font-size: 36px;
+    cursor: pointer;
     border-radius: 30px;
     padding: 10px 25px;
     margin: 10px 0px;
     width: 90%;
 }
 
-/*#contact{
-    border-radius: 0px;
-    margin: 0px;
-    width: 25%;
-    height: 100px;
-    font-size: 36px;
+.button:hover, header>a:hover, nav li:hover {
+    opacity: 0.8;
+    color: white;
 }
 
-#aboutme{
-    border-radius: 0px;
-    margin: 0px;
-    width: 25%;
-    height: 100px;
-    font-size: 36px
+nav ul{
+    list-style: none;
+    background-color: darkslateblue;
+    display:flex;
 }
 
-#skills{
-    border-radius: 0px;
-    margin: 0px;
-    width: 25%;
-    height: 100px;
-    font-size: 36px;
+nav li {
+    background-color: inherit;
+    flex:1;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
 }
 
-#qualifications{
-    border-radius: 0px;
-    margin: 0px;
-    width: 25%;
-    height: 100px;
-    font-size: 36px;
+nav a {
+    color: #eaeaff;
 }
 
-
-#hobbies{
-    position: fixed;
-    left: 220px;
-    top: 170px;
-}
-
-#experience{
-    position: fixed;
-    left: 440px;
-    top: 170px;
-}
-
-#references{
-    position: fixed;
-    left: 660px;
-    top: 170px;
-}
-
-#home{
-    position: fixed;
-    left: 880px;
-    top: 170px;
-}*/

@@ -2,7 +2,7 @@
     "plugins": [],  // npm modules to load
 
     "maxerr": false,
-    "raw-ignore-regex": false,
+    "raw-ignore-regex": "{{[\\s\\S]*?}}",
     "attr-bans": [
         "align",
         "background",
@@ -51,7 +51,7 @@
     "head-valid-content-model": true,
     "href-style": false,
     "label-req-for": true,
-    "line-end-style": "lf",
+    "line-end-style": "crlf",
     "line-no-trailing-whitespace": false,
     "line-max-len": false,
     "line-max-len-ignore-regex": false,
