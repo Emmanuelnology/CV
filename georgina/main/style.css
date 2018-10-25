@@ -15,6 +15,7 @@
     }
     main {
         width:50%;
+        background-image: url(pink_rice.png);
     }
     h1{
         font-family: 'Lobster' , cursive;
@@ -27,6 +28,10 @@
          font-family: 'Lobster' , cursive;
          font-size: 30px;
          margin:10px;
+     }
+     ul{
+        list-style-type: none;
+
      }
         
     .info{
