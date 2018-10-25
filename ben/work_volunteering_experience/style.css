@@ -1,0 +1,20 @@
+ul{
+    list-style: none;
+}
+
+h1{
+    font-size: 54px;
+}
+
+h2{
+    font-size: 24px;
+}
+
+.date{
+    font-size: 16px;
+    font-style: italic;
+}
+
+article {
+    margin: 15px;
+}

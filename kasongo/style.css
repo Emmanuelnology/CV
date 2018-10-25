@@ -54,10 +54,12 @@ input {
     width: 17em;
     margin: 0;
 }
-.comment {
+textarea {
     height: 10em;
     width:25em;
-    margin:0;
+    margin-left:0;
+    padding: 0;
+    background-color: lightgrey;
 }
 .envoyer{
     margin-top: 4px;
