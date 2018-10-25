@@ -32,7 +32,7 @@ div>header{
     margin:10px 10px 0 10px;
 }
 nav>a:hover {
-    opacity: 0.8;
+    opacity: 0.6;
 }
 .heading{
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -57,6 +57,24 @@ body{
     margin:0;
     background-size: cover;
 } 
-
+#contact-me ul{
+    list-style-type: none;
+    padding: 0;
+    text-decoration: none;
+}
+#contact-me li{
+    margin:20px;
+    text-decoration: none;
+}
+#contact-me{
+    text-decoration: none;
+}
+.contact-links:hover{
+    opacity:0.5;
+    cursor: pointer;
+}
+#work-experience{
+    background-color: lightgray;
+}
 
 
