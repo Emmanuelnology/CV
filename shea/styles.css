@@ -21,6 +21,10 @@ body{
     text-align: justify;
     background-color: white;
     color: rgb(2, 124, 249);
+    background-image: url(g-ink3.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
  }
 
  h1{
@@ -95,6 +99,7 @@ button:hover{
     height: 40%;
     float: left;
     margin: 10px;
+    margin-bottom: 40px;
  }
 
 #aboutme-content{
@@ -106,6 +111,7 @@ button:hover{
     clear: left;
     width: 25%;
     margin: 10px;
+    display: none;
  }
 
 #infolist{
