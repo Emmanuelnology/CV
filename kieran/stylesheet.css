@@ -1,12 +1,18 @@
+* { box-sizing: border-box;}
+
+
 
 .headaf {font-family: 'Bitter', serif;
         color:#ffffff;
         font-size:1em;
         background-color:#3B7080;
         text-align:center;
-        border-radius:20px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
         padding:20px;
-        margin:20px 50px 20px 50px;
+        margin:0px;
+        border: 0px;
+
         }
 h2 { background-color: #3B7080;
     padding: 10px;
