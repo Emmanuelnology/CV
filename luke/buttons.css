@@ -8,14 +8,14 @@
   float: left;
 }
 
-.buttons.sticky{
+nav{
   position: sticky;
   top: 0;
 }
 .buttons:hover {
   background-color: white;
   color: red;
-  border: 1px red solid;
+  /* border: 1px red solid; */
 }
 
 .buttons:active {
