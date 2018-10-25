@@ -1,11 +1,55 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color:#42e8f4;
+}
+
+nav{
+    background-color: rgb(250, 250, 78);
+}
+
+nav li{
+    display: inline;
+    padding: 10px;
+    color: gray;
+    text-transform: uppercase;
+}
+
+nav ul, nav li{
+    padding: 10px;
+}
+
+nav a:hover{
+    background-color:black;
+    color:white;    
+}
+nav a{
+    padding: 10px;
+    text-decoration: none;
+    color: gray;
+}
+#checkers{
+    width:100%;
+    height:30px;
+    background-image: url('checkers.png');
+    background-repeat: repeat-x;
+}
+
 #title{
     color:white;
     text-align: center;
     background-color: black;
+    margin-bottom:0px;
 }
+
 h2{
     text-align: center;
-    padding-bottom: 10px;
+    padding: 10px;
+    color: white;
+    background-color:#1d6ae5;
 }
 
 input, select{
@@ -13,10 +57,8 @@ input, select{
     margin: auto;
     padding: 12px 20px;
     background-color:#f0eff2;
-
     border: 1px solid #ccc;
     box-sizing: border-box;
-    
 }
 
 input[type=submit] {
@@ -30,8 +72,7 @@ input[type=submit] {
     width: 50%;
 }
 
-#footer {
-    position: fixed;
+#footer{
     bottom: 0;
     width: 100%;
     background-color: black;
@@ -54,4 +95,50 @@ input[type=submit] {
     #footer i{
         font-size:7vw;
     }
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+@media (min-width: 601px) {
+    .bgimg-1 {
+        background-image: url("taxi.jpg");
+    }
+    #form{
+        margin: auto;
+        width: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    .bgimg-1 {
+        background-image: url("10DS.jpg");
+    }
+    #form{
+        margin: auto;
+        width: 80%;
+    }
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 70%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 15px;
+    letter-spacing: 10px;
 }

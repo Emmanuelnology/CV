@@ -38,15 +38,22 @@ li {
     list-style: circle;
 }
 
-/* Flex Container */
+/* Grid Container */
 .container {
     display: grid;
-    grid-column-gap: 1em;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 50%);
 }
 
-/* Flex Item */
-.item {
-    padding: 0.5em;
+/* Grid Item */
+.container > section {
+    padding: 2%;
+}
+
+.full-width {
+    grid-column: 1/2;
+}
+
+footer {
+    padding: 2em;
 }
