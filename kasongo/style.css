@@ -43,7 +43,9 @@ input {
     display: block;
     background-color: lightgrey;
 }
-#
+.emailad{
+    list-style-type: none;
+}
 .copyright{
     font-size: 0.8em;
     font-style: oblique;
