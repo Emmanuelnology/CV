@@ -20,8 +20,5 @@
     "url": "https://github.com/nology-tech/interactive-cv/issues"
   },
   "homepage": "https://github.com/nology-tech/interactive-cv#readme",
-  "dependencies": {
-    "htmllint": "^0.7.2",
-    "htmllint-cli": "0.0.7"
-  }
+  "dependencies": {}
 }
