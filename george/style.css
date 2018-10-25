@@ -9,12 +9,14 @@ body{
 
 nav{
     background-color:black;
+    
 }
 
 nav li{
     display: inline;
     padding: 10px;
     text-transform: uppercase;
+    
 }
 
 nav ul, nav li{
@@ -29,6 +31,7 @@ nav a{
     padding: 10px;
     text-decoration: none;
     color: white;
+    overflow: hidden;
 }
 
 #title{
@@ -107,6 +110,11 @@ input[type=submit] {
         margin: auto;
         width: 50%;
     }
+    .caption span.border, .scroll span.border {
+        padding: 18px;
+        font-size: 15px;
+        letter-spacing: 10px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -118,7 +126,9 @@ input[type=submit] {
         width: 80%;
     }
     .caption span.border, .scroll span.border {
-    
+        padding: 10px;
+        font-size: 13px;
+        letter-spacing: 8px;
     }
 }
 
@@ -134,10 +144,9 @@ input[type=submit] {
 .caption span.border, .scroll span.border {
     background-color: rgb(71, 71, 71);
     color: #fff;
-    padding: 18px;
-    font-size: 15px;
-    letter-spacing: 10px;
 }
+
+
 
 .scroll {
     position: absolute;
