@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.nametitle {
+    text-align: center;
+}
+
 .bold {
     font-weight:800;
     text-transform:capitalize
