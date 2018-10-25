@@ -30,7 +30,6 @@ nav ul{
     display: inline-block;
 }
 nav li {
-    display:inline;
     float: left;
 }
 nav li a{
