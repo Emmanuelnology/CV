@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-    padding: 0.2em;
+    padding: 0.2em 1.2em;
     margin: 0.5em
 }
 body{
@@ -49,7 +49,7 @@ p{
     text-indent:2px;
     font-size:1em;
 }
-#statement{
+#aboutme{
 text-align: center;
 color: white;
 }
