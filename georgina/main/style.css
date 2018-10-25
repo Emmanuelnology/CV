@@ -17,33 +17,44 @@
         width:50%;
     }
     h1{
-        font-family: 'Encode Sans', sans-serif;
+        font-family: 'Lobster' , cursive;
         text-align: center;
         font-size: 50px;
-     }    
-    h2{
+        margin: 10px;
+     } 
+     h2{
+         text-align: center;
+         font-family: 'Lobster' , cursive;
+         font-size: 30px;
+         margin:10px;
+     }
+        
+    .info{
         text-align: center;
         font-size: 20px;
         margin: 2px;
+        color: black;
+    }
+    .info .text {
 
     }
-    p{
-        text-align: center;
-        margin: 2px;
+
+    .info i {
+        font-size:70px;
     }
-    .fa-linkedin{
-        font-size: 30px;
-        text-align: center;
+
+    a:link{
+        color:black;
+        text-decoration-line: none;
     }
-    .fa-at{
-        font-size: 30px;
-        text-align: center;
+
+    .fa-mobile-alt{
+        color:black;
+
     }
-    article{
-        text-align: center;
-    }
-    }
-    .email{
-        text-align: center;
-    }
+
+    
+
+    
+    
     
