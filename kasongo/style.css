@@ -9,10 +9,10 @@ nav ul{
     list-style-type: none;
     margin-left: 280px;
     padding: 0;
-    background-color:lightgrey;
+    background-color: lightslategray;
     overflow: hidden;
     width: 710px;
-    border-style: groove;
+    border-style: solid;
 }
 nav li {
     display: block;
@@ -33,9 +33,16 @@ nav li a:hover {
 nav .active {
     background-color: #4CAF50;
 }
+.social {
+    margin-left: 2em;
+}
+h1 {
+    text-align: center;
+}
 input {
     display: block;
     background-color: lightgrey;
+    margin:2em;
 }
 .copyright{
     font-size: 0.8em;
