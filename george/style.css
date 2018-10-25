@@ -21,6 +21,16 @@ nav li{
 nav ul, nav li{
     padding: 10px;
 }
+
+nav a:hover{
+    background-color:black;
+    color:white;    
+}
+nav a{
+    padding: 10px;
+    text-decoration: none;
+    color: gray;
+}
 #checkers{
     width:100%;
     height:30px;
