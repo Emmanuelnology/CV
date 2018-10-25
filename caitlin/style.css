@@ -57,7 +57,7 @@ body{
     margin:0;
     background-size: cover;
 } 
-#contact-me ul{
+ul{
     list-style-type: none;
     padding: 0;
     text-decoration: none;
@@ -77,4 +77,21 @@ body{
     background-color: lightgray;
 }
 
-
+.container {
+    width: 60%;
+    margin: auto;
+}
+.one-of-two-cols{
+    width:48%;
+    float:left;
+    height:150px;
+    text-align: right;
+}
+.two-of-two-cols{
+    width:48%;
+    float:right;
+    height:150px;
+}
+h2{
+    text-align: center;
+}
