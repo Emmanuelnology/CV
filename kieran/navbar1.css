@@ -2,8 +2,17 @@
     box-sizing: border-box;
 }
 
+body {
+    margin: 0px;
+}
+
 .nametitle {
     text-align:center;
     border:1px solid black;
     margin: 0px;
+}
+
+li {
+    display: inline-block;
+    margin:0;
 }
