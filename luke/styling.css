@@ -5,13 +5,21 @@ body {
   margin: 30px 30px 30px 30px;
   background-image: url(https://images.unsplash.com/photo-1442029739115-ce733f0de45e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ba7b8abddb2628e289f93745b785d616&auto=format&fit=crop&w=1344&q=80);
   background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: white;
 }
 
-header {
+header, footer, h1, h2, h3 {
   text-align: center;
   font-family: 'raleway';
 }
-footer, h2, h4{
+
+ul{
+  list-style-type: none;
+  padding: 1.5%;
+}
+#a{
   text-align: center;
+  font-size: 18px;
 }
