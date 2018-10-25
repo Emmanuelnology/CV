@@ -46,11 +46,12 @@ li a.active {
   height: 510px;
   width: 728px;
   margin: 0 auto;
+  border-radius:5%;
 }
 
 .slide-wrapper {
   width: 2912px;
-  -webkit-animation: slide 18s ease infinite;
+  -webkit-animation: slide 30s ease infinite;
 }
 
 .slide {
@@ -59,26 +60,9 @@ li a.active {
   width: 728px;
 }
 
-.slide:nth-child(1) {
-  background: #D93B65;
-}
-
-.slide:nth-child(2) {
-  background: #037E8C;
-}
-
-.slide:nth-child(3) {
-  background: #36BF66;
-}
-
-.slide:nth-child(4) {
-  background: #D9D055;
-}
-
 .slide-number {
-  color: #000;
-  text-align: center;
-  font-size: 10em;
+  height: 510px;
+  width: 728px;
 }
 
 @-webkit-keyframes slide {
