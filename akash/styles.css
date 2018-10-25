@@ -12,9 +12,9 @@
     .underline{
         text-decoration:none;
     }
-    body { background-image: url('https://wallpapercave.com/wp/Q1cr1tZ.jpg');
+    body { background-image: url('https://image.freepik.com/foto-gratis/papel-color-abstracto-fondo-papel-pastel-colorido-creativo_6529-179.jpg');
         background-attachment: fixed;
-        background-repeat: no-repeat;
+        background-repeat: repeat;
         background-size: cover;
         color: rgb(4, 29, 66);
         font-family:'Barlow';
@@ -33,7 +33,7 @@
     
     
     nav{
-        background-color: #77dfff;
+        background-color:rgb(165, 204, 237);
         color:white;
         text-transform: uppercase;
         padding: 1em;
@@ -88,9 +88,44 @@
     
     main>div{
     width: 47%;
-    border: 3px solid rgb(122, 64, 113);
+    border: 3px solid rgb(156, 131, 216);
     float:left;
-    padding: 10px;
+    padding: 20px;
     margin:1.5%;
-    
+    background-color: white;
+
     }
+    .fa-crown {
+        font-size: 25px;
+        line-height: 100%;
+        animation-name: crown-move;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+
+    }
+    @keyframes crown-move {
+        0%   {color:white; left:0px; top:0px}
+        100% {color:yellow; left:0px; top:100%}
+    }
+   
+    #work-section{
+        border-color: rgb(230, 155, 202)
+    }
+    .color-change{
+        animation-name: color-wheel;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+
+    }
+
+    @keyframes color-wheel{
+        0%   {color:red;}
+        25%  {color:yellow;}
+        50%  {color:blue;}
+        75%  {color:green;}
+        100% {color:red;}
+
+    }
+
+
+    
