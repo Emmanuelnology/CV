@@ -13,7 +13,7 @@ Nav ul {
 }
 
 nav ul li {
-  background-color: red;
+  background-color: rgb(2,110,131);
   color: white;
   border: 0px;
   margin: auto;
@@ -30,13 +30,11 @@ nav ul a {
   padding: 10px;
   text-decoration: none;
   color: inherit;
-  /* height: auto;
-  width:auto; */
 }
 
 nav ul li:hover {
   background-color: white;
-  color: red;
+  color: rgb(2,110,131);
   cursor: pointer;
 }
 
