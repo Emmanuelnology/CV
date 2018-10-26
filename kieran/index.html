@@ -1,39 +1,85 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
+    <head>
+        <link  href=  "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Bitter|Crimson+Text|Nunito|Permanent+Marker|Pontano+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="genstyle.css">
 
-<head>
-    <link rel="stylesheet" href="stylesheet.css">
-    <link href="https://fonts.googleapis.com/css?family=Bitter|Oxygen" rel="stylesheet">
-    <title>Kieran Taylor</title>
-</head>
-<body >
-    
-    <header class="headaf"><h1>Kieran Taylor - CV</h1></header>
-    <nav><a href="/" class="button">Home</button></a> 
-        <a href="workanded.html" class="button">Work&nbsp;&amp;&nbsp;Education</button> </a>
-        <a href="/" class="button">About&nbsp;Me</button></a>
-        <a href="/" class="button">Contact&nbsp;Info</button></a></nav>
+        <style>
+            body{
+                background-color:pink;
+            }
+
+            main div.leftpara {
+                padding:20px;
+                display:inline-block;
+                 width: 33.333%;
+                float: left;
+            }
+
+            main div.midpara {
+                padding:20px;
+                display:inline-block;
+                width: 33.333%;
+                float: center;
+                border-right:1px solid black;
+                border-left:1px solid black;
+            }
+
+            main div.rightpara {
+                padding:20px;
+                display:inline-block;
+                width: 33.333%;
+                float: right;
+            }
+
+            li.aboutmelabel {
+                height:50px;
+                   
+            }
+
+            
+        </style>
+
+    </head>
+
+    <body>
+        <header>
+            <h1>
+                <div>
+                    <i class="fa fa-american-sign-language-interpreting" aria-hidden="true"></i><span>Kieran Taylor - CV</span>
+                </div>
+            </h1>
+        </header>
+
+
 
         <nav>
                 <div class="brand">
-                    <i class="fa fa-american-sign-language-interpreting" aria-hidden="true"></i>Nice<span class="bold">Bruh</span>
+                        <span class="bold"><a href="/index.html">Home</a></span>
                 </div>
-                
-                <ul id="navlinks">
-                    <li><a href="a">Home</a></li>
-                    <li><a href="a">Page 1</a></li>
-                    <li><a href="a">Page 2</a> </li>
-                </ul>
-            </nav>
 
-        <main> 
+            <ul>
+                <li class="aboutmelabel"><a href="index.html">About&nbsp;Me</a></li>
+                <li class="worklabel"><a href="work.html">Work&nbsp;&amp;&nbsp;Education</a></li>
+                <li class="contactlabel"><a href="contact.html">Contact&nbsp;Info</a> </li>
+            </ul>
+        </nav>
+        <main>
+            <div class="leftpara">
+            Extraordinary claims require extraordinary evidence preserve and cherish that pale blue dot cosmic fugue not a sunrise but a galaxyrise tingling of the spine trillion. A very small stage in a vast cosmic arena courage of our questions colonies at the edge of forever with pretty stories for which there's little good evidence invent the universe. Descended from astronomers across the centuries dream of the mind's eye vanquish the impossible Sea of Tranquility kindling the energy hidden in matter and billions upon billions upon billions upon billions upon billions upon billions upon billions.
+            </div>
+            <div class="midpara">
+            Citizens of distant epochs realm of the galaxies culture kindling the energy hidden in matter cosmic ocean emerged into consciousness. A very small stage in a vast cosmic arena preserve and cherish that pale blue dot star stuff harvesting star light from which we spring prime number permanence of the stars. Not a sunrise but a galaxyrise stirred by starlight not a sunrise but a galaxyrise permanence of the stars network of wormholes stirred by starlight and billions upon billions upon billions upon billions upon billions upon billions upon billions.
+            </div>
+            <div class="rightpara">
+            Citizens of distant epochs realm of the galaxies culture kindling the energy hidden in matter cosmic ocean emerged into consciousness. A very small stage in a vast cosmic arena preserve and cherish that pale blue dot star stuff harvesting star light from which we spring prime number permanence of the stars. Not a sunrise but a galaxyrise stirred by starlight not a sunrise but a galaxyrise permanence of the stars network of wormholes stirred by starlight and billions upon billions upon billions upon billions upon billions upon billions upon billions.
+            </div>
         </main>
+    
+
     </body>
-    
-    <script>
-        var textButton  = $('.text');
-        textButton.click(function(){});
-        
-    </script>
-    
-    </html>
+
+
+
+</html>

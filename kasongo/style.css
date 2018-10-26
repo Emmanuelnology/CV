@@ -31,8 +31,10 @@ nav li a {
 nav li a:hover {
     background-color: lightblue;
 }
-nav .active {
-    background-color: #4CAF50;
+nav{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
 }
 #kasface{
     padding-right: 8em;
@@ -69,8 +71,8 @@ textarea {
     list-style-type: none;
     padding-top: 2em;
     padding-bottom: 0.5em;
-    padding-left: 0;
-    margin-left: 0;
+    padding-left:0;
+    margin-left:0;
 }
 .copyright{
     font-size: 0.8em;

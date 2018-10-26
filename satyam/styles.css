@@ -18,45 +18,61 @@ h1{
     font-size: 4em;
     font-family: Josefin Sans;
 }
+h2{
+    color: #516f92;
+    font-size: 2.5em;
+}
 nav {
+    background-color: #516f92;
     position: sticky;
     top: 0;
+    text-transform: initial;
+    padding: 1em;
 }
 nav ul{
-    text-transform: initial;
     list-style-type:none;
     padding:0;
-    margin:0 auto;
-    display: inline-block;
+    margin:0;
 }
 nav li {
-    display:inline;
-    float: left;
+    display: inline;
+    padding: 0 0.5em;
+    float: none;
 }
 nav li a{
     display: inline;
-    padding: 12px;
+    padding: 6px 10px;
     text-decoration: none;
-    color: rgb(165, 200, 223);
-    background-color: rgb(79, 87, 100);
+    color: #fff;
+}
+li a.selected{
+    color: #fff;
+    background-color: rgb(253, 74, 74);
 }
 nav a:hover{
-    background-color: rgb(24, 68, 119);
-    border-radius: 2px;
+    background-color: rgb(49, 48, 48);
+    border-radius: 2.5px;
+}
+nav > * {
+    display: inline;
 }
 p{
     text-indent:2px;
     font-size:1em;
 }
-#aboutme{
-text-align: center;
-color: white;
+.content{
+    text-align: none;
+    color: white;   
+    font-size: 1em;
 }
-#contactdetails{
-text-align: left;
+li{
+    list-style-type: none;
 }
 img{
     position: left;
     width: 20%;
     height: auto;
+}
+address{
+    white-space: pre
 }
