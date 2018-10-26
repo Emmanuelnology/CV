@@ -21,7 +21,7 @@
         width:34%;
         height: 100vh;
         margin-right: 1%;  
-        display: none;     
+           
     }
     main {
         width:65%;
@@ -119,7 +119,7 @@
     }
 
     .skills-panel .score{
-        display: inline;
+        display: inline ;
         float: right;
     }
     .skills-panel{
@@ -129,18 +129,7 @@
         border-top-style: dotted;
     }
 
-    .skills-panel .score div{
-        height: 1em;
-        width: 1em;
-        background-color: transparent;
-        display: inline-block;
-        border-radius: 50%;
-        border: 1px solid black;
-    }
-    .skills-panel .score .solid{
-        background-color: black;
-
-    }
+ 
 
         
     
