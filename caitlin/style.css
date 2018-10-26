@@ -80,6 +80,7 @@ ul{
 .container {
     width: 60%;
     margin: auto;
+    height: auto;
 }
 .one-of-two-cols{
     width:48%;
