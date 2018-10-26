@@ -5,10 +5,16 @@ body{
 }
 h1{
   text-align:center;
+  line-height: 2em;
+  display:none;
+}
+.header-logo{
+  text-align:center;
 }
 .logo{
-  height:130px;
-}
+  height:200px;
+  margin:0 0 30px 0;
+  }
 nav{
   position: sticky;
   top: 0;
@@ -59,6 +65,9 @@ li a.active {
   float: left;
   height: 510px;
   width: 728px;
+  position: relative;
+  text-align: center;
+  color: rgb(245, 6, 6);
 }
 
 .slide-number {
@@ -76,10 +85,19 @@ li a.active {
   90% {margin-left: -2184px;}
 }
 
+#workexp-text{
+  position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
 /*end of slideshow*/
 
 .contact-icon{
   text-align: center;
+  }
+.contact-icon a{
+  color:white;
 }
 .firstname{
   text-transform: capitalize;
