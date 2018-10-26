@@ -4,7 +4,14 @@
 
 body{
     margin: 0;
-    background-color:white;
+    background-color:rgba(179, 171, 171, 0.726);
+}
+
+h2{
+    text-align: center;
+    padding: 10px;
+    color: white;
+    background-color:black;
 }
 
 nav{
@@ -41,11 +48,9 @@ nav a{
     margin-bottom:0px;
 }
 
-h2{
-    text-align: center;
+.about-text{
+    font-size: 30px;
     padding: 10px;
-    color: white;
-    background-color:black;
 }
 
 input, select{
