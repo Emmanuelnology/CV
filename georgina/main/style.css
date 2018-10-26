@@ -6,6 +6,7 @@
     a, a:visited{
         color:inherit;
         text-decoration-line: none;
+        font-family: 'Fauna One', serif;
     }
 
     body {
@@ -95,6 +96,7 @@
     footer{
         font-size: small;
         text-align: center;
+        font-family: 'Fauna One', serif;
     }
 
     .copyright{
