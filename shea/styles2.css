@@ -30,7 +30,6 @@ nav>ul {
 }
 
 nav li {
-    display: inline-block;
     margin: 0.5em;
     margin-top: 0;
     float: right;
@@ -82,18 +81,38 @@ h2 {
     float: left;
 }
 
-.contact {
+/*REDUNDANT CSS USED FOR HIDDEN
+    SECTIOINS DEMO */
+
+.idden {
     float: right;
     text-align: center;
     width: 65%;
-    display: block;
 }
 
-.contact ul{
+.idden ul{
     margin-top: 2.5em;
 }
 
-.contact li{
+.idden li{
+    list-style: none;
+    line-height: 2em;
+}
+
+/*REDUNDANT CSS USED FOR HIDDEN
+    SECTIOINS DEMO */
+
+.hidden {
+    float: right;
+    text-align: center;
+    width: 65%;
+}
+
+.hidden ul{
+    margin-top: 2.5em;
+}
+
+.hidden li{
     list-style: none;
     line-height: 2em;
 }
@@ -102,4 +121,8 @@ h2 {
     font-size: 3em;
     margin: 0;
     padding: 0;
+}
+
+.hidden {
+    display: none;
 }
