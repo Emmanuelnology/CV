@@ -32,6 +32,10 @@ div img:last-child{
   border-radius: 10%;
 }
 
+li{
+  padding-bottom:10px;
+}
+
 .a {
   text-align: center;
   font-size: 18px;
