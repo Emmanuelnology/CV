@@ -1,29 +1,49 @@
-button {
-  background-color: red;
-  color: white;
-  border: 0px;
-  margin: 0px 0px 0px 0px;
-  height: 30px;
-  width: 25%;
-  float: left;
-}
-
 nav {
   position: sticky;
   top: 0;
 }
 
-button:hover {
+nav * {
+  box-sizing: border-box;
+}
+
+Nav ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+nav ul li {
+  background-color: red;
+  color: white;
+  border: 0px;
+  margin: auto;
+  padding: 0px;
+  height: 40px;
+  width: 25%;
+  float: left; 
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul a {
+  padding: 10px;
+  text-decoration: none;
+  color: inherit;
+  /* height: auto;
+  width:auto; */
+}
+
+nav ul li:hover {
   background-color: white;
   color: red;
   cursor: pointer;
-  border: 1px red solid;
 }
 
-button:active {
+nav ul li:active {
   background-color: rgb(247, 242, 242);
 }
 
 #container {
-  padding: 0px 0px 30px 0px;
+  padding: 0px 0px 40px 0px;
 }
