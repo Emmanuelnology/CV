@@ -2,7 +2,7 @@
     "plugins": [],  // npm modules to load
 
     "maxerr": false,
-    "raw-ignore-regex": false,
+    "raw-ignore-regex": "{{[\\s\\S]*?}}",
     "attr-bans": [
         "align",
         "background",
@@ -22,7 +22,8 @@
     "spec-char-escape": true,
     "text-ignore-regex": false,
     "tag-bans": [
-        "b"
+        "b",
+        "br"
     ],
     "tag-close": true,
     "tag-name-lowercase": true,
@@ -51,7 +52,7 @@
     "head-valid-content-model": true,
     "href-style": false,
     "label-req-for": true,
-    "line-end-style": "lf",
+    "line-end-style": false,
     "line-no-trailing-whitespace": false,
     "line-max-len": false,
     "line-max-len-ignore-regex": false,
