@@ -4,7 +4,7 @@
 
 body{
     margin: 0;
-    background-color:#42e8f4;
+    background-color:white;
 }
 
 nav{
@@ -104,7 +104,7 @@ input[type=submit] {
 
 @media (min-width: 601px) {
     .bgimg-1 {
-        background-image: url("img/me/David-Cameron.jpg");
+        background-image: url("img/me/image.png");
     }
     #form{
         margin: auto;
@@ -201,6 +201,11 @@ input[type=submit] {
     background-image: url("img/logos/huish.png");
 }
 
+#castle{
+    background-image: url("img/logos/castle-school-logo.png");
+}
+
+
 #nationwide{
     background-image: url("img/logos/Nationwide-Logo.jpg");
 }
@@ -245,6 +250,10 @@ input[type=submit] {
     background-image: url("img/logos/bhf.PNG");
 }
 
+#graduate{
+    background-image: url("img/me/graduate.jpg");
+}
+
 #escape{
     background-image: url("img/logos/escape-logo.jpg");
 }
@@ -252,7 +261,15 @@ input[type=submit] {
 #downing-street{
     background-image: url("img/me/10DS.jpg");
 }
+
 #appg{
     background-image: url("img/me/appg.jpg");
 }
 
+#jeremy{
+    background-image: url("img/me/jeremy.jpg");
+}
+
+#david{
+    background-image: url("img/me/David-Cameron.jpg");
+}
