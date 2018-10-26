@@ -107,20 +107,23 @@ footer{
     text-align: center;
     margin: 10px;
 }
-
-.skills-box{
-    display: inline;
-    box-sizing: border-box;
+#skills-box li{
+    margin:15px;
     text-align: right;
-    background-color: blue;
+    
+}
+#skills-box{
+    box-sizing: border-box;
+    text-align: center;
+    width: 300px;
+    display: block;
+    margin:0 auto;
 }
 .score{
     box-sizing: border-box;
     display: inline;
     margin: 25px;
+    text-align: center;
+}
 
-}
-.skills-box li{
-    margin:15px;
-}
 
