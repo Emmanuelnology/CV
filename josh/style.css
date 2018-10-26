@@ -67,7 +67,7 @@ li a.active {
   width: 728px;
   position: relative;
   text-align: center;
-  color: rgb(245, 6, 6);
+  color: white
 }
 
 .slide-number {
@@ -87,14 +87,35 @@ li a.active {
 
 #workexp-text{
   position: absolute;
-    bottom: 8px;
-    left: 16px;
+  top: 8px;
+  left: 16px;
+}
+#skills-text{
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+#edu-text{
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+#ref-text{
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+#socials-text{
+  position: absolute;
+  top: 8px;
+  left: 16px;
 }
 
 /*end of slideshow*/
 
 .contact-icon{
   text-align: center;
+  padding-top:15px;
   }
 .contact-icon a{
   color:white;
