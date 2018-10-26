@@ -1,0 +1,38 @@
+.left, .left li, .left .example{
+    text-align: left
+}
+
+ul.left{
+    margin-left: 10px;
+    list-style: none;
+}
+
+.skill{
+    font-weight: 600;
+    padding-bottom: 10px;
+    width: 221px;
+}
+
+li i{
+    font-size: 0.8em;
+
+}
+
+li>div{
+    display: block;
+    font-weight: 100;
+    padding-left: 10px;
+    margin-top: 3px;
+    float: none;
+    text-align: inherit;
+}
+
+li>div.stars{
+    display: inline-block;
+    float: right;
+}
+
+.hidden{
+    display: none;
+}
+
