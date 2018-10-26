@@ -48,6 +48,7 @@ p{
 h3{
     font-size:1.1em;
     text-transform:capitalize;
+    margin:1em 0 0.3em 1em;
 }
 h1{
     text-align:center;
@@ -85,14 +86,17 @@ ul{
 .one-of-two-cols{
     width:48%;
     float:left;
-    height:150px;
     text-align: right;
 }
 .two-of-two-cols{
     width:48%;
     float:right;
-    height:150px;
 }
+
+.clearfix {
+    clear:both;
+}
+
 h2{
     text-align: center;
 }
