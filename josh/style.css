@@ -90,6 +90,26 @@ li a.active {
     bottom: 8px;
     left: 16px;
 }
+#skills-text{
+  position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+#edu-text{
+  position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+#ref-text{
+  position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+#socials-text{
+  position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
 
 /*end of slideshow*/
 
