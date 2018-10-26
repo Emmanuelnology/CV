@@ -18,15 +18,17 @@
     }
     nav {
         background-color:lightgrey;
-        width:35%;
-        height: 100%;
+        width:34%;
+        height: 100vh;
+        margin-right: 1%;  
+        display: none;     
     }
     main {
         width:65%;
         height:100vh;
         background-color:white;
     }
-    h1{
+     h1{
         font-family: 'Fauna One', serif;
         text-align: center;
         font-size: 35px;
@@ -36,28 +38,30 @@
         margin-top: 50px;
         
      } 
-     h2{
+     header {
+        margin-top:50px;
+    }
+    header h2{
          text-align: center;
          font-family: 'Fauna One', serif;
          font-size: 20px;
          color: #d91a1a;
          margin:0;
      }
-     h3{
+    header h3{
          text-align: center;
          margin-top: 5px;
          margin-bottom: 50px;
          font-family: 'Fauna One', serif;
          font-size: 15px;
      }
+     .fa-heart{
+         color: #d91a1a;
+     }
      ul{
         list-style-type: none;
         margin:0 auto;
 
-     }
-
-     header {
-         margin-top:50px;
      }
         
     .info{
@@ -69,6 +73,7 @@
     a:hover{
         background-color: darkgrey;
         border-radius: 5px;
+        padding: 6px;
 
     }
 
@@ -84,21 +89,60 @@
         text-align: center;
         
     }
-    .work h1 {
-        margin-top: 100px;
-    }
     .career{
-        text-align: center;
+       color: red;
     }
-
     footer{
         font-size: small;
         text-align: center;
     }
 
     .copyright{
-        height:2px
+        height:2px;
     }
+
+
+    .skills-panel h2{
+        text-transform: uppercase;
+        margin-top: 5px;
+    }
+    .skills-panel ul{
+        padding: 0;
+    }
+
+    .skills-panel li{
+        border-color: black;
+        border-width: 2px;
+        border-bottom-style: dotted;
+        padding: 5px;
+        
+    }
+
+    .skills-panel .score{
+        display: inline;
+        float: right;
+    }
+    .skills-panel{
+        color: rgb(114, 105, 101);
+    }
+    .skills-panel li:first-child{
+        border-top-style: dotted;
+    }
+
+    .skills-panel .score div{
+        height: 1em;
+        width: 1em;
+        background-color: transparent;
+        display: inline-block;
+        border-radius: 50%;
+        border: 1px solid black;
+    }
+    .skills-panel .score .solid{
+        background-color: black;
+
+    }
+
+        
     
     
     
