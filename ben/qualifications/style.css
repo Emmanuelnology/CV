@@ -5,3 +5,12 @@ ul{
 article {
     margin: 15px;
 }
+
+.inline-list{
+    display: inline;
+}
+
+#modules{
+    list-style: disc;
+    width: 200px;
+}
