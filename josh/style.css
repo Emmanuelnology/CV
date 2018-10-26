@@ -1,7 +1,7 @@
 body{
- background:#645754 url(footer_lodyas.png) top left repeat;
- font-family: 'Montserrat', sans-serif;
- color:white;
+  background:#645754 url(footer_lodyas.png) top left repeat;
+  font-family: 'Montserrat', sans-serif;
+  color:white;
 }
 h1{
   text-align:center;
@@ -14,7 +14,7 @@ h1{
 .logo{
   height:200px;
   margin:0 0 30px 0;
-  }
+}
 nav{
   position: sticky;
   top: 0;
@@ -27,7 +27,7 @@ nav ul {
   overflow: hidden;
   background-color: #ffffff;
   display:inline-block;
-  }
+}
 nav li {
   float:left;
 }
@@ -37,7 +37,7 @@ nav li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  }
+}
 li a:hover:not(.active) {
   background-color: #ddd;
 }
@@ -65,7 +65,7 @@ li a.active {
   float: left;
   height: 510px;
   width: 728px;
-  position: relative;
+  
   text-align: center;
   color: white
 }
@@ -116,7 +116,7 @@ li a.active {
 .contact-icon{
   text-align: center;
   padding-top:15px;
-  }
+}
 .contact-icon a{
   color:white;
 }
@@ -138,15 +138,15 @@ form div{
 .socials i{
   font-size:100px;
   text-align:center;
-  }
+}
 .socials-link{
   margin:0 auto;
   width:85%;
   text-align:center ;
 }
 .fa-facebook{
-    color:#3B5998;
-    padding:50px;
+  color:#3B5998;
+  padding:50px;
 }
 .fa-twitter{
   color:#00aced;
@@ -154,8 +154,8 @@ form div{
 }
 
 .fa-envelope{
-    color:#ffffff;
-    padding:50px;
+  color:#ffffff;
+  padding:50px;
 }
 .fa-spotify{
   color: #1ed760;
@@ -164,9 +164,9 @@ form div{
 .fa-instagram{
   /*color:#7232bd;*/
   background: -webkit-gradient(linear, left top, left bottom, from(#7232bd), to(#ffdc7d));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    display: initial;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: initial;
   padding:50px;
 }
 .footer{
