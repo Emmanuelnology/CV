@@ -1,140 +1,173 @@
-/* home link styles 
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
 
-position: fixed;
-bottom: 15px; */
+nav {
+    background-color: #2929a3;
+    color: white;
+    text-transform: uppercase;
+    padding: 1.25em;
+}
 
-/*background image styles*/
+#title {
+    margin-right: 3em;
+}
 
-/* background-image: url(b-ink.jpg);
-background-size: contain;
-background-repeat: no-repeat;
-background-position: right; */
+.bold {
+    font-weight: bold;
+}
 
+nav>* {
+    display: inline;
+}
+  
+nav>ul {
+    list-style: none;
+    font-size: 0.75em;
+    margin-right: 0.25em;
+}
 
-*{
-    box-sizing: border-box;
+nav li {
+    margin: 0.5em;
+    margin-top: 0;
+    float: right;
+}
+
+nav a {
+    color: inherit;
+    padding: 0.25em;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #2929a3;
+    border-radius: 2px;
+    font-weight: bold;
+}
+
+main {
+    background-color: #ffffff;
+}
+
+body {
+    font-family:sans-serif;
+    font-size: 20px;
+}
+
+a {
+    display: block;
+}
+
+#aboutwrap{
+    width: 30%;
+    float: left;
+}
+
+.aboutme h2{
+    border-radius: 0 5px 5px 0;
+}
+
+h2 {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    padding: 0.15em;
+    padding-left: 1em;
+    background-color: #2929a3;
+    color: #FFF;
+    font-size: 1.25em;
+    border-radius: 5px 0 0 5px;
+}
+
+.rounded-right {
+    border-radius: 0 15px 15px 0;
+}
+
+.idden{
+    border-radius: 15px 0 0 15px;
+}
+
+.aboutme p {
+    width: 100%;
+    text-align: justify;
+    float: left;
+}
+
+/*REDUNDANT CSS USED FOR HIDDEN
+    SECTIOINS DEMO */
+
+.idden {
+    float: right;
+    text-align: center;
+    width: 65%;
+}
+
+.idden ul{
+    margin-top: 2.5em;
+}
+
+.idden li{
+    list-style: none;
+    line-height: 2em;
+}
+
+/*REDUNDANT CSS USED FOR HIDDEN
+    SECTIOINS DEMO */
+
+.hidden {
+    float: right;
+    text-align: center;
+    width: 65%;
+}
+
+.hidden ul{
+    margin-top: 2.5em;
+}
+
+.hidden li{
+    list-style: none;
+    line-height: 2em;
+}
+
+#linkedin-icon{
+    font-size: 3em;
     margin: 0;
     padding: 0;
 }
 
-body{
-    text-align: justify;
-    background-color: white;
-    color: rgb(2, 124, 249);
-}
-
- h1{
-    font-family: sans-serif;
-    font-size: 50px;
-    text-decoration: underline;
-    color: #fff;
-    background-color: rgb(2, 124, 249);
-    width: 100%; 
-    height: 65px;
-    text-align: left;
-    border-radius: 10px;
-    margin: 10px;
-    padding-left: 0.25em;
- }
-
- .navbnnr{
-    background-color: rgb(2, 124, 249);
-    border-radius: 10px;
-    padding: 15 0 10 0px;
-    margin: 10px;
-    margin-bottom: 0px;
-    height: 1.5em;
-}
-
-#navbttns li{
-    display: inline-block;
-    background-color: rgb(2, 124, 249);
-    text-align: center;
-    text-decoration: none;
-    padding-left: 1em;
-    padding-top: 0.2em;
-    border-radius: 10px;
-}
-
-a{
-    text-decoration: none;
-    color: inherit;
-    height: 1.5em;
-    width: 100%;
-}
-
-button{
-    color: #FFF;
-    background-color: rgb(2, 124, 249);
-    border: none;
-    font-size: 15px;
-    text-decoration: none;
-    padding: 0 1 0 1em;
-}
-
-button:hover{
-    background: white;
-    color: rgb(2, 124, 249);
-    cursor: pointer;
-    border-radius: 10px;
-}
-
- .aboutme{
-    font-size: 20px;
-    width: 25%;
-    height: 40%;
-    float: left;
-    margin: 10px;
-    margin-bottom: 25px;
- }
-
- h2{
-    color: #fff;
-    background-color: rgb(2, 124, 249);
-    width: 100%; 
-    height: 50px;
-    text-align: left;
-    border-radius: 10px;
-    font-size: 40px;
-    margin-bottom: 15px;
-    padding-left: 15px;
- }
-
-#aboutme-content{
-    padding-left: 0.3em;
-    padding-right: 0.3em;
-}
-
- .contact{
-    clear: left;
-    width: 25%;
-    margin: 10px;
+.hidden {
     display: none;
- }
-
-#infolist{
-    padding-left: 0.25em;
-    padding-right: 0.25em;
 }
 
- .contact>ul{
-    padding-left: none;
-    line-height: 1.5em;
- }
-
-ul {
-    list-style-type: none;
-    margin: none;
-    padding: none;
+#skills-panel{
+    text-align: left;
+    width: 40%;
+    float: left;
 }
 
-.lnkdinicon{
-    font-size: 5em;
+#panel-header{
+    border-bottom: 2px dotted black;
 }
 
-#hmelnk button{
-    width: 100%;
-    border-radius: 10px;
-    padding: 5px;
-    margin: 10px;
+#skills-panel ul{
+    padding: 0.5em;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#skills-panel li{
+    border-bottom: 2px dotted black;
+    text-align: left;
+}
+
+.score{
+    float: right;
+}
+
+.score div{
+    display: inline-block;
+    padding: 0;
+    margin:0;
 }

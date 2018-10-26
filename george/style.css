@@ -4,7 +4,7 @@
 
 body{
     margin: 0;
-    background-color:#42e8f4;
+    background-color:white;
 }
 
 nav{
@@ -14,13 +14,13 @@ nav{
 
 nav li{
     display: inline;
-    padding: 10px;
     text-transform: uppercase;
     
 }
 
 nav ul, nav li{
     padding: 10px;
+    margin: 0;
 }
 
 nav a:hover{
@@ -45,7 +45,7 @@ h2{
     text-align: center;
     padding: 10px;
     color: white;
-    background-color:#1d6ae5;
+    background-color:black;
 }
 
 input, select{
@@ -93,7 +93,7 @@ input[type=submit] {
     }
 }
 
-.bgimg-1, .bgimg-2, .bgimg-3 {
+.bgimg-1 {
     position: relative;
     background-attachment: fixed;
     background-position: center;
@@ -104,13 +104,13 @@ input[type=submit] {
 
 @media (min-width: 601px) {
     .bgimg-1 {
-        background-image: url("David\ Cameron.jpg");
+        background-image: url("img/me/image.png");
     }
     #form{
         margin: auto;
         width: 50%;
     }
-    .caption span.border, .scroll span.border {
+    .caption span.border, .scroll-down span.border {
         padding: 18px;
         font-size: 15px;
         letter-spacing: 10px;
@@ -125,7 +125,7 @@ input[type=submit] {
         margin: auto;
         width: 80%;
     }
-    .caption span.border, .scroll span.border {
+    .caption span.border, .scroll-down span.border {
         padding: 10px;
         font-size: 13px;
         letter-spacing: 8px;
@@ -141,14 +141,14 @@ input[type=submit] {
   color: #000;
 }
 
-.caption span.border, .scroll span.border {
+.caption span.border, .scroll-down span.border {
     background-color: rgb(71, 71, 71);
     color: #fff;
 }
 
 
 
-.scroll {
+.scroll-down {
     position: absolute;
     left: 0;
     top: 80%;
@@ -156,3 +156,120 @@ input[type=submit] {
     text-align: center;
     color:white;
   }
+
+/*Sizing and logos for education row*/
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .flex-container > div {
+    background-color: #1d6ae5;
+    height: 300px;
+    width:auto;
+    text-align: center;
+    line-height: 75px;
+    margin:10px;
+    
+}
+.flex-container p {
+    padding: 0px 10px 10px 10px;
+    font-size: 20px;
+    color: white;
+}
+
+.logo{
+    height: 80%;
+    width: 100%;
+    margin: 0px;
+    background-size: cover;
+    background-position: center;
+}
+#nology{
+    background-image: url("img/logos/nology-logo.jpg");
+}
+
+.lancaster{
+    background-image: url("img/logos/lancaster-university-logo.png");
+}
+
+.somerset-college{
+    background-image: url("img/logos/somerset.jpg");
+}
+
+#huish{
+    background-image: url("img/logos/huish.png");
+}
+
+#castle{
+    background-image: url("img/logos/castle-school-logo.png");
+}
+
+
+#nationwide{
+    background-image: url("img/logos/Nationwide-Logo.jpg");
+}
+
+.ncs{
+    background-image: url("img/logos/NCS-Logo.png");
+}
+
+.handco{
+    background-image: url("img/logos/handco.png");
+}
+
+#willow-tree{
+    background-image: url("img/logos/Willow-tree-logo.png");
+}
+
+#primark{
+    background-image: url("img/logos/primark_logo.png");
+}
+
+#poundstretcher{
+    background-image: url("img/logos/poundstretcher-logo.jpg");
+}
+
+.cartmel{
+    background-image: url("img/logos/cartmelCollege.png");
+}
+
+#enactus{
+    background-image: url("img/logos/Enactus-Logo.jpg");
+}
+
+.model-westminster{
+    background-image: url("img/logos/model-westminster.jpg");
+}
+
+.cabinet-office{
+    background-image: url("img/logos/cabinet-office-logo.jpg");
+}
+
+#bhf{
+    background-image: url("img/logos/bhf.PNG");
+}
+
+#graduate{
+    background-image: url("img/me/graduate.jpg");
+}
+
+#escape{
+    background-image: url("img/logos/escape-logo.jpg");
+}
+
+#downing-street{
+    background-image: url("img/me/10DS.jpg");
+}
+
+#appg{
+    background-image: url("img/me/appg.jpg");
+}
+
+#jeremy{
+    background-image: url("img/me/jeremy.jpg");
+}
+
+#david{
+    background-image: url("img/me/David-Cameron.jpg");
+}

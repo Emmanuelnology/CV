@@ -1,12 +1,26 @@
-#container-1{
+#qual-box{
     box-sizing: border-box;
     width: 50%;
-    height: 100%;
+    height: 50%;
     float:right;
 }
-#container-2{
+#ed-box{
     box-sizing: border-box;
     width: 50%;
-    height: 100%;
+    height: 50%;
     float:right;
+}
+
+#pro-box{
+    box-sizing: border-box;
+    width: 50%;
+    height: 50%;
+    float:left;
+}
+
+#spare{
+    box-sizing: border-box;
+    width: 50%;
+    height: 50%;
+    float:left;
 }
