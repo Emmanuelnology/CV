@@ -8,9 +8,10 @@ ul.left{
 }
 
 .skill{
+    font-size: 18px;
     font-weight: 600;
     padding-bottom: 10px;
-    width: 221px;
+    width: 240px;
 }
 
 li i{
@@ -19,16 +20,18 @@ li i{
 }
 
 li>div{
+    font-size: 16px;
     display: block;
     font-weight: 100;
-    padding-left: 10px;
+    padding: 0px 10px;
     margin-top: 3px;
     float: none;
-    text-align: inherit;
+    text-align: justify;
 }
 
 li>div.stars{
     display: inline-block;
+    padding: 0;
     float: right;
 }
 
