@@ -1,17 +1,21 @@
-*{
-    box-sizing: border-box;
-    padding: 0.2em 1.2em;
-    margin: 0.5em
-}
 body{
     color:white;
     font-family:Ubuntu;
-    font-size:15px;
+    font-size:13px;
     text-align: center;
-    border: 1px white;
+    border: 12px red;
     background-image:url('folk-pattern.png') ;
     background-position: bottom;
     background-attachment: fixed;
+    padding: 0% 2%;
+    margin: 0% 7%;
+}
+div.content{
+    background-color: rgb(34, 31, 31);
+    padding: 0.5em;
+    border: black solid 1px;
+    padding: 1% 5%;
+    margin: 2% 0%;
 }
 h1{
     color: #516f92;
@@ -20,30 +24,39 @@ h1{
 }
 h2{
     color: #516f92;
-    font-size: 2.5em;
+    font-size: 2.3em;
+}
+p{
+    text-indent:2px;
+    font-size:1em;
+    text-align: center;
+}
+/*nav bar*/
+nav > * {
+    display: inline-block;
 }
 nav {
     background-color: #516f92;
     position: sticky;
-    top: 0;
+    top: 2%;
     text-transform: initial;
-    padding: 1em;
+    padding: 0.4em;
 }
 nav ul{
     list-style-type:none;
-    padding:0;
-    margin:0;
+    margin: 0 auto;
+    padding: 0;
 }
 nav li {
     display: inline;
-    padding: 0 0.5em;
-    float: none;
+    padding: 0;
 }
 nav li a{
     display: inline;
     padding: 6px 10px;
     text-decoration: none;
     color: #fff;
+    border-radius: 1px;
 }
 li a.selected{
     color: #fff;
@@ -51,17 +64,14 @@ li a.selected{
 }
 nav a:hover{
     background-color: rgb(49, 48, 48);
-    border-radius: 2.5px;
 }
-nav > * {
-    display: inline;
-}
-p{
-    text-indent:2px;
-    font-size:1em;
+/*main*/
+main {    
+    padding: 0% 0%;
+    margin: 0% 0%; 
 }
 .content{
-    text-align: none;
+    text-align: left;
     color: white;   
     font-size: 1em;
 }
@@ -69,10 +79,31 @@ li{
     list-style-type: none;
 }
 img{
-    position: left;
-    width: 20%;
+    float: right;
+    width: 30%;
+    margin-right: 100px;
     height: auto;
 }
-address{
-    white-space: pre
+#contactinfo li{
+    font-size:17px;
+    margin-left: 50px
+}
+#contactinfo div{
+    font-size:13px;
+}
+#socialmedia i{
+    text-decoration: none;
+    margin:0 auto;
+    padding: 0em;
+    font-size: 2.5em;
+    display:inline;
+}
+#linkedin{
+    color:rgb(0, 119, 181);
+}
+#twitter{
+    color:rgb(0,172, 237);
+}
+#facebook{
+    color:rgb(72, 103, 170);
 }
