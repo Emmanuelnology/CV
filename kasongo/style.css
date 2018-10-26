@@ -31,13 +31,19 @@ nav li a {
 nav li a:hover {
     background-color: lightblue;
 }
-nav .active {
-    background-color: #4CAF50;
+nav{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+#kasface{
+    padding-right: 8em;
+    padding-top: 3em;
 }
 .social {
     margin-left: 2em;
     border:0;
-    width: 5px;
+    width: 3px;
 }
 h1 {
     text-align: center;
@@ -48,17 +54,25 @@ input {
 }
 .name {
     width: 17em;
+    margin: 0;
 }
-.comment {
+textarea {
     height: 10em;
     width:25em;
+    margin-left:0;
+    padding: 0;
+    background-color: lightgrey;
+}
+.envoyer{
+    margin-top: 4px;
+    background-color:lightblue;
 }
 .emailad{
     list-style-type: none;
     padding-top: 2em;
-    padding-bottom: 2em;
-    padding-left: 0;
-    margin-left: 0;
+    padding-bottom: 0.5em;
+    padding-left:0;
+    margin-left:0;
 }
 .copyright{
     font-size: 0.8em;

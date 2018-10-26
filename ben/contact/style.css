@@ -1,61 +1,5 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    text-align: center;
-}
-
-
-body{
-    background-color: #eaeaff;
-    font-family: Arial, Helvetica, sans-serif;
-    color: darkslateblue;
-    /*background-image: url('bg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    min-height: 95vh;
-    min-width: 95vw;*/
-}
-
-.button{
-    background-color: slateblue;
-    color: #eaeaff;
-    border: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    width: 120px;
-    border-radius: 15px;
-    padding: 5px 15px;
-    margin: 5px;
-}
-
-header>a{
-    background-color: slateblue;
-    color: #eaeaff;
-    border: none;
-    display: inline-block;
-    font-size: 36px;
-    cursor: pointer;
-    border-radius: 30px;
-    padding: 10px 25px;
-    margin: 10px 0px;
-    width: 90%;
-}
-
-#contact{
-    background-color: darkslateblue;
-}
-
-#message-me{ 
-    font-size: 18px;
-    border-radius: 20px;
-    padding: 7px 17px;
-    margin: 10px;
-    width: 200px;
+a{
+    color: inherit;
 }
 
 ul{
@@ -66,12 +10,16 @@ li{
     padding: 2px;
 }
 
-h1{
-    font-size: 72px;
-}
-
-h2{
-    font-size: 36px;
+.button{
+    background-color: slateblue;
+    color: #eaeaff;
+    border: none;
+    display: inline-block;
+    font-size: 18px;
+    border-radius: 20px;
+    padding: 7px 17px;
+    margin: 10px;
+    width: 205px;
 }
 
 .capital{
@@ -85,46 +33,19 @@ h2{
 }
 
 main>section{
-    margin: 5px;
+    margin: 15px;
     }
 
 article{
     display: inline;
 }
 
-.button:hover, header>a:hover, nav li:hover {
+.button:hover{
     opacity: 0.8;
     color: white;
     cursor: pointer;
 }
 
-nav {
-    background-color: #eaeaff;
-}
-
-nav ul{
-    list-style: none;
-    display:flex;
-}
-
-nav li{
-    background-color: slateblue;
-    flex:1;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.3em;
-}
-
-nav a {
-    color: #eaeaff;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#darker{
-    background-color: darkslateblue;
+address{
+    font-style: unset;
 }
