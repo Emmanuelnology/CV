@@ -30,21 +30,19 @@ span p{
   text-align: center;
 }
 
-/* .fa{
-  color:white;
-  font-size:30px;
-  text-align: center;
-} */
 .fa-linkedin{
   color: rgb(2,116,179);
 }
+
 .fa-at{
   font-weight: bold;
   color: white;
 }
+
 .fa-twitter{
   color: rgb(0,172,237);
 }
-#experience, #about{
+
+#experience, #about, #aca, #work{
   padding-top: 40px;
 }
