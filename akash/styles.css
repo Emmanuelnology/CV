@@ -14,13 +14,23 @@
     }
     body { background-image: url('https://image.freepik.com/foto-gratis/papel-color-abstracto-fondo-papel-pastel-colorido-creativo_6529-179.jpg');
         background-attachment: fixed;
-        background-repeat: repeat;
+        background-repeat: no-repeat;
         background-size: cover;
         color: rgb(4, 29, 66);
         font-family:'Barlow';
         margin: 0;
-        
     }
+    nav{
+         background-color:rgb(87, 179, 255);
+            color:white;
+            text-transform: uppercase;
+            padding: 1em;
+            position: sticky;
+            top: 0;
+           
+            
+        }
+
     h2{
         text-align: center;
     }
@@ -31,17 +41,6 @@
         color:inherit;
     }
     
-    
-    nav{
-        background-color:rgb(165, 204, 237);
-        color:white;
-        text-transform: uppercase;
-        padding: 1em;
-        position: sticky;
-        top: 0;
-        opacity: 1;
-        
-    }
     nav li{
         
         display: inline;
@@ -52,7 +51,7 @@
         background-color: #aba8ff;
         border-radius: 2px;
         color: black;
-        transform: scale(1.5);
+       
     }
     
     
@@ -73,24 +72,11 @@
         margin-right: 2em;
     }
     
-    .bold {
-        font-size: 360px;
-    }
-    
-    main{
-    }
-
-    .box{
-        width: 100px;
-        height:100px;
-        background-color: red;
-    }
-    
     main>div{
-    width: 47%;
+    width: 50%;
     border: 3px solid rgb(156, 131, 216);
     float:left;
-    padding: 20px;
+    padding: 17px;
     margin:1.5%;
     background-color: white;
 
@@ -105,11 +91,12 @@
     }
     @keyframes crown-move {
         0%   {color:white; left:0px; top:0px}
-        100% {color:yellow; left:0px; top:100%}
+        50% {color:rgb(255, 255, 0); left:0px; top:100%}
+        100%{color: white;}
     }
    
     #work-section{
-        border-color: rgb(230, 155, 202)
+        border-color: rgb(230, 155, 202);
     }
     .color-change{
         animation-name: color-wheel;
@@ -119,13 +106,28 @@
     }
 
     @keyframes color-wheel{
-        0%   {color:red;}
-        25%  {color:yellow;}
-        50%  {color:blue;}
-        75%  {color:green;}
-        100% {color:red;}
-
+        0%   {color:white;}
+        25%  {color:rgb(204, 0, 255);}
+        50%  {color:rgb(76, 0, 255);}
+        75%  {color:rgb(38, 0, 255);}
+        100% {color:white;}
     }
+
+    .name{
+        animation-name: color-wheel;
+        animation-duration: 10s;
+        animation-iteration-count: infinite; 
+        font-size: 30px;
+    }
+
+    @keyframes name{
+        0%   {color:white;}
+        25%  {color:rgb(204, 0, 255);}
+        50%  {color:rgb(76, 0, 255);}
+        75%  {color:rgb(38, 0, 255);}
+        100% {color:white;}
+
+    } 
 
 
     
