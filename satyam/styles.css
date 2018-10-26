@@ -18,6 +18,10 @@ h1{
     font-size: 4em;
     font-family: Josefin Sans;
 }
+h2{
+    color: #516f92;
+    font-size: 2.5em;
+}
 nav {
     background-color: #516f92;
     position: sticky;
@@ -56,15 +60,19 @@ p{
     text-indent:2px;
     font-size:1em;
 }
-#aboutme{
-text-align: center;
-color: white;
+.content{
+    text-align: none;
+    color: white;   
+    font-size: 1em;
 }
-#contactdetails{
-text-align: left;
+li{
+    list-style-type: none;
 }
 img{
     position: left;
     width: 20%;
     height: auto;
+}
+address{
+    white-space: pre
 }
