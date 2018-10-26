@@ -9,7 +9,7 @@
 </head>
 <body>
     <main> 
-        <header id="logo">
+        <header class="header-logo">
             <div class="logo">
                 <img src="logo.png" alt="Josh's logo">
             </div>     
@@ -19,72 +19,90 @@
         <!--Nav bar-->
         <nav> 
             <div>   
-            <ul>
-                <li><a class="active" href="/">Home</a></li>
-                <li><a href="#aboutme">About Me</a></li>
-                <li><a href="#workexperience">Work Experience</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#qualifications">Qualifications</a></li>
-                <li><a href="#references">References</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+                <ul>
+                    <li><a class="active" href="/">Home</a></li>
+                    <li><a href="#aboutme">About Me</a></li>
+                    <li><a href="#workexperience">Work Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#references">References</a></li>
+                    <li><a href="#contact-about">Contact</a></li>
+                </ul>
             </div>
         </nav>      
         
         <!-- About me-->
         <h2>About Me</h2>
-        <p>Under Construction</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus eget nunc scelerisque viverra mauris. Et odio pellentesque diam volutpat commodo sed egestas egestas fringilla. At varius vel pharetra vel turpis nunc eget lorem. Sit amet dictum sit amet justo donec enim diam vulputate.</p>
         
         <!--image carousel-->
+        <div class="image-carousel">
+            
+        </div>
+        
+        <div id="slideshow">
+            <div class="slide-wrapper">
+                <div class="slide">
+                    <a href="#work-experience"><img class="slide-number" src="laptop.jpg" alt="laptop"> <div id="workexp-text">TEXT</div></a>
+                </div>
+                <div class="slide">
+                    <a href="#skills"><img class="slide-number" src="skills.jpg" alt="code image">2</a>
+                </div>
+                <div class="slide">
+                    <a href="#education"><img class="slide-number" src="education.jpg" alt="books">3</a>
+                </div>
+                <div class="slide">
+                    <a href="#references"><img class="slide-number" src="reference.jpg" alt="people">4</a>
+                </div>
+                <div class="slide">
+                    <img class="slide-number" src="socialmedia.jpg" alt="social media">5
+                </div>
+            </div>
+        </div>
+        
         
         <!-- Work Experience-->
-        <h2>Work Experience</h2>
-        <p>Under Construction</p>
+        <div id="work-experience">
+            <h2>Work Experience</h2>
+            <p>Ullamcorper eget nulla facilisi etiam dignissim. Vitae suscipit tellus mauris a diam maecenas sed. Tellus id interdum velit laoreet id donec ultrices tincidunt. Ac orci phasellus egestas tellus rutrum. Imperdiet proin fermentum leo vel orci porta non. Justo laoreet sit amet cursus. Nunc vel risus commodo viverra maecenas accumsan lacus. Commodo elit at imperdiet dui accumsan sit amet nulla. Tellus in hac habitasse platea dictumst vestibulum rhoncus est. Tempor commodo ullamcorper a lacus vestibulum. Amet mattis vulputate enim nulla aliquet porttitor lacus luctus. Commodo ullamcorper a lacus vestibulum. Egestas sed sed risus pretium quam vulputate dignissim suspendisse in. Augue lacus viverra vitae congue eu consequat ac felis donec. Est lorem ipsum dolor sit amet consectetur adipiscing.</p>
+        </div>
         
         <!-- Skills-->
         <div id="skills">
-        <h2>Skills</h2>
-        <p>Under Construction</p>
+            <h2>Skills</h2>
+            <p>Ut eu sem integer vitae. Gravida quis blandit turpis cursus in hac. Viverra justo nec ultrices dui. Nibh sit amet commodo nulla facilisi nullam. Purus faucibus ornare suspendisse sed nisi. Malesuada fames ac turpis egestas integer. Turpis egestas sed tempus urna et pharetra pharetra. Vitae congue mauris rhoncus aenean vel elit scelerisque mauris. Leo vel fringilla est ullamcorper. Arcu dui vivamus arcu felis bibendum ut tristique et egestas. Massa placerat duis ultricies lacus sed turpis tincidunt. Quam lacus suspendisse faucibus interdum posuere lorem. Morbi quis commodo odio aenean sed adipiscing diam. Augue lacus viverra vitae congue eu consequat. Vel quam elementum pulvinar etiam non. Viverra maecenas accumsan lacus vel facilisis volutpat est. Curabitur gravida arcu ac tortor dignissim convallis aenean.</p>
         </div>
         
         <!-- Qualifications-->
-        <h2>Qualifications</h2>
-        <p>Under Construction</p>
+        <div id="education">
+            <h2>Qualifications</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
         
         <!--references-->
+        <div id="references">
+            <h2>References</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        
         
         <!-- Contact Me-->
         <h2>Contact Me</h2>
-        <div class="contact-about">
+        <div id="contact-about">
             <p>Hi, I've created this section so that you can contact me.</p>
-            <p>Below, i've set up a form where you can send me anything you like... but if that's not your thing, then you can contact me by:</p>
+            <p>Below i've got my social media, so feel free to connect with me... but if that's not your thing, then you can contact me by:</p>
             <div class="contact-icon">
-                <i class="fas fa-mobile-alt"></i><p>07788263665</p>
-                <i class="fas fa-at"></i><p>joshbc14@gmail.com</p>
+                <i class="fas fa-mobile-alt"></i><a href="tel:07788263665"><p>07788263665</p></a>
+                <i class="fas fa-at"></i><a href="mailto:joshbc14@gmail.com?subject=Hi%20Josh&amp;body=Hi%20Josh,%0D%0AHow%20are%20you?"><p>joshbc14@gmail.com</p></a>
                 <i class="fas fa-home"></i><p>30 Belfast Mead, Lyneham, Wilts, SN154AQ</p>
             </div>
-        </div>
-        <hr>   
-        <div class="contact-form">  
-            <p>Hi, I've created this section so that you can contact me.</p>
-            <p>Please feel free to leave me an <a href="mailto:joshbc14@gmail.com">email.</a></p>
-            <form>
-                <p>First name:</p>
-                <input type="text" name="firstname">
-                <p>Last name:</p>
-                <input type="text" name="lastname">
-                <p>Leave a message:</p>
-                <textarea id="contact-message"></textarea>
-                <input type="submit" value="Submit">
-            </form>
-        </div>
-        <hr>
+        </div>        
         <div class="socials">
             <div class="socials-link">
-                <a href="#"></a><i class="fab fa-facebook"></i>
-                <a href="#"></a><i class="fab fa-twitter"></i>
+                <a href="http://facebook.com/josh.boyd-cox"><i class="fab fa-facebook"></i></a>
+                <a href="http://twitter.com/j0shbc"><i class="fab fa-twitter"></i></a>
                 <a href="mailto:joshbc14@gmail.com"><i class="fas fa-envelope"></i></a>
-                <a href="#"></a><i class="fab fa-instagram"></i>
+                <a href="http://instagram.com/jtothebc"><i class="fab fa-instagram"></i></a>
                 <a href="#"></a><i class="fab fa-spotify"></i>
             </div>        
         </div>

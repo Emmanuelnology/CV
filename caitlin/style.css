@@ -3,12 +3,37 @@ main>section{
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding:20px;
 }
-
+body{
+    margin:0;
+    background-color: beige;
+} 
+h3{
+    font-size:1.1em;
+    text-transform:capitalize;
+    margin:1em 0 0.3em 0em;
+}
+h2{
+    text-align: center;
+}
+h1{
+    text-align:center;
+}
+p{
+    font-style:normal;
+    color:#525151
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    text-decoration: none;
+}
 .top-panel{
     background-color: rgb(9, 139, 133);
     border: none;
     color: white;
     text-align: center;
+    margin:15px;
+    border-radius: 10px;
 }
 
 nav>a{
@@ -41,40 +66,42 @@ nav>a:hover {
     font-style: italic;
 }
 
-p{
-    font-style:normal;
-    color:#525151
-}
-h3{
-    font-size:1.1em;
-    text-transform:capitalize;
-}
-h1{
-    text-align:center;
-}
-body{
-    background-color: beige;
-    margin:0;
-    background-size: cover;
-} 
-#contact-me ul{
-    list-style-type: none;
-    padding: 0;
-    text-decoration: none;
-}
 #contact-me li{
     margin:20px;
     text-decoration: none;
+    text-align: center;
 }
-#contact-me{
+a{
     text-decoration: none;
+    color: inherit
 }
 .contact-links:hover{
     opacity:0.5;
     cursor: pointer;
 }
-#work-experience{
+.bgcgrey{
     background-color: lightgray;
+}
+.bgcbeige{
+    background-color: beige;
+}
+.container {
+    width: 60%;
+    margin: auto;
+    height: auto;
+}
+.one-of-two-cols{
+    width:48%;
+    float:left;
+    text-align: right;
+}
+.two-of-two-cols{
+    width:48%;
+    float:right;
+}
+
+.clearfix {
+    clear:both;
 }
 
 
