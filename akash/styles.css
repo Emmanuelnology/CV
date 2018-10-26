@@ -105,11 +105,12 @@
     }
     @keyframes crown-move {
         0%   {color:white; left:0px; top:0px}
-        100% {color:yellow; left:0px; top:100%}
+        50% {color:yellow; left:0px; top:100%}
+        100%{color: white;}
     }
    
     #work-section{
-        border-color: rgb(230, 155, 202)
+        border-color: rgb(230, 155, 202);
     }
     .color-change{
         animation-name: color-wheel;
@@ -119,13 +120,29 @@
     }
 
     @keyframes color-wheel{
-        0%   {color:red;}
-        25%  {color:yellow;}
-        50%  {color:blue;}
-        75%  {color:green;}
-        100% {color:red;}
+        0%   {color:white;}
+        25%  {color:rgb(255, 97, 197);}
+        50%  {color:rgb(135, 83, 255);}
+        75%  {color:rgb(42, 159, 255);}
+        100% {color:white;}
 
     }
+
+    .name{
+        animation-name: color-wheel;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        font-size: 30px;
+    }
+
+    @keyframes name{
+        0%   {color:white;}
+        25%  {color:rgb(255, 97, 197);}
+        50%  {color:rgb(135, 83, 255);}
+        75%  {color:rgb(42, 159, 255);}
+        100% {color:white;}
+
+    } 
 
 
     

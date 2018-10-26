@@ -12,6 +12,26 @@ body{
     color: darkslateblue;
 }
 
+h1{
+    font-size: 54px;
+    margin: 10px;
+}
+
+h2{
+    font-size: 30px;
+    margin: 7px;
+}
+
+h3{
+    font-size: 20px;
+    margin: 4px;
+}
+
+.date{
+    font-size: 16px;
+    font-style: italic;
+}
+
 nav {
     background-color: #eaeaff;
 }

@@ -22,14 +22,6 @@ li{
     width: 205px;
 }
 
-h1{
-    font-size: 72px;
-}
-
-h2{
-    font-size: 36px;
-}
-
 .capital{
     text-transform: capitalize;
 }
@@ -52,4 +44,8 @@ article{
     opacity: 0.8;
     color: white;
     cursor: pointer;
+}
+
+address{
+    font-style: unset;
 }
