@@ -1,72 +1,148 @@
-  
+    * {
+        box-sizing: border-box;
+    }
     ul.square {
         list-style-type: square;
-        }
-        ul.none {
+    }
+    ul.none {
         list-style-type: none;
-        }
-       
+    }
     
-        .underline{
-            text-decoration:none;
-        }
-    body { background-image: url('https://wallpapercave.com/wp/Q1cr1tZ.jpg');
+    
+    .underline{
+        text-decoration:none;
+    }
+    body { background-image: url('https://image.freepik.com/foto-gratis/papel-color-abstracto-fondo-papel-pastel-colorido-creativo_6529-179.jpg');
         background-attachment: fixed;
-        background-repeat: no-repeat;
+        background-repeat: repeat;
         background-size: cover;
         color: rgb(4, 29, 66);
         font-family:'Barlow';
-
+        margin: 0;
+        
     }
     h2{
         text-align: center;
     }
-
-
-nav a{
-  text-decoration: none;
-  color:inherit;
-}
-
-body{
-
-margin: 0;
-}
-
-nav{
-    background-color: #77dfff;
-    color:white;
-    text-transform: uppercase;
-    padding: 1em;
     
-}
-nav li{
     
-    display: inline;
-    margin: 0 0.5em;
-}
+    nav a{
+        text-decoration: none;
+        color:inherit;
+    }
+    
+    
+    nav{
+        background-color:rgb(165, 204, 237);
+        color:white;
+        text-transform: uppercase;
+        padding: 1em;
+        position: sticky;
+        top: 0;
+        opacity: 1;
+        
+    }
+    nav li{
+        
+        display: inline;
+        margin: 0 0.5em;
+    }
+    
+    nav a:hover{
+        background-color: #aba8ff;
+        border-radius: 2px;
+        color: black;
+        transform: scale(1.5);
+    }
+    
+    
+    nav ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-transform: uppercase;
+        font-size: 25px;
+        float:right;
+    }
+    
+    nav > * {
+        display:inline;
+        
+    }
+    nav .brand {
+        margin-right: 2em;
+    }
+    
+    .bold {
+        font-size: 360px;
+    }
+    
+    main{
+    }
 
-nav a:hover{
-    background-color: #aba8ff;
-    border-radius: 2px;
+    .box{
+        width: 100px;
+        height:100px;
+        background-color: red;
+    }
+    
+    main>div{
+    width: 47%;
+    border: 3px solid rgb(156, 131, 216);
+    float:left;
+    padding: 20px;
+    margin:1.5%;
+    background-color: white;
+
+    }
+    .fa-crown {
+        font-size: 25px;
+        line-height: 100%;
+        animation-name: crown-move;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+
+    }
+    @keyframes crown-move {
+        0%   {color:white; left:0px; top:0px}
+        50% {color:yellow; left:0px; top:100%}
+        100%{color: white;}
+    }
+   
+    #work-section{
+        border-color: rgb(230, 155, 202);
+    }
+    .color-change{
+        animation-name: color-wheel;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+
+    }
+
+    @keyframes color-wheel{
+        0%   {color:white;}
+        25%  {color:rgb(255, 97, 197);}
+        50%  {color:rgb(135, 83, 255);}
+        75%  {color:rgb(42, 159, 255);}
+        100% {color:white;}
+
+    }
+
+    .name{
+        animation-name: color-wheel;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        font-size: 30px;
+    }
+
+    @keyframes name{
+        0%   {color:white;}
+        25%  {color:rgb(255, 97, 197);}
+        50%  {color:rgb(135, 83, 255);}
+        75%  {color:rgb(42, 159, 255);}
+        100% {color:white;}
+
+    } 
 
 
-}
-
-
-nav ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-transform: uppercase;
-    font-size: small;
-    float:right;
-}
-
-nav > * {
-  display:inline;
-
-}
-nav .brand {
-  margin-right: 2em;
-}
+    

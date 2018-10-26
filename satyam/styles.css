@@ -19,7 +19,6 @@ h1{
     font-family: Josefin Sans;
 }
 nav {
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
 }
@@ -27,19 +26,18 @@ nav ul{
     text-transform: initial;
     list-style-type:none;
     padding:0;
-    margin:0;
-    display: inline;
+    margin:0 auto;
+    display: inline-block;
 }
 nav li {
-    display:inline;
-    float:left;
+    float: left;
 }
 nav li a{
     display: inline;
-    padding: 12px;
+    padding: 8px 12px;
     text-decoration: none;
-    color: rgb(165, 200, 223);
-    background-color: none;
+    color: #000;
+    background-color: #516f92;
 }
 nav a:hover{
     background-color: rgb(24, 68, 119);
