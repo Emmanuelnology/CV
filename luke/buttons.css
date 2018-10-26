@@ -13,35 +13,33 @@ Nav ul {
 }
 
 nav ul li {
-  background-color: red;
+  background-color: rgba(2,110,131,.7);
   color: white;
   border: 0px;
   margin: auto;
   padding: 0px;
   height: 40px;
-  width: 25%;
+  width: 20%;
   float: left; 
   text-align: center;
   display: flex;
   justify-content: center;
 }
 
-nav ul a {
-  padding: 10px;
-  text-decoration: none;
-  color: inherit;
-  /* height: auto;
-  width:auto; */
-}
-
 nav ul li:hover {
-  background-color: white;
-  color: red;
+  background-color: rgba(255,255,255,.7);
+  color: rgb(2,110,131);
   cursor: pointer;
 }
 
 nav ul li:active {
-  background-color: rgb(247, 242, 242);
+  background-color: rgba(247, 242, 242, .7);
+}
+
+nav ul a {
+  padding: 10px;
+  text-decoration: none;
+  color: inherit;
 }
 
 #container {

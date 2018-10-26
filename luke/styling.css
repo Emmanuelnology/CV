@@ -3,11 +3,10 @@ body {
   text-align: justify;
   background-color: white;
   margin: 30px 30px 30px 30px;
-  background-image: url(https://bit.ly/2CGwlH5);
+  background-image: url(https://bit.ly/2RhRnjw);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /* transform: rotate(30deg); */
   color: white;
 }
 
@@ -31,18 +30,19 @@ span p{
   text-align: center;
 }
 
-/* .fa{
-  color:white;
-  font-size:30px;
-  text-align: center;
-} */
 .fa-linkedin{
   color: rgb(2,116,179);
 }
+
 .fa-at{
   font-weight: bold;
   color: white;
 }
-#experience, #about{
+
+.fa-twitter{
+  color: rgb(0,172,237);
+}
+
+#experience, #about, #aca, #work{
   padding-top: 40px;
 }
