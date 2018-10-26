@@ -5,7 +5,7 @@
 <head>
     <title>Shea Murphy</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link href="styles2.css" type="text/css" rel="stylesheet">
+    <link href="styles.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
         crossorigin="anonymous">
 </head>
@@ -19,22 +19,22 @@
                 </div>
                 <ul id="nav-links">
                     <li>
-                        <a href="#">Publications</a>
+                        <a href="#" id="pubslink">Publications</a>
                     </li>
                     <li>
-                        <a href="#">Awards</a>
+                        <a href="#" id="awardslink">Awards</a>
                     </li>
                     <li>
-                        <a href="#">Education</a>
+                        <a href="#" id="edulink">Education</a>
                     </li>
                     <li>
-                        <a href="#">Employment</a>
+                        <a href="#" id="employlink">Employment</a>
                     </li>
                     <li>
-                        <a href="#">Skills</a>
+                        <a href="#" id="skillslink">Skills</a>
                     </li>
                     <li>
-                        <a href="#">Contact me</a>
+                        <a href="#" id="contactlink">Contact me</a>
                     </li>
                 </ul>
             </nav>
@@ -45,86 +45,120 @@
             <div id="aboutwrap">
                 <h2>About me</h2>
                 <p>
-                    I am an aspiring software developer currently based in Bristol. 
-                    After graduating with a first in Biological Sciences from the University of the West of England, 
-                    I have spent the past two years living and working in Shanghai, China. Within a three-year period, 
-                    I have worked in radiation laboratories, gained intermediate level qualifications in Mandarin and 
-                    begun to learn the skills required to have a successful entry into the technology industry. 
-                    Having already applied training in both HTML and CSS I am beginning to learn the utilisation of 
-                    JavaScript, Node.JS and Angular. 
-                    Outside of work my interests range from reading and playing guitar to 
+                    I am an aspiring software developer currently based in Bristol.
+                    After graduating with a first in Biological Sciences from the University of the West of England,
+                    I have spent the past two years living and working in Shanghai, China. Within a three-year period,
+                    I have worked in radiation laboratories, gained intermediate level qualifications in Mandarin and
+                    begun to learn the skills required to have a successful entry into the technology industry.
+                    Having already applied training in both HTML and CSS I am beginning to learn the utilisation of
+                    JavaScript, Node.JS and Angular.
+                    Outside of work my interests range from reading and playing guitar to
                     attending football matches and travelling.
                 </p>
             </div>
         </section>
-        <section class="contact idden">
-                <h2 class="rounded">Contact information</h2>
-                <ul id="infolist">
-                    <li>
-                        <i class="far fa-envelope"></i>
-                            Shea.Murphy@nology.io
-                    </li>
-                    <li>
-                        <i class="far fa-envelope"></i>
-                            sheamurphy93@outlook.com
-                    </li>
-                    <li>
-                        <i class="fas fa-phone-square"></i>
-                            07756772286
-                    </li>
-                    <li id="linkedin-icon">
-                        <a href="https://www.linkedin.com/in/sheamurphy/" id="lnkdinbtn">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                    </li>
+        <section class="contact hidden">
+            <h2>Contact information</h2>
+            <ul id="infolist">
+                <li>
+                    <i class="far fa-envelope"></i>
+                    Shea.Murphy@nology.io
+                </li>
+                <li>
+                    <i class="far fa-envelope"></i>
+                    sheamurphy93@outlook.com
+                </li>
+                <li>
+                    <i class="fas fa-phone-square"></i>
+                    07756772286
+                </li>
+                <li id="linkedin-icon">
+                    <a href="https://www.linkedin.com/in/sheamurphy/" id="lnkdinbtn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section class="skills hidden">
+            <h2>Skills</h2>
+            <div id="skills-panel">
+                <ul>
+                    <h3 id="panel-header">Coding languages</h3>
+                    <li class="score">HTML</li>
+                        <div class="solid"><i class="far fa-smile-beam"></i></div>
+                        <div class="solid"><i class="far fa-smile-beam"></i></div>
+                        <div class="solid"><i class="far fa-smile-beam"></i></div>
+                        <div class="open"><i class="fas fa-grin-squint-tears"></i></div>
+                        <div class="open"><i class="fas fa-grin-squint-tears"></i></div>
+                    <li class="score">CSS</li>
+                            <div class="solid"><i class="far fa-smile-beam"></i></div>
+                            <div class="solid"><i class="far fa-smile-beam"></i></div>
+                            <div class="solid"><i class="far fa-smile-beam"></i></div>
+                            <div class="open"><i class="fas fa-grin-squint-tears"></i></div>
+                            <div class="open"><i class="fas fa-grin-squint-tears"></i></div>
+                    <li class="score">JavaScript</li>
+                            <div class="open"><i class="fas fa-grin-squint-tears"></i></div>
+                            <div class="open"><i class="fas fa-grin-squint-tears"></i></div>
+                            <div class="open"><i class="fas fa-grin-squint-tears"></i></div>
+                            <div class="open"><i class="fas fa-grin-squint-tears"></i></div>
+                            <div class="open"><i class="fas fa-grin-squint-tears"></i></div>
+                    <li class="score">Angular</li>
+                            <div class="open"><i class="fas fa-grin-squint-tears"></i></div>
+                            <div class="open"><i class="fas fa-grin-squint-tears"></i></div>
+                            <div class="open"><i class="fas fa-grin-squint-tears"></i></div>
+                            <div class="open"><i class="fas fa-grin-squint-tears"></i></div>
+                            <div class="open"><i class="fas fa-grin-squint-tears"></i></div>
+                    <li class="score">Node.JS</li>
+                            <div class="open"><i class="fas fa-grin-squint-tears"></i></div>
+                            <div class="open"><i class="fas fa-grin-squint-tears"></i></div>
+                            <div class="open"><i class="fas fa-grin-squint-tears"></i></div>
+                            <div class="open"><i class="fas fa-grin-squint-tears"></i></div>
+                            <div class="open"><i class="fas fa-grin-squint-tears"></i></div>
                 </ul>
-            </section>
-            <section class="skills hidden">
-                <h2 class="rounded">Skills</h2>
-                    <ul>
-                        <li>Lots of skills</li>
-                        <li>Lots of skills</li>
-                        <li>Lots of skills</li>
-                        <li>Lots of skills</li>
-                    </ul>
-            </section>
-            <section class="employment hidden">
-                <h2 class="rounded">Employment</h2>
-                    <ul>
-                        <li>Lots of Employment</li>
-                        <li>Lots of Employment</li>
-                        <li>Lots of Employment</li>
-                        <li>Lots of Employment</li>
-                    </ul>
-            </section>
-            <section class="education hidden">
-                <h2 class="rounded">Education</h2>
-                    <ul>
-                        <li>Lots of Education</li>
-                        <li>Lots of Education</li>
-                        <li>Lots of Education</li>
-                        <li>Lots of Education</li>
-                    </ul>
-            </section>
-            <section class="awards hidden">
-                <h2 class="rounded">Awards</h2>
-                    <ul>
-                        <li>Lots of Awards</li>
-                        <li>Lots of Awards</li>
-                        <li>Lots of Awards</li>
-                        <li>Lots of Awards</li>
-                    </ul>
-            </section>
-            <section class="publications hidden">
-                <h2 class="rounded">Publications</h2>
-                    <ul>
-                        <li>Lots of publications</li>
-                        <li>Lots of publications</li>
-                        <li>Lots of publications</li>
-                        <li>Lots of publications</li>
-                    </ul>
-            </section>
+            </div>
+        </section>
+        <section class="employment hidden">
+            <h2>Employment</h2>
+            <ul>
+                <li>Lots of Employment</li>
+                <li>Lots of Employment</li>
+                <li>Lots of Employment</li>
+                <li>Lots of Employment</li>
+            </ul>
+        </section>
+        <section class="education hidden">
+            <h2>Education</h2>
+            <ul>
+                <li>Lots of Education</li>
+                <li>Lots of Education</li>
+                <li>Lots of Education</li>
+                <li>Lots of Education</li>
+            </ul>
+        </section>
+        <section class="awards hidden">
+            <h2>Awards</h2>
+            <ul>
+                <li>Lots of Awards</li>
+                <li>Lots of Awards</li>
+                <li>Lots of Awards</li>
+                <li>Lots of Awards</li>
+            </ul>
+        </section>
+        <section class="publications hidden">
+            <h2>Publications</h2>
+            <ul>
+                <li>Lots of publications</li>
+                <li>Lots of publications</li>
+                <li>Lots of publications</li>
+                <li>Lots of publications</li>
+            </ul>
+        </section>
     </main>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.js"
+    integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
+    crossorigin="anonymous"></script>
+    <script src="script.js" type="text/JavaScript"></script>
 </body>
 
 </html>
