@@ -1,10 +1,10 @@
-#container-1{
+#qual-box{
     box-sizing: border-box;
     width: 50%;
     height: 100%;
     float:right;
 }
-#container-2{
+#ed-box{
     box-sizing: border-box;
     width: 50%;
     height: 100%;
