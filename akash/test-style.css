@@ -2,13 +2,15 @@
 body{
     background-image: url('dinertest-1.jpg');
     margin:0;
+    background-size: cover;
+    background-attachment: fixed;
 }
 .dots{
     color:white;
     font-size: 0.8em;
     z-index: -1;
-    
-
+    width:500px;
+    height:200px;
 }
 .content{
     width: 500px;
@@ -24,9 +26,11 @@ body{
     height:95%;
     background-color: rgb(228, 228, 200);
     border-radius: 10px;
-    margin: 100px auto;
+    margin: 0 auto;
     text-align: center;
     position: relative;
+    transform: translate(0px, -100px);
+    
 }
 
 .square {
@@ -137,12 +141,12 @@ li{
     }
     
     .ach-fill{
-        width:40%;
+        width:180px;
         text-align: left;
         position: relative;
         top:-330px;
         color:rgb(212, 0, 0);
-        left: 180px;
+        left: 160px;
         font-size: 10px;
         float:right;
 
@@ -175,11 +179,9 @@ li{
         color:rgb(212, 0, 0);
         font-family:'Lobster';
         font-size: 25px;;
-        text-align: center;
-        margin: 0;
+    
     }
     .contact-fill{
-        top: -280px;
         font-size: 30px;
 
     }
@@ -205,7 +207,9 @@ li{
       .wide{
           width:45%;
           margin: 0 auto;
+          
       }
       .right{
           float:right;
       }
+    
