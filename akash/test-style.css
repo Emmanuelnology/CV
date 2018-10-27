@@ -16,9 +16,11 @@ body{
     background: rgb(157,224,180);
     padding: 20px;
     margin-bottom: 0px;
+    height:100%;
+    padding-bottom: 10px;
 }
 
-main>div{
+#beige{
     height:95%;
     background-color: rgb(228, 228, 200);
     border-radius: 10px;
@@ -74,19 +76,21 @@ main>div{
 }
 
 .education-fill{
-    width:40%;
+    width:180px;
     text-align: left;
     position: relative;
     top:-155px;
     color:rgb(212, 0, 0);
-    left: -7px;
+    left: 30px;
     font-size: 10px;
+    margin-right: 0;
 
 }
 ul{
     list-style-type: none;
     font-family: 'Montserrat';
     font-weight:bold;
+    padding: 0;
 }
 li{
     margin-bottom: 10px;
@@ -107,13 +111,15 @@ li{
 }
 
 .work-fill{
-    width:40%;
+    width:180px;
     text-align: left;
     position: relative;
     top:-155px;
     color:rgb(212, 0, 0);
-    left: -7px;
+    left: 35px;
     font-size: 10px;
+    margin-right: 0;
+
 }
 
     .achievements{
@@ -122,7 +128,7 @@ li{
         display: block;
         text-align: left;
         position: relative;
-        top:-379px;
+        top:-359px;
         font-family: 'Lobster';
         color:rgb(212, 0, 0);
         font-size: 1.5em;
@@ -134,22 +140,43 @@ li{
         width:40%;
         text-align: left;
         position: relative;
-        top:-354px;
+        top:-330px;
         color:rgb(212, 0, 0);
-        left: 140px;
+        left: 180px;
         font-size: 10px;
         float:right;
+
+    }
+        .skills{
+            height:30px;
+            width:40%;
+            display: block;
+            text-align: left;
+            position: relative;
+            top:-310px;
+            font-family: 'Lobster';
+            color:rgb(212, 0, 0);
+            font-size: 1.5em;
+            float:right;
+            left: -22px;
+        }
+        
+        .skills-fill{
+            width:180px;
+            text-align: left;
+            position: relative;
+            top:-285px;
+            color:rgb(212, 0, 0);
+            left: 160px;
+            font-size: 10px;
+            float:right;
     }
     .contact{
-        height:30px;
-        width:40%;
-        display: block;
-        text-align: center;
-        position: relative;
-        top:-200px;
-        font-family: 'Lobster';
         color:rgb(212, 0, 0);
-        font-size: 1.5em;
+        font-family:'Lobster';
+        font-size: 25px;;
+        text-align: center;
+        margin: 0;
     }
     .contact-fill{
         top: -280px;
@@ -172,4 +199,13 @@ li{
         -webkit-text-fill-color: transparent;
         display: initial;
       }
-    
+      .score{
+        float: right;
+      }
+      .wide{
+          width:45%;
+          margin: 0 auto;
+      }
+      .right{
+          float:right;
+      }
