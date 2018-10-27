@@ -1,18 +1,33 @@
 
 body{
-    background-color: rgb(156, 233, 207);
+    background-color:rgb(255, 0, 0);
+    margin:0;
+}
+.dots{
+    color:white;
+    font-size: 0.8em;
+    z-index: -1;
+    
+
+}
+.content{
+    width: 500px;
+    margin: auto;
+    background: rgb(156,233,207);
+    padding: 20px;
+    margin-bottom: 0px;
 }
 
-
 main>div{
-    height:65%;
-    width:90%;
+    height:95%;
+    width:95%;
     background-color: rgb(228, 228, 200);
     border-radius: 10px;
     margin: 100px auto;
     text-align: center;
-    position:relative;
+    position: relative;
 }
+
 .square {
     margin: 0 auto;
     display:flex;
@@ -20,19 +35,109 @@ main>div{
     justify-content: center;
     height:200px;
     width: 400px;
-    background-image:url('diamond.png');
+    background-image:url('diamond-test1.png');
     background-size: 100% 100%;
-    
+    transform: translate(0px, -100px);
+    position: relative;
 }
+
 
 .square div {
     color:white;
+    font-family:'Lobster';
+    font-size: 70px;
 }
 
-#container1{
-    height:100px;
-    width:100px;
+.education{
+    height:30px;
+    width:40%;
     display: block;
     text-align: left;
-    margin: 40px;
+    margin: 20px;
+    padding: 10px;
+    position: relative;
+    top:-130px;
+    font-family: 'Lobster';
+    color:rgb(212, 0, 0);
+    font-size: 1.5em
+
 }
+
+.education-fill{
+    width:40%;
+    text-align: left;
+    position: relative;
+    top:-155px;
+    color:rgb(212, 0, 0);
+    left: -7px;
+    font-size: 10px;
+
+}
+ul{
+    list-style-type: none;
+    font-family: 'Montserrat';
+    font-weight:bold;
+}
+li{
+    margin-bottom: 10px;
+}
+
+.work{
+    height:30px;
+    width:40%;
+    display: block;
+    text-align: left;
+    margin: 20px;
+    padding: 10px;
+    position: relative;
+    top:-130px;
+    font-family: 'Lobster';
+    color:rgb(212, 0, 0);
+    font-size: 1.5em
+}
+
+.work-fill{
+    width:40%;
+    text-align: left;
+    position: relative;
+    top:-155px;
+    color:rgb(212, 0, 0);
+    left: -7px;
+    font-size: 10px;
+}
+
+    .achievements{
+        height:30px;
+        width:40%;
+        display: block;
+        text-align: left;
+        position: relative;
+        top:-380px;
+        font-family: 'Lobster';
+        color:rgb(212, 0, 0);
+        font-size: 1.5em;
+        float:right;
+        left: -22px;
+    }
+    
+    .ach-fill{
+        width:40%;
+        text-align: left;
+        position: relative;
+        top:-354px;
+        color:rgb(212, 0, 0);
+        left: 130px;
+        font-size: 10px;
+        float:right;
+    }
+    .contact{
+        height:30px;
+        width:40%;
+        display: block;
+        text-align: center;
+        position: relative;
+        top:-200px;
+        font-family: 'Lobster';
+        color:rgb(212, 0, 0);
+        font-size: 1.5em;
+    }
