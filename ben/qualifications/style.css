@@ -16,8 +16,8 @@ article {
 }
 
 #modules{
-    list-style: disc;
     width: 200px;
+    margin: 0 auto;
 }
 
 .grades li{
@@ -27,7 +27,7 @@ article {
 .grades div{
     letter-spacing: 1px;
     font-size: 0.75em;
-    display: inline;
+    display: inline-block;
     float: right;
 }
 
