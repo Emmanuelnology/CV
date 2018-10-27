@@ -130,9 +130,9 @@ h2 {
     line-height: 2em;
 }
 
-#linkedin-icon{
+.contact-button {
     font-size: 3em;
-    margin: 0;
+    margin: 0.25em;
     padding: 0;
 }
 
@@ -140,34 +140,66 @@ h2 {
     display: none;
 }
 
-#skills-panel{
+#skills-panel {
     text-align: left;
     width: 40%;
     float: left;
 }
 
-#panel-header{
-    border-bottom: 2px dotted black;
+.skills-header {
+    margin-bottom: 1em;
 }
 
-#skills-panel ul{
+#skills-panel li {
+    border-bottom: 1px dotted black;
+    padding: 0.1em;
+}
+
+.score>* {
+    display: inline-block;
     padding: 0.5em;
-    list-style: none;
-    padding: 0;
-    margin: 0;
 }
 
-#skills-panel li{
-    border-bottom: 2px dotted black;
-    text-align: left;
-}
-
-.score{
+.score>i {
     float: right;
 }
 
-.score div{
-    display: inline-block;
+#extra-skills {
+    float: right;
+    text-align: left;
+    width: 50%;
+}
+
+.skill-logo {
+    float: right;
+    padding-right: 1em; 
+}
+
+#chinese {
+    font-weight: bold;
+}
+
+.awards ul {
+    margin: 0;
     padding: 0;
-    margin:0;
+}
+
+.award-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 0.25em;
+}
+
+.award-def, {
+    font-size: 0.75em;
+    font-weight: normal;
+    margin-top: 0.15em;
+}
+
+.award-icon{
+    font-size: 1.5em;
+}
+
+.award-year{
+    font-size: 0.75em;
 }
