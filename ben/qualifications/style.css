@@ -6,6 +6,11 @@ article {
     margin: 15px;
 }
 
+#a-levels{
+    width:250px;
+    margin: 0 auto;
+}
+
 .inline-list{
     display: inline;
 }
@@ -13,4 +18,20 @@ article {
 #modules{
     list-style: disc;
     width: 200px;
+}
+
+.grades li{
+    text-align: left;
+}
+
+.grades div{
+    letter-spacing: 1px;
+    font-size: 0.75em;
+    display: inline;
+    float: right;
+}
+
+.achieved{
+    font-weight: 600;
+    font-size: 1.3333em;
 }
