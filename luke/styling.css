@@ -32,22 +32,34 @@ div img:last-child{
   border-radius: 10%;
 }
 
+li{
+  padding-bottom:10px;
+}
+
 .a {
   text-align: center;
   font-size: 18px;
+}
+
+.fa-at{
+  font-weight: bold;
+  color: rgb(70,176,254);
 }
 
 .fa-linkedin{
   color: rgb(2,116,179);
 }
 
-.fa-at{
-  font-weight: bold;
-  color: white;
+.fa-github{
+  color:white;
 }
 
 .fa-twitter{
   color: rgb(0,172,237);
+}
+
+.fa-map-marker{
+  color: rgb(220,77,63)
 }
 
 #experience, #about, #aca, #work{
@@ -56,6 +68,7 @@ div img:last-child{
 
 div ul li{
   border-bottom: white solid 1px;
+  margin-top:5px;
 }
 
 .fa-folder, .fa-folder-o{
@@ -64,4 +77,9 @@ display: inline-flex;
 align-self: flex-end; */
 justify-content:flex-end;
 margin-top:2px;
+}
+
+.cv{
+  color:white;
+  text-decoration: none;
 }
