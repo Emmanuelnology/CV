@@ -6,8 +6,6 @@
     text-align: center;
 }
 
-
-
 nav {
     background-color: #eaeaff;
     position: -webkit-sticky;
@@ -34,13 +32,6 @@ nav li{
     background-color: darkslateblue;
 }
 
-nav li:hover {
-    opacity: 0.8;
-    color: white;
-    cursor: pointer;
-}
-
-
 nav a {
     color: #eaeaff;
     width: 100%;
@@ -48,6 +39,12 @@ nav a {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+nav li:hover {
+    opacity: 0.8;
+    color: white;
+    cursor: pointer;
 }
 
 body{
