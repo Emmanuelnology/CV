@@ -45,6 +45,7 @@ nav a:hover {
     color: #2929a3;
     border-radius: 2px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 main {
@@ -60,13 +61,57 @@ a {
     display: block;
 }
 
-#aboutwrap{
-    width: 30%;
+#aboutwrap {
+    width: 35%;
     float: left;
+}
+
+.aboutme div{
+    font-weight: bolder;
 }
 
 .aboutme h2{
     border-radius: 0 5px 5px 0;
+}
+
+#aboutwrap div{
+    padding: 0 0.25em 0 0.25em;
+}
+
+.small-pad {
+    padding: 0.1em;
+}
+
+.large-pad {
+    padding: 0.25em;
+}
+
+.small-text {
+    font-size: 0.75em;
+}
+
+.large-text {
+    font-size: 1.5em;
+}
+
+.middle {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.opaque {
+    opacity: 0.75;
+}
+
+.translucent {
+    opacity: 0.6;
+}
+
+.transparent {
+    opacity: 0.4;
 }
 
 h2 {
@@ -92,6 +137,7 @@ h2 {
     width: 100%;
     text-align: justify;
     float: left;
+    padding: 0.2em;
 }
 
 /*REDUNDANT CSS USED FOR HIDDEN
@@ -100,7 +146,7 @@ h2 {
 .idden {
     float: right;
     text-align: center;
-    width: 65%;
+    width: 60%;
 }
 
 .idden ul{
@@ -118,7 +164,7 @@ h2 {
 .hidden {
     float: right;
     text-align: center;
-    width: 65%;
+    width: 60%;
 }
 
 .hidden ul{
@@ -148,6 +194,7 @@ h2 {
 
 .skills-header {
     margin-bottom: 1em;
+    margin-top: 1.5em;
 }
 
 #skills-panel li {
@@ -164,18 +211,46 @@ h2 {
     float: right;
 }
 
+.open {
+    opacity: 0;
+}
+
+.logo-pad {
+    padding-right: 0.69em;
+}
+
 #extra-skills {
     float: right;
     text-align: left;
     width: 50%;
 }
 
+#extra-skills li {
+    padding: 0.2em 0 0.2em 0;
+}
+
 .skill-logo {
     float: right;
-    padding-right: 1em; 
+    padding-right: 1em;
+    font-size: 1.5em;
 }
 
 #chinese {
+    font-weight: bolder;
+    padding-right: 0.5em;
+}
+
+.employment ul {
+    text-align: left;
+    font-size: 0.75em; 
+
+}
+
+.employment h3 {
+    margin-top: 0.5em; 
+}
+
+.qualification {
     font-weight: bold;
 }
 
@@ -190,16 +265,17 @@ h2 {
     margin-top: 0.25em;
 }
 
-.award-def, {
+.award-def {
     font-size: 0.75em;
     font-weight: normal;
     margin-top: 0.15em;
 }
 
-.award-icon{
+.award-icon {
     font-size: 1.5em;
 }
 
-.award-year{
+.award-year {
     font-size: 0.75em;
 }
+
