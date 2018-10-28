@@ -1,5 +1,9 @@
-a{
-    color: inherit;
+.capital{
+    text-transform: capitalize;
+}
+
+section{
+    margin: 15px;
 }
 
 ul{
@@ -8,6 +12,24 @@ ul{
 
 li{
     padding: 2px;
+}
+
+a{
+    color: inherit;
+}
+
+address{
+    font-style: unset;
+}
+
+article{
+    display: inline;
+}
+
+.fab{
+    color: slateblue;
+    font-size: 50px;
+    margin: 0px 5px;
 }
 
 .button{
@@ -22,30 +44,8 @@ li{
     width: 205px;
 }
 
-.capital{
-    text-transform: capitalize;
-}
-
-.fab{
-    color: slateblue;
-    font-size: 50px;
-    margin: 0px 5px;
-}
-
-main>section{
-    margin: 15px;
-    }
-
-article{
-    display: inline;
-}
-
 .button:hover{
     opacity: 0.8;
     color: white;
     cursor: pointer;
-}
-
-address{
-    font-style: unset;
 }
