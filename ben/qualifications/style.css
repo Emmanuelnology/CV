@@ -1,22 +1,18 @@
-ul{
-    list-style: none;
-}
-
 article {
     margin: 15px;
 }
 
-#a-levels{
-    width:250px;
-    margin: 0 auto;
-}
-
-.inline-list{
-    display: inline;
+ul{
+    list-style: none;
 }
 
 #modules{
     width: 200px;
+    margin: 0 auto;
+}
+
+#a-levels{
+    width:250px;
     margin: 0 auto;
 }
 
