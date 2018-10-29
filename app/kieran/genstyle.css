@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+}
+
+/* .bold {
+    font-weight:800;
+    text-transform:uppercase;
+    font-size:2em;
+    padding-bottom: 5px;
+    position: relative;
+    top: -170px;
+    
+    
+    
+} */
+
+
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+    padding-right: 5px;
+    
+    
+    }     
+
+header {
+
+}
+  
+h1 {
+    text-align: center;
+    margin:0;
+    padding:30px;
+    font-size:80px;
+    text-transform: capitalize;
+    font-family: 'Crimson Text', serif;
+    font-weight: 800;
+    background-image: url('cloudy-day.png');
+    background-repeat: repeat;
+    background-attachment: fixed;
+    
+}
+
+h2 {
+    margin-top: 0px;
+}
+
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    margin:0;
+    min-width: 643px;
+    
+
+    
+    }
+
+
+
+nav {
+    background-image: url('cloudy-day.png');
+    background-repeat: repeat;
+    background-attachment: fixed;
+    text-transform: lowercase;
+    padding:0;
+    height:40px;
+
+ 
+    
+    }
+
+
+
+nav .brand {
+    margin-right:0.1em;
+
+    
+}    
+
+nav ul {
+    height: 40px;
+    margin:0;
+    list-style-type:none;
+    text-transform: uppercase;
+    font-size: smaller;
+    float:left;
+    padding-left:0px;
+    
+
+    
+    
+    }
+
+nav li {
+
+    display:inline-block;
+    margin: 0 0.2em;
+    height:40px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding-top: 10px;
+    border-top:2px solid black;
+    border-left:2px solid black;
+    border-right:2px solid black;
+    
+    
+    
+     
+    
+
+    }
+
+
+
+
+nav > * {
+    display: inline;
+}  
+
+nav li:hover {
+    color:white;
+    
+
+}  
+nav a {
+    padding:0 0.5em;
+} 
+
+
+
+
+
+main{
+    
+    margin:0;
+    padding:40px;
+    border-top:2px solid black;
+    font-family: 'Crimson Text', serif;
+    text-align: center;
+}
+
+
+
+.aboutmelabel {
+    background-color:pink;
+    margin-left:30px;
+
+}
+
+.worklabel {
+    background-color: lightgreen;
+}
+
+.projectslabel {
+    background-color: lightgoldenrodyellow;
+}
+
+.contactlabel {
+    background-color:rgb(82, 222, 219);
+}
+
+footer {
+    background-image: url('cloudy-day.png');
+    background-repeat: repeat;
+    background-attachment: fixed;
+    text-align: center;
+    margin:0;
+    padding:30px;
+    padding-bottom: 10%;
+    text-transform: capitalize;
+    border-top: 2px solid black;
+    font-family: 'Crimson Text', serif;
+    font-weight: 400;
+    vertical-align: bottom 0px;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+
+}
