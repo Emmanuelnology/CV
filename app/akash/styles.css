@@ -1,153 +1,151 @@
-    * {
-        box-sizing: border-box;
-    }
+* {
+  box-sizing: border-box;
+}
 
-    /* Missing semicolon in below css prop */
+/* Missing semicolon in below css prop */
 
-    ul.square {
-        list-style-type: square;
-    }
-    ul.none {
-        list-style-type: none;
-    }
-    
-    
-    .underline{
-        text-decoration:none;
-    }
-    body { 
-        background-image: url('https://image.freepik.com/foto-gratis/papel-color-abstracto-fondo-papel-pastel-colorido-creativo_6529-179.jpg');
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-size: cover;
-        color: rgb(4, 29, 66);
-        font-family:'Barlow';
-        margin: 0;
-    }
-    nav{
-        background-color:rgb(87, 179, 255);
-        color:white;
-        text-transform: uppercase;
-        padding: 1em;
-        position: fixed;
-        top: 0;
-        width:100%
-    }
-    
-    h2{
-        text-align: center;
-    }
-    
-    
-    nav a{
-        text-decoration: none;
-        color:inherit;
-    }
-    
-    nav li{
-        
-        display: inline;
-        margin: 0 0.5em;
-    }
-    
-    nav a:hover{
-        background-color: #4640ff;
-        border-radius: 2px;
-        color: black;
-        
-    }
-    
-    nav ul{
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        text-transform: uppercase;
-        font-size: 25px;
-        float:right;
-    }
-    
-    nav > * {
-        display:inline;
-        
-    }
-    nav .brand {
-        margin-right: 2em;
-    }
-    
-    main>div{
-        width: 50%;
-        border: 3px solid rgb(156, 131, 216);
-        float:left;
-        padding: 17px;
-        margin:1.5%;
-        background-color: rgb(240, 246, 255);
-        
-    }
-    
-    #education-section{
-        margin-top: 60px;
-    }
-    .fa-crown {
-        font-size: 25px;
-        line-height: 100%;
-        animation-name: crown-move;
-        animation-duration: 10s;
-        animation-iteration-count: infinite;
-        
-    }
+ul.square {
+  list-style-type: square;
+}
 
-    @keyframes crown-move {
-        0%   {color:white;}
-        50% {color:rgb(255, 255, 0);}
-        100%{color: white;}
-    }
-    
-    #work-section{
-        border-color: rgb(230, 155, 202);
-    }
+ul.none {
+  list-style-type: none;
+}
 
-    .color-change{
-        animation-name: color-wheel;
-        animation-duration: 10s;
-        animation-iteration-count: infinite;   
-    }
-    
-    @keyframes color-wheel{
-        0%   {color:white;}
-        25%  {color:rgb(204, 0, 255);}
-        50%  {color:rgb(76, 0, 255);}
-        75%  {color:rgb(38, 0, 255);}
-        100% {color:white;}
-    }
-    
-    .name{
-        animation-name: color-wheel;
-        animation-duration: 10s;
-        animation-iteration-count: infinite; 
-        font-size: 30px;
-    }
-    
-    @keyframes name{
-        0%   {color:white;}
-        25%  {color:rgb(204, 0, 255);}
-        50%  {color:rgb(76, 0, 255);}
-        75%  {color:rgb(38, 0, 255);}
-        100% {color:white;}
-        
-    } 
 
-    #about-me{
-        width: 42%;
-        display: inline-block;
-        margin-top: 60px;
-        border-color: rgba(211, 193, 206, 0.945)
-    }
-    blockquote{
-        margin-top: 60px;
-    }
-    main{
-        margin-top:30px;
-    }
-   
-    
-    
+.underline {
+  text-decoration: none;
+}
+
+body {
+  background-image: url('https://image.freepik.com/foto-gratis/papel-color-abstracto-fondo-papel-pastel-colorido-creativo_6529-179.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(4, 29, 66);
+  font-family: 'Barlow';
+  margin: 0;
+}
+
+nav {
+  background-color: rgb(87, 179, 255);
+  color: white;
+  text-transform: uppercase;
+  padding: 1em;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+h2 {
+  text-align: center;
+}
+
+
+nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav li {
+  display: inline;
+  margin: 0 0.5em;
+}
+
+nav a:hover {
+  background-color: #4640ff;
+  border-radius: 2px;
+  color: black;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 25px;
+  float: right;
+}
+
+nav > * {
+  display: inline;
+}
+
+nav .brand {
+  margin-right: 2em;
+}
+
+main > div {
+  width: 50%;
+  border: 3px solid rgb(156, 131, 216);
+  float: left;
+  padding: 17px;
+  margin: 1.5%;
+  background-color: rgb(240, 246, 255);
+}
+
+#education-section {
+  margin-top: 60px;
+}
+
+.fa-crown {
+  font-size: 25px;
+  line-height: 100%;
+  animation-name: crown-move;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes crown-move {
+  0% { color: white; }
+  50% { color: rgb(255, 255, 0); }
+  100% { color: white; }
+}
+
+#work-section {
+  border-color: rgb(230, 155, 202);
+}
+
+.color-change {
+  animation-name: color-wheel;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes color-wheel {
+  0% { color: white; }
+  25% { color: rgb(204, 0, 255); }
+  50% { color: rgb(76, 0, 255); }
+  75% { color: rgb(38, 0, 255); }
+  100% { color: white; }
+}
+
+.name {
+  animation-name: color-wheel;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  font-size: 30px;
+}
+
+@keyframes name {
+  0% { color: white; }
+  25% { color: rgb(204, 0, 255); }
+  50% { color: rgb(76, 0, 255); }
+  75% { color: rgb(38, 0, 255); }
+  100% { color: white; }
+}
+
+#about-me {
+  width: 42%;
+  display: inline-block;
+  margin-top: 60px;
+  border-color: rgba(211, 193, 206, 0.945);
+}
+
+blockquote {
+  margin-top: 60px;
+}
+
+main {
+  margin-top: 30px;
+}

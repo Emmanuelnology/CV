@@ -2,7 +2,8 @@
 * {
   box-sizing: border-box;
 }
-a, 
+
+a,
 a:visited {
   color: inherit;
   text-decoration-line: none;
@@ -13,33 +14,39 @@ body {
   margin: 0;
   font-family: 'Encode Sans', sans-serif;
 }
+
 body > * {
-  float:left;
+  float: left;
 }
+
 nav {
-  background-color:lightgrey;
+  background-color: lightgrey;
   width: 34%;
   height: 100vh;
   margin-right: 1%;
-  font-size: 10px;  
+  font-size: 10px;
 }
+
 main {
   width: 65%;
   height: 100vh;
-  background-color:white;
+  background-color: white;
 }
+
 h1 {
   font-family: 'Fauna One', serif;
   text-align: center;
   font-size: 35px;
   padding: 0;
-  margin:0;
+  margin: 0;
   border-bottom: 2px dotted grey;
   margin-top: 50px;
-} 
+}
+
 header {
   margin-top: 50px;
 }
+
 header h2 {
   text-align: center;
   font-family: 'Fauna One', serif;
@@ -47,6 +54,7 @@ header h2 {
   color: #d91a1a;
   margin: 0;
 }
+
 header h3 {
   text-align: center;
   margin-top: 5px;
@@ -54,53 +62,65 @@ header h3 {
   font-family: 'Fauna One', serif;
   font-size: 15px;
 }
+
 .fa-heart {
   color: #d91a1a;
 }
+
 ul {
   list-style-type: none;
   margin: 0 auto;
 }
+
 .info {
   font-size: 30px;
   margin-bottom: 3px;
   color: black;
-  width: 60%; 
+  width: 60%;
 }
+
 a:hover {
   background-color: darkgrey;
   border-radius: 5px;
   padding: 6px;
 }
+
 .info li {
   margin: 20px 0;
   font-family: 'Fauna One', serif;
   font-size: 18px;
 }
+
 .info i {
   font-size: 28px;
   width: 50px;
   text-align: center;
 }
+
 .career {
   color: red;
 }
+
 footer {
   font-size: small;
   text-align: center;
   font-family: 'Fauna One', serif;
 }
-.copyright{
+
+.copyright {
   height: 2px;
 }
+
 .skills-panel h2 {
   text-transform: uppercase;
   margin-top: 5px;
   font-family: 'Fauna One', serif;
 }
-.skills-panel ul { 
+
+.skills-panel ul {
   padding: 0;
 }
+
 .skills-panel li {
   border-color: black;
   border-width: 2px;
@@ -108,53 +128,64 @@ footer {
   padding: 5px;
   font-family: 'Fauna One', serif;
 }
+
 .skills-panel .score {
   color: #ff7300;
   display: inline;
   float: right;
 }
+
 .skills-panel {
   color: black;
   font-size: 20px;
 }
+
 .skills-panel li:first-child {
   border-top-style: dotted;
 }
+
 .me {
   font-family: 'Fauna One', serif;
   margin: 0;
   padding: 0;
   text-align: center;
 }
+
 .need {
   font-size: 15px;
 }
+
 .life-icons {
   font-size: 50px;
 }
+
 nav {
-  background-color:lightgrey;
+  background-color: lightgrey;
   width: 34%;
   height: 100vh;
-  margin-right: 1%;  
+  margin-right: 1%;
 }
+
 main {
   width: 65%;
   height: 100vh;
-  background-color:white;
+  background-color: white;
 }
+
 h1 {
   font-family: 'Fauna One', serif;
   text-align: center;
   font-size: 35px;
   padding: 0;
-  margin:0;
+  margin: 0;
   border-bottom: 2px dotted grey;
   margin-top: 50px;
-} 
-header {
-  margin-top:50px;
 }
+
+header {
+  margin-top: 50px;
+}
+
 header h2 {
   text-align: center;
   font-family: 'Fauna One', serif;
@@ -162,6 +193,7 @@ header h2 {
   color: #d91a1a;
   margin: 0;
 }
+
 header h3 {
   text-align: center;
   margin-top: 5px;
@@ -169,53 +201,65 @@ header h3 {
   font-family: 'Fauna One', serif;
   font-size: 15px;
 }
+
 .fa-heart {
   color: #d91a1a;
 }
+
 ul {
   list-style-type: none;
   margin: 0 auto;
 }
+
 .info {
   font-size: 30px;
   margin-bottom: 3px;
   color: black;
-  width: 60%; 
+  width: 60%;
 }
+
 a:hover {
   background-color: darkgrey;
   border-radius: 5px;
   padding: 6px;
 }
+
 .info li {
   margin: 20px 0;
   font-family: 'Fauna One', serif;
   font-size: 18px;
 }
+
 .info i {
   font-size: 28px;
   width: 50px;
   text-align: center;
 }
+
 .career {
   color: red;
 }
+
 footer {
   font-size: small;
   text-align: center;
   font-family: 'Fauna One', serif;
 }
+
 .copyright {
   height: 2px;
 }
+
 .skills-panel h2 {
   text-transform: uppercase;
   margin-top: 5px;
   font-family: 'Fauna One', serif;
 }
+
 .skills-panel ul {
   padding: 0;
 }
+
 .skills-panel li {
   border-color: black;
   border-width: 2px;
@@ -223,18 +267,22 @@ footer {
   padding: 5px;
   font-family: 'Fauna One', serif;
 }
+
 .skills-panel .score {
   color: #ffef3c;
   display: inline;
   float: right;
 }
+
 .skills-panel {
   color: black;
   font-size: 20px;
 }
+
 .skills-panel li:first-child {
   border-top-style: dotted;
 }
+
 .me {
   font-family: 'Fauna One', serif;
   margin: 0;

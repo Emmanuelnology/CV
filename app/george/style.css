@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  background-color:rgba(179, 171, 171, 0.726);
+  background-color: rgba(179, 171, 171, 0.726);
 }
 
 h2 {
@@ -20,7 +20,7 @@ nav {
 
 nav li {
   display: inline;
-  text-transform: uppercase;  
+  text-transform: uppercase;
 }
 
 nav ul,
@@ -31,7 +31,7 @@ nav li {
 
 nav a:hover {
   color: black;
-  background-color: white;  
+  background-color: white;
 }
 
 nav a {
@@ -45,21 +45,22 @@ nav a {
   color: white;
   text-align: center;
   background-color: black;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 a {
   color: white;
   text-decoration: none;
 }
+
 .arrow {
- text-align: center;
+  text-align: center;
 }
 
 .bounce {
- -moz-animation: bounce 2s infinite;
- -webkit-animation: bounce 2s infinite;
- animation: bounce 2s infinite;
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
 }
 
 @keyframes bounce {
@@ -72,11 +73,11 @@ a {
   }
 
   40% {
-   transform: translateY(-30px);
+    transform: translateY(-30px);
   }
- 
+
   60% {
-   transform: translateY(-15px);
+    transform: translateY(-15px);
   }
 }
 
@@ -101,7 +102,7 @@ select {
 
 input[type=submit] {
   width: 100%;
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
 }
 
@@ -116,23 +117,24 @@ input[type=submit] {
   background-color: black;
   color: white;
   text-align: center;
- }
+}
 
- #footer a {
+#footer a {
   color: white;
   padding: 0 20px;
- }
+}
 
- #footer a:hover {
+#footer a:hover {
   color: yellow;
 }
+
 #footer i {
   font-size: 15vw;
 }
 
 @media only screen and (min-width: 800px) {
   #footer i {
-  font-size: 7vw;
+    font-size: 7vw;
   }
 }
 
@@ -149,10 +151,12 @@ input[type=submit] {
   .bgimg-1 {
     background-image: url("img/me/image.png");
   }
+
   #form {
     margin: auto;
     width: 50%;
   }
+
   .caption span.border,
   .scroll-down span.border {
     padding: 18px;
@@ -165,10 +169,12 @@ input[type=submit] {
   .bgimg-1 {
     background-image: url("10DS.jpg");
   }
+
   #form {
     margin: auto;
     width: 80%;
   }
+
   .caption span.border,
   .scroll-down span.border {
     padding: 10px;
@@ -207,23 +213,23 @@ input[type=submit] {
   color: white;
 }
 
-/*Sizing and logos for education row*/
-  .flex-container {
+/* Sizing and logos for education row */
+.flex-container {
   display: flex;
   flex-wrap: wrap;
 }
-  
-  .flex-container > div {
+
+.flex-container > div {
   background-color: #1d6ae5;
   height: 300px;
   width: auto;
   text-align: center;
   line-height: 75px;
-  margin: 10px; 
+  margin: 10px;
 }
 
 .flex-container p {
-  padding: 0px 10px 10px 10px;
+  padding: 0 10px 10px 10px;
   font-size: 20px;
   color: white;
 }
@@ -231,7 +237,7 @@ input[type=submit] {
 .logo {
   height: 80%;
   width: 100%;
-  margin: 0px;
+  margin: 0;
   background-size: cover;
   background-position: center;
 }

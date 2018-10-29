@@ -87,8 +87,8 @@ nav a:hover {
 /* bouncing arrow */
 
 a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 .arrow {
@@ -103,24 +103,26 @@ a {
 }
 
 @keyframes bounce {
-  0%, 
-  20%, 
-  50%, 
-  80%, 
+  0%,
+  20%,
+  50%,
+  80%,
   100% {
-  transform: translateY(0);
+    transform: translateY(0);
   }
+
   40% {
-  transform: translateY(-30px);
+    transform: translateY(-30px);
   }
+
   60% {
-  transform: translateY(-15px);
+    transform: translateY(-15px);
   }
 }
 
-main {  
+main {
   padding: 0% 0%;
-  margin: 0% 0%; 
+  margin: 0% 0%;
 }
 
 p.introtext {
@@ -147,8 +149,8 @@ img {
 
 #mkmap {
   float: right;
-  width:30%;
-  height:30%;
+  width: 30%;
+  height: 30%;
 }
 
 li {
@@ -165,23 +167,23 @@ address {
 }
 
 #contactinfo li {
-  font-size:17px;
+  font-size: 17px;
   margin-left: 50px;
   padding: 0% 3%;
-  margin: 3% 0%; 
+  margin: 3% 0%;
 }
 
 #contactinfo div {
-  font-size:13px;  
+  font-size: 13px;
   padding: 0% 5%;
 }
 
 #socialmedia i {
   text-decoration: none;
-  margin:0 auto;
+  margin: 0 auto;
   padding: 3%;
   font-size: 2.5em;
-  display:inline;
+  display: inline;
 }
 
 #linkedin {
@@ -193,7 +195,7 @@ address {
 }
 
 #twitter {
-  color: rgb(0,172, 237);
+  color: rgb(0, 172, 237);
 }
 
 #facebook {
@@ -207,7 +209,7 @@ address {
 }
 
 ul.skillslist {
-  text-align: center
+  text-align: center;
 }
 
 #education {
@@ -216,7 +218,7 @@ ul.skillslist {
 
 #dlresume {
   text-decoration: none;
-  color:white;
+  color: white;
 }
 
 #bottomnav {
