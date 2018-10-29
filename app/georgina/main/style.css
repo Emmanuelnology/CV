@@ -3,7 +3,8 @@
   box-sizing: border-box;
 }
 
-a,a:visited {
+a,
+a:visited {
   color: inherit;
   text-decoration-line: none;
   font-family: 'Fauna One', serif;
@@ -96,6 +97,10 @@ a:hover {
   text-align: center;
 }
 
+.hobbies li {
+  padding: 5px;
+}
+
 .career {
   color: red;
 }
@@ -158,12 +163,11 @@ footer {
 .life-icons {
   font-size: 50px;
   text-align: center;
-  
 }
-h2{
+
+h2 {
   font-family: 'Fauna One', serif;
   text-align: center;
-
 }
 
 nav {
@@ -278,7 +282,7 @@ footer {
 .skills-panel .score {
   color: #ff7614;
   display: inline;
-  float: right;
+  float: center;
 }
 
 .skills-panel {
