@@ -1,5 +1,6 @@
-.left, .left li {
-  text-align: left
+.left,
+.left li {
+  text-align: left;
 }
 
 ul.left {
@@ -14,12 +15,11 @@ ul.left {
   width: 240px;
 }
 
-
-li>div {
+li > div {
   font-size: 16px;
   display: block;
   font-weight: 100;
-  padding: 0px 10px;
+  padding: 0 10px;
   margin-top: 3px;
   float: none;
   text-align: justify;
@@ -30,7 +30,6 @@ li>div {
   padding: 0;
   float: right;
 }
-
 
 li i {
   font-size: 0.8em;

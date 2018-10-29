@@ -1,4 +1,4 @@
-.button{
+.button {
   background-color: slateblue;
   color: #eaeaff;
   border: none;
@@ -11,7 +11,7 @@
   margin: 5px;
 }
 
-header>a{
+header > a {
   background-color: darkslateblue;
   color: #eaeaff;
   border: none;
@@ -24,7 +24,8 @@ header>a{
   width: 90%;
 }
 
-.button:hover, header>a:hover{
+.button:hover,
+header>a:hover {
   opacity: 0.8;
   color: white;
   cursor: pointer;
