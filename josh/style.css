@@ -46,6 +46,16 @@ li a.active {
   background-color: #4CAF50;
 }
 
+.center-text{
+  text-align:center;
+}
+.about-me{
+  margin-top:50px;
+  margin-left:150px;
+  margin-right:150px;
+  margin-bottom:50px;
+}
+
 /*slideshow*/
 
 #slideshow {
@@ -65,7 +75,7 @@ li a.active {
   float: left;
   height: 510px;
   width: 728px;
-  
+  position: relative;
   text-align: center;
   color: white
 }
@@ -87,31 +97,163 @@ li a.active {
 
 #workexp-text{
   position: absolute;
-  top: 8px;
-  left: 16px;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    opacity:0.5;
+    font-size:1.5em;
 }
 #skills-text{
   position: absolute;
-  top: 8px;
-  left: 16px;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    opacity:0.5;
+    font-size:1.5em;
 }
 #edu-text{
   position: absolute;
-  top: 8px;
-  left: 16px;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    opacity:0.5;
+    font-size:1.5em;
 }
 #ref-text{
   position: absolute;
-  top: 8px;
-  left: 16px;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  opacity:0.5;
+  font-size:1.5em;
 }
 #socials-text{
   position: absolute;
-  top: 8px;
-  left: 16px;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  opacity:0.5;
+  font-size:1.5em;
+  
 }
 
 /*end of slideshow*/
+.work-experience{
+  text-align:center;
+  margin-top:50px;
+  margin-left:150px;
+  margin-right:150px;
+  margin-bottom:50px;
+}
+.workexp-table{
+  display:inline-block;
+  margin-left:auto; 
+  margin-right:auto;
+  text-align: left;
+}
+
+/* start */
+
+/* Three columns side by side */
+.skills-column {
+  float: left;
+  width: 32%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .skills-column {
+      width: 100%;
+      display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.skills-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #a8a3a3;
+  padding-top:5px;
+}
+
+.skills-card img{
+  height: 100px;
+}
+
+/* Some left and right padding inside the container */
+.skills-container {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.skills-container::after, .skills-row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.fa-html5{
+color:#F16529;
+font-size: 1.5em;
+}
+
+.fa-css3-alt{
+  color:#264DE4;
+  font-size: 1.5em;
+}
+
+.fa-js-square{
+  color:#FBDE34;
+  font-size: 1.5em;
+}
+
+.fa-angular{
+  color:#DD0330;
+  font-size: 1.5em;
+}
+
+.fa-react{
+  color:#05A5D1;
+  font-size: 1.5em;
+}
+
+.fa-docker{
+  color:#3A8CB4;
+  font-size:1.5em;
+}
+
+/* end -- */
+
+.education{
+  text-align:center;
+  margin-top:50px;
+  margin-left:150px;
+  margin-right:150px;
+  margin-bottom:50px;
+}
+.edu-table{
+  display:inline-block;
+  margin-left:auto; 
+  margin-right:auto;
+  text-align: left;
+  
+}
 
 .contact-icon{
   text-align: center;
@@ -120,21 +262,27 @@ li a.active {
 .contact-icon a{
   color:white;
 }
-.firstname{
-  text-transform: capitalize;
+.mapouter{
+  text-align:right;
+  height:350px;
+  width:350px;
+  display:inline-block;
 }
-textarea{
-  width:500px;
-  height:300px;
-  padding:3px;
-  margin-bottom:15px;
+.gmap_canvas {
+  overflow:hidden;
+  background:none!important;
+  height:350px;
+  width:350px;
 }
-form{
-  padding:3px;
+iframe{
+  align:middle;
 }
-form div{
-  padding:3px;
+.fa-mobile-alt{
+  font-size:50px;
 }
+.fa-envelope{
+  font-size:50px;
+}  
 .socials i{
   font-size:100px;
   text-align:center;
@@ -153,7 +301,7 @@ form div{
   padding:50px;
 }
 
-.fa-envelope{
+.fa-github{
   color:#ffffff;
   padding:50px;
 }
