@@ -58,13 +58,11 @@ a:hover {
   padding: 6px;
 }
 
-
 .timeline {
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
 }
-
 
 .timeline::after {
   content: '';
@@ -84,7 +82,6 @@ a:hover {
   width: 50%;
 }
 
-
 .container::after {
   content: '';
   position: absolute;
@@ -98,11 +95,9 @@ a:hover {
   z-index: 1;
 }
 
-
 .left {
   left: 0;
 }
-
 
 .right {
   left: 50%;
@@ -121,7 +116,6 @@ a:hover {
   border-color: transparent transparent transparent white;
 }
 
-
 .right::before {
   content: " ";
   height: 0;
@@ -135,11 +129,9 @@ a:hover {
   border-color: transparent white transparent transparent;
 }
 
-
 .right::after {
   left: -16px;
 }
-
 
 .content {
   padding: 20px 30px;
@@ -148,30 +140,28 @@ a:hover {
   border-radius: 6px;
 }
 
-
 @media screen and (max-width: 600px) {
-  .timeline::after {
-    left: 31px;
-  }
+.timeline::after {
+  left: 31px;
+}
 
-  .container {
-    width: 100%;
-    padding-left: 70px;
-    padding-right: 25px;
-  }
+.container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+}
 
-  .container::before {
-    left: 60px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
-  }
+.container::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
 
-  .left::after, .right::after {
-    left: 15px;
-  }
+.left::after, .right::after {
+  left: 15px;
+}
 
-  .right {
-    left: 0%;
-  }
+.right {
+  left: 0%;
 }
