@@ -163,7 +163,7 @@ input[type=submit] {
 
 @media (max-width: 600px) {
   .bgimg-1 {
-    background-image: url("10DS.jpg");
+    background-image: url("img/me/10DS.jpg");
   }
 
   #form {
@@ -299,6 +299,10 @@ input[type=submit] {
 #bhf {
   background-image: url("img/logos/bhf.PNG");
 }
+
+#tough-mudder {
+    background-image: url("img/me/tough-mudder.jpg");
+ }
 
 #graduate {
   background-image: url("img/me/image.png");
