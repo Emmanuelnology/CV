@@ -3,8 +3,7 @@
   box-sizing: border-box;
 }
 
-a,
-a:visited {
+a,a:visited {
   color: inherit;
   text-decoration-line: none;
   font-family: 'Fauna One', serif;
@@ -115,6 +114,7 @@ footer {
   text-transform: uppercase;
   margin-top: 5px;
   font-family: 'Fauna One', serif;
+  font-size: 20px;
 }
 
 .skills-panel ul {
@@ -157,6 +157,13 @@ footer {
 
 .life-icons {
   font-size: 50px;
+  text-align: center;
+  
+}
+h2{
+  font-family: 'Fauna One', serif;
+  text-align: center;
+
 }
 
 nav {
