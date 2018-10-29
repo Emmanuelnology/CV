@@ -31,11 +31,11 @@ header > a:hover {
   cursor: pointer;
 }
 
-svg a{
-  color: blue;
+svg a {
+  font-size: 22px;
 }
 
-svg a:hover{
+svg a:hover {
   opacity: 0.8;
   color: white;
   cursor: pointer;

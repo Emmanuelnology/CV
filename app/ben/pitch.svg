@@ -1,77 +1,85 @@
-<svg height="410" width="410">
-    
-    <a href="contact">
-        <path d="M200 179
-        L 207 179
-        L 333.5 65
-        A 185 195 0 0 0 200 5
-        Z" stroke="green" stroke-width="1" fill="lightgreen" />
-        <text x="220" y="70" fill="white">Contact Me</text>
-    </a>
-    
-    <a href="hobbies">
-        <path d="M207 179
-        L 207 185
-        L 384.45 185
-        A 185 195 0 0 0 333.5 65
-        Z" stroke="green" stroke-width="1" fill="lightgreen" />
-        <text x="280" y="150" fill="white">Hobbies</text>
-    </a>
-    
-    <a href="key_skills">
-        <path d="M207 185
-        L 207 190
-        L 337.9 330
-        A 185 195 0 0 0 384.45 185
-        Z" stroke="green" stroke-width="1"
-        fill="lightgreen" />
-        <text x="280" y="230" fill="white">Key Skills</text>
-    </a>
-    
-    <a href="work_volunteering_experience">
-        <path d="M207 190
-        L 207 222
-        L 200 222
-        L 200 395
-        A 185 195 0 0 0 337.9 330
-        Z" stroke="green"
-        stroke-width="1" fill="lightgreen" />
-        <text x="215" y="300" fill="white">Work &amp; Volunteering Experience</text>
-    </a>
-    
-    <a href="about_me">
-        <path d="M193 190
-        L 193 222
-        L 200 222
-        L 200 395
-        A 185 195 0 0 1 62.1 330
-        Z" stroke="green" stroke-width="1"
-        fill="lightgreen" />
-        <text x="115" y="300" fill="white">About Me</text>
-    </a>
-    
-    <a href="qualifications">
-        <path d="M193 185
-        L 193 190
-        L 62.1 330
-        A 185 195 0 0 1 15.55 185
-        Z" stroke="green" stroke-width="1" fill="lightgreen" />
-        <text x="10" y="230" fill="white">Qualifications &amp; Awards</text>
-    </a>
-    
-    <a href="references">
-        <path d="M193 179
-        L 193 185
-        L 15.55 185
-        A 185 195 0 0 1 67.5 65
-        Z" stroke="green" stroke-width="1" fill="lightgreen" />
-        <text x="50" y="150" fill="white">References</text>
-    </a>
-    
-    <path d="M200 179
-    L 193 179
-    L 67.5 65
-    A 185 195 0 0 1 200 5
-    Z" stroke="green" stroke-width="1" fill="lightgreen" />
-</svg>
+<svg width="470" height="450">
+            <!--viewBox="-350, 0, 1050, 400"-->
 
+            <a href="contact">
+                <path d="M235 195
+                L 245 195
+                L 390 62.46
+                A 230 220 0 0 0 235 5
+                Z"
+                    stroke="green" stroke-width="1" fill="lightgreen" />
+                <text x="260" y="80" fill="white">Contact Me</text>
+            </a>
+
+            <a href="hobbies">
+                <path d="M245 195
+                L 245 205
+                L 464.05 205
+                A 230 220 0 0 0 390 62.46
+                Z"
+                    stroke="green" stroke-width="1" fill="lightgreen" />
+                <text x="350" y="160" fill="white">Hobbies</text>
+            </a>
+
+            <a href="key_skills">
+                <path d="M245 205
+                L 245 215
+                L 410 367.76
+                A 230 220 0 0 0 464.05 205
+                Z"
+                    stroke="green" stroke-width="1" fill="lightgreen" />
+                <text x="350" y="280" fill="white">Key Skills</text>
+            </a>
+
+            <a href="work_volunteering_experience">
+                <path d="M245 215
+                L 245 255
+                L 235 255
+                L 235 445
+                A 230 220 0 0 0 410 367.76
+                Z"
+                    stroke="green" stroke-width="1" fill="lightgreen" />
+                <text x="260" y="350" fill="white">Work &amp; Volunteering Experience</text>
+            </a>
+
+            <a href="about_me">
+                <path d="M225 215
+                L 225 255
+                L 235 255
+                L 235 445
+                A 230 220 0 0 1 60 367.76
+                Z"
+                    stroke="green" stroke-width="1" fill="lightgreen" />
+                <text x="140" y="350" fill="white">About Me</text>
+            </a>
+
+            <a href="qualifications">
+                <path d="M225 205
+                L 225 215
+                L 60 367.76
+                A 230 220 0 0 1 5.95 205
+                Z"
+                    stroke="green" stroke-width="1" fill="lightgreen" />
+                <text x="10" y="280" fill="white">Qualifications &amp; Awards</text>
+            </a>
+
+            <a href="references">
+                <path d="M225 195
+                L 225 205
+                L 5.95 205
+                A 230 220 0 0 1 80 62.46
+                Z"
+                    stroke="green" stroke-width="1" fill="lightgreen" />
+                <text x="50" y="160" fill="white">References</text>
+            </a>
+
+            <a href="\">
+                <path d="M235 195
+            L 225 195
+            L 80 62.46
+            A 230 220 0 0 1 235 5
+            Z"
+                    stroke="green" stroke-width="1" fill="lightgreen" />
+                <text x="110" y="80" fill="white">Candidate List</text>
+            </a>
+        </svg>
