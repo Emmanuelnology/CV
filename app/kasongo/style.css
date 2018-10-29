@@ -1,11 +1,11 @@
-body{
-    font-size: 1em;
-    font-style: normal;
-    font-family: 'Lato', sans-serif;
-    background-image:url('https://windsim.com/images/sky/sky_107.bmp');
-    background-size:cover;
+body {
+      font-size: 1em;
+      font-style: normal;
+      font-family: 'Lato', sans-serif;
+      background-image:url('https://windsim.com/images/sky/sky_107.bmp');
+      background-size:cover;
 } 
-nav ul{
+nav ul {
     list-style-type: none;
     margin-left: 280px;
     padding: 0;
