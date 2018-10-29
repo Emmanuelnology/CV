@@ -73,7 +73,7 @@ a {
 
 .aboutme h2 {
   border-radius: 0 5px 5px 0;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 #aboutwrap div {
@@ -82,28 +82,24 @@ a {
   text-align: justify;
 }
 
-.small-pad {
-  padding: 0.1em;
-}
-
-.large-pad {
-  padding: 0.25em;
+.smaller-text {
+  font-size: 0.8em;
 }
 
 .small-text {
-  font-size: 0.75em;
+  font-size: 1em;
+}
+
+.medium-text {
+  font-size: 1.3em;
 }
 
 .large-text {
   font-size: 1.5em;
 }
 
-.middle {
-  text-align: center;
-}
-
-.right {
-  text-align: right;
+.larger-text {
+  font-size: 1.7em;
 }
 
 .opaque {
@@ -116,6 +112,24 @@ a {
 
 .transparent {
   opacity: 0.4;
+}
+
+#back div {
+  display: none;
+  text-align: center;
+  font-weight: normal;
+}
+
+#name {
+  text-decoration: italic;
+  font-family: serif;
+  font-size: 2em;
+  margin-bottom: 0.25em;
+  border-bottom: 1px solid black;
+}
+
+#logo {
+  font-weight: bolder;
 }
 
 h2 {
