@@ -1,281 +1,279 @@
 * {
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
 }
 
 nav {
-    background-color: #2929a3;
-    color: white;
-    text-transform: uppercase;
-    padding: 1.25em;
+  background-color: #2929a3;
+  color: white;
+  text-transform: uppercase;
+  padding: 1.25em;
 }
 
 #title {
-    margin-right: 3em;
+  margin-right: 3em;
 }
 
 .bold {
-    font-weight: bold;
+  font-weight: bold;
 }
 
-nav>* {
-    display: inline;
+nav > * {
+  display: inline;
 }
-  
-nav>ul {
-    list-style: none;
-    font-size: 0.75em;
-    margin-right: 0.25em;
+
+nav > ul {
+  list-style: none;
+  font-size: 0.75em;
+  margin-right: 0.25em;
 }
 
 nav li {
-    margin: 0.5em;
-    margin-top: 0;
-    float: right;
+  margin: 0.5em;
+  margin-top: 0;
+  float: right;
 }
 
 nav a {
-    color: inherit;
-    padding: 0.25em;
+  color: inherit;
+  padding: 0.25em;
 }
 
 nav a:hover {
-    background-color: white;
-    color: #2929a3;
-    border-radius: 2px;
-    font-weight: bold;
-    cursor: pointer;
+  background-color: white;
+  color: #2929a3;
+  border-radius: 2px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 main {
-    background-color: #ffffff;
+  background-color: #fff;
 }
 
 body {
-    font-family:sans-serif;
-    font-size: 20px;
+  font-family: sans-serif;
+  font-size: 20px;
 }
 
 a {
-    display: block;
+  display: block;
 }
 
 #aboutwrap {
-    width: 35%;
-    float: left;
+  width: 35%;
+  float: left;
 }
 
-.aboutme div{
-    font-weight: bolder;
+.aboutme div {
+  font-weight: bolder;
 }
 
-.aboutme h2{
-    border-radius: 0 5px 5px 0;
+.aboutme h2 {
+  border-radius: 0 5px 5px 0;
 }
 
-#aboutwrap div{
-    padding: 0 0.25em 0 0.25em;
+#aboutwrap div {
+  padding: 0 0.25em 0 0.25em;
 }
 
 .small-pad {
-    padding: 0.1em;
+  padding: 0.1em;
 }
 
 .large-pad {
-    padding: 0.25em;
+  padding: 0.25em;
 }
 
 .small-text {
-    font-size: 0.75em;
+  font-size: 0.75em;
 }
 
 .large-text {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 .middle {
-    text-align: center;
+  text-align: center;
 }
 
 .right {
-    text-align: right;
+  text-align: right;
 }
 
 .opaque {
-    opacity: 0.75;
+  opacity: 0.75;
 }
 
 .translucent {
-    opacity: 0.6;
+  opacity: 0.6;
 }
 
 .transparent {
-    opacity: 0.4;
+  opacity: 0.4;
 }
 
 h2 {
-    margin-top: 1em;
-    margin-bottom: 0.5em;
-    padding: 0.15em;
-    padding-left: 1em;
-    background-color: #2929a3;
-    color: #FFF;
-    font-size: 1.25em;
-    border-radius: 5px 0 0 5px;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  padding: 0.15em;
+  padding-left: 1em;
+  background-color: #2929a3;
+  color: #fff;
+  font-size: 1.25em;
+  border-radius: 5px 0 0 5px;
 }
 
 .rounded-right {
-    border-radius: 0 15px 15px 0;
+  border-radius: 0 15px 15px 0;
 }
 
-.idden{
-    border-radius: 15px 0 0 15px;
+.idden {
+  border-radius: 15px 0 0 15px;
 }
 
 .aboutme p {
-    width: 100%;
-    text-align: justify;
-    float: left;
-    padding: 0.2em;
+  width: 100%;
+  text-align: justify;
+  float: left;
+  padding: 0.2em;
 }
 
-/*REDUNDANT CSS USED FOR HIDDEN
-    SECTIOINS DEMO */
+/* REDUNDANT CSS USED FOR HIDDEN
+  SECTIOINS DEMO */
 
 .idden {
-    float: right;
-    text-align: center;
-    width: 60%;
+  float: right;
+  text-align: center;
+  width: 60%;
 }
 
-.idden ul{
-    margin-top: 2.5em;
+.idden ul {
+  margin-top: 2.5em;
 }
 
-.idden li{
-    list-style: none;
-    line-height: 2em;
+.idden li {
+  list-style: none;
+  line-height: 2em;
 }
 
-/*REDUNDANT CSS USED FOR HIDDEN
-    SECTIOINS DEMO */
+/* REDUNDANT CSS USED FOR HIDDEN
+  SECTIOINS DEMO */
 
 .hidden {
-    float: right;
-    text-align: center;
-    width: 60%;
+  float: right;
+  text-align: center;
+  width: 60%;
 }
 
-.hidden ul{
-    margin-top: 2.5em;
+.hidden ul {
+  margin-top: 2.5em;
 }
 
-.hidden li{
-    list-style: none;
-    line-height: 2em;
+.hidden li {
+  list-style: none;
+  line-height: 2em;
 }
 
 .contact-button {
-    font-size: 3em;
-    margin: 0.25em;
-    padding: 0;
+  font-size: 3em;
+  margin: 0.25em;
+  padding: 0;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 #skills-panel {
-    text-align: left;
-    width: 40%;
-    float: left;
+  text-align: left;
+  width: 40%;
+  float: left;
 }
 
 .skills-header {
-    margin-bottom: 1em;
-    margin-top: 1.5em;
+  margin-bottom: 1em;
+  margin-top: 1.5em;
 }
 
 #skills-panel li {
-    border-bottom: 1px dotted black;
-    padding: 0.1em;
+  border-bottom: 1px dotted black;
+  padding: 0.1em;
 }
 
-.score>* {
-    display: inline-block;
-    padding: 0.5em;
+.score > * {
+  display: inline-block;
+  padding: 0.5em;
 }
 
-.score>i {
-    float: right;
+.score > i {
+  float: right;
 }
 
 .open {
-    opacity: 0;
+  opacity: 0;
 }
 
 .logo-pad {
-    padding-right: 0.69em;
+  padding-right: 0.69em;
 }
 
 #extra-skills {
-    float: right;
-    text-align: left;
-    width: 50%;
+  float: right;
+  text-align: left;
+  width: 50%;
 }
 
 #extra-skills li {
-    padding: 0.2em 0 0.2em 0;
+  padding: 0.2em 0 0.2em 0;
 }
 
 .skill-logo {
-    float: right;
-    padding-right: 1em;
-    font-size: 1.5em;
+  float: right;
+  padding-right: 1em;
+  font-size: 1.5em;
 }
 
 #chinese {
-    font-weight: bolder;
-    padding-right: 0.5em;
+  font-weight: bolder;
+  padding-right: 0.5em;
 }
 
 .employment ul {
-    text-align: left;
-    font-size: 0.75em; 
-
+  text-align: left;
+  font-size: 0.75em;
 }
 
 .employment h3 {
-    margin-top: 0.5em; 
+  margin-top: 0.5em;
 }
 
 .qualification {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .awards ul {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .award-title {
-    font-size: 1.2em;
-    font-weight: bold;
-    margin-top: 0.25em;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 0.25em;
 }
 
 .award-def {
-    font-size: 0.75em;
-    font-weight: normal;
-    margin-top: 0.15em;
+  font-size: 0.75em;
+  font-weight: normal;
+  margin-top: 0.15em;
 }
 
 .award-icon {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 .award-year {
-    font-size: 0.75em;
+  font-size: 0.75em;
 }
-
