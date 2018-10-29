@@ -114,11 +114,6 @@ h1 {
   flex: 1;
 }
 
-.starcolumn2 {
-  display: flex;
-  flex: 1;
-}
-
 /* Contact me via text box */
 input {
   display: block;
