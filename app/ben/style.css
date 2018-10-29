@@ -71,6 +71,10 @@ header > a {
   fill: #80ff80;
 }
 
+#wicket{
+  fill: #edc9c9;
+}
+
 .button:hover,
 header > a:hover, 
 svg a:hover {
