@@ -16,13 +16,11 @@ h2{
 
 nav{
     background-color:black;
-    
 }
 
 nav li{
     display: inline;
-    text-transform: uppercase;
-    
+    text-transform: uppercase;  
 }
 
 nav ul, nav li{
@@ -53,7 +51,6 @@ a { color: white;
 }
 .arrow {
  text-align: center;
- margin: 8% 0;
 }
 .bounce {
  -moz-animation: bounce 2s infinite;
@@ -174,9 +171,13 @@ input[type=submit] {
   color: #000;
 }
 
-.caption span.border, .scroll-down span.border {
+.caption span.border, .scroll-down p{
     background-color: rgb(71, 71, 71);
     color: #fff;
+}
+
+.scroll-down p{
+    padding: 15px;
 }
 
 
