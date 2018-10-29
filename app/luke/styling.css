@@ -33,10 +33,6 @@ img {
   width: 100px;
 }
 
-div img:last-child {
-  border-radius: 10%;
-}
-
 li {
   padding-bottom: 10px;
 }
@@ -82,9 +78,6 @@ div ul li {
 .fa-folder,
 .fa-folder-o {
   display: inline-flex;
-
-  /* flex-direction:row;
-  align-self: flex-end; */
   justify-content: flex-end;
   margin-top: 2px;
 }
