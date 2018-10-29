@@ -1,10 +1,11 @@
 
 body{
-    background-image: url('dinertest-1.jpg');
+    background-image: url('dinertest-blur.png');
     margin:0;
     background-size: cover;
     background-attachment: fixed;
 }
+
 .dots{
     color:white;
     font-size: 0.8em;
@@ -46,7 +47,6 @@ body{
     position: relative;
 }
 
-
 .font-title {
     color:white;
     font-family:'Lobster';
@@ -63,7 +63,6 @@ body{
     margin:0;
 }
 
-
 .education{
     height:30px;
     width:40%;
@@ -76,7 +75,6 @@ body{
     font-family: 'Lobster';
     color:rgb(212, 0, 0);
     font-size: 1.5em
-
 }
 
 .education-fill{
@@ -88,14 +86,15 @@ body{
     left: 30px;
     font-size: 10px;
     margin-right: 0;
-
 }
+
 ul{
     list-style-type: none;
     font-family: 'Montserrat';
     font-weight:bold;
     padding: 0;
 }
+
 li{
     margin-bottom: 10px;
 }
@@ -123,93 +122,90 @@ li{
     left: 35px;
     font-size: 10px;
     margin-right: 0;
-
+    
 }
 
-    .achievements{
-        height:30px;
-        width:40%;
-        display: block;
-        text-align: left;
-        position: relative;
-        top:-359px;
-        font-family: 'Lobster';
-        color:rgb(212, 0, 0);
-        font-size: 1.5em;
-        float:right;
-        left: -22px;
-    }
-    
-    .ach-fill{
-        width:180px;
-        text-align: left;
-        position: relative;
-        top:-330px;
-        color:rgb(212, 0, 0);
-        left: 160px;
-        font-size: 10px;
-        float:right;
+.achievements{
+    height:30px;
+    width:40%;
+    display: block;
+    text-align: left;
+    position: relative;
+    top:-359px;
+    font-family: 'Lobster';
+    color:rgb(212, 0, 0);
+    font-size: 1.5em;
+    float:right;
+    left: -22px;
+}
 
-    }
-        .skills{
-            height:30px;
-            width:40%;
-            display: block;
-            text-align: left;
-            position: relative;
-            top:-310px;
-            font-family: 'Lobster';
-            color:rgb(212, 0, 0);
-            font-size: 1.5em;
-            float:right;
-            left: -22px;
-        }
-        
-        .skills-fill{
-            width:180px;
-            text-align: left;
-            position: relative;
-            top:-285px;
-            color:rgb(212, 0, 0);
-            left: 160px;
-            font-size: 10px;
-            float:right;
-    }
-    .contact{
-        color:rgb(212, 0, 0);
-        font-family:'Lobster';
-        font-size: 25px;;
-    
-    }
-    .contact-fill{
-        font-size: 30px;
+.ach-fill{
+    width:180px;
+    text-align: left;
+    position: relative;
+    top:-330px;
+    color:rgb(212, 0, 0);
+    left: 160px;
+    font-size: 10px;
+    float:right;
+}
+.skills{
+    height:30px;
+    width:40%;
+    display: block;
+    text-align: left;
+    position: relative;
+    top:-310px;
+    font-family: 'Lobster';
+    color:rgb(212, 0, 0);
+    font-size: 1.5em;
+    float:right;
+    left: -22px;
+}
 
-    }
-    .fa-facebook-square{
-        color:rgb(66,103,178);
-    }
-    .fa-linkedin{
-        color:rgb(0,119,181)
-    }
-    .fa-envelope{
-        color:rgb(241, 241, 241);
-    }
-    .fa-instagram{
-        /*color:#7232bd;*/
-        background: -webkit-gradient(linear, left top, left bottom, from(#7232bd), to(#ffdc7d));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        display: initial;
-      }
-      .score{
-        float: right;
-      }
-      .wide{
-          width:45%;
-          margin: 0 auto;
-          
-      }
-      .right{
-          float:right;
-      }
+.skills-fill{
+    width:180px;
+    text-align: left;
+    position: relative;
+    top:-285px;
+    color:rgb(212, 0, 0);
+    left: 160px;
+    font-size: 10px;
+    float:right;
+}
+.score{
+    float: right;
+}
+.contact{
+    color:rgb(212, 0, 0);
+    font-family:'Lobster';
+    font-size: 25px;;
     
+}
+.contact-fill{
+    font-size: 30px;  
+}
+.wide{
+    width:45%;
+    margin: 0 auto;
+    
+}
+.right{
+    float:right;
+}
+.fa-facebook-square{
+    color:rgb(66,103,178);
+}
+.fa-linkedin{
+    color:rgb(0,119,181)
+}
+.fa-envelope{
+    color:rgb(241, 241, 241);
+}
+.fa-instagram{
+    /*color:#7232bd;*/
+    background: -webkit-gradient(linear, left top, left bottom, from(#7232bd), to(#ffdc7d));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: initial;
+}
