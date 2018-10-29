@@ -31,3 +31,63 @@ ul {
   font-weight: 600;
   font-size: 1.3333em;
 }
+
+#scorecard {
+  margin: 0;
+  display: grid;
+  grid-template-areas: "team team team team" "batter caught bowled score" "total total final final";
+  grid-template-columns: 18em 7em 5em 4em;
+}
+
+#scorecard > h3 {
+  grid-area: team;
+}
+
+.innings {
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 800;
+  display: block;
+}
+
+#batter {
+  grid-area: batter;
+  font-weight: 600;
+}
+
+#caught {
+  grid-area: caught;
+}
+
+#bowled {
+  grid-area: bowled;
+}
+
+#score {
+  grid-area: score;
+  font-weight: 600;
+}
+
+#total {
+  grid-area: total;
+  text-align: left;
+  font-weight: 600;
+}
+
+#final {
+  grid-area: final;
+  font-weight: 600;
+  text-align: right;
+}
+
+#scorecard li {
+  text-align: left;
+}
+
+#score li {
+  text-align: right;
+}
+
+.blank {
+  color: transparent;
+}
