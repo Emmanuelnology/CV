@@ -1,0 +1,62 @@
+.capital {
+  text-transform: capitalize;
+}
+
+section {
+  margin: 15px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  padding: 2px;
+}
+
+a {
+  color: inherit;
+}
+
+address {
+  font-style: unset;
+}
+
+article {
+  display: inline;
+}
+
+.fab {
+  font-size: 50px;
+  margin: 0 5px;
+}
+
+.fa-linkedin {
+  color: #0274b3;
+}
+
+.fa-facebook-square {
+  color: #4267b2;
+}
+
+.fa-twitter-square {
+  color: #28aae1;
+}
+
+.button {
+  background-color: slateblue;
+  color: #eaeaff;
+  border: none;
+  display: inline-block;
+  font-size: 18px;
+  border-radius: 20px;
+  padding: 7px 17px;
+  margin: 10px;
+  width: 205px;
+}
+
+.button:hover {
+  opacity: 0.8;
+  color: white;
+  cursor: pointer;
+}

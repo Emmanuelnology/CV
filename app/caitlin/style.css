@@ -1,0 +1,167 @@
+
+main > section {
+  padding: 20px;
+}
+
+body {
+  margin: 0;
+  background-image: url(gym.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 100vh;
+  position: relative;
+  font-family: 'raleway';
+}
+
+h3 {
+  font-size: 1.1em;
+  text-transform: capitalize;
+  margin: 1em 0 0.3em 0;
+}
+
+h2 {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  vertical-align: middle;
+  padding: 10vh;
+  margin: 30vh 0 0 0;
+}
+
+p {
+  font-style: normal;
+  color: #525151;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  text-decoration: none;
+}
+
+#top-panel {
+  color: white;
+  margin: 0;
+  height: 100vh;
+}
+
+.sub-heading {
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+
+#navbar {
+  text-align: center;
+  background-color: rgb(9, 139, 133);
+  position: sticky;
+  top: 0;
+  text-transform: initial;
+  z-index: 9;
+}
+
+nav > a {
+  background-color: rgb(9, 139, 133);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  box-align: centre;
+  border-radius: 5px;
+  width: auto;
+  box-sizing: border-box;
+}
+
+nav > a:hover {
+  opacity: 0.6;
+}
+
+div > header {
+  padding: 0.05em;
+  font-size: 30px;
+  margin: 10px 10px 0 10px;
+}
+
+#about-me {
+  padding: 50px 130px;
+}
+
+.italic {
+  font-style: italic;
+}
+
+#contact-me li {
+  margin: 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.contact-links:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.bgcgrey {
+  background-color: rgba(211, 211, 211, 0.9);
+}
+
+.bgcbeige {
+  background-color: rgba(245, 245, 220, 0.9);
+}
+
+.container {
+  width: 60%;
+  margin: auto;
+  height: auto;
+}
+
+.one-of-two-cols {
+  width: 48%;
+  float: left;
+  text-align: right;
+}
+
+.two-of-two-cols {
+  width: 48%;
+  float: right;
+}
+
+.clearfix {
+  clear: both;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+}
+
+#skills-box li {
+  margin: 15px;
+  text-align: right;
+}
+
+#skills-box {
+  box-sizing: border-box;
+  text-align: center;
+  width: 300px;
+  display: block;
+  margin: 0 auto;
+}
+
+.score {
+  box-sizing: border-box;
+  display: inline;
+  margin: 25px;
+  text-align: center;
+}

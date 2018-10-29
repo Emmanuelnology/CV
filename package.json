@@ -8,7 +8,10 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "htmllint **/*.html"
+    "lint": "npm run lint-html && npm run lint-css",
+    "lint-html": "htmllint app/**/*.html",
+    "lint-css": "node ./node_modules/stylelint/bin/stylelint.js app/**/*.css",
+    "fix-css": "node ./node_modules/stylelint/bin/stylelint.js app/**/*.css --fix"
   },
   "repository": {
     "type": "git",
@@ -20,5 +23,8 @@
     "url": "https://github.com/nology-tech/interactive-cv/issues"
   },
   "homepage": "https://github.com/nology-tech/interactive-cv#readme",
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "stylelint": "^9.7.0"
+  }
 }

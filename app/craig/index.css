@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  text-align: center;
+  font-family: 'Krub', sans-serif;
+}
+
+.content {
+  background-color: #fff;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 100vw;
+  width: 100vw;
+  padding: 10px;
+  border-left: 1px solid #ccc;
+}
+
+.tab {
+  cursor: pointer;
+  position: absolute;
+  text-align: center;
+  font-size: 15px;
+  padding: 5px;
+  background-color: inherit;
+  border: solid #ccc;
+  border-width: 1px 1px 0 1px;
+  top: 50px;
+  width: 100px;
+  height: 30px;
+  border-radius: 10px 10px 0 0;
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+  left: -64px;
+}
+
+.tab:hover {
+  background-color: #ccc;
+}
+
+.content:nth-child(1) {
+  z-index: 2;
+}
+
+.content:nth-child(1) .tab {
+  top: 50px;
+}
+
+.content:nth-child(1).hidden {
+  z-index: 11;
+}
+
+.content:nth-child(2) {
+  z-index: 3;
+}
+
+.content:nth-child(2) .tab {
+  top: 150px;
+}
+
+.content:nth-child(2).hidden {
+  z-index: 12;
+}
+
+.content:nth-child(3) {
+  z-index: 4;
+}
+
+.content:nth-child(3) .tab {
+  top: 250px;
+}
+
+.content:nth-child(3).hidden {
+  z-index: 13;
+}
+
+#hi {
+  color: white;
+}
+
+#hi > div > div {
+  float: left;
+  position: relative;
+  width: 50%;
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+#hi > div > div > p {
+  color: #000;
+  background-color: #fff;
+  font-size: large;
+  padding: 20px;
+}
+
+#snow {
+  background-image: url('images/snowboarding.jpg');
+}
+
+#climb {
+  background-image: url('images/climbing.jpg');
+}
+
+#family {
+  background-image: url('images/walking.jpg');
+}
+
+#pro {
+  background-image: url('images/professional.jpg');
+}
+
+#greeting {
+  width: 30%;
+  height: 30%;
+  left: 35%;
+  top: 35%;
+  position: absolute;
+  display: flex;
+  background-color: rgb(2, 102, 116);
+  border: 3px solid white;
+  color: white;
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
+  font-size: x-large;
+  border-radius: 15px;
+}
+
+#greeting:hover .space {
+  display: inline-block;
+}
+
+.space {
+  width: 0.3em;
+  display: none;
+}
+
+#last-name {
+  font-weight: 800;
+}
+
+#download {
+  font-size: small;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  margin-top: 5px;
+}
+
+.name {
+  font-size: x-large;
+  margin: 0 0 10px 0;
+}
