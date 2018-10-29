@@ -1,3 +1,12 @@
+a {
+  text-decoration: none;
+}
+
+.heading {
+  font-family: 'Bangers';
+  font-size: 50px;
+}
+
 body {
   font-size: 1em;
   font-style: normal;
@@ -6,6 +15,7 @@ body {
   background-size: cover;
 }
 
+/* Sticky navbar with hover */
 nav ul {
   list-style-type: none;
   margin-left: 280px;
@@ -20,6 +30,12 @@ nav li {
   display: block;
   display: inline;
   float: left;
+  text-align: center;
+  border-right: 1px solid black;
+}
+
+nav li:last-child {
+  border-right: none;
 }
 
 nav li a {
@@ -36,26 +52,74 @@ nav li a:hover {
 }
 
 nav {
-  position: -webkit-sticky; /* Safari */
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
 }
 
-#kasface {
-  padding-right: 8em;
-  padding-top: 3em;
+/* Photo modification */
+.myphoto {
+  float: right;
+  border: solid #00008b;
+  border-width: 5px;
+  padding-bottom: 0;
+  margin-right: 7em;
 }
 
+.border {
+  border-color: darkblue;
+  border-style: solid;
+}
+
+/* Contact info */
+.myinfo {
+  margin-right: 50em;
+  background-color: #add8e6;
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=40);
+  padding-right: 1px;
+}
+
+.myinfo li {
+  margin-left: 1px;
+  font-weight: bold;
+  color: #000;
+}
+
+/* Social link */
 .social {
   margin-left: 2em;
+  padding-right: 1em;
   border: 0;
-  width: 3px;
+  display: inline;
 }
 
 h1 {
   text-align: center;
 }
 
+/* Add stars color and column to the right and space between skills */
+.checked {
+  color: darkblue;
+}
+
+.myskil {
+  justify-content: space-between;
+  word-spacing: 1em;
+}
+
+.starcolumn1 {
+  display: flex;
+  flex: 1;
+}
+
+.starcolumn2 {
+  display: flex;
+  flex: 1;
+}
+
+/* Contact me via text box */
 input {
   display: block;
   background-color: lightgrey;
@@ -79,6 +143,7 @@ textarea {
   background-color: lightblue;
 }
 
+/* Send email */
 .emailad {
   list-style-type: none;
   padding-top: 2em;
@@ -87,6 +152,7 @@ textarea {
   margin-left: 0;
 }
 
+/* Copyright font */
 .copyright {
   font-size: 0.8em;
   font-style: oblique;
