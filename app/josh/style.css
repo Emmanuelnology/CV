@@ -1,0 +1,174 @@
+body {
+  background:#645754 url(footer_lodyas.png) top left repeat;
+  font-family: 'Montserrat', sans-serif;
+  color:white;
+}
+h1{
+  text-align:center;
+  line-height: 2em;
+  display:none;
+}
+.header-logo{
+  text-align:center;
+}
+.logo{
+  height:200px;
+  margin:0 0 30px 0;
+}
+nav{
+  position: sticky;
+  top: 0;
+  text-align:center;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffffff;
+  display:inline-block;
+}
+nav li {
+  float:left;
+}
+nav li a {
+  display: block;
+  color: #666;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover:not(.active) {
+  background-color: #ddd;
+}
+li a.active {
+  color: white;
+  background-color: #4CAF50;
+}
+
+/*slideshow*/
+
+#slideshow {
+  overflow: hidden;
+  height: 510px;
+  width: 728px;
+  margin: 0 auto;
+  border-radius:5%;
+}
+
+.slide-wrapper {
+  width: 2912px;
+  -webkit-animation: slide 30s ease infinite;
+}
+
+.slide {
+  float: left;
+  height: 510px;
+  width: 728px;
+  
+  text-align: center;
+  color: white
+}
+
+.slide-number {
+  height: 510px;
+  width: 728px;
+}
+
+@-webkit-keyframes slide {
+  20% {margin-left: 0px;}
+  30% {margin-left: -728px;}
+  50% {margin-left: -728px;}
+  60% {margin-left: -1456px;}
+  70% {margin-left: -1456px;}
+  80% {margin-left: -2184px;}
+  90% {margin-left: -2184px;}
+}
+
+#workexp-text{
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+#skills-text{
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+#edu-text{
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+#ref-text{
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+#socials-text{
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+/*end of slideshow*/
+
+.contact-icon{
+  text-align: center;
+  padding-top:15px;
+}
+.contact-icon a{
+  color:white;
+}
+.firstname{
+  text-transform: capitalize;
+}
+textarea{
+  width:500px;
+  height:300px;
+  padding:3px;
+  margin-bottom:15px;
+}
+form{
+  padding:3px;
+}
+form div{
+  padding:3px;
+}
+.socials i{
+  font-size:100px;
+  text-align:center;
+}
+.socials-link{
+  margin:0 auto;
+  width:85%;
+  text-align:center ;
+}
+.fa-facebook{
+  color:#3B5998;
+  padding:50px;
+}
+.fa-twitter{
+  color:#00aced;
+  padding:50px;
+}
+
+.fa-envelope{
+  color:#ffffff;
+  padding:50px;
+}
+.fa-spotify{
+  color: #1ed760;
+  padding:50px;
+}
+.fa-instagram{
+  /*color:#7232bd;*/
+  background: -webkit-gradient(linear, left top, left bottom, from(#7232bd), to(#ffdc7d));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: initial;
+  padding:50px;
+}
+.footer{
+  text-align:center;
+}
