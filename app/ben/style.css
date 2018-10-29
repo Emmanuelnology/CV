@@ -20,12 +20,12 @@ header > a {
   cursor: pointer;
   border-radius: 30px;
   padding: 10px 25px;
-  margin: 10px 0px;
+  margin: 10px 0;
   width: 90%;
 }
 
 .button:hover,
-header>a:hover {
+header > a:hover {
   opacity: 0.8;
   color: white;
   cursor: pointer;
