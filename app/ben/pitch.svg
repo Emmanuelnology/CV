@@ -1,79 +1,77 @@
 <svg height="410" width="410">
-        
-        <a xlink:href="contact">
-            <path d="M200 179
-            L 207 179
-            L 333.5 65
-            A 185 195 0 0 0 200 5
-            Z" stroke="green" stroke-width="1" fill="lightgreen" />
-            <text x="220" y="70" fill="white">Contact Me</text>
-        </a>
-        
-        <a xlink:href="hobbies">
-            <path d="M207 179
-            L 207 185
-            L 384.45 185
-            A 185 195 0 0 0 333.5 65
-            Z" stroke="green" stroke-width="1" fill="lightgreen" />
-            <text x="280" y="150" fill="white">Hobbies</text>
-        </a>
-        
-        <a xlink:href="key_skills">
-            <path d="M207 185
-            L 207 190
-            L 337.9 330
-            A 185 195 0 0 0 384.45 185
-            Z" stroke="green" stroke-width="1"
-            fill="lightgreen" />
-            <text x="280" y="230" fill="white">Key Skills</text>
-        </a>
-        
-        <a xlink:href="work_volunteering_experience">
-            <path d="M207 190
-            L 207 222
-            L 200 222
-            L 200 395
-            A 185 195 0 0 0 337.9 330
-            Z" stroke="green"
-            stroke-width="1" fill="lightgreen" />
-            <text x="215" y="300" fill="white">Work & Volunteering Experience</text>
-        </a>
-        
-        <a xlink:href="about_me">
-            <path d="M193 190
-            L 193 222
-            L 200 222
-            L 200 395
-            A 185 195 0 0 1 62.1 330
-            Z" stroke="green" stroke-width="1"
-            fill="lightgreen" />
-            <text x="115" y="300" fill="white">About Me</text>
-        </a>
-        
-        <a xlink:href="qualifications">
-            <path d="M193 185
-            L 193 190
-            L 62.1 330
-            A 185 195 0 0 1 15.55 185
-            Z" stroke="green" stroke-width="1" fill="lightgreen" />
-            <text x="10" y="230" fill="white">Qualifications & Awards</text>
-        </a>
-        
-        <a xlink:href="references">
-            <path d="M193 179
-            L 193 185
-            L 15.55 185
-            A 185 195 0 0 1 67.5 65
-            Z" stroke="green" stroke-width="1" fill="lightgreen" />
-            <text x="50" y="150" fill="white">References</text>
-        </a>
-        
+    
+    <a href="contact">
         <path d="M200 179
-        L 193 179
-        L 67.5 65
-        A 185 195 0 0 1 200 5
+        L 207 179
+        L 333.5 65
+        A 185 195 0 0 0 200 5
         Z" stroke="green" stroke-width="1" fill="lightgreen" />
-        
-        Sorry, your browser does not support inline SVG.
-    </svg>
+        <text x="220" y="70" fill="white">Contact Me</text>
+    </a>
+    
+    <a href="hobbies">
+        <path d="M207 179
+        L 207 185
+        L 384.45 185
+        A 185 195 0 0 0 333.5 65
+        Z" stroke="green" stroke-width="1" fill="lightgreen" />
+        <text x="280" y="150" fill="white">Hobbies</text>
+    </a>
+    
+    <a href="key_skills">
+        <path d="M207 185
+        L 207 190
+        L 337.9 330
+        A 185 195 0 0 0 384.45 185
+        Z" stroke="green" stroke-width="1"
+        fill="lightgreen" />
+        <text x="280" y="230" fill="white">Key Skills</text>
+    </a>
+    
+    <a href="work_volunteering_experience">
+        <path d="M207 190
+        L 207 222
+        L 200 222
+        L 200 395
+        A 185 195 0 0 0 337.9 330
+        Z" stroke="green"
+        stroke-width="1" fill="lightgreen" />
+        <text x="215" y="300" fill="white">Work &amp; Volunteering Experience</text>
+    </a>
+    
+    <a href="about_me">
+        <path d="M193 190
+        L 193 222
+        L 200 222
+        L 200 395
+        A 185 195 0 0 1 62.1 330
+        Z" stroke="green" stroke-width="1"
+        fill="lightgreen" />
+        <text x="115" y="300" fill="white">About Me</text>
+    </a>
+    
+    <a href="qualifications">
+        <path d="M193 185
+        L 193 190
+        L 62.1 330
+        A 185 195 0 0 1 15.55 185
+        Z" stroke="green" stroke-width="1" fill="lightgreen" />
+        <text x="10" y="230" fill="white">Qualifications &amp; Awards</text>
+    </a>
+    
+    <a href="references">
+        <path d="M193 179
+        L 193 185
+        L 15.55 185
+        A 185 195 0 0 1 67.5 65
+        Z" stroke="green" stroke-width="1" fill="lightgreen" />
+        <text x="50" y="150" fill="white">References</text>
+    </a>
+    
+    <path d="M200 179
+    L 193 179
+    L 67.5 65
+    A 185 195 0 0 1 200 5
+    Z" stroke="green" stroke-width="1" fill="lightgreen" />
+</svg>
 

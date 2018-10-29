@@ -30,3 +30,13 @@ header > a:hover {
   color: white;
   cursor: pointer;
 }
+
+svg a{
+  color: blue;
+}
+
+svg a:hover{
+  opacity: 0.8;
+  color: white;
+  cursor: pointer;
+}
