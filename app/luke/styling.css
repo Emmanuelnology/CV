@@ -10,7 +10,11 @@ body {
   color: white;
 }
 
-header, footer, h1, h2, h3 {
+header,
+footer,
+h1,
+h2,
+h3 {
   text-align: center;
   font-family: 'raleway';
 }
@@ -20,20 +24,20 @@ ul {
   padding: 1.5%;
 }
 
-span p{
+span p {
   font-size: 50px;
   text-align: center;
 }
 
-img{
-width: 100px;
+img {
+  width: 100px;
 }
-div img:last-child{
+div img:last-child {
   border-radius: 10%;
 }
 
-li{
-  padding-bottom:10px;
+li {
+  padding-bottom: 10px;
 }
 
 .a {
@@ -41,45 +45,49 @@ li{
   font-size: 18px;
 }
 
-.fa-at{
+.fa-at {
   font-weight: bold;
-  color: rgb(70,176,254);
+  color: rgb(70, 176, 254);
 }
 
-.fa-linkedin{
-  color: rgb(2,116,179);
+.fa-linkedin {
+  color: rgb(2, 116, 179);
 }
 
-.fa-github{
-  color:white;
+.fa-github {
+  color: white;
 }
 
-.fa-twitter{
-  color: rgb(0,172,237);
+.fa-twitter {
+  color: rgb(0, 172, 237);
 }
 
-.fa-map-marker{
-  color: rgb(220,77,63)
+.fa-map-marker {
+  color: rgb(220, 77, 63);
 }
 
-#experience, #about, #aca, #work{
+#experience,
+#about,
+#aca,
+#work {
   padding-top: 40px;
 }
 
-div ul li{
+div ul li {
   border-bottom: white solid 1px;
-  margin-top:5px;
+  margin-top: 5px;
 }
 
-.fa-folder, .fa-folder-o{
-display: inline-flex;
-/* flex-direction:row;
-align-self: flex-end; */
-justify-content:flex-end;
-margin-top:2px;
+.fa-folder,
+.fa-folder-o {
+  display: inline-flex;
+  /* flex-direction:row;
+  align-self: flex-end; */
+  justify-content: flex-end;
+  margin-top: 2px;
 }
 
-.cv{
-  color:white;
+.cv {
+  color: white;
   text-decoration: none;
 }
