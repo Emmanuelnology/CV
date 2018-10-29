@@ -26,7 +26,9 @@ h1 {
   color: #fff;
 }
 
-h2, h3, h4 {
+h2,
+h3,
+h4 {
   font-weight: 400;
 }
 

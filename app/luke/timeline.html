@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        margin:0;
+    }
+
+    .timeline {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 15px;
+        font-family: "raleway";
+    }
+
+    .timeline div {
+        width: 100%;
+        position: relative;
+        margin: 0 5px;
+        padding: 1em;
+    }
+
+    .timeline div div:nth-child(1) {
+        border-bottom: 1px black solid;
+    }
+
+    .timeline div div:nth-child(2) {
+        border-top: 1px black solid;
+    }
+
+    .timeline div div:nth-child(even)::before {
+        content: " ";
+        width: 1em;
+        height: 1em;
+        border-radius: 50%;
+        border: 0.125em black solid;
+        background-color: white;
+        position: absolute;
+        bottom: 1.375em;
+    }
+
+    .timeline div p {
+        display: inline-flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-height: 50%;
+        max-width:100%;
+    }
+</style>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <title>Timeline</title>
+</head>
+
+<body>
+    <div class="timeline">
+        <div>
+            <p>even</p>
+            <p>odd</p>
+
+            <p>even</p>
+            <p>odd</p>
+
+        </div>
+        <div>
+            <div></div>
+            <div></div>
+        </div>
+        <div>
+
+            <p>even</p>
+            <p>odd</p>
+
+            <p>even</p>
+            <p>odd</p>
+
+        </div>
+    </div>
+</body>
+
+</html>
