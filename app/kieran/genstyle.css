@@ -1,34 +1,21 @@
 * {
     box-sizing: border-box;
 }
-
 /* .bold {
     font-weight:800;
     text-transform:uppercase;
     font-size:2em;
     padding-bottom: 5px;
     position: relative;
-    top: -170px;
-    
-    
-    
+    top: -170px;   
 } */
-
-
-
 
 a {
     text-decoration: none;
     color: inherit;
-    padding-right: 5px;
-    
-    
-    }     
+    padding-right: 5px;  
+}     
 
-header {
-
-}
-  
 h1 {
     text-align: center;
     margin:0;
@@ -39,26 +26,19 @@ h1 {
     font-weight: 800;
     background-image: url('cloudy-day.png');
     background-repeat: repeat;
-    background-attachment: fixed;
-    
+    background-attachment: fixed;   
 }
 
 h2 {
     margin-top: 0px;
 }
 
-
 body {
     font-family: 'Nunito', sans-serif;
     font-size: 20px;
     margin:0;
-    min-width: 643px;
-    
-
-    
-    }
-
-
+    min-width: 643px;   
+}
 
 nav {
     background-image: url('cloudy-day.png');
@@ -66,18 +46,11 @@ nav {
     background-attachment: fixed;
     text-transform: lowercase;
     padding:0;
-    height:40px;
-
- 
-    
-    }
-
-
+    height:40px;   
+}
 
 nav .brand {
-    margin-right:0.1em;
-
-    
+    margin-right:0.1em;    
 }    
 
 nav ul {
@@ -87,15 +60,10 @@ nav ul {
     text-transform: uppercase;
     font-size: smaller;
     float:left;
-    padding-left:0px;
-    
-
-    
-    
-    }
+    padding-left:0px;   
+}
 
 nav li {
-
     display:inline-block;
     margin: 0 0.2em;
     height:40px;
@@ -104,37 +72,22 @@ nav li {
     padding-top: 10px;
     border-top:2px solid black;
     border-left:2px solid black;
-    border-right:2px solid black;
-    
-    
-    
-     
-    
-
-    }
-
-
-
+    border-right:2px solid black;  
+}
 
 nav > * {
     display: inline;
 }  
 
 nav li:hover {
-    color:white;
-    
+    color:white;   
+}
 
-}  
 nav a {
     padding:0 0.5em;
 } 
 
-
-
-
-
-main{
-    
+main{   
     margin:0;
     padding:40px;
     border-top:2px solid black;
@@ -142,12 +95,9 @@ main{
     text-align: center;
 }
 
-
-
 .aboutmelabel {
     background-color:pink;
-    margin-left:30px;
-
+    margin-left:30px;   
 }
 
 .worklabel {
@@ -178,5 +128,5 @@ footer {
     position: relative;
     bottom: 0px;
     width: 100%;
-
+    
 }

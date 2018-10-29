@@ -1,8 +1,7 @@
-ul{
-    list-style: none;
-}
-
 article {
-    margin: 15px;
+  margin: 15px;
 }
 
+ul {
+  list-style: none;
+}
