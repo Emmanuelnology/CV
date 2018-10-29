@@ -10,8 +10,16 @@
 </head>
 <body>
     <main>
+        <!-- Flex direction column for mobile then for larger screen flex direction row. This builds a navigation bar responsive to mobile devices. -->
         <nav>
-            <ul>
+            <div class="burger-menu" onclick="transitionMenu(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                    <p>Menu</p>
+                </div>
+            </div>
+            <ul class="hide" id="navigation">
                 <li><a href="#about">About me</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#work">Work experience</a></li>
@@ -240,5 +248,12 @@
             <a href="https://www.instagram.com/webstar95/"><i class="fab fa-instagram"></i></a>
         </footer>
     </main>
+    <script>
+        function transitionMenu(x) {
+            x.classList.toggle("change");
+            var navigation = document.getElementById("navigation");
+            navigation.classList.toggle("hide");
+       }
+    </script>
 </body>
 </html>
