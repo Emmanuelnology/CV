@@ -3,8 +3,7 @@
   box-sizing: border-box;
 }
 
-a,
-a:visited {
+a,a:visited {
   color: inherit;
   text-decoration-line: none;
   font-family: 'Fauna One', serif;
@@ -128,7 +127,6 @@ footer {
   padding: 5px;
   font-family: 'Fauna One', serif;
 }
-
 .skills-panel .score {
   color: #ff7300;
   display: inline;
@@ -143,22 +141,18 @@ footer {
 .skills-panel li:first-child {
   border-top-style: dotted;
 }
-
 .me {
   font-family: 'Fauna One', serif;
   margin: 0;
   padding: 0;
   text-align: center;
 }
-
 .need {
   font-size: 15px;
 }
-
 .life-icons {
   font-size: 50px;
 }
-
 nav {
   background-color: lightgrey;
   width: 34%;
