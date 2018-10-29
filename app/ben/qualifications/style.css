@@ -1,33 +1,33 @@
 article {
-    margin: 15px;
+  margin: 15px;
 }
 
 ul{
-    list-style: none;
+  list-style: none;
 }
 
 #modules{
-    width: 200px;
-    margin: 0 auto;
+  width: 200px;
+  margin: 0 auto;
 }
 
 #a-levels{
-    width:250px;
-    margin: 0 auto;
+  width:250px;
+  margin: 0 auto;
 }
 
 .grades li{
-    text-align: left;
+  text-align: left;
 }
 
 .grades div{
-    letter-spacing: 1px;
-    font-size: 0.75em;
-    display: inline-block;
-    float: right;
+  letter-spacing: 1px;
+  font-size: 0.75em;
+  display: inline-block;
+  float: right;
 }
 
 .achieved{
-    font-weight: 600;
-    font-size: 1.3333em;
+  font-weight: 600;
+  font-size: 1.3333em;
 }
