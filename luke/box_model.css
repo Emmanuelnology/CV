@@ -13,14 +13,14 @@
 
 #pro-box{
     box-sizing: border-box;
-    width: 50%;
+    width: 100%;
     height: 50%;
     float:left;
 }
 
-#spare{
+/* #spare{
     box-sizing: border-box;
     width: 50%;
     height: 50%;
     float:left;
-}
+} */
