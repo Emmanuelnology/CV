@@ -20,7 +20,7 @@ body > * {
 }
 
 nav {
-  background-color: lightgrey;
+  background-color: #06AED5;
   width: 34%;
   height: 100vh;
   margin-right: 1%;
@@ -299,4 +299,9 @@ footer {
   margin: 0;
   padding: 0;
   text-align: center;
+}
+img {
+  display: block;
+  margin: auto;
+
 }
