@@ -1,22 +1,32 @@
 body {
-    background-color: rgb(157, 224, 180);
+    
     max-width: 650px;
-    margin: 0 auto;
+    margin: 0 auto; 
+    background-image: url('bg-blur.jpg');
 }
 
+.content {
+    margin: 0 auto;
+    max-width: 650px;
+    background: rgb(157, 224, 180);
+
+  }
+
 #dots {
-    background-image: url('polka-dots.png');
+    background-image: url('white-polka-done.png');
 }
 
 main{
     background-color: rgb(228, 228, 200);
-    width: 100%;
+    width: 95%;
     height:100vh;
     border-radius: 20px;
+    color: rgb(212, 0, 0);
+    margin: 0 auto;
 }
 
 header {
-    height:250px;
+    height:150px;
     position:relative;
 }
 
@@ -32,6 +42,7 @@ header {
     display:flex;
     align-items:center;
     justify-content:center;
+    
 }
 
 
@@ -39,6 +50,7 @@ header {
     #diamond {
         width:70%;
         left:15%;
+        
     } 
 }
 
@@ -47,3 +59,37 @@ header {
     color: white;
     font-size: 400%;
 }
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    flex-wrap: wrap;
+    padding-top: 150px;
+    padding-left: 50px;
+    padding-right: 50px;
+    justify-content: space-between;
+
+}
+
+.box{
+    width: 45%;
+}
+
+ul {
+    list-style-type: none;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    padding: 0;
+  }
+.title{
+  font-family: 'Lobster';
+  color: black;
+  font-size: 2em;
+}
+
+li>div{
+    display: inline;
+    float: right;
+}
+
