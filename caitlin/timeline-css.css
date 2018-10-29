@@ -1,9 +1,152 @@
 body{
-    background-color: beige;
+    background-color: lightgray;
+    font-family: 'raleway';
 }
 
 .headers>div{
     background-color: aquamarine;
     width:50%;
-    
+}
+
+#container5 {
+    clear: left;
+    float: left;
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+}
+.containers{
+    clear: left;
+    float: left;
+    width: 100%;
+    position: relative;
+    right: 20%;
+    padding: 0;
+}
+#col1 {
+    float: left;
+    width: 35%;
+    position: relative;
+    left: 82%;
+    overflow: hidden;
+    text-align: right;
+}
+#col2 {
+    float: left;
+    width: 2%;
+    position: relative;
+    left: 86%;
+    overflow: hidden;
+    text-align: right;
+}
+#col3 {
+    float: left;
+    width: 4%;
+    position: relative;
+    left: 90%;
+    overflow: hidden;
+    margin: 90px 0 0 0;
+    text-align: center;
+}
+#col4 {
+    float: left;
+    width: 2%;
+    position: relative;
+    left: 94%;
+    overflow: hidden;
+}
+#col5 {
+    float: left;
+    width: 35%;
+    position: relative;
+    left: 98%;
+    overflow: hidden;
+}
+
+hr{
+    width: 5px;
+    height: 80px;
+    border-top: none;
+    background: darkgray;
+    border-radius: 3px;
+    margin:3px auto;
+}
+
+#durham-hr{
+    width: 15px;
+    height: 290px;
+    border-top: none;
+    background: rgb(207, 131, 207);
+    border-radius: 3px;
+    margin: 160px 0 0 0;
+}
+#dur-icon{
+    color: rgb(207, 131, 207);
+}
+#hayesfield-hr{
+    width: 15px;
+    height: 350px;
+    border-top: none;
+    background: rgb(175, 107, 175);
+    border-radius: 3px;
+    margin: 30px 0 0 0;
+}
+#hayesfield-icon{
+    color: rgb(175, 107, 175);
+}
+#hare-hr{
+    width: 15px;
+    height: 20px;
+    border-top: none;
+    background: rgb(206, 20, 206);
+    border-radius: 3px;
+    margin: 130px 0 0 0;
+}
+#hare-icon{
+    color: rgb(206, 20, 206);
+}
+#ebs-hr{
+    width: 15px;
+    height: 30px;
+    border-top: none;
+    background: rgb(138, 62, 138);
+    border-radius: 3px;
+    margin: 80px 0 0 0;
+}
+#ebs-icon{
+    color: rgb(138, 62, 138);
+}
+#waitrose-hr{
+    width: 15px;
+    height: 170px;
+    border-top: none;
+    background: rgb(95, 11, 95);
+    border-radius: 3px;
+    margin: 230px 0 0 0;
+}
+#waitrose-icon{
+    color: rgb(95, 11, 95);
+}
+
+ul{
+    list-style-type: none;
+    padding: 0 25px;
+    margin: 0;
+}
+li{
+    padding: 5px 0;
+}
+
+h2{
+    text-align: center;
+    padding: 15px
+}
+h3{
+    padding: 0 25px;
+    margin: 40px 0 0 0;
+}
+
+.dates{
+    font-style: italic;
+    margin: 0 0 5px 0;
 }
