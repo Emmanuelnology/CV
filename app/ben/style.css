@@ -1,6 +1,6 @@
 .button,
 header > a {
-  background-color:  #527952;
+  background-color: #527952;
   color: #eaeaff;
   border: none;
   display: inline-block;
@@ -12,7 +12,7 @@ header > a {
   margin: 5px;
 }
 
-.button{
+.button {
   font-size: 16px;
   cursor: pointer;
   width: 120px;
@@ -40,7 +40,7 @@ header > a {
 }
 
 #references {
-  fill: #80f680; 
+  fill: #80f680;
 }
 
 #hobbies {
@@ -53,30 +53,30 @@ header > a {
 
 #experience {
   fill: #80e780;
-} 
- 
+}
+
 #about {
   fill: #80d880;
 }
 
 #awards {
-  fill: #80cf80
+  fill: #80cf80;
 }
 
-#contact{
-  fill: #80e180
+#contact {
+  fill: #80e180;
 }
 
-#home{
+#home {
   fill: #80ff80;
 }
 
-#wicket{
+#wicket {
   fill: #edc9c9;
 }
 
 .button:hover,
-header > a:hover, 
+header > a:hover,
 svg a:hover {
   opacity: 0.7;
   color: white;
