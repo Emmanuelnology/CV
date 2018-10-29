@@ -81,10 +81,6 @@ a {
   }
 }
 
-
-
-
-
 .about-text {
   font-size: 30px;
   padding: 10px;
@@ -201,8 +197,6 @@ input[type=submit] {
 .scroll-down p {
   padding: 15px;
 }
-
-
 
 .scroll-down {
   position: absolute;
