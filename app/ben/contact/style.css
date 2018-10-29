@@ -1,49 +1,49 @@
-.capital{
+.capital {
   text-transform: capitalize;
 }
 
-section{
+section {
   margin: 15px;
 }
 
-ul{
+ul {
   list-style: none;
 }
 
-li{
+li {
   padding: 2px;
 }
 
-a{
+a {
   color: inherit;
 }
 
-address{
+address {
   font-style: unset;
 }
 
-article{
+article {
   display: inline;
 }
 
-.fab{
+.fab {
   font-size: 50px;
   margin: 0px 5px;
 }
 
-.fa-linkedin{
+.fa-linkedin {
   color:#0274b3;
 }
 
-.fa-facebook-square{
+.fa-facebook-square {
   color: #4267b2;
 }
 
-.fa-twitter-square{
+.fa-twitter-square {
   color: #28aae1;
 }
 
-.button{
+.button {
   background-color: slateblue;
   color: #eaeaff;
   border: none;
@@ -55,7 +55,7 @@ article{
   width: 205px;
 }
 
-.button:hover{
+.button:hover {
   opacity: 0.8;
   color: white;
   cursor: pointer;

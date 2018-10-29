@@ -2,32 +2,32 @@ article {
   margin: 15px;
 }
 
-ul{
+ul {
   list-style: none;
 }
 
-#modules{
+#modules {
   width: 200px;
   margin: 0 auto;
 }
 
-#a-levels{
+#a-levels {
   width:250px;
   margin: 0 auto;
 }
 
-.grades li{
+.grades li {
   text-align: left;
 }
 
-.grades div{
+.grades div {
   letter-spacing: 1px;
   font-size: 0.75em;
   display: inline-block;
   float: right;
 }
 
-.achieved{
+.achieved {
   font-weight: 600;
   font-size: 1.3333em;
 }

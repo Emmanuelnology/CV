@@ -1,13 +1,13 @@
-.left, .left li{
+.left, .left li {
   text-align: left
 }
 
-ul.left{
+ul.left {
   margin-left: 10px;
   list-style: none;
 }
 
-.skill{
+.skill {
   font-size: 18px;
   font-weight: 600;
   padding-bottom: 10px;
@@ -15,7 +15,7 @@ ul.left{
 }
 
 
-li>div{
+li>div {
   font-size: 16px;
   display: block;
   font-weight: 100;
@@ -25,13 +25,13 @@ li>div{
   text-align: justify;
 }
 
-.stars{
+.stars {
   display: inline-block;
   padding: 0;
   float: right;
 }
 
 
-li i{
+li i {
   font-size: 0.8em;
 }
