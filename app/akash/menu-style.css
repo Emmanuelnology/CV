@@ -65,7 +65,7 @@ header {
 .box {
   width: 100%;
   margin: 0 auto;
-  margin-bottom: 10px
+  margin-bottom: 10px;
 }
 
 ul {
@@ -84,16 +84,16 @@ ul {
 }
 
 .elipse {
-  flex-grow:1;
+  flex-grow: 1;
   padding: 0 0 10px 10px;
 }
 
 .elipse span {
   border-bottom: 5px dotted black;
-  display:inline-block;
+  display: inline-block;
   width: 100%;
-
 }
+
 li > div {
   display: inline;
   float: right;
