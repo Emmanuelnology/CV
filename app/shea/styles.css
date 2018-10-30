@@ -249,6 +249,10 @@ h2 {
   padding-right: 0.5em;
 }
 
+.collapsed {
+  display: none;
+}
+
 .employment i {
   font-size: 1.5em;
 }
