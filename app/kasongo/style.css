@@ -5,13 +5,17 @@ body {
   font-family: 'Days One';
   background-image: url('https://windsim.com/images/sky/sky_107.bmp');
   background-size: cover;
+  display: flex;
+  flex-grow: 1;
+  flex-flow: column;
+  flex-basis: 1%;
 }
 
 a {
   text-decoration: none;
 }
 
-/* Added srolling welcome page with bouncing arrow */
+/* Added srolling welcome page with bouncing arrow, flex included */
 
 .bonjour {
   min-height: 100vh;
@@ -21,6 +25,9 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url('kassnow.jpg');
+  display: flex;
+  flex: 1;
+  flex-shrink: 0.001px;
 }
 
 .emmanuel {
@@ -129,6 +136,12 @@ nav {
   top: 0;
 }
 
+.navbar {
+  display: flex;
+  flex: 1;
+  flex-shrink: 0.5px;
+}
+
 /* Margin for main body */
 main {
   margin-left: 0.5em;
@@ -150,6 +163,7 @@ h2 {
   border: solid #00008b;
   border-width: 5px;
   margin-right: 7em;
+  margin-top: 7em;
 }
 
 .border {
@@ -159,13 +173,14 @@ h2 {
 
 /* Contact info with font awesome and opacity box */
 .myinfo {
-  margin-right: 50em;
-  margin-left: 1em;
+  margin-right: 13em;
+  margin-left: 15em;
   background-color: #add8e6;
   border: 1px solid black;
   opacity: 0.6;
   filter: alpha(opacity=40);
   padding-right: 1px;
+  font-size: 26px;
 }
 
 .myinfo li {
@@ -176,7 +191,7 @@ h2 {
 
 /* Social link */
 .social {
-  margin-left: 1em;
+  margin-left: 40em;
   padding-right: 1em;
   border: 0;
   display: inline;
