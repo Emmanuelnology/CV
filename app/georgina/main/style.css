@@ -294,6 +294,17 @@ nav ul {
   position: absolute;
 }
 
+#phone {
+  top: 400px;
+}
+
+#phone:hover {
+  
+  position: fixed;
+  position: absolute;
+
+}
+
 .chart {
   display: block;
   float: right;
