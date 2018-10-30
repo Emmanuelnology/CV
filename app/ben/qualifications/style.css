@@ -61,58 +61,131 @@ ul {
   }
 
   .big-scorecard {
-    margin: 0;
+    margin: 0 auto;
+    width: 32em;
     display: grid;
     grid-template-areas: "team team team team" "batter caught bowled score" "extras extras extras score" "total total final final";
-    grid-template-columns: 14em 7em 7em 3em;
+    grid-template-columns: 14em 6.5em 6em 4.5em;
     justify-content: center;
   }
 
   .big-scorecard > h3 {
+    margin: 0;
     grid-area: team;
+    width: 100%;
+    padding-bottom: 5px;
+    border: 1px darkblue solid;
+    background-color: red;
+    color: white;
+    border-radius: 5px 5px 0 0;
   }
 
-  #batter {
+  .big-scorecard div {
+    background-color: white;
+    color: black;
+  }
+
+  #batter,
+  #aw-batter {
     grid-area: batter;
     font-weight: 600;
+    padding-top: 5px;
+    border-left: 1px darkblue solid;
   }
 
-  #caught {
+  #batter li,
+  #aw-batter li {
+    padding-left: 5px;
+  }
+
+  #caught,
+  #aw-caught {
     grid-area: caught;
+    padding-top: 5px;
   }
 
-  #bowled {
+  #bowled,
+  #aw-bowled {
     grid-area: bowled;
+    padding-top: 5px;
   }
 
-  #score {
+  #score,
+  #aw-score {
     grid-area: score;
     font-weight: 600;
+    padding-top: 5px;
+    border-right: 1px darkblue solid;
+    background-color: red;
+    color: white;
+    padding-bottom: 5px;
   }
 
-  #extras {
+  #score li,
+  #aw-score li {
+    padding-right: 5px;
+  }
+
+  #extras,
+  #aw-extras {
     grid-area: extras;
     text-align: left;
     font-weight: 600;
+    padding-left: 5px;
+    border-left: 1px darkblue solid;
+    padding-bottom: 5px;
   }
 
-  #total {
+  #total,
+  #aw-total {
     grid-area: total;
     text-align: left;
     font-weight: 600;
+    padding-left: 5px;
+    border-left: 1px darkblue solid;
+    padding-bottom: 5px;
+    border-bottom: 1px darkblue solid;
+    border-radius: 0 0 0 5px;
+    border-top: 1px darkblue solid;
+    padding-top: 5px;
+    margin-bottom: 5px;
   }
 
-  #final {
+  #final,
+  #aw-final {
     grid-area: final;
     font-weight: 600;
     text-align: right;
+    padding-right: 5px;
+    border-right: 1px darkblue solid;
+    padding-bottom: 5px;
+    border-bottom: 1px darkblue solid;
+    border-radius: 0 0 5px 0;
+    border-top: 1px darkblue solid;
+    padding-top: 5px;
+    margin-bottom: 5px;
   }
 
   .big-scorecard li {
     text-align: left;
   }
 
-  #score li {
+  #score li,
+  #aw-score li {
     text-align: right;
+  }
+
+  .not-out {
+    background-color: darkblue;
+    color: white;
+  }
+
+  .blank {
+    color: transparent;
+  }
+
+  .not-out-score {
+    background-color: white;
+    color: black;
   }
 }
