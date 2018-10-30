@@ -95,102 +95,90 @@ ul {
   margin: 0;
   grid-area: team;
   width: 100%;
-  padding-bottom: 5px;
   border: 1px darkblue solid;
   border-radius: 5px 5px 0 0;
 }
 
 .batter {
   grid-area: batter;
-  font-weight: 600;
-  padding-top: 5px;
   border-left: 1px darkblue solid;
-}
-
-.batter li {
-  padding-left: 5px;
 }
 
 .caught {
   grid-area: caught;
-  padding-top: 5px;
 }
 
 .bowled {
   grid-area: bowled;
-  padding-top: 5px;
 }
 
 .score {
   grid-area: score;
-  font-weight: 600;
-  padding-top: 5px;
   border-right: 1px darkblue solid;
   padding-bottom: 5px;
-}
-
-.score li {
-  padding-right: 5px;
 }
 
 .extras {
   grid-area: extras;
   text-align: left;
-  font-weight: 600;
-  padding-left: 5px;
   border-left: 1px darkblue solid;
-  padding-bottom: 5px;
 }
 
 .total {
   grid-area: total;
   text-align: left;
-  font-weight: 600;
-  padding-left: 5px;
   border-left: 1px darkblue solid;
   padding-bottom: 5px;
   border-bottom: 1px darkblue solid;
   border-radius: 0 0 0 5px;
   border-top: 1px darkblue solid;
-  padding-top: 5px;
   margin-bottom: 5px;
 }
 
 .final {
   grid-area: final;
-  font-weight: 600;
   text-align: right;
-  padding-right: 5px;
   border-right: 1px darkblue solid;
-  padding-bottom: 5px;
   border-bottom: 1px darkblue solid;
   border-radius: 0 0 5px 0;
   border-top: 1px darkblue solid;
-  padding-top: 5px;
   margin-bottom: 5px;
 }
 
 .ex-score {
   grid-area: ex-score;
-  font-weight: 600;
   border-right: 1px darkblue solid;
-  padding-bottom: 5px;
-  padding-right: 5px;
 }
 
 .scorecard li {
   text-align: left;
 }
 
-.score li,
-.ex-score {
-  text-align: right;
+.ex-score,
+.score li {
+  text-align: center;
 }
 
 .blank {
   color: transparent;
 }
 
-.ex-score {
+.thick {
+  font-weight: 600;
+}
+
+.pad-bot {
+  padding-bottom: 5px;
+}
+
+.pad-top {
   padding-top: 5px;
+}
+
+.pad-left {
+  padding-left: 5px;
+}
+
+.pad-right {
+  padding-right: 5px;
 }
