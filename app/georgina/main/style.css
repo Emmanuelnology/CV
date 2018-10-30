@@ -90,7 +90,6 @@ header h3 {
 }
 
 a:hover {
-  background-color: #f2d234;
   border-radius: 5px;
 }
 
@@ -219,34 +218,68 @@ footer {
 
 nav ul {
   position: absolute;
-  top:0;
+  top: 0;
 }
 
 #gee {
   display: block;
   margin: 0 auto;
+}
 
+.rollover {
+  height: 50px;
+  width: 100%;
+
+  /* Reposition the div relative to Gee */
+  position: absolute;
+
+  /* formatting */
+  color: white;
+  font-size: large;
+
+  /* Center the text in the div */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rollover:hover {
+  cursor: pointer;
+
+  /* Darken the div background */
+  background-color: rgba(0, 0, 0, 0.2);
+
+  /* Show the brain on hover as a background image */
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.rollover > * {
+  /* By default, set all children of brain to invisible */
+  display: none;
+}
+
+.rollover:hover > * {
+  /* On hover, set all content of brain to visible */
+  display: inline-block;
 }
 
 #brain {
-  height:80px;
-  position: absolute;
-  top:50px;
-  width:100%;
-  background-image: url(brain.png);
+  top: 60px;
 }
 
 #brain:hover {
-  cursor: pointer;
+  background-image: url('brain.png');
 }
 
-#brain:hover> * {
- display: block;
+#lips {
+  top: 160px;
 }
 
-#brain >* {
-  display: none;
-  height: 100%;
+#lips:hover {
+  background-image: url('brain.png');
 }
 
 .chart {
