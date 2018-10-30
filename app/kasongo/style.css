@@ -71,8 +71,8 @@ nav {
   border-style: solid;
 }
 
-/* Contact info */
-.myinfo {
+/* Contact info with font awesome and opacity box */
+.fa-ul.myinfo  {
   margin-right: 50em;
   background-color: #add8e6;
   border: 1px solid black;
@@ -81,7 +81,7 @@ nav {
   padding-right: 1px;
 }
 
-.myinfo li {
+.fa-ul.myinfo li {
   margin-left: 1px;
   font-weight: bold;
   color: #000;
@@ -104,14 +104,32 @@ h1 {
   color: darkblue;
 }
 
-.myskil {
-  justify-content: space-between;
-  word-spacing: 1em;
+#skillkas {
+  display:flex;
+  list-style: none;
 }
 
-.starcolumn1 {
-  display: flex;
-  flex: 1;
+#skillkas .title {
+  display: inline-block;
+  width: 20%;
+  vertical-align: top;
+}
+
+#skillkas > div{
+  flex:1;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#skillkas li i {
+  margin-right: 10px;
+}
+
+.myinfo li i {
+  margin-right: 10px;
 }
 
 /* Contact me via text box */
