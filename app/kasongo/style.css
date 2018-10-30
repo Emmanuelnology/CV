@@ -1,8 +1,8 @@
 body {
   margin: 0;
-  font-size: 1em;
+  font-size: 0.8em;
   font-style: normal;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Days One';
   background-image: url('https://windsim.com/images/sky/sky_107.bmp');
   background-size: cover;
 }
@@ -40,6 +40,11 @@ a {
   height: 500vh;
   position: absolute;
   top: 0%;
+}
+
+.happyname {
+  font-size: 2.8em;
+  font-family: 'Days One';
 }
 
 .arrow a {
@@ -81,7 +86,6 @@ a {
 /* Main title font style */
 
 .heading {
-  font-family: 'Bangers';
   font-size: 50px;
 }
 
@@ -130,6 +134,12 @@ main {
   margin-left: 0.5em;
 }
 
+/* First and second titles position */
+
+h1 {
+  text-align: center;
+}
+
 /* Photo modification */
 .myphoto {
   float: right;
@@ -166,10 +176,6 @@ main {
   padding-right: 1em;
   border: 0;
   display: inline;
-}
-
-h1 {
-  text-align: center;
 }
 
 /* Add stars color and column to the right and space between skills and font awesome */
