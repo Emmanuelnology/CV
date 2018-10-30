@@ -94,7 +94,6 @@ ul {
 .team {
   margin: 0;
   grid-area: team;
-  width: 100%;
   border-radius: 5px 5px 0 0;
 }
 
@@ -112,7 +111,6 @@ ul {
 
 .score {
   grid-area: score;
-  padding-bottom: 5px;
 }
 
 .extras {
@@ -156,35 +154,35 @@ ul {
   font-weight: 600;
 }
 
-.pad-bot {
+.pb {
   padding-bottom: 5px;
 }
 
-.pad-top {
+.pt {
   padding-top: 5px;
 }
 
-.pad-left,
+.pl,
 .batter li {
   padding-left: 5px;
 }
 
-.pad-right {
+.pr {
   padding-right: 5px;
 }
 
-.bor-top {
+.bt {
   border-top: 1px darkblue solid;
 }
 
-.bor-bot {
+.bb {
   border-bottom: 1px darkblue solid;
 }
 
-.bor-right {
+.br {
   border-right: 1px darkblue solid;
 }
 
-.bor-left {
+.bl {
   border-left: 1px darkblue solid;
 }
