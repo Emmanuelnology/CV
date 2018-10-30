@@ -3,6 +3,10 @@ main > section {
   padding: 20px;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   background-image: url(gym.jpg);
@@ -164,4 +168,23 @@ footer {
   display: inline;
   margin: 25px;
   text-align: center;
+}
+
+#extra-curricular > div {
+  display: flex;
+  flex-direction: row;
+}
+
+#extra-curricular > div > div {
+  flex: 1;
+}
+
+#extra-curricular img {
+  width: 80%;
+  display: block;
+  margin: auto auto;
+}
+
+#extra-curricular h3 {
+  margin: 0.7em 0;
 }
