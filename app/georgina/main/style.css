@@ -31,6 +31,7 @@ nav {
   margin-right: 1%;
   font-size: 10px;
   grid-area: me;
+  position: relative;
 }
 
 nav ul {
@@ -89,7 +90,6 @@ header h3 {
 }
 
 a:hover {
-  background-color: #f2d234;
   border-radius: 5px;
 }
 
@@ -216,20 +216,78 @@ footer {
   border-top-style: dotted;
 }
 
-img {
-  display: block;
+nav ul {
   position: absolute;
-  margin: auto;
+  top: 0;
+}
+
+#gee {
+  display: block;
+<<<<<<< HEAD
+  margin: 0 auto;
+}
+
+.rollover {
+  height: 50px;
+  width: 100%;
+
+  /* Reposition the div relative to Gee */
+  position: absolute;
+
+  /* formatting */
+  color: white;
+  font-size: large;
+
+  /* Center the text in the div */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rollover:hover {
+  cursor: pointer;
+
+  /* Darken the div background */
+  background-color: rgba(0, 0, 0, 0.2);
+
+  /* Show the brain on hover as a background image */
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.rollover > * {
+  /* By default, set all children of brain to invisible */
+  display: none;
+}
+
+.rollover:hover > * {
+  /* On hover, set all content of brain to visible */
+  display: inline-block;
 }
 
 #brain {
-  height: 80px;
-  display: block;
-<<<<<<< HEAD
-  position: fixed;
+  top: 60px;
+}
+
+#brain:hover {
+  background-image: url('brain.png');
+}
+
+#lips {
+  top: 160px;
+}
+
+#lips:hover {
+  background-image: url('brain.png');
 =======
+  <<<<<<< HEAD
+  position: fixed;
+  =======
   position: absolute;
 >>>>>>> 752c7747659d6dac7558289827d9f361d2378daa
+>>>>>>> b383d34dbd085e59a24471b722028a76e8e29722
 }
 
 .chart {
