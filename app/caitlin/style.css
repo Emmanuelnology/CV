@@ -172,7 +172,8 @@ footer {
 
 #extra-curricular > div {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  padding: 3em;
 }
 
 #extra-curricular > div > div {
@@ -180,11 +181,25 @@ footer {
 }
 
 #extra-curricular img {
-  width: 80%;
+  width: 90%;
   display: block;
   margin: auto auto;
+  border-radius: 7px;
 }
 
 #extra-curricular h3 {
   margin: 0.7em 0;
+}
+
+#extra-curricular ul {
+  margin: 0 0 2.5em 0;
+}
+
+@media only screen and (min-width: 500px) {
+  #extra-curricular > div {
+    flex-direction: row;
+  }
+  #extra-curricular ul {
+    margin: 0;
+  }
 }
