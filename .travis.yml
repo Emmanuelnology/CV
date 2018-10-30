@@ -2,6 +2,7 @@ language: php
 sudo: enabled
 before_install:
 - npm install -g htmllint-cli
+- npm install -g stylelint
 script:
   - npm run lint
 notifications:
