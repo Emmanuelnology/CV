@@ -17,7 +17,7 @@ var nav = {
     },
     awards: {
         link: $("#js-awards"),
-        content:  $(".contact"),
+        content:  $(".awards"),
     },
     recruiterInfo: {
         link: $("#js-recruit"),

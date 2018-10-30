@@ -7,17 +7,13 @@
 body {
   font-family: sans-serif;
   font-size: 20px;
-}
-
-nav {
-  background-color: #2929a3;
-  color: white;
-  text-transform: uppercase;
-  padding: 1.25em;
-}
-
-#title {
-  margin-right: 3em;
+  display: grid;
+  grid-template-areas:
+    "nav nav"
+    "aboutme hidden";
+  grid-template-columns: 2fr 3fr;
+  grid-row-gap: 10%;
+  grid-column-gap: 2.5%;
 }
 
 .bold {
@@ -28,6 +24,10 @@ nav {
   display: flex;
   justify-content: space-between;
   grid-area: nav;
+  background-color: #2929a3;
+  color: white;
+  text-transform: uppercase;
+  padding: 1.25em;
 }
 
 .active {
@@ -44,7 +44,6 @@ nav > * {
 nav > ul {
   list-style: none;
   font-size: 0.75em;
-  margin-right: 0.25em;
 }
 
 nav li {
@@ -80,18 +79,12 @@ a {
   grid-area: aboutme;
 }
 
-#aboutwrap {
-  width: 35%;
-  float: left;
-}
-
 .aboutme div {
   font-weight: bolder;
 }
 
 .aboutme h2 {
   border-radius: 0 5px 5px 0;
-  margin-bottom: 1em;
 }
 
 #aboutwrap div {
@@ -151,8 +144,6 @@ a {
 }
 
 h2 {
-  margin-top: 1em;
-  margin-bottom: 1em;
   padding: 0.15em;
   padding-left: 1em;
   background-color: #2929a3;
@@ -161,40 +152,10 @@ h2 {
   border-radius: 5px 0 0 5px;
 }
 
-.rounded-right {
-  border-radius: 0 15px 15px 0;
-}
-
-.idden {
-  border-radius: 15px 0 0 15px;
-}
-
-/* REDUNDANT CSS USED FOR HIDDEN
-  SECTIOINS DEMO */
-
-.idden {
-  float: right;
-  text-align: center;
-  width: 60%;
-}
-
-.idden ul {
-  margin-top: 2.5em;
-}
-
-.idden li {
-  list-style: none;
-  line-height: 2em;
-}
-
-/* REDUNDANT CSS USED FOR HIDDEN
-  SECTIOINS DEMO */
-
 .hidden {
-  float: right;
   text-align: center;
-  width: 60%;
   display: none;
+  grid-area: hidden;
 }
 
 .hidden ul {
@@ -209,7 +170,6 @@ h2 {
 .contact-button {
   font-size: 3em;
   margin: 0.25em;
-  padding: 0;
 }
 
 #skills-panel {
@@ -292,11 +252,6 @@ h2 {
 
 .qualification {
   font-weight: bold;
-}
-
-.awards ul {
-  margin: 0;
-  padding: 0;
 }
 
 .award-title {
