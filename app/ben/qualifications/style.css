@@ -32,15 +32,21 @@ ul {
   font-size: 1.3333em;
 }
 
-#scorecard {
-  margin: 0;
-  display: grid;
-  grid-template-areas: "team team team team" "batter caught bowled score" "extras extras bowled score" "total total final final";
-  grid-template-columns: 18em 7em 5em 4em;
-  justify-content: center;
+.big-scorecard {
+  display: none;
 }
 
-#scorecard > h3 {
+@media only screen and (min-width: 600px) {
+  .big-scorecard {
+    margin: 0;
+    display: grid;
+    grid-template-areas: "team team team team" "batter caught bowled score" "extras extras extras score" "total total final final";
+    grid-template-columns: 14em 7em 7em 3em;
+    justify-content: center;
+  }  
+}
+
+.big-scorecard > h3 {
   grid-area: team;
 }
 
@@ -87,7 +93,7 @@ ul {
   text-align: right;
 }
 
-#scorecard li {
+.big-scorecard li {
   text-align: left;
 }
 
