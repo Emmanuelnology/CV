@@ -2,8 +2,15 @@ body {
   background-color: pink;
 }
 
+div.left {
+  grid-area: leftt;
+}
 
+div.mid {
+  grid-area: mid;
+}
 
+<<<<<<< HEAD
 div.left {
   grid-area: leftt;
 }
@@ -16,6 +23,11 @@ div.right {
   grid-area: rightt;
 }
 
+=======
+div.right {
+  grid-area: rightt;
+}
+>>>>>>> b383d34dbd085e59a24471b722028a76e8e29722
 
 main {
   margin: 0;

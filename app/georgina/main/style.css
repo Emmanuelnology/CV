@@ -223,6 +223,7 @@ nav ul {
 
 #gee {
   display: block;
+<<<<<<< HEAD
   margin: 0 auto;
 }
 
@@ -280,6 +281,13 @@ nav ul {
 
 #lips:hover {
   background-image: url('brain.png');
+=======
+  <<<<<<< HEAD
+  position: fixed;
+  =======
+  position: absolute;
+>>>>>>> 752c7747659d6dac7558289827d9f361d2378daa
+>>>>>>> b383d34dbd085e59a24471b722028a76e8e29722
 }
 
 .chart {
