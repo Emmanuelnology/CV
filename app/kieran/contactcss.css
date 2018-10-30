@@ -4,9 +4,11 @@ body {
 
 img.leftpara {
   padding: 0;
-  width: 30%;
+  width: 50%;
+  height: 100%;
   margin: 0 auto;
-  margin-top: 10px;
+  margin-top: 9%;
+  margin-bottom: 5%;
   float: center;
 }
 
@@ -17,13 +19,11 @@ main {
 main div.rightpara {
   margin-top: 8%;
   padding: 1%;
-  float: right;
-  width: 50%;
-  vertical-align: top;
+  width: 70%;
+  float: center;
   text-align: center;
   font-size: 250%;
   color: rgb(64, 62, 62);
-  display: block;
   height: 60%;
 }
 
@@ -42,10 +42,35 @@ li.contactlabel {
   position: relative;
 }
 
+main {
+  display: grid;
+  grid-gap: 40px;
+  margin: 0;
+  grid-template-areas: "img links";
+  grid-template-columns: 1fr 1fr;
+}
+
+img.leftpara {
+  grid-area: map;
+}
+
+div.rightpara {
+  grid-area: links;
+  padding-top: 300px;
+}
+
 @media only screen and (min-width: 1014px) {
   li.contactlabel {
     height: 50px;
     z-index: 1;
     position: relative;
+  }
+
+  main {
+    display: grid;
+    grid-gap: 40px;
+    margin: 0;
+    grid-template-areas: "img links";
+    grid-template-columns: 1fr 1fr;
   }
 }
