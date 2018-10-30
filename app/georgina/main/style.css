@@ -20,7 +20,7 @@ body > * {
 }
 
 nav {
-  background-color: lightgrey;
+  background-color: #06AED5;
   width: 34%;
   height: 100vh;
   margin-right: 1%;
@@ -51,7 +51,7 @@ header h2 {
   text-align: center;
   font-family: 'Fauna One', serif;
   font-size: 20px;
-  color: #d91a1a;
+  color: #E34543;
   margin: 0;
 }
 
@@ -80,7 +80,7 @@ ul {
 }
 
 a:hover {
-  background-color: darkgrey;
+  background-color: #E34543;
   border-radius: 5px;
   padding: 6px;
 }
@@ -135,7 +135,7 @@ footer {
 }
 
 .skills-panel .score {
-  color: #ff7300;
+  color: #F0C808;
   display: inline;
   float: right;
 }
@@ -163,18 +163,12 @@ footer {
 .life-icons {
   font-size: 50px;
   text-align: center;
+  color: #E34543;
 }
 
 h2 {
   font-family: 'Fauna One', serif;
   text-align: center;
-}
-
-nav {
-  background-color: lightgrey;
-  width: 34%;
-  height: 100vh;
-  margin-right: 1%;
 }
 
 main {
@@ -277,6 +271,7 @@ footer {
   border-bottom-style: dotted;
   padding: 5px;
   font-family: 'Fauna One', serif;
+  font-size: 18px;
 }
 
 .skills-panel .score {
@@ -299,4 +294,17 @@ footer {
   margin: 0;
   padding: 0;
   text-align: center;
+}
+img {
+  display: block;
+  margin: auto;
+
+}
+.chart{
+  display: block;
+  float: right;
+  margin: 0;
+}
+#doing {
+  font-size: 18px;
 }

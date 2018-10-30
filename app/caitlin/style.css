@@ -3,6 +3,10 @@ main > section {
   padding: 20px;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   background-image: url(gym.jpg);
@@ -164,4 +168,38 @@ footer {
   display: inline;
   margin: 25px;
   text-align: center;
+}
+
+#extra-curricular > div {
+  display: flex;
+  flex-direction: column;
+  padding: 3em;
+}
+
+#extra-curricular > div > div {
+  flex: 1;
+}
+
+#extra-curricular img {
+  width: 90%;
+  display: block;
+  margin: auto auto;
+  border-radius: 7px;
+}
+
+#extra-curricular h3 {
+  margin: 0.7em 0;
+}
+
+#extra-curricular ul {
+  margin: 0 0 2.5em 0;
+}
+
+@media only screen and (min-width: 500px) {
+  #extra-curricular > div {
+    flex-direction: row;
+  }
+  #extra-curricular ul {
+    margin: 0;
+  }
 }
