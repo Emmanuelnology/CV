@@ -41,6 +41,16 @@ li {
   padding-bottom: 10px;
 }
 
+div iframe {
+  position: relative;
+  left: 37.5%;
+}
+
+div ul li {
+  border-bottom: white solid 1px;
+  margin-top: 5px;
+}
+
 .a {
   text-align: center;
   font-size: 18px;
@@ -63,20 +73,6 @@ li {
   color: rgb(0, 172, 237);
 }
 
-#experience,
-#about,
-#aca,
-#work,
-#ref,
-#con {
-  padding-top: 40px;
-}
-
-div ul li {
-  border-bottom: white solid 1px;
-  margin-top: 5px;
-}
-
 .fa-folder,
 .fa-folder-o {
   display: inline-flex;
@@ -89,7 +85,6 @@ div ul li {
   text-decoration: none;
 }
 
-/* timeline code */
 .one,
 .two,
 .thr,
@@ -110,11 +105,10 @@ div ul li {
   height: 25px;
   width: 25px;
   border-radius: 50%;
-}
-
-.timeline span div {
   position: relative;
   top: -12.5px;
+  z-index: -1;
+  right: 3px;
 }
 
 .ref-1,
@@ -122,7 +116,37 @@ div ul li {
   text-align: center;
 }
 
-/* box models */
+.ref {
+  display: grid;
+  grid-template-areas: "ref-1 ref-2";
+  grid-column: 25%;
+  column-gap: 12.5%;
+}
+
+.map {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.map iframe {
+  border: 0;
+  height: 500px;
+  left: 17.5%;
+  position: absolute;
+  top: 0;
+  width: 500px;
+}
+
+#experience,
+#about,
+#aca,
+#work,
+#ref,
+#con {
+  padding-top: 40px;
+}
+
 #qual-box {
   box-sizing: border-box;
   width: 50%;
@@ -149,18 +173,4 @@ div ul li {
   width: 50%;
   height: 50%;
   float: left;
-}
-
-.ref {
-  display: grid;
-  grid-template-areas: "ref-1 ref-2";
-  grid-column: 25%;
-  column-gap: 12.5%;
-}
-
-div iframe {
-  position: relative;
-  left: 50%;
-  width: 400;
-  height: 300;
 }
