@@ -149,6 +149,8 @@ ul {
     border-top: 1px darkblue solid;
     padding-top: 5px;
     margin-bottom: 5px;
+    background-color: red;
+    color: white;
   }
 
   #final,
@@ -164,6 +166,8 @@ ul {
     border-top: 1px darkblue solid;
     padding-top: 5px;
     margin-bottom: 5px;
+    background-color: darkblue;
+    color: white;
   }
 
   #ex-score,
