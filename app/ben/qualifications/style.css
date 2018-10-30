@@ -35,8 +35,9 @@ ul {
 #scorecard {
   margin: 0;
   display: grid;
-  grid-template-areas: "team team team team" "batter caught bowled score" "total total final final";
+  grid-template-areas: "team team team team" "batter caught bowled score" "extras extras bowled score" "total total final final";
   grid-template-columns: 18em 7em 5em 4em;
+  justify-content: center;
 }
 
 #scorecard > h3 {
@@ -65,6 +66,12 @@ ul {
 
 #score {
   grid-area: score;
+  font-weight: 600;
+}
+
+#extras {
+  grid-area: extras;
+  text-align: left;
   font-weight: 600;
 }
 
