@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <style>
+        
+#front div {
+    display: inline;
+    padding: 0 0.25em 0 0.25em;
+    text-align: justify;
+}
+
+.smaller-text {
+    font-size: 0.8em;
+}
+
+.small-text {
+    font-size: 1em;
+}
+
+.medium-text {
+    font-size: 1.3em;
+}
+
+.large-text {
+    font-size: 1.5em;
+}
+
+.larger-text {
+    font-size: 1.7em;
+}
+
+.opaque {
+    opacity: 0.75;
+}
+
+.translucent {
+    opacity: 0.6;
+}
+
+.transparent {
+    opacity: 0.4;
+}
+
+#back {
+    border: 1px dotted black;
+}
+
+#back * {
+    padding: 0;
+    margin: 0;
+    display: block;
+    text-align: center;
+    font-weight: normal;
+    list-style-type: none;
+}
+
+#name {
+    text-decoration: italic;
+    font-family: serif;
+    font-size: 2em;
+    margin-bottom: 0.25em;
+    border-bottom: 1px solid black;
+}
+
+#logo {
+    font-weight: bolder;
+    font-size: 1.25em;
+}
+
+        </style>
+        <title>
+            test run
+        </title>
+    </head>
+    <body>
+        <main>
+            <div id="card">
+                <div id="front">
+                    <div class="small-text translucent">photography</div>
+                    <div class="larger-text opaque">Mandarin</div>
+                    <div class="small-text transparent middle">guitar</div>
+                    <div class="larger-text transparent right">Shanghai</div>
+                    <div class="medium-text translucent">video games</div>
+                    <div class="large-text translucent">travelling</div>
+                    <div class="small-text transparent middle">reading</div>
+                    <div class="medium-text translucent">sketching</div>
+                    <div class="large-text transparent">sci-fi</div>
+                    <div class="large-text opaque right">software developer</div>
+                    <div class="larger-text opaque">Dean's list</div>
+                    <div class="medium-text transparent">radiation lab</div>
+                    <div class="medium-text translucent">graphic novels</div>
+                    <div class="small-text transparent">USAD team coach</div>
+                    <div class="larger-text">Bio sciences 1:1</div>
+                </div>
+                <div id="back">
+                    <div>
+                        <ul>
+                            <li id="name">
+                                Shea Murphy
+                            </li>
+                            <li>
+                                13.02.93
+                            </li>
+                            <li>
+                                <span id="logo">_nology</span>  recruit
+                            </li>
+                            <li>
+                                P.T.O
+                            </li>
+                            <li>
+                                for
+                            </li>
+                            <li>
+                                more information
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            
+        </footer>
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+        <script> 
+            $("main").flip({
+                trigger: 'hover',
+                axis: 'y'
+            });
+        </script>
+    </body>
+</html>

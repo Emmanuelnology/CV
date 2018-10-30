@@ -23,7 +23,7 @@ body {
 .timeline {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  font-size: large;
+  font-size: 15px;
 }
 
 strong {

@@ -14,6 +14,10 @@ h2 {
   background-color: black;
 }
 
+.content {
+  width: 100%;
+}
+
 .burger-menu {
   display: inline-block;
   cursor: pointer;
@@ -24,7 +28,9 @@ h2 {
   color: white;
 }
 
-.bar1, .bar2, .bar3 {
+.bar1,
+.bar2,
+.bar3 {
   width: 35px;
   height: 5px;
   background-color: white;
@@ -37,7 +43,9 @@ h2 {
   transform: rotate(-45deg) translate(-9px, 6px);
 }
 
-.change .bar2 { opacity: 0; }
+.change .bar2 {
+  opacity: 0;
+}
 
 .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
@@ -65,12 +73,9 @@ nav li {
   text-align: center;
 }
 
+/* irrelevant below - why? */
 nav li:not(:last-child) {
   content: " | ";
-
-  /* background-color: red; */
-
-  /* color: white; */
 }
 
 nav a:hover {
@@ -215,6 +220,39 @@ input[type=submit] {
     font-size: 15px;
     letter-spacing: 10px;
   }
+
+  .content {
+    width: 80%;
+    margin: auto;
+  }
+
+  .logo {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: center;
+    display: block;
+  }
+
+  .contain {
+    background-size: contain;
+  }
+
+  .cover {
+    background-size: cover;
+  }
+
+  .flex-container > div {
+    background-color: #1d6ae5;
+    height: auto;
+    width: 50%;
+    text-align: center;
+    line-height: 75px;
+    margin: 10px 0;
+    float: left;
+  }
 }
 
 @media (max-width: 600px) {
@@ -232,6 +270,20 @@ input[type=submit] {
     padding: 10px;
     font-size: 13px;
     letter-spacing: 8px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .flex-container > div {
+    background-color: #1d6ae5;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    line-height: 75px;
+    margin: 10px 0;
+    float: left;
   }
 }
 
@@ -266,30 +318,19 @@ input[type=submit] {
 /* Sizing and logos for education row */
 .flex-container {
   display: flex;
+  align-items: stretch;
   flex-wrap: wrap;
-}
-
-.flex-container > div {
-  background-color: #1d6ae5;
-  height: 300px;
-  width: auto;
-  text-align: center;
-  line-height: 75px;
-  margin: 10px;
+  flex-direction: row;
 }
 
 .flex-container p {
-  padding: 0 10px 10px 10px;
+  /* padding: 0 10px 10px 10px; */
   font-size: 20px;
   color: white;
 }
 
-.logo {
-  height: 80%;
-  width: 100%;
-  margin: 0;
-  background-size: cover;
-  background-position: center;
+.bold {
+  font-weight: 900;
 }
 
 #nology {
