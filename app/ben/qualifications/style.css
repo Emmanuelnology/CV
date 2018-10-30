@@ -11,43 +11,22 @@ ul {
   margin: 0 auto;
 }
 
-#a-levels {
-  width: 250px;
-  margin: 0 auto;
-}
-
-.grades li {
-  text-align: left;
-}
-
-.grades div {
-  letter-spacing: 1px;
-  font-size: 0.75em;
-  display: inline-block;
-  float: right;
-}
-
-.achieved {
-  font-weight: 600;
-  font-size: 1.3333em;
-}
-
 .big-scorecard {
   display: none;
 }
 
-@media only screen and (min-width: 600px) {
-  .big-scorecard {
-    margin: 0;
-    display: grid;
-    grid-template-areas: "team team team team" "batter caught bowled score" "extras extras extras score" "total total final final";
-    grid-template-columns: 14em 7em 7em 3em;
-    justify-content: center;
-  }
+.small-scorecard {
+  max-width: 280px;
 }
 
-.big-scorecard > h3 {
-  grid-area: team;
+.small-scorecard ul {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.small-scorecard li {
+  text-align: left;
+  font-weight: 600;
 }
 
 .innings {
@@ -57,50 +36,83 @@ ul {
   display: block;
 }
 
-#batter {
-  grid-area: batter;
-  font-weight: 600;
-}
-
-#caught {
-  grid-area: caught;
-}
-
-#bowled {
-  grid-area: bowled;
-}
-
-#score {
-  grid-area: score;
-  font-weight: 600;
-}
-
-#extras {
-  grid-area: extras;
-  text-align: left;
-  font-weight: 600;
-}
-
-#total {
-  grid-area: total;
-  text-align: left;
-  font-weight: 600;
-}
-
-#final {
-  grid-area: final;
-  font-weight: 600;
-  text-align: right;
-}
-
-.big-scorecard li {
-  text-align: left;
-}
-
-#score li {
-  text-align: right;
+.grade {
+  display: inline;
+  float: right;
 }
 
 .blank {
   color: transparent;
+}
+
+.thin{
+  font-weight: 100;
+  text-align: left;
+}
+
+.catcher {
+  padding-right: 20px;
+}
+
+@media only screen and (min-width: 600px) {
+  .small-scorecard {
+    display: none;
+  }
+  
+  .big-scorecard {
+    margin: 0;
+    display: grid;
+    grid-template-areas: "team team team team" "batter caught bowled score" "extras extras extras score" "total total final final";
+    grid-template-columns: 14em 7em 7em 3em;
+    justify-content: center;
+  }
+  
+  .big-scorecard > h3 {
+    grid-area: team;
+  }
+  
+  #batter {
+    grid-area: batter;
+    font-weight: 600;
+  }
+  
+  #caught {
+    grid-area: caught;
+  }
+  
+  #bowled {
+    grid-area: bowled;
+  }
+  
+  #score {
+    grid-area: score;
+    font-weight: 600;
+  }
+  
+  #extras {
+    grid-area: extras;
+    text-align: left;
+    font-weight: 600;
+  }
+  
+  #total {
+    grid-area: total;
+    text-align: left;
+    font-weight: 600;
+  }
+  
+  #final {
+    grid-area: final;
+    font-weight: 600;
+    text-align: right;
+  }
+  
+  .big-scorecard li {
+    text-align: left;
+  }
+  
+  #score li {
+    text-align: right;
+  }
+  
 }
