@@ -161,4 +161,6 @@ div ul li {
 div iframe {
   position: relative;
   left: 50%;
+  width: 400;
+  height: 300; 
 }
