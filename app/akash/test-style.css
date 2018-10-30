@@ -1,6 +1,6 @@
 
 body {
-  background-image: url('dinertest-blur.png');
+  background-image: url('bg-blur.jpg');
   margin: 0;
   background-size: cover;
   background-attachment: fixed;
@@ -41,7 +41,7 @@ body {
   justify-content: center;
   height: 200px;
   width: 400px;
-  background-image: url('diamond-test1.png');
+  background-image: url('diamond.png');
   background-size: 100% 100%;
   transform: translate(0, -100px);
   position: relative;

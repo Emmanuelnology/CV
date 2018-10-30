@@ -7,14 +7,37 @@ body {
   background-size: 15%;
   background-position: center;
   background-attachment: fixed;
-  padding: 0% 5%;
-  margin: 0% 9%;
+  padding: 0%;
+  margin: 0%;
+}
+
+.welcomeimage {
+  min-height: 100vh;
+  background-color: red;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('kitten.jpg');
+}
+
+.satyam {
+  font-size: 30px;
+  color: white;
+  background-color: none;
+  position: absolute;
+  top: 70%;
+  text-align: center;
+  left: 0;
+  width: 100%;
 }
 
 #landing {
   color: red;
   margin: 0;
   height: 500vh;
+  position: absolute;
+  top: 0%;
 }
 
 .content {

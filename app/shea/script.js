@@ -37,3 +37,11 @@ links.recruiterinfo.click(function(){
     $(".recruiter-info").show();
     $(".contact, .employment, .education, .awards, .skills").hide();
 });
+
+$("#toggle1").click(function(){
+    $("#bspp").slideToggle(1000);
+});
+
+$("#toggle2").click(function(){
+    $("#tefl").slideToggle(1000);
+});
