@@ -10,8 +10,16 @@
 </head>
 <body>
     <main>
+        <!-- Flex direction column for mobile then for larger screen flex direction row. This builds a navigation bar responsive to mobile devices. -->
         <nav>
-            <ul>
+            <div class="burger-menu" onclick="transitionMenu(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                    <p>Menu</p>
+                </div>
+            </div>
+            <ul class="hide" id="navigation">
                 <li><a href="#about">About me</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#work">Work experience</a></li>
@@ -182,6 +190,10 @@
         <h2 id="achievements">Achievements</h2>
         <div class="flex-container">
             <div>  
+                <div class="logo" id="tough-mudder"></div>
+                <p>Completed the Tough Mudder - 2018</p>
+            </div>
+            <div>  
                 <div class="logo" id="graduate"></div>
                 <p>Graduated from Lancaster Univeristy!! - 2018</p>
             </div>
@@ -194,12 +206,12 @@
                 <p>Met David Cameron - 2016</p>
             </div>
             <div>  
-                <div class="logo somerset-college"></div>
-                <p>Student of the year - 2014</p>
-            </div>
-            <div>  
                 <div class="logo" id="appg"></div>
                 <p>Spoken in Parliament about housing policy and young people - 2016</p>
+            </div>
+            <div>  
+                <div class="logo somerset-college"></div>
+                <p>Student of the year - 2014</p>
             </div>
             <div>  
                 <div class="logo" id="downing-street"></div>
@@ -221,16 +233,12 @@
             enctype="multipart/form-data"
             name="EmailTestForm">
                 <p>Your name:</p>
-                <input type="text" name="Name" placeholder="Enter your name..."><p></p>
-                <p>Job offer description:</p>
-                <input type="text" name="jobDescription" placeholder="Sell me this job offer..."><p></p>
-                <p>Salary:</p>
-                <select id="salary">
-                    <option value="£100,000">£100,000</option>
-                    <option value="£150,000">£150,000</option>
-                    <option value="£200,000">£200,000</option>
-                    <option value="£250,000">£250,000</option>
-                </select>
+                <input type="text" name="Name" placeholder="Enter your name...">
+                <p>Your email:</p>
+                <input type="text" name="email" placeholder="example@example.com">
+                <p>Message:</p>
+                <input type="text" name="message">
+
                 <input type="submit" value="Submit">
             </form>
         </section>
@@ -240,5 +248,12 @@
             <a href="https://www.instagram.com/webstar95/"><i class="fab fa-instagram"></i></a>
         </footer>
     </main>
+    <script>
+        function transitionMenu(x) {
+            x.classList.toggle("change");
+            var navigation = document.getElementById("navigation");
+            navigation.classList.toggle("hide");
+       }
+    </script>
 </body>
 </html>
