@@ -41,11 +41,15 @@ div.wrapper div {
   grid-gap: 40px;
   margin: 0;
   grid-template-areas:
-    "cern cernp"
-    "faulkesp faulkes"
-    "physics spectp"
-    "spectrallinesp spect";
-  grid-template-columns: 1fr 1fr;
+    "cern"
+    "cernp"
+    "faulkes"
+    "faulkesp"
+    "physics"
+    "spect"
+    "spectp"
+    "spectrallinesp";
+  grid-template-columns: 1fr;
 }
 
 .cern {
@@ -107,5 +111,17 @@ li.projectslabel {
     height: 50px;
     z-index: 1;
     position: relative;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-gap: 40px;
+    margin: 0;
+    grid-template-areas:
+      "cern cernp"
+      "faulkesp faulkes"
+      "physics spectp"
+      "spectrallinesp spect";
+    grid-template-columns: 1fr 1fr;
   }
 }

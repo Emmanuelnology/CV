@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0 auto;
   background-image: url('bg-blur.jpg');
@@ -61,6 +65,7 @@ header {
 .box {
   width: 100%;
   margin: 0 auto;
+  margin-bottom: 10px;
 }
 
 ul {
@@ -74,6 +79,19 @@ ul {
   font-family: 'Lobster';
   color: black;
   font-size: 2em;
+  display: flex;
+  flex-direction: row;
+}
+
+.elipse {
+  flex-grow: 1;
+  padding: 0 0 10px 10px;
+}
+
+.elipse span {
+  border-bottom: 5px dotted black;
+  display: inline-block;
+  width: 100%;
 }
 
 li > div {
@@ -83,7 +101,7 @@ li > div {
 
 .media-box {
   min-width: 0;
-  margin: 0;
+  margin: -10px;
 }
 
 img {
