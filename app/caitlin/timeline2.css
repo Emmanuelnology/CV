@@ -40,8 +40,8 @@ body {
 }
 
 #edu-grid h2 {
-    grid-area: title;
-    padding:0;
+  grid-area: title;
+  padding: 0;
 }
 
 #edu-grid h3 {
@@ -53,8 +53,8 @@ body {
   margin: 5px;
   display: grid;
   grid-template-areas:
-  "title title title"
-  "education col2 col3";
+    "title title title"
+    "education col2 col3";
   grid-template-columns: 10fr 0.3fr 1.5fr;
   grid-gap: 5px;
 }
@@ -67,13 +67,13 @@ body {
   grid-gap: 5px;
 }
 
-#col3 hr, #col4 hr {
+#col3 hr,
+#col4 hr {
   width: 7px;
   height: 7%;
   border-top: none;
   background: rgb(169, 169, 169);
   border-radius: 3px;
-
 }
 
 #durham-hr {
