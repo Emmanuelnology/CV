@@ -24,6 +24,12 @@ nav {
   font-weight: bold;
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+  grid-area: nav;
+}
+
 nav > * {
   display: inline;
 }
@@ -59,8 +65,12 @@ main {
 }
 
 a {
-  display: block;
+  display: inline-block;
   color: inherit;
+}
+
+.aboutme {
+  grid-area: aboutme;
 }
 
 #aboutwrap {
@@ -150,13 +160,6 @@ h2 {
 
 .idden {
   border-radius: 15px 0 0 15px;
-}
-
-.aboutme p {
-  width: 100%;
-  text-align: justify;
-  float: left;
-  padding: 0.2em;
 }
 
 /* REDUNDANT CSS USED FOR HIDDEN
@@ -256,6 +259,10 @@ h2 {
   padding-right: 0.5em;
 }
 
+.collapsed {
+  display: none;
+}
+
 .employment i {
   font-size: 1.5em;
 }
@@ -264,6 +271,7 @@ h2 {
 #toggle2 {
   text-align: center;
   margin-bottom: 2em;
+  display: inline-block;
 }
 
 #toggle1,

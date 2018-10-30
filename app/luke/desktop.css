@@ -86,3 +86,30 @@ div ul li {
   color: white;
   text-decoration: none;
 }
+
+/* timeline code */
+.one,
+.three,
+.two {
+  border-bottom: 1px white solid;
+}
+
+.timeline {
+  display: grid;
+  grid-template-areas: "one two thr for fiv";
+  grid-auto-columns: auto;
+}
+
+.timeline span div {
+  position: absolute;
+  border: 1px black solid;
+  background-color: white;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+}
+
+.timeline span div {
+  position: relative;
+  top: -12.5px;
+}

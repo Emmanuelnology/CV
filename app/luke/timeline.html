@@ -2,20 +2,15 @@
 <style>
     * {
         box-sizing: border-box;
-    }
+    }    
     
-    body {
-        width: 100%;
-    }
- 
     .timeline{
         display: grid;
         grid-template-areas: 
         "one two three for";
     }
-    
-    .timeline div div div {
-        border-top: 1px black solid;
+    .one, .three, .two{
+        border-bottom: 1px black solid;
     }
     
     .timeline span div {
@@ -33,9 +28,30 @@
     <div class="timeline">
         <div>    
             <div class="one">
-                <p>test 1</p>
+                <p>
+                <strong>1995</strong>
+                </p>
+                <div></div>
             </div>
-            <div>
+            <span>
+                <div></div>
+            </span>
+            <div><p>under</p></div>
+        </div>
+        <div>    
+            <div class="two">
+                <p></p>
+                <div></div>
+                <p>test 2</p>
+            </div>
+            <span>
+                <div></div>
+            </span>
+            
+        </div>
+        <div>    
+            <div class="three">
+                <p>test 3</p>
                 <div></div>
             </div>
             <span>
@@ -43,39 +59,17 @@
             </span>
         </div>
         <div>    
-                <div class="two">
-                    <p>test 2</p>
-                </div>
-                <div>
-                    <div></div>
-                </div>
-                <span>
-                    <div></div>
-                </span>
+            <div class="for">
+                <p>test 4</p>
             </div>
-            <div>    
-                    <div class="three">
-                        <p>test 3</p>
-                    </div>
-                    <div>
-                        <div></div>
-                    </div>
-                    <span>
-                        <div></div>
-                    </span>
-                </div>
-                <div>    
-                        <div class="for">
-                            <p>test 4</p>
-                        </div>
-                        <!-- <div>
-                            <div></div>
-                        </div> -->
-                        <span>
-                            <div></div>
-                        </span>
-                    </div>
-</div>
+            <!-- <div>
+                <div></div>
+            </div> -->
+            <span>
+                <div></div>
+            </span>
+        </div>
+    </div>
 </body>
 
 </html>
