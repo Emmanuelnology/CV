@@ -135,7 +135,6 @@ main {
   float: right;
   border: solid #00008b;
   border-width: 5px;
-  padding-bottom: 0;
   margin-right: 7em;
 }
 
@@ -163,7 +162,7 @@ main {
 
 /* Social link */
 .social {
-  margin-left: 0;
+  margin-left: 1em;
   padding-right: 1em;
   border: 0;
   display: inline;
