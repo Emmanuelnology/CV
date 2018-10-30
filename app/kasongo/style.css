@@ -1,5 +1,5 @@
 body {
-  margin: 0; 
+  margin: 0;
   font-size: 1em;
   font-style: normal;
   font-family: 'Lato', sans-serif;
@@ -8,7 +8,7 @@ body {
 }
 
 a {
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 /* Added srolling welcome page with bouncing arrow */
@@ -25,7 +25,7 @@ a {
 
 .emmanuel {
   font-size: 30px;
-  color:white;
+  color: white;
   background-color: none;
   position: absolute;
   top: 70%;
@@ -43,7 +43,7 @@ a {
 }
 
 .arrow a {
-  color:white;
+  color: white;
   text-decoration: none;
   margin: 0;
   font-size: 2em;
@@ -144,7 +144,7 @@ main {
 }
 
 /* Contact info with font awesome and opacity box */
-.myinfo  {
+.myinfo {
   margin-right: 50em;
   margin-left: 1em;
   background-color: #add8e6;
@@ -172,13 +172,13 @@ h1 {
   text-align: center;
 }
 
-/* Add stars color and column to the right and space between skills and font awesome*/
+/* Add stars color and column to the right and space between skills and font awesome */
 .checked {
   color: darkblue;
 }
 
 #skillkas {
-  display:flex;
+  display: flex;
   list-style: none;
 }
 
@@ -188,8 +188,8 @@ h1 {
   vertical-align: top;
 }
 
-#skillkas > div{
-  flex:1;
+#skillkas > div {
+  flex: 1;
 }
 
 ul {
@@ -208,8 +208,9 @@ ul {
 /* Contact me via text box and email */
 
 #form {
-  margin-bottom: 3em; 
+  margin-bottom: 3em;
 }
+
 input {
   display: block;
   background-color: lightgrey;
