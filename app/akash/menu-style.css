@@ -7,18 +7,19 @@ body {
 
 .content {
   margin: 0 auto;
-  max-width: 40%;
+  max-width: auto;
   background: rgb(157, 224, 180);
 }
 
 #dots {
   background-image: url('white-polka-done.png');
+  width: 95%;
+  margin: 0 auto;
 }
 
 main {
   background-color: rgb(228, 228, 200);
   width: 95%;
-  height: 100vh;
   border-radius: 20px;
   color: rgb(212, 0, 0);
   margin: 0 auto;
@@ -42,31 +43,24 @@ header {
   justify-content: center;
 }
 
-@media only screen and (min-width: 650px) {
-  #diamond {
-    width: 70%;
-    left: 15%;
-  }
-}
-
 .lobster {
   font-family: 'lobster';
   color: white;
-  font-size: 80px;
+  font-size: 3em;
 }
 
 .flex-container {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   padding-top: 150px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
   justify-content: space-between;
 }
 
 .box {
-  width: 45%;
+  width: 100%;
+  margin: 0 auto;
 }
 
 ul {
@@ -96,4 +90,106 @@ img {
   width: 450px;
   max-width: 100%;
   max-height: 450px;
+}
+
+@media only screen and (min-width: 750px) {
+  #diamond {
+    width: 70%;
+    left: 15%;
+  }
+
+  body {
+    margin: 0 auto;
+    background-image: url('bg-blur.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .content {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1100px;
+    background: rgb(157, 224, 180);
+  }
+
+  #dots {
+    background-image: url('white-polka-done.png');
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  main {
+    background-color: rgb(228, 228, 200);
+    width: 95%;
+    border-radius: 20px;
+    color: rgb(212, 0, 0);
+    margin: 0 auto;
+  }
+
+  header {
+    height: 150px;
+    position: relative;
+  }
+
+  #diamond {
+    background-image: url('diamond.png');
+    background-size: 100% 100%;
+    width: 90%;
+    height: 250px;
+    position: absolute;
+    bottom: -125px;
+    left: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .lobster {
+    font-family: 'lobster';
+    color: white;
+    font-size: 80px;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 150px;
+    padding-left: 50px;
+    padding-right: 50px;
+    justify-content: space-between;
+  }
+
+  .box {
+    width: 45%;
+  }
+
+  ul {
+    list-style-type: none;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    padding: 0;
+  }
+
+  .title {
+    font-family: 'Lobster';
+    color: black;
+    font-size: 2em;
+  }
+
+  li > div {
+    display: inline;
+    float: right;
+  }
+
+  .media-box {
+    min-width: 0;
+    margin: 0;
+  }
+
+  img {
+    width: 450px;
+    max-width: 100%;
+    max-height: 450px;
+  }
 }
