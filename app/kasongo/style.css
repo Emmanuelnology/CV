@@ -1,18 +1,86 @@
-a {
-  text-decoration: none;
+body {
+  margin: 0; 
+  font-size: 1em;
+  font-style: normal;
+  font-family: 'Lato', sans-serif;
+  background-image: url('https://windsim.com/images/sky/sky_107.bmp');
+  background-size: cover;
 }
+
+a {
+  text-decoration: none; 
+}
+
+/* Added crolling welcome page with arrow */
 
 .heading {
   font-family: 'Bangers';
   font-size: 50px;
 }
 
-body {
-  font-size: 1em;
-  font-style: normal;
-  font-family: 'Lato', sans-serif;
-  background-image: url('https://windsim.com/images/sky/sky_107.bmp');
+.bonjour {
+  min-height: 100vh;
+  background-color: lightgrey;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
+  background-image: url('kassnow.jpg');
+}
+
+.emmanuel {
+  font-size: 30px;
+  color:white;
+  background-color: none;
+  position: absolute;
+  top: 70%;
+  text-align: center;
+  left: 0;
+  width: 100%;
+}
+
+#scrolling {
+  color: lightgrey;
+  margin: 0;
+  height: 500vh;
+  position: absolute;
+  top: 0%;
+}
+
+.arrow a {
+  color:white;
+  text-decoration: none;
+  margin: 0;
+  font-size: 2em;
+}
+
+.arrow {
+  text-align: center;
+  margin: 8% 0;
+}
+
+.down {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes down {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-30px);
+  }
+
+  60% {
+    transform: translateY(-15px);
+  }
 }
 
 /* Sticky navbar with hover */
