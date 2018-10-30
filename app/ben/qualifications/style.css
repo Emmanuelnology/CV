@@ -11,25 +11,6 @@ ul {
   margin: 0 auto;
 }
 
-.big-scorecard {
-  display: none;
-}
-
-.small-scorecard {
-  max-width: 275px;
-  margin: 0 auto;
-}
-
-.small-scorecard ul {
-  width: 240px;
-  margin: 0 auto;
-}
-
-.small-scorecard li {
-  text-align: left;
-  font-weight: 600;
-}
-
 .innings {
   font-size: 16px;
   font-style: italic;
@@ -39,7 +20,18 @@ ul {
 
 .grade {
   display: inline;
+  width: 1.5em;
   float: right;
+}
+
+.tot-grade {
+  display: inline;
+  float: right;
+}
+
+.not-out {
+  background-color: blueviolet;
+  color: white;
 }
 
 .blank {
@@ -49,6 +41,11 @@ ul {
 .thin {
   font-weight: 100;
   text-align: left;
+}
+
+.caught,
+.bowled {
+  display: none;
 }
 
 .bcdb-cw {
@@ -61,22 +58,27 @@ ul {
   color: white;
 }
 
-.bcbv-cw {
-  background-color: blueviolet;
-  color: white;
-}
-
 .bcw-cdb {
   background-color: white;
-  color: dark-blue;
+  color: darkblue;
+}
+
+.scorecard {
+  margin: 0 auto;
+  width: 32em;
+  display: grid;
+  grid-template-areas: "team team" "batter score" "extras ex-score" "total final";
+  grid-template-columns: 14em 4.5em;
+  justify-content: center;
 }
 
 @media only screen and (min-width: 600px) {
-  .small-scorecard {
-    display: none;
+  .caught,
+  .bowled {
+    display: initial;
   }
 
-  .big-scorecard {
+  .scorecard {
     margin: 0 auto;
     width: 32em;
     display: grid;
@@ -84,150 +86,112 @@ ul {
     grid-template-columns: 14em 6.5em 6em 4.5em;
     justify-content: center;
   }
+}
 
-  .big-scorecard > h3 {
-    margin: 0;
-    grid-area: team;
-    width: 100%;
-    padding-bottom: 5px;
-    border: 1px darkblue solid;
-    background-color: darkblue;
-    color: white;
-    border-radius: 5px 5px 0 0;
-  }
+.team {
+  margin: 0;
+  grid-area: team;
+  width: 100%;
+  padding-bottom: 5px;
+  border: 1px darkblue solid;
+  border-radius: 5px 5px 0 0;
+}
 
-  .big-scorecard div {
-    background-color: white;
-    color: darkblue;
-  }
+.batter {
+  grid-area: batter;
+  font-weight: 600;
+  padding-top: 5px;
+  border-left: 1px darkblue solid;
+}
 
-  #batter,
-  #aw-batter {
-    grid-area: batter;
-    font-weight: 600;
-    padding-top: 5px;
-    border-left: 1px darkblue solid;
-  }
+.batter li {
+  padding-left: 5px;
+}
 
-  #batter li,
-  #aw-batter li {
-    padding-left: 5px;
-  }
+.caught {
+  grid-area: caught;
+  padding-top: 5px;
+}
 
-  #caught,
-  #aw-caught {
-    grid-area: caught;
-    padding-top: 5px;
-  }
+.bowled {
+  grid-area: bowled;
+  padding-top: 5px;
+}
 
-  #bowled,
-  #aw-bowled {
-    grid-area: bowled;
-    padding-top: 5px;
-  }
+.score {
+  grid-area: score;
+  font-weight: 600;
+  padding-top: 5px;
+  border-right: 1px darkblue solid;
+  padding-bottom: 5px;
+}
 
-  #score,
-  #aw-score {
-    grid-area: score;
-    font-weight: 600;
-    padding-top: 5px;
-    border-right: 1px darkblue solid;
-    background-color: red;
-    color: white;
-    padding-bottom: 5px;
-  }
+.score li {
+  padding-right: 5px;
+}
 
-  #score li,
-  #aw-score li {
-    padding-right: 5px;
-  }
+.extras {
+  grid-area: extras;
+  text-align: left;
+  font-weight: 600;
+  padding-left: 5px;
+  border-left: 1px darkblue solid;
+  padding-bottom: 5px;
+}
 
-  #extras,
-  #aw-extras {
-    grid-area: extras;
-    text-align: left;
-    font-weight: 600;
-    padding-left: 5px;
-    border-left: 1px darkblue solid;
-    padding-bottom: 5px;
-  }
+.total {
+  grid-area: total;
+  text-align: left;
+  font-weight: 600;
+  padding-left: 5px;
+  border-left: 1px darkblue solid;
+  padding-bottom: 5px;
+  border-bottom: 1px darkblue solid;
+  border-radius: 0 0 0 5px;
+  border-top: 1px darkblue solid;
+  padding-top: 5px;
+  margin-bottom: 5px;
+}
 
-  #total,
-  #aw-total {
-    grid-area: total;
-    text-align: left;
-    font-weight: 600;
-    padding-left: 5px;
-    border-left: 1px darkblue solid;
-    padding-bottom: 5px;
-    border-bottom: 1px darkblue solid;
-    border-radius: 0 0 0 5px;
-    border-top: 1px darkblue solid;
-    padding-top: 5px;
-    margin-bottom: 5px;
-    background-color: red;
-    color: white;
-  }
+.final {
+  grid-area: final;
+  font-weight: 600;
+  text-align: right;
+  padding-right: 5px;
+  border-right: 1px darkblue solid;
+  padding-bottom: 5px;
+  border-bottom: 1px darkblue solid;
+  border-radius: 0 0 5px 0;
+  border-top: 1px darkblue solid;
+  padding-top: 5px;
+  margin-bottom: 5px;
+}
 
-  #final,
-  #aw-final {
-    grid-area: final;
-    font-weight: 600;
-    text-align: right;
-    padding-right: 5px;
-    border-right: 1px darkblue solid;
-    padding-bottom: 5px;
-    border-bottom: 1px darkblue solid;
-    border-radius: 0 0 5px 0;
-    border-top: 1px darkblue solid;
-    padding-top: 5px;
-    margin-bottom: 5px;
-    background-color: darkblue;
-    color: white;
-  }
+.ex-score {
+  grid-area: ex-score;
+  font-weight: 600;
+  border-right: 1px darkblue solid;
+  padding-bottom: 5px;
+  padding-right: 5px;
+}
 
-  #ex-score,
-  #aw-ex-score {
-    grid-area: ex-score;
-    font-weight: 600;
-    border-right: 1px darkblue solid;
-    background-color: red;
-    color: white;
-    padding-bottom: 5px;
-    padding-right: 5px;
-  }
+.scorecard li {
+  text-align: left;
+}
 
-  .big-scorecard li {
-    text-align: left;
-  }
+.score li,
+.ex-score {
+  text-align: right;
+}
 
-  #score li,
-  #aw-score li,
-  #ex-score,
-  #aw-ex-score {
-    text-align: right;
-  }
+.batter .not-out {
+  border-left: 0.5px darkblue solid;
+}
 
-  .not-out {
-    background-color: blueviolet;
-    color: white;
-  }
+.blank {
+  color: transparent;
+}
 
-  #batter .not-out,
-  #aw-batter .not-out {
-    border-left: 0.5px darkblue solid;
-  }
-
-  .blank {
-    color: transparent;
-  }
-
-  .not-out-score {
-    background-color: white;
-    color: darkblue;
-  }
-
-  .ex-score {
-    padding-top: 5px;
-  }
+.ex-score {
+  padding-top: 5px;
 }
