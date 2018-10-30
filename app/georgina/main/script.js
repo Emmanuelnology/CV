@@ -3,7 +3,7 @@ var nav = {
         link: $("#js-contact"),
         content: $("#contact")
     },
-    timeline: {
+    story: {
         link: $("#js-story"),
         content: $("#story")
     },
