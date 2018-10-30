@@ -16,11 +16,12 @@ ul {
 }
 
 .small-scorecard {
-  max-width: 280px;
+  max-width: 275px;
+  margin: 0 auto;
 }
 
 .small-scorecard ul {
-  width: 200px;
+  width: 220px;
   margin: 0 auto;
 }
 
