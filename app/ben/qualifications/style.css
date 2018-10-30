@@ -64,7 +64,7 @@ ul {
     margin: 0 auto;
     width: 32em;
     display: grid;
-    grid-template-areas: "team team team team" "batter caught bowled score" "extras extras extras score" "total total final final";
+    grid-template-areas: "team team team team" "batter caught bowled score" "extras extras extras ex-score" "total total final final";
     grid-template-columns: 14em 6.5em 6em 4.5em;
     justify-content: center;
   }
@@ -166,12 +166,25 @@ ul {
     margin-bottom: 5px;
   }
 
+  #ex-score,
+  #aw-ex-score {
+    grid-area: ex-score;
+    font-weight: 600;
+    border-right: 1px darkblue solid;
+    background-color: red;
+    color: white;
+    padding-bottom: 5px;
+    padding-right: 5px;
+  }
+
   .big-scorecard li {
     text-align: left;
   }
 
   #score li,
-  #aw-score li {
+  #aw-score li,
+  #ex-score,
+  #aw-ex-score {
     text-align: right;
   }
 
@@ -187,5 +200,9 @@ ul {
   .not-out-score {
     background-color: white;
     color: darkblue;
+  }
+
+  .ex-score {
+    padding-top: 5px;
   }
 }
