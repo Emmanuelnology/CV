@@ -24,6 +24,12 @@ nav {
   font-weight: bold;
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+  grid-area: nav;
+}
+
 nav > * {
   display: inline;
 }
@@ -61,6 +67,10 @@ main {
 a {
   display: inline-block;
   color: inherit;
+}
+
+.aboutme {
+  grid-area: aboutme;
 }
 
 #aboutwrap {
