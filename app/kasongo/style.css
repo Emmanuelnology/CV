@@ -134,10 +134,14 @@ main {
   margin-left: 0.5em;
 }
 
-/* First and second titles position */
+/* First and second titles position and color */
 
 h1 {
   text-align: center;
+}
+
+h2 {
+  color: darkblue;
 }
 
 /* Photo modification */
@@ -222,17 +226,20 @@ input {
   background-color: lightgrey;
 }
 
-.name {
+#name #firstname #email {
   width: 17em;
   margin: 0;
 }
 
-.textarea {
+textarea {
   height: 10em;
   width: 25em;
   margin-left: 0;
   padding: 0;
   background-color: lightgrey;
+  vertical-align: text-top;
+  display: flex;
+  flex: 1;
 }
 
 .envoyer {

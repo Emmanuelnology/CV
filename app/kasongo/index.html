@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Days One" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -47,7 +48,7 @@
             </div>
         </section>
         <section id="contactkas">
-            <h2 style="color:darkblue">Contact Information</h2>
+            <h2>Contact Information</h2>
             <ul class="myinfo">
                 <li><i class="fa fa-address-book-o" aria-hidden="true"></i>Full name: Shutsha Kasongo Emmanuel</li>
                 <li><i class="fa fa-address-book-o" aria-hidden="true"></i>Email: emmanuel.shutsha@nology.io</li>
@@ -75,7 +76,7 @@
         </div>
         
         <section id="aboutkas">
-            <h2 style="color:darkblue">About me</h2>
+            <h2>About me</h2>
             <p>I am a graduate developer with a master’s degree in climate change sciences from the University of Bristol and a 2.1 undergraduate degree in geographical sciences from the Free University of Brussels.
                 After living for 21 years in Belgium, I moved to England in 2017 to pursue my studies and career, I am currently based in Bristol.
                 I have work experience in various fields such as weather forecasting, brand marketing and fundraising for communities.
@@ -88,7 +89,7 @@
                 <a class="fa fa-hand-o-down" href="#skillkas"></a>
             </div>   
         </section>
-        <h2 style="color:darkblue">Skills</h2>
+        <h2>Skills</h2>
         <section id="skillkas">
             <div>
                 <ul>
@@ -170,14 +171,14 @@
                 method="POST"
                 enctype="multipart/form-data"
                 name="sendemail">
-                <p>Surname:</p>
-                <input type="text" name="Name" placeholder="Enter your surname">
-                <p>Firstname:</p>
-                <input type="text" name="Name" placeholder="Enter your firstname">
-                <p>Your email:</p>
-                <input type="text" name="email" placeholder="example@example.co.uk">
-                <p>Message:</p>
-                <input type="text" name="message" class="textarea">
+                <label for="name">Surname:</label>
+                <input type="text" id="name" placeholder="Enter your surname">
+                <label for="firstname">First name:</label>
+                <input type="text" id="firstname" placeholder="Enter your first name">
+                <label for="email">Your email:</label>
+                <input type="text" id="email" placeholder="example@example.co.uk">
+                <label for="message">Message:</label>
+                <textarea type="text" id="message"></textarea>
 
                 <input type="submit" value="Submit" class="envoyer">
             </form>
