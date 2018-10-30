@@ -11,7 +11,7 @@ a {
   text-decoration: none; 
 }
 
-/* Added crolling welcome page with arrow */
+/* Added crolling welcome page with bouncing arrow */
 
 .heading {
   font-family: 'Bangers';
@@ -59,13 +59,13 @@ a {
   margin: 8% 0;
 }
 
-.down {
+.bounce {
   -moz-animation: bounce 2s infinite;
   -webkit-animation: bounce 2s infinite;
   animation: bounce 2s infinite;
 }
 
-@keyframes down {
+@keyframes bounce {
   0%,
   20%,
   50%,
