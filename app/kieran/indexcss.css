@@ -2,11 +2,34 @@ body {
   background-color: pink;
 }
 
-main {
-  min-width: 100%;
-}
 
-main div.left {
+
+  div.left { 
+    grid-area: leftt;    
+  }
+
+  div.mid {
+    grid-area: mid;
+  }
+
+  div.right {
+    grid-area: rightt;
+  }
+
+
+  main {
+  margin:0;
+  display:grid;
+  grid-template-areas:
+  "leftt"
+  "mid"
+  "rightt";
+  grid-template-columns: 1fr;
+  grid-gap: 40px;
+  text-align: justify;
+    
+  }
+/* main div.left {
   padding: 20px;
   width: 31%;
   vertical-align: top;
@@ -35,7 +58,7 @@ main div.right {
   vertical-align: top;
   text-align: justify;
   min-width: 280px;
-}
+} */
 
 li.aboutmelabel {
   height: 50px;
@@ -53,6 +76,7 @@ main div.right div {
 div ul.skillslist {
   list-style: none;
   padding: 0;
+
 }
 
 li div.score {
@@ -82,10 +106,26 @@ li.aboutmelabel {
   position: relative;
 }
 
+div.right {
+  max-width: 300px;
+  float: center;
+}
+
 @media only screen and (min-width: 1014px) {
   li.aboutmelabel {
     height: 50px;
     z-index: 1;
     position: relative;
+  }
+
+main {
+  margin:0;
+  display:grid;
+  grid-template-areas:
+  "leftt mid rightt";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+  text-align: justify;
+    
   }
 }
