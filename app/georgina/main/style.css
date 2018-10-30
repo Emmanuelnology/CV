@@ -58,7 +58,7 @@ main {
   display: block;
   position: absolute;
   top: 0;
-  right: 10px; 
+  right: 10px;
 }
 
 h1 {
@@ -151,12 +151,6 @@ footer {
   font-family: 'Fauna One', serif;
 }
 
-.skills-panel .score {
-  color: #f0c808;
-  display: inline;
-  float: right;
-}
-
 .skills-panel {
   color: black;
   font-size: 20px;
@@ -212,8 +206,8 @@ footer {
 
 .skills-panel .score {
   color: #ff7614;
-  display: inline;
-  float: center;
+  display: flex;
+  float: right;
 }
 
 .skills-panel {
@@ -308,10 +302,8 @@ nav ul {
 }
 
 #phone:hover {
-  
   position: fixed;
   position: absolute;
-
 }
 
 .chart {
@@ -339,9 +331,10 @@ section {
     position: relative;
     background-color: white;
   }
-#closebutton {
-  display: none;
-}
+
+  #closebutton {
+    display: none;
+  }
 
   body {
     grid-template-areas: "me content";
