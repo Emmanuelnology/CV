@@ -89,7 +89,7 @@ nav {
 
 /* Social link */
 .social {
-  margin-left: 2em;
+  margin-left: 0;
   padding-right: 1em;
   border: 0;
   display: inline;
@@ -99,7 +99,7 @@ h1 {
   text-align: center;
 }
 
-/* Add stars color and column to the right and space between skills */
+/* Add stars color and column to the right and space between skills and font awesome*/
 .checked {
   color: darkblue;
 }
