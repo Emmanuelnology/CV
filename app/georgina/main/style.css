@@ -216,16 +216,17 @@ footer {
   border-top-style: dotted;
 }
 
-.me {
-  font-family: 'Fauna One', serif;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
 img {
   display: block;
+  position: fixed;
   margin: auto;
+}
+
+#brain {
+  height: 80px;
+  display: block;
+  position: fixed;
+
 }
 
 .chart {
