@@ -2,32 +2,13 @@ article {
   margin: 15px;
 }
 
+h2 {
+  font-size: 24px;
+  margin: 4px;
+}
+
 ul {
   list-style: none;
-}
-
-#modules {
-  width: 200px;
-  margin: 0 auto;
-}
-
-.big-scorecard {
-  display: none;
-}
-
-.small-scorecard {
-  max-width: 275px;
-  margin: 0 auto;
-}
-
-.small-scorecard ul {
-  width: 240px;
-  margin: 0 auto;
-}
-
-.small-scorecard li {
-  text-align: left;
-  font-weight: 600;
 }
 
 .innings {
@@ -37,18 +18,27 @@ ul {
   display: block;
 }
 
-.grade {
-  display: inline;
-  float: right;
+.not-out {
+  background-color: blueviolet;
+  color: white;
 }
 
 .blank {
   color: transparent;
 }
 
-.thin {
+.thick {
+  font-weight: 600;
+}
+
+.thin,
+.changes {
   font-weight: 100;
   text-align: left;
+}
+
+.appears {
+  display: none;
 }
 
 .bcdb-cw {
@@ -61,173 +51,124 @@ ul {
   color: white;
 }
 
-.bcbv-cw {
-  background-color: blueviolet;
-  color: white;
-}
-
 .bcw-cdb {
   background-color: white;
-  color: dark-blue;
+  color: darkblue;
+}
+
+.pb {
+  padding-bottom: 5px;
+}
+
+.pt {
+  padding-top: 5px;
+}
+
+.pl,
+.batter li {
+  padding-left: 5px;
+}
+
+.pr {
+  padding-right: 5px;
+}
+
+.mb {
+  margin-bottom: 5px;
+}
+
+.bt {
+  border-top: 1px darkblue solid;
+}
+
+.bb {
+  border-bottom: 1px darkblue solid;
+}
+
+.br {
+  border-right: 1px darkblue solid;
+}
+
+.bl {
+  border-left: 1px darkblue solid;
+}
+
+.scorecard {
+  margin: 0 auto;
+  width: 32em;
+  display: grid;
+  grid-template-areas: "team team team" "batter batter score" "extras extras ex-score" "total final final";
+  grid-template-columns: 11.5em 2.5em 4.5em;
+  justify-content: center;
+}
+
+.team {
+  margin: 0;
+  grid-area: team;
+  border-radius: 5px 5px 0 0;
+}
+
+.batter {
+  grid-area: batter;
+}
+
+.caught {
+  grid-area: caught;
+}
+
+.bowled {
+  grid-area: bowled;
+}
+
+.score {
+  grid-area: score;
+}
+
+.extras {
+  grid-area: extras;
+  text-align: left;
+}
+
+.total {
+  grid-area: total;
+  text-align: left;
+  border-radius: 0 0 0 5px;
+}
+
+.final {
+  grid-area: final;
+  text-align: right;
+  border-radius: 0 0 5px 0;
+}
+
+.ex-score {
+  grid-area: ex-score;
+}
+
+.scorecard li {
+  text-align: left;
+}
+
+.ex-score,
+.score li {
+  text-align: center;
 }
 
 @media only screen and (min-width: 600px) {
-  .small-scorecard {
-    display: none;
+  .appears {
+    display: initial;
   }
 
-  .big-scorecard {
+  .changes {
+    font-weight: 600;
+  }
+
+  .scorecard {
     margin: 0 auto;
     width: 32em;
     display: grid;
     grid-template-areas: "team team team team" "batter caught bowled score" "extras extras extras ex-score" "total total final final";
-    grid-template-columns: 14em 6.5em 6em 4.5em;
+    grid-template-columns: 12em 6.5em 6em 4.5em;
     justify-content: center;
-  }
-
-  .big-scorecard > h3 {
-    margin: 0;
-    grid-area: team;
-    width: 100%;
-    padding-bottom: 5px;
-    border: 1px darkblue solid;
-    background-color: darkblue;
-    color: white;
-    border-radius: 5px 5px 0 0;
-  }
-
-  .big-scorecard div {
-    background-color: white;
-    color: darkblue;
-  }
-
-  #batter,
-  #aw-batter {
-    grid-area: batter;
-    font-weight: 600;
-    padding-top: 5px;
-    border-left: 1px darkblue solid;
-  }
-
-  #batter li,
-  #aw-batter li {
-    padding-left: 5px;
-  }
-
-  #caught,
-  #aw-caught {
-    grid-area: caught;
-    padding-top: 5px;
-  }
-
-  #bowled,
-  #aw-bowled {
-    grid-area: bowled;
-    padding-top: 5px;
-  }
-
-  #score,
-  #aw-score {
-    grid-area: score;
-    font-weight: 600;
-    padding-top: 5px;
-    border-right: 1px darkblue solid;
-    background-color: red;
-    color: white;
-    padding-bottom: 5px;
-  }
-
-  #score li,
-  #aw-score li {
-    padding-right: 5px;
-  }
-
-  #extras,
-  #aw-extras {
-    grid-area: extras;
-    text-align: left;
-    font-weight: 600;
-    padding-left: 5px;
-    border-left: 1px darkblue solid;
-    padding-bottom: 5px;
-  }
-
-  #total,
-  #aw-total {
-    grid-area: total;
-    text-align: left;
-    font-weight: 600;
-    padding-left: 5px;
-    border-left: 1px darkblue solid;
-    padding-bottom: 5px;
-    border-bottom: 1px darkblue solid;
-    border-radius: 0 0 0 5px;
-    border-top: 1px darkblue solid;
-    padding-top: 5px;
-    margin-bottom: 5px;
-    background-color: red;
-    color: white;
-  }
-
-  #final,
-  #aw-final {
-    grid-area: final;
-    font-weight: 600;
-    text-align: right;
-    padding-right: 5px;
-    border-right: 1px darkblue solid;
-    padding-bottom: 5px;
-    border-bottom: 1px darkblue solid;
-    border-radius: 0 0 5px 0;
-    border-top: 1px darkblue solid;
-    padding-top: 5px;
-    margin-bottom: 5px;
-    background-color: darkblue;
-    color: white;
-  }
-
-  #ex-score,
-  #aw-ex-score {
-    grid-area: ex-score;
-    font-weight: 600;
-    border-right: 1px darkblue solid;
-    background-color: red;
-    color: white;
-    padding-bottom: 5px;
-    padding-right: 5px;
-  }
-
-  .big-scorecard li {
-    text-align: left;
-  }
-
-  #score li,
-  #aw-score li,
-  #ex-score,
-  #aw-ex-score {
-    text-align: right;
-  }
-
-  .not-out {
-    background-color: blueviolet;
-    color: white;
-  }
-
-  #batter .not-out,
-  #aw-batter .not-out {
-    border-left: 0.5px darkblue solid;
-  }
-
-  .blank {
-    color: transparent;
-  }
-
-  .not-out-score {
-    background-color: white;
-    color: darkblue;
-  }
-
-  .ex-score {
-    padding-top: 5px;
   }
 }

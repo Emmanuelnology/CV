@@ -35,8 +35,8 @@ p {
 .welcomeimage {
   min-height: 100vh;
   background-color: red;
-  background-attachment: fixed;
-  background-position: right;
+  /* background-attachment: fixed; */
+  background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url('crangrad.jpg');
@@ -44,6 +44,7 @@ p {
 
 @media (min-width: 551px) {
   .welcomeimage {
+    background-position: right;
     background-image: url('greece17.jpeg');
   }
 }

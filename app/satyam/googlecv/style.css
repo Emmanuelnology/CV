@@ -1,0 +1,11 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('mapbackground.jpg');
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#topsearchbar{
+    background-color: #fff;
+}
