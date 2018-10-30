@@ -218,15 +218,14 @@ footer {
 
 img {
   display: block;
-  position: fixed;
+  position: absolute;
   margin: auto;
 }
 
 #brain {
   height: 80px;
   display: block;
-  position: fixed;
-
+  position: absolute;
 }
 
 .chart {
