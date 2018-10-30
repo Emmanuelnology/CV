@@ -5,6 +5,10 @@ body {
   font-family: 'Days One';
   background-image: url('https://windsim.com/images/sky/sky_107.bmp');
   background-size: cover;
+  display: flex;
+  flex-grow: 1;
+  flex-flow: column;
+  flex-basis: 1%;
 }
 
 a {
