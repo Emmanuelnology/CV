@@ -3,12 +3,14 @@
   padding: 0;
   margin: 0;
 }
+
 main {
   height: 100vh;
   background-color: white;
 }
 
-#timeline , h1 {
+#timeline ,
+h1 {
   font-family: 'Fauna One', serif;
   text-align: center;
   font-size: 35px;
@@ -18,7 +20,8 @@ main {
   margin-top: 50px;
 }
 
-#timeline , header {
+#timeline ,
+header {
   margin-top: 50px;
 }
 
@@ -50,7 +53,7 @@ strong {
 
 .timeline > div {
   padding: 0.25em 0.5em;
-  border-color: #06AED5;
+  border-color: #06aed5;
   border-style: solid;
   border-width: 0;
 }
@@ -63,7 +66,7 @@ strong {
   content: " ";
   width: 1em;
   height: 1em;
-  border: #F2D234 solid 0.125em;
+  border: #f2d234; solid 0.125em;
   border-radius: 50%;
   background-color: white;
   position: absolute;
@@ -86,11 +89,12 @@ strong {
 body > div {
   flex: 1;
 }
+
 .tltext {
   font-size: 13px;
 }
+
 img {
   display: block;
   margin: auto;
-
 }

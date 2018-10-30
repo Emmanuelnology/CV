@@ -21,13 +21,12 @@ body {
   margin: 0;
   font-family: 'Encode Sans', sans-serif;
   display: grid;
-  grid-template-areas: 
-  "me";
+  grid-template-areas: "me";
   grid-template-columns: 1fr;
 }
 
 nav {
-  background-color: #06AED5;
+  background-color: #06aed5;
   height: 100vh;
   margin-right: 1%;
   font-size: 10px;
@@ -40,10 +39,10 @@ nav ul {
 
 nav li {
   flex-grow: 1;
-  text-align:center;
-  background-color:white;
-  padding:10px;
-  border:1px solid black;
+  text-align: center;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid black;
 }
 
 main {
@@ -61,7 +60,6 @@ h1 {
   border-bottom: 2px dotted grey;
   margin-top: 50px;
 }
-
 
 h2 {
   text-align: center;
@@ -83,8 +81,6 @@ header h3 {
   color: #d91a1a;
 }
 
-
-
 .info {
   font-size: 30px;
   margin-bottom: 3px;
@@ -93,7 +89,7 @@ header h3 {
 }
 
 a:hover {
-  background-color: #F2D234;
+  background-color: #f2d234;
   border-radius: 5px;
 }
 
@@ -147,7 +143,7 @@ footer {
 }
 
 .skills-panel .score {
-  color: #F0C808;
+  color: #f0c808;
   display: inline;
   float: right;
 }
@@ -175,12 +171,12 @@ footer {
 .life-icons {
   font-size: 50px;
   text-align: center;
-  color: #E34543;
+  color: #e34543;
 }
+
 .career {
   color: red;
 }
-
 
 .copyright {
   height: 2px;
@@ -226,16 +222,18 @@ footer {
   padding: 0;
   text-align: center;
 }
+
 img {
   display: block;
   margin: auto;
-
 }
-.chart{
+
+.chart {
   display: block;
   float: right;
   margin: 0;
 }
+
 #doing {
   font-size: 18px;
 }
@@ -246,21 +244,18 @@ section {
 }
 
 .active {
-font-weight:800;
+  font-weight: 800;
 }
 
 @media only screen and (min-width: 500px) {
-
-  main{
+  main {
     display: block;
   }
 
   body {
-    grid-template-areas:
-    "me content";
+    grid-template-areas: "me content";
     grid-template-columns: 1fr 2fr;
   }
-
 }
 
 #contact {
