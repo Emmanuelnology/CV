@@ -47,7 +47,7 @@ nav li {
 }
 
 main {
-  display: none;
+  display: display;
   background-color: rgb(225, 225, 225, 0.95);
   grid-area: content;
   position: absolute;
@@ -75,7 +75,7 @@ h2 {
   text-align: center;
   font-family: 'Fauna One', serif;
   font-size: 20px;
-  color: #black;
+  color: black;
   margin: 0;
 }
 
@@ -342,7 +342,6 @@ section {
 #closebutton {
   display: none;
 }
-
 
   body {
     grid-template-areas: "me content";
