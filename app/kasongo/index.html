@@ -11,10 +11,24 @@
 </head>
 
 <body>
-    <audio controls autoplay loop>
-        <source src="./relax-music.mp3" type="audio/ogg" />
-    </audio>
-    <h1 class= "heading">Shutsha Kasongo Emmanuel Resume</h1>
+    <div class="bonjour">
+        <audio controls autoplay loop>
+            <source src="./relax-music.mp3" type="audio/ogg" />
+        </audio>
+        <div class="scrolling" id="welcome-image">
+            <header>
+                <h1> Shutsha Kasongo Emmanuel </h1>
+            </header>            
+        </div>
+        <div class="emmanuel">
+            <p class="introkas"> Bienvenue ! This is my interactive CV !</p>
+        </div>        
+        <div class="arrow bounce">
+            <a class="fa fa-hand-o-down" href="#contactkas"></a>
+        </div>
+    </div>    
+    <h1 class= "heading">My Resume</h1>
+    
     <nav>
         <section>
             <ul>
@@ -30,7 +44,7 @@
 
     <section class="myphoto">
         <div class="border">
-        <img id="kasface" src="kasongophoto.jfif" alt="Italian Trulli" style="width:120px;height:130px">
+        <img id="kasface" src="kasongophoto.jfif" alt="Italian Trulli" style="width:120px;height:135px">
         </div>
     </section>
 
@@ -136,22 +150,25 @@
                     </li>
                 </ul>
             </div>             
-        </section>
-        
-        <div class="form">
-            <p>Surname:</p>
-            <input type="nameinfo" class="name">
-            <p>First name:</p>
-            <input type="nameinfo" class="name">
-            <p>Comments:</p>
-            <textarea class="com" name="history" cols="80" label="notes" rows="4" wrap="virtual"></textarea>
-        </div>
-        <button type="button" class="envoyer">Send</button>
-        
-        <ul class="emailad">
-            <li>Please contact me if you have any further questions on my resume</li>
-            <li><a href="mailto:emmanuel.shutsha@nology.io">Email me</a></li>
-        </ul>
+        </section>  
+        <section id="form">
+            <form 
+                action="mailto:emmanuel.shutsha@nology.io?subject=Online form"
+                method="POST"
+                enctype="multipart/form-data"
+                name="sendemail">
+                <p>Surname:</p>
+                <input type="text" name="Name" placeholder="Enter your surname">
+                <p>Firstname:</p>
+                <input type="text" name="Name" placeholder="Enter your firstname">
+                <p>Your email:</p>
+                <input type="text" name="email" placeholder="example@example.com">
+                <p>Message:</p>
+                <input type="text" name="message" class="textarea">
+    
+                <input type="submit" value="Submit" class="envoyer">
+            </form>
+        </section>       
     </main>
     
     <footer>
