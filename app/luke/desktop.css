@@ -86,3 +86,24 @@ div ul li {
   color: white;
   text-decoration: none;
 }
+
+.timeline {
+  display: grid;
+  grid-template-areas: "one two three for";
+}
+
+.one,
+.three,
+.two {
+  border-bottom: 1px white solid;
+}
+
+.timeline span div {
+  position: absolute;
+  border: 1px white solid;
+  background-color: black;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  top:1px;
+}
