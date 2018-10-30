@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<!-- By Satyam Gehani  -->
+<head>
+    <link href="styles.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Ubuntu" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Satyam Gehani CV Home Page</title>
+</head>
+<body>
+    <main>
+    
+    </main>
+    <footer>
+        &copy; 2018 Satyam Gehani - All Rights Reserved
+    </footer>
+</body>
+</html>
