@@ -21,7 +21,7 @@ ul {
 }
 
 .small-scorecard ul {
-  width: 220px;
+  width: 240px;
   margin: 0 auto;
 }
 
@@ -51,8 +51,24 @@ ul {
   text-align: left;
 }
 
-.catcher {
-  padding-right: 20px;
+.bcdb-cw {
+  background-color: darkblue;
+  color: white;
+}
+
+.bcr-cw {
+  background-color: red;
+  color: white;
+}
+
+.bcbv-cw {
+  background-color: blueviolet;
+  color: white;
+}
+
+.bcw-cdb {
+  background-color: white;
+  color: dark-blue;
 }
 
 @media only screen and (min-width: 600px) {
@@ -193,8 +209,13 @@ ul {
   }
 
   .not-out {
-    background-color: darkblue;
+    background-color: blueviolet;
     color: white;
+  }
+
+  #batter .not-out,
+  #aw-batter .not-out {
+    border-left: 0.5px darkblue solid;
   }
 
   .blank {
