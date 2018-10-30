@@ -7,18 +7,11 @@
     body {
         width: 100%;
     }
-    /*     
-    .timeline {
-        display:flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        height:100px;
-        width:900px;
-    } */
+ 
     .timeline{
         display: grid;
         grid-template-areas: 
-        "one two three";
+        "one two three for";
     }
     
     .timeline div div div {
@@ -49,9 +42,8 @@
                 <div></div>
             </span>
         </div>
-        <div>
-            <div class="two">
-                <div>
+        <div>    
+                <div class="two">
                     <p>test 2</p>
                 </div>
                 <div>
@@ -61,20 +53,28 @@
                     <div></div>
                 </span>
             </div>
-        </div>
-        <div>
-            <div class="three">
-                <div>
-                    <p>test 3</p>
+            <div>    
+                    <div class="three">
+                        <p>test 3</p>
+                    </div>
+                    <div>
+                        <div></div>
+                    </div>
+                    <span>
+                        <div></div>
+                    </span>
                 </div>
-                <div>
-                    <div></div>
-                </div>
-                <span>
-                    <div></div>
-                </span>
-            </div>
-        </div>
+                <div>    
+                        <div class="for">
+                            <p>test 4</p>
+                        </div>
+                        <!-- <div>
+                            <div></div>
+                        </div> -->
+                        <span>
+                            <div></div>
+                        </span>
+                    </div>
 </div>
 </body>
 
