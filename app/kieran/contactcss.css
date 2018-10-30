@@ -1,0 +1,51 @@
+body {
+  background-color: rgb(82, 222, 219);
+}
+
+img.leftpara {
+  padding: 0;
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 10px;
+  float: center;
+}
+
+main {
+  padding: 0;
+}
+
+main div.rightpara {
+  margin-top: 8%;
+  padding: 1%;
+  float: right;
+  width: 50%;
+  vertical-align: top;
+  text-align: center;
+  font-size: 250%;
+  color: rgb(64, 62, 62);
+  display: block;
+  height: 60%;
+}
+
+li.contactlabel {
+  height: 50px;
+}
+
+.relocate {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+li.contactlabel {
+  height: 170px;
+  z-index: 1;
+  position: relative;
+}
+
+@media only screen and (min-width: 1014px) {
+  li.contactlabel {
+    height: 50px;
+    z-index: 1;
+    position: relative;
+  }
+}
