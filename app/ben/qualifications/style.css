@@ -75,14 +75,14 @@ ul {
     width: 100%;
     padding-bottom: 5px;
     border: 1px darkblue solid;
-    background-color: red;
+    background-color: darkblue;
     color: white;
     border-radius: 5px 5px 0 0;
   }
 
   .big-scorecard div {
     background-color: white;
-    color: black;
+    color: darkblue;
   }
 
   #batter,
@@ -186,6 +186,6 @@ ul {
 
   .not-out-score {
     background-color: white;
-    color: black;
+    color: darkblue;
   }
 }
