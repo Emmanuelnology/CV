@@ -3,7 +3,7 @@
 <head>
     <link  href=  "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Bitter|Crimson+Text|Nunito|Permanent+Marker|Pontano+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="genstyle.css">
+    <link rel="stylesheet" href="genstylepractise2.css">
     <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
     <title>Kieran Taylor CV About Me</title>
     <style>
@@ -205,6 +205,24 @@
             border-left: 0px;         
         }
         
+
+    li.worklabel {
+
+      height: 170px;
+      z-index: 1;
+      position: relative; 
+    }
+    
+    
+    @media only screen and (min-width:1014px) {
+
+      li.worklabel {
+        height: 50px;
+        z-index: 1;
+        position: relative; }
+
+    }
+
     </style>
     
 </head>
@@ -221,16 +239,13 @@
     
     
     <nav>
-        <!-- <div class="brand">
-            <span class="bold"><a href="/index.html">Home</a></span>
-        </div> -->
-        
-        <ul>
-            <li class="aboutmelabel"><a href="index.html">About&nbsp;Me</a></li>
-            <li class="worklabel"><a href="work.html">Work&nbsp;&amp;&nbsp;Education</a></li>
-            <li class="projectslabel"><a href="projects.html">projects</a> </li>      
-            <li class="contactlabel"><a href="contact.html">Contact&nbsp;Info</a> </li>
-        </ul>
+    <ul>
+      <li class="aboutmelabel"><div class="labelwrite aboutmee"><a href="index.html">About&nbsp;Me</a></div></li>
+      <li class="worklabel"><div class="labelwrite"><a href="work.html">Education</a></div></li>
+      <li class="projectslabel"><div class="labelwrite"><a href="projects.html">projects</a></div> </li>
+      <li class="nowlabel"><div class="labelwrite"><a href="now.html">Now</a></div> </li>            
+      <li class="contactlabel"><div class="labelwrite"><a href="contact.html">Contact&nbsp;Me</a></div> </li>
+    </ul>
     </nav>
     <main>
         
