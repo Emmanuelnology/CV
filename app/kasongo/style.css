@@ -200,7 +200,11 @@ ul {
   margin-right: 10px;
 }
 
-/* Contact me via text box */
+/* Contact me via text box and email */
+
+#form {
+  margin-bottom: 3em; 
+}
 input {
   display: block;
   background-color: lightgrey;
@@ -211,7 +215,7 @@ input {
   margin: 0;
 }
 
-textarea {
+.textarea {
   height: 10em;
   width: 25em;
   margin-left: 0;
@@ -222,15 +226,7 @@ textarea {
 .envoyer {
   margin-top: 4px;
   background-color: lightblue;
-}
-
-/* Send email */
-.emailad {
-  list-style-type: none;
-  padding-top: 2em;
-  padding-bottom: 0.5em;
-  padding-left: 0;
-  margin-left: 0;
+  margin-left: 2em;
 }
 
 /* Copyright font */
