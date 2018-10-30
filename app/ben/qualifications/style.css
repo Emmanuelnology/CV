@@ -95,13 +95,11 @@ ul {
   margin: 0;
   grid-area: team;
   width: 100%;
-  border: 1px darkblue solid;
   border-radius: 5px 5px 0 0;
 }
 
 .batter {
   grid-area: batter;
-  border-left: 1px darkblue solid;
 }
 
 .caught {
@@ -114,40 +112,31 @@ ul {
 
 .score {
   grid-area: score;
-  border-right: 1px darkblue solid;
   padding-bottom: 5px;
 }
 
 .extras {
   grid-area: extras;
   text-align: left;
-  border-left: 1px darkblue solid;
 }
 
 .total {
   grid-area: total;
   text-align: left;
-  border-left: 1px darkblue solid;
   padding-bottom: 5px;
-  border-bottom: 1px darkblue solid;
   border-radius: 0 0 0 5px;
-  border-top: 1px darkblue solid;
   margin-bottom: 5px;
 }
 
 .final {
   grid-area: final;
   text-align: right;
-  border-right: 1px darkblue solid;
-  border-bottom: 1px darkblue solid;
   border-radius: 0 0 5px 0;
-  border-top: 1px darkblue solid;
   margin-bottom: 5px;
 }
 
 .ex-score {
   grid-area: ex-score;
-  border-right: 1px darkblue solid;
 }
 
 .scorecard li {
@@ -175,10 +164,27 @@ ul {
   padding-top: 5px;
 }
 
-.pad-left {
+.pad-left,
+.batter li {
   padding-left: 5px;
 }
 
 .pad-right {
   padding-right: 5px;
+}
+
+.bor-top {
+  border-top: 1px darkblue solid;
+}
+
+.bor-bot {
+  border-bottom: 1px darkblue solid;
+}
+
+.bor-right {
+  border-right: 1px darkblue solid;
+}
+
+.bor-left {
+  border-left: 1px darkblue solid;
 }
