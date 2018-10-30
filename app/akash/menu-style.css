@@ -13,6 +13,8 @@ body {
 
 #dots {
   background-image: url('white-polka-done.png');
+  width: 95%;
+  margin: 0 auto;
 }
 
 main {
