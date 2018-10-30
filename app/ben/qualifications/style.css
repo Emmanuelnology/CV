@@ -43,7 +43,7 @@ ul {
     grid-template-areas: "team team team team" "batter caught bowled score" "extras extras extras score" "total total final final";
     grid-template-columns: 14em 7em 7em 3em;
     justify-content: center;
-  }  
+  }
 }
 
 .big-scorecard > h3 {
