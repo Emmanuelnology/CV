@@ -21,7 +21,7 @@ body > * {
 }
 
 nav {
-  background-color: lightgrey;
+  background-color: #06AED5;
   width: 34%;
   height: 100vh;
   margin-right: 1%;
@@ -76,7 +76,7 @@ strong {
 
 .timeline > div {
   padding: 0.25em 0.5em;
-  border-color: lightgrey;
+  border-color: #06AED5;
   border-style: solid;
   border-width: 0;
 }
@@ -89,7 +89,7 @@ strong {
   content: " ";
   width: 1em;
   height: 1em;
-  border: lightgrey solid 0.125em;
+  border: #F2D234 solid 0.125em;
   border-radius: 50%;
   background-color: white;
   position: absolute;
@@ -111,4 +111,12 @@ strong {
 
 body > div {
   flex: 1;
+}
+.tltext {
+  font-size: 13px;
+}
+img {
+  display: block;
+  margin: auto;
+
 }
