@@ -48,8 +48,17 @@ nav li {
 
 main {
   display: none;
-  background-color: white;
+  background-color: rgb(225, 225, 225, 0.95);
   grid-area: content;
+  position: absolute;
+  width: 100%;
+}
+
+#closebutton {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 10px; 
 }
 
 h1 {
@@ -327,7 +336,13 @@ section {
 @media only screen and (min-width: 500px) {
   main {
     display: block;
+    position: relative;
+    background-color: white;
   }
+#closebutton {
+  display: none;
+}
+
 
   body {
     grid-template-areas: "me content";
