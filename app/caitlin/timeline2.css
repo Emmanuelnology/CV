@@ -92,12 +92,12 @@ body {
 
 #hayesfield-hr {
   width: 15px;
-  height: 10%;
+  height: 36%;
   border-top: none;
   background: rgb(48, 28, 139);
   border-radius: 3px;
   position: relative;
-  top: 40%;
+  top: 10%;
 }
 
 #hayesfield-icon {
