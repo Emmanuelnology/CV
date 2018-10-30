@@ -115,3 +115,8 @@ body > div {
 .tltext {
   font-size: 13px;
 }
+img {
+  display: block;
+  margin: auto;
+
+}

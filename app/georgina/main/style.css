@@ -80,7 +80,7 @@ ul {
 }
 
 a:hover {
-  background-color: darkgrey;
+  background-color: #E34543;
   border-radius: 5px;
   padding: 6px;
 }
@@ -271,6 +271,7 @@ footer {
   border-bottom-style: dotted;
   padding: 5px;
   font-family: 'Fauna One', serif;
+  font-size: 18px;
 }
 
 .skills-panel .score {
