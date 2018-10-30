@@ -45,7 +45,7 @@ ul {
   color: transparent;
 }
 
-.thin{
+.thin {
   font-weight: 100;
   text-align: left;
 }
@@ -58,7 +58,7 @@ ul {
   .small-scorecard {
     display: none;
   }
-  
+
   .big-scorecard {
     margin: 0;
     display: grid;
@@ -66,53 +66,52 @@ ul {
     grid-template-columns: 14em 7em 7em 3em;
     justify-content: center;
   }
-  
+
   .big-scorecard > h3 {
     grid-area: team;
   }
-  
+
   #batter {
     grid-area: batter;
     font-weight: 600;
   }
-  
+
   #caught {
     grid-area: caught;
   }
-  
+
   #bowled {
     grid-area: bowled;
   }
-  
+
   #score {
     grid-area: score;
     font-weight: 600;
   }
-  
+
   #extras {
     grid-area: extras;
     text-align: left;
     font-weight: 600;
   }
-  
+
   #total {
     grid-area: total;
     text-align: left;
     font-weight: 600;
   }
-  
+
   #final {
     grid-area: final;
     font-weight: 600;
     text-align: right;
   }
-  
+
   .big-scorecard li {
     text-align: left;
   }
-  
+
   #score li {
     text-align: right;
   }
-  
 }
