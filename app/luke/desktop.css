@@ -1,3 +1,7 @@
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Raleway', sans-serif;
   text-align: justify;
@@ -59,14 +63,12 @@ li {
   color: rgb(0, 172, 237);
 }
 
-.fa-map-marker {
-  color: rgb(220, 77, 63);
-}
-
 #experience,
 #about,
 #aca,
-#work {
+#work,
+#ref,
+#con {
   padding-top: 40px;
 }
 
@@ -85,4 +87,78 @@ div ul li {
 .cv {
   color: white;
   text-decoration: none;
+}
+
+/* timeline code */
+.one,
+.two,
+.thr,
+.for {
+  border-bottom: 1px white solid;
+}
+
+.timeline {
+  display: grid;
+  grid-template-areas: "one two thr for fiv";
+  grid-auto-columns: auto;
+}
+
+.timeline span div {
+  position: absolute;
+  border: 1px black solid;
+  background-color: white;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+}
+
+.timeline span div {
+  position: relative;
+  top: -12.5px;
+}
+
+.ref-1,
+.ref-2 {
+  text-align: center;
+}
+
+/* box models */
+#qual-box {
+  box-sizing: border-box;
+  width: 50%;
+  height: 50%;
+  float: right;
+}
+
+#ed-box {
+  box-sizing: border-box;
+  width: 50%;
+  height: 50%;
+  float: right;
+}
+
+#pro-box {
+  box-sizing: border-box;
+  width: 50%;
+  height: 50%;
+  float: left;
+}
+
+#aw-box {
+  box-sizing: border-box;
+  width: 50%;
+  height: 50%;
+  float: left;
+}
+
+.ref {
+  display: grid;
+  grid-template-areas: "ref-1 ref-2";
+  grid-column: 25%;
+  column-gap: 12.5%;
+}
+
+div iframe {
+  position: relative;
+  left: 50%;
 }
