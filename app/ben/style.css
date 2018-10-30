@@ -33,6 +33,7 @@ header > a {
   width: 470px;
   height: 450px;
   transform: scale(1);
+  margin-top: 30px;
 }
 
 #pitch path {
