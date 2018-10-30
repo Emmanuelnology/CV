@@ -14,14 +14,26 @@
 
 #pro-box {
   box-sizing: border-box;
-  width: 100%;
+  width: 50%;
   height: 50%;
   float: left;
 }
 
-/* #spare {
+#aw-box {
   box-sizing: border-box;
   width: 50%;
   height: 50%;
-  float:left;
-} */
+  float: left;
+}
+
+.ref {
+  display: grid;
+  grid-template-areas: "ref-1 ref-2";
+  grid-column: 25%;
+  column-gap: 12.5%;
+}
+
+div iframe {
+  position: relative;
+  left: 20%; 
+}
