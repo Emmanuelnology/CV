@@ -1,10 +1,38 @@
+var nav={
+    contact: {
+        link: $("#js-contact"),
+        content:  $(".contact"),
+    },
+    skills: {
+        link: $("#js-skills"),
+        content:  $(".skills"),
+    },
+    employment: {
+        link: $("#js-employ"),
+        content:  $(".employment"),
+    },
+    education: {
+        link: $("#js-edu"),
+        content:  $(".education"),
+    },
+    awards: {
+        link: $("#js-awards"),
+        content:  $(".contact"),
+    },
+    recruiterInfo: {
+        link: $("#js-recruit"),
+        content:  $(".recruiter-info"),
+    }
+}
+
+
 var links={
-    contact: $("#contactlink"),
-    skills: $("#skillslink"),
-    employment: $("#employlink"),
-    education: $("#edulink"),
-    awards: $("#awardslink"),
-    recruiterinfo: $("#recruitlink")
+    contact: $("#js-contact"),
+    skills: $("#js-skills"),
+    employment: $("#js-employ"),
+    education: $("#js-edu"),
+    awards: $("#js-awards"),
+    recruiterinfo: $("#js-recruit")
 }
 
 links.contact.click(function(){
