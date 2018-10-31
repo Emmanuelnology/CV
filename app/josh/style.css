@@ -176,7 +176,7 @@ li a.active {
 
 .workexp-table {
   display: inline-block;
-  margin-left: auto; 
+  margin-left: auto;
   margin-right: auto;
   text-align: left;
 }
@@ -277,6 +277,7 @@ li a.active {
 .contact-icon a {
   color: white;
 }
+
 .mapouter {
   text-align: right;
   height: 350px;
@@ -301,7 +302,7 @@ iframe {
 
 .fa-envelope {
   font-size: 50px;
-}  
+}
 
 .socials i {
   font-size: 100px;
@@ -325,7 +326,7 @@ iframe {
 }
 
 .fa-github {
-  color: #ffffff;
+  color: #fff;
   padding: 50px;
 }
 
