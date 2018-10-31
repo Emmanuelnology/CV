@@ -48,8 +48,22 @@ nav li {
 
 main {
   display: none;
-  background-color: white;
+  background-color: rgb(225, 225, 225, 0.95);
   grid-area: content;
+  position: absolute;
+  width: 100%;
+}
+
+#closebutton {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  padding: 5px;
+}
+
+.fa-times {
+  padding: 5px;
 }
 
 h1 {
@@ -66,7 +80,7 @@ h2 {
   text-align: center;
   font-family: 'Fauna One', serif;
   font-size: 20px;
-  color: #black;
+  color: black;
   margin: 0;
 }
 
@@ -89,8 +103,9 @@ header h3 {
   width: 60%;
 }
 
-a:hover {
+.info li:hover {
   border-radius: 5px;
+  background-color: #f0c808;
 }
 
 .info li {
@@ -140,12 +155,6 @@ footer {
   border-bottom-style: dotted;
   padding: 5px;
   font-family: 'Fauna One', serif;
-}
-
-.skills-panel .score {
-  color: #f0c808;
-  display: inline;
-  float: right;
 }
 
 .skills-panel {
@@ -203,8 +212,8 @@ footer {
 
 .skills-panel .score {
   color: #ff7614;
-  display: inline;
-  float: center;
+  display: flex;
+  float: right;
 }
 
 .skills-panel {
@@ -223,7 +232,6 @@ nav ul {
 
 #gee {
   display: block;
-<<<<<<< HEAD
   margin: 0 auto;
 }
 
@@ -235,8 +243,9 @@ nav ul {
   position: absolute;
 
   /* formatting */
-  color: white;
+  color: black;
   font-size: large;
+  font-weight: bold;
 
   /* Center the text in the div */
   display: flex;
@@ -246,9 +255,6 @@ nav ul {
 
 .rollover:hover {
   cursor: pointer;
-
-  /* Darken the div background */
-  background-color: rgba(0, 0, 0, 0.2);
 
   /* Show the brain on hover as a background image */
 
@@ -280,14 +286,43 @@ nav ul {
 }
 
 #lips:hover {
-  background-image: url('brain.png');
-=======
-  <<<<<<< HEAD
+  background-image: url('lips.png');
   position: fixed;
-  =======
   position: absolute;
->>>>>>> 752c7747659d6dac7558289827d9f361d2378daa
->>>>>>> b383d34dbd085e59a24471b722028a76e8e29722
+}
+
+#heart {
+  top: 270px;
+}
+
+#heart:hover {
+  background-image: url('heart.png');
+  position: fixed;
+  position: absolute;
+}
+
+#phone {
+  top: 420px;
+  width: 250px;
+}
+
+#phone:hover {
+  background-image: url('phone.png');
+  position: fixed;
+  position: absolute;
+}
+
+#plane {
+  top: 420px;
+  width: 250px;
+  position: absolute;
+  right: 10px;
+}
+
+#plane:hover {
+  background-image: url('plane.png');
+  position: fixed;
+  position: absolute;
 }
 
 .chart {
@@ -312,6 +347,12 @@ section {
 @media only screen and (min-width: 500px) {
   main {
     display: block;
+    position: relative;
+    background-color: white;
+  }
+
+  #closebutton {
+    display: none;
   }
 
   body {
