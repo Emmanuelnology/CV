@@ -206,3 +206,15 @@ li {
   font-style: italic;
   margin: 0 0 5px 0;
 }
+
+@media only screen and (min-width: 500px) {
+  #education-section {
+    margin: 0;
+    display: grid;
+    grid-template-areas: 
+      "title-e title-e title-e title-e title-w title-w title-w"
+      "education col2 col3 years col4 col5 work";
+    grid-template-columns: 1fr 25px 10px 45px 10px 25px 1fr;
+    grid-gap: 5px;
+  }
+}
