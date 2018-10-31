@@ -231,6 +231,10 @@ nav ul {
 
 #gee {
   display: block;
+  <<<<<<< HEAD
+  =======
+  <<<<<<< HEAD
+  >>>>>>> dac7e310273eba4d571e8e7f981bc38cfdb010bd
   margin: 0 auto;
 }
 
@@ -313,6 +317,9 @@ nav ul {
 }
 
 #phone:hover {
+  background-image: url('brain.png');
+  =======
+  <<<<<<< HEAD
   position: fixed;
   position: absolute;
 }
