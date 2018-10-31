@@ -4,6 +4,7 @@
   margin: 0;
   list-style-type: none;
   text-decoration: none;
+  text-align: center;
 }
 
 body {
@@ -12,9 +13,15 @@ body {
     "nav aboutme"
     "nav content";
   grid-template-columns: 1fr 9fr;
+  grid-template-rows: 1fr 1fr;
   grid-gap: 2.5%;
   font-size: 2vw;
   font-family: sans-serif;
+  color: #2929a3;
+}
+
+a {
+  color: inherit;
 }
 
 h1 {
@@ -27,6 +34,7 @@ h1,
 h2 {
   background-color: #2929a3;
   color: #fff;
+  margin: 5px 0;
 }
 
 h2 {
@@ -38,6 +46,13 @@ h2 {
   font-weight: bolder;
 }
 
+.active {
+  background-color: white;
+  color: #2929a3;
+  border-radius: 2px;
+  font-weight: bold;
+}
+
 nav {
   display: flex;
   flex-direction: column;
@@ -47,7 +62,8 @@ nav {
 
 nav li {
   display: block;
-  padding: 0.5em;
+  padding: 2em 0.5em;
+  text-align: left;
 }
 
 aside {
@@ -55,7 +71,49 @@ aside {
   float: right;
 }
 
+aside div {
+  display: inline-block;
+  padding: 0 5px;
+  text-align: justify;
+}
+
+.smaller-text {
+  font-size: 0.9em;
+}
+
+.small-text {
+  font-size: 1.1em;
+}
+
+.medium-text {
+  font-size: 1.3em;
+}
+
+.large-text {
+  font-size: 1.65em;
+}
+
+.larger-text {
+  font-size: 1.8em;
+}
+
+.opaque {
+  opacity: 0.75;
+}
+
+.translucent {
+  opacity: 0.6;
+}
+
+.transparent {
+  opacity: 0.4;
+}
+
 .content {
   display: none;
   grid-area: content;
+}
+
+.collapsed {
+  display: none;
 }
