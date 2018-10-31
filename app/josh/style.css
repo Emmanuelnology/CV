@@ -30,7 +30,7 @@ nav ul {
   margin: 0 auto;
   padding: 0;
   overflow: hidden;
-  background-color: #ffffff;
+  background-color: #fff;
   display: inline-block;
 }
 
@@ -52,7 +52,7 @@ li a:hover:not(.active) {
 
 li a.active {
   color: white;
-  background-color: #4CAF50;
+  background-color: #4caf50;
 }
 
 .center-text {
@@ -66,14 +66,14 @@ li a.active {
   margin-bottom: 50px;
 }
 
-/*slideshow*/
+/* slideshow */
 
 #slideshow {
   overflow: hidden;
   height: 510px;
   width: 728px;
   margin: 0 auto;
-  border-radius:5%;
+  border-radius :5%;
 }
 
 .slide-wrapper {
@@ -96,13 +96,13 @@ li a.active {
 }
 
 @-webkit-keyframes slide {
-  20% {margin-left: 0px;}
-  30% {margin-left: -728px;}
-  50% {margin-left: -728px;}
-  60% {margin-left: -1456px;}
-  70% {margin-left: -1456px;}
-  80% {margin-left: -2184px;}
-  90% {margin-left: -2184px;}
+  20% { margin-left: 0px; }
+  30% { margin-left: -728px; }
+  50% { margin-left: -728px; }
+  60% { margin-left: -1456px; }
+  70% { margin-left: -1456px; }
+  80% { margin-left: -2184px; }
+  90% { margin-left: -2184px; }
 }
 
 #workexp-text{
@@ -163,10 +163,9 @@ li a.active {
   padding-right: 20px;
   opacity: 0.5;
   font-size: 1.5em;
-  
 }
 
-/*end of slideshow*/
+/* end of slideshow */
 .work-experience {
   text-align: center;
   margin-top: 50px;
@@ -175,7 +174,7 @@ li a.active {
   margin-bottom: 50px;
 }
 
-.workexp-table{
+.workexp-table {
   display: inline-block;
   margin-left: auto; 
   margin-right: auto;
@@ -224,32 +223,32 @@ li a.active {
 }
 
 .fa-html5 {
-  color: #F16529;
+  color: #f16529;
   font-size: 1.5em;
 }
 
 .fa-css3-alt {
-  color: #264DE4;
+  color: #264de4;
   font-size: 1.5em;
 }
 
 .fa-js-square {
-  color: #FBDE34;
+  color: #fbde34;
   font-size: 1.5em;
 }
 
 .fa-angular {
-  color: #DD0330;
+  color: #dd0330;
   font-size: 1.5em;
 }
 
 .fa-react {
-  color: #05A5D1;
+  color: #05a5d1;
   font-size: 1.5em;
 }
 
 .fa-docker {
-  color: #3A8CB4;
+  color: #3a8cb4;
   font-size:1.5em;
 }
 
@@ -317,7 +316,7 @@ iframe {
 }
 
 .fa-facebook {
-  color: #3B5998;
+  color: #3b5998;
   padding: 50px;
 }
 
