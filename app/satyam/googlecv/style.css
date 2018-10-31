@@ -1,5 +1,4 @@
 body {
-<<<<<<< HEAD
   font-family: 'Roboto', Sans-Serif;
   margin: 0;
   background-image: url('mapbackground.jpg');
@@ -36,14 +35,4 @@ body {
 
 .rating {
   color: rgb(231, 113, 27)
-=======
-  font-family: 'Roboto', sans-serif;
-  background-image: url('mapbackground.jpg');
-  background-position: center;
-  background-attachment: fixed;
-}
-
-#topsearchbar {
-  background-color: #fff;
->>>>>>> dac7e310273eba4d571e8e7f981bc38cfdb010bd
 }

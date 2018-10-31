@@ -35,11 +35,6 @@ p {
 .welcomeimage {
   min-height: 100vh;
   background-color: red;
-<<<<<<< HEAD
-=======
-
-  /* background-attachment: fixed; */
->>>>>>> dac7e310273eba4d571e8e7f981bc38cfdb010bd
   background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
