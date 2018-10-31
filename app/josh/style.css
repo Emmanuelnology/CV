@@ -73,7 +73,7 @@ li a.active {
   height: 510px;
   width: 728px;
   margin: 0 auto;
-  border-radius :5%;
+  border-radius: 5%;
 }
 
 .slide-wrapper {
@@ -87,7 +87,7 @@ li a.active {
   width: 728px;
   position: relative;
   text-align: center;
-  color: white
+  color: white;
 }
 
 .slide-number {
@@ -105,7 +105,7 @@ li a.active {
   90% { margin-left: -2184px; }
 }
 
-#workexp-text{
+#workexp-text {
   position: absolute;
   bottom: 20px;
   right: 20px;
@@ -203,10 +203,10 @@ li a.active {
 .skills-card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   background-color: #a8a3a3;
-  padding-top:5px;
+  padding-top: 5px;
 }
 
-.skills-card img{
+.skills-card img {
   height: 100px;
 }
 
@@ -249,7 +249,7 @@ li a.active {
 
 .fa-docker {
   color: #3a8cb4;
-  font-size:1.5em;
+  font-size: 1.5em;
 }
 
 /* end -- */
@@ -264,19 +264,18 @@ li a.active {
 
 .edu-table {
   display: inline-block;
-  margin-left: auto; 
+  margin-left: auto;
   margin-right: auto;
   text-align: left;
-  
 }
 
 .contact-icon {
   text-align: center;
-  padding-top:15px;
+  padding-top: 15px;
 }
 
 .contact-icon a {
-  color:white;
+  color: white;
 }
 .mapouter {
   text-align: right;
@@ -287,7 +286,7 @@ li a.active {
 
 .gmap_canvas {
   overflow: hidden;
-  background: none!important;
+  background: none !important;
   height: 350px;
   width: 350px;
 }
@@ -336,7 +335,6 @@ iframe {
 }
 
 .fa-instagram {
-  /*color:#7232bd;*/
   background: -webkit-gradient(linear, left top, left bottom, from(#7232bd), to(#ffdc7d));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
