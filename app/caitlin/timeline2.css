@@ -40,13 +40,13 @@ body {
   text-align: left;
 }
 
-#edu-grid h2 {
+#edu-title {
   grid-area: title-e;
   padding: 0;
   margin-top: 45px;
 }
 
-#work-grid h2 {
+#work-title {
   grid-area: title-w;
   padding: 0;
   margin-top: 45px;
@@ -88,13 +88,13 @@ body {
 }
 
 #edu-grid {
-  margin: 5px;
   display: grid;
   grid-template-areas:
     "title-e title-e title-e title-e"
     "education col2 col3 years";
   grid-template-columns: 1fr 25px 10px 45px;
   grid-gap: 5px;
+  grid-area: edu-side;
 }
 
 #work-grid {
@@ -105,6 +105,7 @@ body {
     "years col4 col5 work";
   grid-template-columns: 45px 10px 25px 1fr;
   grid-gap: 5px;
+  grid-area: work-side;
 }
 
 #col3 hr,
@@ -119,7 +120,7 @@ body {
 
 #durham-hr {
   width: 15px;
-  height: 40%;
+  height: 38%;
   border-top: none;
   background: rgb(125, 96, 230);
   border-radius: 3px;
@@ -134,12 +135,12 @@ body {
 
 #hayesfield-hr {
   width: 15px;
-  height: 45%;
+  height: 49%;
   border-top: none;
   background: rgb(48, 28, 139);
   border-radius: 3px;
   position: relative;
-  top: 15%;
+  top: 13%;
   margin: 0;
 }
 
@@ -155,7 +156,7 @@ body {
   border-radius: 3px;
   margin-left: 10px;
   position: relative;
-  top: 5%;
+  top: 4%;
 }
 
 #hare-icon {
@@ -212,9 +213,13 @@ li {
     margin: 0;
     display: grid;
     grid-template-areas:
-      "title-e title-e title-e title-e title-w title-w title-w"
-      "education col2 col3 years col4 col5 work";
-    grid-template-columns: 1fr 25px 10px 45px 10px 25px 1fr;
+      "title-e title-w"
+      "edu-side work-side";
+    grid-template-columns: 1fr 1fr;
     grid-gap: 5px;
   }
+
+  /* #education-section h2 {
+    visibility: hidden;
+  } */
 }
