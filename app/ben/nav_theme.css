@@ -8,9 +8,6 @@
 
 nav {
   background-color: #eefdee;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
 }
 
 #darker {
@@ -107,6 +104,12 @@ nav a {
 }
 
 @media only screen and (min-width: 490px) {
+  nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+
   nav ul {
     flex-direction: row;
   }
