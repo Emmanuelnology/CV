@@ -10,8 +10,7 @@ div.mid {
   grid-area: mid;
 }
 
-<<<<<<< HEAD
-div.left {
+<<<<<<< head div.left {
   grid-area: leftt;
 }
 
@@ -23,13 +22,11 @@ div.right {
   grid-area: rightt;
 }
 
-=======
-div.right {
+======= div.right {
   grid-area: rightt;
 }
->>>>>>> b383d34dbd085e59a24471b722028a76e8e29722
 
-main {
+>>>>>>> b383d34dbd085e59a24471b722028a76e8e29722 main {
   margin: 0;
   display: grid;
   grid-template-areas:
