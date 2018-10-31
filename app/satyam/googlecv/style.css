@@ -23,14 +23,17 @@ body {
 }
 
 #infopanel {
-  margin: 0;
-  padding: 0;
+  padding: 1% 1%;
   background-color: #fff;
-  display: list-item;
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
+  color: rgb(145, 145, 145);
+}
+
+.name {
+  color: #000;
 }
 
 .rating {
@@ -38,9 +41,24 @@ body {
 }
 
 .text {
-  color: rgb(145, 145, 145);
 }
 
 .color-text {
   color: rgb(60, 126, 64);
+}
+
+.start {
+  text-align: center;
+  color: rgb(83, 131, 235);
+  background-color: #fff;
+  border: 1px solid rgb(83, 131, 235);
+  border-radius: 13px;
+}
+
+.directions {
+  text-align: center;
+  color: #fff;
+  background-color: rgb(83, 131, 235);
+  border: 1px solid #fff;
+  border-radius: 13px;
 }
