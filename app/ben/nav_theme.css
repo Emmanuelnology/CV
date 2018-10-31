@@ -8,9 +8,6 @@
 
 nav {
   background-color: #eefdee;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
 }
 
 #darker {
@@ -29,9 +26,31 @@ body {
   color: #527952;
 }
 
+body {
+  margin: 0;
+  background-image: url('bg.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+main {
+  background-color: #bfffbf;
+  width: 40em;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  min-height: 100vh;
+}
+
 h1 {
   font-size: 54px;
   margin: 10px;
+  margin-top: 0;
 }
 
 h2 {
@@ -64,6 +83,7 @@ nav div {
 nav ul {
   list-style: none;
   display: flex;
+  flex-direction: column;
 }
 
 nav li {
@@ -81,6 +101,18 @@ nav a {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media only screen and (min-width: 490px) {
+  nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+
+  nav ul {
+    flex-direction: row;
+  }
 }
 
 @media only screen and (min-width: 820px) {
