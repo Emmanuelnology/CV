@@ -96,7 +96,7 @@ li a.active {
 }
 
 @-webkit-keyframes slide {
-  20% { margin-left: 0px; }
+  20% { margin-left: 0; }
   30% { margin-left: -728px; }
   50% { margin-left: -728px; }
   60% { margin-left: -1456px; }
@@ -312,7 +312,7 @@ iframe {
 .socials-link {
   margin: 0 auto;
   width: 85%;
-  text-align: center ;
+  text-align: center;
 }
 
 .fa-facebook {
