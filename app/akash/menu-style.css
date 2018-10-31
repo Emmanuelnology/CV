@@ -58,10 +58,10 @@ header {
   color: white;
   font-size: 60px;
   text-shadow:
-		-2px -2px 0 #000,
-		2px -2px 0 #000,
-		-2px 2px 0 #000,
-		2px 2px 0 #000;
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;
 }
 
 .flex-container {
@@ -138,15 +138,12 @@ img {
     justify-content: space-between;
   }
 
-
   .content {
     margin: 0 auto;
     width: 100%;
     background: rgb(157, 224, 180);
     max-width: 1000px;
   }
-
-
 
   #diamond {
     background-image: url('diamond.png');
@@ -209,7 +206,7 @@ img {
     max-height: 450px;
     margin-top: 15px;
   }
-}  
+}
 
 @media only screen and (min-width: 750px) {
   #diamond {
@@ -266,7 +263,7 @@ img {
     max-height: 450px;
   }
 
-  .title{
+  .title {
     font-size: 2em;
   }
 
