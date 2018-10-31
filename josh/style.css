@@ -107,38 +107,38 @@ li a.active {
 
 #workexp-text{
   position: absolute;
-    bottom: 20px;
-    right: 20px;
-    background-color: black;
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-    opacity:0.5;
-    font-size:1.5em;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  opacity:0.5;
+  font-size:1.5em;
 }
 
 #skills-text {
   position: absolute;
-    bottom: 20px;
-    right: 20px;
-    background-color: black;
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-    opacity:0.5;
-    font-size:1.5em;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  opacity:0.5;
+  font-size:1.5em;
 }
 
 #edu-text {
   position: absolute;
-    bottom: 20px;
-    right: 20px;
-    background-color: black;
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-    opacity:0.5;
-    font-size:1.5em;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  opacity:0.5;
+  font-size:1.5em;
 }
 
 #ref-text {
@@ -195,8 +195,8 @@ li a.active {
 /* Display the columns below each other instead of side by side on small screens */
 @media screen and (max-width: 650px) {
   .skills-column {
-      width: 100%;
-      display: block;
+    width: 100%;
+    display: block;
   }
 }
 
@@ -216,15 +216,16 @@ li a.active {
 }
 
 /* Clear floats */
-.skills-container::after, .skills-row::after {
+.skills-container::after,
+.skills-row::after {
   content: "";
   clear: both;
   display: table;
 }
 
 .fa-html5 {
-color:#F16529;
-font-size: 1.5em;
+  color:#F16529;
+  font-size: 1.5em;
 }
 
 .fa-css3-alt {
