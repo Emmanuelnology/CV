@@ -64,6 +64,7 @@ nav div {
 nav ul {
   list-style: none;
   display: flex;
+  flex-direction: column;
 }
 
 nav li {
@@ -81,6 +82,12 @@ nav a {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media only screen and (min-width: 490px) {
+  nav ul {
+    flex-direction: row;
+  }
 }
 
 @media only screen and (min-width: 820px) {
