@@ -263,6 +263,10 @@ input {
   margin-right: auto;
 }
 
+input:focus {
+  background-color: lightgreen;
+}
+
 #name #firstname #email {
   width: 17em;
   margin: 0;
