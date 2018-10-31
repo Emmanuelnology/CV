@@ -45,12 +45,23 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+}
+
+.sub {
+  font-family: 'Montserrat';
+  font-size: 1.5em;
 }
 
 .lobster {
   font-family: 'lobster';
   color: white;
-  font-size: 3em;
+  font-size: 60px;
+  text-shadow:
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    2px 2px 0 #000;
 }
 
 .flex-container {
@@ -65,7 +76,7 @@ header {
 .box {
   width: 100%;
   margin: 0 auto;
-  margin-bottom: 10px
+  margin-bottom: 40px;
 }
 
 ul {
@@ -84,16 +95,16 @@ ul {
 }
 
 .elipse {
-  flex-grow:1;
+  flex-grow: 1;
   padding: 0 0 10px 10px;
 }
 
 .elipse span {
   border-bottom: 5px dotted black;
-  display:inline-block;
+  display: inline-block;
   width: 100%;
-
 }
+
 li > div {
   display: inline;
   float: right;
@@ -108,45 +119,30 @@ img {
   width: 450px;
   max-width: 100%;
   max-height: 450px;
+  margin-top: 15px;
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 450px) {
   #diamond {
     width: 70%;
     left: 15%;
   }
 
-  body {
-    margin: 0 auto;
-    background-image: url('bg-blur.jpg');
-    background-size: cover;
-    background-attachment: fixed;
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 150px;
+    padding-left: 50px;
+    padding-right: 50px;
+    justify-content: space-between;
   }
 
   .content {
     margin: 0 auto;
     width: 100%;
-    max-width: 1100px;
     background: rgb(157, 224, 180);
-  }
-
-  #dots {
-    background-image: url('white-polka-done.png');
-    width: 95%;
-    margin: 0 auto;
-  }
-
-  main {
-    background-color: rgb(228, 228, 200);
-    width: 95%;
-    border-radius: 20px;
-    color: rgb(212, 0, 0);
-    margin: 0 auto;
-  }
-
-  header {
-    height: 150px;
-    position: relative;
+    max-width: 1000px;
   }
 
   #diamond {
@@ -165,7 +161,81 @@ img {
   .lobster {
     font-family: 'lobster';
     color: white;
-    font-size: 80px;
+    font-size: 90px;
+  }
+
+  ul {
+    list-style-type: none;
+    font-family: 'Montserrat';
+    font-size: 1.25em;
+    padding: 0;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 150px;
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: space-between;
+  }
+
+  .box {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+
+  .title {
+    font-family: 'Lobster';
+    color: black;
+    font-size: 3em;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .media-box {
+    min-width: 0;
+    margin: -10px;
+    margin: 0 50px;
+  }
+
+  img {
+    width: 650px;
+    max-width: 100%;
+    max-height: 450px;
+    margin-top: 15px;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  #diamond {
+    width: 70%;
+    left: 15%;
+  }
+
+  .content {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1100px;
+    background: rgb(157, 224, 180);
+  }
+
+  #diamond {
+    background-image: url('diamond.png');
+    background-size: 100% 100%;
+    width: 90%;
+    height: 250px;
+    position: absolute;
+    bottom: -125px;
+    left: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .lobster {
+    font-size: 120px;
   }
 
   .flex-container {
@@ -182,24 +252,6 @@ img {
     width: 45%;
   }
 
-  ul {
-    list-style-type: none;
-    font-family: 'Montserrat';
-    font-weight: bold;
-    padding: 0;
-  }
-
-  .title {
-    font-family: 'Lobster';
-    color: black;
-    font-size: 2em;
-  }
-
-  li > div {
-    display: inline;
-    float: right;
-  }
-
   .media-box {
     min-width: 0;
     margin: 0;
@@ -209,5 +261,16 @@ img {
     width: 450px;
     max-width: 100%;
     max-height: 450px;
+  }
+
+  .title {
+    font-size: 2em;
+  }
+
+  ul {
+    list-style-type: none;
+    font-family: 'Montserrat';
+    font-size: 1em;
+    padding: 0;
   }
 }

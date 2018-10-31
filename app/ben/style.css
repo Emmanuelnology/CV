@@ -85,8 +85,12 @@ svg a:hover {
   cursor: pointer;
 }
 
-svg a {
+.big {
   font-size: 22px;
+}
+
+.small {
+  font-size: 14px;
 }
 
 svg text {

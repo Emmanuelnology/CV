@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>Home</title>
     <link href="https://fonts.googleapis.com/css?family=Krub" rel="stylesheet">
@@ -8,6 +8,7 @@
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
     <link rel="stylesheet" href="index.css">
+    <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
 </head>
 <body>
     <div class="content hidden">
@@ -23,11 +24,39 @@
         Content 3
     </div>
 
+    <!-- [1] -->
+<div id="modal-1" aria-hidden="true">
+
+        <!-- [2] -->
+        <div tabindex="-1" data-micromodal-close>
+      
+          <!-- [3] -->
+          <div role="dialog" aria-modal="true" aria-labelledby="modal-1-title" >
+      
+      
+            <header>
+              <h2 id="modal-1-title">
+                Modal Title
+              </h2>
+      
+              <!-- [4] -->
+              <button aria-label="Close modal" data-micromodal-close></button>
+            </header>
+      
+            <div id="modal-1-content">
+              Modal Content
+            </div>
+      
+          </div>
+        </div>
+      </div>
+
     <div id="greeting">
         <div>
-            <a href="#" id="download">
+            <a href="#" id="download" data-micromodal-trigger="modal-1">
                 <p class="name">
                     craig<span class="space"></span><span id="last-name">livings</span>
+
                 </p>
                 Download CV
             </a>
@@ -71,5 +100,8 @@
         parent.toggleClass('hidden');
         hideIfHidden(parent);
     })
+
+    MicroModal.init();
+
 </script>
 </html>

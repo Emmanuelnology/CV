@@ -1,4 +1,4 @@
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -41,6 +41,16 @@ li {
   padding-bottom: 10px;
 }
 
+div iframe {
+  position: relative;
+  left: 37.5%;
+}
+
+div ul li {
+  border-bottom: white solid 1px;
+  margin-top: 5px;
+}
+
 .a {
   text-align: center;
   font-size: 18px;
@@ -63,20 +73,6 @@ li {
   color: rgb(0, 172, 237);
 }
 
-#experience,
-#about,
-#aca,
-#work,
-#ref,
-#con {
-  padding-top: 40px;
-}
-
-div ul li {
-  border-bottom: white solid 1px;
-  margin-top: 5px;
-}
-
 .fa-folder,
 .fa-folder-o {
   display: inline-flex;
@@ -89,18 +85,21 @@ div ul li {
   text-decoration: none;
 }
 
-/* timeline code */
 .one,
 .two,
 .thr,
 .for {
   border-bottom: 1px white solid;
+  width: 100%;
+  position: relative;
+  left: 27.5px;
 }
 
 .timeline {
   display: grid;
   grid-template-areas: "one two thr for fiv";
   grid-auto-columns: auto;
+  right: 20vw;
 }
 
 .timeline span div {
@@ -110,11 +109,10 @@ div ul li {
   height: 25px;
   width: 25px;
   border-radius: 50%;
-}
-
-.timeline span div {
   position: relative;
   top: -12.5px;
+  left: 2%;
+  z-index: -1;
 }
 
 .ref-1,
@@ -122,7 +120,39 @@ div ul li {
   text-align: center;
 }
 
-/* box models */
+.ref {
+  display: grid;
+  grid-template-areas: "ref-1 ref-2";
+  grid-column: 25%;
+  column-gap: 12.5%;
+}
+
+.map {
+  overflow: hidden;
+  padding-top: 44%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.map iframe {
+  border: 0;
+  height: 500px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+#experience,
+#about,
+#aca,
+#work,
+#ref,
+#con {
+  padding-top: 40px;
+}
+
 #qual-box {
   box-sizing: border-box;
   width: 50%;
@@ -149,18 +179,4 @@ div ul li {
   width: 50%;
   height: 50%;
   float: left;
-}
-
-.ref {
-  display: grid;
-  grid-template-areas: "ref-1 ref-2";
-  grid-column: 25%;
-  column-gap: 12.5%;
-}
-
-div iframe {
-  position: relative;
-  left: 50%;
-  width: 400;
-  height: 300; 
 }

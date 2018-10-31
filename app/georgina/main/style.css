@@ -31,6 +31,7 @@ nav {
   margin-right: 1%;
   font-size: 10px;
   grid-area: me;
+  position: relative;
 }
 
 nav ul {
@@ -47,8 +48,22 @@ nav li {
 
 main {
   display: none;
-  background-color: white;
+  background-color: rgb(225, 225, 225, 0.95);
   grid-area: content;
+  position: absolute;
+  width: 100%;
+}
+
+#closebutton {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  padding: 5px;
+}
+
+.fa-times {
+  padding: 5px;
 }
 
 h1 {
@@ -65,7 +80,7 @@ h2 {
   text-align: center;
   font-family: 'Fauna One', serif;
   font-size: 20px;
-  color: #black;
+  color: black;
   margin: 0;
 }
 
@@ -88,9 +103,9 @@ header h3 {
   width: 60%;
 }
 
-a:hover {
-  background-color: #f2d234;
+.info li:hover {
   border-radius: 5px;
+  background-color: #f0c808;
 }
 
 .info li {
@@ -140,12 +155,6 @@ footer {
   border-bottom-style: dotted;
   padding: 5px;
   font-family: 'Fauna One', serif;
-}
-
-.skills-panel .score {
-  color: #f0c808;
-  display: inline;
-  float: right;
 }
 
 .skills-panel {
@@ -203,8 +212,8 @@ footer {
 
 .skills-panel .score {
   color: #ff7614;
-  display: inline;
-  float: center;
+  display: flex;
+  float: right;
 }
 
 .skills-panel {
@@ -216,17 +225,104 @@ footer {
   border-top-style: dotted;
 }
 
-img {
+nav ul {
+  position: absolute;
+  top: 0;
+}
+
+#gee {
   display: block;
-  position: fixed;
-  margin: auto;
+  margin: 0 auto;
+}
+
+.rollover {
+  height: 50px;
+  width: 100%;
+
+  /* Reposition the div relative to Gee */
+  position: absolute;
+
+  /* formatting */
+  color: black;
+  font-size: large;
+  font-weight: bold;
+
+  /* Center the text in the div */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rollover:hover {
+  cursor: pointer;
+
+  /* Show the brain on hover as a background image */
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.rollover > * {
+  /* By default, set all children of brain to invisible */
+  display: none;
+}
+
+.rollover:hover > * {
+  /* On hover, set all content of brain to visible */
+  display: inline-block;
 }
 
 #brain {
-  height: 80px;
-  display: block;
-  position: fixed;
+  top: 60px;
+}
 
+#brain:hover {
+  background-image: url('brain.png');
+}
+
+#lips {
+  top: 160px;
+}
+
+#lips:hover {
+  background-image: url('lips.png');
+  position: fixed;
+  position: absolute;
+}
+
+#heart {
+  top: 270px;
+}
+
+#heart:hover {
+  background-image: url('heart.png');
+  position: fixed;
+  position: absolute;
+}
+
+#phone {
+  top: 420px;
+  width: 250px;
+}
+
+#phone:hover {
+  background-image: url('phone.png');
+  position: fixed;
+  position: absolute;
+}
+
+#plane {
+  top: 420px;
+  width: 250px;
+  position: absolute;
+  right: 10px;
+}
+
+#plane:hover {
+  background-image: url('plane.png');
+  position: fixed;
+  position: absolute;
 }
 
 .chart {
@@ -251,6 +347,12 @@ section {
 @media only screen and (min-width: 500px) {
   main {
     display: block;
+    position: relative;
+    background-color: white;
+  }
+
+  #closebutton {
+    display: none;
   }
 
   body {

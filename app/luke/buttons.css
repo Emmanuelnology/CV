@@ -5,6 +5,7 @@ nav {
 
 nav * {
   box-sizing: border-box;
+  z-index: 1;
 }
 
 nav ul {
