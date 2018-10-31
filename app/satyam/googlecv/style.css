@@ -1,6 +1,6 @@
-
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', Sans-Serif;
+  margin: 0;
   background-image: url('mapbackground.jpg');
   background-position: center;
   background-attachment: fixed;
@@ -8,4 +8,31 @@ body {
 
 #topsearchbar {
   background-color: #fff;
+  display: flex;
+  padding: 2% 4%;
+  margin: 8px 4px;
+  border-radius: 4px; /* display: inline-flex; */
+}
+
+#topsearchbar > div:nth-child(3) {
+  margin-left: auto;
+}
+
+#searchinput {
+  margin: 0% 5%;
+}
+
+#infopanel {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.rating {
+  color: rgb(231, 113, 27);
 }
