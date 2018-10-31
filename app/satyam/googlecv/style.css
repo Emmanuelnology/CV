@@ -23,18 +23,24 @@ body {
 }
 
 #infopanel {
-  margin: 0;
-  padding: 0;
+  padding: 1% 1%;
   background-color: #fff;
-  display: list-item;
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
+  display: grid;
+  grid-template-areas:
+    "name name"
+    "rating ratingnumber"
+    "gdev gdev"
+    "avail from";
+  grid-template-columns: 0.1fr 0.3fr;
 }
 
 .rating {
   color: rgb(231, 113, 27);
+  grid-area: rating;
 }
 
 .text {
@@ -43,4 +49,25 @@ body {
 
 .color-text {
   color: rgb(60, 126, 64);
+  grid-area: avail;
+}
+
+#name {
+  grid-area: name;
+}
+
+#t1 {
+  grid-area: ratingnumber;
+}
+
+#t2 {
+  grid-area: gdev;
+}
+
+#t3 {
+  grid-area: avail;
+}
+
+#t4 {
+  grid-area: from;
 }
