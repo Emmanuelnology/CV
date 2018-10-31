@@ -42,6 +42,15 @@ function removeActiveFromAllNavLinks(){
 function showSection(section) {
     allSections.hide();
     removeActiveFromAllNavLinks();
+    $("#main").show();
     section.content.show();
     section.link.addClass('active');
 }
+
+$("#closebutton").click(function(){
+    $("#main").hide();
+});
+
+$(window).on('resize', function(){
+    $("#main").show();
+});
