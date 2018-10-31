@@ -47,7 +47,7 @@ nav li {
 }
 
 main {
-  display: display;
+  display: none;
   background-color: rgb(225, 225, 225, 0.95);
   grid-area: content;
   position: absolute;
