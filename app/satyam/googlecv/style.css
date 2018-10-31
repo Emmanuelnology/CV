@@ -29,45 +29,36 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  display: grid;
-  grid-template-areas:
-    "name name"
-    "rating ratingnumber"
-    "gdev gdev"
-    "avail from";
-  grid-template-columns: 0.1fr 0.3fr;
+  color: rgb(145, 145, 145);
+}
+
+.name {
+  color: #000;
 }
 
 .rating {
   color: rgb(231, 113, 27);
-  grid-area: rating;
 }
 
 .text {
-  color: rgb(145, 145, 145);
 }
 
 .color-text {
   color: rgb(60, 126, 64);
-  grid-area: avail;
 }
 
-#name {
-  grid-area: name;
+.start {
+  text-align: center;
+  color: rgb(83, 131, 235);
+  background-color: #fff;
+  border: 1px solid rgb(83, 131, 235);
+  border-radius: 13px;
 }
 
-#t1 {
-  grid-area: ratingnumber;
-}
-
-#t2 {
-  grid-area: gdev;
-}
-
-#t3 {
-  grid-area: avail;
-}
-
-#t4 {
-  grid-area: from;
+.directions {
+  text-align: center;
+  color: #fff;
+  background-color: rgb(83, 131, 235);
+  border: 1px solid #fff;
+  border-radius: 13px;
 }
