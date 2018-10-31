@@ -103,8 +103,9 @@ header h3 {
   width: 60%;
 }
 
-a:hover {
+.info li:hover {
   border-radius: 5px;
+  background-color: #f0c808;
 }
 
 .info li {
@@ -231,10 +232,6 @@ nav ul {
 
 #gee {
   display: block;
-  <<<<<<< HEAD
-  =======
-  <<<<<<< HEAD
-  >>>>>>> dac7e310273eba4d571e8e7f981bc38cfdb010bd
   margin: 0 auto;
 }
 
@@ -246,8 +243,9 @@ nav ul {
   position: absolute;
 
   /* formatting */
-  color: white;
+  color: black;
   font-size: large;
+  font-weight: bold;
 
   /* Center the text in the div */
   display: flex;
@@ -257,9 +255,6 @@ nav ul {
 
 .rollover:hover {
   cursor: pointer;
-
-  /* Darken the div background */
-  background-color: rgba(0, 0, 0, 0.2);
 
   /* Show the brain on hover as a background image */
 
@@ -307,7 +302,8 @@ nav ul {
 }
 
 #phone {
-  top: 400px;
+  top: 420px;
+  width: 250px;
 }
 
 #phone:hover {
@@ -316,10 +312,15 @@ nav ul {
   position: absolute;
 }
 
-#phone:hover {
-  background-image: url('brain.png');
-  =======
-  <<<<<<< HEAD
+#plane {
+  top: 420px;
+  width: 250px;
+  position: absolute;
+  right: 10px;
+}
+
+#plane:hover {
+  background-image: url('plane.png');
   position: fixed;
   position: absolute;
 }
