@@ -90,12 +90,16 @@ div ul li {
 .thr,
 .for {
   border-bottom: 1px white solid;
+  width: 100%;
+  position: relative;
+  left: 27.5px;
 }
 
 .timeline {
   display: grid;
   grid-template-areas: "one two thr for fiv";
   grid-auto-columns: auto;
+  right: 20vw;
 }
 
 .timeline span div {
@@ -107,8 +111,8 @@ div ul li {
   border-radius: 50%;
   position: relative;
   top: -12.5px;
+  left: 2%;
   z-index: -1;
-  right: 3px;
 }
 
 .ref-1,
@@ -125,17 +129,19 @@ div ul li {
 
 .map {
   overflow: hidden;
-  padding-top: 56.25%;
+  padding-top: 44%;
+  margin: 0 auto;
   position: relative;
 }
 
 .map iframe {
   border: 0;
   height: 500px;
-  left: 17.5%;
+  left: 0;
   position: absolute;
   top: 0;
-  width: 500px;
+  width: 100%;
+  z-index: -1;
 }
 
 #experience,

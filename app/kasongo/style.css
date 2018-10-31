@@ -5,6 +5,10 @@ body {
   font-family: 'Days One';
   background-image: url('https://windsim.com/images/sky/sky_107.bmp');
   background-size: cover;
+  display: flex;
+  flex-grow: 1;
+  flex-flow: column;
+  flex-basis: 1%;
 }
 
 a {
@@ -21,9 +25,6 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url('kassnow.jpg');
-  display: flex;
-  flex: 1;
-  flex-shrink: 0.001px;
 }
 
 .emmanuel {
@@ -48,6 +49,7 @@ a {
 .happyname {
   font-size: 2.8em;
   font-family: 'Days One';
+  margin-left: 3em;
 }
 
 .arrow a {
@@ -59,7 +61,10 @@ a {
 
 .arrow {
   text-align: center;
-  margin: 8% 0;
+  margin: 18%;
+  margin-left: 0;
+  margin-right: 17%;
+  justify-content: center;
 }
 
 .bounce {
@@ -86,26 +91,30 @@ a {
   }
 }
 
+.bonjour .scrolling .emmanuel {
+  display: flex;
+  flex: 1;
+  flex-shrink: 0.001px;
+  flex-basis: 0.5px;
+}
+
 /* Main title font style */
 
 .heading {
   font-size: 50px;
 }
 
+
 /* Sticky navbar with hover */
 nav ul {
   list-style-type: none;
-  margin-left: 280px;
   padding: 0;
   background-color: lightslategray;
-  overflow: hidden;
-  width: 710px;
   border-style: solid;
 }
 
 nav li {
   display: inline-block;
-  float: left;
   border-right: 1px solid black;
 }
 
@@ -132,12 +141,6 @@ nav {
   top: 0;
 }
 
-.navbar {
-  display: flex;
-  flex: 1;
-  flex-shrink: 0.5px;
-}
-
 /* Margin for main body */
 main {
   margin-left: 0.5em;
@@ -151,6 +154,7 @@ h1 {
 
 h2 {
   color: darkblue;
+  text-align: center;
 }
 
 /* Photo modification */
@@ -159,7 +163,7 @@ h2 {
   border: solid #00008b;
   border-width: 5px;
   margin-right: 7em;
-  margin-top: 7em; 
+  margin-top: 7em;
 }
 
 .border {
@@ -230,11 +234,16 @@ ul {
 
 #form {
   margin-bottom: 3em;
+  text-align: center;
+  margin-top: 2em;
 }
 
 input {
   display: block;
   background-color: lightgrey;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #name #firstname #email {
@@ -251,12 +260,17 @@ textarea {
   vertical-align: text-top;
   display: flex;
   flex: 1;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .envoyer {
   margin-top: 4px;
   background-color: lightblue;
-  margin-left: 2em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Copyright font */
