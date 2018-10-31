@@ -33,7 +33,7 @@ li.worklabel {
 
 .container {
   position: relative;
-  width: 50%;
+  width: 100%;
   height:100%;
 }
 
@@ -41,20 +41,36 @@ li.worklabel {
 
 .overlay {
   position: fixed;
-  /* bottom: 0; */
-  left: 0vw;
-  /* right: 0; */
+  left: 0px;
   background-color: #008CBA;
   overflow: hidden;
-  width: 0;
-  height: 100%;
+  width: 0%;
+  height: 0%;
   transition: .5s ease;
 }
 
 .container:active .overlay {
+  background-color: red;
   width: 100vw;
   height: 100vw;
 }
+
+#overlay2 {
+  position: fixed;
+  left: 0px;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 0%;
+  height: 0%;
+  transition: .5s ease;
+}
+
+ #overlay2 {
+  background-color: red;
+  width: 100vw;
+  height: 100vw;
+}
+
 
 .text {
   color: white;
