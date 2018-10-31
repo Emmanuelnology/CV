@@ -1,28 +1,28 @@
 body {
-  background: #645754 url(footer_lodyas.png) top left repeat;
+  background:#645754 url(footer_lodyas.png) top left repeat;
   font-family: 'Montserrat', sans-serif;
-  color: white;
+  color:white;
 }
 
 h1 {
-  text-align: center;
+  text-align:center;
   line-height: 2em;
-  display: none;
+  display:none;
 }
 
 .header-logo {
-  text-align: center;
+  text-align:center;
 }
 
 .logo {
-  height: 200px;
-  margin: 0 0 30px 0;
+  height:200px;
+  margin:0 0 30px 0;
 }
 
 nav {
   position: sticky;
   top: 0;
-  text-align: center;
+  text-align:center;
 }
 
 nav ul {
@@ -30,12 +30,12 @@ nav ul {
   margin: 0 auto;
   padding: 0;
   overflow: hidden;
-  background-color: #fff;
-  display: inline-block;
+  background-color: #ffffff;
+  display:inline-block;
 }
 
 nav li {
-  float: left;
+  float:left;
 }
 
 nav li a {
@@ -52,28 +52,28 @@ li a:hover:not(.active) {
 
 li a.active {
   color: white;
-  background-color: #4caf50;
+  background-color: #4CAF50;
 }
 
 .center-text {
-  text-align: center;
+  text-align:center;
 }
 
 .about-me {
-  margin-top: 50px;
-  margin-left: 150px;
-  margin-right: 150px;
-  margin-bottom: 50px;
+  margin-top:50px;
+  margin-left:150px;
+  margin-right:150px;
+  margin-bottom:50px;
 }
 
-/* slideshow */
+/*slideshow*/
 
 #slideshow {
   overflow: hidden;
   height: 510px;
   width: 728px;
   margin: 0 auto;
-  border-radius: 5%;
+  border-radius:5%;
 }
 
 .slide-wrapper {
@@ -87,7 +87,7 @@ li a.active {
   width: 728px;
   position: relative;
   text-align: center;
-  color: white;
+  color: white
 }
 
 .slide-number {
@@ -96,16 +96,16 @@ li a.active {
 }
 
 @-webkit-keyframes slide {
-  20% { margin-left: 0; }
-  30% { margin-left: -728px; }
-  50% { margin-left: -728px; }
-  60% { margin-left: -1456px; }
-  70% { margin-left: -1456px; }
-  80% { margin-left: -2184px; }
-  90% { margin-left: -2184px; }
+  20% {margin-left: 0px;}
+  30% {margin-left: -728px;}
+  50% {margin-left: -728px;}
+  60% {margin-left: -1456px;}
+  70% {margin-left: -1456px;}
+  80% {margin-left: -2184px;}
+  90% {margin-left: -2184px;}
 }
 
-#workexp-text {
+#workexp-text{
   position: absolute;
   bottom: 20px;
   right: 20px;
@@ -113,8 +113,8 @@ li a.active {
   color: white;
   padding-left: 20px;
   padding-right: 20px;
-  opacity: 0.5;
-  font-size: 1.5em;
+  opacity:0.5;
+  font-size:1.5em;
 }
 
 #skills-text {
@@ -125,8 +125,8 @@ li a.active {
   color: white;
   padding-left: 20px;
   padding-right: 20px;
-  opacity: 0.5;
-  font-size: 1.5em;
+  opacity:0.5;
+  font-size:1.5em;
 }
 
 #edu-text {
@@ -137,8 +137,8 @@ li a.active {
   color: white;
   padding-left: 20px;
   padding-right: 20px;
-  opacity: 0.5;
-  font-size: 1.5em;
+  opacity:0.5;
+  font-size:1.5em;
 }
 
 #ref-text {
@@ -149,8 +149,8 @@ li a.active {
   color: white;
   padding-left: 20px;
   padding-right: 20px;
-  opacity: 0.5;
-  font-size: 1.5em;
+  opacity:0.5;
+  font-size:1.5em;
 }
 
 #socials-text {
@@ -161,23 +161,24 @@ li a.active {
   color: white;
   padding-left: 20px;
   padding-right: 20px;
-  opacity: 0.5;
-  font-size: 1.5em;
+  opacity:0.5;
+  font-size:1.5em;
+  
 }
 
-/* end of slideshow */
+/*end of slideshow*/
 .work-experience {
-  text-align: center;
-  margin-top: 50px;
-  margin-left: 150px;
-  margin-right: 150px;
-  margin-bottom: 50px;
+  text-align:center;
+  margin-top:50px;
+  margin-left:150px;
+  margin-right:150px;
+  margin-bottom:50px;
 }
 
-.workexp-table {
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
+.workexp-table{
+  display:inline-block;
+  margin-left:auto; 
+  margin-right:auto;
   text-align: left;
 }
 
@@ -199,151 +200,151 @@ li a.active {
   }
 }
 
-/* Add some shadows to create a card effect */
+/* card effect */
 .skills-card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   background-color: #a8a3a3;
-  padding-top: 5px;
+  padding-top:5px;
 }
 
-.skills-card img {
+.skills-card img{
   height: 100px;
 }
 
-/* Some left and right padding inside the container */
 .skills-container {
   padding: 0 16px;
 }
 
 /* Clear floats */
-.skills-container::after, .skills-row::after {
+.skills-container::after,
+.skills-row::after {
   content: "";
   clear: both;
   display: table;
 }
 
 .fa-html5 {
-  color: #f16529;
+  color:#F16529;
   font-size: 1.5em;
 }
 
 .fa-css3-alt {
-  color: #264de4;
+  color:#264DE4;
   font-size: 1.5em;
 }
 
 .fa-js-square {
-  color: #fbde34;
+  color:#FBDE34;
   font-size: 1.5em;
 }
 
 .fa-angular {
-  color: #dd0330;
+  color:#DD0330;
   font-size: 1.5em;
 }
 
 .fa-react {
-  color: #05a5d1;
+  color:#05A5D1;
   font-size: 1.5em;
 }
 
 .fa-docker {
-  color: #3a8cb4;
-  font-size: 1.5em;
+  color:#3A8CB4;
+  font-size:1.5em;
 }
 
 /* end -- */
 
 .education {
-  text-align: center;
-  margin-top: 50px;
-  margin-left: 150px;
-  margin-right: 150px;
-  margin-bottom: 50px;
+  text-align:center;
+  margin-top:50px;
+  margin-left:150px;
+  margin-right:150px;
+  margin-bottom:50px;
 }
 
 .edu-table {
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
+  display:inline-block;
+  margin-left:auto; 
+  margin-right:auto;
   text-align: left;
+  
 }
 
 .contact-icon {
   text-align: center;
-  padding-top: 15px;
+  padding-top:15px;
 }
 
 .contact-icon a {
-  color: white;
+  color:white;
 }
-
 .mapouter {
-  text-align: right;
-  height: 350px;
-  width: 350px;
-  display: inline-block;
+  text-align:right;
+  height:350px;
+  width:350px;
+  display:inline-block;
 }
 
 .gmap_canvas {
-  overflow: hidden;
-  background: none !important;
-  height: 350px;
-  width: 350px;
+  overflow:hidden;
+  background:none!important;
+  height:350px;
+  width:350px;
 }
 
 iframe {
-  align: middle;
+  align:middle;
 }
 
 .fa-mobile-alt {
-  font-size: 50px;
+  font-size:50px;
 }
 
 .fa-envelope {
-  font-size: 50px;
-}
+  font-size:50px;
+}  
 
 .socials i {
-  font-size: 100px;
-  text-align: center;
+  font-size:100px;
+  text-align:center;
 }
 
 .socials-link {
-  margin: 0 auto;
-  width: 85%;
-  text-align: center;
+  margin:0 auto;
+  width:85%;
+  text-align:center ;
 }
 
 .fa-facebook {
-  color: #3b5998;
-  padding: 50px;
+  color:#3B5998;
+  padding:50px;
 }
 
 .fa-twitter {
-  color: #00aced;
-  padding: 50px;
+  color:#00aced;
+  padding:50px;
 }
 
 .fa-github {
-  color: #fff;
-  padding: 50px;
+  color:#ffffff;
+  padding:50px;
 }
 
 .fa-spotify {
   color: #1ed760;
-  padding: 50px;
+  padding:50px;
 }
 
 .fa-instagram {
-  /* color:#7232bd; */
+  /*color:#7232bd;*/
   background: -webkit-gradient(linear, left top, left bottom, from(#7232bd), to(#ffdc7d));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: initial;
-  padding: 50px;
+  padding:50px;
 }
 
 .footer {
-  text-align: center;
+  text-align:center;
 }
