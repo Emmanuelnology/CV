@@ -163,7 +163,7 @@ li a.active {
   padding-right: 20px;
   opacity:0.5;
   font-size:1.5em;
-  
+
 }
 
 /*end of slideshow*/
@@ -177,7 +177,7 @@ li a.active {
 
 .workexp-table{
   display:inline-block;
-  margin-left:auto; 
+  margin-left:auto;
   margin-right:auto;
   text-align: left;
 }
@@ -265,10 +265,10 @@ li a.active {
 
 .edu-table {
   display:inline-block;
-  margin-left:auto; 
+  margin-left:auto;
   margin-right:auto;
   text-align: left;
-  
+
 }
 
 .contact-icon {
@@ -303,7 +303,7 @@ iframe {
 
 .fa-envelope {
   font-size:50px;
-}  
+}
 
 .socials i {
   font-size:100px;
