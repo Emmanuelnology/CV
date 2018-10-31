@@ -1,85 +1,73 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
 <style>
     * {
         box-sizing: border-box;
     }
 
-    body {
-        display: flex;
-        margin:0;
+    .timeline{
+        display: grid;
+        grid-template-areas:
+        "one two three for";
     }
-
-    .timeline {
-        display: flex;
-        flex-wrap: wrap;
-        font-size: 15px;
-        font-family: "raleway";
-    }
-
-    .timeline div {
-        width: 100%;
-        position: relative;
-        margin: 0 5px;
-        padding: 1em;
-    }
-
-    .timeline div div:nth-child(1) {
+    .one, .three, .two{
         border-bottom: 1px black solid;
     }
 
-    .timeline div div:nth-child(2) {
-        border-top: 1px black solid;
-    }
-
-    .timeline div div:nth-child(even)::before {
-        content: " ";
-        width: 1em;
-        height: 1em;
-        border-radius: 50%;
-        border: 0.125em black solid;
-        background-color: white;
+    .timeline span div {
         position: absolute;
-        bottom: 1.375em;
-    }
-
-    .timeline div p {
-        display: inline-flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        max-height: 50%;
-        max-width:100%;
+        border: 1px black solid;
+        background-color: white;
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        top: 3em;
     }
 </style>
-
-<head>
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <title>Timeline</title>
-</head>
 
 <body>
     <div class="timeline">
         <div>
-            <p>even</p>
-            <p>odd</p>
-
-            <p>even</p>
-            <p>odd</p>
+            <div class="one">
+                <p>
+                <strong>1995</strong>
+                </p>
+                <div></div>
+            </div>
+            <span>
+                <div></div>
+            </span>
+            <div><p>under</p></div>
+        </div>
+        <div>
+            <div class="two">
+                <p></p>
+                <div></div>
+                <p>test 2</p>
+            </div>
+            <span>
+                <div></div>
+            </span>
 
         </div>
         <div>
-            <div></div>
-            <div></div>
+            <div class="three">
+                <p>test 3</p>
+                <div></div>
+            </div>
+            <span>
+                <div></div>
+            </span>
         </div>
         <div>
-
-            <p>even</p>
-            <p>odd</p>
-
-            <p>even</p>
-            <p>odd</p>
-
+            <div class="for">
+                <p>test 4</p>
+            </div>
+            <!-- <div>
+                <div></div>
+            </div> -->
+            <span>
+                <div></div>
+            </span>
         </div>
     </div>
 </body>

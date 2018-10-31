@@ -1,39 +1,59 @@
-var links={
-    contact: $("#contactlink"),
-    skills: $("#skillslink"),
-    employment: $("#employlink"),
-    education: $("#edulink"),
-    awards: $("#awardslink"),
-    recruiterinfo: $("#recruitlink")
+var nav = {
+    contact: {
+        link: $("#js-contact"),
+        content:  $(".contact"),
+    },
+    skills: {
+        link: $("#js-skills"),
+        content:  $(".skills"),
+    },
+    employment: {
+        link: $("#js-employ"),
+        content:  $(".employment"),
+    },
+    education: {
+        link: $("#js-edu"),
+        content:  $(".education"),
+    },
+    awards: {
+        link: $("#js-awards"),
+        content:  $(".awards"),
+    },
+    recruiterInfo: {
+        link: $("#js-recruit"),
+        content:  $(".recruiter-info"),
+    }
 }
 
-links.contact.click(function(){
-    $(".contact").show();
-    $(".education, .employment, .skills, .awards, .recruiter-info").hide();
-    $("#infolist").slideDown(slow);
+var allSections=$(".js-section");
+
+for (var sectionName in nav) {
+    setNavClicks(nav[sectionName]);    
+}
+
+function setNavClicks(section) {
+    section.link.click(function(){
+        showSection(section);
+     });
+ }
+
+function removeActiveFromAllNavLinks(){
+    for (var sectionName in nav) {
+        nav[sectionName].link.removeClass('active');    
+     }
+}
+
+function showSection(section) {
+    allSections.hide();
+    removeActiveFromAllNavLinks();
+    section.content.show();
+    section.link.addClass('active');
+}
+
+$("#toggle1").click(function(){
+    $("#bspp").slideToggle();
 });
 
-links.skills.click(function(){
-    $(".skills").show();
-    $(".contact, .employment, .education, .awards, .recruiter-info").hide();
-});
-
-links.employment.click(function(){
-    $(".employment").show();
-    $(".contact, .skills, .education, .awards, .recruiter-info").hide();
-});
-
-links.education.click(function(){
-    $(".education").show();
-    $(".contact, .employment, .skills, .awards, .recruiter-info").hide();
-});
-
-links.awards.click(function(){
-    $(".awards").show();
-    $(".contact, .employment, .education, .skills, .recruiter-info").hide();
-});
-
-links.recruiterinfo.click(function(){
-    $(".recruiter-info").show();
-    $(".contact, .employment, .education, .awards, .skills").hide();
+$("#toggle2").click(function(){
+    $("#tefl").slideToggle();
 });

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <!-- By Craig Livings  -->
 <head>
         <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
@@ -41,7 +41,6 @@
         padding: 10px;
     }
 
-    
     .hidden {
         display:none;
     }
@@ -49,15 +48,16 @@
     </style>
 </head>
 <body>
-    <main> 
+    <main>
         <h1>Contact me</h1>
         <form id="contact-form">
-            <input class="form-field" type="text" id="name" placeholder="Name" required />
-            <input class="form-field" type="email" id="email" placeholder="example@domain.com" required />
+            <label for="name">Name</label>
+            <input class="form-field" aria-label="Name" type="text" id="name" placeholder="Name" required >
+            <input class="form-field" aria-label="Email" type="email" id="email" placeholder="example@domain.com" required >
             <textarea class="form-field" name="message" id="message" placeholder="Your message" required ></textarea>
-            <input type="submit" id="submit" value="Be my friend" />
+            <input type="submit" id="submit" value="Be my friend" >
         </form>
-        
+
         <div id="feedback" class="hidden">
         </div>
 

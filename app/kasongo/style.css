@@ -1,18 +1,99 @@
+body {
+  margin: 0;
+  font-size: 0.8em;
+  font-style: normal;
+  font-family: 'Days One';
+  background-image: url('https://windsim.com/images/sky/sky_107.bmp');
+  background-size: cover;
+  display: flex;
+  flex-grow: 1;
+  flex-flow: column;
+  flex-basis: 1%;
+}
+
 a {
   text-decoration: none;
 }
 
-.heading {
-  font-family: 'Bangers';
-  font-size: 50px;
+/* Added srolling welcome page with bouncing arrow, flex included */
+
+.bonjour {
+  min-height: 100vh;
+  background-color: lightgrey;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('kassnow.jpg');
+  display: flex;
+  flex: 1;
+  flex-shrink: 0.001px;
 }
 
-body {
-  font-size: 1em;
-  font-style: normal;
-  font-family: 'Lato', sans-serif;
-  background-image: url('https://windsim.com/images/sky/sky_107.bmp');
-  background-size: cover;
+.emmanuel {
+  font-size: 30px;
+  color: white;
+  background-color: none;
+  position: absolute;
+  top: 70%;
+  text-align: center;
+  left: 0;
+  width: 100%;
+}
+
+#scrolling {
+  color: lightgrey;
+  margin: 0;
+  height: 500vh;
+  position: absolute;
+  top: 0%;
+}
+
+.happyname {
+  font-size: 2.8em;
+  font-family: 'Days One';
+}
+
+.arrow a {
+  color: white;
+  text-decoration: none;
+  margin: 0;
+  font-size: 2em;
+}
+
+.arrow {
+  text-align: center;
+  margin: 8% 0;
+}
+
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-30px);
+  }
+
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+/* Main title font style */
+
+.heading {
+  font-size: 50px;
 }
 
 /* Sticky navbar with hover */
@@ -27,10 +108,8 @@ nav ul {
 }
 
 nav li {
-  display: block;
-  display: inline;
+  display: inline-block;
   float: left;
-  text-align: center;
   border-right: 1px solid black;
 }
 
@@ -57,13 +136,34 @@ nav {
   top: 0;
 }
 
+.navbar {
+  display: flex;
+  flex: 1;
+  flex-shrink: 0.5px;
+}
+
+/* Margin for main body */
+main {
+  margin-left: 0.5em;
+}
+
+/* First and second titles position and color */
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  color: darkblue;
+}
+
 /* Photo modification */
 .myphoto {
   float: right;
   border: solid #00008b;
   border-width: 5px;
-  padding-bottom: 0;
   margin-right: 7em;
+  margin-top: 7em;
 }
 
 .border {
@@ -71,14 +171,16 @@ nav {
   border-style: solid;
 }
 
-/* Contact info */
+/* Contact info with font awesome and opacity box */
 .myinfo {
-  margin-right: 50em;
+  margin-right: 13em;
+  margin-left: 15em;
   background-color: #add8e6;
   border: 1px solid black;
   opacity: 0.6;
   filter: alpha(opacity=40);
   padding-right: 1px;
+  font-size: 26px;
 }
 
 .myinfo li {
@@ -89,38 +191,57 @@ nav {
 
 /* Social link */
 .social {
-  margin-left: 2em;
+  margin-left: 40em;
   padding-right: 1em;
   border: 0;
   display: inline;
 }
 
-h1 {
-  text-align: center;
-}
-
-/* Add stars color and column to the right and space between skills */
+/* Add stars color and column to the right and space between skills and font awesome */
 .checked {
   color: darkblue;
 }
 
-.myskil {
-  justify-content: space-between;
-  word-spacing: 1em;
+#skillkas {
+  display: flex;
+  list-style: none;
 }
 
-.starcolumn1 {
-  display: flex;
+#skillkas .title {
+  display: inline-block;
+  width: 20%;
+  vertical-align: top;
+}
+
+#skillkas > div {
   flex: 1;
 }
 
-/* Contact me via text box */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#skillkas li i {
+  margin-right: 10px;
+}
+
+.myinfo li i {
+  margin-right: 10px;
+}
+
+/* Contact me via text box and email */
+
+#form {
+  margin-bottom: 3em;
+}
+
 input {
   display: block;
   background-color: lightgrey;
 }
 
-.name {
+#name #firstname #email {
   width: 17em;
   margin: 0;
 }
@@ -131,20 +252,15 @@ textarea {
   margin-left: 0;
   padding: 0;
   background-color: lightgrey;
+  vertical-align: text-top;
+  display: flex;
+  flex: 1;
 }
 
 .envoyer {
   margin-top: 4px;
   background-color: lightblue;
-}
-
-/* Send email */
-.emailad {
-  list-style-type: none;
-  padding-top: 2em;
-  padding-bottom: 0.5em;
-  padding-left: 0;
-  margin-left: 0;
+  margin-left: 2em;
 }
 
 /* Copyright font */
