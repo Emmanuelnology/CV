@@ -230,6 +230,12 @@ nav ul {
   top: 0;
 }
 
+.qualifications > li {
+  padding: 5px 5px;
+  margin-top: 5px;
+  list-style-type: circle; 
+}
+
 #gee {
   display: block;
   margin: 0 auto;
@@ -314,7 +320,7 @@ nav ul {
 
 #plane {
   top: 420px;
-  width: 250px;
+  width: 200px;
   position: absolute;
   right: 10px;
 }
@@ -356,7 +362,9 @@ section {
   }
 
   body {
-    grid-template-areas: "me content";
+    grid-template-areas: 
+    "me content"
+    "me footer";
     grid-template-columns: 1fr 2fr;
   }
 }
