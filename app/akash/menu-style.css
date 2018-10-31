@@ -110,7 +110,17 @@ li > div {
   float: right;
 }
 
-.media-box {
+li > img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.fas.fa-star {
+  font-size: 1.5em;
+}
+
+/* .media-box {
   min-width: 0;
   margin: -10px;
 }
@@ -120,7 +130,7 @@ img {
   max-width: 100%;
   max-height: 450px;
   margin-top: 15px;
-}
+} */
 
 @media only screen and (min-width: 450px) {
   #diamond {
@@ -194,7 +204,7 @@ img {
     flex-direction: row;
   }
 
-  .media-box {
+  /* .media-box {
     min-width: 0;
     margin: -10px;
     margin: 0 50px;
@@ -205,7 +215,7 @@ img {
     max-width: 100%;
     max-height: 450px;
     margin-top: 15px;
-  }
+  } */
 }
 
 @media only screen and (min-width: 750px) {
@@ -252,7 +262,7 @@ img {
     width: 45%;
   }
 
-  .media-box {
+  /* .media-box {
     min-width: 0;
     margin: 0;
   }
@@ -261,7 +271,7 @@ img {
     width: 450px;
     max-width: 100%;
     max-height: 450px;
-  }
+  } */
 
   .title {
     font-size: 2em;
@@ -270,7 +280,7 @@ img {
   ul {
     list-style-type: none;
     font-family: 'Montserrat';
-    font-size: 1em;
+    font-size: 1.25em;
     padding: 0;
   }
 }
