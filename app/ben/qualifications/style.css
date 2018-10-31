@@ -1,21 +1,5 @@
-body {
-  margin: 0;
-  background-image: url('../bg.jpg');
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  min-height: 100vh;
-}
-
 main {
-  background-color: #bfffbf;
   width: 21em;
-  margin: 0 auto;
-  padding-bottom: 10px;
 }
 
 h1 {
@@ -182,7 +166,6 @@ ul {
 @media only screen and (min-width: 600px) {
   main {
     width: 35em;
-    margin: 0 auto;
   }
 
   .appears {

@@ -29,9 +29,31 @@ body {
   color: #527952;
 }
 
+body {
+  margin: 0;
+  background-image: url('bg.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+main {
+  background-color: #bfffbf;
+  width: 40em;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  min-height: 100vh;
+}
+
 h1 {
   font-size: 54px;
   margin: 10px;
+  margin-top: 0;
 }
 
 h2 {
