@@ -11,6 +11,49 @@
 </head>
 
 <body>
+    <div id="blocker"></div>
+    <div class="modal" id="mandarin-modal">
+        <a href="#" class="js-modal-close">
+                <i class="fas fa-window-close"></i>
+        </a>
+        Conversational mandarin
+    </div>
+    <div class="modal" id="shanghai-modal">
+            <a href="#" class="js-modal-close">
+                    <i class="fas fa-window-close"></i>
+            </a>
+            Lived and worked in Shanghai for two years
+    </div>
+    <div class="modal" id="software-modal">
+            <a href="#" class="js-modal-close">
+                    <i class="fas fa-window-close"></i>
+            </a>
+            Aspiring software developer
+    </div>
+    <div class="modal" id="dean-modal">
+            <a href="#" class="js-modal-close">
+                    <i class="fas fa-window-close"></i>
+            </a>
+            Included on the UWE 2016 Dean's list
+    </div>
+    <div class="modal" id="radiation-modal">
+            <a href="#" class="js-modal-close">
+                    <i class="fas fa-window-close"></i>
+            </a>
+            Created and carried out dissertation work in a radiation lab
+    </div>
+    <div class="modal" id="usad-modal">
+            <a href="#" class="js-modal-close">
+                    <i class="fas fa-window-close"></i>
+            </a>
+            Coached team
+    </div>
+    <div class="modal" id="bio-modal">
+            <a href="#" class="js-modal-close">
+                    <i class="fas fa-window-close js-modal-close"></i>
+            </a>
+            1:1 in bio sciences
+    </div>
     <nav>
         <ul id="nav-links">
             <h1>
@@ -45,7 +88,7 @@
                 photography
             </div>
             <div class="larger-text opaque">
-                <a href="#" class="js-modal-open">
+                <a href="#" data-target="mandarin-modal" class="js-modal-open">
                     Mandarin
                 </a>
             </div>
@@ -53,7 +96,7 @@
                 guitar
             </div>
             <div class="larger-text transparent right">
-                <a href="#" class="js-modal-open">
+                <a href="#" data-target="shanghai-modal" class="js-modal-open">
                     Shanghai
                 </a>
             </div>
@@ -72,18 +115,18 @@
             <div class="large-text transparent">
                 sci-fi
             </div>
-            <div class="large-text opaque right">
-                <a href="#" class="js-modal-open">
+            <div class="large-text opaque right js-modal">
+                <a href="#" data-target="software-modal" class="js-modal-open">
                     software developer
                 </a>
             </div>
             <div class="larger-text opaque">
-                <a href="#" class="js-modal-open">
+                <a href="#" data-target="dean-modal" class="js-modal-open">
                     Dean's list
                 </a>
             </div>
             <div class="medium-text transparent">
-                <a href="#" class="js-modal-open">
+                <a href="#" data-target="radiation-modal" class="js-modal-open">
                     radiation lab
                 </a>
             </div>
@@ -91,12 +134,12 @@
                 graphic novels
             </div>
             <div class="small-text transparent">
-                <a href="#" class="js-modal-open">
+                <a href="#" data-target="usad-modal" class="js-modal-open">
                     USAD team coach
                 </a>
             </div>
             <div class="larger-text">
-                <a href="#" class="js-modal-open">
+                <a href="#" data-target="bio-modal" class="js-modal-open">
                     Bio sciences 1:1
                 </a>
             </div>

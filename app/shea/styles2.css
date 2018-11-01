@@ -105,6 +105,28 @@ aside div {
   font-weight: bold;
 }
 
+.modal {
+  position: fixed;
+  top: 20%;
+  bottom: 20%;
+  left: 20%;
+  right: 20%;
+  display: none;
+  border-radius: 10px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+#blocker {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
 .smaller-text {
   font-size: 0.9em;
 }

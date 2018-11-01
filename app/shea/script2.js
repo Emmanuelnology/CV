@@ -58,3 +58,16 @@ $("#toggle2").click(function(){
     $("#tefl").slideToggle();
 });
 
+$('.js-modal-close').click(function(){
+    $('#blocker').hide();
+    $('.modal').hide();
+    $('body').css('overflow','auto');
+});
+
+$('.js-modal-open').click(function(){
+    var modalID=$(this).attr('data-target');
+    $('#'+modalID).fadeIn();
+    $('#blocker').fadeIn();
+    $('body').css('overflow','hidden');
+});
+
