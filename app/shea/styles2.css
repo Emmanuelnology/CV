@@ -25,15 +25,15 @@ body {
 
 a {
   color: inherit;
+  font-weight: bold;
+  padding: 0.25em;
 }
 
 a:hover {
   background-color: white;
   color: black;
   border-radius: 2px;
-  font-weight: bold;
   cursor: pointer;
-  padding: 0.25em;
 }
 
 h1 {
@@ -48,7 +48,7 @@ h2 {
 }
 
 h2 {
-  border-radius: 5px 0 0 5px;
+  border-radius: 5px 0 0 0;
   padding: 0.4em;
 }
 
@@ -83,6 +83,7 @@ aside {
   float: right;
   background-color: #fff;
   opacity: 0.5;
+  font-size: 1.3em;
 }
 
 aside:hover {
@@ -93,6 +94,15 @@ aside div {
   display: inline-block;
   padding: 0 5px;
   text-align: justify;
+}
+
+#about-content a {
+  background-color: transparent;
+  font-weight: normal;
+}
+
+#about-content a:hover {
+  font-weight: bold;
 }
 
 .smaller-text {
@@ -132,7 +142,7 @@ aside div {
   grid-area: content;
   background-color: #fff;
   opacity: 0.5;
-  height: 40vh;
+  height: 45vh;
 }
 
 .content:hover {
@@ -145,10 +155,6 @@ aside div {
 
 .collapsed {
   display: none;
-}
-
-button {
-  text-decoration: none;
 }
 
 @media only screen and (min-width: 550px) {
@@ -168,6 +174,10 @@ button {
   h1 {
     text-align: left;
     padding-left: 5px;
+  }
+
+  h2 {
+    height: 10vh;
   }
 
   nav {
@@ -192,16 +202,17 @@ button {
 
   aside {
     height: 80%;
+    font-size: 0.9em;
   }
 
   aside h2,
   div {
-    border-radius: 0 5px 5px 0;
+    border-radius: 0 5px 0 0;
     text-align: left;
   }
 
   #about-content {
-    font-size: 0.9em;
+    font-size: 0.7em;
   }
 
   .content {
