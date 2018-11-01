@@ -1,5 +1,6 @@
 
-/* #06aed5, #086788, #f0c808, #dd1c1a, #b1b9ba*/
+/* #06aed5, #086788, #f0c808, #dd1c1a, #b1b9ba */
+
 * {
   box-sizing: border-box;
 }
@@ -20,7 +21,7 @@ a:visited {
 
 body {
   margin: 0;
-  font-family: 'Encode Sans', sans-serif;
+  font-family: 'Fauna One', serif;
   display: grid;
   grid-template-areas: "me";
   grid-template-columns: 1fr;
@@ -37,6 +38,25 @@ nav {
 
 nav ul {
   display: flex;
+}
+
+#navtext {
+  color: black;
+  font-family: 'Fauna One', serif;
+  position: absolute;
+  font-size: 15px;
+  top: 550px;
+  padding-left: 15px;
+  
+}
+
+#gryder {
+  color: black;
+  font-family: 'Pacifico', cursive;
+  font-size: 30px;
+  position: absolute;
+  top: 500px;
+  padding-left: 35px;
 }
 
 nav li {
@@ -159,9 +179,10 @@ header h3 {
 
 .me {
   font-family: 'Fauna One', serif;
-  margin: 0;
-  padding: 0;
+  position: relative;
   text-align: center;
+  margin-top: 10px;
+  padding: 20px;
 }
 
 .need {
@@ -169,13 +190,14 @@ header h3 {
 }
 
 .life-icons {
+  padding: 10px;
   font-size: 50px;
   text-align: center;
   color: #e34543;
 }
 
 .career {
-  color: red;
+  color: #e34543;
 }
 
 .skills-panel h2 {
@@ -220,7 +242,7 @@ nav ul {
 .qualifications > li {
   padding: 5px 5px;
   margin-top: 5px;
-  list-style-type: circle; 
+  text-align: left;
 }
 
 #gee {
@@ -231,16 +253,10 @@ nav ul {
 .rollover {
   height: 50px;
   width: 100%;
-  
-  /* Reposition the div relative to Gee */
   position: absolute;
-  
-  /* formatting */
   color: white;
   font-size: large;
   font-weight: bold;
-  
-  /* Center the text in the div */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -248,53 +264,19 @@ nav ul {
 
 .rollover:hover {
   cursor: pointer;
-  background-color: rgba(6,174,213,0.3);
-  
-  /* Show the brain on hover as a background image */
-  
+  background-color: rgba(6, 174, 213, 0.3);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .rollover a {
-  /* By default, set all children of brain to invisible */
   display: none;
 }
 
 .rollover:hover  a {
-  /* On hover, set all content of brain to visible */
   display: inline-block;
 }
-
-#phone-div{
-  position: absolute;
-  top:420px;
-  height:50px;
-  display:flex;
-  width:100%;
-}
-
-#phone-div>div {
-  flex:1;
-  position:relative;
-  width:50%;
-}
-
-#phone {
-  text-align:right;
-  padding-right:20px;
-}
-
-#plane {
-  text-align:left;
-  padding-left:20px;
-}
-
-#phone-div a {
-  width: 100%;
-}
-
 
 #brain {
   top: 60px;                                   
@@ -321,12 +303,41 @@ nav ul {
 #heart:hover {
   background-image: url('heart.png');
   position: fixed;
-  position: absolute;+
+  position: absolute;
 }
 
+#hands-div a {
+  width: 100%;
+}
+
+#hands-div {
+  position: absolute;
+  top: 420px;
+  height: 50px;
+  display: flex;
+  width: 100%;
+}
+
+#hands-div > div {
+  flex: 1;
+  position: relative;
+  width: 50%;
+}
+
+#phone {
+  text-align: right;
+  padding-right: 20px;
+}
+
+#plane {
+  text-align: left;
+  padding-left: 20px;
+  background-image: url('plane.png');
+}
 
 #doing {
   font-size: 18px;
+  padding-top: 20px;
 }
 
 section {
@@ -343,15 +354,13 @@ section {
     position: relative;
     background-color: white;
   }
-  
+
   #closebutton {
     display: none;
   }
-  
+
   body {
-    grid-template-areas: 
-    "me content"
-    "me footer";
+    grid-template-areas: "me content""me footer";
     grid-template-columns: 1fr 2fr;
   }
 }
