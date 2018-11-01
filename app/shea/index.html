@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
 <head>
     <title>Shea Murphy</title>
@@ -8,69 +8,66 @@
     <link href="styles.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
         crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-    <header>
-        <section>
-            <nav>
-                <div id="title">
-                    Shea<span class="bold">Murphy</span>
+    <nav>
+        <div id="title">
+            Shea<span class="bold">Murphy</span>
+        </div>
+        <ul id="nav-links">
+            <li>
+                <a id="js-recruit">Recruiter info</a>
+            </li>
+            <li>
+                <a id="js-awards">Awards</a>
+            </li>
+            <li>
+                <a id="js-edu">Qualifications</a>
+            </li>
+            <li>
+                <a id="js-employ">Employment</a>
+            </li>
+            <li>
+                <a id="js-skills">Skills</a>
+            </li>
+            <li>
+                <a id="js-contact">Contact me</a>
+            </li>
+        </ul>
+    </nav>
+    <aside class="aboutme">
+        <div id="aboutwrap">
+            <h2>About me</h2>
+            <div id="card">
+                <div id="front">
+                    <div class="small-text translucent">photography</div>
+                    <div class="larger-text opaque">Mandarin</div>
+                    <div class="small-text transparent middle">guitar</div>
+                    <div class="larger-text transparent right">Shanghai</div>
+                    <div class="medium-text translucent">video games</div>
+                    <div class="large-text translucent">travelling</div>
+                    <div class="small-text transparent middle">reading</div>
+                    <div class="medium-text translucent">sketching</div>
+                    <div class="large-text transparent">sci-fi</div>
+                    <div class="large-text opaque right">software developer</div>
+                    <div class="larger-text opaque">Dean's list</div>
+                    <div class="medium-text transparent">radiation lab</div>
+                    <div class="medium-text translucent">graphic novels</div>
+                    <div class="small-text transparent">USAD team coach</div>
+                    <div class="larger-text">Bio sciences 1:1</div>
                 </div>
-                <ul id="nav-links">
-                    <li>
-                        <a id="js-recruit">Recruiter info</a>
-                    </li>
-                    <li>
-                        <a id="js-awards">Awards</a>
-                    </li>
-                    <li>
-                        <a id="js-edu">Qualifications</a>
-                    </li>
-                    <li>
-                        <a id="js-employ">Employment</a>
-                    </li>
-                    <li>
-                        <a id="js-skills">Skills</a>
-                    </li>
-                    <li>
-                        <a id="js-contact">Contact me</a>
-                    </li>
-                </ul>
-            </nav>
-        </section>
-    </header>
-    <main>
-        <section class="aboutme">
-            <div id="aboutwrap">
-                <h2>About me</h2>
-                <div id="card">
-                    <div id="front">
-                        <div class="small-text translucent">photography</div>
-                        <div class="larger-text opaque">Mandarin</div>
-                        <div class="small-text transparent middle">guitar</div>
-                        <div class="larger-text transparent right">Shanghai</div>
-                        <div class="medium-text translucent">video games</div>
-                        <div class="large-text translucent">travelling</div>
-                        <div class="small-text transparent middle">reading</div>
-                        <div class="medium-text translucent">sketching</div>
-                        <div class="large-text transparent">sci-fi</div>
-                        <div class="large-text opaque right">software developer</div>
-                        <div class="larger-text opaque">Dean's list</div>
-                        <div class="medium-text transparent">radiation lab</div>
-                        <div class="medium-text translucent">graphic novels</div>
-                        <div class="small-text transparent">USAD team coach</div>
-                        <div class="larger-text">Bio sciences 1:1</div>
-                    </div>
-                    <div id="back">
-                        <div>
-                            <img src="http://placekitten.com/500/30" alt="placeholder">
-                        </div>
+                <div id="back">
+                    <div>
+                        <img src="http://placekitten.com/500/30" alt="placeholder">
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="contact hidden">
+        </div>
+    </aside>
+    <main>
+        <section class="contact hidden js-section">
             <h2>Contact me</h2>
             <ul id="infolist">
                 <li>
@@ -101,7 +98,7 @@
                 </li>
             </ul>
         </section>
-        <section class="skills hidden">
+        <section class="skills hidden js-section">
             <h2>Skills</h2>
             <div id="skills-panel">
                 <h3 class="skills-header">Coding languages</h3>
@@ -169,7 +166,7 @@
                 </ul>
             </div>
         </section>
-        <section class="employment hidden">
+        <section class="employment hidden js-section">
             <h2>Employment</h2>
             <h3>
                 British Society for Plant Pathology (BSPP) – Research Project Summer (2015)
@@ -224,7 +221,7 @@
                 </li>
             </ul>
         </section>
-        <section class="education hidden">
+        <section class="education hidden js-section">
             <h2>Qualifications</h2>
             <ul>
                 <li class="qualification">
@@ -253,7 +250,7 @@
                 </li>
             </ul>
         </section>
-        <section class="awards hidden">
+        <section class="awards hidden js-section">
             <h2>Awards</h2>
             <ul>
                 <li class="award-title">
@@ -283,7 +280,7 @@
                 </li>
             </ul>
         </section>
-        <section class="recruiter-info hidden">
+        <section class="recruiter-info hidden js-section">
             <h2>Recruiter info</h2>
             <ul>
                 <li>

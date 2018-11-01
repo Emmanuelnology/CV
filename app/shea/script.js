@@ -1,4 +1,4 @@
-var nav={
+var nav = {
     contact: {
         link: $("#js-contact"),
         content:  $(".contact"),
@@ -17,7 +17,7 @@ var nav={
     },
     awards: {
         link: $("#js-awards"),
-        content:  $(".contact"),
+        content:  $(".awards"),
     },
     recruiterInfo: {
         link: $("#js-recruit"),
@@ -25,51 +25,36 @@ var nav={
     }
 }
 
+var allSections=$(".js-section");
 
-var links={
-    contact: $("#js-contact"),
-    skills: $("#js-skills"),
-    employment: $("#js-employ"),
-    education: $("#js-edu"),
-    awards: $("#js-awards"),
-    recruiterinfo: $("#js-recruit")
+for (var sectionName in nav) {
+    setNavClicks(nav[sectionName]);    
 }
 
-links.contact.click(function(){
-    $(".contact").show();
-    $(".education, .employment, .skills, .awards, .recruiter-info").hide();
-    $("#infolist").slideDown(slow);
-});
+function setNavClicks(section) {
+    section.link.click(function(){
+        showSection(section);
+     });
+ }
 
-links.skills.click(function(){
-    $(".skills").show();
-    $(".contact, .employment, .education, .awards, .recruiter-info").hide();
-});
+function removeActiveFromAllNavLinks(){
+    for (var sectionName in nav) {
+        nav[sectionName].link.removeClass('active');    
+     }
+}
 
-links.employment.click(function(){
-    $(".employment").show();
-    $(".contact, .skills, .education, .awards, .recruiter-info").hide();
-});
-
-links.education.click(function(){
-    $(".education").show();
-    $(".contact, .employment, .skills, .awards, .recruiter-info").hide();
-});
-
-links.awards.click(function(){
-    $(".awards").show();
-    $(".contact, .employment, .education, .skills, .recruiter-info").hide();
-});
-
-links.recruiterinfo.click(function(){
-    $(".recruiter-info").show();
-    $(".contact, .employment, .education, .awards, .skills").hide();
-});
+function showSection(section) {
+    allSections.hide();
+    removeActiveFromAllNavLinks();
+    section.content.show();
+    section.link.addClass('active');
+}
 
 $("#toggle1").click(function(){
-    $("#bspp").slideToggle(1000);
+    $("#bspp").slideToggle();
 });
 
 $("#toggle2").click(function(){
-    $("#tefl").slideToggle(1000);
+    $("#tefl").slideToggle();
 });
+

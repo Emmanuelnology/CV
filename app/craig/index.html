@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>Home</title>
     <link href="https://fonts.googleapis.com/css?family=Krub" rel="stylesheet">
@@ -22,18 +22,20 @@
         <div class="tab">Contact</div>
         Content 3
     </div>
-
+    
+    
     <div id="greeting">
         <div>
-            <a href="#" id="download">
+            <a href="#" id="download" data-micromodal-trigger="modal-1">
                 <p class="name">
                     craig<span class="space"></span><span id="last-name">livings</span>
+                    
                 </p>
                 Download CV
             </a>
         </div>
     </div>
-
+    
     <div id="hi">
         <div>
             <div id="snow">
@@ -63,13 +65,15 @@
             element.animate({left: '35px'});
         }
     }
-
-
-
+    
+    
+    
     $('.tab').click(function(e){
         var parent=$(this).parent('.content');
         parent.toggleClass('hidden');
         hideIfHidden(parent);
     })
+    
+    
 </script>
 </html>
