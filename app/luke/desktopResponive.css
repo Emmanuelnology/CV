@@ -109,24 +109,25 @@ div ul li {
   padding-top: 50px;
 }
 
-#timeline-img1 {
-position: relative;
-bottom: 20px;
-right:55px;
-border-radius: 15%;
+#timeline-img1,
+#timeline-img4 {
+  position: relative;
+  bottom: 20px;
+  right: 55px;
+  border-radius: 15%;
 }
 
 #timeline-img2 {
   position: relative;
   bottom: 40px;
-  right:55px;
+  right: 55px;
   border-radius: 15%;
 }
 
 #timeline-img3 {
   position: relative;
   bottom: 40px;
-  right:35px;
+  right: 35px;
   border-radius: 15%;
 }
 
