@@ -8,71 +8,145 @@
     <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
     <title>Kieran Taylor CV About Me</title>
     
-    <!-- <style>
-        main {
-            display: grid;
-            grid-gap: 40px;
-            margin: 0;
-            grid-template-areas:
-            "school college uni liberty deliveroo ubereats volunteering valleymill nology";
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        } 
-        
-        div.imig {
-            height: 200px;
-            width: 200px;
-        }
-        img.imig {
-            height: 200px;
-            width: 200px;
-        }
-        div.school {
-            grid-area: school;
-        }
-        div.college {
-            grid-area: college;
-        }
-        div.uni {
-            grid-area: uni;
-        }
-        div.liberty {
-            grid-area: liberty;
-        }
-        div.deliveroo {
-            grid-area: deliveroo;
-        }
-        div.ubereats {
-            grid-area: ubereats;
-        }
-        div.volunteering {
-            grid-area: volunteering;
-        }
-        div.valleymill {
-            grid-area: valleymill;
-        }
-        div.nology {
-            grid-area: nology;
-        }
-    </style> -->
     
     
+    
+    
+    <style>
+        .modal {
+            display: none;
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background-color:rgba(255, 0, 0, 0.95);
+            
+            padding: 20px;
+            border-radius: 20px;
+            border: 0px solid black;
+            z-index: 3;
+            color: white;
+            font-family: 'Crimson Text', serif;
+            padding: 5%;
+        }
+
+        .date {
+            font-weight: 900;
+            font-size: 200%;
+        }
+        .establishment {
+            font-weight: 700;
+            font-size: 170%;
+        }
+        .content {
+            font-weight: 200;
+            font-size: 130%;
+        }
+    </style> 
+
+
     
 </head>
 
 <body>
-    <!-- How to call this overlay below from another div? -->
 
 
-    <!-- <div class="container">
-            <div id="school2" class="square-image">
-                
-                <div id="overlay2">
+    <div id="modal-llangatwg" class="modal js-modal">
+    <button class="js-modal-close">Return</button>
+        <p class="date">2006-2012</p>
+        <p class="establishment">Llangatwg Community School</p>
+        <p class="content">14 GCSE's (A*-C)</p>
+    </div>
+
+
+    <div id="modal-college" class="modal js-modal">
+    <button class="js-modal-close">Return</button>
+        <p class="date">2012-2014</p>
+        <p class="establishment">NPTC (Neath Port Talbot College)</p>
+        <p class="content">A-Levels (Physics, Mathematics. Electronics) </p>
+    </div>
+
+    <div id="modal-uni" class="modal js-modal">
+    <button class="js-modal-close">Return</button>
+        <p class="date">2014-2018</p>
+        <p class="establishment">Swansea University</p>
+        <p class="content">Physics (MPhys) (First Class Honours)</p>
+    </div>
+
+
+    <div id="modal-liberty" class="modal js-modal">
+    <button class="js-modal-close">Return</button>
+        <p class="date">2015-2018</p>
+        <p class="establishment">Food Retail Team Leader (Liberty Stadium)</p>
+        <p class="content">
+            <ul>
+                <li>Responsible for managing staff in both kitchen and service area</li>
+                <li>Enforce the maintenance of high hygiene standards</li>
+                <li>Conduct regular cash lifts and complete any applicable paperwork</li>
+                <li>Resolve customer complaints and queries</li>
+            </ul>
+        </p>
+    </div>
+
+    <div id="modal-deliveroo" class="modal js-modal">
+    <button class="js-modal-close">Return</button>
+        <p class="date">2017-2018</p>
+        <p class="establishment">Deliveroo Bicycle Courier</p>
+        <p class="content">            
+            <ul>
+                <li>Responsible for transporting goods from restaurant to customer</li>
+                <li>Aware of risks undertaken while cycling through a dynamic and congested city with limited
+                    time to reach each destination</li>
+                <li>Ability to work accurately at a fast pace under pressure</li>
                     
-                    <div class="text">Hello World</div>
-                </div>
-                
-            </div>
-        </div> -->
+            </ul>
+        </p>
+    </div>
+
+
+    <div id="modal-ubereats" class="modal js-modal">
+    <button class="js-modal-close">Return</button>
+        <p class="date">2017-2018</p>
+        <p class="establishment">UberEATS Bicycle Courier</p>
+        <p class="content"> 
+        <ul>
+            <li>Responsible for transporting goods from restaurant to customer</li>
+            <li>Aware of risks undertaken while cycling through a dynamic and congested city with limited
+                time to reach each destination</li>
+            <li>Ability to work accurately at a fast pace under pressure</li>
+                    
+        </ul>
+    </div>
+
+    <div id="modal-volunteering" class="modal js-modal">
+    <button class="js-modal-close">Return</button>
+        <p class="date">2017</p>
+        <p class="establishment">Fontier (Umphang, Thailand)</p>
+        <p class="content">During my time travelling around Asia I spent a month at an elephant sanctuary located within
+            Thailand’s rainforest. Here I assisted in collecting food, feeding and bathing the elephants. On top of
+            this I supported the permanent residents in cleaning the housing and preparing food.</p>
+    </div>
+
+
+    <div id="modal-valleymill" class="modal js-modal">
+    <button class="js-modal-close">Return</button>
+        <p class="date">2018</p>
+        <p class="establishment">Valley Mill</p>
+        <p class="content">Valley Mill</p>
+    </div>
+
+    <div id="modal-nology" class="modal js-modal">
+    <button class="js-modal-close">Return</button>
+        <p class="date">2018-2019</p>
+        <p class="establishment">_nology</p>
+        <p class="content">_nology</p>
+    </div>
+
+
+
+
+
     <header>
         <h1>
             <div>
@@ -95,40 +169,32 @@
     <main>
 
 
-        <!-- <div class="overlay">
-            <div class="text">Hello World</div>
+
+
+        <!-- <div id="school" class="square-image">
+            <button class="js-modal-open">Make me happier</button>        
         </div> -->
 
-        <div class="container">
-            <div id="school" class="square-image">
-                
-                <div class="overlay">
-                    
-                    <div class="text">Hello World</div>
-                </div>
-                
-            </div>
-        </div>
+        <button id="school" data-target="modal-llangatwg" class="square-image js-modal-open"></button>        
 
-        
-        
-        
-        <div id="college" class="square-image">
-        </div>
-        <div id="uni" class="square-image">
-        </div>
-        <div id="liberty" class="square-image">
-        </div>
-        <div id="deliveroo" class="square-image">
-        </div>
-        <div id="ubereats" class="square-image">
-        </div>
-        <div id="volunteering" class="square-image">
-        </div>
-        <div id="valleymill" class="square-image">
-        </div>
-        <div id="nology" class="square-image">
-        </div>
+        <button id="college" data-target="modal-college" class="square-image js-modal-open"></button>
+
+        <button id="uni" data-target="modal-uni" class="square-image js-modal-open"></button>        
+
+        <button id="liberty" data-target="modal-liberty" class="square-image js-modal-open"></button>
+
+        <button id="deliveroo" data-target="modal-deliveroo" class="square-image js-modal-open"></button>        
+
+        <button id="ubereats" data-target="modal-ubereats" class="square-image js-modal-open"></button>
+
+        <button id="volunteering" data-target="modal-volunteering" class="square-image js-modal-open"></button>        
+
+        <button id="valleymill" data-target="modal-valleymill" class="square-image js-modal-open"></button>
+    
+        <button id="nology" data-target="modal-nology" class="square-image js-modal-open"></button>        
+
+
+
         
         <!-- <div class="overlay">
             
@@ -212,8 +278,28 @@
                 © Kieran Taylor 2018
             </div>
         </footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+    
+        $('.js-modal-close').click(function(){
+            $('.js-modal').slideUp();
+            $('body').css('overflow', 'auto');
+        });
         
+        $('.js-modal-open').click(function(){
+            var modalID = $(this).attr('data-target');
+            $('#' + modalID).slideDown();
+            $('body').css('overflow', 'hidden');
+        });
+
+
+    </script>
     </body>
+
+
+
+    
+
     
     
     

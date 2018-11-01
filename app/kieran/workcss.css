@@ -24,60 +24,8 @@ li.worklabel {
   filter: brightness(100%);
   border: 5px solid magenta;
 }
-/* .wantleft {
-  height:200px;
-  width:200px;
-  background-size: cover;
-  display: inline-block;
-  background-position: left;
-}  */
 
-.container {
-
-  width: 100%;
-  height:100%;
-}
-
-
-
-.overlay {
-  position: absolute;
-  left: 0;
-  top:0;
-  background-color: #008CBA;
-  overflow: hidden;
-  width: 0%;
-  height: 0%;
-  transition: .5s ease;
-}
-
-.container:active .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: red;
-  width: 100vw;
-  height: 100vw;
-}
-/* 
-#overlay2 {
-  position: fixed;
-  left: 0px;
-  background-color: #008CBA;
-  overflow: hidden;
-  width: 0%;
-  height: 0%;
-  transition: .5s ease;
-}
-
- #overlay2 {
-  background-color: red;
-  width: 100vw;
-  height: 100vw;
-} */
-
-
-.text {
+/* .text {
   color: white;
   font-size: 20px;
   position: absolute;
@@ -87,7 +35,7 @@ li.worklabel {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   white-space: wrap;
-}
+} */
 
 #school {
   background-image: url('llangatwgg.png');
