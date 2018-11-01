@@ -1,13 +1,3 @@
-body {
-  background-color: lightgray;
-  font-family: 'raleway';
-}
-
-.headers > div {
-  background-color: aquamarine;
-  width: 50%;
-}
-
 #education-section {
   font-size: 0.9em;
   padding: 15px;
@@ -202,7 +192,7 @@ body {
   margin: 0;
 }
 
-li {
+#education-section li {
   padding: 5px 0;
 }
 
