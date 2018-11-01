@@ -5,3 +5,15 @@ article {
 ul {
   list-style: none;
 }
+
+#bowling {
+  width: 800px;
+  height: 800px;
+  transform: scale(0.7);
+}
+
+#svg-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
