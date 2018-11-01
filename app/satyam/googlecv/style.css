@@ -23,7 +23,7 @@ body {
 }
 
 #infopanel {
-  padding: 1% 1%;
+  padding: 3% 3%;
   background-color: #fff;
   position: fixed;
   bottom: 0;
@@ -40,25 +40,24 @@ body {
   color: rgb(231, 113, 27);
 }
 
-.text {
-}
-
 .color-text {
-  color: rgb(60, 126, 64);
+  color: #188038;
 }
 
 .start {
   text-align: center;
-  color: rgb(83, 131, 235);
+  color: #4285f4;
   background-color: #fff;
-  border: 1px solid rgb(83, 131, 235);
+  border: 1px solid #4285f4;
   border-radius: 13px;
+  position: absolute;
 }
 
 .directions {
   text-align: center;
   color: #fff;
-  background-color: rgb(83, 131, 235);
+  background-color: #4285f4;
   border: 1px solid #fff;
   border-radius: 13px;
+  position: absolute;
 }
