@@ -117,6 +117,7 @@ li.aboutmelabel {
 div.right {
   max-width: 300px;
   float: center;
+  margin: 0 auto;
 }
 
 @media only screen and (min-width: 1014px) {

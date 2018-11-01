@@ -283,6 +283,13 @@ nav ul {
 }
 
 #brain {
+<<<<<<< HEAD
+  height: 80px;
+  display: block;
+  <<<<<<< HEAD
+  position: fixed;
+  =======
+=======
   top: 60px;
 }
 
@@ -297,6 +304,7 @@ nav ul {
 #lips:hover {
   background-image: url('lips.png');
   position: fixed;
+>>>>>>> 5601be2ec0acac2fa16834fefb9c375376bc4621
   position: absolute;
 }
 
