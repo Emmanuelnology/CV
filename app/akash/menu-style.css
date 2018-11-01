@@ -86,6 +86,10 @@ ul {
   padding: 0;
 }
 
+li {
+  margin-top: 25px;
+}
+
 .title {
   font-family: 'Lobster';
   color: black;
@@ -107,19 +111,79 @@ ul {
 
 li > div {
   display: inline;
+}
+
+/* .right {
+  display: inline;
   float: right;
+} */
+
+/* li > img {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+} */
+
+
+
+.fas.fa-star {
+  font-size: 1.5em;
 }
 
-.media-box {
-  min-width: 0;
-  margin: -10px;
+/* li > span {
+  text-align: center;
+} */
+
+/* li {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+} */
+
+/* .description {
+  flex: 1;
+  padding-left: 20px;
+  padding-top: 20px;
+} */
+
+.craig-demo {
+  display: block;
 }
 
-img {
-  width: 450px;
-  max-width: 100%;
-  max-height: 450px;
+.craig-demo img {
+  height: 70px;
+  width: auto;
+  float: left;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.craig-demo h3,
+.craig-demo h4,
+.craig-demo div {
+  font-size: 0.9em;
+  text-align: right;
+  margin: 0;
+}
+
+.craig-demo h4 {
+  font-size: 0.7em;
+  margin-top: 5px;
+  color: #444;
+}
+
+.craig-demo p {
+  font-size: 0.7em;
+  margin: 8px;
+  text-align: justify;
+  position: relative;
+}
+
+.craig-demo a {
+  text-align: right;
   margin-top: 15px;
+  display: block;
 }
 
 @media only screen and (min-width: 450px) {
@@ -194,7 +258,20 @@ img {
     flex-direction: row;
   }
 
-  .media-box {
+  li > img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+  }
+
+  .craig-demo img {
+    height: 80px;
+    width: auto;
+    float: left;
+    margin-right: 10px;
+  }
+
+  /* .media-box {
     min-width: 0;
     margin: -10px;
     margin: 0 50px;
@@ -205,7 +282,7 @@ img {
     max-width: 100%;
     max-height: 450px;
     margin-top: 15px;
-  }
+  } */
 }
 
 @media only screen and (min-width: 750px) {
@@ -252,7 +329,7 @@ img {
     width: 45%;
   }
 
-  .media-box {
+  /* .media-box {
     min-width: 0;
     margin: 0;
   }
@@ -261,16 +338,22 @@ img {
     width: 450px;
     max-width: 100%;
     max-height: 450px;
-  }
+  } */
 
   .title {
-    font-size: 2em;
+    font-size: 3em;
+  }
+
+  li > img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
   }
 
   ul {
     list-style-type: none;
     font-family: 'Montserrat';
-    font-size: 1em;
+    font-size: 1.25em;
     padding: 0;
   }
 }
