@@ -11,54 +11,143 @@
 </head>
 
 <body>
+    <div id="blocker"></div>
+    <div class="modal" id="mandarin-modal">
+        <a href="#" class="js-modal-close">
+                <i class="fas fa-window-close"></i>
+        </a>
+        Conversational mandarin
+    </div>
+    <div class="modal" id="shanghai-modal">
+            <a href="#" class="js-modal-close">
+                    <i class="fas fa-window-close"></i>
+            </a>
+            Lived and worked in Shanghai for two years
+    </div>
+    <div class="modal" id="software-modal">
+            <a href="#" class="js-modal-close">
+                    <i class="fas fa-window-close"></i>
+            </a>
+            Aspiring software developer
+    </div>
+    <div class="modal" id="dean-modal">
+            <a href="#" class="js-modal-close">
+                    <i class="fas fa-window-close"></i>
+            </a>
+            Included on the UWE 2016 Dean's list
+    </div>
+    <div class="modal" id="radiation-modal">
+            <a href="#" class="js-modal-close">
+                    <i class="fas fa-window-close"></i>
+            </a>
+            Created and carried out dissertation work in a radiation lab
+    </div>
+    <div class="modal" id="usad-modal">
+            <a href="#" class="js-modal-close">
+                    <i class="fas fa-window-close"></i>
+            </a>
+            Coached team
+    </div>
+    <div class="modal" id="bio-modal">
+            <a href="#" class="js-modal-close">
+                    <i class="fas fa-window-close js-modal-close"></i>
+            </a>
+            1:1 in bio sciences
+    </div>
     <nav>
-        <h1>
-            Shea<span class="bold">Murphy</span>
-        </h1>
         <ul id="nav-links">
+            <h1>
+                <a href="http://127.0.0.1:5500/app/shea/redo.html">
+                    Shea<span id="bold">Murphy</span>
+                </a>
+            </h1>
             <li>
-                <a id="js-recruit">Recruiter info</a>
+                <a href="#" id="js-contact">Contact me</a>
             </li>
             <li>
-                <a id="js-awards">Awards</a>
+                <a href="#" id="js-skills">Skills</a>
             </li>
             <li>
-                <a id="js-edu">Qualifications</a>
+                <a href="#" id="js-employ">Employment</a>
             </li>
             <li>
-                <a id="js-employ">Employment</a>
+                <a href="#" id="js-edu">Qualifications</a>
             </li>
             <li>
-                <a id="js-skills">Skills</a>
+                <a href="#" id="js-awards">Awards</a>
             </li>
             <li>
-                <a id="js-contact">Contact me</a>
+                <a href="#" id="js-recruit">Recruiter info</a>
             </li>
         </ul>
     </nav>
     <aside>
         <h2>About me</h2>
-        <div id="front">
-            <div class="small-text translucent">photography</div>
-            <div class="larger-text opaque">Mandarin</div>
-            <div class="small-text transparent middle">guitar</div>
-            <div class="larger-text transparent right">Shanghai</div>
-            <div class="medium-text translucent">video games</div>
-            <div class="large-text translucent">travelling</div>
-            <div class="small-text transparent middle">reading</div>
-            <div class="medium-text translucent">sketching</div>
-            <div class="large-text transparent">sci-fi</div>
-            <div class="large-text opaque right">software developer</div>
-            <div class="larger-text opaque">Dean's list</div>
-            <div class="medium-text transparent">radiation lab</div>
-            <div class="medium-text translucent">graphic novels</div>
-            <div class="small-text transparent">USAD team coach</div>
-            <div class="larger-text">Bio sciences 1:1</div>
+        <div id="about-content">
+            <div class="small-text translucent">
+                photography
+            </div>
+            <div class="larger-text opaque">
+                <a href="#" data-target="mandarin-modal" class="js-modal-open">
+                    Mandarin
+                </a>
+            </div>
+            <div href="#" class="small-text transparent middle">
+                guitar
+            </div>
+            <div class="larger-text transparent right">
+                <a href="#" data-target="shanghai-modal" class="js-modal-open">
+                    Shanghai
+                </a>
+            </div>
+            <div class="medium-text translucent">
+                video games
+            </div>
+            <div class="large-text translucent">
+                travelling
+            </div>
+            <div class="small-text transparent middle">
+                reading
+            </div>
+            <div class="medium-text translucent">
+                sketching
+            </div>
+            <div class="large-text transparent">
+                sci-fi
+            </div>
+            <div class="large-text opaque right js-modal">
+                <a href="#" data-target="software-modal" class="js-modal-open">
+                    software developer
+                </a>
+            </div>
+            <div class="larger-text opaque">
+                <a href="#" data-target="dean-modal" class="js-modal-open">
+                    Dean's list
+                </a>
+            </div>
+            <div class="medium-text transparent">
+                <a href="#" data-target="radiation-modal" class="js-modal-open">
+                    radiation lab
+                </a>
+            </div>
+            <div class="medium-text translucent">
+                graphic novels
+            </div>
+            <div class="small-text transparent">
+                <a href="#" data-target="usad-modal" class="js-modal-open">
+                    USAD team coach
+                </a>
+            </div>
+            <div class="larger-text">
+                <a href="#" data-target="bio-modal" class="js-modal-open">
+                    Bio sciences 1:1
+                </a>
+            </div>
         </div>
     </aside>
     <main>
-        <section class="js-section">
-            <div class="content">
+        <section class="js-section content" id="contact">
+            <div>
                 <h2>Contact me</h2>
                 <ul id="infolist">
                     <li>
@@ -90,31 +179,157 @@
                 </ul>
             </div>
         </section>
-        <section class="js-section">
-            <div class="content">
+        <section class="js-section content" id="skills">
+            <div>
                 <h2>Skills</h2>
                 <div class="panel">coding panel</div>
                 <div class="panel">alternate panel</div>
             </div>
         </section>
-        <section class="js-section">
-            <div class="content">
-                employment
+        <section class="js-section content" id="employment">
+            <div>
+                <h2>Employment</h2>
+                <h3>
+                    British Society for Plant Pathology (BSPP) – Research Project Summer (2015)
+                </h3>
+                <ul id="bspp" class="collapsed">
+                    <li>
+                        Grant-funded research into effects of acute ionizing radiation on fungal plant pathogens
+                    </li>
+                    <li>
+                        Regularly coordinated with supervisor regarding contemporary
+                        findings and alterations to methodology
+                    </li>
+                    <li>
+                        Produced final report to be published in the BSPP quarterly news bulletin
+                    </li>
+                    <li>
+                        Undertook extensive literature research into theory and
+                        experimental techniques relating to the project
+                    </li>
+                </ul>
+                <ul>
+                    <li id="toggle1">
+                        <a href="#">
+                            <i class="fas fa-arrows-alt-v"></i>
+                        </a>
+                    </li>
+                </ul>
+                <h3>
+                    Foreign English Teacher - Jian'an Business Services (2016-2018)
+                </h3>
+                <ul id="tefl" class="collapsed">
+                    <li>
+                        Delivered lessons to Senior 1 students (16-17 year olds) of Shibei senior high school, Jing’an
+                        district, Shanghai
+                    </li>
+                    <li>
+                        Sourced effective and engaging material relevant to both the school curriculum and
+                        student interests
+                    </li>
+                    <li>
+                        Created lesson plans and tailored delivery in order to cater to all student levels
+                    </li>
+                    <li>
+                        Provided assistance for student-led extracurricular activities
+                    </li>
+                </ul>
+                <ul>
+                    <li id="toggle2">
+                        <a href="#">
+                            <i class="fas fa-arrows-alt-v"></i>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </section>
-        <section class="js-section">
-            <div class="content">
-                education
+        <section class="js-section content" id="education">
+            <div>
+                <h2>Qualifications</h2>
+                <h3 class="qualification">
+                    BSc Biological Sciences - University of the West of England
+                </h3>
+                <ul>
+                    <li>
+                        First class honours
+                    </li>
+                    <li>
+                        2013-2016
+                    </li>
+                </ul>
+                <h3 class="qualification">
+                    Hanyu Shuiping Kaoshi Level 3 - Chinese Proficiency Test
+                </h3>
+                <ul>
+                    <li>
+                        Passed with 92%
+                    </li>
+                    <li>
+                        2018
+                    </li>
+                    <li class="qualification">
+                        Teaching English as a Foreign Language
+                    </li>
+                    <li>
+                        2016
+                    </li>
+                </ul>
             </div>
         </section>
-        <section class="js-section">
-            <div class="content">
-                awards
+        <section class="js-section content" id="awards">
+            <div>
+                <h2>Awards</h2>
+                <h3 class="award-title">
+                    Dean's list award
+                </h3>
+                <ul>
+                    <li class="award-def">
+                        Recognition of outstanding academic achievment
+                    </li>
+                    <li class="award-year">
+                        2016
+                    </li>
+                    <li class="award-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </li>
+                </ul>
+                <h3 class="award-title">
+                    Undergraduate summer vacation bursary
+                </h3>
+                <ul>
+                    <li class="award-def">
+                        Competitive funding for summer research awarded upon review of candidate's
+                        academic profiles
+                    </li>
+                    <li class="award-year">
+                        2015
+                    </li>
+                    <li class="award-icon">
+                        <i class="fas fa-microscope"></i>
+                    </li>
+                </ul>
             </div>
         </section>
-        <section class="js-section">
-            <div class="content">
-                recuiter info
+        <section class="js-section content" id="recruiter-info">
+            <div>
+                <h2>Recruiter info</h2>
+                <ul>
+                    <li>
+                        <a href="https://www.google.co.uk/maps/place/Bristol/@51.4684055,-2.7307999,11z/data=!3m1!4b1!4m5!3m4!1s0x4871836681b3d861:0x8ee4b22e4b9ad71f!8m2!3d51.454513!4d-2.58791"
+                            target="_blank">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Bristol based
+                        </a>
+                    </li>
+                    <li>
+                        <i class="far fa-calendar-alt"></i>
+                        25 years old
+                    </li>
+                    <li>
+                        <i class="fas fa-code-branch"></i>
+                        Available for work in software development
+                    </li>
+                </ul>
             </div>
         </section>
     </main>
@@ -122,7 +337,7 @@
 
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="script.js" type="text/JavaScript"></script>
+    <script src="script2.js" type="text/JavaScript"></script>
 </body>
 
 </html>

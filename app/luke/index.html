@@ -3,16 +3,18 @@
 
 <head>
 
-    <link rel="stylesheet" type="text/css" href="desktop.css">
-    <link rel="stylesheet" type="text/css" href="responive.css">
+    <link rel="stylesheet" type="text/css" href="desktopResponive.css">
+    <link rel="stylesheet" type="text/css" href="tabletResponive.css">
+    <link rel="stylesheet" type="text/css" href="mobileResponsive.css">
     <link rel="stylesheet" type="text/css" href="buttons.css">
+    <link rel="stylesheet" type="text/css" href="mobileButtons.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title> C.V</title>
 </head>
 <body>
     <header>
-        <h1> Luke Delaney's C.V.</h1>
+        <h1>Luke Delaney's C.V.</h1>
     </header>
     <nav>
     <ul>
@@ -61,13 +63,14 @@
     <hr>
     <!-- Work and academic experience -->
     <h2 id="aca">Academics</h2>
-        <span id="qual-box">
+    <div class="aca-con-1">
+    <span id="qual-box">
         <h3>Education</h3>
         <ul>
-            <li>GCSE : 2006-2011 St Albans R.C. High School, Pontypool</li>
-            <li>A-level: 2012-2013 St Albans R.C. High School, Pontypool</li>
-            <li>Degree: 2013- 2017 University of South Wales (formerly Glamorgan)</li>
-            <li>External learning: 2018 _Nology</li>
+        <li><p>GCSE and A-Level</p><img src="../luke/pictures/st-albans.jpg" alt="st-albans logo"></li>
+        <li><p>Degree</p>
+        <img src="../luke/pictures/USW.jpg" alt="USW logo"></li>
+        <li><p>External</p><img src="../luke/pictures/nology.png" alt="nology logo"></li>
         </ul>
         </span>
         <span id="ed-box">
@@ -92,63 +95,92 @@
         <li>
         Degree: BA forensic accounting 2:2
         </li>
-
         </ul>
         </span>
+        </div>
+        <div class="aca-con-2">
         <div id="pro-box">
-        <h2>Programming languages </h2>
+        <h2>Programming</h2>
         <ul>
         <li>
             CSS:
+            <div>
+            <i class="fa fa-folder"></i>
             <i class="fa fa-folder"></i>
             <i class="fa fa-folder-o"></i>
             <i class="fa fa-folder-o"></i>
             <i class="fa fa-folder-o"></i>
-            <i class="fa fa-folder-o"></i>
+            </div>
         </li>
         <li>
             HTML:
+            <div>
+            <i class="fa fa-folder"></i>
             <i class="fa fa-folder"></i>
             <i class="fa fa-folder-o"></i>
             <i class="fa fa-folder-o"></i>
             <i class="fa fa-folder-o"></i>
-            <i class="fa fa-folder-o"></i>
+            </div>
         </li>
         <li>
             Javascript:
-            <i class="fa fa-folder-o"></i>
-            <i class="fa fa-folder-o"></i>
-            <i class="fa fa-folder-o"></i>
-            <i class="fa fa-folder-o"></i>
-            <i class="fa fa-folder-o"></i>
-        </li>
-        <li>
-            Python:
+            <div>
             <i class="fa fa-folder"></i>
             <i class="fa fa-folder-o"></i>
             <i class="fa fa-folder-o"></i>
             <i class="fa fa-folder-o"></i>
             <i class="fa fa-folder-o"></i>
+            </div>
+        </li>
+        <li>
+            Python:
+            <div>
+            <i class="fa fa-folder"></i>
+            <i class="fa fa-folder-o"></i>
+            <i class="fa fa-folder-o"></i>
+            <i class="fa fa-folder-o"></i>
+            <i class="fa fa-folder-o"></i>
+            </div>
+        </li>
+        <li>
+            React:
+            <div>
+            <i class="fa fa-folder-o"></i>
+            <i class="fa fa-folder-o"></i>
+            <i class="fa fa-folder-o"></i>
+            <i class="fa fa-folder-o"></i>
+            <i class="fa fa-folder-o"></i>
+            </div>
+        </li>
+        <li>
+            Angiluar:
+            <div>
+            <i class="fa fa-folder-o"></i>
+            <i class="fa fa-folder-o"></i>
+            <i class="fa fa-folder-o"></i>
+            <i class="fa fa-folder-o"></i>
+            <i class="fa fa-folder-o"></i>
+            </div>
         </li>
         </ul>
         </div>
         <span id="aw-box">
         <h2>Awards</h2>
         <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-        <li>5</li>
+        <li>pl</li>
+        <li>ac</li>
+        <li>e h</li>
+        <li>old</li>
+        <li>er</li>
         </ul>
         </span>
+        </div>
         <hr>
-<div>
+        <div>
         <h2 id="work">Past lives</h2>
-
         <div class="timeline">
                 <div>
-                    <div class="one">
+                    <div class="circleOne">
                         <p>
                         <strong>1995</strong>
                         </p>
@@ -160,7 +192,7 @@
                     <div><p>under</p></div>
                 </div>
                 <div>
-                    <div class="two">
+                    <div class="circleTwo">
                         <p></p>
                         <div></div>
                         <p>test 2</p>
@@ -171,7 +203,7 @@
 
                 </div>
                 <div>
-                    <div class="thr">
+                    <div class="circleThr">
                         <p>test 3</p>
                         <div></div>
                     </div>
@@ -180,7 +212,7 @@
                     </span>
                 </div>
                 <div>
-                    <div class="for">
+                    <div class="circleFor">
                         <p>test 4</p>
                     </div>
                     <div>
@@ -191,7 +223,7 @@
                     </span>
                 </div>
                 <div>
-                    <div class="fiv">
+                    <div class="circleFiv">
                         <p>test 5</p>
                     </div>
                     <div>
@@ -209,9 +241,23 @@
     <div class="ref">
         <div class="ref-2">
             <p><strong>Papa John's</strong></p>
+            <ul>
+                <li>Name: Lauren cloud</li>
+                <li>Position: Manager</li>
+                <li>address: </li>
+                <li>telephone: 07478592438</li>
+                <li>Email: l.cloud@pjs.com</li>
+            </ul>
         </div>
         <div class="ref-1">
             <p><strong> IBM</strong></p>
+            <ul>
+                <li>Name: Rob Kewley</li>
+                <li>Poistion: Head Service Delivery Manager</li>
+                <li>Address: </li>
+                <li>Telephone: </li>
+                <li>email:</li>
+            </ul>
         </div>
     </div>
     <hr>
@@ -225,9 +271,9 @@
         </p> 
         </span>
         <div class="map">
-        <iframe src="https://bit.ly/2DcPb9S" style="border:0" allowfullscreen></iframe>   
+        <iframe src="https://bit.ly/2DcPb9S" allowfullscreen></iframe>   
         </div>
-        <footer> &copy;2018 Luke Delaney|<a href="#" class="cv">Download C.V.</a>|</footer>
-</body>
+        <footer> &copy;2018 Luke Delaney&#32;|&#32;<a href="#" class="cv">Download C.V.</a>&#32;|</footer>
+    </body>
 </div>
 </html>
