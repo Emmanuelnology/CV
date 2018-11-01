@@ -17,7 +17,7 @@
      // Optional; add a title and set the width and height of the chart
      var options = 
      {
-         width: 500, 
+         width: 550, 
          height: 400,
          pieHole: 0.4,
          colors: ['#06AED5', '#086788', '#F0C808', '#DD1C1A', '#B1B9BA'],
