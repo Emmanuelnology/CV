@@ -22,6 +22,16 @@ body {
 
 a {
   color: inherit;
+  font-weight: bold;
+}
+
+a:hover {
+  background-color: white;
+  color: #2929a3;
+  border-radius: 2px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0.25em;
 }
 
 h1 {
@@ -64,6 +74,7 @@ nav li {
   display: block;
   padding: 2em 0.5em;
   text-align: left;
+  font-size: 1em;
 }
 
 aside {
@@ -116,4 +127,35 @@ aside div {
 
 .collapsed {
   display: none;
+}
+
+@media only screen and (min-width: 450px) {
+  body {
+    display: grid;
+    grid-template-areas:
+      "nav nav"
+      "aboutme content";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 9fr;
+  }
+
+  h1 {
+    border-radius: 0;
+    text-align: left;
+  }
+
+  #nav-links {
+    display: flex;
+  }
+
+  #nav-links li {
+    float: right;
+    background-color: #2929a3;
+    color: white;
+    margin: 5px 0;
+  }
+
+  aside h2 {
+    border-radius: 0 5px 5px 0;
+  }
 }
