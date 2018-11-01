@@ -1,0 +1,47 @@
+@media only screen and (max-width: 570px) {
+  nav {
+    position: sticky;
+    top: 0;
+  }
+  
+  nav * {
+    box-sizing: border-box;
+    z-index: 1;
+  }
+  
+  nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  nav ul li {
+    justify-content: center;
+    background-color: rgba(2, 110, 131, 0.7);
+    color: white;
+    border: 0;
+    margin: auto;
+    padding: 0;
+    height: 40px;
+    width: 33.333%;
+    text-align: center;
+  }
+  
+  nav ul li:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: rgb(2, 110, 131);
+    cursor: pointer;
+  }
+  
+  nav ul li:active {
+    background-color: rgba(247, 242, 242, 0.7);
+  }
+  
+  nav ul a {
+    padding: 10px;
+    text-decoration: none;
+    color: inherit;
+  }
+}
