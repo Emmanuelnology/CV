@@ -34,6 +34,7 @@ span p {
 }
 
 img {
+  float: left;
   width: 100px;
 }
 
@@ -94,22 +95,11 @@ div ul li {
   text-decoration: none;
 }
 
-.one,
-.two,
-.thr,
-.for {
-  border-bottom: 1px white solid;
-  width: 100%;
-  position: relative;
-  left: 27.5px;
-  z-index: -1;
-}
-
 .timeline {
   display: grid;
   grid-template-areas: "one two thr for fiv";
   grid-auto-columns: auto;
-  right: 20vw;
+  width: 100%;
 }
 
 .timeline span div {
@@ -122,6 +112,17 @@ div ul li {
   position: relative;
   top: -12.5px;
   left: 2%;
+  z-index: -1;
+}
+
+.circleOne,
+.circleTwo,
+.circleThr,
+.circleFor {
+  border-bottom: 1px white solid;
+  width: 100%;
+  position: relative;
+  left: 27.5px;
   z-index: -1;
 }
 
@@ -138,13 +139,15 @@ div ul li {
 }
 
 .ref-1 li,
-.ref-2 li {
+.ref-2 li,
+.aca-con-1 li,
+.aca-con-2 li {
   border: none;
 }
 
 .map {
   overflow: hidden;
-  padding-top: 44%;
+  padding-top: 35%;
   margin: 0 auto;
   position: relative;
 }
@@ -167,11 +170,21 @@ div ul li {
   padding-top: 40px;
 }
 
+.aca-con-1 {
+  display: grid;
+  grid-template-areas: "qual-box ed-box";
+  grid-template-columns: 50% 50%;
+}
+
+.aca-con-2 {
+  display: grid;
+  grid-template-areas: "aw-box pro-box";
+  grid-template-columns: 50% 50%;
+}
+
 #qual-box {
   box-sizing: border-box;
-  width: 50%;
-  height: 50%;
-  float: right;
+  grid-area: qual-box;
 }
 
 #qual-box p {
@@ -186,21 +199,17 @@ div ul li {
 
 #ed-box {
   box-sizing: border-box;
-  width: 50%;
-  height: 50%;
-  float: right;
+  grid-area: ed-box;
+}
+
+#aw-box {
+  box-sizing: border-box;
+  grid-area: aw-box;
 }
 
 #pro-box {
   box-sizing: border-box;
-  width: 50%;
-  height: 50%;
-  float: right;
-}
-
-#pro-box li div {
-  float: right;
-  padding-right: 50%;
+  grid-area: pro-box;
 }
 
 #pro-box li {
@@ -208,10 +217,7 @@ div ul li {
   height: auto;
 }
 
-#aw-box {
-  position: relative;
-  box-sizing: border-box;
-  width: 50%;
-  height: 50%;
-  float: right;
+#pro-box li div {
+  float:  right;
+  padding-right: 50%;
 }
