@@ -1,19 +1,32 @@
+:root {
+  --score-dark: darkblue;
+  --score-med: red;
+  --score-lightest: white;
+  --score-light: blueviolet;
+  --score-darkest: black;
+  --size-smallest: 1px;
+  --size-small: 5px;
+  --size-med: 10px;
+  --size-large: 15px;
+  --size-largest: 24px;
+}
+
 main {
   width: 21em;
 }
 
 h1 {
   margin-top: 0;
-  padding-top: 10px;
+  padding-top: var(--size-med);
 }
 
 article {
-  margin: 15px;
+  margin: var(--size-large);
 }
 
 h2 {
-  font-size: 24px;
-  margin: 4px;
+  font-size: var(--size-largest);
+  margin: var(--size-small);
 }
 
 ul {
@@ -28,8 +41,8 @@ ul {
 }
 
 .not-out {
-  background-color: blueviolet;
-  color: white;
+  background-color: var(--score-light);
+  color: var(--score-lightest);
 }
 
 .blank {
@@ -51,55 +64,55 @@ ul {
 }
 
 .bcdb-cw {
-  background-color: darkblue;
-  color: white;
+  background-color: var(--score-dark);
+  color: var(--score-lightest);
 }
 
 .bcr-cw {
-  background-color: red;
-  color: white;
+  background-color: var(--score-med);
+  color: var(--score-lightest);
 }
 
 .bcw-cdb {
-  background-color: white;
-  color: darkblue;
+  background-color: var(--score-lightest);
+  color: var(--score-dark);
 }
 
 .pb {
-  padding-bottom: 5px;
+  padding-bottom: var(--size-small);
 }
 
 .pt {
-  padding-top: 5px;
+  padding-top: var(--size-small);
 }
 
 .pl,
 .batter li {
-  padding-left: 5px;
+  padding-left: var(--size-small);
 }
 
 .pr {
-  padding-right: 5px;
+  padding-right: var(--size-small);
 }
 
 .mb {
-  margin-bottom: 5px;
+  margin-bottom: var(--size-small);
 }
 
 .bt {
-  border-top: 1px darkblue solid;
+  border-top: var(--size-smallest) var(--score-dark) solid;
 }
 
 .bb {
-  border-bottom: 1px darkblue solid;
+  border-bottom: var(--size-smallest) var(--score-dark) solid;
 }
 
 .br {
-  border-right: 1px darkblue solid;
+  border-right: var(--size-smallest) var(--score-dark) solid;
 }
 
 .bl {
-  border-left: 1px darkblue solid;
+  border-left: var(--size-smallest) var(--score-dark) solid;
 }
 
 .scorecard {
@@ -114,7 +127,7 @@ ul {
 .team {
   margin: 0;
   grid-area: team;
-  border-radius: 5px 5px 0 0;
+  border-radius: var(--size-small) var(--size-small) 0 0;
 }
 
 .batter {
@@ -141,13 +154,13 @@ ul {
 .total {
   grid-area: total;
   text-align: left;
-  border-radius: 0 0 0 5px;
+  border-radius: 0 0 0 var(--size-small);
 }
 
 .final {
   grid-area: final;
   text-align: right;
-  border-radius: 0 0 5px 0;
+  border-radius: 0 0 var(--size-small) 0;
 }
 
 .ex-score {

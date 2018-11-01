@@ -38,6 +38,12 @@ img {
   width: 100px;
 }
 
+span img {
+  border: 1px white solid;
+  position: relative;
+  bottom: 25px;
+}
+
 li {
   padding-bottom: 10px;
 }
@@ -218,6 +224,6 @@ div ul li {
 }
 
 #pro-box li div {
-  float:  right;
+  float: right;
   padding-right: 50%;
 }

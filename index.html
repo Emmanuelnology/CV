@@ -3,38 +3,134 @@
     <head>
         <title>Home</title>
         <style>
-            p{
-                padding:9px;
-                border: 1px #ccc solid;
-                margin: 10px;
-                width: 30%;
-                float:left;
-                text-align:center;
+            * {
+                box-sizing: border-box;
+            }
+         
+
+    body {
+        margin: 0;
+        
+    }
+
+    main {
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        height:100vh;
+    }
+            main>div {
+                margin:0;
+                padding:0;
+                height:100%;
+                background-image:url("http://www.placekitten.com/600/600");
+                background-size:cover;
+                background-repeat:no-repeat;
+                color:rgba(255,255,255,0.5);
+                display:flex;
+                align-items: center;
+                justify-content: center;
+                font-weight:800;
+                font-size: 20px;
+                position:relative;
             }
 
-            img {
-                height:5em;
+            main>div a {
+                z-index:1;
+                color:inherit;
+                text-decoration: none;
+            }
+
+            main>div:hover .darken {
+                display:none;
+            }
+
+            main>div a:hover {
+                color:white;
+            }
+            .darken {
+                position:absolute;
+                left:0;
+                right:0;
+                top:0;
+                bottom:0;
+                background-color:rgba(0,0,0,0.5);
+            }
+
+            #kieran {
+                background-image: url('app/avatars/kieran.jpg');
             }
         </style>
     </head>
     <body>
         <main>
+            <div id="akash">
+                <div class="darken"></div>
+                <a href="/app/akash/">Kash</a>
+            </div>
+            <div id="ben">
+                <div class="darken"> </div>
+                <a href="/app/ben/">Ben</a>
 
+            </div>
+            <div id="caitlin">
+                <div class="darken"></div>
+                Caitlin
+            </div>
+            <div id="clare">
+                <div class="darken">
+
+                </div>
+                Clare
+            </div>
+            <div id="george">
+                <div class="darken">
+
+                </div>
+                George
+            </div>
+            <div id="georgina">
+                <div class="darken">
+
+                </div>
+                Georgina
+            </div>
+            <div id="josh">
+                <div class="darken">
+
+                </div>
+                Josh
+            </div>
+            <div id="kasongo">
+                <div class="darken">
+
+                </div>
+                Kasongo
+            </div>
+            <div id="kieran">
+                <div class="darken">
+
+                </div>
+                Kieran
+            </div>
+            <div id="luke">
+                <div class="darken">
+
+                </div>
+                Luke
+            </div>
+            <div id="satyam">
+                <div class="darken">
+
+                </div>
+                Satyam
+            </div>
+            <div id="shea">
+                <div class="darken">
+
+                </div>
+                Shea
+            </div>
         </main>
-        <p><a href="app/satyam/" >Satyam Gehani</a></p>
-        <p><a href="app/clare/" >Clare</a></p>    
-        <p><a href="app/luke/">Luke Delaney</a></p>
-        <p><a href="app/caitlin/" >Caitlin Whiteley</a></p>
-        <p><a href="app/akash/">Akash Mair</a></p>
-        <p> <a href="app/kieran/" ><img src="app/avatars/kieran.jpg" alt="The Real Kieran" >
-           </a></p>
-        <p><a href="app/george/" >George Webster</a></p>
-        <p><a href="app/josh/" >Josh Boyd-Cox</a></p>
-        <p><a href="app/ben/" > Ben Tomaney</a></p>
-        <p><a href="app/shea/" >Shea Murphy</a></p>
-        <p><a href="app/kasongo/" >Shutsha Kasongo</a></p>
-        <p><a href="app/georgina/main/">Georgina Ryder</a></p>
-        <p><a href="app/craig/center-demo.html" >Craig Livings</a></p>
-
+       
     </body>
 </html>
