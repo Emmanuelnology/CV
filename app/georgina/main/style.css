@@ -150,12 +150,15 @@ header h3 {
 
 .hobbies {
   padding: 5px;
+  text-align: center;
 }
 
 .trav-img{
   width: 20%;
   flex: 1;
   margin-top: 0;
+  border-radius: 10px;
+  padding: 5px;
 }
 
 .trav-div{
