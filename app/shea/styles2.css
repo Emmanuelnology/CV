@@ -115,6 +115,7 @@ aside div {
   border-radius: 10px;
   text-align: center;
   background-color: rgba(255, 255, 255, 1);
+  z-index: 3;
 }
 
 #blocker {
@@ -125,6 +126,11 @@ aside div {
   right: 0;
   display: none;
   background-color: rgba(255, 255, 255, 0.5);
+  z-index: 2;
+}
+
+.js-modal-close {
+  padding: 0;
 }
 
 .smaller-text {
@@ -165,6 +171,7 @@ aside div {
   background-color: #fff;
   opacity: 0.5;
   height: 45vh;
+  border-radius: 5px;
 }
 
 .content:hover {
