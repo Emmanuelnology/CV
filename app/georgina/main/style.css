@@ -1,4 +1,5 @@
 
+/* #06aed5, #086788, #f0c808, #dd1c1a, #b1b9ba*/
 * {
   box-sizing: border-box;
 }
@@ -48,7 +49,7 @@ nav li {
 
 main {
   display: none;
-  background-color: rgb(225, 225, 225, 0.95);
+  background-color: rgba(225, 225, 225, 0.95);
   grid-area: content;
   position: absolute;
   width: 100%;
@@ -128,16 +129,6 @@ header h3 {
   color: red;
 }
 
-footer {
-  font-size: small;
-  text-align: center;
-  font-family: 'Fauna One', serif;
-}
-
-.copyright {
-  height: 2px;
-}
-
 .skills-panel h2 {
   text-transform: uppercase;
   margin-top: 5px;
@@ -187,10 +178,6 @@ footer {
   color: red;
 }
 
-.copyright {
-  height: 2px;
-}
-
 .skills-panel h2 {
   text-transform: uppercase;
   margin-top: 5px;
@@ -237,22 +224,22 @@ nav ul {
 }
 
 #gee {
-  display: block;
   margin: 0 auto;
+  display: block;
 }
 
 .rollover {
   height: 50px;
   width: 100%;
-
+  
   /* Reposition the div relative to Gee */
   position: absolute;
-
+  
   /* formatting */
-  color: black;
+  color: white;
   font-size: large;
   font-weight: bold;
-
+  
   /* Center the text in the div */
   display: flex;
   align-items: center;
@@ -261,26 +248,56 @@ nav ul {
 
 .rollover:hover {
   cursor: pointer;
-
+  background-color: rgba(6,174,213,0.3);
+  
   /* Show the brain on hover as a background image */
-
+  
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.rollover > * {
+.rollover a {
   /* By default, set all children of brain to invisible */
   display: none;
 }
 
-.rollover:hover > * {
+.rollover:hover  a {
   /* On hover, set all content of brain to visible */
   display: inline-block;
 }
 
+#phone-div{
+  position: absolute;
+  top:420px;
+  height:50px;
+  display:flex;
+  width:100%;
+}
+
+#phone-div>div {
+  flex:1;
+  position:relative;
+  width:50%;
+}
+
+#phone {
+  text-align:right;
+  padding-right:20px;
+}
+
+#plane {
+  text-align:left;
+  padding-left:20px;
+}
+
+#phone-div a {
+  width: 100%;
+}
+
+
 #brain {
-  top: 60px;
+  top: 60px;                                   
 }
 
 #brain:hover {
@@ -304,38 +321,9 @@ nav ul {
 #heart:hover {
   background-image: url('heart.png');
   position: fixed;
-  position: absolute;
+  position: absolute;+
 }
 
-#phone {
-  top: 420px;
-  width: 250px;
-}
-
-#phone:hover {
-  background-image: url('phone.png');
-  position: fixed;
-  position: absolute;
-}
-
-#plane {
-  top: 420px;
-  width: 200px;
-  position: absolute;
-  right: 10px;
-}
-
-#plane:hover {
-  background-image: url('plane.png');
-  position: fixed;
-  position: absolute;
-}
-
-.chart {
-  display: block;
-  float: right;
-  margin: 0;
-}
 
 #doing {
   font-size: 18px;
@@ -352,15 +340,14 @@ section {
 
 @media only screen and (min-width: 500px) {
   main {
-    display: block;
     position: relative;
     background-color: white;
   }
-
+  
   #closebutton {
     display: none;
   }
-
+  
   body {
     grid-template-areas: 
     "me content"
