@@ -75,7 +75,7 @@ body {
   margin-bottom: 40%;
 }
 
-.years > div::after {
+/* .years > div::after {
   content: " ";
   width: 1em;
   height: 1em;
@@ -85,7 +85,7 @@ body {
   background-color: white;
   top: 1em;
   left: -0.7em;
-}
+} */
 
 #edu-grid {
   display: grid;
@@ -95,6 +95,7 @@ body {
   grid-template-columns: 1fr 25px 10px 45px;
   grid-gap: 5px;
   grid-area: edu-side;
+  grid-auto-rows: 7em 1fr;
 }
 
 #work-grid {
@@ -106,6 +107,8 @@ body {
   grid-template-columns: 45px 10px 25px 1fr;
   grid-gap: 5px;
   grid-area: work-side;
+  grid-auto-rows: 7em 1fr;
+  grid-auto-columns: 0 10px 25px 1fr;
 }
 
 #col3 hr,
@@ -209,6 +212,14 @@ li {
 }
 
 @media only screen and (min-width: 500px) {
+  #work-grid {
+    margin-left: -25px;
+  }
+
+  #edu-grid {
+    margin-right: -25px;
+  }
+
   #education-section {
     margin: 0;
     display: grid;
@@ -217,9 +228,10 @@ li {
       "edu-side work-side";
     grid-template-columns: 1fr 1fr;
     grid-gap: 5px;
+    padding: auto 25px;
   }
 
-  /* #education-section h2 {
-    visibility: hidden;
-  } */
+  #work-grid .years {
+    display: none;
+  }
 }

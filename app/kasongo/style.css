@@ -158,8 +158,15 @@ h2 {
   text-align: center;
 }
 
-.contacting {
-  margin-left: 1em;
+/* About me and map and photo flex */
+.carnet {
+  display: flex;
+  flex: 1;
+}
+
+.map {
+  display: flex;
+  flex: 1;
 }
 
 /* Photo modification */
@@ -167,8 +174,8 @@ h2 {
   float: right;
   border: solid #00008b;
   border-width: 5px;
-  margin-right: 7em;
-  margin-top: 7em;
+  display: flex;
+  flex: 1;
 }
 
 .border {
@@ -185,18 +192,16 @@ h2 {
 
 /* Contact info with font awesome and opacity box */
 .myinfo {
-  margin-right: 12em;
-  margin-left: 12em;
+  display: flex;
+  flex: 3;
   background-color: #add8e6;
   border: 1px solid black;
   opacity: 0.6;
   filter: alpha(opacity=40);
-  padding-right: 1px;
   font-size: 26px;
 }
 
 .myinfo li {
-  margin-left: 1px;
   font-weight: bold;
   color: #000;
 }
@@ -256,6 +261,10 @@ input {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+input:focus {
+  background-color: lightgreen;
 }
 
 #name #firstname #email {
