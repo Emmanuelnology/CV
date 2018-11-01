@@ -115,8 +115,8 @@ li > div {
 }
 
 li > img {
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   border-radius: 10px;
 }
 
@@ -213,6 +213,12 @@ li {
     flex-direction: row;
   }
 
+  li > img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+  }
+
   /* .media-box {
     min-width: 0;
     margin: -10px;
@@ -284,6 +290,12 @@ li {
 
   .title {
     font-size: 3em;
+  }
+
+  li > img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
   }
 
   ul {
