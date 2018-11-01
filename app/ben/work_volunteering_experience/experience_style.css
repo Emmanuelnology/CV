@@ -6,14 +6,73 @@ ul {
   list-style: none;
 }
 
+#svg-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #bowling {
   width: 800px;
   height: 800px;
   transform: scale(0.7);
 }
 
-#svg-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+svg text {
+  font-size: 20px;
+  font-weight: 100;
+  text-anchor: left;
+}
+
+stop {
+  stop-opacity: 0.8;
+}
+
+.str {
+  stroke-width: 0.1;
+}
+
+.wickets {
+  fill: white;
+  stroke: grey;
+}
+
+.crease {
+  stroke: white;
+  stroke-width: 0.7;
+}
+
+.beavers {
+  stroke: lightblue;
+  fill: lightblue;
+}
+
+.ribbon {
+  stroke: salmon;
+  fill: salmon;
+}
+
+.tti {
+  stroke: darkblue;
+  fill: darkblue;
+}
+
+.gift-shop {
+  stroke: green;
+  fill: green;
+}
+
+.teaching {
+  stroke: yellow;
+  fill: yellow;
+}
+
+.huboo {
+  stroke: orangered;
+  fill: orangered;
+}
+
+#key-container {
+  width: 230px;
+  height: 490px;
 }
