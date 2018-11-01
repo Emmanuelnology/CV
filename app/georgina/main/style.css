@@ -1,4 +1,6 @@
 
+/* #06aed5, #086788, #f0c808, #dd1c1a, #b1b9ba */
+
 * {
   box-sizing: border-box;
 }
@@ -19,7 +21,7 @@ a:visited {
 
 body {
   margin: 0;
-  font-family: 'Encode Sans', sans-serif;
+  font-family: 'Fauna One', serif;
   display: grid;
   grid-template-areas: "me";
   grid-template-columns: 1fr;
@@ -38,6 +40,24 @@ nav ul {
   display: flex;
 }
 
+#navtext {
+  color: black;
+  font-family: 'Fauna One', serif;
+  position: absolute;
+  font-size: 15px;
+  top: 550px;
+  padding-left: 15px;
+}
+
+#gryder {
+  color: black;
+  font-family: 'Pacifico', cursive;
+  font-size: 30px;
+  position: absolute;
+  top: 500px;
+  padding-left: 35px;
+}
+
 nav li {
   flex-grow: 1;
   text-align: center;
@@ -48,7 +68,7 @@ nav li {
 
 main {
   display: none;
-  background-color: rgb(225, 225, 225, 0.95);
+  background-color: rgba(225, 225, 225, 0.95);
   grid-area: content;
   position: absolute;
   width: 100%;
@@ -98,20 +118,25 @@ header h3 {
 
 .info {
   font-size: 30px;
+  margin-top: 100px;
   margin-bottom: 3px;
   color: black;
   width: 60%;
+  background-color: #dd1c1a;
+  padding: 15px;
+  border-radius: 10px;
 }
 
 .info li:hover {
-  border-radius: 5px;
-  background-color: #f0c808;
+  border-radius: 10px;
+  background-color: rgba(138, 17, 17, 0.5);
 }
 
 .info li {
   margin: 20px 0;
   font-family: 'Fauna One', serif;
   font-size: 18px;
+  color: white;
 }
 
 .info i {
@@ -126,16 +151,6 @@ header h3 {
 
 .career {
   color: red;
-}
-
-footer {
-  font-size: small;
-  text-align: center;
-  font-family: 'Fauna One', serif;
-}
-
-.copyright {
-  height: 2px;
 }
 
 .skills-panel h2 {
@@ -168,9 +183,10 @@ footer {
 
 .me {
   font-family: 'Fauna One', serif;
-  margin: 0;
-  padding: 0;
+  position: relative;
   text-align: center;
+  margin-top: 10px;
+  padding: 20px;
 }
 
 .need {
@@ -178,17 +194,14 @@ footer {
 }
 
 .life-icons {
+  padding: 10px;
   font-size: 50px;
   text-align: center;
   color: #e34543;
 }
 
 .career {
-  color: red;
-}
-
-.copyright {
-  height: 2px;
+  color: #e34543;
 }
 
 .skills-panel h2 {
@@ -230,46 +243,42 @@ nav ul {
   top: 0;
 }
 
+.qualifications > li {
+  padding: 5px 5px;
+  margin-top: 5px;
+  text-align: left;
+}
+
 #gee {
-  display: block;
   margin: 0 auto;
+  display: block;
 }
 
 .rollover {
   height: 50px;
   width: 100%;
-
-  /* Reposition the div relative to Gee */
   position: absolute;
-
-  /* formatting */
-  color: black;
+  color: white;
   font-size: large;
   font-weight: bold;
-
-  /* Center the text in the div */
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.rollover:hover {
-  cursor: pointer;
-
-  /* Show the brain on hover as a background image */
-
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.rollover > * {
-  /* By default, set all children of brain to invisible */
+.rollover:hover {
+  cursor: pointer;
+  background-color: rgba(6, 174, 213, 0.3);
+}
+
+.rollover a {
   display: none;
 }
 
-.rollover:hover > * {
-  /* On hover, set all content of brain to visible */
+.rollover:hover a {
   display: inline-block;
 }
 
@@ -301,38 +310,46 @@ nav ul {
   position: absolute;
 }
 
-#phone {
+#hands-div a {
+  width: 100%;
+}
+
+#hands-div {
+  position: absolute;
   top: 420px;
-  width: 250px;
+  height: 50px;
+  display: flex;
+  width: 100%;
+}
+
+#hands-div > div {
+  flex: 1;
+  position: relative;
+  width: 50%;
+}
+
+#phone {
+  text-align: right;
+  padding-right: 20px;
+}
+
+#phone a:hover {
+  padding: 0;
 }
 
 #phone:hover {
   background-image: url('phone.png');
-  position: fixed;
-  position: absolute;
 }
 
 #plane {
-  top: 420px;
-  width: 250px;
-  position: absolute;
-  right: 10px;
-}
-
-#plane:hover {
+  text-align: left;
+  padding-left: 20px;
   background-image: url('plane.png');
-  position: fixed;
-  position: absolute;
-}
-
-.chart {
-  display: block;
-  float: right;
-  margin: 0;
 }
 
 #doing {
   font-size: 18px;
+  padding-top: 20px;
 }
 
 section {
@@ -346,7 +363,6 @@ section {
 
 @media only screen and (min-width: 500px) {
   main {
-    display: block;
     position: relative;
     background-color: white;
   }
@@ -356,7 +372,7 @@ section {
   }
 
   body {
-    grid-template-areas: "me content";
+    grid-template-areas: "me content""me footer";
     grid-template-columns: 1fr 2fr;
   }
 }
