@@ -47,7 +47,6 @@ nav ul {
   font-size: 15px;
   top: 550px;
   padding-left: 15px;
-  
 }
 
 #gryder {
@@ -119,20 +118,25 @@ header h3 {
 
 .info {
   font-size: 30px;
+  margin-top: 100px;
   margin-bottom: 3px;
   color: black;
   width: 60%;
+  background-color: #dd1c1a;
+  padding: 15px;
+  border-radius: 10px;
 }
 
 .info li:hover {
-  border-radius: 5px;
-  background-color: #f0c808;
+  border-radius: 10px;
+  background-color: rgba(138, 17, 17, 0.5);
 }
 
 .info li {
   margin: 20px 0;
   font-family: 'Fauna One', serif;
   font-size: 18px;
+  color: white;
 }
 
 .info i {
@@ -260,26 +264,26 @@ nav ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .rollover:hover {
   cursor: pointer;
   background-color: rgba(6, 174, 213, 0.3);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .rollover a {
   display: none;
 }
 
-.rollover:hover  a {
+.rollover:hover a {
   display: inline-block;
 }
 
 #brain {
-  top: 60px;                                   
+  top: 60px;
 }
 
 #brain:hover {
@@ -327,6 +331,14 @@ nav ul {
 #phone {
   text-align: right;
   padding-right: 20px;
+}
+
+#phone a:hover {
+  padding: 0;
+}
+
+#phone:hover {
+  background-image: url('phone.png');
 }
 
 #plane {
