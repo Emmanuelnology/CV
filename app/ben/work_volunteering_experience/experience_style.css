@@ -8,7 +8,6 @@ ul {
 
 #svg-container {
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
@@ -75,4 +74,43 @@ stop {
 #key-container {
   width: 230px;
   height: 490px;
+  fill: white;
+  stroke: darkgreen;
+  stroke-width: 1px;
+}
+
+.first {
+  stop-color:rgb(221,250,170)
+}
+
+
+.second {
+  stop-color: rgb(198,247,82)
+}
+
+.third {
+  stop-color: rgb(166,241,112)
+}
+
+.fourth {
+  stop-color: rgb(144,239,140)
+}
+
+.fifth {stop-color: rgb(132,214,134)
+}
+
+.sixth {
+  stop-color: rgb(103,158,132)
+}
+
+.seventh {
+  stop-color: rgb(86,125,127)
+}
+
+.eighth {
+  stop-color: rgb(70,95,120)
+}
+
+.ninth {
+  stop-color: rgb(60,74,115)
 }
