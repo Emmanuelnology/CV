@@ -68,7 +68,7 @@ div.rightpara {
     z-index: 1;
     position: relative;
   }
-  
+
   main {
     display: grid;
     grid-gap: 40px;
