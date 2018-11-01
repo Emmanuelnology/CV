@@ -39,6 +39,7 @@ a:hover {
 h1 {
   border-radius: 0 5px 5px 0;
   padding: 0.6em;
+  text-align: left;
 }
 
 h1,
@@ -69,7 +70,6 @@ nav {
   flex-direction: column;
   justify-content: flex-start;
   grid-area: nav;
-  padding: 0.2em;
 }
 
 nav li {
@@ -185,6 +185,27 @@ aside div {
   opacity: 1;
 }
 
+#infolist {
+  padding: 20% 0;
+}
+
+#infolist li {
+  padding: 1% 0;
+  font-size: 1.5em;
+}
+
+#infolist a {
+  font-weight: normal;
+}
+
+#infolist a:hover {
+  font-weight: bold;
+}
+
+.contact-button {
+  font-size: 2em;
+}
+
 .content h3 {
   margin: 2.5% 0;
 }
@@ -212,8 +233,14 @@ aside div {
     padding-left: 5px;
   }
 
+  h1 > a {
+    padding-bottom: 0;
+  }
+
   h2 {
     height: 10vh;
+    margin-bottom: 2vh;
+    padding-top: 0;
   }
 
   nav {
@@ -249,6 +276,7 @@ aside div {
 
   #about-content {
     font-size: 0.75em;
+    text-align: center;
   }
 
   .smaller-text {
@@ -275,12 +303,20 @@ aside div {
     height: 70%;
   }
 
+  .content-link {
+    background-color: black;
+  }
+
   #contact {
     height: 70%;
   }
 
-  .content-link {
-    background-color: black;
+  #infolist {
+    padding: 5% 0;
+  }
+
+  #infolist {
+    font-size: 0.75em;
   }
 
   .active {
@@ -288,7 +324,15 @@ aside div {
     color: black;
   }
 
-  #about-content {
-    text-align: center;
+  h3 {
+    font-size: 0.75em;
+  }
+
+  .collapsed {
+    font-size: 0.75em;
+  }
+
+  .award-def {
+    padding: 0 2vw;
   }
 }
