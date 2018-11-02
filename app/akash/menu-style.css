@@ -17,11 +17,38 @@ body {
 .modal {
   position: absolute;
   top: 20%;
-  bottom: 40%;
+  bottom: 50%;
   left: 20%;
   right: 20%;
   background-color: white;
   z-index: 3;
+  border-radius: 20px;
+  border: 5px solid rgb(157, 224, 180);
+  font-family: 'Montserrat';
+  padding: 20px;
+  text-align: center;
+}
+
+.modal h3 {
+  font-size: 1em;
+  margin-top: 0;
+}
+
+.modal div {
+  font-size: 0.75em;
+}
+
+.modal li {
+  font-size: 0.5em;
+  margin: 0;
+}
+
+.fas.fa-times {
+  position: absolute;
+  right: 0;
+  padding-right: 5px;
+  font-size: 1em;
+  color: rgb(212, 0, 0);
 }
 
 #blocker {
@@ -398,5 +425,33 @@ li > div {
     font-size: 3em;
     display: flex;
     flex-direction: row;
+  }
+
+  .modal {
+    position: absolute;
+    top: 20%;
+    bottom: 40%;
+    left: 30%;
+    right: 30%;
+    background-color: white;
+    z-index: 3;
+    border-radius: 20px;
+    border: 5px solid rgb(157, 224, 180);
+    font-family: 'Montserrat';
+    padding: 20px;
+    text-align: center;
+  }
+
+  .modal h3 {
+    font-size: 2em;
+    margin-top: 0;
+  }
+
+  .modal li {
+    font-size: 0.5em;
+  }
+
+  .fas.fa-times {
+    font-size: 1.5em;
   }
 }
