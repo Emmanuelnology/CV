@@ -111,14 +111,24 @@ nav > a:hover {
   opacity: 0.6;
 }
 
-.about-me-display {
-  padding: 50px 10%;
+#about-me > div {
+  padding: 30px 10%;
   margin: 0;
   text-align: justify;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+#about-me > div > div {
+  padding: 8%;
+  text-align: justify;
+}
+
+.photo-button {
+  background-color: transparent;
+  border: none;
 }
 
 #about-me img {
@@ -139,13 +149,13 @@ nav > a:hover {
 }
 
 #modal {
-  background-color:red;
-  display:none;
-  position:fixed;
-  left:10%;
-  width:80%;
-  top:10%;
-  height:80%;
+  background-color: red;
+  display: none;
+  position: fixed;
+  left: 10%;
+  width: 80%;
+  top: 10%;
+  height: 80%;
   border-radius: 10px;
   padding: 15px;
   border: 1px solid #111;
@@ -288,25 +298,7 @@ footer {
   }
 
   #about-me > div {
-    padding: 50px 5%;
-    margin: 0;
-    text-align: justify;
-    display: flex;
-    flex-direction: row;
-  }
-
-  #about-me > div > div {
-    padding: 0 5%;
-    margin: 0;
-  }
-
-  #about-me img {
-    width: 250px;
-    height: 250px;
-  }
-
-  #about-me > div {
-    padding: 50px 5%;
+    padding: 30px 5%;
     margin: 0;
     text-align: justify;
     display: flex;
