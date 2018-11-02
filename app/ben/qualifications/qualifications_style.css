@@ -1,3 +1,61 @@
+h2 {
+  font-size: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+.blank {
+  color: transparent;
+}
+
+.board-border {
+  width: 29em;
+  margin: 20px auto;
+  padding: 0.3em;
+  border: solid 2px rgb(110, 60, 45);
+  background-image: url('wood.png');
+}
+
+.hons-board {
+  border: solid 2px rgb(186, 102, 76);
+  color: rgb(110, 60, 45);
+  padding: 1em;
+  margin: 0 auto;
+  width: 28em;
+  display: grid;
+  grid-template-areas: "place place place" "year award grade";
+  grid-template-columns: 5em 18.5em 5em;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.hons-board div {
+  font-size: 12px;
+}
+
+.place {
+  grid-area: place;
+  margin: 0.4em 0.2em 1.2em 0.2em;
+}
+
+.year {
+  grid-area: year;
+}
+
+.award {
+  grid-area: award;
+}
+
+.award li {
+  text-align: left;
+}
+
+.grade {
+  grid-area: grade;
+}
+
 :root {
   --score-dark: darkblue;
   --score-med: red;
@@ -9,192 +67,4 @@
   --size-med: 10px;
   --size-large: 15px;
   --size-largest: 24px;
-}
-
-main {
-  width: 21em;
-}
-
-h1 {
-  margin-top: 0;
-  padding-top: var(--size-med);
-}
-
-article {
-  margin: var(--size-large);
-}
-
-h2 {
-  font-size: var(--size-largest);
-  margin: var(--size-small);
-}
-
-ul {
-  list-style: none;
-}
-
-.innings {
-  font-size: 16px;
-  font-style: italic;
-  font-weight: 800;
-  display: block;
-}
-
-.not-out {
-  background-color: var(--score-light);
-  color: var(--score-lightest);
-}
-
-.blank {
-  color: transparent;
-}
-
-.thick {
-  font-weight: 600;
-}
-
-.thin,
-.changes {
-  font-weight: 100;
-  text-align: left;
-}
-
-.appears {
-  display: none;
-}
-
-.bcdb-cw {
-  background-color: var(--score-dark);
-  color: var(--score-lightest);
-}
-
-.bcr-cw {
-  background-color: var(--score-med);
-  color: var(--score-lightest);
-}
-
-.bcw-cdb {
-  background-color: var(--score-lightest);
-  color: var(--score-dark);
-}
-
-.pb {
-  padding-bottom: var(--size-small);
-}
-
-.pt {
-  padding-top: var(--size-small);
-}
-
-.pl,
-.batter li {
-  padding-left: var(--size-small);
-}
-
-.pr {
-  padding-right: var(--size-small);
-}
-
-.mb {
-  margin-bottom: var(--size-small);
-}
-
-.bt {
-  border-top: var(--size-smallest) var(--score-dark) solid;
-}
-
-.bb {
-  border-bottom: var(--size-smallest) var(--score-dark) solid;
-}
-
-.br {
-  border-right: var(--size-smallest) var(--score-dark) solid;
-}
-
-.bl {
-  border-left: var(--size-smallest) var(--score-dark) solid;
-}
-
-.scorecard {
-  margin: 0 auto;
-  width: 18.5em;
-  display: grid;
-  grid-template-areas: "team team team" "batter batter score" "extras extras ex-score" "total final final";
-  grid-template-columns: 11.5em 2.5em 4.5em;
-  justify-content: center;
-}
-
-.team {
-  margin: 0;
-  grid-area: team;
-  border-radius: var(--size-small) var(--size-small) 0 0;
-}
-
-.batter {
-  grid-area: batter;
-}
-
-.caught {
-  grid-area: caught;
-}
-
-.bowled {
-  grid-area: bowled;
-}
-
-.score {
-  grid-area: score;
-}
-
-.extras {
-  grid-area: extras;
-  text-align: left;
-}
-
-.total {
-  grid-area: total;
-  text-align: left;
-  border-radius: 0 0 0 var(--size-small);
-}
-
-.final {
-  grid-area: final;
-  text-align: right;
-  border-radius: 0 0 var(--size-small) 0;
-}
-
-.ex-score {
-  grid-area: ex-score;
-}
-
-.scorecard li {
-  text-align: left;
-}
-
-.ex-score,
-.score li {
-  text-align: center;
-}
-
-@media only screen and (min-width: 600px) {
-  main {
-    width: 35em;
-  }
-
-  .appears {
-    display: initial;
-  }
-
-  .changes {
-    font-weight: 600;
-  }
-
-  .scorecard {
-    margin: 0 auto;
-    width: 29em;
-    display: grid;
-    grid-template-areas: "team team team team" "batter caught bowled score" "extras extras extras ex-score" "total total final final";
-    grid-template-columns: 12em 6.5em 6em 4.5em;
-    justify-content: center;
-  }
 }
