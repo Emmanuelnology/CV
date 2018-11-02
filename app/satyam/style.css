@@ -85,7 +85,7 @@ p {
   font-size: 0.85em;
   line-height: 1.5;
   padding: 1% 3% 3%;
-  background-color: #fff;/* position: fixed; */
+  background-color: #fff;
   bottom: 0;
   left: 0;
   right: 0;
@@ -144,18 +144,12 @@ p {
   border: 1px solid #fff;
 }
 
-#contactinfo {
-  /* display: none; */
-  /* background-color: #000; */
-}
-
 .highlight {
   background: yellow;
 }
 
 .hide {
   display: none;
-  /* background-color: red; */
 }
 
 #socialmedia {
@@ -197,12 +191,6 @@ p {
 .leftarrow {
   font-size: 3em;
 }
-
-/* @media only screen and (min-width: 400px) {
-  #infopanel {
-    background-color: red;
-  }
-} */
 
 @media only screen and (min-width: 700px) {
   #infopanel {
