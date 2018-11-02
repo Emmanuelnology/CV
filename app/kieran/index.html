@@ -5,160 +5,38 @@
     <link href="https://fonts.googleapis.com/css?family=Bitter|Crimson+Text|Nunito|Permanent+Marker|Pontano+Sans" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="genstylepractise2.css">
     <link rel="stylesheet" type="text/css" href="indexcss.css">
-    <title>Kieran Taylor CV About Me</title>
-    
+    <title>Kieran Taylor Intro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-        
 
+<body>
+    <button class="js-modal-open">Hi</button>
     
-    <body>
-        <header>
-            <h1>
-                <div>
-                    <i class="fa fa-key" aria-hidden="true"></i><span>Kieran Taylor</span>
-                </div>
-            </h1>
-        </header>
-        
-        
-        
-        <nav>
-            <!-- <div class="brand">
-                <span class="bold"><a href="/index.html">Home</a></span>
-            </div> -->
-            
-            
-            <ul>
-                <li class="aboutmelabel"><div class="labelwrite aboutmee"><a href="index.html">About&nbsp;Me</a></div></li>
-                <li class="worklabel"><div class="labelwrite"><a href="work.html">Education</a></div></li>
-                <li class="projectslabel"><div class="labelwrite"><a href="projects.html">projects</a></div> </li>
-                <li class="nowlabel"><div class="labelwrite"><a href="now.html">Now</a></div> </li>            
-                <li class="contactlabel"><div class="labelwrite"><a href="contact.html">Contact&nbsp;Me</a></div> </li>
-            </ul>
-        </nav>
-        
-        <main>
-            <div class="left">
-                <p class="leftpara">I recently graduated from <strong>Swansea University</strong> 
-                with first-class honours in physics, and I'm currently partaking in the <strong>_nology</strong>
-                tech conversion scheme. I have excellent written and verbal
-                communication skills, while being well disposed to everyone I work with. I have
-                a remarkable determination to complete any
-                task I am given or goal I set myself, as I passionately hate leaving things unfinished.
-                I am methodical in my work and crave a full
-                understanding of the subject at hand.</p>  
-                </div>
-                <div class="mid">
-                    <h2>Interests</h2>
-                    <ul class="icons">
-                        <li class="icon">
-                            <i class="fa fa-plane" aria-hidden="true"></i>
-                            <span>Travelling</span>
-                        </li>
-                        <li class="icon">
-                            <i class="fa fa-futbol-o" aria-hidden="true"></i>
-                            <span>Sports</span>
-                        </li>
-                        <li class="icon"><i class="fa fa-handshake-o" aria-hidden="true"></i>
-                            <span>Meeting People</span>
-                        </li>
-                        <li class="icon">
-                            <i class="fa fa-beer" aria-hidden="true"></i>
-                            <span>Socialising</span>
-                        </li>
-                        <li class="icon">
-                            <i class="fa fa-sun-o" aria-hidden="true"></i>
-                            <span>Sunny Days</span>
-                        </li>
-                        <li class="icon">
-                            <i class="fa fa-star-o" aria-hidden="true"></i>
-                            <span>Star Gazing</span>
-                        </li>
-                        <li class="icon">
-                            <i class="fa fa-headphones" aria-hidden="true"></i>
-                            <span>Music</span>
-                        </li>
-                        <li class="icon">
-                            <i class="fa fa-paw" aria-hidden="true"></i>
-                            <span>Animals</span>
-                        </li>
+    <a href="aboutme.html" class="js-modal">
+        <p class="hiintro">Hi,</p>
+        <p class="nameintro">I'm Kieran.</p>
+    </a>
+    
+    
+    
+    
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+    
+$('.js-modal-open').click(function(){
+    $('button.js-modal-open').hide();
+    $('body').css('overflow', 'auto');
 
-                        <li class="icon">
-                            <i class="fa fa-code" aria-hidden="true"></i>
-                            <span>Coding</span>
-                        </li>
-                    </ul>
+});
 
-                </div>
-                <div class="right">
-                    <h2>Skills</h2>
-                    <div class="skills-panel">
-                        <ul class="skillslist">
-                            <li>Python
-                                <div class="score">
-                                    <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-                                    <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-                                    <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-                                    <i class="fa fa-circle-o" aria-hidden="true"></i>
-                                    <i class="fa fa-circle-o" aria-hidden="true"></i>
-                                </div>
-                            </li>
-                            <li>SQL
-                                <div class="score">
-                                    <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-                                    <i class="fa fa-circle-o" aria-hidden="true"></i>
-                                    <i class="fa fa-circle-o" aria-hidden="true"></i>
-                                    <i class="fa fa-circle-o" aria-hidden="true"></i>
-                                    <i class="fa fa-circle-o" aria-hidden="true"></i>
-                                </div>
-                            </li>
-                            <li>HTML
-                                <div class="score">
-                                    <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-                                    <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-                                    <i class="fa fa-circle-o" aria-hidden="true"></i>
-                                    <i class="fa fa-circle-o" aria-hidden="true"></i>
-                                    <i class="fa fa-circle-o" aria-hidden="true"></i>
-                                </div>
-                            </li>
-                            <li>JavaScript
-                                <div class="score">
-                                    <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-                                    <i class="fa fa-circle-o" aria-hidden="true"></i>
-                                    <i class="fa fa-circle-o" aria-hidden="true"></i>
-                                    <i class="fa fa-circle-o" aria-hidden="true"></i>
-                                    <i class="fa fa-circle-o" aria-hidden="true"></i>
-                                </div>
-                            </li>
-                            <li>CSS
-                                <div class="score">
-                                    <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-                                    <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-                                    <i class="fa fa-circle-o" aria-hidden="true"></i>
-                                    <i class="fa fa-circle-o" aria-hidden="true"></i>
-                                    <i class="fa fa-circle-o" aria-hidden="true"></i>
-                                </div>
-                            </li>
+    $('.js-modal-open').click(function(){
+        $('a.js-modal').delay(300).slideDown(4000)
+        $('body').css('overflow', 'hidden');
+    });
 
-                            <li>Microsoft Office
-                                <div class="score">
-                                    <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-                                    <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-                                    <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-                                    <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-                                    <i class="fa fa-circle-o" aria-hidden="true"></i>
-                                </div>
-                            </li>
-                        </ul>
+</script>
 
-                    </div>
-                </div>
-            </main>
 
-            <footer>
-                <div class="footer">
-                    © Kieran Taylor 2018
-                </div>
-            </footer>
-        </body>
-        </html>
+
+</html>

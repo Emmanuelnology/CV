@@ -4,8 +4,8 @@ body {
 
 img.leftpara {
   padding: 0;
-  width: 11.47em;
-  height: 11.28em;
+  width: 14.24em;
+  height: 14em;
   margin: 0 auto;
   margin-top: 9%;
   margin-bottom: 5%;
@@ -26,19 +26,16 @@ main div.rightpara {
   height: 60%;
 }
 
-li.contactlabel {
-  height: 50px;
-}
-
 .relocate {
   margin-top: 10px;
   font-size: 20px;
 }
 
-li.contactlabel {
+li.contactlabel,
+li.contactlabel:hover {
   height: 170px;
-  z-index: 1;
-  position: relative;
+  z-index: 4;
+  top: 0;
 }
 
 main {
@@ -63,10 +60,9 @@ div.rightpara {
 }
 
 @media only screen and (min-width: 1014px) {
-  li.contactlabel {
+  li.contactlabel,
+  li.contactlabel:hover {
     height: 50px;
-    z-index: 1;
-    position: relative;
   }
 
   main {

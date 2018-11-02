@@ -53,6 +53,7 @@ h3 {
   text-align: center;
   font-size: 1.1em;
   padding: 1.4em;
+  background-color: rgba(173, 213, 226, 0.7);
 }
 
 /* Bordure for all my images and small sections such as about me */
@@ -251,8 +252,8 @@ section {
   height: 100%;
 }
 
-/* My photo with the same size as the box */
-#kasface {
+/* My photos with the same size as the box */
+.kasface {
   width: 100%;
 }
 
