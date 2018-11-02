@@ -39,6 +39,10 @@ nav {
   background-position: center;
 }
 
+.active {
+  display: block;
+}
+
 nav ul {
   display: flex;
 }
@@ -75,6 +79,10 @@ main {
   grid-area: content;
   position: absolute;
   width: 100%;
+}
+
+.bold {
+  font-size: 30px;
 }
 
 #closebutton {
@@ -153,7 +161,7 @@ header h3 {
   text-align: center;
 }
 
-.trav-img{
+.trav-img {
   width: 20%;
   flex: 1;
   margin-top: 0;
@@ -161,11 +169,10 @@ header h3 {
   padding: 5px;
 }
 
-.trav-div{
+.trav-div {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-
 }
 
 .career {
@@ -378,15 +385,15 @@ section {
 
 @media only screen and (min-width: 500px) {
   main {
-    display:block;
+    display: block;
     position: relative;
     background-color: white;
   }
-
+  
   #closebutton {
     display: none;
   }
-
+  
   body {
     grid-template-areas: "me content""me footer";
     grid-template-columns: 1fr 2fr;
