@@ -21,6 +21,7 @@ body {
   background-image: url('DSC04841.png');
   background-size: cover;
   background-repeat: no-repeat;
+  min-height: 100vh;
 }
 
 a {
@@ -371,5 +372,9 @@ aside div {
 
   .award-def {
     padding: 0 2vw;
+  }
+
+  #recruiter-info {
+    font-size: 0.75em;
   }
 }
