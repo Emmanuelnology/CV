@@ -51,7 +51,6 @@ h3 {
 .large-flex {
   flex: 2 !important;
   text-align: center !important;
-  font-size: 1.1em;
   padding: 2em;
   background-color: rgba(173, 213, 226, 0.7);
 }
@@ -119,6 +118,7 @@ header {
   margin-top: 6%;
   margin-left: 50%;
   margin-right: 17%;
+  margin-bottom: 5%;
   justify-content: center;
 }
 
@@ -207,7 +207,7 @@ nav audio {
 
 /* Section size and flex and light dark background */
 section {
-  height: 95vh;
+  height: 96.5vh;
   border: 1px black solid;
   position: relative;
 }
@@ -265,6 +265,7 @@ section {
 .social {
   width: 100%;
   text-align: center;
+  padding-bottom: 1.7em;
 }
 
 /* About me section with an image */
