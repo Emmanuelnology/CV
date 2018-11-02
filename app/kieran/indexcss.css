@@ -10,23 +10,11 @@ div.mid {
   grid-area: mid;
 }
 
-<<<<<<< head div.left {
-  grid-area: leftt;
-}
-
-div.mid {
-  grid-area: mid;
-}
-
 div.right {
   grid-area: rightt;
 }
 
-======= div.right {
-  grid-area: rightt;
-}
-
->>>>>>> b383d34dbd085e59a24471b722028a76e8e29722 main {
+main { 
   margin: 0;
   display: grid;
   grid-template-areas:
@@ -38,40 +26,6 @@ div.right {
   text-align: justify;
 }
 
-/* main div.left {
-  padding: 20px;
-  width: 31%;
-  vertical-align: top;
-  float: left;
-}
-
-div.left p.leftpara {
-  text-align: justify;
-}
-
-main div.mid {
-  padding: 20px;
-  width: 31%;
-  border-right: 1px solid black;
-  border-left: 1px solid black;
-  display: inline-block;
-  vertical-align: top;
-  font-size: 60px;
-  min-width: 248px;
-}
-
-main div.right {
-  padding: 20px;
-  float: right;
-  width: 31%;
-  vertical-align: top;
-  text-align: justify;
-  min-width: 280px;
-} */
-
-li.aboutmelabel {
-  height: 50px;
-}
 
 h2 {
   font-size: 30px;
@@ -96,6 +50,7 @@ ul.icons {
   text-align: center;
   margin: 0;
   margin-bottom: 40px;
+  font-size: 20px;
 }
 
 li.icon {
@@ -108,23 +63,22 @@ li.icon span {
   display: block;
 }
 
-li.aboutmelabel {
+li.aboutmelabel,
+li.aboutmelabel:hover {
   height: 170px;
-  z-index: 1;
-  position: relative;
+  z-index: 4;
+  top: 0px;
 }
 
 div.right {
-  max-width: 300px;
   float: center;
   margin: 0 auto;
 }
 
 @media only screen and (min-width: 1014px) {
-  li.aboutmelabel {
+  li.aboutmelabel,
+  li.aboutmelabel:hover {
     height: 50px;
-    z-index: 1;
-    position: relative;
   }
 
   main {

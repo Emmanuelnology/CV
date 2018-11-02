@@ -1,0 +1,23 @@
+body {
+  background-color: #dd90e8;
+  position: relative;
+}
+
+p { 
+  text-align: justify;
+}
+
+li.nowlabel,
+li.nowlabel:hover {
+  height: 170px;
+  z-index: 4;
+  top:0px;
+}
+
+@media only screen and (min-width: 1014px) {
+  li.nowlabel,
+  li.nowlabel:hover {
+    height: 50px;
+
+  }
+}

@@ -7,11 +7,7 @@
     <link rel="stylesheet" type="text/css" href="workcss.css">
     <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
     <title>Kieran Taylor CV About Me</title>
-    
-    
-    
-    
-    
+       
     <style>
         .modal {
             display: none;
@@ -21,11 +17,9 @@
             top: 0;
             bottom: 0;
             background-color:rgba(255, 0, 0, 0.95);
-            
             padding: 20px;
-            border-radius: 20px;
             border: 0px solid black;
-            z-index: 3;
+            z-index: 5;
             color: white;
             font-family: 'Crimson Text', serif;
             padding: 5%;
@@ -34,14 +28,42 @@
         .date {
             font-weight: 900;
             font-size: 200%;
+            text-align: center;
         }
         .establishment {
             font-weight: 700;
             font-size: 170%;
+            text-align: center;
         }
         .content {
             font-weight: 200;
             font-size: 130%;
+            text-align: justify;
+            float: center;
+            margin: 0 auto;
+            width: 60%;
+        }
+
+        p.content ul {
+            width: 10%;
+        }
+
+        button.js-modal-close {
+            width: 35%;
+            height: 15%;
+            font-family: 'Crimson Text', serif;
+            color: white;  
+            background-color: red;
+            font-size: 130%; 
+            border:5px solid white;
+            vertical-align: center;
+            margin: 0 auto;
+        }
+
+        button.js-modal-close:hover {
+            color: red;
+            background-color: white;
+            cursor: pointer;
         }
     </style> 
 
@@ -64,7 +86,7 @@
     <button class="js-modal-close">Return</button>
         <p class="date">2012-2014</p>
         <p class="establishment">NPTC (Neath Port Talbot College)</p>
-        <p class="content">A-Levels (Physics, Mathematics. Electronics) </p>
+        <p class="content">A-Levels (Physics, Mathematics, Electronics) </p>
     </div>
 
     <div id="modal-uni" class="modal js-modal">
@@ -160,21 +182,14 @@
     
     <nav>
         <ul>
-            <li class="aboutmelabel"><div class="labelwrite aboutmee"><a href="index.html">About&nbsp;Me</a></div></li>
-            <li class="worklabel"><div class="labelwrite"><a href="work.html">Education</a></div></li>
-            <li class="projectslabel"><div class="labelwrite"><a href="projects.html">projects</a></div> </li>
-            <li class="nowlabel"><div class="labelwrite"><a href="now.html">Now</a></div> </li>            
-            <li class="contactlabel"><div class="labelwrite"><a href="contact.html">Contact&nbsp;Me</a></div> </li>
+            <a href="index.html"><li class="aboutmelabel"><div class="labelwrite aboutmee">About&nbsp;Me</div></li></a>
+            <a href="work.html"><li class="worklabel"><div class="labelwrite">Education</div></li></a>
+            <a href="projects.html"><li class="projectslabel"><div class="labelwrite">projects</div> </li></a>
+            <a href="now.html"><li class="nowlabel"><div class="labelwrite">Now</div></li></a>            
+            <a href="contact.html"><li class="contactlabel"><div class="labelwrite">Contact&nbsp;Me</div></li></a>
         </ul>
     </nav>
     <main>
-
-
-
-
-        <!-- <div id="school" class="square-image">
-            <button class="js-modal-open">Make me happier</button>        
-        </div> -->
 
         <button id="school" data-target="modal-llangatwg" class="square-image js-modal-open"></button>        
 
@@ -195,84 +210,6 @@
         <button id="nology" data-target="modal-nology" class="square-image js-modal-open"></button>        
 
 
-
-        
-        <!-- <div class="overlay">
-            
-            <div class="text">Hello World</div>
-        </div> -->
-        
-        <!-- <div class="container">
-            hello
-            <div class="overlay">
-                
-                <div class="text">Hello World</div>
-            </div>
-        </div> -->
-        
-        
-        <!-- <div class="school imig">
-            <img src="llangatwg.jpg" alt="Spectral Lines" class="schoolp imig">
-        </div>
-        <div class="college imig">
-            <img src="nptc.jpg" alt="Spectral Lines" class="collegep imig">
-        </div>
-        <div class="uni imig">
-            <img src="uni.jpg" alt="Spectral Lines" class="unip imig">
-        </div>
-        <div class="liberty imig">
-            <img src="liberty.jpg" alt="Spectral Lines" class="libertyp imig"> 
-        </div>
-        <div class="deliveroo imig">
-            <img src="deliveroo.jpg" alt="Spectral Lines" class="deliveroop imig">
-        </div>
-        <div class="ubereats imig">
-            <img src="ubereats.jpg" alt="Spectral Lines" class="ubereatsp imig">
-        </div>
-        <div class="volunteering imig">
-            <img src="umphang.jpg" alt="Spectral Lines" class="volunteeringp imig">
-        </div>
-        <div class="valleymill imig">
-            <img src="valleymill.jpg" alt="Spectral Lines" class="valleymillp imig"> 
-        </div>        
-        <div class="nology imig">
-            <img src="nology.jpg" alt="Spectral Lines" class="nologyp imig"> 
-        </div>       -->
-        
-        
-        
-        <!-- <div class="leftpara">
-            <h2>Education</h2>
-            <ul>
-                <li class="uni"><span class="system">Physics (MPhys)</span> Swansea University</li>
-                <li class="college"><span class="system"> Maths, Physics, Electronics (A Level)</span>Neath Port Talbot College</li>
-                <li class="school"><span class="system">GCSE's (14 A*-C)</span> Llangatwg Comprehensive School</li>
-            </ul>
-        </div>
-        
-        <div class="rightpara">
-            <h2>Work History</h2>
-            <h3>Liberty Stadium Team Leader (Compass Group) - Swansea (2015-2018)</h3>
-            <ul>
-                <li>Responsible for managing staff in both kitchen and service area
-                </li>
-                <li>Enforce the maintenance of high hygiene standards</li>
-                <li>Conduct regular cash lifts and complete any applicable paperwork</li>
-                <li>Resolve customer complaints and queries</li>
-            </ul>
-            <h3>Volunteer (Frontier) - Umphang Thailand (2017)</h3>
-            During my time travelling around Asia I spent a month at an elephant sanctuary located within
-            Thailand’s rainforest. Here I assisted in collecting food, feeding and bathing the elephants. On top of
-            this I supported the permanent residents in cleaning the housing and preparing food.
-            
-            <h3>Bicycle Courier (Deliveroo &amp; UberEATS) - Swansea (2017-2018)</h3>
-            <ul><li>Responsible for transporting goods from restaurant to customer</li>
-                <li>Aware of risks undertaken while cycling through a dynamic and congested city with limited
-                    time to reach each destination</li>
-                    <li>Ability to work accurately at a fast pace under pressure</li>
-                    
-                </ul>
-            </div> -->
         </main>
         <footer>
             <div class="footer">

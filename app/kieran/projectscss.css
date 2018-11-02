@@ -2,8 +2,11 @@ body {
   background-color: lightgoldenrodyellow;
 }
 
-li.projectslabel {
-  height: 50px;
+li.projectslabel,
+li.projectslabel:hover {
+  height: 170px;
+  z-index: 4;
+  top:0px;
 }
 
 div.wrapper div {
@@ -100,17 +103,10 @@ div.wrapper div {
   grid-area: spectrallinesp;
 }
 
-li.projectslabel {
-  height: 170px;
-  z-index: 1;
-  position: relative;
-}
-
 @media only screen and (min-width: 1014px) {
-  li.projectslabel {
+  li.projectslabel,
+  li.projectslabel:hover {
     height: 50px;
-    z-index: 1;
-    position: relative;
   }
 
   .wrapper {

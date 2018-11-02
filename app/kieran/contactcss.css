@@ -26,19 +26,16 @@ main div.rightpara {
   height: 60%;
 }
 
-li.contactlabel {
-  height: 50px;
-}
-
 .relocate {
   margin-top: 10px;
   font-size: 20px;
 }
 
-li.contactlabel {
+li.contactlabel,
+li.contactlabel:hover {
   height: 170px;
-  z-index: 1;
-  position: relative;
+  z-index: 4;
+  top: 0px;
 }
 
 main {
@@ -63,10 +60,9 @@ div.rightpara {
 }
 
 @media only screen and (min-width: 1014px) {
-  li.contactlabel {
+  li.contactlabel,
+  li.contactlabel:hover {
     height: 50px;
-    z-index: 1;
-    position: relative;
   }
 
   main {
