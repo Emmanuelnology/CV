@@ -19,6 +19,7 @@ h2 {
   border: solid rgb(6, 6, 82);
   border-style: double;
   margin-left: 8em;
+  margin-top: 0.8em;
   max-width: 9em;
 }
 
@@ -50,8 +51,8 @@ h3 {
 
 .large-flex {
   flex: 2 !important;
+  height: 100%;
   text-align: center !important;
-  font-size: 1.1em;
   padding: 2em;
   background-color: rgba(173, 213, 226, 0.7);
 }
@@ -119,6 +120,7 @@ header {
   margin-top: 6%;
   margin-left: 50%;
   margin-right: 17%;
+  margin-bottom: 5%;
   justify-content: center;
 }
 
@@ -207,7 +209,7 @@ nav audio {
 
 /* Section size and flex and light dark background */
 section {
-  height: 95vh;
+  height: 103vh;
   border: 1px black solid;
   position: relative;
 }
@@ -265,11 +267,16 @@ section {
 .social {
   width: 100%;
   text-align: center;
+  padding-bottom: 1.3em;
 }
 
-/* About me section with an image */
+/* About me section with an image, margin below about me text */
 #aboutkas {
   background-image: url('kas-suisse.jpeg');
   background-size: cover;
   background-position: 0;
+}
+
+.apropo {
+  margin-bottom: 0;
 }
