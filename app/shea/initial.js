@@ -1,27 +1,27 @@
 var nav = {
     contact: {
         link: $("#js-contact"),
-        content:  $("#contact"),
+        content:  $(".contact"),
     },
     skills: {
         link: $("#js-skills"),
-        content:  $("#skills"),
+        content:  $(".skills"),
     },
     employment: {
         link: $("#js-employ"),
-        content:  $("#employment"),
+        content:  $(".employment"),
     },
     education: {
         link: $("#js-edu"),
-        content:  $("#education"),
+        content:  $(".education"),
     },
     awards: {
         link: $("#js-awards"),
-        content:  $("#awards"),
+        content:  $(".awards"),
     },
     recruiterInfo: {
         link: $("#js-recruit"),
-        content:  $("#recruiter-info"),
+        content:  $(".recruiter-info"),
     }
 }
 
@@ -56,18 +56,5 @@ $("#toggle1").click(function(){
 
 $("#toggle2").click(function(){
     $("#tefl").slideToggle();
-});
-
-$('.js-modal-close').click(function(){
-    $('#blocker').hide();
-    $('.modal').hide();
-    $('body').css('overflow','auto');
-});
-
-$('.js-modal-open').click(function(){
-    var modalID=$(this).attr('data-target');
-    $('#'+modalID).fadeIn();
-    $('#blocker').fadeIn();
-    $('body').css('overflow','hidden');
 });
 
