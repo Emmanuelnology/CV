@@ -206,6 +206,27 @@ aside div {
   font-size: 2em;
 }
 
+#skills-panel,
+#extra-skills {
+  width: 40%;
+  margin: 5% 30%;
+}
+
+#skills-panel li,
+#extra-skills li {
+  text-align: left;
+  border-bottom: dotted 1px black;
+}
+
+.score,
+.skill-logo {
+  float: right;
+}
+
+.logo-pad {
+  padding-right: 0.2em;
+}
+
 .content h3 {
   margin: 2.5% 0;
 }
@@ -326,6 +347,13 @@ aside div {
 
   h3 {
     font-size: 0.75em;
+  }
+
+  #skills-panel,
+  #extra-skills {
+    display: inline-block;
+    width: 40%;
+    margin: 10% 2.5%;
   }
 
   .collapsed {
