@@ -6,6 +6,7 @@
     <title>Ben Tomaney - Work &amp; Volunteering</title>    
     <link rel="stylesheet" href="../nav_theme.css" >
     <link rel="stylesheet" href="experience_style.css" >
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 </head>
 
 <body>
@@ -57,7 +58,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="../../">
+                    <a href="../../../">
                         <p>Candidate List</p>
                     </a>
                 </li>
@@ -137,137 +138,142 @@
                     <circle cx="302" cy="293" r="6" class="teaching str" />
                     <circle cx="315" cy="284" r="6" class="huboo str" />
                     <rect x="510" y="60" rx="15" ry="15" id="key-container" />
-                    <circle cx="540" cy="90" r="6" class="huboo str"  />
+                    <circle cx="540" cy="90" r="6" class="huboo str" />
                     <text x="555" y="97">Warehouse</text>
                     <text x="555" y="122">Assistant, Huboo</text>
+                    <rect x="525" y="77.5" rx="10" ry="10" id="js-huboo-modal-open" />
                     <circle cx="540" cy="145" r="6" class="teaching str" />
                     <text x="555" y="152">Casual Teaching</text>
                     <text x="555" y="177">Assistant,</text>
-                    <text x="555" y="202">University of Bath</text>                    
+                    <text x="555" y="202">University of Bath</text>
+                    <rect x="525" y="133.5" rx="10" ry="10" id="js-teaching-modal-open" />                   
                     <circle cx="540" cy="225" r="6" class="gift-shop str" />
                     <text x="555" y="232">Gift Shop</text>
                     <text x="555" y="257">Assistant, Avon</text>
                     <text x="555" y="282">Valley Railway</text>
+                    <rect x="525" y="213.5" rx="10" ry="10" id="js-gift-shop-modal-open" /> 
                     <circle cx="540" cy="305" r="6" class="tti str" />
                     <text x="555" y="312">Travelling Ticket</text>
                     <text x="555" y="337">Inspector, Avon</text>
                     <text x="555" y="362">Valley Railway</text>
+                    <rect x="525" y="293.5" rx="10" ry="10" id="js-tti-modal-open" /> 
                     <circle cx="540" cy="385" r="6" class="ribbon str" />
                     <text x="555" y="392">Cricket Coach,</text>
                     <text x="555" y="417">The Ribbon</text>
                     <text x="555" y="442">School, Murton</text>
+                    <rect x="525" y="373.5" rx="10" ry="10" id="js-ribbon-modal-open" /> 
                     <circle cx="540" cy="465" r="6" class="beavers str" />
                     <text x="555" y="472">Assistant Beaver</text>
                     <text x="555" y="497">Leader, 5th</text>
                     <text x="555" y="522">Durham Scouts</text>
+                    <rect x="525" y="453.5" rx="10" ry="10" id="js-beavers-modal-open" />
+
+                    <polygon points="50,800 50,50 750,50 750,800" style="fill:white; stroke:darkgreen; stroke-width:1; opacity: 0.5" id="inactive" />
+
+                    <rect x="75" y="133.5" rx="10" ry="10" class="huboo-modal" />
+                    <text x="400" y="170" class="huboo-modal" style="display: none; text-anchor: middle; font-weight: 550">Warehouse Assistant, Huboo (September 2018 &ndash; October 2018)</text>
+                    <text x="100" y="210" class="huboo-modal" style="display: none">Located and carefully packaged a large variety of items, before</text>
+                    <text x="100" y="235" class="huboo-modal" style="display: none">sorting and despatching them as mail.</text>
+                    <text x="100" y="265" class="huboo-modal" style="display: none">Reliably booked in incoming items, individually labelling them and</text>
+                    <text x="100" y="290" class="huboo-modal" style="display: none">storing them in their correct location.</text>
+                    <text x="100" y="320" class="huboo-modal" style="display: none">Rearranged, tidied and organised shelves in order to optimise</text>
+                    <text x="100" y="345" class="huboo-modal" style="display: none">efficiency of both despatching and booking in.</text>
+
+                    <rect x="75" y="213.5" rx="10" ry="10" class="teaching-modal" />
+                    <text x="400" y="250" class="teaching-modal" style="display: none; text-anchor: middle; font-weight: 550">Casual Teaching Assistant, University of Bath</text>
+                    <text x="400" y="275" class="teaching-modal" style="display: none; text-anchor: middle; font-weight: 550">(September 2017 &ndash; May 2018)</text>
+                    <text x="100" y="315" class="teaching-modal" style="display: none">Tutored a group of nine first-year mathematics students in discrete</text>
+                    <text x="100" y="340" class="teaching-modal" style="display: none">mathematics, cryptography and coding.</text>
+                    <text x="100" y="370" class="teaching-modal" style="display: none">Utilised both written and verbal communication skills to explain new</text>
+                    <text x="100" y="395" class="teaching-modal" style="display: none">mathematical concepts.</text>
+                    <text x="100" y="425" class="teaching-modal" style="display: none">Marked both written worksheets and MATLAB code on a weekly</text>
+                    <text x="100" y="450" class="teaching-modal" style="display: none">basis and assisted with the marking of MATLAB coursework.</text>
+                    <text x="100" y="480" class="teaching-modal" style="display: none">Liaised with unit conveyors about overall student progress and any</text>
+                    <text x="100" y="505" class="teaching-modal" style="display: none">potential issues raised by students.</text>
+
+                    <rect x="75" y="293.5" rx="10" ry="10" fill="white" class="gift-shop-modal" />
+                    <text x="400" y="330" class="gift-shop-modal" style="display: none; text-anchor: middle; font-weight: 550">Gift Shop Assistant, Avon Valley Railway</text>
+                    <text x="400" y="355" class="gift-shop-modal" style="display: none; text-anchor: middle; font-weight: 550">(May 2017 &ndash; September 2017)</text>
+                    <text x="100" y="395" class="gift-shop-modal" style="display: none">Served and advised customers about products and pricing</text>
+                    <text x="100" y="420" class="gift-shop-modal" style="display: none">information, whilst offering excellent customer service.</text>
+                    <text x="100" y="450" class="gift-shop-modal" style="display: none">Trusted to use a till and card machine, to handle money and in the</text>
+                    <text x="100" y="475" class="gift-shop-modal" style="display: none">balancing process.</text>
+                    <text x="100" y="505" class="gift-shop-modal" style="display: none">Stacked and restocked shelves in an organised and attractive</text>
+                    <text x="100" y="530" class="gift-shop-modal" style="display: none">manner.</text>
+
+                    <rect x="75" y="373.5" rx="10" ry="10" class="tti-modal" />
+                    <text x="400" y="410" class="tti-modal" style="display: none; text-anchor: middle; font-weight: 550">Travelling Ticket Inspector, Avon Valley Railway</text>
+                    <text x="400" y="435" class="tti-modal" style="display: none; text-anchor: middle; font-weight: 550">(May 2017 &ndash; September 2017)</text>
+                    <text x="100" y="475" class="tti-modal" style="display: none">Checked and sold tickets to customers, whilst also providing</text>
+                    <text x="100" y="500" class="tti-modal" style="display: none">information about the railway.</text>
+                    <text x="100" y="530" class="tti-modal" style="display: none">Carried out health and safety procedures to ensure the safety and</text>
+                    <text x="100" y="555" class="tti-modal" style="display: none">comfort of all passengers.</text>
+                    <text x="100" y="585" class="tti-modal" style="display: none">Assisted school parties and disabled travellers both during the</text>
+                    <text x="100" y="610" class="tti-modal" style="display: none">journey and on the platforms.</text>
+                    <text x="100" y="640" class="tti-modal" style="display: none">Kept the train clean and tidy at all times and displayed relevant</text>
+                    <text x="100" y="665" class="tti-modal" style="display: none">seat reservation labels.</text>
+
+                    <rect x="75" y="453.5" rx="10" ry="10" class="ribbon-modal" />
+                    <text x="400" y="490" class="ribbon-modal" style="display: none; text-anchor: middle; font-weight: 550">Cricket Coach, The Ribbon School, Murton</text>
+                    <text x="400" y="515" class="ribbon-modal" style="display: none; text-anchor: middle; font-weight: 550">(May 2014 &ndash; June 2016)</text>
+                    <text x="100" y="555" class="ribbon-modal" style="display: none">Expanded leadership skills by introducing and coaching cricket to</text>
+                    <text x="100" y="580" class="ribbon-modal" style="display: none">nine to eleven year olds.</text>
+                    <text x="100" y="610" class="ribbon-modal" style="display: none">Safely managed teams of ten children at county competitions whilst</text>
+                    <text x="100" y="635" class="ribbon-modal" style="display: none">reliably umpiring games between different schools.</text>
+                    <text x="100" y="665" class="ribbon-modal" style="display: none">Encouraged and developed healthy relationships between the</text>
+                    <text x="100" y="690" class="ribbon-modal" style="display: none">school and local cricket club.</text>
+
+                    <rect x="75" y="533.5" rx="10" ry="10" class="beavers-modal" />
+                    <text x="400" y="570" class="beavers-modal" style="display: none; text-anchor: middle; font-weight: 550">Assistant Beaver Leader, 5th Durham City Scouts</text>
+                    <text x="400" y="595" class="beavers-modal" style="display: none; text-anchor: middle; font-weight: 550">(May 2012 &ndash; June 2014)</text>
+                    <text x="100" y="635" class="beavers-modal" style="display: none">Safely supervised and encouraged children during a range of</text>
+                    <text x="100" y="660" class="beavers-modal" style="display: none">indoor and outdoor activities.</text>
+                    <text x="100" y="690" class="beavers-modal" style="display: none">Planned a safe and exciting programme of games, crafts and life</text>
+                    <text x="100" y="715" class="beavers-modal" style="display: none">skill sessions for six to eight year olds.</text>
+                    <text x="100" y="745" class="beavers-modal" style="display: none">Maintained positive relationships with other troop leaders and</text>
+                    <text x="100" y="770" class="beavers-modal" style="display: none">parents/carers of the children.</text>
                 </svg>
             </span>
         </div>
-        <section>
-            <h2>Work Experience</h2>
-            <article>
-                <h3>Warehouse Assistant, Huboo <span class="date">(September 2018 &ndash; October 2018)</span></h3>
-                <ul>
-                    <li>
-                        Located and carefully packaged a large variety of items, before sorting and despatching them as mail
-                    </li>
-                    <li>
-                        Reliably booked in incoming items, individually labelling them and storing them in their correct location
-                    </li>
-                    <li>
-                        Rearranged, tidied and organised shelves in order to optimise efficiency of both despatching and booking in
-                    </li>
-                </ul>
-            </article>
-            <article>
-                <h3>Casual Teaching Assistant, University of Bath <span class="date">(September 2017 &ndash; May 2018)</span></h3>
-                <ul>
-                    <li>
-                        Tutored a group of 10 first-year mathematics students in discrete mathematics, cryptography and
-                        coding.
-                    </li>
-                    <li>
-                        Utilised both written and verbal communication skills to explain new mathematical concepts.
-                    </li>
-                    <li>
-                        Marked both written worksheets and MATLAB code on a weekly basis and assisted with the marking of
-                        MATLAB coursework.
-                    </li>
-                    <li>
-                        Liaised with unit conveyors about overall student progress and any potential issues raised by
-                        students.
-                    </li>
-                </ul>
-            </article>
-        </section>
-        <section>
-            <h2>Volunteering Experience</h2>
-            <article>
-                <h3>Gift Shop Assistant, Avon Valley Railway <span class="date">(May 2017 &ndash; September 2017)</span></h3>
-                <ul>
-                    <li>
-                        Served and advised customers about products and pricing information, whilst offering excellent
-                        customer
-                        service.
-                    </li>
-                    <li>
-                        Trusted to use a till and card machine, to handle money and in the balancing process
-                    </li>
-                    <li>
-                        Stacked and restocked shelves in an organised and attractive manner.
-                    </li>
-                </ul>
-            </article>
-            <article>
-                <h3>Travelling Ticket Inspector, Avon Valley Railway <span class="date">(May 2017 &ndash; September 2017)</span></h3>
-                <ul>
-                    <li>
-                        Checked and sold tickets to customers, whilst also providing information about the railway.
-                    </li>
-                    <li>
-                        Carried out health and safety procedures to ensure the safety and comfort of all passengers.
-                    </li>
-                    <li>
-                        Assisted school parties and disabled travellers both during the journey and on the platforms.
-                    </li>
-                    <li>
-                        Kept the train clean and tidy at all times and displayed relevant seat reservation labels.
-                    </li>
-                </ul>
-            </article>
-            <article>
-                <h3>Cricket Coach, The Ribbon School, Murton <span class="date">(May 2014 &ndash; June 2016)</span></h3>
-                <ul>
-                    <li>
-                        Expanded leadership skills by introducing and coaching cricket to nine to eleven year olds
-                    </li>
-                    <li>
-                        Safely managed teams of ten children at county competitions whilst reliably umpiring games between
-                        different schools.
-                    </li>
-                    <li>
-                        Encouraged and developed healthy relationships between the school and local cricket club.
-                    </li>
-                </ul>
-            </article>
-            <article>
-                <h3> Assistant Beaver Leader, 5th Durham City Scouts <span class="date">(May 2012 &ndash; June 2014)</span></h3>
-                <ul>
-                    <li>
-                        Safely supervised and encouraged children during a range of indoor and outdoor activities.
-                    </li>
-                    <li>
-                        Planned a safe and exciting programme of games, crafts and life skill sessions for six to eight
-                        year
-                        olds.
-                    </li>
-                    <li>
-                        Maintained positive relationships with other troop leaders and parents/carers of the children.
-                    </li>
-                </ul>
-            </article>
-        </section>
     </main>
+    <script>
+        $('#js-huboo-modal-open').click(function(){
+            $('.huboo-modal, #inactive').css('display','block');
+        })
+        $('.huboo-modal').click(function(){
+            $('.huboo-modal, #inactive').css('display','none');
+        })
+        $('#js-teaching-modal-open').click(function(){
+            $('.teaching-modal, #inactive').css('display','block');
+        })
+        $('.teaching-modal').click(function(){
+            $('.teaching-modal, #inactive').css('display','none');
+        })
+        $('#js-gift-shop-modal-open').click(function(){
+            $('.gift-shop-modal, #inactive').css('display','block');
+        })
+        $('.gift-shop-modal').click(function(){
+            $('.gift-shop-modal, #inactive').css('display','none');
+        })
+        $('#js-tti-modal-open').click(function(){
+            $('.tti-modal, #inactive').css('display','block');
+        })
+        $('.tti-modal').click(function(){
+            $('.tti-modal, #inactive').css('display','none');
+        })
+        $('#js-ribbon-modal-open').click(function(){
+            $('.ribbon-modal, #inactive').css('display','block');
+        })
+        $('.ribbon-modal').click(function(){
+            $('.ribbon-modal, #inactive').css('display','none');
+        })
+        $('#js-beavers-modal-open').click(function(){
+            $('.beavers-modal, #inactive').css('display','block');
+        })
+        $('.beavers-modal').click(function(){
+            $('.beavers-modal, #inactive').css('display','none');
+        })
+    </script>
 </body>
 
 </html>
