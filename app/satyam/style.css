@@ -66,6 +66,8 @@ img {
 
 .image-carousel {
   display: flex;
+  justify-content: space-between;
+  /* flex-grow: 1; */
   width: 20%;
   height: 20%;
 }
