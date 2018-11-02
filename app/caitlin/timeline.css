@@ -183,7 +183,7 @@
 
 #waitrose-hr {
   width: 15px;
-  height: 170px;
+  height: 23%;
   border-top: none;
   background: rgb(80, 9, 80);
   border-radius: 3px;
@@ -201,7 +201,7 @@
   margin: 0 0 5px 0;
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 650px) {
   #work-grid {
     margin-left: -25px;
   }
@@ -223,5 +223,9 @@
 
   #work-grid .years {
     display: none;
+  }
+
+  #education-section li {
+    font-size: 1em;
   }
 }
