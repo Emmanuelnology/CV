@@ -16,7 +16,7 @@ h1 {
   font-size: 35px;
   padding: 0;
   margin: 0;
-  border-bottom: 2px dotted grey;
+  border-bottom: 2px dotted  black;
   margin-top: 50px;
 }
 
@@ -90,7 +90,7 @@ body > div {
   flex: 1;
 }
 
-.tltext {
+.tl-text {
   font-size: 13px;
 }
 
