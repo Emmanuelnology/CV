@@ -1,3 +1,20 @@
+:root {
+  --score-dark: darkblue;
+  --score-med: red;
+  --score-lightest: white;
+  --score-light: blueviolet;
+  --score-darkest: black;
+  --size-smallest: 1px;
+  --size-small: 5px;
+  --size-med: 10px;
+  --size-large: 15px;
+  --size-largest: 24px;
+}
+
+main {
+  width: 21.5em;
+}
+
 h2 {
   font-size: 20px;
 }
@@ -11,7 +28,7 @@ ul {
 }
 
 .board-border {
-  width: 29em;
+  width: 19.5em;
   margin: 20px auto;
   padding: 0.3em;
   border: solid 2px rgb(110, 60, 45);
@@ -23,12 +40,16 @@ ul {
   color: rgb(110, 60, 45);
   padding: 1em;
   margin: 0 auto;
-  width: 28em;
+  width: 18.5em;
   display: grid;
   grid-template-areas: "place place place" "year award grade";
-  grid-template-columns: 5em 18.5em 5em;
+  grid-template-columns: 4em 10em 4.5em;
   justify-content: center;
   text-transform: uppercase;
+}
+
+.appears {
+  display: none;
 }
 
 .hons-board div {
@@ -56,15 +77,31 @@ ul {
   grid-area: grade;
 }
 
-:root {
-  --score-dark: darkblue;
-  --score-med: red;
-  --score-lightest: white;
-  --score-light: blueviolet;
-  --score-darkest: black;
-  --size-smallest: 1px;
-  --size-small: 5px;
-  --size-med: 10px;
-  --size-large: 15px;
-  --size-largest: 24px;
+@media only screen and (min-width: 600px) {
+  main {
+    width: 35em;
+  }
+
+  .board-border {
+    width: 29em;
+    margin: 20px auto;
+    padding: 0.3em;
+    border: solid 2px rgb(110, 60, 45);
+    background-image: url('wood.png');
+  }
+
+  .hons-board {
+    border: solid 2px rgb(186, 102, 76);
+    color: rgb(110, 60, 45);
+    padding: 1em;
+    margin: 0 auto;
+    width: 28em;
+    display: grid;
+    grid-template-areas: "place place place" "year award grade";
+    grid-template-columns: 5em 18.5em 5em;
+  }
+
+  .appears {
+    display: initial;
+  }
 }
