@@ -1,138 +1,48 @@
 body {
-  background-color: pink;
+  margin: auto 0;
+  background-color: black;
+  height: 100%;
+  width: 100%;
 }
 
-div.left {
-  grid-area: leftt;
-}
-
-div.mid {
-  grid-area: mid;
-}
-
-<<<<<<< head div.left {
-  grid-area: leftt;
-}
-
-div.mid {
-  grid-area: mid;
-}
-
-div.right {
-  grid-area: rightt;
-}
-
-======= div.right {
-  grid-area: rightt;
-}
-
->>>>>>> b383d34dbd085e59a24471b722028a76e8e29722 main {
-  margin: 0;
-  display: grid;
-  grid-template-areas:
-    "leftt"
-    "mid"
-    "rightt";
-  grid-template-columns: 1fr;
-  grid-gap: 40px;
-  text-align: justify;
-}
-
-/* main div.left {
+button.js-modal-open {
+  height: 100vw;
+  width: 100%;
+  position: fixed;
   padding: 20px;
-  width: 31%;
-  vertical-align: top;
-  float: left;
-}
-
-div.left p.leftpara {
-  text-align: justify;
-}
-
-main div.mid {
-  padding: 20px;
-  width: 31%;
-  border-right: 1px solid black;
-  border-left: 1px solid black;
-  display: inline-block;
-  vertical-align: top;
-  font-size: 60px;
-  min-width: 248px;
-}
-
-main div.right {
-  padding: 20px;
-  float: right;
-  width: 31%;
-  vertical-align: top;
-  text-align: justify;
-  min-width: 280px;
-} */
-
-li.aboutmelabel {
-  height: 50px;
-}
-
-h2 {
-  font-size: 30px;
-  text-align: left;
-}
-
-main div.right div {
-  margin: 0;
-}
-
-div ul.skillslist {
-  list-style: none;
-  padding: 0;
-}
-
-li div.score {
-  float: right;
-}
-
-ul.icons {
-  padding: 0;
-  text-align: center;
-  margin: 0;
-  margin-bottom: 40px;
-}
-
-li.icon {
-  display: inline-block;
-  margin: 5px;
-}
-
-li.icon span {
-  font-size: 12.5px;
-  display: block;
-}
-
-li.aboutmelabel {
-  height: 170px;
-  z-index: 1;
-  position: relative;
-}
-
-div.right {
-  max-width: 300px;
-  float: center;
+  z-index: 5;
+  font-family: 'Crimson Text', serif;
+  padding: 5%;
+  background-color: black;
   margin: 0 auto;
+  cursor: pointer;
 }
 
-@media only screen and (min-width: 1014px) {
-  li.aboutmelabel {
-    height: 50px;
-    z-index: 1;
-    position: relative;
-  }
+a.js-modal {
+  color: white;
+  width: 100%;
+  height: 500px;
+  display: none;
+  font-size: 90%;
+  text-decoration: none;
+  z-index: 6;
+  cursor: pointer;
+  font-family: 'Crimson Text', serif;
+}
 
-  main {
-    margin: 0;
-    display: grid;
-    grid-template-areas: "leftt mid rightt";
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 40px;
-    text-align: justify;
-  }
+p {
+  font-size: 100px;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 20%;
+  font-weight: 800;
+}
+
+.hiintro {
+  margin-bottom: 5px;
+}
+
+.nameintro {
+  padding-top: 5px;
+  margin-top: 5px;
 }
