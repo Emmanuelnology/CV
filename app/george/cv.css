@@ -183,7 +183,7 @@ main {
   right: 0;
 }
 
-.item .bottom:before {
+.item .bottom::before {
   font-family: "Font Awesome 5 Free";
   content: "\f078";
   font-weight: 900;
