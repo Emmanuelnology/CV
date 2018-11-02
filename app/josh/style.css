@@ -2,6 +2,7 @@ body {
   background: #645754 url(footer_lodyas.png) top left repeat;
   font-family: 'Montserrat', sans-serif;
   color: white;
+  background-attachment: fixed;
 }
 
 h1 {
@@ -164,7 +165,7 @@ body > div {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: auto:
+  margin: auto;
   width: 80%;
 }
 
