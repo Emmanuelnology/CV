@@ -14,6 +14,16 @@ body {
   display: none;
 }
 
+button {
+  border-radius: 20px;
+  border: 5px solid rgb(157, 224, 180);
+  font-family: 'Montserrat';
+}
+
+button:hover {
+  transform: scale(1.2);
+}
+
 .modal {
   position: absolute;
   top: 20%;
