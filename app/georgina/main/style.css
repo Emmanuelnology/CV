@@ -39,10 +39,6 @@ nav {
   background-position: center;
 }
 
-.active {
-  display: block;
-}
-
 nav ul {
   display: flex;
 }
@@ -309,13 +305,6 @@ nav ul {
 }
 
 #brain {
-<<<<<<< HEAD
-  height: 80px;
-  display: block;
-  <<<<<<< HEAD
-  position: fixed;
-  =======
-=======
   top: 60px;
 }
 
@@ -330,7 +319,6 @@ nav ul {
 #lips:hover {
   background-image: url('lips.png');
   position: fixed;
->>>>>>> 5601be2ec0acac2fa16834fefb9c375376bc4621
   position: absolute;
 }
 
@@ -397,11 +385,11 @@ section {
     position: relative;
     background-color: white;
   }
-  
+
   #closebutton {
     display: none;
   }
-  
+
   body {
     grid-template-areas: "me content""me footer";
     grid-template-columns: 1fr 2fr;
