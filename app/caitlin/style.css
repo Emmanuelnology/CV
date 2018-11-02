@@ -1,0 +1,342 @@
+main > section {
+  padding: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-image: url(gym.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 100vh;
+  position: relative;
+  font-family: 'raleway';
+}
+
+h1 {
+  text-align: center;
+  vertical-align: middle;
+  padding: 10vh;
+  margin: 30vh 0 0 0;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.1em;
+  text-transform: capitalize;
+  margin: 1em 0 0.3em 0;
+}
+
+p {
+  font-style: normal;
+  color: #525151;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.bgcgrey {
+  background-color: rgba(210, 199, 211, 0.9);
+}
+
+.bgcbeige {
+  background-color: rgba(245, 245, 220, 0.9);
+}
+
+.clearfix {
+  clear: both;
+}
+
+.italics {
+  font-style: italic;
+}
+
+#top-panel {
+  color: white;
+  margin: 0;
+  height: 100vh;
+}
+
+#top-panel > header {
+  padding: 0.05em;
+  font-size: 30px;
+  margin: 10px 10px 0 10px;
+}
+
+.sub-heading {
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+
+#navbar {
+  text-align: center;
+  background-color: rgb(9, 139, 133);
+  position: sticky;
+  top: 0;
+  text-transform: initial;
+  z-index: 9;
+}
+
+nav > a {
+  background-color: rgb(9, 139, 133);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  box-align: centre;
+  border-radius: 5px;
+  width: auto;
+  box-sizing: border-box;
+}
+
+nav > a:hover {
+  opacity: 0.6;
+}
+
+#about-me > div {
+  padding: 30px 10%;
+  margin: 0;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#about-me > div > div {
+  padding: 8%;
+  text-align: justify;
+}
+
+.photo-button {
+  background-color: transparent;
+  border: none;
+}
+
+#about-me img {
+  border-radius: 50%;
+  width: 15em;
+  border: 3px solid black;
+}
+
+#about-me .js-modal-open {
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+}
+
+#about-me button:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  left: 15%;
+  right: 15%;
+  top: 15%;
+  bottom: 30%;
+  padding: 5%;
+  border-radius: 20px;
+  border: none;
+  z-index: 10;
+  color: white;
+}
+
+.js-modal-close {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 2em;
+}
+
+#blocker {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+#skills-box li {
+  margin: 15px;
+  text-align: right;
+}
+
+#skills-box {
+  box-sizing: border-box;
+  text-align: center;
+  width: 300px;
+  display: block;
+  margin: 0 auto;
+}
+
+.score {
+  box-sizing: border-box;
+  display: inline;
+  margin: 25px;
+  text-align: center;
+}
+
+#awards ul {
+  padding: 0 13%;
+}
+
+#awards {
+  padding: 40px;
+}
+
+#extra-curricular,
+#skills {
+  padding-top: 40px;
+}
+
+#awards li,
+#extra-curricular li {
+  margin: 15px;
+}
+
+#extra-curricular > div {
+  display: flex;
+  flex-direction: column;
+  margin: 3em;
+}
+
+#extra-curricular > div > div {
+  flex: 1;
+}
+
+#extra-curricular img {
+  height: 90%;
+  width: 100%;
+  overflow: hidden;
+  display: block;
+  margin: auto auto;
+  border-radius: 7px;
+  object-fit: cover;
+}
+
+#extra-curricular h3 {
+  margin: 0;
+  text-align: center;
+  padding: 0.7em 0;
+}
+
+#extra-curricular ul {
+  margin: 0 0 2.5em 0;
+  text-align: justify;
+  font-size: 0.9em;
+}
+
+#contact-me li {
+  margin-top: 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+#contact-me li:nth-child(even) {
+  margin: 0;
+}
+
+.contact-links:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+#contact-me i {
+  font-size: 2em;
+}
+
+footer li {
+  margin: 0 2em;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+}
+
+@media only screen and (min-width: 700px) {
+  #extra-curricular ul {
+    font-size: 0.8em;
+  }
+
+  #extra-curricular > div {
+    flex-direction: row;
+    padding: 0;
+  }
+
+  #extra-curricular img {
+    width: 90%;
+    overflow: hidden;
+  }
+
+  /* have coding for flexbox thing here (extra-curric imgs in 3 */
+}
+
+@media only screen and (min-width: 950px) {
+  #extra-curricular ul {
+    margin: 0;
+    font-size: 1em;
+    padding: 1em;
+  }
+
+  #extra-curricular > div {
+    flex-direction: row;
+    padding: 0;
+  }
+
+  #about-me > div {
+    padding: 30px 5%;
+    margin: 0;
+    text-align: justify;
+    display: flex;
+    flex-direction: row;
+  }
+
+  #about-me > div > div {
+    padding: 0 5%;
+    margin: 0;
+  }
+
+  #about-me img {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media only screen and (min-width: 1450px) {
+  #extra-curricular ul {
+    padding: 0 15% 25% 15%;
+  }
+}

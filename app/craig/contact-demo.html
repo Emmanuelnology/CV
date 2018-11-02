@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- By Craig Livings  -->
+<head>
+        <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            (function(){
+                emailjs.init("user_pSSUp7nIxBfUHj93OATrV");
+            })();
+        </script>
+    <title>Email send demo</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+    #feedback {
+        padding:10px;
+        text-align:center;
+        background-color:darkred;
+        color:white;
+    }
+
+    .success {
+        background-color:green !important;
+    }
+
+    #submit {
+        border-radius: 5px;
+        background-color:orange;
+        color:white;
+        padding:15px;
+        margin-bottom:10px;
+    }
+
+    .form-field {
+        width:100%;
+        display:block;
+        margin: 10px 0;
+        padding: 10px;
+    }
+
+    .hidden {
+        display:none;
+    }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Contact me</h1>
+        <form id="contact-form">
+            <label for="name">Name</label>
+            <input class="form-field" aria-label="Name" type="text" id="name" placeholder="Name" required >
+            <input class="form-field" aria-label="Email" type="email" id="email" placeholder="example@domain.com" required >
+            <textarea class="form-field" name="message" id="message" placeholder="Your message" required ></textarea>
+            <input type="submit" id="submit" value="Be my friend" >
+        </form>
+
+        <div id="feedback" class="hidden">
+        </div>
+
+    </main>
+    <script>
+
+        $('#contact-form').submit(function(e){
+            e.preventDefault();
+            var data = {
+                name: $('#name').val(),
+                email: $('#email').val(),
+                message: $('#message').val()
+            }
+            send(data);
+        })
+
+        function send(data){
+            var serviceID='default_service';
+            var templateID='contact_me';
+
+            emailjs.send(serviceID, templateID, data).then(
+                function(response) {
+                    $('#feedback').show();
+                    $('#feedback').addClass('success');
+                    $('#feedback').html('Thanks, I will consider your message carefully');
+                },
+                function(error) {
+                    console.error('Error sending email');
+                    $('#feedback').removeClass('success');
+                    $('#feedback').show();
+                    $('#feedback').html('OMG There has been an error, DON\'T PANIC');
+                }
+            );
+        }
+
+    </script>
+</body>
+</html>

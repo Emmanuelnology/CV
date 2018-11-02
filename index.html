@@ -1,32 +1,198 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Home</title>
-        <style>
-            p{
-                padding:9px;
-                border: 1px #ccc solid;
-                margin: 10px;
-                width: 30%;
-                float:left;
-                text-align:center;
-            }
-        </style>
-    </head>
-    <body>
-        <p><a href="satyam/" >Satyam Gehani</a></p>
-        <p><a href="clare/" >Clare</a></p>    
-        <p><a href="luke/">Luke Delaney</a></p>
-        <p><a href="caitlin/" >Caitlin Whiteley</a></p>
-        <p><a href="akash/">Akash Mair</a></p>
-        <p><a href="kieran/" >Kieran Taylor</a></p>
-        <p><a href="george/" >George Webster</a></p>
-        <p><a href="josh/" >Josh Boyd-Cox</a></p>
-        <p><a href="ben/" > Ben Tomaney</a></p>
-        <p><a href="shea/" >Shea Murphy</a></p>
-        <p><a href="kasongo/" >Shutsha Kasongo</a></p>
-        <p><a href="georgina/main/contact.html">Georgina Ryder</a></p>
-        <p><a href="craig/center-demo.html" >Craig Livings</a></p>
+<head>
+    <title>Brunel October 2018</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    </body>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding:0;
+        }
+        
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+        
+        main {
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            height:100vh;
+        }
+
+        main a {
+            margin:0;
+            padding:0;
+            height:20vh;
+            background-image:url("http://www.placekitten.com/600/450");
+            background-size:cover;
+            background-repeat:no-repeat;
+            color:white;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            font-weight:800;
+            font-size: 20px;
+            position:relative;
+            text-decoration: none;
+        }
+
+        main p{
+            z-index:1;
+        }
+
+        main a:hover .darken, main a:hover p  {
+            display:none;
+        }
+
+        
+        .darken {
+            position:absolute;
+            left:0;
+            right:0;
+            top:0;
+            bottom:0;
+            background-color:rgba(0,0,0,0.5);
+        }
+        
+        #kieran {
+            background-image: url('app/avatars/kieran.jpg');
+        }
+
+        #ben {
+            background-image: url('app/avatars/ben.jpg');
+        }
+
+        #clare {
+            background-image: url('app/avatars/clare.jpeg');
+        }
+
+        #shea {
+            background-image: url('app/avatars/shea.jpg');
+        }
+
+        #satyam {
+            background-image: url('app/avatars/satyam.jpg');
+        }
+
+        #kasongo {
+            background-image: url('app/avatars/kas.jpg');
+        }
+
+        #luke {
+            background-image: url('app/avatars/luke.jpg');
+        }
+
+        #caitlin {
+            background-image: url('app/avatars/caitlin.jpg');
+        }
+
+        #georgina {
+            background-image: url('app/avatars/georgina.jpg');
+        }
+        
+        #josh {
+            background-image: url('app/avatars/josh.jpeg');
+        }
+
+        #akash {
+            background-image: url('app/avatars/kash.jpg');
+        }
+
+        #george {
+            background-image: url('app/avatars/george.jpg');
+        }
+
+        #kieran {
+            background-image: url('app/avatars/kieran.png');
+        }
+
+        @media only screen and (min-width: 600px)  {
+            main {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+
+            main a {
+                height:100%;
+                font-size: 30px;
+            }
+
+        }
+
+        @media only screen and (min-width: 800px)  {
+            main {
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        
+        <a id="akash" href="/app/akash/">
+            <div class="darken"> </div>
+            <p>Kash</p>
+        </a>
+        
+        <a id="ben" href="/app/ben/">
+            <div class="darken"> </div>
+            <p>Ben</p>
+        </a>
+        
+        <a id="caitlin" href="/app/caitlin/">
+            <div class="darken"> </div>
+            <p>Caitlin</p>
+        </a>
+        
+        <a id="clare" href="/app/clare/">
+            <div class="darken"> </div>
+            <p>Clare</p>
+        </a>
+        
+        <a id="george" href="/app/george/">
+            <div class="darken"> </div>
+            <p>George</p>
+        </a>
+        
+        <a id="georgina" href="/app/georgina/main/index.html">
+            <div class="darken"> </div>
+            <p>Georgina</p>
+        </a>
+        
+        <a id="josh" href="/app/josh/">
+            <div class="darken"> </div>
+            <p>Josh</p>
+        </a>
+        
+        <a id="kasongo" href="/app/kasongo/index.new.html">
+            <div class="darken"> </div>
+            <p>Kasongo</p>
+        </a>
+        
+        <a id="kieran" href="/app/kieran/">
+            <div class="darken"> </div>
+            <p>Kieran</p>
+        </a>
+        
+        <a id="luke" href="/app/luke/">
+            <div class="darken"> </div>
+            <p>Luke</p>
+        </a>
+        
+        <a id="satyam" href="/app/satyam/">
+            <div class="darken"> </div>
+            <p>Satyam</p>
+        </a>
+        
+        <a id="shea" href="/app/shea/">
+            <div class="darken"> </div>
+            <p>Shea</p>
+        </a>
+        
+    </main>
+    
+</body>
 </html>

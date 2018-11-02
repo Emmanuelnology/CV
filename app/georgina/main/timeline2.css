@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+#timeline,
+h1 {
+  font-family: 'Fauna One', serif;
+  text-align: center;
+  font-size: 35px;
+  padding: 0;
+  margin: 0;
+  border-bottom: 2px dotted  black;
+  margin-top: 50px;
+}
+
+#timeline,
+header {
+  margin-top: 50px;
+}
+
+body {
+  display: flex;
+}
+
+.story {
+  padding: 1em;
+}
+
+.story h2 {
+  margin-bottom: 0.3em;
+}
+
+.story p {
+  margin: 1em 0;
+}
+
+.timeline {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: large;
+}
+
+strong {
+  font-weight: 600;
+}
+
+.timeline > div {
+  padding: 0.25em 0.5em;
+  border-color: #06aed5;
+  border-style: solid;
+  border-width: 0;
+}
+
+.timeline > div > div {
+  padding: 0.5em;
+}
+
+.timeline > *:nth-child(even) > div::before {
+  content: " ";
+  width: 1em;
+  height: 1em;
+  border: #f2d234 solid 0.125em;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  left: -0.75em;
+  top: 0.75em;
+  z-index: 2;
+}
+
+.timeline > div:nth-child(even) {
+  border-left-width: 0.125em;
+  position: relative;
+  text-align: left;
+}
+
+.timeline > div:nth-child(odd) {
+  border-right-width: 0.125em;
+  text-align: right;
+}
+
+body > div {
+  flex: 1;
+}
+
+.tl-text {
+  font-size: 15px;
+}
+
+img {
+  display: block;
+  margin: auto;
+}

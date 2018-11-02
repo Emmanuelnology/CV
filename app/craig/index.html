@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css?family=Krub" rel="stylesheet">
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="content hidden">
+        <div class="tab">Story</div>
+        My Story
+    </div>
+    <div class="content hidden">
+        <div class="tab">Skills</div>
+        Content 2
+    </div>
+    <div class="content hidden">
+        <div class="tab">Contact</div>
+        Content 3
+    </div>
+    
+    
+    <div id="greeting">
+        <div>
+            <a href="#" id="download" data-micromodal-trigger="modal-1">
+                <p class="name">
+                    craig<span class="space"></span><span id="last-name">livings</span>
+                    
+                </p>
+                Download CV
+            </a>
+        </div>
+    </div>
+    
+    <div id="hi">
+        <div>
+            <div id="snow">
+                <p>Snowboarder</p>
+            </div>
+            <div id="climb" class="u-flex-right">
+                <p>Climber</p>
+            </div>
+        </div>
+        <div>
+            <div id="family">
+                <p>
+                    Father and Husband
+                </p>
+            </div>
+            <div id="pro" class="u-flex-right">
+                <p>Hands on CTO</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function hideIfHidden(element){
+        if(element.hasClass('hidden')){
+            element.animate({left: '100vw'});
+        } else {
+            element.animate({left: '35px'});
+        }
+    }
+    
+    
+    
+    $('.tab').click(function(e){
+        var parent=$(this).parent('.content');
+        parent.toggleClass('hidden');
+        hideIfHidden(parent);
+    })
+    
+    
+</script>
+</html>
