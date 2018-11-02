@@ -1,179 +1,75 @@
 :root {
-  --score-dark: darkblue;
-  --score-med: red;
-  --score-lightest: white;
-  --score-light: blueviolet;
-  --score-darkest: black;
-  --size-smallest: 1px;
-  --size-small: 5px;
-  --size-med: 10px;
-  --size-large: 15px;
-  --size-largest: 24px;
+  --board-dark: rgb(110, 60, 45);
+  --board-light: rgb(186, 102, 76);
+  --size-small: 2px;
+  --size-med: 12px;
+  --size-large: 20px;
 }
 
 main {
-  width: 21em;
-}
-
-h1 {
-  margin-top: 0;
-  padding-top: var(--size-med);
-}
-
-article {
-  margin: var(--size-large);
+  width: 21.5em;
 }
 
 h2 {
-  font-size: var(--size-largest);
-  margin: var(--size-small);
+  font-size: var(--size-large);
 }
 
 ul {
   list-style: none;
 }
 
-.innings {
-  font-size: 16px;
-  font-style: italic;
-  font-weight: 800;
-  display: block;
-}
-
-.not-out {
-  background-color: var(--score-light);
-  color: var(--score-lightest);
-}
-
 .blank {
   color: transparent;
 }
 
-.thick {
-  font-weight: 600;
+.board-border {
+  width: 19.5em;
+  margin: var(--size-large) auto;
+  padding: 0.3em;
+  border: solid var(--size-small) var(--board-dark);
+  background-image: url('wood.png');
 }
 
-.thin,
-.changes {
-  font-weight: 100;
-  text-align: left;
+.hons-board {
+  border: solid var(--size-small) var(--board-light);
+  color: var(--board-dark);
+  padding: 1em;
+  margin: 0 auto;
+  width: 18.5em;
+  display: grid;
+  grid-template-areas: "place place place" "year award grade";
+  grid-template-columns: 4em 10em 4.5em;
+  justify-content: center;
+  text-transform: uppercase;
 }
 
 .appears {
   display: none;
 }
 
-.bcdb-cw {
-  background-color: var(--score-dark);
-  color: var(--score-lightest);
+.hons-board div {
+  font-size: var(--size-med);
 }
 
-.bcr-cw {
-  background-color: var(--score-med);
-  color: var(--score-lightest);
+.place {
+  grid-area: place;
+  margin: 0.4em 0.2em 1.2em 0.2em;
 }
 
-.bcw-cdb {
-  background-color: var(--score-lightest);
-  color: var(--score-dark);
+.year {
+  grid-area: year;
 }
 
-.pb {
-  padding-bottom: var(--size-small);
+.award {
+  grid-area: award;
 }
 
-.pt {
-  padding-top: var(--size-small);
-}
-
-.pl,
-.batter li {
-  padding-left: var(--size-small);
-}
-
-.pr {
-  padding-right: var(--size-small);
-}
-
-.mb {
-  margin-bottom: var(--size-small);
-}
-
-.bt {
-  border-top: var(--size-smallest) var(--score-dark) solid;
-}
-
-.bb {
-  border-bottom: var(--size-smallest) var(--score-dark) solid;
-}
-
-.br {
-  border-right: var(--size-smallest) var(--score-dark) solid;
-}
-
-.bl {
-  border-left: var(--size-smallest) var(--score-dark) solid;
-}
-
-.scorecard {
-  margin: 0 auto;
-  width: 18.5em;
-  display: grid;
-  grid-template-areas: "team team team" "batter batter score" "extras extras ex-score" "total final final";
-  grid-template-columns: 11.5em 2.5em 4.5em;
-  justify-content: center;
-}
-
-.team {
-  margin: 0;
-  grid-area: team;
-  border-radius: var(--size-small) var(--size-small) 0 0;
-}
-
-.batter {
-  grid-area: batter;
-}
-
-.caught {
-  grid-area: caught;
-}
-
-.bowled {
-  grid-area: bowled;
-}
-
-.score {
-  grid-area: score;
-}
-
-.extras {
-  grid-area: extras;
+.award li {
   text-align: left;
 }
 
-.total {
-  grid-area: total;
-  text-align: left;
-  border-radius: 0 0 0 var(--size-small);
-}
-
-.final {
-  grid-area: final;
-  text-align: right;
-  border-radius: 0 0 var(--size-small) 0;
-}
-
-.ex-score {
-  grid-area: ex-score;
-}
-
-.scorecard li {
-  text-align: left;
-}
-
-.ex-score,
-.score li {
-  text-align: center;
+.grade {
+  grid-area: grade;
 }
 
 @media only screen and (min-width: 600px) {
@@ -181,20 +77,17 @@ ul {
     width: 35em;
   }
 
+  .board-border {
+    width: 29em;
+  }
+
+  .hons-board {
+    width: 28em;
+    grid-template-areas: "place place place" "year award grade";
+    grid-template-columns: 5em 18em 5em;
+  }
+
   .appears {
     display: initial;
-  }
-
-  .changes {
-    font-weight: 600;
-  }
-
-  .scorecard {
-    margin: 0 auto;
-    width: 29em;
-    display: grid;
-    grid-template-areas: "team team team team" "batter caught bowled score" "extras extras extras ex-score" "total total final final";
-    grid-template-columns: 12em 6.5em 6em 4.5em;
-    justify-content: center;
   }
 }
