@@ -14,6 +14,10 @@ body {
   color: white;
 }
 
+nav {
+  z-index: 2;
+}
+
 header,
 footer,
 h1,
@@ -268,4 +272,17 @@ div ul li {
 .cloud {
   height: auto;
   padding-bottom: 150px;
+}
+
+.modal-ibm {
+  display: none;
+  position: fixed;
+  left: 20%;
+  right: 20%;
+  top: 20%;
+  bottom: 40%;
+  background-color: blue;
+  padding: 20px;
+  border-radius: 20%;
+  border: 1px grey solid;
 }
