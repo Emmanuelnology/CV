@@ -111,7 +111,7 @@ nav > a:hover {
   opacity: 0.6;
 }
 
-#about-me div {
+.about-me-display {
   padding: 50px 10%;
   margin: 0;
   text-align: justify;
@@ -125,6 +125,31 @@ nav > a:hover {
   border-radius: 50%;
   width: 15em;
   border: 3px solid black;
+}
+
+#about-me .open-button {
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+}
+
+#about-me button:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+#modal {
+  background-color:red;
+  display:none;
+  position:fixed;
+  left:10%;
+  width:80%;
+  top:10%;
+  height:80%;
+  border-radius: 10px;
+  padding: 15px;
+  border: 1px solid #111;
+  z-index: 10;
 }
 
 #skills-box li {
@@ -232,7 +257,7 @@ footer {
   padding: 10px;
 }
 
-@media only screen and (min-width: 550px) {
+@media only screen and (min-width: 700px) {
   #extra-curricular ul {
     font-size: 0.8em;
   }
@@ -250,7 +275,7 @@ footer {
   /* have coding for flexbox thing here (extra-curric imgs in 3 */
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 950px) {
   #extra-curricular ul {
     margin: 0;
     font-size: 1em;
