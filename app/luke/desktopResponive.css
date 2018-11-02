@@ -259,3 +259,13 @@ div ul li {
   float: right;
   padding-right: 50%;
 }
+
+#word-cloud {
+  position: relative;
+  width: 200px;
+}
+
+.cloud {
+  height: auto;
+  padding-bottom: 150px;
+}
