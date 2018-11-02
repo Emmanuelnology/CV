@@ -1,136 +1,198 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Home</title>
-        <style>
-            * {
-                box-sizing: border-box;
-            }
-         
+<head>
+    <title>Brunel October 2018</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    body {
-        margin: 0;
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding:0;
+        }
         
-    }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+        
+        main {
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            height:100vh;
+        }
 
-    main {
-        display:grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        height:100vh;
-    }
-            main>div {
-                margin:0;
-                padding:0;
+        main a {
+            margin:0;
+            padding:0;
+            height:20vh;
+            background-image:url("http://www.placekitten.com/600/450");
+            background-size:cover;
+            background-repeat:no-repeat;
+            color:white;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            font-weight:800;
+            font-size: 20px;
+            position:relative;
+            text-decoration: none;
+        }
+
+        main p{
+            z-index:1;
+        }
+
+        main a:hover .darken, main a:hover p  {
+            display:none;
+        }
+
+        
+        .darken {
+            position:absolute;
+            left:0;
+            right:0;
+            top:0;
+            bottom:0;
+            background-color:rgba(0,0,0,0.5);
+        }
+        
+        #kieran {
+            background-image: url('app/avatars/kieran.jpg');
+        }
+
+        #ben {
+            background-image: url('app/avatars/ben.jpg');
+        }
+
+        #clare {
+            background-image: url('app/avatars/clare.jpeg');
+        }
+
+        #shea {
+            background-image: url('app/avatars/shea.jpg');
+        }
+
+        #satyam {
+            background-image: url('app/avatars/satyam.jpg');
+        }
+
+        #kasongo {
+            background-image: url('app/avatars/kas.jpg');
+        }
+
+        #luke {
+            background-image: url('app/avatars/luke.jpg');
+        }
+
+        #caitlin {
+            background-image: url('app/avatars/caitlin.jpg');
+        }
+
+        #georgina {
+            background-image: url('app/avatars/georgina.jpg');
+        }
+        
+        #josh {
+            background-image: url('app/avatars/josh.jpeg');
+        }
+
+        #akash {
+            background-image: url('app/avatars/kash.jpg');
+        }
+
+        #george {
+            background-image: url('app/avatars/george.jpg');
+        }
+
+        #kieran {
+            background-image: url('app/avatars/kieran.png');
+        }
+
+        @media only screen and (min-width: 600px)  {
+            main {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+
+            main a {
                 height:100%;
-                background-image:url("http://www.placekitten.com/600/600");
-                background-size:cover;
-                background-repeat:no-repeat;
-                color:rgba(255,255,255,0.5);
-                display:flex;
-                align-items: center;
-                justify-content: center;
-                font-weight:800;
-                font-size: 20px;
-                position:relative;
+                font-size: 30px;
             }
 
-            main>div a {
-                z-index:1;
-                color:inherit;
-                text-decoration: none;
+        }
+
+        @media only screen and (min-width: 800px)  {
+            main {
+                grid-template-columns: 1fr 1fr 1fr 1fr;
             }
-
-            main>div:hover .darken {
-                display:none;
-            }
-
-            main>div a:hover {
-                color:white;
-            }
-            .darken {
-                position:absolute;
-                left:0;
-                right:0;
-                top:0;
-                bottom:0;
-                background-color:rgba(0,0,0,0.5);
-            }
-
-            #kieran {
-                background-image: url('app/avatars/kieran.jpg');
-            }
-        </style>
-    </head>
-    <body>
-        <main>
-            <div id="akash">
-                <div class="darken"></div>
-                <a href="/app/akash/">Kash</a>
-            </div>
-            <div id="ben">
-                <div class="darken"> </div>
-                <a href="/app/ben/">Ben</a>
-
-            </div>
-            <div id="caitlin">
-                <div class="darken"></div>
-                Caitlin
-            </div>
-            <div id="clare">
-                <div class="darken">
-
-                </div>
-                Clare
-            </div>
-            <div id="george">
-                <div class="darken">
-
-                </div>
-                George
-            </div>
-            <div id="georgina">
-                <div class="darken">
-
-                </div>
-                Georgina
-            </div>
-            <div id="josh">
-                <div class="darken">
-
-                </div>
-                Josh
-            </div>
-            <div id="kasongo">
-                <div class="darken">
-
-                </div>
-                Kasongo
-            </div>
-            <div id="kieran">
-                <div class="darken">
-
-                </div>
-                Kieran
-            </div>
-            <div id="luke">
-                <div class="darken">
-
-                </div>
-                Luke
-            </div>
-            <div id="satyam">
-                <div class="darken">
-
-                </div>
-                Satyam
-            </div>
-            <div id="shea">
-                <div class="darken">
-
-                </div>
-                Shea
-            </div>
-        </main>
-       
-    </body>
+        }
+    </style>
+</head>
+<body>
+    <main>
+        
+        <a id="akash" href="/app/akash/">
+            <div class="darken"> </div>
+            <p>Kash</p>
+        </a>
+        
+        <a id="ben" href="/app/ben/">
+            <div class="darken"> </div>
+            <p>Ben</p>
+        </a>
+        
+        <a id="caitlin" href="/app/caitlin/">
+            <div class="darken"> </div>
+            <p>Caitlin</p>
+        </a>
+        
+        <a id="clare" href="/app/clare/">
+            <div class="darken"> </div>
+            <p>Clare</p>
+        </a>
+        
+        <a id="george" href="/app/george/">
+            <div class="darken"> </div>
+            <p>George</p>
+        </a>
+        
+        <a id="georgina" href="/app/georgina/">
+            <div class="darken"> </div>
+            <p>Georgina</p>
+        </a>
+        
+        <a id="josh" href="/app/josh/">
+            <div class="darken"> </div>
+            <p>Josh</p>
+        </a>
+        
+        <a id="kasongo" href="/app/kasongo/">
+            <div class="darken"> </div>
+            <p>Kasongo</p>
+        </a>
+        
+        <a id="kieran" href="/app/kieran/">
+            <div class="darken"> </div>
+            <p>Kieran</p>
+        </a>
+        
+        <a id="luke" href="/app/luke/">
+            <div class="darken"> </div>
+            <p>Luke</p>
+        </a>
+        
+        <a id="satyam" href="/app/satyam/">
+            <div class="darken"> </div>
+            <p>Satyam</p>
+        </a>
+        
+        <a id="shea" href="/app/shea/">
+            <div class="darken"> </div>
+            <p>Shea</p>
+        </a>
+        
+    </main>
+    
+</body>
 </html>
