@@ -1,9 +1,12 @@
+$("#welcomescreen").click(function(){
+    $("#welcomescreen").fadeOut();
+ });
+
 $("#toggle").click(function(){
    $("#container").slideToggle();
 });
 
-$(document).ready(function(){
-    $('.image-carousel').slick({
-    setting-name: setting-value
-    });
+$('.open-close').click(function(){
+    var modalID = $(this).attr('data-target');
+    $('#' + modalID).toggleClass("hide");
 });
