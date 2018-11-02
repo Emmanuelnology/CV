@@ -9,6 +9,68 @@ body {
   background-attachment: fixed;
 }
 
+.modal,
+#blocker {
+  display: none;
+}
+
+button {
+  border-radius: 20px;
+  border: 5px solid rgb(157, 224, 180);
+  font-family: 'Montserrat';
+}
+
+button:hover {
+  transform: scale(1.2);
+}
+
+.modal {
+  position: absolute;
+  top: 20%;
+  bottom: 50%;
+  left: 20%;
+  right: 20%;
+  background-color: white;
+  z-index: 3;
+  border-radius: 20px;
+  border: 5px solid rgb(157, 224, 180);
+  font-family: 'Montserrat';
+  padding: 20px;
+  text-align: center;
+}
+
+.modal h3 {
+  font-size: 1em;
+  margin-top: 0;
+}
+
+.modal div {
+  font-size: 0.75em;
+}
+
+.modal li {
+  font-size: 0.5em;
+  margin: 0;
+}
+
+.fas.fa-times {
+  position: absolute;
+  right: 0;
+  padding-right: 5px;
+  font-size: 1em;
+  color: rgb(212, 0, 0);
+}
+
+#blocker {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
 .content {
   margin: 0 auto;
   max-width: auto;
@@ -145,48 +207,49 @@ li > div {
   padding-top: 20px;
 } */
 
-.craig-demo {
+.info-block {
   display: block;
 }
 
-.craig-demo img {
+.info-block img {
   height: 70px;
   width: auto;
   float: left;
   margin-right: 10px;
   border-radius: 10px;
+  margin-top: 20px;
 }
 
-.craig-demo h3,
-.craig-demo h4,
-.craig-demo div {
-  font-size: 0.9em;
+.info-block h3,
+.info-block h4,
+.info-block div {
+  font-size: 1em;
   text-align: right;
   margin: 0;
 }
 
-.craig-demo h4 {
-  font-size: 0.7em;
+.info-block h4 {
+  font-size: 0.75em;
   margin-top: 5px;
   color: black;
 }
 
-.craig-demo p {
+.info-block p {
   font-size: 0.7em;
-  margin: 8px;
+  margin: 8px 0 8px 8px;
   text-align: justify;
   position: relative;
   color: rgb(72, 82, 76);
 }
 
-.craig-demo a {
+.info-block a {
   text-align: right;
   margin-top: 15px;
   display: block;
   color: rgb(77, 139, 99);
 }
 
-@media only screen and (min-width: 450px) {
+@media only screen and (min-width: 480px) {
   #diamond {
     width: 70%;
     left: 15%;
@@ -248,12 +311,13 @@ li > div {
     width: 100%;
     margin: 0 auto;
     margin-bottom: 40px;
+    padding: 0 35px;
   }
 
   .title {
     font-family: 'Lobster';
     color: black;
-    font-size: 3em;
+    font-size: 2.5em;
     display: flex;
     flex-direction: row;
   }
@@ -264,8 +328,8 @@ li > div {
     border-radius: 10px;
   }
 
-  .craig-demo img {
-    height: 80px;
+  .info-block img {
+    height: 85px;
     width: auto;
     float: left;
     margin-right: 10px;
@@ -285,7 +349,7 @@ li > div {
   } */
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 1004px) {
   #diamond {
     width: 70%;
     left: 15%;
@@ -327,6 +391,7 @@ li > div {
 
   .box {
     width: 45%;
+    padding: 0;
   }
 
   /* .media-box {
@@ -355,5 +420,48 @@ li > div {
     font-family: 'Montserrat';
     font-size: 1.25em;
     padding: 0;
+  }
+
+  .info-block img {
+    height: 90px;
+    width: auto;
+    float: left;
+    margin-right: 10px;
+  }
+
+  .title {
+    font-family: 'Lobster';
+    color: black;
+    font-size: 3em;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .modal {
+    position: absolute;
+    top: 20%;
+    bottom: 40%;
+    left: 30%;
+    right: 30%;
+    background-color: white;
+    z-index: 3;
+    border-radius: 20px;
+    border: 5px solid rgb(157, 224, 180);
+    font-family: 'Montserrat';
+    padding: 20px;
+    text-align: center;
+  }
+
+  .modal h3 {
+    font-size: 2em;
+    margin-top: 0;
+  }
+
+  .modal li {
+    font-size: 0.5em;
+  }
+
+  .fas.fa-times {
+    font-size: 1.5em;
   }
 }

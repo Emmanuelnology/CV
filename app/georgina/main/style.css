@@ -30,6 +30,7 @@ body {
 nav {
   background-color: #06aed5;
   height: 100vh;
+  width: 100%;
   margin-right: 1%;
   font-size: 10px;
   grid-area: me;
@@ -37,6 +38,7 @@ nav {
   background-image: url('bridge.png');
   background-repeat: no-repeat;
   background-position: center;
+  position: fixed;
 }
 
 nav ul {
@@ -125,7 +127,7 @@ header h3 {
 
 .info {
   font-size: 30px;
-  margin-top: 100px;
+  margin-top: 70px;
   margin-bottom: 3px;
   color: black;
   width: 60%;
@@ -220,6 +222,42 @@ header h3 {
   font-size: 50px;
   text-align: center;
   color: #e34543;
+}
+
+#piechart {
+  width: 50%;
+  display: inline-block;
+}
+
+#doing {
+  padding-top: 20px;
+  text-align: center;
+  width: 50%;
+}
+
+#describe > * {
+  padding-left: 60px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+#describe {
+  font-size: 20px;
+}
+
+.words > li {
+  padding: 5px 5px;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.equal-flex {
+  display: flex;
+}
+
+.equal-flex > * {
+  flex: 1;
 }
 
 .career {
@@ -366,14 +404,10 @@ nav ul {
 #plane {
   text-align: left;
   padding-left: 20px;
-  background-image: url('plane.png');
 }
 
-#doing {
-  font-size: 18px;
-  padding-top: 20px;
-  padding-left: 100px;
-  text-align: left;
+#plane:hover {
+  background-image: url('plane.png');
 }
 
 section {
@@ -381,11 +415,15 @@ section {
   display: none;
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 750px) {
   main {
     display: block;
     position: relative;
     background-color: white;
+  }
+
+  nav {
+    width: 33.3%;
   }
 
   #closebutton {
