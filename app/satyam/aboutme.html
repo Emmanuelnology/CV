@@ -12,7 +12,7 @@
 <body>
     <main>
         <div id="sectionindicator">
-            <i class="leftarrow fas fa-long-arrow-alt-left"></i>
+            <i class="leftarrow fas fa-long-arrow-alt-up"></i>
             <p>About Me</p>
             <p>towards</p>
             <p>Skills</p>
@@ -20,20 +20,35 @@
         <div id="container">
         </div>
         <div id="infopanel">
-            <div id="toggle">
+            <div id="toggle" class="open-close" data-target="aboutme">
                 <a href="#">
                     <i class="pullupbar fas fa-minus"></i>
                 </a>
             </div>
             2 min 120m 4:30pm
-            <p id="aboutme">An ambitious developer, with relevant experience coding and developing seeking to 
-                forge a career within mobile app development. Possesses exceptional interpersonal and team working 
-                skills through a breadth of varying experiences. Creative and innovative problem solver capable of 
-                taking on a project from concept to completion. Previous academic and work experience enabled the 
-                development of both outstanding communication skills with abilities in numerous languages, as well 
-                as a commercial awareness and understanding of business environments. Currently living and working 
-                in Bristol. Passionate about entrepreneurship and sustainability as well as team sports, namely football.
-            </p>
+            <nav id="bottomnav">
+                <div class="start">
+                    <span class="navbuttons">
+                        <a href="skills.html">Continue</a>
+                    </span>
+                </div>
+                <div class="directions">
+                    <span class="navbuttons">
+                        <i class="fa fa-walking" aria-hidden="true"></i>
+                        <a href="directions.html">Directions</a>
+                    </span>
+                </div>        
+            </nav>    
+            <div id="aboutme" class="hide">
+                <p >An ambitious developer, with relevant experience coding and developing seeking to 
+                    forge a career within mobile app development. Possesses exceptional interpersonal and team working 
+                    skills through a breadth of varying experiences. Creative and innovative problem solver capable of 
+                    taking on a project from concept to completion. Previous academic and work experience enabled the 
+                    development of both outstanding communication skills with abilities in numerous languages, as well 
+                    as a commercial awareness and understanding of business environments. Currently living and working 
+                    in Bristol. Passionate about entrepreneurship and sustainability as well as team sports, namely football.
+                </p>
+            </div>
         </div>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
