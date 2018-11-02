@@ -187,28 +187,56 @@ body > div {
   font-size: 1.5em;
 }
 
+#html5-fa {
+  color: lightslategrey;
+}
+
 .fa-css3-alt {
   color: #264de4;
   font-size: 1.5em;
 }
 
+#css3-fa {
+  color: lightslategray;
+}
+
 .fa-js-square {
+  color: lightslategrey;
+  font-size: 1.5em;
+}
+
+#javas-fa {
   color: #fbde34;
   font-size: 1.5em;
 }
 
-.fa-angular {
+#angular-fa{
   color: #dd0330;
   font-size: 1.5em;
 }
 
-.fa-react {
+.fa-angular {
+  color: lightslategray;
+  font-size: 1.5em;
+}
+
+#react-fa {
   color: #61dafb;
   font-size: 1.5em;
 }
 
-.fa-docker {
+.fa-react {
+  color: lightslategray;
+  font-size: 1.5em;
+}
+
+#docker-fa {
   color: #05a9d1;
+  font-size: 1.5em;
+}
+
+.fa-docker {
+  color: lightslategray;
   font-size: 1.5em;
 }
 
