@@ -207,8 +207,8 @@ ul.skillslist {
   margin: 25px;
 }
 
-@media only screen and (min-width: 700px) {
+/* @media only screen and (min-width: 700px) {
   #infopanel {
-    /* background-color: red; */
+    background-color: red;
   }
-}
+} */
