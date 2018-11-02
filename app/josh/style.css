@@ -80,11 +80,13 @@ nav li a:hover:not(.active) {
 
 .about-me-color {
   background-color: #a8a3a3;
+  padding: 25px 0 25px 0;
 }
 
 .polaroids {
   display: flex;
   flex-direction: row;
+  margin-top: 15px;
 }
 
 .polaroid img {
