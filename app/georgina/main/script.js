@@ -9,7 +9,8 @@ var nav = {
     },
     skills: {
         link: $("#js-skills"),
-        content: $("#skills")
+        content: $("#skills"),
+        div: $("#brain")
     },
     aboutme: {
         link: $("#js-aboutme"),
@@ -44,7 +45,7 @@ function showSection(section) {
     removeActiveFromAllNavLinks();
     $("#main").show();
     section.content.show();
-    section.link.addClass('active');
+    section.div.show();
 }
 
 $("#closebutton").click(function(){

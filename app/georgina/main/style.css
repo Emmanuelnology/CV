@@ -34,6 +34,9 @@ nav {
   font-size: 10px;
   grid-area: me;
   position: relative;
+  background-image: url('bridge.png');
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 nav ul {
@@ -41,7 +44,7 @@ nav ul {
 }
 
 #navtext {
-  color: black;
+  color: white;
   font-family: 'Fauna One', serif;
   position: absolute;
   font-size: 15px;
@@ -50,7 +53,7 @@ nav ul {
 }
 
 #gryder {
-  color: black;
+  color: white;
   font-family: 'Pacifico', cursive;
   font-size: 30px;
   position: absolute;
@@ -74,6 +77,10 @@ main {
   width: 100%;
 }
 
+.bold {
+  font-size: 30px;
+}
+
 #closebutton {
   display: block;
   position: absolute;
@@ -92,7 +99,7 @@ h1 {
   font-size: 35px;
   padding: 0;
   margin: 0;
-  border-bottom: 2px dotted grey;
+  border-bottom: 2px dotted  black;
   margin-top: 50px;
 }
 
@@ -145,8 +152,23 @@ header h3 {
   text-align: center;
 }
 
-.hobbies li {
+.hobbies {
   padding: 5px;
+  text-align: center;
+}
+
+.trav-img {
+  width: 20%;
+  flex: 1;
+  margin-top: 0;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.trav-div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .career {
@@ -283,13 +305,6 @@ nav ul {
 }
 
 #brain {
-<<<<<<< HEAD
-  height: 80px;
-  display: block;
-  <<<<<<< HEAD
-  position: fixed;
-  =======
-=======
   top: 60px;
 }
 
@@ -304,7 +319,6 @@ nav ul {
 #lips:hover {
   background-image: url('lips.png');
   position: fixed;
->>>>>>> 5601be2ec0acac2fa16834fefb9c375376bc4621
   position: absolute;
 }
 
@@ -358,6 +372,8 @@ nav ul {
 #doing {
   font-size: 18px;
   padding-top: 20px;
+  padding-left: 100px;
+  text-align: left;
 }
 
 section {
@@ -365,12 +381,9 @@ section {
   display: none;
 }
 
-.active {
-  font-weight: 800;
-}
-
 @media only screen and (min-width: 500px) {
   main {
+    display: block;
     position: relative;
     background-color: white;
   }
