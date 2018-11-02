@@ -119,3 +119,76 @@ stop {
 .ninth {
   stop-color: rgb(60, 74, 115);
 }
+
+#js-huboo-modal-open {
+  width: 200px;
+  height: 50px;
+  fill: transparent;
+}
+
+#js-teaching-modal-open,
+#js-gift-shop-modal-open,
+#js-tti-modal-open,
+#js-ribbon-modal-open,
+#js-beavers-modal-open {
+  width: 200px;
+  height: 75px;
+  fill: transparent;
+}
+
+#js-huboo-modal-open:hover,
+#js-teaching-modal-open:hover,
+#js-gift-shop-modal-open:hover,
+#js-tti-modal-open:hover,
+#js-ribbon-modal-open:hover,
+#js-beavers-modal-open:hover {
+  cursor: pointer;
+}
+
+rect.huboo-modal {
+  width: 650px;
+  height: 235px;
+  fill: white;
+  stroke: orangered;
+  display: none;
+}
+
+rect.teaching-modal {
+  width: 650px;
+  height: 315px;
+  fill: white;
+  stroke: yellow;
+  display: none;
+}
+
+rect.gift-shop-modal {
+  width: 650px;
+  height: 260px;
+  fill: white;
+  stroke: green;
+  display: none;
+}
+
+rect.tti-modal {
+  width: 650px;
+  height: 315px;
+  fill: white;
+  stroke: darkblue;
+  display: none;
+}
+
+rect.ribbon-modal {
+  width: 650px;
+  height: 260px;
+  fill: white;
+  stroke: salmon;
+  display: none;
+}
+
+rect.beavers-modal {
+  width: 650px;
+  height: 260px;
+  fill: white;
+  stroke: lightblue;
+  display: none;
+}
