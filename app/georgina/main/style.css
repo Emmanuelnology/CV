@@ -222,6 +222,17 @@ header h3 {
   color: #e34543;
 }
 
+.chart {
+  width: 500px;
+  margin-right: 0;
+  position: relative;
+}
+
+#describe {
+  position: absolute;
+}
+
+
 .career {
   color: #e34543;
 }
@@ -374,6 +385,10 @@ nav ul {
   padding-top: 20px;
   padding-left: 100px;
   text-align: left;
+}
+
+.chart {
+  position: relative;
 }
 
 section {
