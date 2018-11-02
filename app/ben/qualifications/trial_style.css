@@ -1,0 +1,58 @@
+h2 {
+  font-size: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+.blank {
+  color: transparent;
+}
+
+.board-border {
+  width: 29em;
+  margin: 0 auto;
+  padding: 0.3em;
+  border: solid 2px rgb(184, 128, 79);
+  background-color: rgb(203, 154, 95);
+}
+
+.hons-board {
+  border: solid 2px rgb(184, 128, 79);
+  background-color: rgb(203, 154, 95);
+  color: rgb(61, 53, 42);
+  padding: 1em;
+  margin: 0 auto;
+  width: 28em;
+  display: grid;
+  grid-template-areas: "place place place" "year award grade";
+  grid-template-columns: 5em 18.5em 5em;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.hons-board div {
+  font-size: 12px;
+}
+
+.place {
+  grid-area: place;
+  margin: 0.4em 0.2em 1.2em 0.2em;
+}
+
+.year {
+  grid-area: year;
+}
+
+.award {
+  grid-area: award;
+}
+
+.award li {
+  text-align: left;
+}
+
+.grade {
+  grid-area: grade;
+}
