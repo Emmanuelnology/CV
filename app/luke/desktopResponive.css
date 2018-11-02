@@ -7,7 +7,7 @@ body {
   text-align: justify;
   background-color: white;
   margin: 30px 30px 30px 30px;
-  background-image: url(https://bit.ly/2RhRnjw);
+  background-image: url(../luke/pictures/bg.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -37,6 +37,12 @@ img {
   float: left;
   width: 100px;
 }
+
+/* span img {
+  border: 1px white solid;
+  position: relative;
+  bottom: 25px;
+} */
 
 li {
   padding-bottom: 10px;
@@ -100,6 +106,29 @@ div ul li {
   grid-template-areas: "one two thr for fiv";
   grid-auto-columns: auto;
   width: 100%;
+  padding-top: 50px;
+}
+
+#timeline-img1,
+#timeline-img4 {
+  position: relative;
+  bottom: 20px;
+  right: 55px;
+  border-radius: 15%;
+}
+
+#timeline-img2 {
+  position: relative;
+  bottom: 40px;
+  right: 55px;
+  border-radius: 15%;
+}
+
+#timeline-img3 {
+  position: relative;
+  bottom: 40px;
+  right: 35px;
+  border-radius: 15%;
 }
 
 .timeline span div {
@@ -115,10 +144,15 @@ div ul li {
   z-index: -1;
 }
 
-.circleOne,
-.circleTwo,
-.circleThr,
-.circleFor {
+.timeline p {
+  position: relative;
+  bottom: 30px;
+  right: 50px;
+}
+
+.circle-one,
+.circle-two,
+.circle-thr {
   border-bottom: 1px white solid;
   width: 100%;
   position: relative;
@@ -218,6 +252,6 @@ div ul li {
 }
 
 #pro-box li div {
-  float:  right;
+  float: right;
   padding-right: 50%;
 }

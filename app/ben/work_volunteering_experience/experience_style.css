@@ -1,0 +1,121 @@
+article {
+  margin: 15px;
+}
+
+ul {
+  list-style: none;
+}
+
+#svg-container {
+  display: flex;
+  justify-content: center;
+}
+
+#bowling {
+  width: 800px;
+  height: 800px;
+  transform: scale(0.7);
+}
+
+svg text {
+  font-size: 20px;
+  font-weight: 100;
+  text-anchor: left;
+}
+
+svg image {
+  height: 1210px;
+  width: 1210px;
+}
+
+stop {
+  stop-opacity: 0.8;
+}
+
+.str {
+  stroke-width: 0.1;
+}
+
+.wickets {
+  fill: white;
+  stroke: grey;
+}
+
+.crease {
+  stroke: white;
+  stroke-width: 0.7;
+}
+
+.beavers {
+  stroke: lightblue;
+  fill: lightblue;
+}
+
+.ribbon {
+  stroke: salmon;
+  fill: salmon;
+}
+
+.tti {
+  stroke: darkblue;
+  fill: darkblue;
+}
+
+.gift-shop {
+  stroke: green;
+  fill: green;
+}
+
+.teaching {
+  stroke: yellow;
+  fill: yellow;
+}
+
+.huboo {
+  stroke: orangered;
+  fill: orangered;
+}
+
+#key-container {
+  width: 230px;
+  height: 490px;
+  fill: white;
+  stroke: darkgreen;
+  stroke-width: 1px;
+}
+
+.first {
+  stop-color: rgb(221, 250, 170);
+}
+
+.second {
+  stop-color: rgb(198, 247, 82);
+}
+
+.third {
+  stop-color: rgb(166, 241, 112);
+}
+
+.fourth {
+  stop-color: rgb(144, 239, 140);
+}
+
+.fifth {
+  stop-color: rgb(132, 214, 134);
+}
+
+.sixth {
+  stop-color: rgb(103, 158, 132);
+}
+
+.seventh {
+  stop-color: rgb(86, 125, 127);
+}
+
+.eighth {
+  stop-color: rgb(70, 95, 120);
+}
+
+.ninth {
+  stop-color: rgb(60, 74, 115);
+}
