@@ -1,4 +1,4 @@
-/* Border over all the page */
+/* Border over all the page, body and title style */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -13,12 +13,16 @@ body {
 }
 
 h2 {
-  color: rgb(14, 14, 121);
+  color: rgb(83, 83, 226);
   text-align: center;
   font-size: 4em;
+  border: solid rgb(6, 6, 82);
+  border-style: double;
+  margin-left: 8em;
+  max-width: 9em;
 }
 
-/* Two columns equally spaced */
+/* Columns equally spaced */
 .equal-flex {
   display: flex;
 }
@@ -34,7 +38,7 @@ h2 {
 }
 
 .multi > div {
-  background-color: pink;
+  background-color: lightblue;
   flex: 1;
   margin: 15px;
 }
@@ -42,6 +46,10 @@ h2 {
 .large-flex {
   flex: 2 !important;
   text-align: center;
+  border: solid rgb(6, 6, 82);
+  border-style: double;
+  padding-left: 1em;
+  padding-top: 1em;
 }
 
 /* Added srolling welcome page with bouncing arrow, flex included */
