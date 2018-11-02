@@ -14,7 +14,7 @@ div.right {
   grid-area: rightt;
 }
 
-main { 
+main {
   margin: 0;
   display: grid;
   grid-template-areas:
@@ -25,7 +25,6 @@ main {
   grid-gap: 40px;
   text-align: justify;
 }
-
 
 h2 {
   font-size: 30px;
@@ -67,7 +66,7 @@ li.aboutmelabel,
 li.aboutmelabel:hover {
   height: 170px;
   z-index: 4;
-  top: 0px;
+  top: 0;
 }
 
 div.right {

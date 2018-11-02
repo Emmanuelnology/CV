@@ -6,7 +6,7 @@ li.projectslabel,
 li.projectslabel:hover {
   height: 170px;
   z-index: 4;
-  top:0px;
+  top: 0;
 }
 
 div.wrapper div {

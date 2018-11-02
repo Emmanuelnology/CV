@@ -3,7 +3,7 @@ body {
   position: relative;
 }
 
-p { 
+p {
   text-align: justify;
   width: 70%;
   float: center;
@@ -15,13 +15,12 @@ li.nowlabel,
 li.nowlabel:hover {
   height: 170px;
   z-index: 4;
-  top:0px;
+  top: 0;
 }
 
 @media only screen and (min-width: 1014px) {
   li.nowlabel,
   li.nowlabel:hover {
     height: 50px;
-
   }
 }
