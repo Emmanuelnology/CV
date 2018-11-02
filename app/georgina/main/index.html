@@ -5,12 +5,15 @@
     <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Coda+Caption:800|Fauna+One" rel="stylesheet">   
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="gee.png">
     <title>Georgina Ryder CV</title>
 </head>
 <body>
     <nav>
-        
+        <div id="navtext"> Hover over me!!</div>
+        <div id="gryder">Georgina</div>
         
         <div class="rollover" id="brain">
             <a href="#" id="js-skills"><p>Skills</p></a>
@@ -21,15 +24,22 @@
         <div class="rollover" id="heart">
             <a href="#" id="js-aboutme"><p>About me</p></a>
         </div>
-        <div class="rollover" id="phone">
-            <a href="#" id="js-contact"><p>Contact me</p></a>
-        </div>
-        <div class="rollover" id="plane">
-                <a href="#" id="js-hobbies" ><p>Travelling</p></a>
-        </div>
+        
+        <div id="hands-div">
+            <div id="phone" class="rollover" >
+                <a href="#" id="js-contact"><p>Contact</p></a>
+            </div>
             
-
-    
+            <div id="plane"  class="rollover" >
+                <a href="#" id="js-hobbies" ><p>Travelling</p></a>
+            </div>
+        </div>  
+        
+        
+        
+        
+        
+        
         <img id="gee" src="gee.png" alt="georgina character">
         
         
@@ -83,10 +93,8 @@
             
             <h1><div class="need">ALL YOU NEED TO KNOW</div> ABOUT ME</h1>
             <div class="me">
-                <p>Born in Cheltenham raised in Bristol. Graduated in Southampton travelled the world. Passionate about technology. 
-                    Growing developer. Loves marmite, hate spiders.</p>
-                    
-                    
+                <p>HEY I’m <span class="bold">Georgina Ryder,</span> born in Cheltenham in <span class="bold">1996</span> raised in Bristol. Grew up (a lot), went to uni, got a degree, decided I didn’t want to work, so went back-packing for 4months. 
+                    Found _nology and my passion for the <span class="bold">tech world</span>. Now a growing developer who <span class="bold"> loves Marite</span> and hates spiders.</p>
                 </div>
                 
                 <h2> Life's essentials</h2>
@@ -98,24 +106,27 @@
                     <i class="fas fa-shopping-bag"></i>
                     <i class="fas fa-music"></i>
                     <i class="fas fa-dog"></i>
-                    
-                    
                 </div>
-                <h2 id="doing">Can be found doing:</h2>
-                <div id="piechart"></div>
+                
+                <div class="chart-section">       
+                    
+                    <div class="chart">
+                        <h2 id="doing">Can be found doing:</h2>
+                        <div id="piechart"></div>
+                    </div>
+                    <div>
+                        Describe yourself in 3 words?
+                        
+                    </div>
+                </div>
                 
                 
-                <div class="chart">
-                    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-                    
-                    <script type="text/javascript" src="piechart.js"></script>
-                </div>
             </section>
             
             <section class="js-section" id="hobbies">
                 <h1>TRAVELLING</h1>
-                <ul>
-                    <li>Lived on an island in Vietnam </li>
+                <ul class="hobbies">
+                    <li>Lived on an island in Vietnam</li>
                     <li>Went Scuba diving in Thailand</li>
                     <li>Lived off street food in Malaysia</li>
                     <li>Sky dived in Australia </li>
@@ -123,6 +134,13 @@
                     <li>Danced on sand in Fiji</li>
                     <li>Went to Disneyland in HK </li>
                 </ul>
+                <div class="trav-div">
+                    <img class="trav-img" src="island.jpg" alt="island">
+                    <img class="trav-img" src="art.jpg" alt="stret art">
+                    <img class="trav-img" src="elephant.jpg" alt="skydivingpic">
+                    
+                </div>
+                
                 
                 
             </section>
@@ -198,17 +216,15 @@
                 </div>   
                 <h1>QUALIFICATIONS</h1>
                 
-                <ul>
+                <ul class="qualifications">
                     <li><i class="fas fa-user-graduate"></i>
-                        Graduated from southampton with a 2:1 in BA Hons in Advertsing
+                        Graduated from Southampton with a<span class="bold"> 2:1 </span> in BA Hons in Advertsing
                     </li>
-                    <li>
-                        Media Studies : B English Language: C Geogrpahy: D 
-                    </li>
-                    <li>
-                        10 GCSE including English, Math and Science
-                    </li>
+                    <li> Alevels:</li>
+                    <li> Media Studies :<span class="bold"> B </span> English Language: C Geogrpahy: D </li> 
                     <li>Adobe Certified Associate in Visual communication using Adobe Photoshop</li>
+                    <li><span class="bold">10 GCSE </span>C-A including:</li>
+                    <li>English, Math and Science</li>
                     
                     
                 </ul>           
@@ -216,13 +232,13 @@
             </section>
             
             <section class="js-section" id="story">
-                <h1>TIMELINE</h1>
+                <h1>MY STORY</h1>
                 <div class="timeline">            
                     
                     <div>
                         <div>
-                            <strong>2019</strong>
-                            <p>Job</p>
+                            <strong>Current</strong>
+                            <p>_nology</p>
                         </div>
                     </div>
                     <div><div></div></div>
@@ -233,6 +249,12 @@
                         <div>
                             <strong>2018</strong>
                             <p>Future Publishing, Travelling</p>
+                            <p class="tl-text">
+                                A global multi-platform media company as part of their licensing team. 
+                                Suppling cus-tomer service for their global products and clients.
+                                Had the chance to travel the world and see the most amazing places and gain unfor-gettable moments. 
+                                Made me appreciate how important all the small moments in life are.         
+                            </p>
                         </div>
                     </div>
                     
@@ -241,7 +263,7 @@
                         <div>
                             <strong>2017 (September)</strong>
                             <p>Royal London</p>
-                            <p class="tltext">
+                            <p class="tl-text">
                                 Responsibilties: To manage a diverse and complex quantity of clients and progress cases on our 5-star customer excellence platform. 
                                 To work as part of a multi-functional team and individually to achieve the high standards and the targets set by the Royal London.
                                 Skills learnt:My confidence within the team is developed every day, in different aspects such as customer excellence, computer and telephone skills. 
@@ -256,7 +278,12 @@
                         <div>
                             <strong>2017 (July)</strong>
                             <i class="fas fa-user-graduate"></i>
-                            <p>Graduated 2:1 BA HONS Advertising</p>
+                            <p>Graduated 2:1 BA HONS Advertising.</p>
+                            <p class="tl-text">Branding, designing, integrated marketing, digital media, 
+                                art direction, copy writing and onscreen production. I became very passionate about design, 
+                                allowing me to explore my creativity in varies units. 
+                            </p>
+                            
                         </div>
                     </div>
                     
@@ -265,7 +292,7 @@
                         <div>
                             <strong>2016</strong>
                             <p>Camp 4-2-11</p>
-                            <p class="tltext">
+                            <p class="tl-text">
                                 Responsibilties:To lead and assist with sport and craft activities for children 3 to 14 years old.
                                 To be aware of the children’s safety and their safeguarding policy.
                             </p>
@@ -279,7 +306,7 @@
                         <div>
                             <strong>2015</strong>
                             <p>Incredible Kids</p>
-                            <p class="tltext">
+                            <p class="tl-text">
                                 Responsibilties	To assist in session for children and young people aged 0-25 with a disability, developmental difficulty or additional need, and supporting their families.
                                 To ensure their play is safe and encourage children to be aware of their own safety.
                             </p>
@@ -296,6 +323,8 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.js" integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="script.js" type="text/JavaScript"></script>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript" src="piechart.js"></script>
     </body>
     </html>
     

@@ -2,17 +2,23 @@
 <html lang="en">
 
 <head>
-
-    <link rel="stylesheet" type="text/css" href="desktop.css">
-    <link rel="stylesheet" type="text/css" href="responive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="modal.js"></script>
+    <link rel="stylesheet" type="text/css" href="desktopResponive.css">
+    <link rel="stylesheet" type="text/css" href="tabletResponive.css">
+    <link rel="stylesheet" type="text/css" href="mobileResponsive.css">
+    <link rel="stylesheet" type="text/css" href="pop-up.css">
     <link rel="stylesheet" type="text/css" href="buttons.css">
+    <link rel="stylesheet" type="text/css" href="mobileButtons.css">
+    <link rel="stylesheet" type="text/css" href="modal.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title> C.V</title>
 </head>
 <body>
     <header>
-        <h1> Luke Delaney's C.V.</h1>
+        <h1>Luke Delaney's C.V.</h1>
     </header>
     <nav>
     <ul>
@@ -30,7 +36,7 @@
     </li>
 
     <li>
-        <a href="#ref">Reference</a>
+        <a href="#ref">People who knew me</a>
     </li>
 
     <li>
@@ -44,30 +50,21 @@
 
     <main>
     <!-- About me section -->
-
-        <h2 id="about" >About Me</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et turpis quam. Nam hendrerit pretium ante, in fringilla orci finibus et. Proin faucibus quam ac
-        accumsan lacinia. Vivamus vulputate nulla quis hendrerit convallis. Fusce at lacus pharetra, vulputate erat nec, maximus erat. Nunc sagittis facilisis nibh a hendrerit.
-        Duis a pretium quam, sed sagittis nisi. Cras eleifend sodales tortor, ut posuere erat ullamcorper id. Integer finibus imperdiet purus vel pretium. Sed elementum tortor
-        nunc, eget fringilla magna vulputate molestie. Mauris in massa augue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-        Duis consequat aliquam mauris ac laoreet. Ut fringilla pharetra ultrices.</p>
-
-        <p>Fusce et auctor mauris, et venenatis nisi. Pellentesque volutpat vehicula mi, nec finibus orci eleifend eget. Nunc maximus tempor ante, in accumsan odio molestie a.
-        Morbi nisi lorem, luctus quis tortor id, porta aliquam enim. Mauris quis ultricies dui. Quisque eros tellus, maximus at vehicula vel, molestie et erat.
-        Pellentesque a augue gravida, tempor massa ac, luctus nisi. Pellentesque consequat elit et augue iaculis, id dignissim turpis hendrerit. Suspendisse imperdiet
-        rutrum lacus at finibus. Morbi nec tortor pulvinar, dapibus purus vitae, finibus elit. Vivamus mollis blandit dolor id interdum. Cras a dignissim arcu, ac porttitor
-        felis. Quisque a tellus augue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris tincidunt, massa non scelerisque
-        consequat, sem quam scelerisque nisi, eget ullamcorper ante erat id libero. Nunc purus enim, malesuada nec congue et, ultricies quis nisi.</p>
+    <div class="cloud">
+    <h2 id="about" >About Me</h2>
+    <img id="word-cloud" src="../luke/pictures/word-cloud.png" alt="about me word cloud">
+    </div>
     <hr>
     <!-- Work and academic experience -->
     <h2 id="aca">Academics</h2>
-        <span id="qual-box">
+    <div class="aca-con-1">
+    <span id="qual-box">
         <h3>Education</h3>
         <ul>
-            <li>GCSE : 2006-2011 St Albans R.C. High School, Pontypool</li>
-            <li>A-level: 2012-2013 St Albans R.C. High School, Pontypool</li>
-            <li>Degree: 2013- 2017 University of South Wales (formerly Glamorgan)</li>
-            <li>External learning: 2018 _Nology</li>
+        <li><p>GCSE and A-Level</p><img src="../luke/pictures/st-albans.jpg" alt="st-albans logo"></li>
+        <li><p>Degree</p>
+        <img src="../luke/pictures/USW.jpg" alt="USW logo"></li>
+        <li><p>External</p><img src="../luke/pictures/nology.png" alt="nology logo"></li>
         </ul>
         </span>
         <span id="ed-box">
@@ -92,126 +89,165 @@
         <li>
         Degree: BA forensic accounting 2:2
         </li>
-
         </ul>
         </span>
+        </div>
+        <div class="aca-con-2">
         <div id="pro-box">
-        <h2>Programming languages </h2>
+        <h2>Programming</h2>
         <ul>
         <li>
             CSS:
+            <div>
+            <i class="fa fa-folder"></i>
             <i class="fa fa-folder"></i>
             <i class="fa fa-folder-o"></i>
             <i class="fa fa-folder-o"></i>
             <i class="fa fa-folder-o"></i>
-            <i class="fa fa-folder-o"></i>
+            </div>
         </li>
         <li>
             HTML:
+            <div>
+            <i class="fa fa-folder"></i>
             <i class="fa fa-folder"></i>
             <i class="fa fa-folder-o"></i>
             <i class="fa fa-folder-o"></i>
             <i class="fa fa-folder-o"></i>
-            <i class="fa fa-folder-o"></i>
+            </div>
         </li>
         <li>
             Javascript:
-            <i class="fa fa-folder-o"></i>
-            <i class="fa fa-folder-o"></i>
-            <i class="fa fa-folder-o"></i>
-            <i class="fa fa-folder-o"></i>
-            <i class="fa fa-folder-o"></i>
-        </li>
-        <li>
-            Python:
+            <div>
             <i class="fa fa-folder"></i>
             <i class="fa fa-folder-o"></i>
             <i class="fa fa-folder-o"></i>
             <i class="fa fa-folder-o"></i>
             <i class="fa fa-folder-o"></i>
+            </div>
+        </li>
+        <li>
+            Python:
+            <div>
+            <i class="fa fa-folder"></i>
+            <i class="fa fa-folder-o"></i>
+            <i class="fa fa-folder-o"></i>
+            <i class="fa fa-folder-o"></i>
+            <i class="fa fa-folder-o"></i>
+            </div>
+        </li>
+        <li>
+            React:
+            <div>
+            <i class="fa fa-folder-o"></i>
+            <i class="fa fa-folder-o"></i>
+            <i class="fa fa-folder-o"></i>
+            <i class="fa fa-folder-o"></i>
+            <i class="fa fa-folder-o"></i>
+            </div>
+        </li>
+        <li>
+            Angiluar:
+            <div>
+            <i class="fa fa-folder-o"></i>
+            <i class="fa fa-folder-o"></i>
+            <i class="fa fa-folder-o"></i>
+            <i class="fa fa-folder-o"></i>
+            <i class="fa fa-folder-o"></i>
+            </div>
         </li>
         </ul>
         </div>
         <span id="aw-box">
         <h2>Awards</h2>
         <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-        <li>5</li>
+            <li>pl</li>
+            <li>ac</li>
+            <li>e h</li>
+            <li>old</li>
+            <li>er</li>
         </ul>
         </span>
+        </div>
         <hr>
-<div>
+        <div>
         <h2 id="work">Past lives</h2>
-
         <div class="timeline">
                 <div>
-                    <div class="one">
-                        <p>
-                        <strong>1995</strong>
-                        </p>
-                        <div></div>
+                    <div class="circle-one">
+                    <div><p>2015-1016</p></div>
+                    
+                    <img
+                    class="js-modal-open-ibm" 
+                    id="timeline-img1" 
+                    src="../luke/pictures/ibm.png" 
+                    alt="IBM'S logo">
+
+                    <div></div>
                     </div>
                     <span>
-                        <div></div>
+                        <!-- <div></div> -->
                     </span>
-                    <div><p>under</p></div>
+                    <div></div>
                 </div>
                 <div>
-                    <div class="two">
-                        <p></p>
+                    <div class="circle-two">
+                        <div><p>2016 - 2017</p></div>
+                        <img id="timeline-img2" src="../luke/pictures/dominos.png" alt="Domino's pizza logo">                        
                         <div></div>
-                        <p>test 2</p>
                     </div>
                     <span>
-                        <div></div>
+                        <!-- <div></div> -->
                     </span>
 
                 </div>
                 <div>
-                    <div class="thr">
-                        <p>test 3</p>
+                    <div class="circle-thr">
+                        <div><p>2017 - 2018</p></div>
+                        <img id="timeline-img4" src="../luke/pictures/pjs.png" alt="Papa Johns logo">
                         <div></div>
                     </div>
                     <span>
-                        <div></div>
+                        <!-- <div></div> -->
                     </span>
                 </div>
                 <div>
-                    <div class="for">
-                        <p>test 4</p>
+                    <div class="circle-for">
+                    <div><p>2018 - present</p></div>
+                    <img id="timeline-img3" src="../luke/pictures/nbs.jpg" alt="nationwide building society's logo">
                     </div>
                     <div>
                         <div></div>
                     </div>
                     <span>
-                        <div></div>
-                    </span>
-                </div>
-                <div>
-                    <div class="fiv">
-                        <p>test 5</p>
-                    </div>
-                    <div>
-                        <div></div>
-                    </div>
-                    <span>
-                        <div></div>
+                        <!-- <div></div> -->
                     </span>
                 </div>
             </div>
         </div>
     </main>
     <hr>
-    <h2 id="ref">References</h2>
+    <h2 id="ref">People who knew me</h2>
     <div class="ref">
         <div class="ref-2">
             <p><strong>Papa John's</strong></p>
+            <ul>
+                <li>Name: Lauren cloud</li>
+                <li>Position: Manager</li>
+                <li>address: </li>
+                <li>telephone: 07478592438</li>
+                <li>Email: l.cloud@pjs.com</li>
+            </ul>
         </div>
         <div class="ref-1">
             <p><strong> IBM</strong></p>
+            <ul>
+                <li>Name: Rob Kewley</li>
+                <li>Poistion: Head Service Delivery Manager</li>
+                <li>Address: </li>
+                <li>Telephone: </li>
+                <li>email:</li>
+            </ul>
         </div>
     </div>
     <hr>
@@ -225,9 +261,11 @@
         </p> 
         </span>
         <div class="map">
-        <iframe src="https://bit.ly/2DcPb9S" style="border:0" allowfullscreen></iframe>   
+        <iframe src="https://bit.ly/2DcPb9S" allowfullscreen></iframe>   
         </div>
-        <footer> &copy;2018 Luke Delaney|<a href="#" class="cv">Download C.V.</a>|</footer>
-</body>
+
+        <footer> &copy;2018 Luke Delaney&#32;|&#32;<a href="#" class="cv">Download C.V.</a>&#32;|</footer>
+        </div>
+        </body>
 </div>
 </html>
