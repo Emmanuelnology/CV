@@ -27,6 +27,23 @@ h2 {
   flex: 1;
 }
 
+/* Columns properties and color */
+.multi {
+  display: flex;
+  width: 100%;
+}
+
+.multi > div {
+  background-color: pink;
+  flex: 1;
+  margin: 15px;
+}
+
+.large-flex {
+  flex: 2 !important;
+  text-align: center;
+}
+
 /* Added srolling welcome page with bouncing arrow, flex included */
 
 .bonjour {
@@ -81,7 +98,7 @@ header {
 }
 
 .arrow {
-  margin-top: 10%;
+  margin-top: 5%;
   margin-left: 50%;
   margin-right: 17%;
   justify-content: center;
@@ -173,22 +190,6 @@ section {
   padding-top: 50px;
 }
 
-/* Columns properties and color */
-.multi {
-  display: flex;
-  width: 100%;
-}
-
-.multi > div {
-  background-color: pink;
-  flex: 1;
-  margin: 15px;
-}
-
-.large-flex {
-  flex: 2 !important;
-}
-
 /* Background image for about me */
 
 #contactkas {
@@ -231,6 +232,7 @@ section {
   text-align: center;
 }
 
+/* About me section with an image */
 #aboutkas {
   background-image: url('kas-suisse.jpeg');
   background-size: cover;
