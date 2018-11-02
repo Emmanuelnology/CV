@@ -1,0 +1,375 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-decoration: none;
+  text-align: center;
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+    "nav aboutme"
+    "nav content";
+  grid-template-columns: 2fr 6fr;
+  grid-template-rows: 1fr 2fr;
+  grid-gap: 2.5%;
+  font-size: 2vw;
+  font-family: 'oswald', sans-serif;
+  color: black;
+  background-image: url('DSC04841.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+a {
+  color: inherit;
+  font-weight: bold;
+  padding: 0.25em;
+}
+
+a:hover {
+  background-color: white;
+  color: black;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+h1 {
+  border-radius: 0 5px 5px 0;
+  padding: 0.6em;
+  text-align: left;
+}
+
+h1,
+h2 {
+  background-color: black;
+  color: #fff;
+}
+
+h2 {
+  border-radius: 5px 0 0 0;
+  padding: 0.4em;
+}
+
+.bold {
+  font-weight: bolder;
+}
+
+.active {
+  background-color: white;
+  color: black;
+  border-radius: 2px;
+  font-weight: bold;
+  padding: 0.25em;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  grid-area: nav;
+}
+
+nav li {
+  display: block;
+  padding: 2em 0.5em;
+  text-align: left;
+  font-size: 1.4em;
+}
+
+.content-link {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 2px;
+}
+
+aside {
+  grid-area: aboutme;
+  float: right;
+  background-color: #fff;
+  opacity: 0.5;
+  font-size: 1.3em;
+  border-radius: 5px;
+}
+
+aside:hover {
+  opacity: 1;
+}
+
+aside div {
+  display: inline-block;
+  padding: 0 5px;
+  text-align: center;
+}
+
+#about-content a {
+  background-color: transparent;
+  font-weight: normal;
+}
+
+#about-content a:hover {
+  font-weight: bold;
+}
+
+.modal {
+  position: fixed;
+  top: 20%;
+  bottom: 20%;
+  left: 20%;
+  right: 20%;
+  display: none;
+  border-radius: 10px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 1);
+  z-index: 3;
+}
+
+#blocker {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 2;
+}
+
+.js-modal-close {
+  padding: 0;
+}
+
+.smaller-text {
+  font-size: 0.9em;
+}
+
+.small-text {
+  font-size: 1.1em;
+}
+
+.medium-text {
+  font-size: 1.3em;
+}
+
+.large-text {
+  font-size: 1.65em;
+}
+
+.larger-text {
+  font-size: 1.8em;
+}
+
+.opaque {
+  opacity: 0.75;
+}
+
+.translucent {
+  opacity: 0.6;
+}
+
+.transparent {
+  opacity: 0.4;
+}
+
+.content {
+  display: none;
+  grid-area: content;
+  background-color: #fff;
+  opacity: 0.5;
+  height: 45vh;
+  border-radius: 5px;
+}
+
+.content:hover {
+  opacity: 1;
+}
+
+#infolist {
+  padding: 20% 0;
+}
+
+#infolist li {
+  padding: 1% 0;
+  font-size: 1.5em;
+}
+
+#infolist a {
+  font-weight: normal;
+}
+
+#infolist a:hover {
+  font-weight: bold;
+}
+
+.contact-button {
+  font-size: 2em;
+}
+
+#skills-panel,
+#extra-skills {
+  width: 40%;
+  margin: 4vh 25vw;
+}
+
+#skills-panel li,
+#extra-skills li {
+  text-align: left;
+  border-bottom: dotted 1px black;
+}
+
+.score,
+.skill-logo {
+  float: right;
+}
+
+.logo-pad {
+  padding-right: 0.2em;
+}
+
+.content h3 {
+  margin: 2.5% 0;
+}
+
+.collapsed {
+  display: none;
+}
+
+#recruiter-info h2 {
+  margin-bottom: 10vh;
+}
+
+#recruiter-info li {
+  margin: 5% 0;
+  font-size: 1.8em;
+}
+
+@media only screen and (min-width: 550px) {
+  body {
+    display: grid;
+    grid-template-areas:
+      "nav nav"
+      "aboutme content";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 9fr;
+    grid-gap: 2.5%;
+    background-image: url('DSC05280.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  h1 {
+    text-align: left;
+    padding-left: 5px;
+  }
+
+  h1 > a {
+    padding-bottom: 0;
+  }
+
+  h2 {
+    height: 10vh;
+    margin-bottom: 2vh;
+    padding-top: 0;
+  }
+
+  nav {
+    background-color: black;
+  }
+
+  #nav-links {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #nav-links * {
+    height: 5vh;
+  }
+
+  #nav-links li {
+    float: right;
+    background-color: black;
+    color: white;
+    font-size: 0.8em;
+  }
+
+  aside {
+    height: 70%;
+    font-size: 0.9em;
+  }
+
+  aside h2 {
+    border-radius: 0 5px 0 0;
+    text-align: left;
+    margin-bottom: 2vh;
+  }
+
+  #about-content {
+    font-size: 0.75em;
+    text-align: center;
+  }
+
+  .smaller-text {
+    font-size: 1.5em;
+  }
+
+  .small-text {
+    font-size: 1.8em;
+  }
+
+  .medium-text {
+    font-size: 1.7em;
+  }
+
+  .large-text {
+    font-size: 1.6em;
+  }
+
+  .larger-text {
+    font-size: 2.2em;
+  }
+
+  .content {
+    height: 70%;
+  }
+
+  .content-link {
+    background-color: black;
+  }
+
+  #contact {
+    height: 70%;
+  }
+
+  #infolist {
+    padding: 5% 0;
+  }
+
+  #infolist {
+    font-size: 0.75em;
+  }
+
+  .active {
+    background-color: white;
+    color: black;
+  }
+
+  h3 {
+    font-size: 0.75em;
+  }
+
+  #skills-panel,
+  #extra-skills {
+    display: inline-block;
+    width: 40%;
+    margin: 10% 2.5%;
+  }
+
+  .collapsed {
+    font-size: 0.75em;
+  }
+
+  .award-def {
+    padding: 0 2vw;
+  }
+}

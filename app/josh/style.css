@@ -68,8 +68,24 @@ nav li a.active {
   
 }
 
+<<<<<<< HEAD
 .about-me-color{
   background-color: #a8a3a3;
+=======
+/* slideshow
+
+#slideshow {
+  overflow: hidden;
+  height: 510px;
+  width: 728px;
+  margin: 0 auto;
+  border-radius: 5%;
+}
+
+.slide-wrapper {
+  width: 2912px;
+  -webkit-animation: slide 30s ease infinite;
+>>>>>>> 2fd3bdaece3888c268aaa05546e9dccb839841b0
 }
 
 .work-experience {
