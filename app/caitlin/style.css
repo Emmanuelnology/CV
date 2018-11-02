@@ -61,6 +61,10 @@ a {
   clear: both;
 }
 
+.italics {
+  font-style: italic;
+}
+
 #top-panel {
   color: white;
   margin: 0;
@@ -108,16 +112,18 @@ nav > a:hover {
 }
 
 #about-me div {
-  padding: 50px 130px;
+  padding: 50px 10%;
+  margin: 0;
   text-align: justify;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 #about-me img {
   border-radius: 50%;
-  width: 60%;
+  width: 15em;
   border: 3px solid black;
 }
 
@@ -273,9 +279,7 @@ footer {
     width: 250px;
     height: 250px;
   }
-}
 
-@media only screen and (min-width: 900px) {
   #about-me > div {
     padding: 50px 5%;
     margin: 0;
@@ -294,5 +298,3 @@ footer {
     height: 250px;
   }
 }
-
-
