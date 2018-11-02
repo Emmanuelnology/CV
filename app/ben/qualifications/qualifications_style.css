@@ -1,14 +1,8 @@
 :root {
-  --score-dark: darkblue;
-  --score-med: red;
-  --score-lightest: white;
-  --score-light: blueviolet;
-  --score-darkest: black;
-  --size-smallest: 1px;
-  --size-small: 5px;
-  --size-med: 10px;
-  --size-large: 15px;
-  --size-largest: 24px;
+  --board-dark: rgb(110, 60, 45);
+  --board-light: rgb(186, 102, 76);
+  --size-smallest: 2px;
+  --size-large: 20px;
 }
 
 main {
@@ -16,7 +10,7 @@ main {
 }
 
 h2 {
-  font-size: 20px;
+  font-size: var(--size-large);
 }
 
 ul {
@@ -29,15 +23,15 @@ ul {
 
 .board-border {
   width: 19.5em;
-  margin: 20px auto;
+  margin: var(--size-large) auto;
   padding: 0.3em;
-  border: solid 2px rgb(110, 60, 45);
+  border: solid var(--size-smallest) var(--board-dark);
   background-image: url('wood.png');
 }
 
 .hons-board {
-  border: solid 2px rgb(186, 102, 76);
-  color: rgb(110, 60, 45);
+  border: solid var(--size-smallest) var(--board-light);
+  color: var(--board-dark);
   padding: 1em;
   margin: 0 auto;
   width: 18.5em;
@@ -84,21 +78,12 @@ ul {
 
   .board-border {
     width: 29em;
-    margin: 20px auto;
-    padding: 0.3em;
-    border: solid 2px rgb(110, 60, 45);
-    background-image: url('wood.png');
   }
 
   .hons-board {
-    border: solid 2px rgb(186, 102, 76);
-    color: rgb(110, 60, 45);
-    padding: 1em;
-    margin: 0 auto;
     width: 28em;
-    display: grid;
     grid-template-areas: "place place place" "year award grade";
-    grid-template-columns: 5em 18.5em 5em;
+    grid-template-columns: 5em 18em 5em;
   }
 
   .appears {
