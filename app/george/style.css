@@ -1,99 +1,99 @@
 body,
-#logo p{
-    margin: 0;
+#logo p {
+  margin: 0;
 }
 
-#logo > p{
-    margin-top: 10px;
+#logo > p {
+  margin-top: 10px;
 }
 
-.containment{
-    width: 100%;
+.containment {
+  width: 100%;
 }
 
-.background{
-    background-image: url("img/georgeflix/netflix.jpg");
-    position: relative;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100vh;
-    width: 100vw;
-    opacity: 0.8;
+.background {
+  background-image: url("img/georgeflix/netflix.jpg");
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100vw;
+  opacity: 0.8;
 }
 
-#logo{
-    background-color: black;
-    width: auto;
-    display: inline-block;
-    display: block;
-    margin: auto;
-    left: 0;
-    right: 0;
-    width: 80%;
-    top: 20%;
-    position: absolute;
-    color: white;
-    padding: 20px;
+#logo {
+  background-color: black;
+  width: auto;
+  display: inline-block;
+  display: block;
+  margin: auto;
+  left: 0;
+  right: 0;
+  width: 80%;
+  top: 20%;
+  position: absolute;
+  color: white;
+  padding: 20px;
 }
 
-#logo p{
-    font-size: 15px;
+#logo p {
+  font-size: 15px;
 }
 
 @media only screen and (min-width: 500px) {
-    #logo{
-        width: 60%;
-        padding: 30px;
-    }
+  #logo {
+    width: 60%;
+    padding: 30px;
+  }
 
-    #logo p{
-        font-size: 20px;
-    }
+  #logo p {
+    font-size: 20px;
+  }
 }
 
 @media only screen and (min-width: 700px) {
-    #logo{
-        width: 40%;
-        padding: 50px;
-    }
+  #logo {
+    width: 40%;
+    padding: 50px;
+  }
 }
 
 @media only screen and (min-width: 1000px) {
-    #logo{
-        width: 30%;
-    }
+  #logo {
+    width: 30%;
+  }
 }
 
-#first-text{
-    padding-top: 20px;
+#first-text {
+  padding-top: 20px;
 }
 
-#logo img{
-    width: 100%;
-    height: 100%;
+#logo img {
+  width: 100%;
+  height: 100%;
 }
 
-.form{
-    background-color: gray;
+.form {
+  background-color: gray;
 }
 
-.sign-in{
-    text-align: center;
-    margin: 0;
+.sign-in {
+  text-align: center;
+  margin: 0;
 }
 
-a{
-    text-decoration:none;
+a {
+  text-decoration: none;
 }
 
-a div{
-    background-color: red;
-    color: white;
+a div {
+  background-color: red;
+  color: white;
 }
 
-a:hover div{
-    background-color: #910d0d;
-    color: white;
+a:hover div {
+  background-color: #910d0d;
+  color: white;
 }
