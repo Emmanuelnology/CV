@@ -23,7 +23,9 @@
     "url": "https://github.com/nology-tech/interactive-cv/issues"
   },
   "homepage": "https://github.com/nology-tech/interactive-cv#readme",
-  "dependencies": {},
+  "dependencies": {
+    "autoprefix": "^1.0.1"
+  },
   "devDependencies": {
     "stylelint": "^9.7.0"
   }
