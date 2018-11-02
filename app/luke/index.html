@@ -2,12 +2,14 @@
 <html lang="en">
 
 <head>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="modal.js"></script>
     <link rel="stylesheet" type="text/css" href="desktopResponive.css">
     <link rel="stylesheet" type="text/css" href="tabletResponive.css">
     <link rel="stylesheet" type="text/css" href="mobileResponsive.css">
     <link rel="stylesheet" type="text/css" href="buttons.css">
     <link rel="stylesheet" type="text/css" href="mobileButtons.css">
+    <link rel="stylesheet" type="text/css" href="modal.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title> C.V</title>
@@ -32,7 +34,7 @@
     </li>
 
     <li>
-        <a href="#ref">Reference</a>
+        <a href="#ref">People who knew me</a>
     </li>
 
     <li>
@@ -167,11 +169,11 @@
         <span id="aw-box">
         <h2>Awards</h2>
         <ul>
-        <li>pl</li>
-        <li>ac</li>
-        <li>e h</li>
-        <li>old</li>
-        <li>er</li>
+            <li>pl</li>
+            <li>ac</li>
+            <li>e h</li>
+            <li>old</li>
+            <li>er</li>
         </ul>
         </span>
         </div>
@@ -182,7 +184,13 @@
                 <div>
                     <div class="circle-one">
                     <div><p>2015-1016</p></div>
-                    <img id="timeline-img1" src="../luke/pictures/ibm.png" alt="IBM'S logo">
+                    
+                    <img
+                    class="js-modal-open-ibm" 
+                    id="timeline-img1" 
+                    src="../luke/pictures/ibm.png" 
+                    alt="IBM'S logo">
+
                     <div></div>
                     </div>
                     <span>
@@ -227,7 +235,7 @@
         </div>
     </main>
     <hr>
-    <h2 id="ref">References</h2>
+    <h2 id="ref">People who knew me</h2>
     <div class="ref">
         <div class="ref-2">
             <p><strong>Papa John's</strong></p>
@@ -263,7 +271,25 @@
         <div class="map">
         <iframe src="https://bit.ly/2DcPb9S" allowfullscreen></iframe>   
         </div>
+<!-- <button class="js-modal-open-ibm">click me</button> -->
+
         <footer> &copy;2018 Luke Delaney&#32;|&#32;<a href="#" class="cv">Download C.V.</a>&#32;|</footer>
-    </body>
+    
+        <!-- <script>
+        $(".js-modal-close-ibm").click(function(){
+            $(".modal-ibm").hide();
+            $(".modal-ibm").fadeout();
+        });
+        $(".js-modal-open-ibm").click(function(){
+            $(".modal-ibm").show();
+            $(".modal-ibm").fadein();
+        });
+        </script>
+
+        <div class="modal-ibm">
+        <p>this is a modal</p>
+        <button class="js-modal-close-ibm">close me</button> -->
+        </div>
+        </body>
 </div>
 </html>

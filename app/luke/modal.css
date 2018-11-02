@@ -1,0 +1,13 @@
+.modal-ibm {
+  display: none;
+  position: fixed;
+  left: 20%;
+  right: 20%;
+  top: 20%;
+  bottom: 40%;
+  background-color: blue;
+  padding: 20px;
+  border-radius: 20%;
+  border: 1px grey solid;
+  cursor: pointer;
+}
