@@ -41,7 +41,7 @@ p {
 }
 
 #container {
-  background-image: url('/brunel-oct-18/app/satyam/googlecv/mapbackground.jpg');
+  background-image: url('googlecv/mapbackground.jpg');
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
