@@ -64,7 +64,7 @@ nav li a:hover:not(.active) {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100vh;
+  min-height: 80vh;
 }
 
 .contain{
@@ -87,7 +87,7 @@ nav li a:hover:not(.active) {
  }
 
 .polaroid img {
-  height: 320px;
+  height: 280px;
 }
 
 div.polaroid {
@@ -204,7 +204,11 @@ body > div {
   font-size: 1.5em;
 }
 
-#html5-fa {
+#html5-fa1 {
+  color: lightslategrey;
+}
+
+#html5-fa2 {
   color: lightslategrey;
 }
 
@@ -213,7 +217,11 @@ body > div {
   font-size: 1.5em;
 }
 
-#css3-fa {
+#css3-fa1 {
+  color: lightslategray;
+}
+
+#css3-fa2 {
   color: lightslategray;
 }
 
