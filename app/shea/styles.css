@@ -234,8 +234,13 @@ aside h2 {
 }
 
 .score,
-.skill-logo {
+.skill-logo,
+#chinese {
   float: right;
+}
+
+.skill-logo {
+  margin-top: 0.25em;
 }
 
 .logo-pad {
