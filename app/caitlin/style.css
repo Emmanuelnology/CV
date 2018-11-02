@@ -244,7 +244,7 @@ footer {
 
   #extra-curricular img {
     width: 90%;
-    height: auto;
+    overflow: hidden;
   }
 
   /* have coding for flexbox thing here (extra-curric imgs in 3 */
@@ -296,5 +296,11 @@ footer {
   #about-me img {
     width: 250px;
     height: 250px;
+  }
+}
+
+@media only screen and (min-width: 1450px) {
+  #extra-curricular ul {
+    padding: 0 15% 25% 15%;
   }
 }
