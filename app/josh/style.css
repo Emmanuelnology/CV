@@ -65,10 +65,9 @@ nav li a.active {
   margin-right: 150px;
   margin-bottom: 50px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  
 }
 
-.about-me-color{
+.about-me-color {
   background-color: #a8a3a3;
 }
 
@@ -130,33 +129,21 @@ body > div {
   flex: 1;
 }
 
-/* Three columns side by side */
-.skills{
-  
-  
-}
-.skills-row{
+.skills-row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin: 5px;
-  width:100%;
+  width: 100%;
 }
+
 .skills-column {
   /* float: left;
   width: 32%;
   margin-bottom: 16px;
   padding: 0 8px; */
   flex: 1;
-  width:50%;
-}
-
-/* Display the columns below each other instead of side by side on small screens */
-@media screen and (max-width: 650px) {
-  /* .skills-column {
-    width: 100%;
-    display: block;
-  } */
+  width: 50%;
 }
 
 /* card effect */
@@ -284,17 +271,9 @@ iframe {
   background: -webkit-gradient(linear, left top, left bottom, from(#7232bd), to(#ffdc7d));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  /* display: initial; */
   padding: 50px;
 }
 
 .footer {
   text-align: center;
-}
-
-.sr-only{
-  position:absolute;
-  left:-1000000px;
-  height:1px;
-  width:1px;
 }
