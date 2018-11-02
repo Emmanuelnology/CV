@@ -124,8 +124,6 @@ li > div {
   border-radius: 10px;
 } */
 
-
-
 .fas.fa-star {
   font-size: 1.5em;
 }
@@ -170,7 +168,7 @@ li > div {
 .craig-demo h4 {
   font-size: 0.7em;
   margin-top: 5px;
-  color: #444;
+  color: black;
 }
 
 .craig-demo p {
@@ -178,12 +176,14 @@ li > div {
   margin: 8px;
   text-align: justify;
   position: relative;
+  color: rgb(72, 82, 76);
 }
 
 .craig-demo a {
   text-align: right;
   margin-top: 15px;
   display: block;
+  color: rgb(77, 139, 99);
 }
 
 @media only screen and (min-width: 450px) {
