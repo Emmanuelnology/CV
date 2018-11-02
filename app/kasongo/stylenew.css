@@ -52,6 +52,7 @@ h3 {
 .large-flex {
   flex: 2 !important;
   height: 100%;
+  width: 100%;
   text-align: center !important;
   padding: 2em;
   background-color: rgba(173, 213, 226, 0.7);
@@ -224,6 +225,11 @@ section {
   left: 0;
 }
 
+/* Style for all lists */
+ul {
+  list-style-type: none;
+}
+
 /* In-section text font */
 .text {
   font-size: 1.5em;
@@ -243,7 +249,6 @@ section {
 }
 
 .myinfo {
-  list-style-type: none;
   display: inline-block;
   text-align: left;
 }
@@ -267,7 +272,7 @@ section {
 .social {
   width: 100%;
   text-align: center;
-  padding-bottom: 1.3em;
+  padding-bottom: 3.2em;
 }
 
 /* About me section with an image, margin below about me text */
@@ -278,5 +283,22 @@ section {
 }
 
 .apropo {
-  margin-bottom: 0;
+  margin-bottom: -1.2em;
+}
+
+/* Skills section with an image */
+#skillkas {
+  background-image: url('kas-wood.jpg');
+  background-size: cover;
+  background-position: 0;
+}
+
+/* Add stars color and column to the right and space between skills and font awesome */
+.checked {
+  color: rgb(102, 102, 202);
+}
+
+/* Classmate photo width */
+.climate {
+  width: 200;
 }
