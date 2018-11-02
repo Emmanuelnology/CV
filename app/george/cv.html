@@ -1,0 +1,500 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>test</title>
+    <link rel="stylesheet" href="cv.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+</head>
+<body>
+    <nav>
+        <a href="index.html">
+            <img src="img/georgeflix/Georgeflix.png" alt="georgeflix logo">
+        </a>
+        <div class="menu">
+            <div class="burger-menu col open-close" data-target="navigation" onclick="transitionMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <p>Menu</p>
+            </div>
+        </div>
+        <div class="right">
+                <a class="hi-visitor" data-message="No need to search, you've found your next candidate!">
+                <p><i class="fas fa-search"></i></p>
+            </a>
+            <a class="hi-visitor" data-message="No noticaiations, but one new candidate">
+                <p><i class="fas fa-bell"></i></p>
+            </a>
+            <a class="hi-visitor" data-message="This is the face you'll make after recruiting me">
+                <img src="img/georgeflix/face.jpg" alt="georgeflix logo">
+            </a>
+        </div>
+    </nav>
+
+    <div id="nav" class="flex-container">
+        <ul class="hide" id="navigation">
+            <li><a href="#about">About me</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#work">Work experience</a></li>
+            <li><a href="#voluntary">Voluntary experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#references">References</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#contact">Contact me</a></li>
+        </ul>
+    </div>
+    <main>
+        <div id="main-picture">
+            <img src="img/me/graduation.png" alt="jumping in graduation suit infront of Lancaster Univeristy sign"> 
+        </div>
+        <div id="description">
+            <div class="left">
+                <h1 id="about">Georgeflix original</h1>
+                <h2>Fast and furious 29</h2>
+                <p>An ambitious recent graduate embarks into the world of work. With a passion for youth work, computing and making the world a better place this young hero explores
+                    the exciting possibilities of interviews, assessment days and recruiters. Watch as the handsome protagonist wins not only his dream job but also your heart.
+                A family film for all jobs.</p>
+                <div id="play">
+                    <a class="hi-visitor" data-message="Good choice! 10/10 - IMDB">
+                        <p><i class="fas fa-play"></i> Play</p>
+                    </a>
+                    <a class="hi-visitor" data-message="Why add me to a list when you can add me to a company?">
+                        <p><i class="fas fa-plus"></i> My List</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <hr>
+    <aside>
+        <div>
+            <h2 id="education">Education:</h2>
+        </div>
+
+        <div class="item" id="nology">
+            <p>2018</p>
+            <a data-target="nology-content" class="open-close">
+                <p class="bottom" ></p>
+            </a>
+        </div>
+
+        <div class="item lancaster">
+            <p>2015-2018</p>
+            <a data-target="lancaster-content" class="open-close">
+                <p class="bottom" ></p>
+            </a>
+        </div>
+
+        <div class="item somerset">
+            <p>2013-2015</p>
+            <a data-target="somerset-content" class="open-close">
+                <p class="bottom" ></p>
+            </a>
+        </div>
+
+        <div class="item" id="huish">
+            <p>2013-2015</p>
+            <a data-target="huish-content" class="open-close">
+                <p class="bottom" ></p>
+            </a>
+        </div>
+
+        <div class="item" id="castle">
+            <p>2007-2011</p>
+            <a data-target="castle-content" class="open-close">
+                <p class="bottom" ></p>
+            </a>
+        </div>
+
+        <!-- CONTENT -->
+
+        <div class="hide content" id="nology-content">
+            <h2>_Nology 2018</h2>
+            <p>The course taught me a great deal about HTML, CSS and JavaScript.</p>
+        </div>
+
+        <div class="hide content" id="lancaster-content">
+            <h2>Lancaster 2015-2018</h2>
+            <p>I learned a great deal about Computer Science</p>
+        </div>
+
+        <div class="hide content" id="somerset-content">
+            <h2>Somerset College 2013-2015</h2>
+            <p>I learned a great deal about IT networks</p>
+        </div>
+
+        <div class="hide content" id="huish-content">
+            <h2>Richard Huish College 2011-2013</h2>
+            <p>I learned a great deal about Law, Psychology and Geography</p>
+        </div>
+
+        <div class="hide content" id="castle-content">
+            <h2>The Castle School 2007-2011</h2>
+            <p>I learned a great deal about everything</p>
+        </div>
+
+    </aside>
+    <hr>
+    <aside>
+        <h2 id="experience">Experience:</h2>
+
+        <div class="item" id="nationwide">
+            <p>2018-present</p>
+            <a data-target="nationwide-content" class="open-close">
+                <p class="bottom" ></p>
+            </a>
+        </div>
+
+        <div class="item ncs">
+            <p>2015</p>
+            <a data-target="ncs-hq-content" class="open-close">
+                <p class="bottom" ></p>
+            </a>
+        </div>
+
+        <div class="item ncs">
+            <p>2013-2016</p>
+            <a data-target="ncs-content" class="open-close">
+                <p class="bottom" ></p>
+            </a>
+        </div>
+
+        <div class="item" id="willow-tree">
+            <p>2014-2015</p>
+            <a data-target="willow-tree-content" class="open-close">
+                <p class="bottom" ></p>
+            </a>
+        </div>
+
+        <div class="item handco">
+            <p>2014</p>
+            <a data-target="handco-content" class="open-close">
+                <p class="bottom" ></p>
+            </a>
+        </div>
+
+        <div class="item" id="primark">
+            <p>2014 -2015</p>
+            <a data-target="primark-content" class="open-close">
+                <p class="bottom" ></p>
+            </a>
+        </div>
+
+        <div class="item" id="poundstretcher">
+            <p>2011 -2014</p>
+            <a data-target="poundstretcher-content" class="open-close">
+                <p class="bottom" ></p>
+            </a>
+        </div>
+
+        <!-- CONTENT -->
+
+        <div class="hide content" id="nationwide-content">
+            <h2>Nationwide 2018 - present</h2>
+            <p>I learned a great deal about everything</p>
+        </div>
+
+        <div class="hide content" id="ncs-hq-content">
+            <h2>NCS Head Office 2015 </h2>
+            <p>I learned a great deal about everything</p>
+        </div>
+
+        <div class="hide content" id="ncs-content">
+            <h2>NCS Team Leader 2013-2016</h2>
+            <p>I learned a great deal about everything</p>
+        </div>
+
+        <div class="hide content" id="willow-tree-content">
+            <h2>Assistant Chef 2014-2015</h2>
+            <p>I learned a great deal about everything</p>
+        </div>
+
+        <div class="hide content" id="handco-content">
+            <h2>Work experience web developer 2014</h2>
+            <p>I learned a great deal about everything</p>
+        </div>
+
+        <div class="hide content" id="primark-content">
+            <h2>Customer service rep 2014 -2015</h2>
+            <p>I learned a great deal about everything</p>
+        </div>
+
+        <div class="hide content" id="poundstretcher-content">
+            <h2>Sales assistant 2011 -2014</h2>
+            <p>I learned a great deal about everything</p>
+        </div>
+    </aside>
+
+    <hr>
+
+
+    <aside>
+        <h2 id="voluntary">Volunteering</h2>
+        <div class="item cartmel">
+            <p>2016 -2017</p>
+            <a data-target="cartmel-content" class="open-close">
+                <p class="bottom" ></p>
+            </a>
+        </div>
+
+        <div class="item lancaster">
+            <p>2016</p>
+            <a data-target="lancaster-cabinet-office-content" class="open-close">
+                <p class="bottom" ></p>
+            </a>
+        </div>
+
+        <div class="item" id="enactus">
+            <p>2015</p>
+            <a data-target="enactus-content" class="open-close">
+                <p class="bottom" ></p>
+            </a>
+        </div>
+
+        <div class="item model-westminster">
+            <p>2015-2017</p>
+            <a data-target="model-westminster-content" class="open-close">
+                <p class="bottom" ></p>
+            </a>
+        </div>
+
+        <div class="item cabinet-office">
+            <p>2014</p>
+            <a data-target="cabinet-office-content" class="open-close">
+                <p class="bottom" ></p>
+            </a>
+        </div>
+
+        <div class="item ncs">
+            <p>2014-2016</p>
+            <a data-target="ncs-leader-content" class="open-close">
+                <p class="bottom" ></p>
+            </a>
+        </div>
+
+        <div class="item" id="bhf">
+            <p>2011</p>
+            <a data-target="bhf-content" class="open-close">
+                <p class="bottom" ></p>
+            </a>
+        </div>
+
+        <!-- CONTENT -->
+
+        <div class="hide content" id="cartmel-content">
+            <h2>Vice President - Education and Welfare 2016 -2017</h2>
+            <p>I learned a great deal about everything</p>
+        </div>
+
+        <div class="hide content" id="lancaster-cabinet-office-content">
+            <h2>Student researcher 2016</h2>
+            <p>I learned a great deal about everything</p>
+        </div>
+
+        <div class="hide content" id="enactus-content">
+            <h2>Enactus 2015</h2>
+            <p>I learned a great deal about everything</p>
+        </div>
+
+        <div class="hide content" id="model-westminster-content">
+            <h2>Model-westminster 2015-2017</h2>
+            <p>I learned a great deal about everything</p>
+        </div>
+
+        <div class="hide content" id="cabinet-office-content">
+            <h2>Cabinet-office 2014</h2>
+            <p>I learned a great deal about everything</p>
+        </div>
+
+        <div class="hide content" id="ncs-leader-content">
+            <h2>NCS National leader and Youth Advisory Board member 2014-2016</h2>
+            <p>I learned a great deal about everything</p>
+        </div>
+
+        <div class="hide content" id="bhf-content">
+            <h2>BHF Voluntary Sales Assistant 2011</h2>
+            <p>I learned a great deal about everything</p>
+        </div>
+
+    </aside>
+
+
+    <hr>
+
+    <aside>
+        <h2 id="skills">Skills</h2>
+
+    </aside>
+
+    <hr>
+
+    <aside>
+        <h2 id="references">References</h2>
+
+        <div class="item cartmel">
+            <p>2016 -2017</p>
+            <a href="http://gcwebster.co.uk/references/Cartmel%20College.pdf" target="_blank">
+                <p class="bottom" ></p>
+            </a>
+        </div>
+
+        <div class="item model-westminster">
+            <p>2015-2017</p>
+            <a href="http://gcwebster.co.uk/references/Model%20Westminster%20Reference.pdf" target="_blank">
+                <p class="bottom" ></p>
+            </a>
+        </div>
+
+        <div class="item handco">
+            <p>2014</p>
+            <a href="file:///C:/Users/George.webster/Desktop/code/brunel-oct-18/app/george/HandCo%20reference.pdf" target="_blank">
+                <p class="bottom" ></p>
+            </a>
+        </div>
+
+        <div class="item cabinet-office">
+            <p>2014</p>
+            <a href="http://gcwebster.co.uk/references/Cabinet%20Office.pdf" target="_blank">
+                <p class="bottom" ></p>
+            </a>
+        </div>
+
+        <div class="item ncs">
+            <p>2014</p>
+            <a href="img/ncsReference.PNG" target="_blank">
+                <p class="bottom" ></p>
+            </a>
+        </div>
+
+    </aside>
+
+    <hr>
+
+    <aside>
+        <h2 id="achievements">Achievements</h2>
+        <div class="item" id="tough-mudder">
+            <p>2018</p>
+            <a data-target="tough-mudder-content" class="open-close">
+                <p class="bottom" ></p>
+            </a>
+        </div>
+
+        <div class="item" id="graduation">
+            <p>2018</p>
+            <a data-target="graduation-content" class="open-close">
+                <p class="bottom" ></p>
+            </a>
+        </div>
+
+        <div class="item" id="jeremy">
+            <p>2017</p>
+            <a data-target="jeremy-content" class="open-close">
+                <p class="bottom" ></p>
+            </a>
+        </div>
+
+        <div class="item" id="david">
+            <p>2016</p>
+            <a data-target="david-content" class="open-close">
+                <p class="bottom" ></p>
+            </a>
+        </div>
+
+        <div class="item" id="appg">
+            <p>2016</p>
+            <a data-target="appg-content" class="open-close">
+                <p class="bottom" ></p>
+            </a>
+        </div>
+
+        <div class="item somerset">
+            <p>2014</p>
+            <a data-target="somerset-student-content" class="open-close">
+                <p class="bottom" ></p>
+            </a>
+        </div>
+
+        <div class="item" id="tends">
+            <p>2014</p>
+            <a data-target="tends-content" class="open-close">
+                <p class="bottom" ></p>
+            </a>
+        </div>
+
+        <div class="item" id="escape">
+            <p>2013</p>
+            <a data-target="escape-content" class="open-close">
+                <p class="bottom" ></p>
+            </a>
+        </div>
+
+        <!-- CONTENT -->
+
+        <div class="hide content" id="tough-mudder-content">
+            <h2>Graduation</h2>
+            <p>I learned a great deal about everything</p>
+        </div>
+        
+        <div class="hide content" id="graduation-content">
+            <h2>Graduation</h2>
+            <p>I learned a great deal about everything</p>
+        </div>
+
+        <div class="hide content" id="jeremy-content">
+            <h2>Met Jeremy Corbyn</h2>
+            <p>I learned a great deal about everything</p>
+        </div>
+
+        <div class="hide content" id="david-content">
+            <h2>Met David Cameron</h2>
+            <p>I learned a great deal about everything</p>
+        </div>
+
+        <div class="hide content" id="appg-content">
+            <h2>Spoke in Parliament about housing policy and its affect on young people</h2>
+            <p>I learned a great deal about everything</p>
+        </div>
+
+        <div class="hide content" id="somerset-student-content">
+            <h2>Student of the year</h2>
+            <p>I learned a great deal about everything</p>
+        </div>
+
+        <div class="hide content" id="tends-content">
+            <h2>Invited to 10 Downing Street to discuss issues affecting young people</h2>
+            <p>I learned a great deal about everything</p>
+        </div>
+
+        <div class="hide content" id="escape-content">
+            <h2>Ran a half marathon for a local charity</h2>
+            <p>I learned a great deal about everything</p>
+        </div>
+
+    </aside>
+
+    <hr>
+
+    <aside>
+        <h2 id="contact">Conatct</h2>
+
+    </aside>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+        function transitionMenu(x) {
+            x.classList.toggle("change");
+        }
+
+        // FIND A WAY TO CLOSE ALL OTHERS WHEN OPENED!
+        $('.open-close').click(function(){
+            var modalID = $(this).attr('data-target');
+            $('#' + modalID).toggleClass("hide");
+        });
+
+        $('.hi-visitor').click(function(){
+            var message = $(this).attr('data-message');
+            alert(message + " ");
+        });
+    </script>
+</body>
+</html>
