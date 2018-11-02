@@ -15,6 +15,7 @@ button.js-modal-open {
   padding: 5%;
   background-color: black;
   margin: 0 auto;
+  cursor: pointer;
 }
 
 a.js-modal {
@@ -25,6 +26,8 @@ a.js-modal {
   font-size: 90%;
   text-decoration: none;
   z-index: 6;
+  cursor: pointer;
+  font-family: 'Crimson Text', serif;
 }
 
 p {
