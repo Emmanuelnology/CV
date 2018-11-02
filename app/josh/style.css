@@ -68,12 +68,12 @@ nav li a:hover:not(.active) {
   min-height: 80vh;
 }
 
-.contain{
+.contain {
   width: 80%;
   margin: auto;
 }
 
-.about-me{
+.about-me {
   width: 100%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
@@ -83,9 +83,9 @@ nav li a:hover:not(.active) {
 }
 
 .polaroids {
-  display:flex;
+  display: flex;
   flex-direction: row;
- }
+}
 
 .polaroid img {
   height: 280px;
@@ -174,8 +174,6 @@ body > div {
   width: 32%;
   margin-bottom: 16px;
   padding: 0 8px;
-  /* flex: 1;
-  width: 50%; */
 }
 
 .skills-card {
@@ -191,7 +189,6 @@ body > div {
 .skills-container {
   padding: 0 16px;
 }
-
 
 .skills-container::after,
 .skills-row::after {
@@ -236,7 +233,7 @@ body > div {
   font-size: 1.5em;
 }
 
-#angular-fa{
+#angular-fa {
   color: #dd0330;
   font-size: 1.5em;
 }
