@@ -21,6 +21,8 @@ body {
   background-image: url('DSC04841.png');
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
   min-height: 100vh;
 }
 
@@ -74,9 +76,9 @@ nav {
 }
 
 nav li {
+  text-align: center;
   display: block;
   padding: 2em 0.5em;
-  text-align: left;
   font-size: 1.4em;
 }
 
@@ -102,6 +104,10 @@ aside div {
   display: inline-block;
   padding: 0 5px;
   text-align: center;
+}
+
+aside h2 {
+  height: 5.5vh;
 }
 
 #about-content a {
@@ -228,8 +234,13 @@ aside div {
 }
 
 .score,
-.skill-logo {
+.skill-logo,
+#chinese {
   float: right;
+}
+
+.skill-logo {
+  margin-top: 0.25em;
 }
 
 .logo-pad {
@@ -279,7 +290,7 @@ aside div {
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 9fr;
     grid-gap: 2.5%;
-    background-image: url('DSC05280.JPG');
+    background-image: url('DSC05280.jpg');
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -299,9 +310,6 @@ aside div {
 
   h1 > a {
     padding-bottom: 0;
-  }
-
-  h1 > a:hover {
     padding-right: 0.6em;
   }
 
@@ -340,6 +348,8 @@ aside div {
     border-radius: 0 5px 0 0;
     text-align: left;
     margin-bottom: 2vh;
+    padding-top: 1vh;
+    height: 10vh;
   }
 
   #about-content {
