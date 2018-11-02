@@ -4,19 +4,20 @@
     <link  href=  "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Bitter|Crimson+Text|Nunito|Permanent+Marker|Pontano+Sans" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="genstylepractise2.css">
-    <link rel="stylesheet" type="text/css" href="indexcss.css">
+    <link rel="stylesheet" type="text/css" href="indexcss.1.css">
     <title>Kieran Taylor Intro</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
+    <button class="js-modal-open"></button>
     
     <a href="aboutme.html" class="js-modal">
         <p class="hiintro">Hi,</p>
         <p class="nameintro">I'm Kieran.</p>
-
-
     </a>
+
+    <div class="whitescreen"></div>
     
     
     
@@ -31,7 +32,22 @@ $('.js-modal-open').click(function(){
 
 });
 
-        $('a.js-modal').delay(300).slideDown(1000);
+$('.js-modal-open').click(function(){
+    $('div.whitescreen').fadeIn(100);
+    $('body').css('overflow', 'hidden');
+
+});
+
+$('.js-modal-open').click(function(){
+    $('a').delay(300);
+    $('body').css('overflow', 'hidden');
+
+});
+
+    $('.js-modal-open').click(function(){
+        $('a.js-modal').delay(100).slideDown(4000)
+        $('body').css('overflow', 'hidden');
+    });
 
 </script>
 

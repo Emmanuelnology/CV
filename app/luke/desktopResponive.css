@@ -55,11 +55,6 @@ div iframe {
   left: 37.5%;
 }
 
-div ul li {
-  border-bottom: white solid 1px;
-  margin-top: 5px;
-}
-
 .aca {
   height: auto;
   box-sizing: border-box;
@@ -101,69 +96,6 @@ div ul li {
 .cv {
   color: white;
   text-decoration: none;
-}
-
-.timeline {
-  display: grid;
-  grid-template-areas: "one two thr for fiv";
-  grid-auto-columns: auto;
-  width: 100%;
-  padding: 50px 0 0 50px;
-}
-
-.timeline div {
-  min-width: 120px;
-}
-
-#timeline-img1,
-#timeline-img4 {
-  position: relative;
-  bottom: 20px;
-  right: 55px;
-  border-radius: 15%;
-}
-
-#timeline-img2 {
-  position: relative;
-  bottom: 40px;
-  right: 55px;
-  border-radius: 15%;
-}
-
-#timeline-img3 {
-  position: relative;
-  bottom: 40px;
-  right: 35px;
-  border-radius: 15%;
-}
-
-.timeline span div {
-  position: absolute;
-  border: 1px black solid;
-  background-color: white;
-  height: 25px;
-  width: 25px;
-  border-radius: 50%;
-  position: relative;
-  top: -12.5px;
-  left: 2%;
-  z-index: -1;
-}
-
-.timeline p {
-  position: relative;
-  bottom: 30px;
-  right: 50px;
-}
-
-.circle-one,
-.circle-two,
-.circle-thr {
-  border-bottom: 1px white solid;
-  width: 100%;
-  position: relative;
-  left: 27.5px;
-  z-index: -1;
 }
 
 .ref {
@@ -266,16 +198,30 @@ div ul li {
   padding-right: 50%;
 }
 
-.modal-ibm {
-  display: none;
-  position: fixed;
-  left: 20%;
-  right: 20%;
-  top: 20%;
-  bottom: 40%;
-  background-color: blue;
-  padding: 20px;
-  border-radius: 20%;
-  border: 1px grey solid;
-  z-index: 5;
+.border {
+  border-bottom: 3px white solid;
+}
+
+.timeline {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  bottom: 100px;
+}
+
+.img {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 15%;
+}
+
+.timeline-img3 {
+  border: 2px lightgrey solid;
+}
+
+#work {
+  padding-bottom: 100px;
 }
