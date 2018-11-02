@@ -1,0 +1,372 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 15px;
+  display: grid;
+  grid-template-areas:
+    "nav aboutme"
+    "nav hidden";
+  grid-template-columns: 1fr 6fr;
+  grid-template-rows: 1fr 1fr;
+  grid-row-gap: 10%;
+  grid-column-gap: 2.5%;
+}
+
+#title {
+  padding-bottom: 0.5em;
+  font-size: 0.75em;
+  margin-top: 0.25em;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  grid-area: nav;
+  background-color: #2929a3;
+  color: white;
+  text-transform: uppercase;
+  padding: 0.5em;
+}
+
+.active {
+  background-color: white;
+  color: #2929a3;
+  border-radius: 2px;
+  font-weight: bold;
+}
+
+nav > * {
+  display: inline;
+  text-align: left;
+}
+
+nav > ul {
+  list-style: none;
+  font-size: 0.5em;
+}
+
+nav li {
+  text-align: left;
+  padding: 2em 0 2em 0;
+}
+
+nav a {
+  color: inherit;
+  padding: 0.25em;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background-color: white;
+  color: #2929a3;
+  border-radius: 2px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+main {
+  background-color: #fff;
+}
+
+a {
+  display: inline-block;
+  color: inherit;
+}
+
+.aboutme {
+  grid-area: aboutme;
+  display: flex;
+}
+
+.aboutme h2 {
+  border-radius: 5px 0 0 5px;
+  margin-top: 0.25em;
+}
+
+#aboutwrap div {
+  display: inline;
+  padding: 0 0.25em 0 0.25em;
+  text-align: justify;
+  font-weight: bolder;
+  font-size: 2.5vw;
+}
+
+.smaller-text {
+  font-size: 0.8em;
+}
+
+.small-text {
+  font-size: 1em;
+}
+
+.medium-text {
+  font-size: 1.3em;
+}
+
+.large-text {
+  font-size: 1.5em;
+}
+
+.larger-text {
+  font-size: 1.7em;
+}
+
+.opaque {
+  opacity: 0.75;
+}
+
+.translucent {
+  opacity: 0.6;
+}
+
+.transparent {
+  opacity: 0.4;
+}
+
+#back div {
+  display: none;
+  text-align: center;
+  font-weight: normal;
+}
+
+h2 {
+  padding: 0.15em;
+  background-color: #2929a3;
+  color: #fff;
+  font-size: 1em;
+  border-radius: 5px 0 0 5px;
+}
+
+.hidden {
+  text-align: center;
+  display: none;
+  flex-basis: auto;
+  grid-area: hidden;
+}
+
+.hidden ul {
+  margin-top: 2.5em;
+}
+
+.hidden li {
+  list-style: none;
+  line-height: 2em;
+}
+
+.contact-button {
+  font-size: 3em;
+  margin: 0.25em;
+}
+
+#skills-panel {
+  text-align: left;
+  width: 40%;
+  float: left;
+  flex-shrink: 1;
+}
+
+.skills-header {
+  margin-bottom: 1em;
+  margin-top: 1.5em;
+}
+
+#skills-panel li {
+  border-bottom: 1px dotted black;
+  padding: 0.1em;
+}
+
+.score > * {
+  display: inline-block;
+  padding: 0.5em;
+}
+
+.score > i {
+  float: right;
+}
+
+.open {
+  opacity: 0;
+}
+
+.logo-pad {
+  padding-right: 0.69em;
+}
+
+#extra-skills {
+  float: right;
+  text-align: left;
+  width: 50%;
+}
+
+#extra-skills li {
+  padding: 0.2em 0 0.2em 0;
+}
+
+.skill-logo {
+  float: right;
+  padding-right: 1em;
+  font-size: 1.5em;
+}
+
+#chinese {
+  font-weight: bolder;
+  padding-right: 0.5em;
+}
+
+.collapsed {
+  display: none;
+}
+
+.employment i {
+  font-size: 1.5em;
+}
+
+#toggle1,
+#toggle2 {
+  text-align: center;
+  margin-bottom: 2em;
+  display: inline-block;
+}
+
+#toggle1,
+#toggle2:hover {
+  cursor: pointer;
+}
+
+.employment h3 {
+  margin-top: 0.5em;
+}
+
+.employment ul {
+  font-size: 0.75em;
+}
+
+.qualification {
+  font-weight: bold;
+}
+
+.award-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 0.25em;
+}
+
+.award-def {
+  font-size: 0.75em;
+  font-weight: normal;
+  margin-top: 0.15em;
+}
+
+.award-icon {
+  font-size: 1.5em;
+}
+
+.award-year {
+  font-size: 0.75em;
+}
+
+.recruiter-info li {
+  padding: 0.25em;
+}
+
+@media only screen and (min-width: 650px) {
+  body {
+    display: grid;
+    grid-template-areas:
+      "nav nav"
+      "aboutme hidden";
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 1fr 9fr;
+    grid-gap: 5%;
+    font-size: 20px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em;
+    height: 50px;
+  }
+
+  nav li {
+    float: right;
+    padding: 0.25em;
+    font-size: 1.5vw;
+  }
+
+  .aboutme h2 {
+    border-radius: 0 5px 5px 0;
+    margin-top: 0;
+  }
+
+  #title {
+    font-size: 1em;
+  }
+
+  nav ul {
+    font-size: 0.75em;
+  }
+
+  h2 {
+    font-size: 1.25em;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  body {
+    font-size: 25px;
+    display: grid;
+    grid-template-areas:
+      "nav nav"
+      "aboutme hidden";
+    grid-template-columns: 2fr 3fr;
+    grid-gap: 5%;
+  }
+
+  .aboutme h2 {
+    padding-left: 0.75em;
+  }
+
+  nav {
+    padding: 1em;
+    height: 75px;
+  }
+
+  nav li {
+    float: right;
+    padding: 0.25em;
+  }
+
+  .aboutme h2 {
+    border-radius: 0 5px 5px 0;
+    margin-top: 0;
+  }
+
+  #aboutwrap div {
+    font-weight: bolder;
+    font-size: 2.5vw;
+  }
+
+  #title {
+    font-size: 1em;
+  }
+
+  nav ul {
+    font-size: 0.75em;
+  }
+
+  h2 {
+    font-size: 1.25em;
+  }
+}
