@@ -18,6 +18,15 @@ h2 {
   font-size: 4em;
 }
 
+/* Two columns equally spaced */
+.equal-flex {
+  display: flex;
+}
+
+.equal-flex > * {
+  flex: 1;
+}
+
 /* Added srolling welcome page with bouncing arrow, flex included */
 
 .bonjour {
@@ -28,7 +37,7 @@ h2 {
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url('kassnow.jpg');
-  font-size: 2em;
+  font-size: 1.7em;
 }
 
 .emmanuel {
@@ -148,6 +157,7 @@ nav {
   text-align: center;
   width: 100%;
   z-index: 1;
+  font-size: 0.87em;
 }
 
 /* Audio in the navbar */
@@ -158,7 +168,7 @@ nav audio {
 
 /* Section size and flex */
 section {
-  height: 100vh;
+  height: 90vh;
   border: 1px black solid;
   padding-top: 50px;
 }
@@ -221,11 +231,8 @@ section {
   text-align: center;
 }
 
-/* Two columns equally spaced */
-.equal-flex {
-  display: flex;
-}
-
-.equal-flex > * {
-  flex: 1;
+#aboutkas {
+  background-image: url('kas-suisse.jpeg');
+  background-size: cover;
+  background-position: 0;
 }
