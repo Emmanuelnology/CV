@@ -6,12 +6,47 @@
     <link rel="stylesheet" type="text/css" href="genstylepractise2.css">
     <link rel="stylesheet" type="text/css" href="indexcss.css">
     <title>Kieran Taylor CV About Me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     
-</head>
-        
+<!-- <style>
+        button.startscreen {
+            height: 100%;
+            width: 100vw;
+            background-color: black;
+            margin: 0 auto;
+            z-index: 6;
+            position: fixed;
+        }
 
-    
-    <body>
+        button.startscreen p { 
+            color: white;
+            font-size:100px;
+            margin-top: 0;
+            margin-left: 10%;
+            top: 0px;
+            padding-top: 0px;
+            text-align: left;
+        }
+
+        .startheader {
+            background-color: black;
+            color: white;
+            top: 0;
+        }
+        .starthone {
+            background-color: black;
+            color: white;
+            top: 0;
+        }
+</style> -->
+
+
+</head>
+        <body>
+
+
+
+
         <header>
             <h1>
                 <div>
@@ -72,7 +107,7 @@
                         </li>
                         <li class="icon">
                             <i class="fa fa-star-o" aria-hidden="true"></i>
-                            <span>Star Gazing</span>
+                            <span>Astronomy</span>
                         </li>
                         <li class="icon">
                             <i class="fa fa-headphones" aria-hidden="true"></i>
@@ -161,4 +196,14 @@
                 </div>
             </footer>
         </body>
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script>
+        $('.startscreen').click(function(){
+            $('.startscreen').fadeOut(5000);
+            $('body').css('overflow', 'auto');
+        });
+        </script>
+
         </html>

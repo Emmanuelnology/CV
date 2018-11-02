@@ -5,6 +5,10 @@ body {
 
 p { 
   text-align: justify;
+  width: 70%;
+  float: center;
+  margin: 0 auto;
+  margin-top: 20px;
 }
 
 li.nowlabel,

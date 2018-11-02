@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <link  href=  "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bitter|Crimson+Text|Nunito|Permanent+Marker|Pontano+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="genstylepractise2.css">
+    <link rel="stylesheet" type="text/css" href="indexcss.css">
+    <title>Kieran Taylor CV About Me</title>
+
+  <style>
+    body{ 
+      margin: 0px;
+      background-color: black;
+      height: 100vw;
+      width: 100vw;
+    }
+
+
+    .js-modal {
+      display: hidden;
+    }
+
+
+    button.js-modal-open {
+        height: 100vw;
+        width: 100vw;
+        position: fixed;
+        padding: 20px;
+        z-index: 5;
+        font-family: 'Crimson Text', serif;
+        padding: 5%;
+        background-color: black;
+    }
+
+     
+  a {
+    color: white;
+    width: 100vw;
+    height: 100vw;
+    font-size: 90%;
+    text-decoration: none;
+    z-index: 6;
+  }
+    
+</style>
+
+</head>
+
+  <body>
+    <button class="js-modal-open"></button>
+
+    <a href="aboutme.html" class="js-modal">
+      Hi,
+      I'm Kieran.
+      </a>
+
+
+
+
+  </body>
+
+    <script>
+    
+        $('.js-modal-open').click(function(){
+            $('a.js-modal').slideDown();
+            $('a').css('overflow', 'hidden');
+        });
+        
+
+
+
+
+    </script>
+
+
+
+</html>

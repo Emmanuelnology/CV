@@ -75,6 +75,10 @@ div.right {
   margin: 0 auto;
 }
 
+li.icon {
+  font-size: 2.5em;
+}
+
 @media only screen and (min-width: 1014px) {
   li.aboutmelabel,
   li.aboutmelabel:hover {
