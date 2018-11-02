@@ -13,7 +13,7 @@ body {
 }
 
 h2 {
-  color: rgb(22, 25, 209);
+  color: rgb(59, 61, 199);
   text-align: center;
   font-size: 4em;
   border: solid rgb(6, 6, 82);
@@ -24,7 +24,7 @@ h2 {
 
 h3 {
   text-align: center;
-  color: rgb(52, 52, 121);
+  color: rgb(106, 106, 236);
 }
 
 /* Columns equally spaced */
@@ -50,9 +50,9 @@ h3 {
 
 .large-flex {
   flex: 2 !important;
-  text-align: center;
+  text-align: center !important;
   font-size: 1.1em;
-  padding: 1.4em;
+  padding: 2em;
   background-color: rgba(173, 213, 226, 0.7);
 }
 
@@ -214,12 +214,17 @@ section {
 
 .darken {
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.6);
   background-size: cover;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
+}
+
+/* In-section text font */
+.text {
+  font-size: 1.5em;
 }
 
 /* Background image for about me */
@@ -239,7 +244,6 @@ section {
   list-style-type: none;
   display: inline-block;
   text-align: left;
-  font-size: 2em;
 }
 
 .myinfo i {
