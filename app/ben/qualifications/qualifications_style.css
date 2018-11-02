@@ -1,7 +1,8 @@
 :root {
   --board-dark: rgb(110, 60, 45);
   --board-light: rgb(186, 102, 76);
-  --size-smallest: 2px;
+  --size-small: 2px;
+  --size-med: 12px;
   --size-large: 20px;
 }
 
@@ -25,12 +26,12 @@ ul {
   width: 19.5em;
   margin: var(--size-large) auto;
   padding: 0.3em;
-  border: solid var(--size-smallest) var(--board-dark);
+  border: solid var(--size-small) var(--board-dark);
   background-image: url('wood.png');
 }
 
 .hons-board {
-  border: solid var(--size-smallest) var(--board-light);
+  border: solid var(--size-small) var(--board-light);
   color: var(--board-dark);
   padding: 1em;
   margin: 0 auto;
@@ -47,7 +48,7 @@ ul {
 }
 
 .hons-board div {
-  font-size: 12px;
+  font-size: var(--size-med);
 }
 
 .place {
