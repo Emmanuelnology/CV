@@ -209,7 +209,7 @@ aside div {
 #skills-panel,
 #extra-skills {
   width: 40%;
-  margin: 5% 30%;
+  margin: 4vh 25vw;
 }
 
 #skills-panel li,
@@ -233,6 +233,15 @@ aside div {
 
 .collapsed {
   display: none;
+}
+
+#recruiter-info h2 {
+  margin-bottom: 10vh;
+}
+
+#recruiter-info li {
+  margin: 5% 0;
+  font-size: 1.8em;
 }
 
 @media only screen and (min-width: 550px) {
