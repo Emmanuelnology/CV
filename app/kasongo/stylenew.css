@@ -1,4 +1,4 @@
-/* Border over all the page */
+/* Border over all the page, body and title style */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -13,9 +13,12 @@ body {
 }
 
 h2 {
-  color: rgb(14, 14, 121);
+  color: rgb(90, 90, 204);
   text-align: center;
   font-size: 4em;
+  border: solid rgb(6, 6, 82);
+  margin-left: 6em;
+  max-width: 9em;  
 }
 
 /* Two columns equally spaced */
