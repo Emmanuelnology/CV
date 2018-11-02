@@ -37,6 +37,7 @@ nav {
   background-image: url('bridge.png');
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 100vh;
 }
 
 nav ul {
@@ -222,16 +223,41 @@ header h3 {
   color: #e34543;
 }
 
-.chart {
-  width: 500px;
-  margin-right: 0;
-  position: relative;
+#piechart {
+  width: 50%;
+  display: inline-block;
+}
+
+#doing {
+  padding-top: 20px;
+  text-align: center;
+  width: 50%;
+}
+
+#describe > * {
+  padding-left: 60px;
+  padding-top: 20px;
+  text-align: center;
 }
 
 #describe {
-  position: absolute;
+  font-size: 20px;
 }
 
+.words > li {
+  padding: 5px 5px;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 30px;
+}
+
+.equal-flex {
+  display: flex;
+}
+
+.equal-flex > * {
+  flex: 1;
+}
 
 .career {
   color: #e34543;
@@ -378,17 +404,6 @@ nav ul {
   text-align: left;
   padding-left: 20px;
   background-image: url('plane.png');
-}
-
-#doing {
-  font-size: 18px;
-  padding-top: 20px;
-  padding-left: 100px;
-  text-align: left;
-}
-
-.chart {
-  position: relative;
 }
 
 section {
