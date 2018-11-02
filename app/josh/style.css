@@ -51,11 +51,6 @@ nav li a:hover:not(.active) {
   background-color: #ddd;
 }
 
-/* nav li a.active {
-  color: white;
-  background-color: #4caf50;
-} */
-
 .bodycenter-text {
   text-align: center;
 }
@@ -72,16 +67,39 @@ nav li a:hover:not(.active) {
   min-height: 100vh;
 }
 
-.about-me {
-  margin-top: 50px;
-  margin-left: 150px;
-  margin-right: 150px;
-  margin-bottom: 50px;
+.contain{
+  width: 80%;
+  margin: auto;
+}
+
+.about-me{
+  width: 100%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .about-me-color {
   background-color: #a8a3a3;
+}
+
+.polaroids {
+  display:flex;
+  flex-direction: row;
+ }
+
+.polaroid img {
+  height: 320px;
+}
+
+div.polaroid {
+  width: 33.33%;
+  background-color: #a8a3a3;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+
+div.polaroid-text {
+  text-align: center;
+  padding: 10px 20px;
 }
 
 .work-experience {
@@ -146,20 +164,19 @@ body > div {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 5px;
-  width: 100%;
+  margin: auto:
+  width: 80%;
 }
 
 .skills-column {
-  /* float: left;
+  float: left;
   width: 32%;
   margin-bottom: 16px;
-  padding: 0 8px; */
-  flex: 1;
-  width: 50%;
+  padding: 0 8px;
+  /* flex: 1;
+  width: 50%; */
 }
 
-/* card effect */
 .skills-card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   background-color: #a8a3a3;
@@ -174,7 +191,7 @@ body > div {
   padding: 0 16px;
 }
 
-/* Clear floats */
+
 .skills-container::after,
 .skills-row::after {
   content: "";
