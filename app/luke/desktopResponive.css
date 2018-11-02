@@ -18,6 +18,10 @@ nav {
   z-index: 2;
 }
 
+p img {
+  width: 1000px;
+}
+
 header,
 footer,
 h1,
@@ -41,12 +45,6 @@ img {
   float: left;
   width: 100px;
 }
-
-/* span img {
-  border: 1px white solid;
-  position: relative;
-  bottom: 25px;
-} */
 
 li {
   padding-bottom: 10px;
@@ -212,6 +210,10 @@ div ul li {
   padding-top: 40px;
 }
 
+#about p {
+  height: 100%;
+}
+
 .aca-con-1 {
   display: grid;
   grid-template-areas: "qual-box ed-box";
@@ -220,7 +222,7 @@ div ul li {
 
 .aca-con-2 {
   display: grid;
-  grid-template-areas: "aw-box pro-box";
+  grid-template-areas: "pro-box pro-box";
   grid-template-columns: 50% 50%;
 }
 
@@ -264,16 +266,6 @@ div ul li {
   padding-right: 50%;
 }
 
-#word-cloud {
-  position: relative;
-  width: 200px;
-}
-
-.cloud {
-  height: auto;
-  padding-bottom: 150px;
-}
-
 .modal-ibm {
   display: none;
   position: fixed;
@@ -285,4 +277,5 @@ div ul li {
   padding: 20px;
   border-radius: 20%;
   border: 1px grey solid;
+  z-index: 5;
 }

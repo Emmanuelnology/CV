@@ -5,7 +5,7 @@
 a {
   text-decoration: none;
   color: inherit;
-  padding-right: 5px;
+  padding: 0;
 }
 
 h1 {
@@ -13,6 +13,7 @@ h1 {
   margin: 0;
   padding: 30px;
   font-size: 8vw;
+  min-width: 200px;
   text-transform: capitalize;
   font-family: 'Crimson Text', serif;
   font-weight: 800;
@@ -62,20 +63,16 @@ nav li {
   border-left: 2px solid black;
   border-right: 2px solid black;
   width: 10%;
-
-  /* max-width:200px;
-  min-width: 111px; */
   font-size: 15px;
   text-align: center;
   height: 150px;
 }
 
 nav li:hover {
-  color: white;
-}
-
-nav a {
-  padding: 0 0.5em;
+  font-weight: 1000;
+  position: relative;
+  top: -15px;
+  height: 165px;
 }
 
 ul li div.labelwrite {
@@ -89,6 +86,7 @@ main {
   border-top: 2px solid black;
   font-family: 'Crimson Text', serif;
   text-align: center;
+  min-height: 500px;
 }
 
 .aboutmelabel {
@@ -170,12 +168,15 @@ footer {
     text-align: center;
   }
 
-  nav li:hover {
-    color: white;
-  }
-
   ul li div.labelwrite {
     transform: rotate(0deg);
     margin-top: 0;
+  }
+
+  nav li:hover {
+    font-weight: 1000;
+    position: relative;
+    top: -15px;
+    height: 55px;
   }
 }

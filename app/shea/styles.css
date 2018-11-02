@@ -244,13 +244,30 @@ aside div {
   display: none;
 }
 
+#education h3 {
+  margin-top: 4vh;
+}
+
+#awards h3 {
+  margin-top: 5vh;
+}
+
 #recruiter-info h2 {
-  margin-bottom: 10vh;
+  margin-bottom: 7.5vh;
 }
 
 #recruiter-info li {
-  margin: 5% 0;
+  margin: 4% 0;
   font-size: 1.8em;
+}
+
+#recruiter-info a {
+  font-weight: normal;
+}
+
+.line-break::before {
+  content: "\A";
+  white-space: pre;
 }
 
 @media only screen and (min-width: 550px) {

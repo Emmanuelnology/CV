@@ -45,7 +45,7 @@ function showSection(section) {
     removeActiveFromAllNavLinks();
     $("#main").show();
     section.content.show();
-    section.div.show();
+    section.link.addClass('active');
 }
 
 $("#closebutton").click(function(){

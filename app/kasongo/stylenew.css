@@ -13,13 +13,18 @@ body {
 }
 
 h2 {
-  color: rgb(27, 28, 143);
+  color: rgb(59, 61, 199);
   text-align: center;
   font-size: 4em;
   border: solid rgb(6, 6, 82);
   border-style: double;
   margin-left: 8em;
   max-width: 9em;
+}
+
+h3 {
+  text-align: center;
+  color: rgb(106, 106, 236);
 }
 
 /* Columns equally spaced */
@@ -38,16 +43,16 @@ h2 {
 }
 
 .multi > div {
-  background-color: rgba(173, 213, 226, 0.6);
+  background-color: rgba(173, 213, 226, 0.7);
   flex: 1;
   margin: 15px;
 }
 
 .large-flex {
   flex: 2 !important;
-  text-align: center;
-  font-size: 1.1em;
-  padding: 1.4em;
+  text-align: center !important;
+  padding: 2em;
+  background-color: rgba(173, 213, 226, 0.7);
 }
 
 /* Bordure for all my images and small sections such as about me */
@@ -113,6 +118,7 @@ header {
   margin-top: 6%;
   margin-left: 50%;
   margin-right: 17%;
+  margin-bottom: 5%;
   justify-content: center;
 }
 
@@ -201,14 +207,14 @@ nav audio {
 
 /* Section size and flex and light dark background */
 section {
-  height: 95vh;
+  height: 96.5vh;
   border: 1px black solid;
   position: relative;
 }
 
 .darken {
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.6);
   background-size: cover;
   top: 0;
   bottom: 0;
@@ -216,8 +222,12 @@ section {
   left: 0;
 }
 
-/* Background image for about me */
+/* In-section text font */
+.text {
+  font-size: 1.5em;
+}
 
+/* Background image for about me */
 #contactkas {
   background-image: url('spain.jpg');
   background-size: cover;
@@ -234,7 +244,6 @@ section {
   list-style-type: none;
   display: inline-block;
   text-align: left;
-  font-size: 2em;
 }
 
 .myinfo i {
@@ -247,8 +256,8 @@ section {
   height: 100%;
 }
 
-/* My photo with the same size as the box */
-#kasface {
+/* My photos with the same size as the box */
+.kasface {
   width: 100%;
 }
 
@@ -256,6 +265,7 @@ section {
 .social {
   width: 100%;
   text-align: center;
+  padding-bottom: 1.7em;
 }
 
 /* About me section with an image */
