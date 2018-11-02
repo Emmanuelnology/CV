@@ -137,7 +137,7 @@ nav > a:hover {
   border: 3px solid black;
 }
 
-#about-me .open-button {
+#about-me .js-modal-open {
   background-color: transparent;
   border: none;
   border-radius: 50%;
@@ -148,17 +148,36 @@ nav > a:hover {
   cursor: pointer;
 }
 
-#modal {
-  background-color: red;
+.modal {
   display: none;
   position: fixed;
-  left: 10%;
-  width: 80%;
-  top: 10%;
-  height: 80%;
-  border-radius: 10px;
-  padding: 15px;
-  border: 1px solid #111;
+  left: 15%;
+  right: 15%;
+  top: 15%;
+  bottom: 30%;
+  padding: 5%;
+  border-radius: 20px;
+  border: none;
+  z-index: 10;
+  color: white;
+}
+
+.js-modal-close {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 2em;
+}
+
+#blocker {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   z-index: 10;
 }
 

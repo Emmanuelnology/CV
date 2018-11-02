@@ -145,6 +145,15 @@ stop {
   cursor: pointer;
 }
 
+.huboo-modal:hover,
+.teaching-modal:hover,
+.gift-shop-modal:hover,
+.tti-modal:hover,
+.ribbon-modal:hover,
+.beavers-modal:hover {
+  cursor: pointer;
+}
+
 rect.huboo-modal {
   width: 650px;
   height: 235px;
@@ -190,5 +199,9 @@ rect.beavers-modal {
   height: 260px;
   fill: white;
   stroke: lightblue;
+  display: none;
+}
+
+#inactive {
   display: none;
 }
