@@ -1,0 +1,59 @@
+#skills-open .left,
+#skills-open .left li {
+  text-align: left;
+}
+
+#skills-open ul.left {
+  margin: 0 15px ;
+  list-style: none;
+}
+
+#skills-open h2 {
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+#skills-open .skill {
+  font-size: 18px;
+  font-weight: 600;
+  padding-bottom: 14px;
+  width: 300px;
+}
+
+#skills-open li > div {
+  font-size: 16px;
+  display: block;
+  font-weight: 100;
+  padding: 0 10px;
+  margin-top: 3px;
+  float: none;
+  text-align: justify;
+}
+
+#skills-open .stars {
+  padding: 0;
+  margin: 0;
+  float: right;
+}
+
+#skills-open li i {
+  font-size: 0.8em;
+}
+
+#skills-open {
+    display: grid;
+    grid-template-areas: "key key" "tech other";
+    grid-template-columns: 1fr 1fr;
+}
+
+#skills-open h1 {
+    grid-area: key;
+}
+
+#tech {
+    grid-area: tech;
+}
+
+#other {
+    grid-area: other;
+}

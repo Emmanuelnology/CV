@@ -1,0 +1,62 @@
+#contact-open .capital {
+  text-transform: capitalize;
+}
+
+#contact-open section {
+  margin: 15px;
+}
+
+#contact-open ul {
+  list-style: none;
+}
+
+#contact-open li {
+  padding: 2px;
+}
+
+#contact-open a {
+  color: inherit;
+}
+
+#contact-open address {
+  font-style: unset;
+}
+
+#contact-open article {
+  display: inline;
+}
+
+#contact-open .fab {
+  font-size: 50px;
+  margin: 0 5px;
+}
+
+#contact-open .fa-linkedin {
+  color: #0274b3;
+}
+
+#contact-open .fa-facebook-square {
+  color: #4267b2;
+}
+
+#contact-open .fa-twitter-square {
+  color: #28aae1;
+}
+
+#contact-open .button {
+  background-color: #527952;
+  color: #eaeaff;
+  border: none;
+  display: inline-block;
+  font-size: 18px;
+  border-radius: 20px;
+  padding: 7px 17px;
+  margin: 10px;
+  width: 205px;
+}
+
+#contact-open .button:hover {
+  opacity: 0.8;
+  color: white;
+  cursor: pointer;
+}

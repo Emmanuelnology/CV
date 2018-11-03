@@ -1,0 +1,13 @@
+#qualifications-open .award {
+    width: 400px;
+    text-align: left;
+}
+
+#qualifications-open .options {
+    display: inline;
+    float: right;
+}
+
+#qualifications-open .grade {
+    font-weight: 600;
+}
