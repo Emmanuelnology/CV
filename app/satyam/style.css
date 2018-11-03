@@ -41,7 +41,7 @@ p {
 }
 
 #container {
-  background-image: url('/brunel-oct-18/app/satyam/googlecv/mapbackground.jpg');
+  background-image: url('googlecv/mapbackground.jpg');
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -192,8 +192,23 @@ p {
   font-size: 3em;
 }
 
-@media only screen and (min-width: 700px) {
+li {
+  list-style-type: none;
+}
+
+ul.skillslist {
+  text-align: center;
+}
+
+.score {
+  color: rgb(231, 113, 27);
+  box-sizing: border-box;
+  display: inline;
+  margin: 25px;
+}
+
+/* @media only screen and (min-width: 700px) {
   #infopanel {
     background-color: red;
   }
-}
+} */
