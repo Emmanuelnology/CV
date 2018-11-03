@@ -23,8 +23,7 @@
 
 #work-open .timeline > div:nth-child(odd) {
   border-right: 0.125em #466266 solid;
-  display: flex;
-  align-items: flex-end;
+  text-align: right;
 }
 
 #work-open .timeline strong {
@@ -52,21 +51,13 @@
   padding-top: 0.25em;
 }
 
-#work-open .empty {
+#work-open .timeline > div.empty,
+#work-open .timeline > div.emptytop {
   border-bottom: 0.125em solid #466266;
   display: flex;
   align-items: flex-end;
   font-weight: 600;
-}
-
-#work-open .empty:nth-child(odd) {
-  justify-content: flex-end;
-  padding-bottom: 0.25em;
-}
-
-#work-open .empty:nth-child(even) {
-  justify-content: flex-start;
-  padding-bottom: 0.25em;
+  padding-bottom: 0.4em;
 }
 
 #work-open .timeline > .content:nth-child(even)::before {
@@ -81,7 +72,8 @@
   left: -0.875em;
 }
 
-#work-open .timeline > .content:nth-child(odd)::before {
+#work-open .timeline > .empty:nth-child(even)::before,
+#work-open .timeline > .emptylast::before {
   content: " ";
   width: 1em;
   height: 1em;
@@ -89,6 +81,6 @@
   border: 0.25em solid #466266;
   background-color: #7bacb3;
   position: absolute;
-  top: -0.875em;
-  right: -0.875em;
+  top: -0.75em;
+  left: -0.875em;
 }

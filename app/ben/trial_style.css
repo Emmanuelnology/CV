@@ -16,8 +16,12 @@
   padding: 0;
   margin: 0;
   text-decoration: none;
-  text-align: center;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2 {
+  text-align: center;
 }
 
 body {
@@ -116,7 +120,7 @@ main {
   display: none;
 }
 
-#about-closed {
+#about {
   grid-area: about;
   background-color: var(--color-med);
   padding: var(--size-med);
@@ -133,7 +137,7 @@ main {
   display: none;
 }
 
-#skills-closed {
+#skills {
   grid-area: skills;
   background-color: var(--color-light);
   padding: var(--size-med);
@@ -150,7 +154,7 @@ main {
   display: none;
 }
 
-#work-closed {
+#work {
   grid-area: work;
   background-color: var(--color-med);
   padding: var(--size-med);
@@ -167,7 +171,7 @@ main {
   display: none;
 }
 
-#contact-closed {
+#contact {
   grid-area: contact;
   background-color: var(--color-light);
   padding: var(--size-med);
@@ -184,7 +188,7 @@ main {
   display: none;
 }
 
-#hobbies-closed {
+#hobbies {
   grid-area: hobbies;
   background-color: var(--color-med);
   padding: var(--size-med);
@@ -201,7 +205,7 @@ main {
   display: none;
 }
 
-#qualifications-closed {
+#qualifications {
   grid-area: qualifications;
   background-color: var(--color-light);
   padding: var(--size-med);
