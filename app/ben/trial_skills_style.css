@@ -4,13 +4,13 @@
 }
 
 #skills-open ul.left {
-  margin: 0 15px ;
+  margin: 0 15px;
   list-style: none;
 }
 
 #skills-open h2 {
-    width: 300px;
-    margin-bottom: 10px;
+  width: 300px;
+  margin-bottom: 10px;
 }
 
 #skills-open .skill {
@@ -41,19 +41,19 @@
 }
 
 #skills-open {
-    display: grid;
-    grid-template-areas: "key key" "tech other";
-    grid-template-columns: 1fr 1fr;
+  display: grid;
+  grid-template-areas: "key key" "tech other";
+  grid-template-columns: 1fr 1fr;
 }
 
 #skills-open h1 {
-    grid-area: key;
+  grid-area: key;
 }
 
 #tech {
-    grid-area: tech;
+  grid-area: tech;
 }
 
 #other {
-    grid-area: other;
+  grid-area: other;
 }

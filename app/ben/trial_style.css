@@ -1,8 +1,8 @@
 :root {
   --color-dark: #466266;
-  --color-med: #7BACB3;
+  --color-med: #7bacb3;
   --color-lightest: white;
-  --color-light: #9EDDE6;
+  --color-light: #9edde6;
   --color-darkest: black;
   --size-smallest: 1px;
   --size-small: 5px;
@@ -94,7 +94,7 @@ nav a:hover {
   nav > ul > li > ul {
     flex: 1 1 auto;
   }
-  
+
   nav > ul > li > ul > li {
     flex: 1 1 auto;
   }
@@ -108,7 +108,6 @@ main {
   color: var(--color-dark);
   min-height: 100vh;
 }
-
 
 #about-open {
   grid-area: about;
