@@ -9,6 +9,7 @@ a {
 }
 
 h1 {
+color: white;
   text-align: center;
   margin: 0;
   padding: 30px;
@@ -17,7 +18,7 @@ h1 {
   text-transform: capitalize;
   font-family: 'Crimson Text', serif;
   font-weight: 800;
-  background-image: url('cloudy-day.png');
+  background-image: url('5006.png');
   background-repeat: repeat;
   background-attachment: fixed;
 }
@@ -34,7 +35,7 @@ body {
 }
 
 nav {
-  background-image: url('cloudy-day.png');
+  background-image: url('5006.png');
   background-repeat: repeat;
   background-attachment: fixed;
   text-transform: lowercase;
@@ -112,7 +113,7 @@ main {
 }
 
 footer {
-  background-image: url('cloudy-day.png');
+  background-image: url('5006.png');
   background-repeat: repeat;
   background-attachment: fixed;
   text-align: center;
@@ -131,9 +132,6 @@ footer {
 
 @media only screen and (min-width: 1014px) {
   nav {
-    background-image: url('cloudy-day.png');
-    background-repeat: repeat;
-    background-attachment: fixed;
     text-transform: lowercase;
     padding: 0;
     height: 40px;
