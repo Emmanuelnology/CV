@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
+    <link  href=  "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Hind+Madurai|News+Cycle|Roboto+Condensed|Vidaloka" rel="stylesheet">
     <title>Kieran Taylor CV About Me</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,15 +12,14 @@
         }
         
         body {
-            background-image: url('himalayasgrey.png');
+            background-image: url('starry1.png');
             background-size: cover;
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
-            /* background-color: black; */
             margin: 0 auto;
             z-index: -3;
-            
+            font-family: 'News Cycle', sans-serif;
             width: 100%;
             
             
@@ -27,64 +27,68 @@
         header {
             height: 200px;
             padding: 0;
+            color: white;
+            
         }
         h1 {
             
-            width: 100%;
+            width: 80%;
             text-align: left;
-            font-size: 45px;
+            font-size: 55px;
             margin: 0 auto;
             position: fixed;
             z-index: -2;
             padding:0;
+            padding-left: 5px
         }
         
         h1 p {
-
+            
             margin: 0;
-            font-family: 'News Cycle', sans-serif;
+            
             padding: 0px;
             height: 40px;
-            padding-left: 2%;
-            
+            color: white;
             
             
         }
-
+        
         header > p {
-            width: 80%;
-            font-family: 'News Cycle', sans-serif;
+            width: 90%;
+            max-width: 300px;
+            
             text-align: justify;
             position: fixed;
-            top: 85px;
+            top: 90px;
             z-index: -2;
             font-size: 13px;
+            padding-left: 5px;
         }
-        
-        
         
         
         
         
         div.mountain {
-            background-image: url('himalayasforegreyyy.png');
+            background-image: url('starryforegroundgood.png');
             background-size: cover;
             background-attachment: scroll;
-            background-position: top;
+            background-position: center;
             background-repeat: no-repeat;
-            width: 100%;
-            height: 490px;
+            width: 100vw;
+            height: 350px;
         }
         
         nav {
             font-family: 'News Cycle', sans-serif;
             font-size: 20px;
             position: absolute;
-            top: 450px;
+            top: 500px;
             text-align: right;
             display: inline-block;
             width: 100%;
             color: white;
+            z-index: 1;
+            margin-right: 50px;
             
             
         }
@@ -94,13 +98,13 @@
         }
         
         div.main {
+            text-align: center;
             margin-top: 20px;
             position: absolute;
-            top: 670px;
-            width: 100%;
+            top: 540px;
+            width: 100vw;
             margin: 0 auto;
             color: white;
-            z-index: 4;
             display:grid;
             grid-template-areas:
             "aboutme"
@@ -113,32 +117,184 @@
         
         
         
-        .aboutme {
+        section.aboutme {
+            width: 100vw;
             grid-area: aboutme;
-            background-color: rgb(83,83,83);
+            background-color: rgb(34, 34, 34);
+            padding-top: 200px;
+            padding-right: 10%;
+            padding-left: 10%;
+            background-image: url('vietnamb.png');
+            background-size: 90vw;
+            font-size: 18px;
+            background-attachment: scroll;
+            background-position: center;
+            background-position-y: 250px;
+            background-repeat: no-repeat;
+            display: grid;
+            grid-template-areas:
+            "aboutmetitle aboutmetitle"
+            "aboutmeleft aboutmeright";
+            grid-template-columns: 1fr 1fr;
+        }
+        
+        h2.aboutmetitle {
+            grid-area: aboutmetitle
+        }
+        
+        section.aboutme div.left {
+            grid-area: aboutmeleft;
+            text-align: left;
+            
             
         }
+        section.aboutme div.right {
+            grid-area: aboutmeright;
+            text-align: right;
+        }
         
-        .experience {
+        section.aboutme ul {
+            list-style-type: none;
+            list-style-position: inside;
+            padding: 0;
+        }
+        
+        section.aboutme ul.skillslist li {
+            display: block;
+        }
+        
+        section.experience {
             grid-area: experience;
-            background-color: rgb(83,83,83);
+            background-color: rgb(34, 34, 34);
+        }
+
+
+button.square-image {
+  height: 200px;
+  width: 200px;
+  background-size: cover;
+  display: inline-flex;
+  background-position: center;
+  border-radius: 0;
+  filter: brightness(20%);
+  text-align: center;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+button.square-image:hover {
+  filter: brightness(100%);
+  border: 1px solid magenta;
+  cursor: pointer;
+}
+
+#school {
+  background-image: url('llangatwgg.png');
+}
+
+#college {
+  background-image: url('nptc.jpg');
+}
+
+#uni {
+  background-image: url('unii.png');
+}
+
+#liberty {
+  background-image: url('liberty.jpg');
+}
+
+#deliveroo {
+  background-image: url('deliveroo.jpg');
+}
+
+#ubereats {
+  background-image: url('ubereatss.png');
+}
+
+#volunteering {
+  background-image: url('umphang.jpg');
+}
+
+#valleymill {
+  background-image: url('valleymill.jpg');
+}
+
+#nology {
+  background-image: url('nologyy.png');
+}
+
+        .modal {
+            display: none;
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background-color: white;
+            padding: 20px;
+            border: 0px solid black;
+            z-index: 5;
+            padding: 5%;
+        }
+
+        .date {
+            font-weight: 900;
+            font-size: 200%;
+            text-align: center;
+        }
+        .establishment {
+            font-weight: 700;
+            font-size: 170%;
+            text-align: center;
+        }
+        .content {
+            font-weight: 200;
+            font-size: 130%;
+            text-align: justify;
+            float: center;
+            margin: 0 auto;
+            width: 60%;
+        }
+
+        p.content ul {
+            width: 10%;
+        }
+
+        button.js-modal-close {
+            width: 35%;
+            height: 15%;
+            font-family: 'Crimson Text', serif;
+            color: white;  
+            background-color: black;
+            font-size: 130%; 
+            border:5px solid white;
+            vertical-align: center;
+            margin: 0 auto;
+        }
+
+        button.js-modal-close:hover {
+            color: black;
+            background-color: white;
+            cursor: pointer;
+            border: 5px solid black;
         }
         
-        .projects {
+        section.projects {
             grid-area: projects;
-            background-color: rgb(83,83,83);
+            background-color: rgb(34, 34, 34);
         }
         
-        .now {
+        section.now {
             grid-area: now;
-            background-color: rgb(83,83,83);
+            background-color: rgb(34, 34, 34);
         }
         
     </style>
     
 </head>
 <body>
-    <header><h1><p>Kieran</p><p>Taylor.</p></h1>
+    <header><h1><p>KieranTaylor.</p></h1>
         <p>I recently graduated from <strong>Swansea University</strong> 
             with first-class honours in physics, and I'm currently partaking in the <strong>_nology</strong>
             tech conversion scheme. I have excellent written and verbal
@@ -164,12 +320,9 @@
         <div class="main">
             
             <section class="aboutme">
-
-            <div class="left">
-  
-                </div>
-                <div class="mid">
-                    <h2>Interests</h2>
+                <h2 class="aboutmetitle">AboutMe</h2>
+                <div class="left">
+                    <h3>Interests</h3>
                     <ul class="icons">
                         <li class="icon">
                             <i class="fa fa-plane" aria-hidden="true"></i>
@@ -211,7 +364,7 @@
                     
                 </div>
                 <div class="right">
-                    <h2>Skills</h2>
+                    <h3>Skills</h3>
                     <div class="skills-panel">
                         <ul class="skillslist">
                             <li>Python
@@ -260,7 +413,7 @@
                                 </div>
                             </li>
                             
-                            <li>Microsoft Office&nbsp;&nbsp;&nbsp; 
+                            <li>Microsoft Office
                                 <div class="score">
                                     <i class="fa fa-check-circle-o" aria-hidden="true"></i>
                                     <i class="fa fa-check-circle-o" aria-hidden="true"></i>
@@ -273,25 +426,160 @@
                         
                     </div>
                 </div>
-                
-                <section class="experience">Experience</section>
-                
-                <section class="projects">Projects</section>
-                
-                <section class="now">Now</section>
-                
-            </div>
             </section>
-        </main>
-        
-        <footer>
+            <section class="experience">
+                <h2>Experience</h2>
+                <div class="education">
+                    <h3>Education</h3>
+                    <button id="nology" data-target="modal-nology" class="square-image js-modal-open"></button>
+                    <button id="uni" data-target="modal-uni" class="square-image js-modal-open"></button>
+                    <button id="college" data-target="modal-college" class="square-image js-modal-open"></button>
+                    <button id="school" data-target="modal-llangatwg" class="square-image js-modal-open"></button> 
+                </div>
+                
+                <div class="work">
+                    <h3>Work</h3>
+                    <button id="valleymill" data-target="modal-valleymill" class="square-image js-modal-open"></button>
+                    <button id="volunteering" data-target="modal-volunteering" class="square-image js-modal-open"></button>
+                    <button id="ubereats" data-target="modal-ubereats" class="square-image js-modal-open"></button>
+                    <button id="deliveroo" data-target="modal-deliveroo" class="square-image js-modal-open"></button>
+                    <button id="liberty" data-target="modal-liberty" class="square-image js-modal-open"></button>
+                </div>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </section>
             
-        </footer>
-    </body>
-    
-    <script>
+            <section class="projects">Projects</section>
+            
+            <section class="now">Now</section>
+            
+        </div>
         
-    </script>
+
+    <div id="modal-llangatwg" class="modal js-modal">
+    <button class="js-modal-close">Return</button>
+        <p class="date">2006-2012</p>
+        <p class="establishment">Llangatwg Community School</p>
+        <p class="content">14 GCSE's (A*-C)</p>
+    </div>
+
+
+    <div id="modal-college" class="modal js-modal">
+    <button class="js-modal-close">Return</button>
+        <p class="date">2012-2014</p>
+        <p class="establishment">NPTC (Neath Port Talbot College)</p>
+        <p class="content">A-Levels (Physics, Mathematics, Electronics) </p>
+    </div>
+
+    <div id="modal-uni" class="modal js-modal">
+    <button class="js-modal-close">Return</button>
+        <p class="date">2014-2018</p>
+        <p class="establishment">Swansea University</p>
+        <p class="content">Physics (MPhys) (First Class Honours)</p>
+    </div>
+
+
+    <div id="modal-liberty" class="modal js-modal">
+    <button class="js-modal-close">Return</button>
+        <p class="date">2015-2018</p>
+        <p class="establishment">Food Retail Team Leader (Liberty Stadium)</p>
+        <p class="content">
+            <ul>
+                <li>Responsible for managing staff in both kitchen and service area</li>
+                <li>Enforce the maintenance of high hygiene standards</li>
+                <li>Conduct regular cash lifts and complete any applicable paperwork</li>
+                <li>Resolve customer complaints and queries</li>
+            </ul>
+        </p>
+    </div>
+
+    <div id="modal-deliveroo" class="modal js-modal">
+    <button class="js-modal-close">Return</button>
+        <p class="date">2017-2018</p>
+        <p class="establishment">Deliveroo Bicycle Courier</p>
+        <p class="content">            
+            <ul>
+                <li>Responsible for transporting goods from restaurant to customer</li>
+                <li>Aware of risks undertaken while cycling through a dynamic and congested city with limited
+                    time to reach each destination</li>
+                <li>Ability to work accurately at a fast pace under pressure</li>
+                    
+            </ul>
+        </p>
+    </div>
+
+
+    <div id="modal-ubereats" class="modal js-modal">
+    <button class="js-modal-close">Return</button>
+        <p class="date">2017-2018</p>
+        <p class="establishment">UberEATS Bicycle Courier</p>
+        <p class="content"> 
+        <ul>
+            <li>Responsible for transporting goods from restaurant to customer</li>
+            <li>Aware of risks undertaken while cycling through a dynamic and congested city with limited
+                time to reach each destination</li>
+            <li>Ability to work accurately at a fast pace under pressure</li>
+                    
+        </ul>
+        </p>
+    </div>
+
+    <div id="modal-volunteering" class="modal js-modal">
+    <button class="js-modal-close">Return</button>
+        <p class="date">2017</p>
+        <p class="establishment">Fontier (Umphang, Thailand)</p>
+        <p class="content">During my time travelling around Asia I spent a month at an elephant sanctuary located within
+            Thailand’s rainforest. Here I assisted in collecting food, feeding and bathing the elephants. On top of
+            this I supported the permanent residents in cleaning the housing and preparing food.</p>
+    </div>
+
+
+    <div id="modal-valleymill" class="modal js-modal">
+    <button class="js-modal-close">Return</button>
+        <p class="date">2018</p>
+        <p class="establishment">Valley Mill</p>
+        <p class="content">Valley Mill</p>
+    </div>
+
+    <div id="modal-nology" class="modal js-modal">
+    <button class="js-modal-close">Return</button>
+        <p class="date">2018-2019</p>
+        <p class="establishment">_nology</p>
+        <p class="content">_nology</p>
+    </div>
+    </main>
     
-    
-    </html>
+    <footer>
+        
+    </footer>
+</body>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+        $('.js-modal-close').click(function(){
+            $('.js-modal').slideUp();
+            $('body').css('overflow', 'auto');
+        });
+        
+        $('.js-modal-open').click(function(){
+            var modalID = $(this).attr('data-target');
+            $('#' + modalID).slideDown();
+            $('body').css('overflow', 'hidden');
+        });
+</script>
+
+
+</html>
