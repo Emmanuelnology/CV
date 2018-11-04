@@ -2,6 +2,19 @@ html {
   scroll-behavior: smooth;
 }
 
+header,
+footer,
+h1,
+h2,
+h3 {
+  text-align: center;
+  font-family: 'raleway';
+}
+
+nav {
+  z-index: 2;
+}
+
 body {
   font-family: 'Raleway', sans-serif;
   text-align: justify;
@@ -14,21 +27,8 @@ body {
   color: white;
 }
 
-nav {
-  z-index: 2;
-}
-
 p img {
   width: 1000px;
-}
-
-header,
-footer,
-h1,
-h2,
-h3 {
-  text-align: center;
-  font-family: 'raleway';
 }
 
 ul {
@@ -133,6 +133,42 @@ div iframe {
   width: 100%;
 }
 
+.aca-con-1 {
+  display: grid;
+  grid-template-areas: "qual-box ed-box";
+  grid-template-columns: 50% 50%;
+}
+
+.aca-con-2 {
+  display: grid;
+  grid-template-areas: "pro-box pro-box";
+  grid-template-columns: 50% 50%;
+}
+
+.border {
+  border-bottom: 3px white solid;
+}
+
+.timeline {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  bottom: 100px;
+}
+
+.img {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 15%;
+}
+
+.timeline-img3 {
+  border: 2px lightgrey solid;
+}
+
 #experience,
 #about,
 #aca,
@@ -144,18 +180,6 @@ div iframe {
 
 #about p {
   height: 100%;
-}
-
-.aca-con-1 {
-  display: grid;
-  grid-template-areas: "qual-box ed-box";
-  grid-template-columns: 50% 50%;
-}
-
-.aca-con-2 {
-  display: grid;
-  grid-template-areas: "pro-box pro-box";
-  grid-template-columns: 50% 50%;
 }
 
 #qual-box {
@@ -196,30 +220,6 @@ div iframe {
 #pro-box li div {
   float: right;
   padding-right: 50%;
-}
-
-.border {
-  border-bottom: 3px white solid;
-}
-
-.timeline {
-  position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  bottom: 100px;
-}
-
-.img {
-  position: relative;
-  width: 100px;
-  height: 100px;
-  border-radius: 15%;
-}
-
-.timeline-img3 {
-  border: 2px lightgrey solid;
 }
 
 #work {
