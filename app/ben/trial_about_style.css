@@ -1,0 +1,18 @@
+#about-open {
+  font-size: 14px;
+}
+
+#about-open .med {
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+#about-open .large {
+  font-size: 1.35em;
+  font-weight: 600;
+}
+
+#about-open .huge {
+  font-size: 1.6em;
+  font-weight: 600;
+}

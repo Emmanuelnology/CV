@@ -1,13 +1,15 @@
-#contact-open {
-  text-align: center;
+:root {
+  --color-dark: #466266;
+  --color-light: #9edde6;
 }
 
-#contact-open .capital {
-  text-transform: capitalize;
+#contact-open {
+  text-align: center;
+  font-size: 16px;
 }
 
 #contact-open section {
-  margin: 15px;
+  margin: 1em;
 }
 
 #contact-open ul {
@@ -15,7 +17,11 @@
 }
 
 #contact-open li {
-  padding: 2px;
+  padding: 0.125em;
+}
+
+#contact-open .enlarges:hover {
+  font-size: 1.2em;
 }
 
 #contact-open a {
@@ -31,8 +37,12 @@
 }
 
 #contact-open .fab {
-  font-size: 50px;
-  margin: 0 5px;
+  font-size: 3.125em;
+  margin: 0 0.1em;
+}
+
+#contact-open .fab:hover {
+  font-size: 3.75em;
 }
 
 #contact-open .fa-linkedin {
@@ -47,9 +57,13 @@
   color: #28aae1;
 }
 
+#contact-open .fa-github-sqare {
+  color: #24292e;
+}
+
 #contact-open .button {
-  background-color: #466266;
-  color: #9edde6;
+  background-color: var(--color-dark);
+  color: var(--color-light);
   border: none;
   display: inline-block;
   font-size: 18px;

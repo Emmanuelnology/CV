@@ -1,49 +1,45 @@
-#skills-open .left,
-#skills-open .left li {
-  text-align: left;
-}
-
-#skills-open ul.left {
-  margin: 0 15px;
-  list-style: none;
+#skills-open {
+  font-size: 16px;
 }
 
 #skills-open h2 {
   width: 300px;
-  margin-bottom: 10px;
+  margin-bottom: 0.625em;
 }
 
-#skills-open .skill {
-  font-size: 18px;
-  font-weight: 600;
-  padding-bottom: 14px;
+#skills-open ul {
+  list-style: none;
+  text-align: left;
+  margin: 0 0.875em;
+}
+
+#skills-open li {
   width: 300px;
+  font-weight: 600;
+  padding-bottom: 0.875em;
 }
 
 #skills-open li > div {
-  font-size: 16px;
   display: block;
-  font-weight: 100;
-  padding: 0 10px;
-  margin-top: 3px;
-  float: none;
   text-align: justify;
+  font-size: 0.875em;
+  font-weight: 100;
+  padding: 0 0.625em;
+  margin-top: 0.2em;
 }
 
 #skills-open .stars {
+  float: right;
+  font-size: 0.8em;
   padding: 0;
   margin: 0;
-  float: right;
-}
-
-#skills-open li i {
-  font-size: 0.8em;
 }
 
 #skills-open {
   display: grid;
-  grid-template-areas: "key key" "tech other";
-  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "key" "tech" "other";
+  grid-template-columns: 1fr;
+  justify-items: center;
 }
 
 #skills-open h1 {
@@ -56,4 +52,11 @@
 
 #other {
   grid-area: other;
+}
+
+@media only screen and (min-width: 1068px) {
+  #skills-open {
+    grid-template-areas: "key key" "tech other";
+    grid-template-columns: 1fr 1fr;
+  }
 }
