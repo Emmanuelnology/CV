@@ -375,9 +375,8 @@ li > div {
   .modal {
     position: absolute;
     top: 20%;
-    bottom: 40%;
-    left: 30%;
-    right: 30%;
+    left: 40%;
+    right: 40%;
     background-color: white;
     z-index: 3;
     border-radius: 20px;
