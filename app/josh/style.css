@@ -1,3 +1,7 @@
+*{
+  box-sizing: border-box;
+}
+
 body {
   background: #645754 url(footer_lodyas.png) top left repeat;
   font-family: 'Montserrat', sans-serif;
@@ -169,12 +173,11 @@ body > div {
   flex-direction: row;
   flex-wrap: wrap;
   margin: auto;
-  width: 80%;
+  width: 100%;
 }
 
 .skills-column {
-  float: left;
-  width: 32%;
+  flex-grow: 1;
   margin-bottom: 16px;
   padding: 0 8px;
 }
@@ -352,4 +355,16 @@ iframe {
 
 .footer-logo img {
   height: 100px;
+}
+
+@media only screen and (min-width:400px){
+  .skills-column{
+    width:50%;
+  }
+}
+
+@media only screen and (min-width:600px){
+  .skills-column{
+    width: 33.3%;
+  }
 }
