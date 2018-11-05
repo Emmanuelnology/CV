@@ -21,16 +21,20 @@
         <p class="sub-heading">Curriculum Vitae</p>
     </div>
 
-    <div id="navbar">
-        <nav>
-            <a href="#about-me" > About me </a>
-            <a href="#education-section" > Education </a>
-            <a href="#education-section" > Work experience </a>
-            <a href="#skills" > Skills </a>
-            <a href="#awards"> Awards </a>
-            <a href="#extra-curricular" > Hobbies </a>
-            <a href="#contact-me" > Contact details </a>
-        </nav>
+    <nav>
+        <a href="#about-me" > About me </a>
+        <a href="#education-section" > Education </a>
+        <a href="#education-section" > Work experience </a>
+        <a href="#skills" > Skills </a>
+        <a href="#awards"> Awards </a>
+        <a href="#extra-curricular" > Hobbies </a>
+        <a href="#contact-me" > Contact details </a>
+    </nav>
+
+    <div id="blocker"></div>
+    <div class="modal">
+        Content
+        <button class="js-modal-close"> <i class="fa fa-times"></i> Close </button>
     </div>
 
     <main>
@@ -38,11 +42,11 @@
     <section id="about-me" class="bgcbeige">
         <h2> About me </h2>
         <div>
-            <button class="photo-button"> <img src="photo-of-me.jpg" alt="a photo of myself"> </button>
+            <button class="js-modal-open"> <img src="photo-of-me.jpg" alt="a photo of myself"> </button>
             <div>I am logical, creative, hard-working and conscientious. 
-                Finding elegant solutions to problems using my programming skills – 
+                Finding elegant solutions to problems using my programming skills &#8210; 
                 from tackling mathematical problems with Python to enhancing the 
-                smooth running of operations in a food factory using VBA - is what 
+                smooth running of operations in a food factory using VBA &#8210; is what 
                 I enjoy doing.  Working in the retail and hospitality industries 
                 has taught me the importance of good and effective customer relations.
                 Outside of work, sport is my other focus.  As a member of a successful 
@@ -50,7 +54,7 @@
                 commit to an intensive training schedule is as important as my gymnastic 
                 skills.
             </div>
-            <button class="photo-button"> <img src="another-photo-of-me.jpg" alt="another photo of myslef"> </button>
+            <button class="js-modal-open"> <img src="another-photo-of-me.jpg" alt="another photo of myslef"> </button>
         </div>
     </section>
 
@@ -62,6 +66,18 @@
             <h2 id="edu-title"> Education </h2>
 
             <div id="education">
+
+                <h3> _Nology <i class="fa fa-desktop" id="nology-icon"></i>  </h3>
+                <ul>
+                    <li class="dates">October 2018 - January 2019</li>
+                    <li> Technology conversion course </li>
+                    <li> During my first year at Durham, I studied
+                    Maths and Physics as a joint honours degree,
+                    and transferred to straight Maths at the
+                    beginning of my second year. This enabled
+                    me to choose more interesting and specialised
+                    modules. </li>
+                </ul>
 
                 <h3> Durham university <i class="fa fa-graduation-cap" id="dur-icon"></i>  </h3>
                 <ul>
@@ -89,6 +105,7 @@
             </div>
 
             <div id="col2">
+                <hr id="nology-hr">
                 <hr id="durham-hr">
                 <hr id="hayesfield-hr">
             </div>
@@ -159,7 +176,7 @@
                         quicker and more efficient, as well as editing
                         old code to significantly reduce the program
                         running times. <span class="italics"> "The benefits of 
-                        Caitlin's work could be used for many years to come
+                        Caitlin&#39;s work could be used for many years to come
                         at Bar" </span>
                     </li>
                 </ul>
@@ -186,6 +203,15 @@
         <div id="skills-box">
 
             <ul>
+                <li>
+                    <div class="rotate-text">
+                        <div> Beginner </div>
+                        <div> Familiar </div>
+                        <div> Proficient </div>
+                        <div> Expert </div>
+                        <div> Master</div>
+                    </div>
+                </li>
                 <li> HTML
                     <div class="score">
                         <i class="fa fa-star" aria-hidden="true"></i>
@@ -261,6 +287,9 @@
         <ul>
             <li>
                 <i class="fa fa-trophy"></i> Cheerleading level 5 group stunt University national champions, 2017
+            </li>
+            <li>
+                <i class="fa fa-trophy"></i> Passed driving test, 2015
             </li>
             <li>
                 <i class="fa fa-trophy"></i> April Payne prize for Mathematics, 2013, awarded by my school for 
@@ -345,7 +374,7 @@
                 </div>
 
                 <div class="back">
-                    <h3> Other sports, achievments and interests </h3>
+                    <h3> Other sports and interests </h3>
                     <ul>
                         <li> <i class="fa fa-ship"></i> Sailing </li>
                         <li> <i class="fa fa-snowflake-o"></i> Keen skiier </li>

@@ -24,6 +24,12 @@ p {
   width: 30%;
 }
 
+#startnav {
+  color: #fff;
+  background-color: #4285f4;
+  border: 1px solid #4285f4;
+}
+
 #welcomescreen {
   display: flex;
   flex-direction: column;
@@ -41,12 +47,12 @@ p {
 }
 
 #container {
-  background-image: url('/brunel-oct-18/app/satyam/googlecv/mapbackground.jpg');
+  background-image: url('googlecv/mapbackground.jpg');
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 300px;
+  height: 290px;
 }
 
 #topsearchbar {
@@ -124,6 +130,7 @@ p {
   padding: 0 15%;
 }
 
+#startnav,
 .start,
 .directions {
   font-size: 0.85em;
@@ -141,7 +148,7 @@ p {
 .directions {
   color: #fff;
   background-color: #4285f4;
-  border: 1px solid #fff;
+  border: 1px solid #4285f4;
 }
 
 .highlight {
@@ -192,8 +199,23 @@ p {
   font-size: 3em;
 }
 
-@media only screen and (min-width: 700px) {
+li {
+  list-style-type: none;
+}
+
+ul.skillslist {
+  text-align: center;
+}
+
+.score {
+  color: rgb(231, 113, 27);
+  box-sizing: border-box;
+  display: inline;
+  margin: 25px;
+}
+
+/* @media only screen and (min-width: 700px) {
   #infopanel {
     background-color: red;
   }
-}
+} */

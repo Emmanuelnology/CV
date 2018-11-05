@@ -1,0 +1,199 @@
+:root {
+  --score-dark: darkblue;
+  --score-med: red;
+  --score-lightest: white;
+  --score-light: blueviolet;
+  --score-darkest: black;
+  --size-smallest: 1px;
+  --size-small: 5px;
+  --size-med: 10px;
+  --size-large: 15px;
+  --size-largest: 24px;
+}
+
+main {
+  width: 21em;
+}
+
+h1 {
+  margin-top: 0;
+  padding-top: var(--size-med);
+}
+
+article {
+  margin: var(--size-large);
+}
+
+h2 {
+  font-size: var(--size-largest);
+  margin: var(--size-small);
+}
+
+ul {
+  list-style: none;
+}
+
+.innings {
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 800;
+  display: block;
+}
+
+.not-out {
+  background-color: var(--score-light);
+  color: var(--score-lightest);
+}
+
+.blank {
+  color: transparent;
+}
+
+.thick {
+  font-weight: 600;
+}
+
+.thin,
+.changes {
+  font-weight: 100;
+  text-align: left;
+}
+
+.appears {
+  display: none;
+}
+
+.bcdb-cw {
+  background-color: var(--score-dark);
+  color: var(--score-lightest);
+}
+
+.bcr-cw {
+  background-color: var(--score-med);
+  color: var(--score-lightest);
+}
+
+.bcw-cdb {
+  background-color: var(--score-lightest);
+  color: var(--score-dark);
+}
+
+.pb {
+  padding-bottom: var(--size-small);
+}
+
+.pt {
+  padding-top: var(--size-small);
+}
+
+.pl,
+.batter li {
+  padding-left: var(--size-small);
+}
+
+.pr {
+  padding-right: var(--size-small);
+}
+
+.mb {
+  margin-bottom: var(--size-small);
+}
+
+.bt {
+  border-top: var(--size-smallest) var(--score-dark) solid;
+}
+
+.bb {
+  border-bottom: var(--size-smallest) var(--score-dark) solid;
+}
+
+.br {
+  border-right: var(--size-smallest) var(--score-dark) solid;
+}
+
+.bl {
+  border-left: var(--size-smallest) var(--score-dark) solid;
+}
+
+.scorecard {
+  margin: 0 auto;
+  width: 18.5em;
+  display: grid;
+  grid-template-areas: "team team" "batter score" "extras ex-score" "total final";
+  grid-template-columns: 14.5em 4em;
+  justify-content: center;
+}
+
+.team {
+  margin: 0;
+  grid-area: team;
+  border-radius: var(--size-small) var(--size-small) 0 0;
+}
+
+.batter {
+  grid-area: batter;
+}
+
+.caught {
+  grid-area: caught;
+}
+
+.bowled {
+  grid-area: bowled;
+}
+
+.score {
+  grid-area: score;
+}
+
+.extras {
+  grid-area: extras;
+  text-align: left;
+}
+
+.total {
+  grid-area: total;
+  text-align: left;
+  border-radius: 0 0 0 var(--size-small);
+}
+
+.final {
+  grid-area: final;
+  border-radius: 0 0 var(--size-small) 0;
+}
+
+.ex-score {
+  grid-area: ex-score;
+}
+
+.scorecard li {
+  text-align: left;
+}
+
+.ex-score,
+.score li {
+  text-align: center;
+}
+
+@media only screen and (min-width: 600px) {
+  main {
+    width: 35em;
+  }
+
+  .appears {
+    display: initial;
+  }
+
+  .changes {
+    font-weight: 600;
+  }
+
+  .scorecard {
+    margin: 0 auto;
+    width: 29em;
+    display: grid;
+    grid-template-areas: "team team team team" "batter caught bowled score" "extras extras extras ex-score" "total total total final";
+    grid-template-columns: 13.5em 5.5em 6em 4em;
+    justify-content: center;
+  }
+}
