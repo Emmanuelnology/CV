@@ -60,20 +60,21 @@
         </ul>
     </nav>
     <main>
-        <header>Ben Tomaney's CV</header>
+        <header id="header">Ben Tomaney's CV</header>
         <section id="about" class="not-sk-cl not-wo-cl not-co-cl not-ho-cl not-qu-cl">
             <h1>About Me</h1>
         </section>
         <section id="about-open" class="not-sk-op not-wo-op not-co-op not-ho-op not-qu-op">
             <h1>About Me</h1>
             <p>
-                A <span class="large">motivated</span> and <span class="huge">hardworking</span>
-                As a recent <span class="med">mathematics</span> graduate with a <span class="large">first-class honours</span> degree
-                from the University of Bath and a <span class="large">passion</span> for <span class="med">coding</span>,
-                key strengths include <span class="huge">strong theoretical knowledge</span> and <span class="med">creativity</span>
-                as well as excellent <span class="med">analytical</span> and <span class="huge">problem-solving skills</span>.
-                Currently looking to secure an <span class="med">opportunity</span> to further <span class="large">apply</span> and <span class="huge">develop</span> these skills,
-                whilst continuing to be an <span class="med">adaptable</span> and <span class="huge">eager</span> individual.
+                A <span class="large">motivated</span> and <span class="large">hardworking</span>
+                trainee <span class="large">web developer</span> with rapidly improving <span class="large">technical</span> ability.
+                As a recent <span class="large">mathematics</span> graduate with a <span class="large">first-class honours</span> degree
+                from the University of Bath and a <span class="large">passion</span> for <span class="large">coding</span>,
+                key strengths include <span class="large">strong theoretical knowledge</span> and <span class="large">creativity</span>
+                as well as excellent <span class="large">analytical</span> and <span class="large">problem-solving skills</span>.
+                Currently looking to secure an <span class="large">opportunity</span> to further <span class="large">apply</span> and <span class="large">develop</span> these skills,
+                whilst continuing to be an <span class="large">adaptable</span> and <span class="large">eager</span> individual.
             </p>
         </section>
         <section id="skills" class="not-ab-cl not-wo-cl not-co-cl not-ho-cl not-qu-cl">
@@ -587,18 +588,18 @@
             $('main').css('grid-template-columns','60fr 20fr 20fr');
             $('main').css('grid-template-rows','4fr 9fr 9fr');
         })
-        $('#about-open').click(function(){
-            $('#about-open').css('display','none');
-            $('#about').css('display','flex');
-            $('#about').css('align-items','center');
-            $('#about').css('justify-content','center');
-            $('.not-ab-cl').css('display','flex');
-            $('.not-ab-cl').css('align-items','center');
-            $('.not-ab-cl').css('justify-content','center');
-            $('.not-ab-op').css('display','none');
-            $('main').css('grid-template-columns','33fr 34fr 33fr');
-            $('main').css('grid-template-rows','4fr 9fr 9fr');
-        })
+        // $('#about-open').click(function(){
+        //     $('#about-open').css('display','none');
+        //     $('#about').css('display','flex');
+        //     $('#about').css('align-items','center');
+        //     $('#about').css('justify-content','center');
+        //     $('.not-ab-cl').css('display','flex');
+        //     $('.not-ab-cl').css('align-items','center');
+        //     $('.not-ab-cl').css('justify-content','center');
+        //     $('.not-ab-op').css('display','none');
+        //     $('main').css('grid-template-columns','33fr 34fr 33fr');
+        //     $('main').css('grid-template-rows','4fr 9fr 9fr');
+        // })
         
         $('#skills').click(function(){
             $('#skills-open').css('display','grid');
@@ -610,18 +611,18 @@
             $('main').css('grid-template-columns','20fr 60fr 20fr');
             $('main').css('grid-template-rows','auto');
         })
-        $('#skills-open').click(function(){
-            $('#skills-open').css('display','none');
-            $('#skills').css('display','flex');
-            $('#skills').css('align-items','center');
-            $('#skills').css('justify-content','center');
-            $('.not-sk-cl').css('display','flex');
-            $('.not-sk-cl').css('align-items','center');
-            $('.not-sk-cl').css('justify-content','center');
-            $('.not-sk-op').css('display','none');
-            $('main').css('grid-template-columns','33fr 34fr 33fr');
-            $('main').css('grid-template-rows','4fr 9fr 9fr');
-        })
+        // $('#skills-open').click(function(){
+        //     $('#skills-open').css('display','none');
+        //     $('#skills').css('display','flex');
+        //     $('#skills').css('align-items','center');
+        //     $('#skills').css('justify-content','center');
+        //     $('.not-sk-cl').css('display','flex');
+        //     $('.not-sk-cl').css('align-items','center');
+        //     $('.not-sk-cl').css('justify-content','center');
+        //     $('.not-sk-op').css('display','none');
+        //     $('main').css('grid-template-columns','33fr 34fr 33fr');
+        //     $('main').css('grid-template-rows','4fr 9fr 9fr');
+        // })
         
         $('#work').click(function(){
             $('#work-open').css('display','initial');
@@ -633,18 +634,18 @@
             $('main').css('grid-template-columns','20fr 20fr 60fr');
             $('main').css('grid-template-rows','auto');
         })
-        $('#work-open').click(function(){
-            $('#work-open').css('display','none');
-            $('#work').css('display','flex');
-            $('#work').css('align-items','center');
-            $('#work').css('justify-content','center');
-            $('.not-wo-cl').css('display','flex');
-            $('.not-wo-cl').css('align-items','center');
-            $('.not-wo-cl').css('justify-content','center');
-            $('.not-wo-op').css('display','none');
-            $('main').css('grid-template-columns','33fr 34fr 33fr');
-            $('main').css('grid-template-rows','4fr 9fr 9fr');
-        })
+        // $('#work-open').click(function(){
+        //     $('#work-open').css('display','none');
+        //     $('#work').css('display','flex');
+        //     $('#work').css('align-items','center');
+        //     $('#work').css('justify-content','center');
+        //     $('.not-wo-cl').css('display','flex');
+        //     $('.not-wo-cl').css('align-items','center');
+        //     $('.not-wo-cl').css('justify-content','center');
+        //     $('.not-wo-op').css('display','none');
+        //     $('main').css('grid-template-columns','33fr 34fr 33fr');
+        //     $('main').css('grid-template-rows','4fr 9fr 9fr');
+        // })
         
         $('#contact').click(function(){
             $('#contact-open').css('display','initial');
@@ -656,18 +657,18 @@
             $('main').css('grid-template-columns','60fr 20fr 20fr');
             $('main').css('grid-template-rows','auto');
         })
-        $('#contact-open').click(function(){
-            $('#contact-open').css('display','none');
-            $('#contact').css('display','flex');
-            $('#contact').css('align-items','center');
-            $('#contact').css('justify-content','center');
-            $('.not-co-cl').css('display','flex');
-            $('.not-co-cl').css('align-items','center');
-            $('.not-co-cl').css('justify-content','center');
-            $('.not-co-op').css('display','none');
-            $('main').css('grid-template-columns','33fr 34fr 33fr');
-            $('main').css('grid-template-rows','4fr 9fr 9fr');
-        })
+        // $('#contact-open').click(function(){
+        //     $('#contact-open').css('display','none');
+        //     $('#contact').css('display','flex');
+        //     $('#contact').css('align-items','center');
+        //     $('#contact').css('justify-content','center');
+        //     $('.not-co-cl').css('display','flex');
+        //     $('.not-co-cl').css('align-items','center');
+        //     $('.not-co-cl').css('justify-content','center');
+        //     $('.not-co-op').css('display','none');
+        //     $('main').css('grid-template-columns','33fr 34fr 33fr');
+        //     $('main').css('grid-template-rows','4fr 9fr 9fr');
+        // })
         
         $('#hobbies').click(function(){
             $('#hobbies-open').css('display','initial');
@@ -679,18 +680,18 @@
             $('main').css('grid-template-columns','20fr 60fr 20fr');
             $('main').css('grid-template-rows','4fr 9fr 9fr');
         })
-        $('#hobbies-open').click(function(){
-            $('#hobbies-open').css('display','none');
-            $('#hobbies').css('display','flex');
-            $('#hobbies').css('align-items','center');
-            $('#hobbies').css('justify-content','center');
-            $('.not-ho-cl').css('display','flex');
-            $('.not-ho-cl').css('align-items','center');
-            $('.not-ho-cl').css('justify-content','center');
-            $('.not-ho-op').css('display','none');
-            $('main').css('grid-template-columns','33fr 34fr 33fr');
-            $('main').css('grid-template-rows','4fr 9fr 9fr');
-        })
+        // $('#hobbies-open').click(function(){
+        //     $('#hobbies-open').css('display','none');
+        //     $('#hobbies').css('display','flex');
+        //     $('#hobbies').css('align-items','center');
+        //     $('#hobbies').css('justify-content','center');
+        //     $('.not-ho-cl').css('display','flex');
+        //     $('.not-ho-cl').css('align-items','center');
+        //     $('.not-ho-cl').css('justify-content','center');
+        //     $('.not-ho-op').css('display','none');
+        //     $('main').css('grid-template-columns','33fr 34fr 33fr');
+        //     $('main').css('grid-template-rows','4fr 9fr 9fr');
+        // })
         
         $('#qualifications').click(function(){
             $('#qualifications-open').css('display','initial');
@@ -702,7 +703,20 @@
             $('main').css('grid-template-columns','20fr 20fr 60fr');
             $('main').css('grid-template-rows','auto');
         })
-        $('#qualifications-open').click(function(){
+        // $('#qualifications-open').click(function(){
+        //     $('#qualifications-open').css('display','none');
+        //     $('#qualifications').css('display','flex');
+        //     $('#qualifications').css('align-items','center');
+        //     $('#qualifications').css('justify-content','center');
+        //     $('.not-qu-cl').css('display','flex');
+        //     $('.not-qu-cl').css('align-items','center');
+        //     $('.not-qu-cl').css('justify-content','center');
+        //     $('.not-qu-op').css('display','none');
+        //     $('main').css('grid-template-columns','33fr 34fr 33fr');
+        //     $('main').css('grid-template-rows','4fr 9fr 9fr');
+        // })
+
+        $('#header').click(function(){
             $('#qualifications-open').css('display','none');
             $('#qualifications').css('display','flex');
             $('#qualifications').css('align-items','center');
@@ -714,6 +728,8 @@
             $('main').css('grid-template-columns','33fr 34fr 33fr');
             $('main').css('grid-template-rows','4fr 9fr 9fr');
         })
+
+
     </script>
     
 </body>
