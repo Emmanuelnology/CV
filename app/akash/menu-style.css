@@ -50,6 +50,12 @@ button:hover {
   text-align: center;
 }
 
+.modal img {
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 20px;
+}
+
 .modal h3 {
   font-size: 1em;
   margin-top: 0;
