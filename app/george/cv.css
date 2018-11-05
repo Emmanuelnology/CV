@@ -14,6 +14,7 @@ hr {
 
 h1 {
   margin: 0;
+  font-size: 25px;
 }
 
 hr {
@@ -131,19 +132,39 @@ nav .menu {
   max-width: 100%;
 }
 
-@media (min-width: 720px) {
+#description .left p {
+  font-size: 10px;
+}
+
+@media (min-width: 600px) {
   #description .left {
     max-width: 50%;
   }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  #description .left p {
+    font-size: 15px;
+  }
 }
 
-@media (min-width: 720px) {
+@media (min-width: 855px) {
   #description .left {
-    max-width: 30%;
+    max-width: 35%;
   }
 
   p {
     padding: 20px 0;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  #description .left p {
+    font-size: 20px;
   }
 }
 
@@ -170,11 +191,21 @@ main {
   margin: 20px;
 }
 
-.row {
+/* .main {
+  flex: 1;
   display: flex;
-  justify-content: space-between;
-  width: 100%;
-  overflow-x: scroll;
+  flex-direction: column;
+} */
+
+.content {
+  flex: 1;
+  overflow: auto;
+}
+
+.box {
+  min-width: 200px;
+  display: flex;
+  align-items: flex-end;
 }
 
 .item {
@@ -182,8 +213,8 @@ main {
   background-color: gray;
   display: inline-block;
   text-align: center;
-  height: 50px;
-  width: 100px;
+  height: 100px;
+  width: 200px;
   background-size: cover;
 }
 
@@ -196,7 +227,8 @@ main {
 .item p {
   margin: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  font-size: 10px;
+  font-size: 20px;
+  color: white;
 }
 
 @media only screen and (min-width: 600px) {
