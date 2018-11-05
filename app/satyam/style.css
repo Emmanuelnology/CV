@@ -24,6 +24,12 @@ p {
   width: 30%;
 }
 
+#startnav {
+  color: #fff;
+  background-color: #4285f4;
+  border: 1px solid #4285f4;
+}
+
 #welcomescreen {
   display: flex;
   flex-direction: column;
@@ -46,7 +52,7 @@ p {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 300px;
+  height: 290px;
 }
 
 #topsearchbar {
@@ -124,6 +130,7 @@ p {
   padding: 0 15%;
 }
 
+#startnav,
 .start,
 .directions {
   font-size: 0.85em;
@@ -141,7 +148,7 @@ p {
 .directions {
   color: #fff;
   background-color: #4285f4;
-  border: 1px solid #fff;
+  border: 1px solid #4285f4;
 }
 
 .highlight {

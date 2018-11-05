@@ -1,0 +1,21 @@
+body {
+  background-image: url('costa-playa.jpg');
+  background-size: cover;
+  font-style: italic;
+  font-family: 'Days One';
+}
+
+form {
+  padding-top: 13em;
+  text-align: center;
+}
+
+input {
+  background-color: rgb(39, 121, 202, 0.6);
+  font-size: 2.5em;
+  font-family: 'Days One';
+}
+
+h1 {
+  font-size: 2.5em;
+}

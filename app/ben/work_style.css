@@ -1,0 +1,94 @@
+:root {
+  --color-dark: #365256;
+}
+
+#work-open {
+  margin: 0;
+  display: flex;
+  color: var(--color-dark);
+}
+
+#work-open .timeline {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+
+#work-open .timeline > div {
+  width: 50%;
+  position: relative;
+  padding: 1em;
+}
+
+#work-open .timeline > div:nth-child(even) {
+  border-left: 0.125em var(--color-dark) solid;
+}
+
+#work-open .timeline > div:nth-child(odd) {
+  border-right: 0.125em var(--color-dark) solid;
+  text-align: right;
+}
+
+#work-open .timeline > .emptytop {
+  padding-top: 0.5em;
+  margin-top: 0.6em;
+}
+
+#work-open .timeline > .emptytop,
+#work-open .timeline > .empty {
+  display: flex;
+  align-items: flex-end;
+  font-weight: 600;
+  font-size: 1.142em;
+  padding-bottom: 0.4em;
+}
+
+#work-open .timeline > .emptytop:nth-child(even),
+#work-open .timeline > .empty {
+  border-bottom: 0.125em solid var(--color-dark);
+}
+
+#work-open .timeline > .content {
+  border-top: 0.125em solid var(--color-dark);
+  padding-top: 0.25em;
+}
+
+#work-open .timeline > .contentlast {
+  padding-bottom: 0.5em;
+}
+
+#work-open .timeline > .empty:nth-child(even)::before,
+#work-open .timeline > .emptylast:nth-child(even)::before {
+  content: " ";
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  border: 0.25em solid var(--color-dark);
+  background-color: #7bacb3;
+  position: absolute;
+  top: -0.75em;
+  left: -0.875em;
+}
+
+#work-open .timeline > .content:nth-child(even)::before {
+  content: " ";
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  border: 0.25em solid var(--color-dark);
+  background-color: #7bacb3;
+  position: absolute;
+  top: -0.875em;
+  left: -0.875em;
+}
+
+#work-open ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#work-open li {
+  padding: 0.15em;
+}
