@@ -365,18 +365,16 @@ nav ul {
   position: absolute;
 }
 
-#phone-div  {
-  border: 2px solid red;
+#phone-div {
   display: inline-block;
   height: 50px;
-  width: 50%; 
+  width: 50%;
   position: relative;
   top: 475px;
   text-align: right;
 }
 
-#phone {  
-  border: 2px solid red;
+#phone {
   position: absolute;
   width: 50%;
   left: 50%;
@@ -391,12 +389,13 @@ nav ul {
 }
 
 #plane {
-  text-align: left;
-  padding-left: 20px;
+  top: 650px;
 }
 
 #plane:hover {
   background-image: url('plane.png');
+  position: fixed;
+  position: absolute;
 }
 
 section {
