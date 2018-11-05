@@ -246,6 +246,7 @@ li > div {
 .center-contact i {
   font-size: 2em;
   margin: 10px;
+  color: rgb(212, 0, 0);
 }
 
 .center-contact i:hover {
