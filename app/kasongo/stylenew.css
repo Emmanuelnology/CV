@@ -183,7 +183,7 @@ nav li a {
   display: block;
   color: darkblue;
   text-align: center;
-  padding: 14px 16px;
+  padding: 12px 1px;
   text-decoration: none;
 }
 
@@ -197,7 +197,7 @@ nav {
   position: fixed;
   top: 0;
   text-align: center;
-  width: 100%;
+  width: 90%;
   z-index: 1;
   font-size: 0.87em;
 }
@@ -432,7 +432,18 @@ ul {
   left: 0%;
 }
 
-/* Form style */
+/* Bckground image of employment section */
+#employmentkas {
+  background-image: url('bristol-bridge.jpg');
+  background-size: cover;
+}
+
+/* Form styleand background */
+.message {
+  background-image: url('sky.jfif');
+  background-size: cover;
+}
+
 form * {
   display: block;
   font-size: 1.5em;
