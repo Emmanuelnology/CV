@@ -25,7 +25,7 @@ h2 {
 
 h3 {
   text-align: center;
-  color: rgb(106, 106, 236);
+  color: rgb(134, 134, 240);
 }
 
 /* Columns equally spaced */
@@ -206,6 +206,7 @@ nav {
 nav audio {
   position: absolute;
   right: 0;
+  opacity: 0.55;
 }
 
 /* Section size and flex and light dark background */
