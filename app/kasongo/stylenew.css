@@ -300,6 +300,11 @@ ul {
   color: rgb(102, 102, 202);
 }
 
+/* Font size for my skills */
+.myskill {
+  font-size: 0.95em;
+}
+
 /* Bckground image of employment section */
 #employmentkas {
   background-image: url('bristol-bridge.jpg');
