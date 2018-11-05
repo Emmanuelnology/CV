@@ -3,7 +3,6 @@ html {
 }
 
 header,
-footer,
 h1,
 h2,
 h3 {
@@ -11,8 +10,10 @@ h3 {
   font-family: 'raleway';
 }
 
-nav {
-  z-index: 2;
+footer {
+  text-align: center;
+  font-family: 'Raleway';
+  padding-top: 15px;
 }
 
 body {
@@ -25,6 +26,10 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   color: white;
+}
+
+section {
+  border-bottom: 1px white solid;
 }
 
 p img {
@@ -41,11 +46,6 @@ span p {
   text-align: center;
 }
 
-img {
-  float: left;
-  width: 100px;
-}
-
 li {
   padding-bottom: 10px;
 }
@@ -53,20 +53,6 @@ li {
 div iframe {
   position: relative;
   left: 37.5%;
-}
-
-.aca {
-  height: auto;
-  box-sizing: border-box;
-}
-
-.aca li {
-  border: none;
-}
-
-.a {
-  text-align: center;
-  font-size: 18px;
 }
 
 .fa-at {
@@ -111,9 +97,7 @@ div iframe {
 }
 
 .ref-1 li,
-.ref-2 li,
-.aca-con-1 li,
-.aca-con-2 li {
+.ref-2 li {
   border: none;
 }
 
@@ -131,18 +115,6 @@ div iframe {
   position: absolute;
   top: 0;
   width: 100%;
-}
-
-.aca-con-1 {
-  display: grid;
-  grid-template-areas: "qual-box ed-box";
-  grid-template-columns: 50% 50%;
-}
-
-.aca-con-2 {
-  display: grid;
-  grid-template-areas: "pro-box pro-box";
-  grid-template-columns: 50% 50%;
 }
 
 .border {
@@ -182,46 +154,68 @@ div iframe {
   height: 100%;
 }
 
-#qual-box {
-  box-sizing: border-box;
-  grid-area: qual-box;
+.aca-con {
+  display: grid;
+  grid-template-areas: "edu qual" "pro per";
+  grid-template-columns: 50% 50%;
 }
 
-#qual-box p {
-  font-size: 16px;
-  text-align: left;
+.edu {
+  grid-area: edu;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-#qual-box li {
-  float: left;
-  padding-left: 10%;
+.qual {
+  grid-area: qual;
 }
 
-#ed-box {
-  box-sizing: border-box;
-  grid-area: ed-box;
+.pro {
+  grid-area: pro;
 }
 
-#aw-box {
-  box-sizing: border-box;
-  grid-area: aw-box;
+.pro-con {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-#pro-box {
-  box-sizing: border-box;
-  grid-area: pro-box;
+.edu ul {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-#pro-box li {
-  border-bottom: 1px white solid;
+.pro-img {
+  height: 25%;
+  width: 25%;
+}
+
+.per-img {
+  width: 25%;
   height: auto;
 }
 
-#pro-box li div {
-  float: right;
-  padding-right: 50%;
+.school-img {
+  height: 25%;
+  width: auto;
+  max-width: 100%;
 }
 
-#work {
-  padding-bottom: 100px;
+.per {
+  grid-area: per;
+}
+
+#text-con {
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
 }
