@@ -5,6 +5,10 @@
 
 body {
   margin: 0;
+  position: relative;
+  right: 0;
+  left: 0;
+  width: 100%;
 }
 
 /* Title style */
@@ -45,8 +49,15 @@ a {
   margin-right: 8em;
 }
 
-/* Style of text in sections  */
-.text {
-  font-size: 1.3em;
-  padding-left: 20em;
+/* Lines position */
+.line {
+  width: 100%;
+  float: left;
+  margin-left: 5em;
+  right: -5em;
+  width: 100%;
+}
+
+.caution {
+  margin-left: 0;
 }
