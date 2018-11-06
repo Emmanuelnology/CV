@@ -432,7 +432,7 @@ section {
     position: absolute;
     right: 59px;
   }
-  
+
   #navtext {
     position: absolute;
     right: 65px;
@@ -445,25 +445,25 @@ section {
     position: relative;
     background-color: white;
   }
-  
+
   nav {
     width: 33.3%;
   }
-  
+
   #closebutton {
     display: none;
   }
-  
+
   body {
     grid-template-areas: "me content""me footer";
     grid-template-columns: 1fr 2fr;
   }
-  
+
   #gryder {
     padding-left: 6px;
     position: static;
   }
-  
+
   #navtext {
     position: static;
   }
@@ -475,7 +475,7 @@ section {
     position: absolute;
     right: 59px;
   }
-  
+
   #navtext {
     position: absolute;
     right: 65px;
