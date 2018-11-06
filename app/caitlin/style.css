@@ -18,9 +18,12 @@ body {
   font-family: 'raleway';
 }
 
-nav {
-  background-color: rgb(9, 139, 133)
+.spacing {
+  margin: 0 0.25rem;
+}
 
+nav {
+  background-color: rgb(9, 139, 133);
 }
 
 h1 {
