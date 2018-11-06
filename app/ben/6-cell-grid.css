@@ -22,16 +22,16 @@
 @media only screen and (min-width: 400px) {
   #grid {
     grid-template-areas:
-    "t t t t t t"
-    "a a a b b b"
-    "c c c d d d"
-    "e e e f f f";
+      "t t t t t t"
+      "a a a b b b"
+      "c c c d d d"
+      "e e e f f f";
   }
 
   #grid .grid-cell {
     min-height: 28vh;
   }
-  
+
   #grid #title {
     min-height: 16vh;
   }
@@ -103,7 +103,7 @@
   #grid .grid-cell {
     min-height: 40vh;
   }
-  
+
   #grid #title {
     min-height: 20vh;
   }
