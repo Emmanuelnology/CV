@@ -409,13 +409,13 @@ section {
     padding-left: 0;
     padding-right: 10vh;
   }
-  
+
   #gryder {
     width: 100%;
     padding-left: 0;
     text-align: right;
   }
-  
+
   #navtext {
     width: 100%;
     text-align: right;
@@ -428,7 +428,7 @@ section {
     position: relative;
     background-color: white;
   }
-  
+
   nav {
     width: 33.3%;
   }
@@ -440,79 +440,79 @@ section {
   .rollover:hover {
     cursor: pointer;
     background-color: rgba(6, 174, 213, 0.3);
-  }  
-  
+  }
+
   .rollover a {
     display: none;
   }
-  
+
   .rollover:hover a {
     display: inline-block;
   }
-  
+
   #closebutton {
     display: none;
   }
-  
+
   body {
     grid-template-areas: "me content""me footer";
     grid-template-columns: 1fr 2fr;
   }
-  
+
   #gryder-navtext-container {
     padding-left: 9px;
     padding-right: 0;
   }
-  
+
   #gryder {
     width: 120px;
     position: static;
     padding-left: 6.5px;
     text-align: initial;
   }
-  
+
   #navtext {
     width: 120px;
     position: static;
     text-align: initial;
   }
-  
+
   #brain {
     background-image: none;
   }
-  
+
   #brain:hover {
     background-image: url('brain.png');
   }
-  
+
   #lips {
     background-image: none;
   }
-  
+
   #lips:hover {
     background-image: url('lips.png');
   }
-  
+
   #heart {
     background-image: none;
   }
-  
+
   #heart:hover {
     background-image: url('heart.png');
   }
-  
+
   #phone {
     background-image: none;
   }
-  
+
   #phone:hover {
     background-image: url('phone.png');
   }
-  
+
   #plane {
     background-image: none;
   }
-  
+
   #plane:hover {
     background-image: url('plane.png');
   }
@@ -523,13 +523,13 @@ section {
     padding-left: 0;
     padding-right: 10vh;
   }
-  
+
   #gryder {
     width: 100%;
     padding-left: 0;
     text-align: right;
   }
-  
+
   #navtext {
     width: 100%;
     text-align: right;
