@@ -299,12 +299,12 @@ nav ul {
   max-height: 95vh;
 }
 
-#gryder-div {
-  display: inline-block;
-  height: 50px;
+#gryder-navtext-container {
+  display: block;
   width: 50%;
   position: absolute;
-  top: 82.5vh;
+  top: 83vh;
+  padding-left: 9px;
 }
 
 #gryder {
@@ -312,24 +312,16 @@ nav ul {
   font-family: 'Pacifico', cursive;
   font-size: 30px;
   width: 120px;
-  padding-left: 6px;
   position: static;
-}
-
-#navtext-div {
-  display: inline-block;
-  height: 50px;
-  width: 50%;
-  position: absolute;
-  top: 91vh;
+  padding-left: 6.5px;
 }
 
 #navtext {
   font-size: 15px;
   color: white;
   font-family: 'Fauna One', serif;
-  position: static;
   width: 120px;
+  position: static;
 }
 
 .rollover {
@@ -342,48 +334,37 @@ nav ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: rgba(6, 174, 213, 0.3);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.rollover:hover {
-  cursor: pointer;
-  background-color: rgba(6, 174, 213, 0.3);
-}
-
 .rollover a {
-  display: none;
-}
-
-.rollover:hover a {
   display: inline-block;
 }
 
 #brain {
   top: 9vh;
-}
-
-#brain:hover {
   background-image: url('brain.png');
 }
 
 #lips {
   top: 24vh;
+  background-image: url('lips.png');
 }
 
 #lips:hover {
-  background-image: url('lips.png');
   position: fixed;
   position: absolute;
 }
 
 #heart {
   top: 43vh;
+  background-image: url('heart.png');
 }
 
 #heart:hover {
-  background-image: url('heart.png');
   position: fixed;
   position: absolute;
 }
@@ -401,22 +382,19 @@ nav ul {
   position: absolute;
   width: 110px;
   right: 0;
+  background-image: url('phone.png');
 }
 
 #phone a:hover {
   padding: 0;
 }
 
-#phone:hover {
-  background-image: url('phone.png');
-}
-
 #plane {
   top: 86vh;
+  background-image: url('plane.png');
 }
 
 #plane:hover {
-  background-image: url('plane.png');
   position: fixed;
   position: absolute;
 }
@@ -427,15 +405,20 @@ section {
 }
 
 @media only screen and (min-width: 375px) {
-  #gryder {
+  #gryder-navtext-container {
     padding-left: 0;
-    position: absolute;
-    right: 59px;
+    padding-right: 10vh;
+  }
+
+  #gryder {
+    width: 100%;
+    padding-left: 0;
+    text-align: right;
   }
 
   #navtext {
-    position: absolute;
-    right: 65px;
+    width: 100%;
+    text-align: right;
   }
 }
 
@@ -450,6 +433,23 @@ section {
     width: 33.3%;
   }
 
+  .rollover {
+    background-color: transparent;
+  }
+
+  .rollover:hover {
+    cursor: pointer;
+    background-color: rgba(6, 174, 213, 0.3);
+  }
+
+  .rollover a {
+    display: none;
+  }
+
+  .rollover:hover a {
+    display: inline-block;
+  }
+
   #closebutton {
     display: none;
   }
@@ -459,26 +459,80 @@ section {
     grid-template-columns: 1fr 2fr;
   }
 
+  #gryder-navtext-container {
+    padding-left: 9px;
+    padding-right: 0;
+  }
+
   #gryder {
-    padding-left: 6px;
+    width: 120px;
     position: static;
+    padding-left: 6.5px;
+    text-align: initial;
   }
 
   #navtext {
+    width: 120px;
     position: static;
+    text-align: initial;
+  }
+
+  #brain {
+    background-image: none;
+  }
+
+  #brain:hover {
+    background-image: url('brain.png');
+  }
+
+  #lips {
+    background-image: none;
+  }
+
+  #lips:hover {
+    background-image: url('lips.png');
+  }
+
+  #heart {
+    background-image: none;
+  }
+
+  #heart:hover {
+    background-image: url('heart.png');
+  }
+
+  #phone {
+    background-image: none;
+  }
+
+  #phone:hover {
+    background-image: url('phone.png');
+  }
+
+  #plane {
+    background-image: none;
+  }
+
+  #plane:hover {
+    background-image: url('plane.png');
   }
 }
 
 @media only screen and (min-width: 1125px) {
-  #gryder {
+  #gryder-navtext-container {
     padding-left: 0;
-    position: absolute;
-    right: 59px;
+    padding-right: 10vh;
+  }
+
+  #gryder {
+    width: 100%;
+    padding-left: 0;
+    text-align: right;
   }
 
   #navtext {
-    position: absolute;
-    right: 65px;
+    width: 100%;
+    text-align: right;
   }
 }
 
