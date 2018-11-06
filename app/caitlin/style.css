@@ -174,10 +174,8 @@ a {
 
 #skills-box {
   box-sizing: border-box;
-  text-align: end;
-  width: 300px;
+  text-align: right;
   display: block;
-  margin-left: 400px;
   grid-area: score;
 }
 
@@ -201,8 +199,8 @@ a {
 .rotate-text {
   position: relative;
   transform: rotate(270deg);
-  width: 25%;
-  left: 55%;
+  width: 10%;
+  left: 85%;
 }
 
 .score {

@@ -299,12 +299,12 @@ nav ul {
   max-height: 95vh;
 }
 
-#gryder-div {
-  display: inline-block;
-  height: 50px;
+#gryder-navtext-container {
+  display: block;
   width: 50%;
   position: absolute;
-  top: 82.5vh;
+  top: 83vh;
+  padding-left: 9px;
 }
 
 #gryder {
@@ -312,24 +312,16 @@ nav ul {
   font-family: 'Pacifico', cursive;
   font-size: 30px;
   width: 120px;
-  padding-left: 6px;
   position: static;
-}
-
-#navtext-div {
-  display: inline-block;
-  height: 50px;
-  width: 50%;
-  position: absolute;
-  top: 91vh;
+  padding-left: 6.5px;
 }
 
 #navtext {
   font-size: 15px;
   color: white;
   font-family: 'Fauna One', serif;
-  position: static;
   width: 120px;
+  position: static;
 }
 
 .rollover {
@@ -427,15 +419,20 @@ section {
 }
 
 @media only screen and (min-width: 375px) {
-  #gryder {
+  #gryder-navtext-container {
     padding-left: 0;
-    position: absolute;
-    right: 59px;
+    padding-right: 10vh;
+  }
+
+  #gryder {
+    width: 100%;
+    padding-left: 0;
+    text-align: right;
   }
 
   #navtext {
-    position: absolute;
-    right: 65px;
+    width: 100%;
+    text-align: right;
   }
 }
 
@@ -459,26 +456,40 @@ section {
     grid-template-columns: 1fr 2fr;
   }
 
+  #gryder-navtext-container {
+    padding-left: 9px;
+    padding-right: 0;
+  }
+
   #gryder {
-    padding-left: 6px;
+    width: 120px;
     position: static;
+    padding-left: 6.5px;
+    text-align: initial;
   }
 
   #navtext {
+    width: 120px;
     position: static;
+    text-align: initial;
   }
 }
 
 @media only screen and (min-width: 1125px) {
-  #gryder {
+  #gryder-navtext-container {
     padding-left: 0;
-    position: absolute;
-    right: 59px;
+    padding-right: 10vh;
+  }
+
+  #gryder {
+    width: 100%;
+    padding-left: 0;
+    text-align: right;
   }
 
   #navtext {
-    position: absolute;
-    right: 65px;
+    width: 100%;
+    text-align: right;
   }
 }
 
