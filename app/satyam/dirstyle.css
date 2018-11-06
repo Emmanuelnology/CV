@@ -1,15 +1,63 @@
+/* Font family and margin for the body */
 * {
   font-family: 'Roboto', Sans-Serif;
 }
 
+body {
+  margin: 0;
+  position: relative;
+  right: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* Title style */
 h1 {
   text-align: center;
-  font-size: 1.5em;
+  font-size: 2em;
   background-color: #4285f4;
-  padding: 0;
+  padding-bottom: 1em;
+  padding-top: 1em;
+  margin: 0;
   color: white;
 }
 
-button {
+/* Text decoration, style and position for links */
+a {
+  text-decoration: none;
+  font-family: 'Roboto', Sans-Serif !important;
   float: left;
+}
+
+/* Back button position and style */
+.previous {
+  color: white;
+  font-size: 1.5em;
+  padding-left: 0.6em;
+}
+
+/* Beginning section style and position */
+.beginning {
+  background-color: #4285f4;
+  margin: 0;
+  padding-left: 8em;
+}
+
+/* Start link position */
+.start {
+  float: right !important;
+  margin-right: 8em;
+}
+
+/* Lines position */
+.line {
+  width: 100%;
+  float: left;
+  margin-left: 5em;
+  right: -5em;
+  width: 100%;
+}
+
+.caution {
+  margin-left: 0;
 }
