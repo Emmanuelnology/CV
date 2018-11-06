@@ -40,6 +40,11 @@ body {
     padding-top: 50px;
 }
 
+.img-circle {
+    width: 250px;
+    height: 200px;
+}
+
 .about-text {
     padding-bottom: 50px;
 }
@@ -68,7 +73,6 @@ ul.timeline > li {
     margin: 20px 0;
     padding-left: 20px;
 }
-
 ul.timeline > li:before {
     content: ' ';
     background: white;
