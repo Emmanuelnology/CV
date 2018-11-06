@@ -309,11 +309,6 @@ nav ul {
   text-align: left;
 }
 
-#gee {
-  margin: 0 auto;
-  display: block;
-}
-
 .rollover {
   height: 50px;
   width: 100%;
@@ -370,27 +365,21 @@ nav ul {
   position: absolute;
 }
 
-#hands-div a {
-  width: 100%;
-}
-
-#hands-div {
-  position: absolute;
-  top: 420px;
+#phone-div  {
+  border: 2px solid red;
+  display: inline-block;
   height: 50px;
-  display: flex;
-  width: 100%;
-}
-
-#hands-div > div {
-  flex: 1;
+  width: 50%; 
   position: relative;
-  width: 50%;
+  top: 475px;
+  text-align: right;
 }
 
-#phone {
-  text-align: right;
-  padding-right: 20px;
+#phone {  
+  border: 2px solid red;
+  position: absolute;
+  width: 50%;
+  left: 50%;
 }
 
 #phone a:hover {
@@ -413,6 +402,11 @@ nav ul {
 section {
   padding: 20px;
   display: none;
+}
+
+#gee {
+  margin: 0 auto;
+  display: block;
 }
 
 @media only screen and (min-width: 750px) {

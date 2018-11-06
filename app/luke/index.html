@@ -6,8 +6,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="pop-up.js"></script>
     <link rel="stylesheet" type="text/css" href="desktopResponive.css">
-    <link rel="stylesheet" type="text/css" href="tabletResponive.css">
-    <link rel="stylesheet" type="text/css" href="mobileResponsive.css">
+    <!-- <link rel="stylesheet" type="text/css" href="tabletResponive.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="mobileResponsive.css"> -->
     <link rel="stylesheet" type="text/css" href="buttons.css">
     <link rel="stylesheet" type="text/css" href="mobileButtons.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
@@ -18,6 +18,7 @@
     <header>
         <h1>Luke Delaney's C.V.</h1>
     </header>
+
     <nav>
         <ul>
             
@@ -43,123 +44,78 @@
             
         </ul>
     </nav>
-    
-    <hr>
-    
     <main>
         <!-- About me section -->
-        <div id="about">
+        <section id="about">
             <h2>Get to know me</h2>
             <p>
                 <!-- <img src="../luke/pictures/wordcloud.png" alt=""> -->
             </p>
-        </div>
-        <hr>
+        </section>
+        <section>
         <!-- Work and academic experience -->
-        <h2 id="aca">Academics</h2>
-        <div class="aca-con-1">
-            <span id="qual-box">
+        <h2>Academics</h2>
+            <div class="aca-con">
+                <div class="edu">
                 <h3>Education</h3>
-                <ul>
-                    <li><p>GCSE and A-Level</p><img src="../luke/pictures/st-albans.jpg" alt="st-albans logo"></li>
-                    <li><p>Degree</p>
-                        <img src="../luke/pictures/USW.jpg" alt="USW logo"></li>
-                        <li><p>External</p><img src="../luke/pictures/nology.png" alt="nology logo"></li>
-                    </ul>
-                </span>
-                <span id="ed-box">
+                <div class="edu-con">
+
+                        <img src="/app/luke/school/nology-banner.png" alt="nology logo" class="school-img">
+
+                        <img src="/app/luke/school/usw-banner.jpeg" alt="USW logo" class="school-img">
+
+                        <img src="/app/luke/school/st-albans-banner.png" alt="st-albans logo" class="school-img">
+
+                </div>
+                </div>
+                <div class="qual">
                     <h3>Qualifications</h3>
                     <ul>
                         
-                        <li class="a"> 2011</li>
+                        <li> 2011</li>
                         
                         <li>
                             GCSE: (grades C-E) English, maths, science, RE, Media, welsh (short course), ICT
                             BTEC: Business (distinction*) Music (distinction)
                         </li>
                         
-                        <li class="a"> 2013</li>
+                        <li> 2013</li>
                         
                         <li>
                             A-level: business D music BTEC distinction
                         </li>
                         
-                        <li class="a"> 2017</li>
+                        <li> 2017</li>
                         
                         <li>
                             Degree: BA forensic accounting 2:2
                         </li>
                     </ul>
-                </span>
-            </div>
-            <div class="aca-con-2">
-                <div id="pro-box">
-                    <h2>Programming</h2>
-                    <ul>
-                        <li>
-                            CSS:
-                            <div>
-                                <i class="fa fa-folder"></i>
-                                <i class="fa fa-folder"></i>
-                                <i class="fa fa-folder-o"></i>
-                                <i class="fa fa-folder-o"></i>
-                                <i class="fa fa-folder-o"></i>
-                            </div>
-                        </li>
-                        <li>
-                            HTML:
-                            <div>
-                                <i class="fa fa-folder"></i>
-                                <i class="fa fa-folder"></i>
-                                <i class="fa fa-folder-o"></i>
-                                <i class="fa fa-folder-o"></i>
-                                <i class="fa fa-folder-o"></i>
-                            </div>
-                        </li>
-                        <li>
-                            Javascript:
-                            <div>
-                                <i class="fa fa-folder"></i>
-                                <i class="fa fa-folder-o"></i>
-                                <i class="fa fa-folder-o"></i>
-                                <i class="fa fa-folder-o"></i>
-                                <i class="fa fa-folder-o"></i>
-                            </div>
-                        </li>
-                        <li>
-                            Python:
-                            <div>
-                                <i class="fa fa-folder"></i>
-                                <i class="fa fa-folder-o"></i>
-                                <i class="fa fa-folder-o"></i>
-                                <i class="fa fa-folder-o"></i>
-                                <i class="fa fa-folder-o"></i>
-                            </div>
-                        </li>
-                        <li>
-                            React:
-                            <div>
-                                <i class="fa fa-folder-o"></i>
-                                <i class="fa fa-folder-o"></i>
-                                <i class="fa fa-folder-o"></i>
-                                <i class="fa fa-folder-o"></i>
-                                <i class="fa fa-folder-o"></i>
-                            </div>
-                        </li>
-                        <li>
-                            Angular:
-                            <div>
-                                <i class="fa fa-folder-o"></i>
-                                <i class="fa fa-folder-o"></i>
-                                <i class="fa fa-folder-o"></i>
-                                <i class="fa fa-folder-o"></i>
-                                <i class="fa fa-folder-o"></i>
-                            </div>
-                        </li>
-                    </ul>
+                </div>
+                <div class="pro">
+                    <h3>Programming</h3>
+                    <div class="pro-con">
+                        <img src="/app/luke/pro/css3.jpg" alt="css3" class="pro-img">
+                        <img src="/app/luke/pro/html5.png" alt="html5" class="pro-img">
+                        <img src="/app/luke/pro/javascript.jpg" alt="javascript" class="pro-img">
+                        <img src="/app/luke/pro/python.png" alt="python" class="pro-img">
+                        <img src="/app/luke/pro/react.png" alt="react" class="pro-img">
+                        <img src="/app/luke/pro/angular.png" alt="angular" class="pro-img">
+                        <img src="/app/luke/pro/bootstrap.png" alt="bootstrap" class="pro-img">
+                    </div>
+                </div>
+
+                <div class="per">
+                        <h3>personal section</h3>
+                        <img src="/app/luke//personal/devils.jpg" alt="Cardiff devils ice hockey" class="per-img">
+                        <img src="/app/luke//personal/gaming.jpeg" alt="gaming" class="per-img">
+                        <img src="/app/luke/personal/Musical-Notes.png" alt="music" class="per-img">
+                        <img src="/app/luke/personal/WRU.png" alt="Welsh rugby" class="per-img">
                 </div>
             </div>
-            <hr>
+
+        </section>
+        <section>
             <h2 id="work">Past lives</h2>
             <div class="border"></div>
             <div class="timeline">
@@ -189,8 +145,9 @@
                 </div>
                 
             </div>
+        </section>
+    <section>
             
-            <hr>
             <h2 id="ref">People who knew me</h2>
             <div class="ref">
                 <div class="ref-2">
@@ -214,7 +171,7 @@
                     </ul>
                 </div>
             </div>
-            <hr>
+        </section>
             <h2 id="con">Let's talk</h2>
             <span>
                 <p>
