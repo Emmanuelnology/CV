@@ -153,10 +153,6 @@ a {
   z-index: 10;
 }
 
-.rotate-text {
-  transform: rotate(270deg);
-}
-
 #skills-box li {
   margin: 15px;
   text-align: right;
@@ -168,6 +164,14 @@ a {
   width: 300px;
   display: block;
   margin: 0 auto;
+}
+
+.rotate-text {
+  position: relative;
+  transform: rotate(270deg);
+  width: 25%;
+  left: 55%;
+  text-align: start;
 }
 
 .score {

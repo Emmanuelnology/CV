@@ -126,7 +126,7 @@ header {
 }
 
 .small {
-  margin-top: 2.5%;
+  margin-top: 48%;
 }
 
 .bounce {
@@ -300,9 +300,11 @@ ul {
   color: rgb(102, 102, 202);
 }
 
-/* Font size for my skills */
+/* Font size and spacing for my skills */
 .myskill {
-  font-size: 0.95em;
+  font-size: 1.1em;
+  height: 30%;
+  width: 90%;
 }
 
 /* Bckground image of employment section */
