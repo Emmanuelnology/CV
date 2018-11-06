@@ -45,24 +45,6 @@ nav ul {
   display: flex;
 }
 
-#navtext {
-  color: white;
-  font-family: 'Fauna One', serif;
-  position: absolute;
-  font-size: 15px;
-  top: 550px;
-  padding-left: 15px;
-}
-
-#gryder {
-  color: white;
-  font-family: 'Pacifico', cursive;
-  font-size: 30px;
-  position: absolute;
-  top: 500px;
-  padding-left: 35px;
-}
-
 nav li {
   flex-grow: 1;
   text-align: center;
@@ -309,6 +291,47 @@ nav ul {
   text-align: left;
 }
 
+#gee {
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  min-height: 95vh;
+  max-height: 95vh;
+}
+
+#gryder-div {
+  display: inline-block;
+  height: 50px;
+  width: 50%;
+  position: absolute;
+  top: 82.5vh;
+}
+
+#gryder {
+  color: white;
+  font-family: 'Pacifico', cursive;
+  font-size: 30px;
+  width: 120px;
+  padding-left: 6px;
+  position: static;
+}
+
+#navtext-div {
+  display: inline-block;
+  height: 50px;
+  width: 50%;
+  position: absolute;
+  top: 91vh;
+}
+
+#navtext {
+  font-size: 15px;
+  color: white;
+  font-family: 'Fauna One', serif;
+  position: static;
+  width: 120px;
+}
+
 .rollover {
   height: 50px;
   width: 100%;
@@ -338,7 +361,7 @@ nav ul {
 }
 
 #brain {
-  top: 60px;
+  top: 9vh;
 }
 
 #brain:hover {
@@ -346,7 +369,7 @@ nav ul {
 }
 
 #lips {
-  top: 160px;
+  top: 24vh;
 }
 
 #lips:hover {
@@ -356,7 +379,7 @@ nav ul {
 }
 
 #heart {
-  top: 270px;
+  top: 43vh;
 }
 
 #heart:hover {
@@ -365,21 +388,19 @@ nav ul {
   position: absolute;
 }
 
-#phone-div  {
-  border: 2px solid red;
+#phone-div {
   display: inline-block;
   height: 50px;
-  width: 50%; 
-  position: relative;
-  top: 475px;
+  width: 50%;
+  position: absolute;
+  top: 63vh;
   text-align: right;
 }
 
-#phone {  
-  border: 2px solid red;
+#phone {
   position: absolute;
-  width: 50%;
-  left: 50%;
+  width: 110px;
+  right: 0;
 }
 
 #phone a:hover {
@@ -391,12 +412,13 @@ nav ul {
 }
 
 #plane {
-  text-align: left;
-  padding-left: 20px;
+  top: 86vh;
 }
 
 #plane:hover {
   background-image: url('plane.png');
+  position: fixed;
+  position: absolute;
 }
 
 section {
@@ -404,9 +426,17 @@ section {
   display: none;
 }
 
-#gee {
-  margin: 0 auto;
-  display: block;
+@media only screen and (min-width: 375px) {
+  #gryder {
+    padding-left: 0;
+    position: absolute;
+    right: 59px;
+  }
+
+  #navtext {
+    position: absolute;
+    right: 65px;
+  }
 }
 
 @media only screen and (min-width: 750px) {
@@ -427,6 +457,28 @@ section {
   body {
     grid-template-areas: "me content""me footer";
     grid-template-columns: 1fr 2fr;
+  }
+
+  #gryder {
+    padding-left: 6px;
+    position: static;
+  }
+
+  #navtext {
+    position: static;
+  }
+}
+
+@media only screen and (min-width: 1125px) {
+  #gryder {
+    padding-left: 0;
+    position: absolute;
+    right: 59px;
+  }
+
+  #navtext {
+    position: absolute;
+    right: 65px;
   }
 }
 

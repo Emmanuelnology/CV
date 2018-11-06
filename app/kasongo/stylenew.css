@@ -126,7 +126,7 @@ header {
 }
 
 .small {
-  margin-top: 2.5%;
+  margin-top: 48%;
 }
 
 .bounce {
@@ -298,6 +298,13 @@ ul {
 /* Add stars color and column to the right and space between skills and font awesome */
 .checked {
   color: rgb(102, 102, 202);
+}
+
+/* Font size and spacing for my skills */
+.myskill {
+  font-size: 1.1em;
+  height: 30%;
+  width: 90%;
 }
 
 /* Bckground image of employment section */
