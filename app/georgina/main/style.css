@@ -309,6 +309,14 @@ nav ul {
   text-align: left;
 }
 
+#gee {
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  min-height: 95vh;
+  max-height: 95vh;
+}
+
 .rollover {
   height: 50px;
   width: 100%;
@@ -338,7 +346,7 @@ nav ul {
 }
 
 #brain {
-  top: 60px;
+  top: 9.5vh;
 }
 
 #brain:hover {
@@ -346,7 +354,7 @@ nav ul {
 }
 
 #lips {
-  top: 160px;
+  top: 24.5vh;
 }
 
 #lips:hover {
@@ -356,7 +364,7 @@ nav ul {
 }
 
 #heart {
-  top: 270px;
+  top: 43vh;
 }
 
 #heart:hover {
@@ -365,18 +373,18 @@ nav ul {
   position: absolute;
 }
 
-#phone-div  {
-  border: 2px solid red;
+#phone-div {
+  border: 1px red solid;
   display: inline-block;
   height: 50px;
-  width: 50%; 
-  position: relative;
-  top: 475px;
+  width: 50%;
+  position: absolute;
+  top: 63.5vh;
   text-align: right;
 }
 
-#phone {  
-  border: 2px solid red;
+#phone {
+  border: 1px blue solid;
   position: absolute;
   width: 50%;
   left: 50%;
@@ -391,22 +399,18 @@ nav ul {
 }
 
 #plane {
-  text-align: left;
-  padding-left: 20px;
+  top: 87vh;
 }
 
 #plane:hover {
   background-image: url('plane.png');
+  position: fixed;
+  position: absolute;
 }
 
 section {
   padding: 20px;
   display: none;
-}
-
-#gee {
-  margin: 0 auto;
-  display: block;
 }
 
 @media only screen and (min-width: 750px) {
