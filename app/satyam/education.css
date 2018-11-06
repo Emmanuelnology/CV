@@ -245,11 +245,12 @@ ul.skillslist {
       "indicator map"
       "infopanel map";
     grid-template-columns: 1fr 3fr;
-    font-size: 1.75em;
+    font-size: 1.5em;
   }
 
   #sectionindicator {
     height: 10vh;
+    font-size: 1.75em;
   }
 
   #toggle {
@@ -261,7 +262,7 @@ ul.skillslist {
     height: 7.5vh;
   }
 
-  #aboutme {
+  #education {
     display: block;
   }
 
