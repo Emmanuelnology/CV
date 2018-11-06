@@ -58,7 +58,7 @@ ul.timeline {
   position: relative;
 }
 
-ul.timeline:before {
+ul.timeline::before {
   content: ' ';
   background: #d4d9df;
   display: inline-block;
@@ -74,7 +74,7 @@ ul.timeline > li {
   padding-left: 20px;
 }
 
-ul.timeline > li:before {
+ul.timeline > li::before {
   content: ' ';
   background: white;
   display: inline-block;
