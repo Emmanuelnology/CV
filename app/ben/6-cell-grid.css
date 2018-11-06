@@ -36,7 +36,7 @@
     min-height: 16vh;
   }
 
-  #grid.active-contact {
+  #grid.active-about {
     grid-template-areas:
       "t t t t t t"
       "a a a a b b"
@@ -54,6 +54,7 @@
 
   #grid.active-work {
     grid-template-areas:
+      "t t t t t t"
       "a a a b b b"
       "c c c c d d"
       "e e e f f f";
@@ -75,7 +76,7 @@
       "e e e e f f";
   }
 
-  #grid.active-skills {
+  #grid.active-qualifications {
     grid-template-areas:
       "t t t t t t"
       "a a a b b b"

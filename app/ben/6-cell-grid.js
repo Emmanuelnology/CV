@@ -1,4 +1,5 @@
-function removeAllActiveClasses(){
+function removeAllActiveClasses(){        
+    $('#grid').removeClass('active-title');
     $('#grid').removeClass('active-about');
     $('#grid').removeClass('active-skills');
     $('#grid').removeClass('active-work');
