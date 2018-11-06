@@ -334,48 +334,37 @@ nav ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: rgba(6, 174, 213, 0.3);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.rollover:hover {
-  cursor: pointer;
-  background-color: rgba(6, 174, 213, 0.3);
-}
-
 .rollover a {
-  display: none;
-}
-
-.rollover:hover a {
   display: inline-block;
 }
 
 #brain {
   top: 9vh;
-}
-
-#brain:hover {
   background-image: url('brain.png');
 }
 
 #lips {
   top: 24vh;
+  background-image: url('lips.png');
 }
 
 #lips:hover {
-  background-image: url('lips.png');
   position: fixed;
   position: absolute;
 }
 
 #heart {
   top: 43vh;
+  background-image: url('heart.png');
 }
 
 #heart:hover {
-  background-image: url('heart.png');
   position: fixed;
   position: absolute;
 }
@@ -393,22 +382,19 @@ nav ul {
   position: absolute;
   width: 110px;
   right: 0;
+  background-image: url('phone.png');
 }
 
 #phone a:hover {
   padding: 0;
 }
 
-#phone:hover {
-  background-image: url('phone.png');
-}
-
 #plane {
   top: 86vh;
+  background-image: url('plane.png');
 }
 
 #plane:hover {
-  background-image: url('plane.png');
   position: fixed;
   position: absolute;
 }
@@ -447,6 +433,23 @@ section {
     width: 33.3%;
   }
 
+  .rollover {
+    background-color: transparent;
+  }
+
+  .rollover:hover {
+    cursor: pointer;
+    background-color: rgba(6, 174, 213, 0.3);
+  }
+
+  .rollover a {
+    display: none;
+  }
+
+  .rollover:hover a {
+    display: inline-block;
+  }
+
   #closebutton {
     display: none;
   }
@@ -472,6 +475,46 @@ section {
     width: 120px;
     position: static;
     text-align: initial;
+  }
+
+  #brain {
+    background-image: none;
+  }
+
+  #brain:hover {
+    background-image: url('brain.png');
+  }
+
+  #lips {
+    background-image: none;
+  }
+
+  #lips:hover {
+    background-image: url('lips.png');
+  }
+
+  #heart {
+    background-image: none;
+  }
+
+  #heart:hover {
+    background-image: url('heart.png');
+  }
+
+  #phone {
+    background-image: none;
+  }
+
+  #phone:hover {
+    background-image: url('phone.png');
+  }
+
+  #plane {
+    background-image: none;
+  }
+
+  #plane:hover {
+    background-image: url('plane.png');
   }
 }
 
