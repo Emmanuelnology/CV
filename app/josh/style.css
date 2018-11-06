@@ -9,8 +9,8 @@ body {
   background-attachment: fixed;
 }
 
-.navbar{
-  padding: .8em;
+.navbar {
+  padding: 0.8em;
 }
 
 .navbar-nav li {
@@ -36,7 +36,7 @@ body {
   top: 50%;
 }
 
-.about-me{
+.about-me {
   padding-top: 50px;
 }
 
@@ -87,7 +87,7 @@ ul.timeline > li:before {
   z-index: 400;
 }
 
-.meet-team{
+.meet-team {
   padding-top: 30px;
 }
 

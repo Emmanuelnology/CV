@@ -1,4 +1,4 @@
-*{
+* {
   box-sizing: border-box;
 }
 
@@ -55,7 +55,6 @@ nav li a {
 nav li a:hover:not(.active) {
   background-color: #ddd;
 }
-
 
 .bodycenter-text {
   text-align: center;
@@ -358,13 +357,13 @@ iframe {
 }
 
 @media only screen and (min-width:400px){
-  .skills-column{
-    width:50%;
+  .skills-column {
+    width: 50%;
   }
 }
 
 @media only screen and (min-width:600px){
-  .skills-column{
+  .skills-column {
     width: 33.3%;
   }
 }
