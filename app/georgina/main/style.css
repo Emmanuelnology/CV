@@ -45,24 +45,6 @@ nav ul {
   display: flex;
 }
 
-#navtext {
-  color: white;
-  font-family: 'Fauna One', serif;
-  position: absolute;
-  font-size: 15px;
-  top: 550px;
-  padding-left: 15px;
-}
-
-#gryder {
-  color: white;
-  font-family: 'Pacifico', cursive;
-  font-size: 30px;
-  position: absolute;
-  top: 500px;
-  padding-left: 35px;
-}
-
 nav li {
   flex-grow: 1;
   text-align: center;
@@ -309,6 +291,40 @@ nav ul {
   text-align: left;
 }
 
+#gryder-div {
+  display: inline-block;
+  height: 50px;
+  width: 50%;
+  position: absolute;
+  top: 82.5vh;
+}
+
+#gryder {
+  color: white;
+  font-family: 'Pacifico', cursive;
+  font-size: 30px;
+  position: absolute;
+  width: 120px;
+  right: 59px;
+}
+
+#navtext-div {
+  display: inline-block;
+  height: 50px;
+  width: 50%;
+  position: absolute;
+  top: 91vh;
+}
+
+#navtext {
+  font-size: 15px;
+  color: white;
+  font-family: 'Fauna One', serif;
+  position: absolute;
+  width: 120px;
+  right: 65px;
+}
+
 #gee {
   margin: 0 auto;
   display: block;
@@ -346,7 +362,7 @@ nav ul {
 }
 
 #brain {
-  top: 9.5vh;
+  top: 9vh;
 }
 
 #brain:hover {
@@ -354,7 +370,7 @@ nav ul {
 }
 
 #lips {
-  top: 24.5vh;
+  top: 24vh;
 }
 
 #lips:hover {
@@ -374,20 +390,18 @@ nav ul {
 }
 
 #phone-div {
-  border: 1px red solid;
   display: inline-block;
   height: 50px;
   width: 50%;
   position: absolute;
-  top: 63.5vh;
+  top: 63vh;
   text-align: right;
 }
 
 #phone {
-  border: 1px blue solid;
   position: absolute;
-  width: 50%;
-  left: 50%;
+  width: 100px;
+  right: 0;
 }
 
 #phone a:hover {
@@ -399,7 +413,7 @@ nav ul {
 }
 
 #plane {
-  top: 87vh;
+  top: 86vh;
 }
 
 #plane:hover {
