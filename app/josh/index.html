@@ -11,37 +11,39 @@
 </head>
 
 <body>
-        <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
-                <div class="container-fluid">
-                    <a class="navbar-logo" href="#"><img src="logo2.png" alt="Josh Boyd-Cox. Web developer"></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-responsive">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbar-responsive">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="/">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#about-me">About Me</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#time-line">Timeline</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#skills">Skills</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">References</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#contact">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                    
-                </div>
-            </nav>
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+        <div id="logo">
+            <img src="logo2.png" alt="Josh Boyd-Cox. Web developer">
+        </div>
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-responsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-responsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-me-link">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#time-line-link">Timeline</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills-link">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">References</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    </nav>
     <main class="container text-white">   
         <!--Image Slider-->
         <div id="slides" class="carousel slide" data-ride="carousel">
@@ -54,32 +56,33 @@
             </ul>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <a href="#time-line">
-                        <img src="laptop.jpg" alt="Laptop Image">
+                    <a href="#time-line-link">
                         <div class="carousel-caption">
                             <h1 class="display-2">Timeline</h1>
                         </div>
+                        <img class="carousel-image" src="laptop.jpg" alt="Laptop Image">
+                        
                     </a>
                 </div>
                 
                 <div class="carousel-item">
-                    <a href="#skills">
-                        <img src="skills.jpg" alt="Code Image">
+                    <a href="#skills-link">
                         <div class="carousel-caption">
                             <h1 class="display-2">Skills</h1>
                         </div>
+                        <img  class="carousel-image" src="skills.jpg" alt="Code Image">
                     </a>
                 </div>
                 
                 <div class="carousel-item">
-                    <img src="reference.jpg" alt="Image of Team">
+                    <img class="carousel-image" src="reference.jpg" alt="Image of Team">
                     <div class="carousel-caption">
                         <h1 class="display-2">References</h1>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <a href="#contact">
-                        <img src="socialmedia.jpg" alt="Social Media Image">
+                    <a href="#contact-link">
+                        <img class="carousel-image" src="socialmedia.jpg" alt="Social Media Image">
                         <div class="carousel-caption">
                             <h1 class="display-2">Contact</h1>
                         </div>
@@ -89,8 +92,9 @@
         </div>
         
         <!--about me-->
-        <section id="about-me">
-            <div class="container-fluid bg-1 text-center col-md-9 col-lg-9">
+        <section >
+            <div id="about-me-link" class="scroll-margin"></div>
+            <div class=" container-fluid bg-1 text-center col-md-9 col-lg-9">
                 <h3 class="about-me">Who Am I?</h3>
                 <img src="avatar.jpeg" class="img-circle" alt="An avatar of Josh">
                 <h3>I'm Josh, and I'm a Software Engineer</h3>
@@ -109,31 +113,31 @@
                     </div>
                     
                     <div class="row">
-                        <div class="card col-md-3 col-lg-4 p-3">
+                        <div class="card col-md-4 col-lg-4 p-3">
                             <img class="card-img-top" src="mosalah.jpg" alt="Liverpool FC">
                             <div class="card-body">
                                 <h5 class="card-title text-center text-dark">Liverpool FC</h5>
                             </div>
                         </div>
-                        <div class="card col-md-3 col-lg-4 p-3">
+                        <div class="card col-md-4 col-lg-4 p-3">
                             <img class="card-img-top" src="mnvikings.jpg" alt="Minnesota Vikings">
                             <div class="card-body">
                                 <h5 class="card-title text-center text-dark">Minnesota Vikings</h5>
                             </div>
                         </div>
-                        <div class="card col-md-3 col-lg-4 p-3">
+                        <div class="card col-md-4 col-lg-4 p-3">
                             <img class="card-img-top" src="mauer.jpg" alt="Minnesota Twins">
                             <div class="card-body">
                                 <h5 class="card-title text-center text-dark">Minnesota Twins</h5>
                             </div>
                         </div>
                     </div>
-        </section>
+                </section>
                 
                 <!--timeline-->
                 
-                <section id="time-line">
-                    <div id="time-line-scroll"></div>
+                <section>
+                    <div id="time-line-link" class="scroll-margin"></div>
                     <div class="container mt-5 mb-5">
                         <div class="row">
                             <div class="col-md-6 offset-md-3">
@@ -187,7 +191,8 @@
                     </div>
                 </section>
                 
-                <section id="skills">
+                <section >
+                    <div id="skills-link" class="scroll-margin"></div>
                     <div class="container-fluid padding text-center">
                         <div class="meet-team">
                             <h2>Meet the Team</h2>
@@ -257,7 +262,8 @@
                 </div>
             </section>
             
-            <section id="contact">
+            <section >
+                <div id="contact-link" class="scroll-margin"></div>
                 <div class="container-fluid padding">
                     <div class="row text-center padding">
                         <div class="col-12">

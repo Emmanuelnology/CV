@@ -13,6 +13,23 @@ body {
   padding: 0.8em;
 }
 
+/* #logo {
+  height: 50px;
+} */
+
+.navbar img {
+  height: 125px;
+}
+
+section {
+  position: relative;
+}
+
+.scroll-margin {
+  position: absolute;
+  top: -160px;
+}
+
 .navbar-nav li {
   padding-right: 20px;
 }
@@ -31,9 +48,16 @@ body {
   height: 100%;
 }
 
+.carousel-inner {
+  height: 460px;
+  margin-bottom: 80px;
+  margin: 0 auto;
+  position: relative;
+}
+
 .carousel-caption {
   position: absolute;
-  top: 50%;
+  top: 20%;
 }
 
 .about-me {
