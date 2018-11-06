@@ -63,10 +63,6 @@ button.js-modal-close:hover {
   cursor: pointer;
 }
 
-h1 > div {
-  font-size: 1.5em;
-}
-
 li.worklabel,
 li.worklabel:hover {
   height: 170px;
