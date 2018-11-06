@@ -10,7 +10,7 @@ body {
 /* Title style */
 h1 {
   text-align: center;
-  font-size: 1.5em;
+  font-size: 2em;
   background-color: #4285f4;
   padding-bottom: 1em;
   padding-top: 1em;
@@ -43,4 +43,10 @@ a {
 .start {
   float: right !important;
   margin-right: 8em;
+}
+
+/* Style of text in sections  */
+.text {
+  font-size: 1.3em;
+  padding-left: 20em;
 }
