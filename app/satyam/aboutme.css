@@ -6,26 +6,21 @@ body {
 main {
   display: grid;
   grid-template-areas:
+    "indicator"
     "container"
-    "carousel"
-    "infopanel"
-    "contact";
+    "infopanel";
 }
 
 #container {
   grid-area: container;
 }
 
-.image-carousel {
-  grid-area: carousel;
+#sectionindicator {
+  grid-area: indicator;
 }
 
 #infopanel {
   grid-area: infopanel;
-}
-
-#contactinfo {
-  grid-area: contact;
 }
 
 a {
@@ -247,11 +242,18 @@ ul.skillslist {
   main {
     display: grid;
     grid-template-areas:
-      "container map"
-      "carousel map"
-      "infopanel map"
-      "contact map";
+      "indicator map"
+      "infopanel map";
     grid-template-columns: 1fr 3fr;
+    font-size: 1.75em;
+  }
+
+  #sectionindicator {
+    height: 10vh;
+  }
+
+  #toggle {
+    display: none;
   }
 
   #container {
@@ -259,21 +261,7 @@ ul.skillslist {
     height: 7.5vh;
   }
 
-  .image-carousel {
-    width: 33vw;
-    height: 55vh;
-  }
-
-  .image-carousel img {
-    height: 97%;
-    margin: 0;
-  }
-
-  #toggle {
-    display: none;
-  }
-
-  #contactinfo {
+  #aboutme {
     display: block;
   }
 

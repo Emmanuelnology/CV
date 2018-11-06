@@ -13,12 +13,58 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  color: #fff;
+}
+
+header,
+footer {
+  width: 100%;
+  background-color: #000;
+  padding: 2em
+}
+
+/** FLIP CARD COLOURS **/
+
+.red,
+.blue,
+.yellow,
+.white {
+  background-color: transparent;
+  perspective: 1000px;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.red:hover,
+.blue:hover,
+.yellow:hover,
+.white:hover {
+  transform: rotateY(180deg);
+}
+
+.red {
+  background-color: #940000;
+}
+
+.blue {
+  background-color: #000083;
+}
+
+.yellow {
+  background-color: #FAEA33;
+}
+
+.white {
   color: #333;
 }
 
-header {
-  width: 100%;
-  background-color: #000;
+.front,
+.back {
+  backface-visibility: hidden;
+}
+
+.back {
+  transform: rotateY(180deg);
 }
 
 h1 {
@@ -39,24 +85,26 @@ p {
 li {
   font-weight: 100;
   list-style: circle;
+  margin-left: 2em;
+}
+
+.bold {
+  font-weight: 400;
 }
 
 /* Grid Container */
 .container {
   display: grid;
   grid-template-columns: repeat(2, 50%);
-  grid-template-rows: repeat(2, 50%);
 }
 
 /* Grid Item */
 .container > section {
+  padding: 4%;
+}
+
+section > ul {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
   padding: 2%;
-}
-
-.full-width {
-  grid-column: 1/2;
-}
-
-footer {
-  padding: 2em;
 }
