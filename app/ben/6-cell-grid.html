@@ -11,16 +11,22 @@
         * {
             box-sizing: border-box;
         }
+
+        body {
+            margin: 0;
+            height: 100vh;
+        }
         
         #grid .grid-cell {
             background-color: red;
             border: 1px blue solid;
-            height: 200px;
+            height: 100px;
         }
     </style>
 </head>
 <body>
     <main class="active-f" id="grid">
+        <section class="grid-cell" id="title" data-target="active-title"></section>
         <section class="grid-cell" id="about" data-target="active-about"></section>
         <section class="grid-cell" id="skills" data-target="active-skills"></section>
         <section class="grid-cell" id="work" data-target="active-work"></section>
