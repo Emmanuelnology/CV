@@ -13,6 +13,23 @@ body {
   padding: 0.8em;
 }
 
+/* #logo {
+  height: 50px;
+} */
+
+.navbar img {
+  height: 125px;
+}
+
+section {
+  position: relative;
+}
+
+.scroll-margin {
+  position: absolute;
+  top: -160px;
+}
+
 .navbar-nav li {
   padding-right: 20px;
 }
@@ -21,19 +38,31 @@ body {
   font-size: 1.1em;
 }
 
-.slides {
-  margin-top: 30px;
-  margin-bottom: 30px;
+#slides,
+section {
+  top: 150px;
+}
+
+#slides {
+  margin: 30px auto;
+  text-align: center;
+}
+
+.carousel-inner {
+  height: 420px;
+  margin: 0 auto;
+  position: relative;
 }
 
 .carousel-inner img {
-  width: 100%;
-  height: 100%;
+  height: 410px;
 }
 
 .carousel-caption {
-  position: absolute;
-  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
 }
 
 .about-me {
