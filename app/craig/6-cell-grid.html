@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="6-cell-grid.css">
+    <title>6 Cell</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        #grid .grid-cell {
+            background-color: red;
+            border: 1px blue solid;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <main class="active-f" id="grid">
+        <section class="grid-cell" id="a" data-target="active-a"></section>
+        <section class="grid-cell" id="b" data-target="active-b"></section>
+        <section class="grid-cell" id="c" data-target="active-c"></section>
+        <section class="grid-cell" id="d" data-target="active-d"></section>
+        <section class="grid-cell" id="e" data-target="active-e"></section>
+        <section class="grid-cell" id="f" data-target="active-f"></section>
+    </main>
+    <footer>
+        
+    </footer>
+    
+    <script src="6-cell-grid.js"></script>
+</body>
+
+</html>

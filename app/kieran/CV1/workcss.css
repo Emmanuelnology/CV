@@ -3,11 +3,82 @@ body {
   position: relative;
 }
 
+.modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(255, 0, 0, 0.95);
+  padding: 20px;
+  border: 0 solid black;
+  z-index: 5;
+  color: white;
+  font-family: 'Crimson Text', serif;
+  padding: 5%;
+}
+
+.date {
+  font-weight: 900;
+  font-size: 150%;
+  text-align: center;
+  margin: 0;
+  margin-top: 20px;
+}
+
+.establishment {
+  font-weight: 700;
+  font-size: 120%;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.content {
+  font-weight: 200;
+  font-size: 100%;
+  text-align: justify;
+  margin: 0 auto;
+}
+
+p.content ul {
+  width: 10%;
+}
+
+button.js-modal-close {
+  width: 35%;
+  height: 10%;
+  font-family: 'Crimson Text', serif;
+  color: white;
+  background-color: red;
+  font-size: 130%;
+  border: 3px solid white;
+  vertical-align: center;
+  margin: 0 auto;
+}
+
+button.js-modal-close:hover {
+  color: red;
+  background-color: white;
+  cursor: pointer;
+}
+
 li.worklabel,
 li.worklabel:hover {
   height: 170px;
   z-index: 4;
   top: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: col;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+div > button {
+  margin: 10px;
 }
 
 .square-image {
@@ -18,6 +89,8 @@ li.worklabel:hover {
   background-position: center;
   border-radius: 50%;
   filter: brightness(50%);
+  border: 3px black solid;
+  margin: 10px;
 }
 
 .square-image:hover {
@@ -66,5 +139,47 @@ li.worklabel:hover {
   li.worklabel,
   li.worklabel:hover {
     height: 50px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .left-container {
+    width: 40%;
+  }
+
+  .right-container {
+    width: 60%;
+  }
+
+  .date {
+    font-size: 300%;
+  }
+
+  .establishment {
+    font-size: 250%;
+  }
+
+  .content {
+    margin: 0 auto;
+    font-size: 150%;
+  }
+
+  .modal-information {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  ul {
+    font-size: 150%;
+  }
+
+  button.js-modal-close {
+    width: 20%;
+    height: 7%;
   }
 }

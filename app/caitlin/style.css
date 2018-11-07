@@ -4,6 +4,7 @@ main > section {
 
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -153,21 +154,47 @@ a {
   z-index: 10;
 }
 
-.rotate-text {
-  transform: rotate(270deg);
+#skills-box li {
+  margin-top: 15px;
+  text-align: right;
 }
 
-#skills-box li {
-  margin: 15px;
-  text-align: right;
+#skill-con {
+  position: relative;
+  display: grid;
+  grid-template-areas: "score description";
+  grid-template-columns: 50% 50%;
 }
 
 #skills-box {
   box-sizing: border-box;
-  text-align: center;
-  width: 300px;
+  text-align: right;
   display: block;
-  margin: 0 auto;
+  grid-area: score;
+}
+
+#skills-description {
+  position: relative;
+  text-align: start;
+  grid-area: description;
+}
+
+#skills-description ul {
+  position: relative;
+  display: inline-block;
+  top: 30%;
+}
+
+#skills-description li {
+  display: block;
+  margin-bottom: 25px;
+}
+
+.rotate-text {
+  position: relative;
+  transform: rotate(270deg);
+  width: 10%;
+  left: 85%;
 }
 
 .score {
