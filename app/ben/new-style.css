@@ -96,18 +96,26 @@ ul {
 
 #about,
 #work,
-#hobbies {
+#hobbies,
+.active-about #about:hover,
+.active-work #work:hover,
+.active-hobbies #hobbies:hover {
   background-color: var(--color-med);
   padding: var(--size-med);
   color: var(--color-dark);
+  cursor: context-menu;
 }
 
 #skills,
 #contact,
-#qualifications {
+#qualifications,
+.active-skills #skills:hover,
+.active-contact #contact:hover,
+.active-qualifications #qualifications:hover {
   background-color: var(--color-light);
   padding: var(--size-med);
   color: var(--color-dark);
+  cursor: context-menu;
 }
 
 #about:hover,
@@ -115,7 +123,8 @@ ul {
 #hobbies:hover,
 #skills:hover,
 #contact:hover,
-#qualifications:hover {
+#qualifications:hover,
+#title:hover {
   background-color: var(--color-dark);
   color: var(--color-light);
   cursor: pointer;
