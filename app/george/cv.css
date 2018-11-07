@@ -38,9 +38,14 @@ nav img {
   max-height: 55px;
 }
 
+nav .left {
+  width: 211px;
+}
+
 nav .right {
   display: flex;
   align-items: center;
+  width: 146px;
 }
 
 nav .right > * {
@@ -100,9 +105,13 @@ nav .menu {
   text-align: center;
 }
 
+#nav ul {
+  padding-left: 0;
+}
+
 #nav li {
   list-style-type: none;
-  padding: 10px;
+  padding: 10px 146px 10px 211px;
 }
 
 #nav li:not(:last-child) {
