@@ -338,7 +338,7 @@ form textarea {
   font-size: 1.5em;
 }
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 550px){
   
   nav > audio {
     display: none;
@@ -378,11 +378,64 @@ form textarea {
   #contactkas,
   #skillkas,
   #hobbievolun {
-    height: 200vh;
+    margin-bottom: 10em;
   }
 
   #aboutkas {
     height: 230vh;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width: 551px) and (max-width: 800px){
+  
+  nav > audio {
+    display: none;
+  }
+
+  .emmanuel {
+    position: relative;
+    top:0%;
+  }
+  
+  section{
+    color: red;
+  }
+
+  .multi {
+    flex-flow: row wrap;
+  }
+
+  .multi > div {
+    margin: 0px;
+    flex: 100% !important;
+    margin: 1em;
+  }
+
+  .large-flex {
+    flex: 100% !important;
+  }
+
+  div > h2 {
+    padding: 1em;
+  }
+
+  div > h3 {
+    padding: 0.5em;
+  }
+
+  #contactkas,
+  #skillkas,
+  #hobbievolun {
+    height: 220vh;
+  }
+
+  #aboutkas {
+    height: 260vh;
   }
 
   .arrow {
