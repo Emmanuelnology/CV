@@ -311,7 +311,7 @@ ul {
   background-size: cover;
 }
 
-/* Form styleand background */
+/* Form style, position and background */
 .message {
   background-image: url('sky.jfif');
   background-size: cover;
@@ -325,12 +325,10 @@ form * {
 
 form input {
   background-color: rgb(141, 179, 216);
-  justify-content: center;
 }
 
 form textarea {
   background-color: rgb(141, 179, 216);
-  justify-content: center;
 }
 
 .please {
