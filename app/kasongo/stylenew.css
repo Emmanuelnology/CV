@@ -37,7 +37,8 @@ h3 {
 
 /* Columns properties and color */
 .multi {
-  /* display: flex; */
+  display: flex;
+  flex-direction: column;
   width: 100vw;
 }
 
@@ -343,4 +344,10 @@ form textarea {
   section {
     color: red;
   }
+
+  .multi {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+  }  
 }
