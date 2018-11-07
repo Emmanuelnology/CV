@@ -105,14 +105,14 @@ main {
   cursor: pointer;
 }
 
-#about-open {
+#about {
   grid-area: about;
   background-color: var(--color-med);
   padding: var(--size-med);
   display: none;
 }
 
-#about {
+#about-closed {
   grid-area: about;
   background-color: var(--color-med);
   padding: var(--size-med);
@@ -120,103 +120,103 @@ main {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-}
-
-#skills-open {
-  grid-area: skills;
-  background-color: var(--color-light);
-  padding: var(--size-med);
-  display: none;
 }
 
 #skills {
   grid-area: skills;
   background-color: var(--color-light);
   padding: var(--size-med);
+  display: none;
+}
+
+#skills-closed {
+  grid-area: skills;
+  background-color: var(--color-light);
+  padding: var(--size-med);
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-}
-
-#work-open {
-  grid-area: work;
-  background-color: var(--color-med);
-  padding: var(--size-med);
-  display: none;
 }
 
 #work {
   grid-area: work;
   background-color: var(--color-med);
   padding: var(--size-med);
+  display: none;
+}
+
+#work-closed {
+  grid-area: work;
+  background-color: var(--color-med);
+  padding: var(--size-med);
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-}
-
-#contact-open {
-  grid-area: contact;
-  background-color: var(--color-light);
-  padding: var(--size-med);
-  display: none;
 }
 
 #contact {
   grid-area: contact;
   background-color: var(--color-light);
   padding: var(--size-med);
+  display: none;
+}
+
+#contact-closed {
+  grid-area: contact;
+  background-color: var(--color-light);
+  padding: var(--size-med);
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-}
-
-#hobbies-open {
-  grid-area: hobbies;
-  background-color: var(--color-med);
-  padding: var(--size-med);
-  display: none;
 }
 
 #hobbies {
   grid-area: hobbies;
   background-color: var(--color-med);
   padding: var(--size-med);
+  display: none;
+}
+
+#hobbies-closed {
+  grid-area: hobbies;
+  background-color: var(--color-med);
+  padding: var(--size-med);
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-}
-
-#qualifications-open {
-  grid-area: qualifications;
-  background-color: var(--color-light);
-  padding: var(--size-med);
-  display: none;
 }
 
 #qualifications {
   grid-area: qualifications;
   background-color: var(--color-light);
   padding: var(--size-med);
+  display: none;
+}
+
+#qualifications-closed {
+  grid-area: qualifications;
+  background-color: var(--color-light);
+  padding: var(--size-med);
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
 }
 
-#about:hover,
-#work:hover,
-#hobbies:hover {
+#about-closed:hover,
+#work-closed:hover,
+#hobbies-closed:hover {
   background-color: var(--color-dark);
   color: var(--color-med);
 }
 
-#skills:hover,
-#contact:hover,
-#qualifications:hover {
+#skills-closed:hover,
+#contact-closed:hover,
+#qualifications-closed:hover {
   background-color: var(--color-dark);
   color: var(--color-light);
 }
@@ -242,21 +242,21 @@ main {
   }
 
   #work,
-  #work-open {
+  #work-closed {
     background-color: var(--color-light);
   }
 
-  #work:hover {
+  #work-closed:hover {
     background-color: var(--color-dark);
     color: var(--color-light);
   }
 
   #contact,
-  #contact-open {
+  #contact-closed {
     background-color: var(--color-med);
   }
 
-  #contact:hover {
+  #contact-closed:hover {
     background-color: var(--color-dark);
     color: var(--color-med);
   }
@@ -293,21 +293,21 @@ main {
   }
 
   #work,
-  #work-open {
+  #work-closed {
     background-color: var(--color-med);
   }
 
-  #work:hover {
+  #work-closed:hover {
     background-color: var(--color-dark);
     color: var(--color-med);
   }
 
   #contact,
-  #contact-open {
+  #contact-closed {
     background-color: var(--color-light);
   }
 
-  #contact:hover {
+  #contact-closed:hover {
     background-color: var(--color-dark);
     color: var(--color-light);
   }
