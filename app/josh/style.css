@@ -38,26 +38,31 @@ section {
   font-size: 1.1em;
 }
 
-.slides {
-  margin-top: 30px;
-  margin-bottom: 30px;
+#slides,
+section {
+  top: 150px;
 }
 
-.carousel-inner img {
-  width: 100%;
-  height: 100%;
+#slides {
+  margin: 30px auto;
+  text-align: center;
 }
 
 .carousel-inner {
-  height: 460px;
-  margin-bottom: 80px;
+  height: 420px;
   margin: 0 auto;
   position: relative;
 }
 
+.carousel-inner img {
+  height: 410px;
+}
+
 .carousel-caption {
-  position: absolute;
-  top: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
 }
 
 .about-me {
