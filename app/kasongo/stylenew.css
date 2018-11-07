@@ -18,6 +18,7 @@ h2 {
   font-size: 4em;
   border: solid rgb(6, 6, 82);
   border-style: double;
+
   /* margin-left: 8em;
   margin-top: 0.8em;
   max-width: 9em; */
@@ -339,7 +340,6 @@ form textarea {
 }
 
 @media only screen and (max-width: 550px) {
-  
   nav > audio {
     display: none;
   }
@@ -349,7 +349,7 @@ form textarea {
     top: 0%;
   }
 
-  section{
+  section {
     color: red;
   }
 
@@ -388,21 +388,19 @@ form textarea {
   .arrow {
     display: none;
   }
-
 }
 
-@media only screen and (min-width: 551px) and (max-width: 800px){
-  
+@media only screen and (min-width: 551px) and (max-width: 800px) {
   nav > audio {
     display: none;
   }
 
   .emmanuel {
     position: relative;
-    top:0%;
+    top: 0;
   }
-  
-  section{
+
+  section {
     color: red;
   }
 
@@ -411,7 +409,7 @@ form textarea {
   }
 
   .multi > div {
-    margin: 0px;
+    margin: 0;
     flex: 100% !important;
     margin: 1em;
   }
@@ -441,5 +439,4 @@ form textarea {
   .arrow {
     display: none;
   }
-
 }
