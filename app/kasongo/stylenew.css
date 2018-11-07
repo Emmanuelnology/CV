@@ -40,21 +40,18 @@ h3 {
 /* Columns properties and color */
 .multi {
   display: flex;
-  width: 100vw;
 }
 
 .multi > div {
   background-color: rgba(173, 213, 226, 0.7);
-  flex: 1;
+  flex: 25%;
   margin: 15px;
 }
 
 .large-flex {
-  flex: 2 !important;
+  flex: 50% !important;
   height: 100%;
-  width: 100%;
   text-align: center !important;
-  padding: 2em;
   background-color: rgba(173, 213, 226, 0.7);
 }
 
@@ -67,7 +64,7 @@ h3 {
 /* Added srolling welcome page with bouncing arrow, flex included, different arrows margin */
 
 .bonjour {
-  min-height: 100vh;
+  max-height: 100vh;
   background-color: lightgrey;
   background-attachment: fixed;
   background-position: center;
@@ -211,7 +208,7 @@ nav audio {
 
 /* Section size and flex and light dark background */
 section {
-  height: 103vh;
+  height: 100vh;
   border: 1px black solid;
   position: relative;
 }
@@ -341,8 +338,55 @@ form textarea {
   font-size: 1.5em;
 }
 
-@media only screen and (min-width: 550px){
+@media only screen and (max-width: 500px){
+  
+  nav > audio {
+    display: none;
+  }
+
+  .emmanuel {
+    position: relative;
+    top:0%;
+  }
+  
   section{
     color: red;
   }
+
+  .multi {
+    flex-flow: row wrap;
+  }
+
+  .multi > div {
+    margin: 0px;
+    flex: 100% !important;
+    margin: 1em;
+  }
+
+  .large-flex {
+    flex: 100% !important;
+  }
+
+  div > h2 {
+    padding: 1em;
+  }
+
+  div > h3 {
+    padding: 0.5em;
+  }
+
+  #contactkas,
+  #skillkas,
+  #hobbievolun {
+    height: 200vh;
+  }
+
+  #aboutkas {
+    height: 230vh;
+  }
+
+  .arrow {
+    display: none;
+  }
+
 }
