@@ -338,7 +338,7 @@ form textarea {
   font-size: 1.5em;
 }
 
-@media only screen and (max-width: 550px){
+@media only screen and (max-width: 550px) {
   
   nav > audio {
     display: none;
@@ -346,9 +346,9 @@ form textarea {
 
   .emmanuel {
     position: relative;
-    top:0%;
+    top: 0%;
   }
-  
+
   section{
     color: red;
   }
@@ -358,7 +358,7 @@ form textarea {
   }
 
   .multi > div {
-    margin: 0px;
+    margin: 0;
     flex: 100% !important;
     margin: 1em;
   }
