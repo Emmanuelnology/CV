@@ -1,37 +1,37 @@
-#qualifications-open {
+#qualifications {
   justify-items: center;
   font-size: 16px;
 }
 
-#qualifications-open > article {
+#qualifications > article {
   margin: 0.75em;
 }
 
-#qualifications-open .date {
+#qualifications .date {
   display: block;
   font-size: 0.7em;
   margin-bottom: 0.125em;
 }
 
-#qualifications-open li {
+#qualifications li {
   max-width: 25em;
   font-size: 0.875em;
   text-align: left;
   margin: 0 auto;
 }
 
-#qualifications-open .options {
+#qualifications .options {
   display: inline;
   float: right;
   font-size: 0.75em;
 }
 
-#qualifications-open .grade {
+#qualifications .grade {
   font-weight: 600;
   font-size: 1.33em;
 }
 
-#qualifications-open .just-grade {
+#qualifications .just-grade {
   display: inline;
   float: right;
 }

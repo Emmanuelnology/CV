@@ -3,66 +3,66 @@
   --color-light: #9edde6;
 }
 
-#contact-open {
+#contact {
   text-align: center;
   font-size: 16px;
 }
 
-#contact-open section {
+#contact section {
   margin: 1em;
 }
 
-#contact-open ul {
+#contact ul {
   list-style: none;
 }
 
-#contact-open li {
+#contact li {
   padding: 0.125em;
 }
 
-#contact-open .enlarges:hover {
+#contact .enlarges:hover {
   font-size: 1.2em;
 }
 
-#contact-open a {
+#contact a {
   color: inherit;
   font-size: 0.875em;
 }
 
-#contact-open address {
+#contact address {
   font-style: unset;
 }
 
-#contact-open article {
+#contact article {
   display: inline;
 }
 
-#contact-open .fab {
+#contact .fab {
   font-size: 3.125em;
   margin: 0 0.1em;
 }
 
-#contact-open .fab:hover {
+#contact .fab:hover {
   font-size: 3.75em;
 }
 
-#contact-open .fa-linkedin {
+#contact .fa-linkedin {
   color: #0274b3;
 }
 
-#contact-open .fa-facebook-square {
+#contact .fa-facebook-square {
   color: #4267b2;
 }
 
-#contact-open .fa-twitter-square {
+#contact .fa-twitter-square {
   color: #28aae1;
 }
 
-#contact-open .fa-github-sqare {
+#contact .fa-github-sqare {
   color: #24292e;
 }
 
-#contact-open .button {
+#contact .button {
   background-color: var(--color-dark);
   color: var(--color-light);
   border: none;
@@ -74,7 +74,7 @@
   width: 205px;
 }
 
-#contact-open .button:hover {
+#contact .button:hover {
   opacity: 0.75;
   color: white;
   cursor: pointer;
