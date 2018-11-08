@@ -218,17 +218,17 @@ header h3 {
 }
 
 #describe > * {
-  padding-left: 60px;
-  padding-top: 20px;
+  padding: 0;
   text-align: center;
 }
 
 #describe {
   font-size: 20px;
+  padding: 0;
 }
 
 .words > li {
-  padding: 5px 5px;
+  padding: 0;
   font-weight: bold;
   font-size: 20px;
   margin-top: 30px;
@@ -345,12 +345,12 @@ nav ul {
 }
 
 #brain {
-  top: 9vh;
+  top: 8vh;
   background-image: url('brain.png');
 }
 
 #lips {
-  top: 24vh;
+  top: 23vh;
   background-image: url('lips.png');
 }
 
@@ -360,7 +360,7 @@ nav ul {
 }
 
 #heart {
-  top: 43vh;
+  top: 40vh;
   background-image: url('heart.png');
 }
 
@@ -391,7 +391,7 @@ nav ul {
 
 #plane {
   top: 86vh;
-  background-image: url('plane.png');
+  background-image: url('shoes.png');
 }
 
 #plane:hover {
@@ -514,7 +514,7 @@ section {
   }
 
   #plane:hover {
-    background-image: url('plane.png');
+    background-image: url('shoes.png');
   }
 }
 
