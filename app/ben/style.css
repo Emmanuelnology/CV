@@ -262,7 +262,7 @@ ul {
   .active-work #work:hover {
     background-color: var(--color-light);
   }
-  
+
   #contact,
   .active-contact #contact:hover {
     background-color: var(--color-med);
@@ -274,7 +274,7 @@ ul {
   .active-work #work:hover {
     background-color: var(--color-med);
   }
-  
+
   #contact,
   .active-contact #contact:hover {
     background-color: var(--color-light);
