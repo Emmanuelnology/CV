@@ -18,20 +18,11 @@ body {
   font-family: 'raleway';
 }
 
-.spacing {
-  margin: 0 0.25rem;
-}
-
-nav {
-  background-color: rgb(9, 139, 133);
-}
-
 h1 {
   text-align: center;
   vertical-align: middle;
   padding: 10vh;
   margin: 30vh 0 0 0;
-  font-size: 2em;
 }
 
 h2 {
@@ -85,31 +76,6 @@ a {
   padding: 0.05em;
   font-size: 30px;
   margin: 10px 10px 0 10px;
-}
-
-.container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: space-between;
-  margin-top: 78px;
-}
-
-.left-container,
-.right-container {
-  width: 20%;
-  background-color: rgba(255, 255, 255, 0.3);
-  border: none;
-  color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  display: none;
-}
-
-a:hover {
-  transform: scale(1.2);
-  color: white;
-  text-decoration: none;
 }
 
 .sub-heading {
@@ -346,25 +312,6 @@ footer {
     top: 0;
     text-transform: initial;
     z-index: 9;
-  }
-
-  .container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-between;
-    margin-top: 78px;
-  }
-
-  .left-container,
-  .right-container {
-    width: 15%;
-    background-color: rgba(255, 255, 255, 0.3);
-    border: none;
-    color: rgba(255, 255, 255, 0.8);
-    text-align: center;
-    display: block;
   }
 
   nav > a {
