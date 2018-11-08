@@ -342,6 +342,7 @@ nav ul {
 
 .rollover a {
   display: inline-block;
+  text-decoration: none;
 }
 
 #brain {

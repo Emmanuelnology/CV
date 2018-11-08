@@ -8,7 +8,7 @@ body {
   position: relative;
   right: 0;
   left: 0;
-  width: 100%;
+  max-width: 100%;
 }
 
 /* Title style */
@@ -41,6 +41,7 @@ a {
   background-color: #4285f4;
   margin: 0;
   padding-left: 8em;
+  font-family: 'Roboto', Sans-Serif !important;
 }
 
 /* Start link position */
@@ -49,15 +50,29 @@ a {
   margin-right: 8em;
 }
 
-/* Lines position */
-.line {
+/* Flex and structure of sections with direction */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-grow: 70%;
   width: 100%;
-  float: left;
-  margin-left: 5em;
-  right: -5em;
-  width: 100%;
+  margin-left: 0;
 }
 
-.caution {
-  margin-left: 0;
+/* Section width to seperate from icons, and style */
+li > div {
+  width: 100%;
+  font-family: 'Roboto', Sans-Serif;
+}
+
+/* Distance number width */
+small {
+  width: 30%;
+  margin-bottom: 0;
+}
+
+/* Lines padding */
+hr {
+  top: 2em;
 }
