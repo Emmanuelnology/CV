@@ -46,11 +46,11 @@
   grid-area: key;
 }
 
-#tech {
+#skills #tech {
   grid-area: tech;
 }
 
-#other {
+#skills #other {
   grid-area: other;
 }
 

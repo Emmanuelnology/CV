@@ -4,7 +4,7 @@
 <head>
 
     <title>Caitlins CV</title>
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
     <link href="timeline.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -21,14 +21,35 @@
         <p class="sub-heading">Curriculum Vitae</p>
     </div>
 
-    <nav>
-        <a href="#about-me" > About me </a>
-        <a href="#education-section" > Education </a>
-        <a href="#education-section" > Work experience </a>
-        <a href="#skills" > Skills </a>
-        <a href="#awards"> Awards </a>
-        <a href="#extra-curricular" > Hobbies </a>
-        <a href="#contact-me" > Contact details </a>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-bar-burger" aria-controls="nav-bar-burger" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav-bar-burger">
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item active">
+            <a class="nav-link" href="#about-me">About me <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#education-section">Education</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#education-section">Work experience</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#awards">Awards</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#extra-curricular">Hobbies</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link " href="#contact-me">Contact details</a>
+            </li>
+        </ul>
+        </div>
     </nav>
 
     <div id="blocker"></div>
@@ -465,6 +486,9 @@
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
     <script src="j-query.js" type="text/JavaScript"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 </body>
 </html>
