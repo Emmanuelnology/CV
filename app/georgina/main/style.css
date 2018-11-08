@@ -45,24 +45,6 @@ nav ul {
   display: flex;
 }
 
-#navtext {
-  color: white;
-  font-family: 'Fauna One', serif;
-  position: absolute;
-  font-size: 15px;
-  top: 550px;
-  padding-left: 15px;
-}
-
-#gryder {
-  color: white;
-  font-family: 'Pacifico', cursive;
-  font-size: 30px;
-  position: absolute;
-  top: 500px;
-  padding-left: 35px;
-}
-
 nav li {
   flex-grow: 1;
   text-align: center;
@@ -309,6 +291,39 @@ nav ul {
   text-align: left;
 }
 
+#gee {
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  min-height: 95vh;
+  max-height: 95vh;
+}
+
+#gryder-navtext-container {
+  display: block;
+  width: 50%;
+  position: absolute;
+  top: 83vh;
+  padding-left: 9px;
+}
+
+#gryder {
+  color: white;
+  font-family: 'Pacifico', cursive;
+  font-size: 30px;
+  width: 120px;
+  position: static;
+  padding-left: 6.5px;
+}
+
+#navtext {
+  font-size: 15px;
+  color: white;
+  font-family: 'Fauna One', serif;
+  width: 120px;
+  position: static;
+}
+
 .rollover {
   height: 50px;
   width: 100%;
@@ -319,84 +334,70 @@ nav ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: rgba(6, 174, 213, 0.3);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.rollover:hover {
-  cursor: pointer;
-  background-color: rgba(6, 174, 213, 0.3);
-}
-
 .rollover a {
-  display: none;
-}
-
-.rollover:hover a {
   display: inline-block;
+  text-decoration: none;
 }
 
 #brain {
-  top: 60px;
-}
-
-#brain:hover {
+  top: 9vh;
   background-image: url('brain.png');
 }
 
 #lips {
-  top: 160px;
+  top: 24vh;
+  background-image: url('lips.png');
 }
 
 #lips:hover {
-  background-image: url('lips.png');
   position: fixed;
   position: absolute;
 }
 
 #heart {
-  top: 270px;
+  top: 43vh;
+  background-image: url('heart.png');
 }
 
 #heart:hover {
-  background-image: url('heart.png');
   position: fixed;
   position: absolute;
 }
 
-#phone-div  {
-  border: 2px solid red;
+#phone-div {
   display: inline-block;
   height: 50px;
-  width: 50%; 
-  position: relative;
-  top: 475px;
+  width: 50%;
+  position: absolute;
+  top: 63vh;
   text-align: right;
 }
 
-#phone {  
-  border: 2px solid red;
+#phone {
   position: absolute;
-  width: 50%;
-  left: 50%;
+  width: 110px;
+  right: 0;
+  background-image: url('phone.png');
 }
 
 #phone a:hover {
   padding: 0;
 }
 
-#phone:hover {
-  background-image: url('phone.png');
-}
-
 #plane {
-  text-align: left;
-  padding-left: 20px;
+  top: 86vh;
+  background-image: url('plane.png');
 }
 
 #plane:hover {
-  background-image: url('plane.png');
+  position: fixed;
+  position: absolute;
 }
 
 section {
@@ -404,9 +405,22 @@ section {
   display: none;
 }
 
-#gee {
-  margin: 0 auto;
-  display: block;
+@media only screen and (min-width: 375px) {
+  #gryder-navtext-container {
+    padding-left: 0;
+    padding-right: 10vh;
+  }
+
+  #gryder {
+    width: 100%;
+    padding-left: 0;
+    text-align: right;
+  }
+
+  #navtext {
+    width: 100%;
+    text-align: right;
+  }
 }
 
 @media only screen and (min-width: 750px) {
@@ -420,6 +434,23 @@ section {
     width: 33.3%;
   }
 
+  .rollover {
+    background-color: transparent;
+  }
+
+  .rollover:hover {
+    cursor: pointer;
+    background-color: rgba(6, 174, 213, 0.3);
+  }
+
+  .rollover a {
+    display: none;
+  }
+
+  .rollover:hover a {
+    display: inline-block;
+  }
+
   #closebutton {
     display: none;
   }
@@ -427,6 +458,82 @@ section {
   body {
     grid-template-areas: "me content""me footer";
     grid-template-columns: 1fr 2fr;
+  }
+
+  #gryder-navtext-container {
+    padding-left: 9px;
+    padding-right: 0;
+  }
+
+  #gryder {
+    width: 120px;
+    position: static;
+    padding-left: 6.5px;
+    text-align: initial;
+  }
+
+  #navtext {
+    width: 120px;
+    position: static;
+    text-align: initial;
+  }
+
+  #brain {
+    background-image: none;
+  }
+
+  #brain:hover {
+    background-image: url('brain.png');
+  }
+
+  #lips {
+    background-image: none;
+  }
+
+  #lips:hover {
+    background-image: url('lips.png');
+  }
+
+  #heart {
+    background-image: none;
+  }
+
+  #heart:hover {
+    background-image: url('heart.png');
+  }
+
+  #phone {
+    background-image: none;
+  }
+
+  #phone:hover {
+    background-image: url('phone.png');
+  }
+
+  #plane {
+    background-image: none;
+  }
+
+  #plane:hover {
+    background-image: url('plane.png');
+  }
+}
+
+@media only screen and (min-width: 1125px) {
+  #gryder-navtext-container {
+    padding-left: 0;
+    padding-right: 10vh;
+  }
+
+  #gryder {
+    width: 100%;
+    padding-left: 0;
+    text-align: right;
+  }
+
+  #navtext {
+    width: 100%;
+    text-align: right;
   }
 }
 

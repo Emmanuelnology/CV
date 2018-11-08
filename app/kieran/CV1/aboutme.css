@@ -1,5 +1,5 @@
 body {
-  background-color: pink;
+  background-color: rgb(192, 217, 255);
 }
 
 div.left {
@@ -10,8 +10,71 @@ div.mid {
   grid-area: mid;
 }
 
-div.right {
+.right > h2 {
+  grid-area: heading;
+  margin: 0;
+  padding-top: 70%;
+}
+
+.skill-rating {
+  grid-area: skill-rating;
+  text-align: center;
+}
+
+.skill-rating i {
+  margin: 0 3px;
+}
+
+.skill-list {
+  grid-area: skill-list;
+}
+
+.skill-explanations {
+  grid-area: explanation;
+}
+
+.skill-list ul {
+  padding: 0;
+}
+
+.descriptions {
+  grid-area: descriptions;
+  padding: 0;
+  text-align: left;
+  font-size: 0.8em;
+}
+
+.descriptions ul {
+  transform: rotate(270deg);
+  padding: 0;
+  margin-bottom: 200px;
+}
+
+.descriptions li {
+  margin-bottom: 6px;
+}
+
+.right-container {
+  display: flex;
+  flex-direction: row;
   grid-area: rightt;
+  justify-content: center;
+  margin-top: -80px;
+}
+
+.right li {
+  list-style-type: none;
+}
+
+.right {
+  margin: 0;
+  display: grid;
+  grid-template-areas:
+    "heading descriptions"
+    "skill-list skill-rating"
+    "explanation explanation";
+  grid-template-columns: 150px 150px;
+  grid-template-rows: 150px 230px;
 }
 
 main {
@@ -38,10 +101,6 @@ main div.right div {
 div ul.skillslist {
   list-style: none;
   padding: 0;
-}
-
-li div.score {
-  float: right;
 }
 
 ul.icons {
@@ -71,7 +130,7 @@ li.aboutmelabel:hover {
 
 div.right {
   float: center;
-  margin: 0 auto;
+  margin: 0;
 }
 
 li.icon {
@@ -82,6 +141,14 @@ li.icon {
   li.aboutmelabel,
   li.aboutmelabel:hover {
     height: 50px;
+  }
+
+  div.mid {
+    margin-top: 20px;
+  }
+
+  div.left {
+    margin: 0;
   }
 
   main {

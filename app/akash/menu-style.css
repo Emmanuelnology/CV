@@ -200,6 +200,14 @@ li > div {
   display: block;
 }
 
+.extra-margin {
+  margin-bottom: 48px;
+}
+
+.skills-margin {
+  margin-bottom: 60px;
+}
+
 .info-block img {
   height: 70px;
   width: auto;
@@ -382,8 +390,8 @@ li > div {
   .modal {
     position: absolute;
     top: 20%;
-    left: 40%;
-    right: 40%;
+    left: 35%;
+    right: 35%;
     background-color: white;
     z-index: 3;
     border-radius: 20px;

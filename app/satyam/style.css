@@ -3,6 +3,31 @@ body {
   margin: 0;
 }
 
+main {
+  display: grid;
+  grid-template-areas:
+    "container"
+    "carousel"
+    "infopanel"
+    "contact";
+}
+
+#container {
+  grid-area: container;
+}
+
+.image-carousel {
+  grid-area: carousel;
+}
+
+#infopanel {
+  grid-area: infopanel;
+}
+
+#contactinfo {
+  grid-area: contact;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -83,7 +108,7 @@ p {
 .image-carousel {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 100vw;
   overflow-x: scroll;
 }
 
@@ -214,8 +239,52 @@ ul.skillslist {
   margin: 25px;
 }
 
-/* @media only screen and (min-width: 700px) {
-  #infopanel {
-    background-color: red;
+#large-map {
+  display: none;
+}
+
+@media only screen and (min-width: 550px) {
+  main {
+    display: grid;
+    grid-template-areas:
+      "container map"
+      "carousel map"
+      "infopanel map"
+      "contact map";
+    grid-template-columns: 1fr 3fr;
   }
-} */
+
+  #container {
+    background-image: none;
+    height: 7.5vh;
+  }
+
+  .image-carousel {
+    width: 33vw;
+    height: 55vh;
+  }
+
+  .image-carousel img {
+    height: 97%;
+    margin: 0;
+  }
+
+  #toggle {
+    display: none;
+  }
+
+  #contactinfo {
+    display: block;
+  }
+
+  #large-map {
+    display: block;
+    background-image: url('g1.png');
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    grid-area: map;
+  }
+}

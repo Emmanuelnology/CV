@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
     crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
-    <link rel="stylesheet" href="trial_about_style.css" >
-    <link rel="stylesheet" href="trial_skills_style.css" >    
-    <link rel="stylesheet" href="trial_work_style.css" >
-    <link rel="stylesheet" href="trial_contact_style.css" >
-    <link rel="stylesheet" href="trial_hobbies_style.css" >
-    <link rel="stylesheet" href="trial_qualifications_style.css" >
-    <link rel="stylesheet" href="trial_style.css" >
+    <link rel="stylesheet" href="about_style.css" >
+    <link rel="stylesheet" href="skills_style.css" >    
+    <link rel="stylesheet" href="work_style.css" >
+    <link rel="stylesheet" href="contact_style.css" >
+    <link rel="stylesheet" href="hobbies_style.css" >
+    <link rel="stylesheet" href="qualifications_style.css" >
+    <link rel="stylesheet" href="style.css" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
@@ -59,12 +59,12 @@
             </li>
         </ul>
     </nav>
-    <main>
+    <main class="active-f" id="grid">
         <header id="header">Ben Tomaney's CV</header>
-        <section id="about" class="not-sk-cl not-wo-cl not-co-cl not-ho-cl not-qu-cl">
+        <section id="about-closed" class="not-sk-cl not-wo-cl not-co-cl not-ho-cl not-qu-cl">
             <h1>About Me</h1>
         </section>
-        <section id="about-open" class="not-sk-op not-wo-op not-co-op not-ho-op not-qu-op">
+        <section id="about" class="not-sk-op not-wo-op not-co-op not-ho-op not-qu-op">
             <h1>About Me</h1>
             <p>
                 A <span class="large">motivated</span> and <span class="large">hardworking</span>
@@ -77,10 +77,10 @@
                 whilst continuing to be an <span class="large">adaptable</span> and <span class="large">eager</span> individual.
             </p>
         </section>
-        <section id="skills" class="not-ab-cl not-wo-cl not-co-cl not-ho-cl not-qu-cl">
+        <section id="skills-closed" class="not-ab-cl not-wo-cl not-co-cl not-ho-cl not-qu-cl">
             <h1>Key Skills</h1>
         </section>
-        <section id="skills-open" class="not-ab-op not-wo-op not-co-op not-ho-op not-qu-op">
+        <section id="skills" class="not-ab-op not-wo-op not-co-op not-ho-op not-qu-op">
             <h1>Key Skills</h1>
             <div id="tech">
                 <h2>Techincal Skills</h2>
@@ -257,10 +257,10 @@
                 </ul>
             </div>
         </section>
-        <section id="work" class="not-ab-cl not-sk-cl not-co-cl not-ho-cl not-qu-cl">
+        <section id="work-closed" class="not-ab-cl not-sk-cl not-co-cl not-ho-cl not-qu-cl">
             <h1>Work &amp; Volunteering Experience</h1>
         </section>
-        <section id="work-open" class="not-ab-op not-sk-op not-co-op not-ho-op not-qu-op">
+        <section id="work" class="not-ab-op not-sk-op not-co-op not-ho-op not-qu-op">
             <h1>Work &amp; Volunteering Experience</h1>
             <div class="timeline">
                 <div class="emptytop"></div>
@@ -371,10 +371,10 @@
                 <div class="emptylast"></div>
             </div>
         </section>
-        <section id="contact" class="not-ab-cl not-sk-cl not-wo-cl not-ho-cl not-qu-cl">
+        <section id="contact-closed" class="not-ab-cl not-sk-cl not-wo-cl not-ho-cl not-qu-cl">
             <h1>Contact Me</h1>
         </section>
-        <section id="contact-open" class="not-ab-op not-sk-op not-wo-op not-ho-op not-qu-op">
+        <section id="contact" class="not-ab-op not-sk-op not-wo-op not-ho-op not-qu-op">
             <h1>Contact Me</h1>
             <section>
                 <h2>My Information</h2>
@@ -424,10 +424,10 @@
                 </a>
             </section>
         </section>
-        <section id="hobbies" class="not-ab-cl not-sk-cl not-wo-cl not-co-cl not-qu-cl">
+        <section id="hobbies-closed" class="not-ab-cl not-sk-cl not-wo-cl not-co-cl not-qu-cl">
             <h1>Hobbies</h1>
         </section>
-        <section id="hobbies-open" class="not-ab-op not-sk-op not-wo-op not-co-op not-qu-op">
+        <section id="hobbies" class="not-ab-op not-sk-op not-wo-op not-co-op not-qu-op">
             <h1>Hobbies</h1>
             <ul>
                 <i class="far fa-futbol"></i>
@@ -440,10 +440,10 @@
                 <li>Drums, guitar and piano</li>
             </ul>
         </section>
-        <section id="qualifications" class="not-ab-cl not-sk-cl not-wo-cl not-co-cl not-ho-cl">
+        <section id="qualifications-closed" class="not-ab-cl not-sk-cl not-wo-cl not-co-cl not-ho-cl">
             <h1>Qualifications &amp; Awards</h1>
         </section>
-        <section id="qualifications-open" class="not-ab-op not-sk-op not-wo-op not-co-op not-ho-op">
+        <section id="qualifications" class="not-ab-op not-sk-op not-wo-op not-co-op not-ho-op">
             <h1>Qualifications &amp; Awards</h1>
             <article>
                 <h2>University of Bath <span class="date">(2014 &ndash; 2018)</span></h2>
@@ -578,9 +578,9 @@
     </main>
     
     <script>
-        $('#about').click(function(){
-            $('#about-open').css('display','initial');
-            $('#about').css('display','none');
+        $('#about-closed').click(function(){
+            $('#about').css('display','initial');
+            $('#about-closed').css('display','none');
             $('.not-ab-cl').css('display','flex');
             $('.not-ab-cl').css('align-items','center');
             $('.not-ab-cl').css('justify-content','center');
@@ -588,11 +588,11 @@
             $('main').css('grid-template-columns','60fr 20fr 20fr');
             $('main').css('grid-template-rows','4fr 9fr 9fr');
         })
-        // $('#about-open').click(function(){
-        //     $('#about-open').css('display','none');
-        //     $('#about').css('display','flex');
-        //     $('#about').css('align-items','center');
-        //     $('#about').css('justify-content','center');
+        // $('#about').click(function(){
+        //     $('#about').css('display','none');
+        //     $('#about-closed').css('display','flex');
+        //     $('#about-closed').css('align-items','center');
+        //     $('#about-closed').css('justify-content','center');
         //     $('.not-ab-cl').css('display','flex');
         //     $('.not-ab-cl').css('align-items','center');
         //     $('.not-ab-cl').css('justify-content','center');
@@ -601,9 +601,9 @@
         //     $('main').css('grid-template-rows','4fr 9fr 9fr');
         // })
         
-        $('#skills').click(function(){
-            $('#skills-open').css('display','grid');
-            $('#skills').css('display','none');
+        $('#skills-closed').click(function(){
+            $('#skills').css('display','grid');
+            $('#skills-closed').css('display','none');
             $('.not-sk-cl').css('display','flex');
             $('.not-sk-cl').css('align-items','center');
             $('.not-sk-cl').css('justify-content','center');
@@ -611,11 +611,11 @@
             $('main').css('grid-template-columns','20fr 60fr 20fr');
             $('main').css('grid-template-rows','auto');
         })
-        // $('#skills-open').click(function(){
-        //     $('#skills-open').css('display','none');
-        //     $('#skills').css('display','flex');
-        //     $('#skills').css('align-items','center');
-        //     $('#skills').css('justify-content','center');
+        // $('#skills').click(function(){
+        //     $('#skills').css('display','none');
+        //     $('#skills-closed').css('display','flex');
+        //     $('#skills-closed').css('align-items','center');
+        //     $('#skills-closed').css('justify-content','center');
         //     $('.not-sk-cl').css('display','flex');
         //     $('.not-sk-cl').css('align-items','center');
         //     $('.not-sk-cl').css('justify-content','center');
@@ -624,9 +624,9 @@
         //     $('main').css('grid-template-rows','4fr 9fr 9fr');
         // })
         
-        $('#work').click(function(){
-            $('#work-open').css('display','initial');
-            $('#work').css('display','none');
+        $('#work-closed').click(function(){
+            $('#work').css('display','initial');
+            $('#work-closed').css('display','none');
             $('.not-wo-cl').css('display','flex');
             $('.not-wo-cl').css('align-items','center');
             $('.not-wo-cl').css('justify-content','center');
@@ -634,11 +634,11 @@
             $('main').css('grid-template-columns','20fr 20fr 60fr');
             $('main').css('grid-template-rows','auto');
         })
-        // $('#work-open').click(function(){
-        //     $('#work-open').css('display','none');
-        //     $('#work').css('display','flex');
-        //     $('#work').css('align-items','center');
-        //     $('#work').css('justify-content','center');
+        // $('#work').click(function(){
+        //     $('#work').css('display','none');
+        //     $('#work-closed').css('display','flex');
+        //     $('#work-closed').css('align-items','center');
+        //     $('#work-closed').css('justify-content','center');
         //     $('.not-wo-cl').css('display','flex');
         //     $('.not-wo-cl').css('align-items','center');
         //     $('.not-wo-cl').css('justify-content','center');
@@ -647,9 +647,9 @@
         //     $('main').css('grid-template-rows','4fr 9fr 9fr');
         // })
         
-        $('#contact').click(function(){
-            $('#contact-open').css('display','initial');
-            $('#contact').css('display','none');
+        $('#contact-closed').click(function(){
+            $('#contact').css('display','initial');
+            $('#contact-closed').css('display','none');
             $('.not-co-cl').css('display','flex');
             $('.not-co-cl').css('align-items','center');
             $('.not-co-cl').css('justify-content','center');
@@ -657,11 +657,11 @@
             $('main').css('grid-template-columns','60fr 20fr 20fr');
             $('main').css('grid-template-rows','auto');
         })
-        // $('#contact-open').click(function(){
-        //     $('#contact-open').css('display','none');
-        //     $('#contact').css('display','flex');
-        //     $('#contact').css('align-items','center');
-        //     $('#contact').css('justify-content','center');
+        // $('#contact').click(function(){
+        //     $('#contact').css('display','none');
+        //     $('#contact-closed').css('display','flex');
+        //     $('#contact-closed').css('align-items','center');
+        //     $('#contact-closed').css('justify-content','center');
         //     $('.not-co-cl').css('display','flex');
         //     $('.not-co-cl').css('align-items','center');
         //     $('.not-co-cl').css('justify-content','center');
@@ -670,9 +670,9 @@
         //     $('main').css('grid-template-rows','4fr 9fr 9fr');
         // })
         
-        $('#hobbies').click(function(){
-            $('#hobbies-open').css('display','initial');
-            $('#hobbies').css('display','none');
+        $('#hobbies-closed').click(function(){
+            $('#hobbies').css('display','initial');
+            $('#hobbies-closed').css('display','none');
             $('.not-ho-cl').css('display','flex');
             $('.not-ho-cl').css('align-items','center');
             $('.not-ho-cl').css('justify-content','center');
@@ -680,11 +680,11 @@
             $('main').css('grid-template-columns','20fr 60fr 20fr');
             $('main').css('grid-template-rows','4fr 9fr 9fr');
         })
-        // $('#hobbies-open').click(function(){
-        //     $('#hobbies-open').css('display','none');
-        //     $('#hobbies').css('display','flex');
-        //     $('#hobbies').css('align-items','center');
-        //     $('#hobbies').css('justify-content','center');
+        // $('#hobbies').click(function(){
+        //     $('#hobbies').css('display','none');
+        //     $('#hobbies-closed').css('display','flex');
+        //     $('#hobbies-closed').css('align-items','center');
+        //     $('#hobbies-closed').css('justify-content','center');
         //     $('.not-ho-cl').css('display','flex');
         //     $('.not-ho-cl').css('align-items','center');
         //     $('.not-ho-cl').css('justify-content','center');
@@ -693,9 +693,9 @@
         //     $('main').css('grid-template-rows','4fr 9fr 9fr');
         // })
         
-        $('#qualifications').click(function(){
-            $('#qualifications-open').css('display','initial');
-            $('#qualifications').css('display','none');
+        $('#qualifications-closed').click(function(){
+            $('#qualifications').css('display','initial');
+            $('#qualifications-closed').css('display','none');
             $('.not-qu-cl').css('display','flex');
             $('.not-qu-cl').css('align-items','center');
             $('.not-qu-cl').css('justify-content','center');
@@ -703,11 +703,11 @@
             $('main').css('grid-template-columns','20fr 20fr 60fr');
             $('main').css('grid-template-rows','auto');
         })
-        // $('#qualifications-open').click(function(){
-        //     $('#qualifications-open').css('display','none');
-        //     $('#qualifications').css('display','flex');
-        //     $('#qualifications').css('align-items','center');
-        //     $('#qualifications').css('justify-content','center');
+        // $('#qualifications').click(function(){
+        //     $('#qualifications').css('display','none');
+        //     $('#qualifications-closed').css('display','flex');
+        //     $('#qualifications-closed').css('align-items','center');
+        //     $('#qualifications-closed').css('justify-content','center');
         //     $('.not-qu-cl').css('display','flex');
         //     $('.not-qu-cl').css('align-items','center');
         //     $('.not-qu-cl').css('justify-content','center');
@@ -717,10 +717,10 @@
         // })
 
         $('#header').click(function(){
-            $('#qualifications-open').css('display','none');
-            $('#qualifications').css('display','flex');
-            $('#qualifications').css('align-items','center');
-            $('#qualifications').css('justify-content','center');
+            $('#qualifications').css('display','none');
+            $('#qualifications-closed').css('display','flex');
+            $('#qualifications-closed').css('align-items','center');
+            $('#qualifications-closed').css('justify-content','center');
             $('.not-qu-cl').css('display','flex');
             $('.not-qu-cl').css('align-items','center');
             $('.not-qu-cl').css('justify-content','center');
