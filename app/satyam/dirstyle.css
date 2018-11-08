@@ -8,7 +8,7 @@ body {
   position: relative;
   right: 0;
   left: 0;
-  width: 100%;
+  max-width: 100%;
 }
 
 /* Title style */
@@ -41,6 +41,7 @@ a {
   background-color: #4285f4;
   margin: 0;
   padding-left: 8em;
+  font-family: 'Roboto', Sans-Serif !important;
 }
 
 /* Start link position */
@@ -49,14 +50,24 @@ a {
   margin-right: 8em;
 }
 
-/* Lines position */
-.line {
+/* Flex and structure of sections with direction */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-grow: 70%;
   width: 100%;
-  float: left;
-  margin-left: 5em;
-  width: 100%;
+  border: solid black;
+  margin-left: 0;
 }
 
-.caution {
-  margin-left: 0;
+/* Text in section style */
+.central {
+  font-family: 'Roboto', Sans-Serif;
+}
+
+/* Texts distance style */
+small {
+  padding: 2em;
+  padding-top: 2em;
 }
