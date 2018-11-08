@@ -21,9 +21,9 @@ h1 {
   font-size: 8vw;
   min-width: 200px;
   text-transform: capitalize;
-  /* font-family: 'Crimson Text', serif; */
+  font-family: 'Crimson Text', serif;
   /* font-family: 'Hind', sans-serif; */
-  font-family: 'News Cycle', sans-serif;
+  /* font-family: 'News Cycle', sans-serif; */
   font-weight: 800;
   background-image: url('5006.png');
   background-repeat: repeat;
@@ -136,7 +136,8 @@ footer {
   padding-bottom: 10%;
   text-transform: capitalize;
   border-top: 2px solid black;
-  font-family: 'News Cycle', sans-serif;
+  /* font-family: 'News Cycle', sans-serif; */
+  font-family: 'Crimson Text', serif;
   font-weight: 400;
   vertical-align: bottom 0;
   position: relative;
