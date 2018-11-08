@@ -228,7 +228,7 @@ ul {
   height: 1em;
   border-radius: 50%;
   border: 0.25em solid var(--color-dark);
-  background-color: #7bacb3;
+  background-color: var(--color-med);
   position: absolute;
   top: -0.75em;
   left: -0.875em;
@@ -240,7 +240,7 @@ ul {
   height: 1em;
   border-radius: 50%;
   border: 0.25em solid var(--color-dark);
-  background-color: #7bacb3;
+  background-color: var(--color-med);
   position: absolute;
   top: -0.875em;
   left: -0.875em;
@@ -255,6 +255,30 @@ ul {
 
 #work-content li {
   padding: 0.15em;
+}
+
+@media only screen and (min-width: 520px) {
+  #work,
+  .active-work #work:hover {
+    background-color: var(--color-light);
+  }
+  
+  #contact,
+  .active-contact #contact:hover {
+    background-color: var(--color-med);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #work,
+  .active-work #work:hover {
+    background-color: var(--color-med);
+  }
+  
+  #contact,
+  .active-contact #contact:hover {
+    background-color: var(--color-light);
+  }
 }
 
 /* Contact styling */
