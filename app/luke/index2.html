@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -13,7 +14,8 @@
         <link rel="stylesheet" type="text/css" href="mobileButtons.css"> -->
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        
         <title> C.V</title>
         
         <style>
@@ -62,7 +64,7 @@
                 line-height: 10px;
                 padding:20px;
                 margin: 0;
-
+                
             }
             
             .cloud-buttons:hover {
@@ -358,6 +360,18 @@
                     margin: 0 auto;
                     text-align: justify;
                 }
+                #work {
+                    display: grid;
+                    grid-template-areas:
+                    "past-title past-title"
+                    "nationwide-date papa-date"
+                    "nationwide-img papa-img"
+                    "nationwide-modal papa-modal"
+                    "dominoes-date ibm-date"
+                    "dominoes-img ibm-img"
+                    "dominoes-modal ibm-modal";
+                    grid-template-columns: 1fr 1fr;
+                }
                 
             }
             
@@ -403,26 +417,53 @@
                 
             }
             
-            @media only screen and (max-width: 550px) {
-                #work {
-                    display: grid;
-                    grid-template-areas:
-                    "past-title past-title"
-                    "nationwide-date papa-date"
-                    "nationwide-img papa-img"
-                    "nationwide-modal papa-modal"
-                    "dominoes-date ibm-date"
-                    "dominoes-img ibm-img"
-                    "dominoes-modal ibm-modal";
-                    grid-template-columns: 1fr 1fr;
-                }
-            }
+            
             
         </style>
         
         
     </head>
     <body>
+        <div id="modal-rugby" class="modals js-modal">
+            <button class="js-modal-close">Return</button>
+            <p>This Nationwide</p>
+        </div>
+        <div id="modal-icehockey" class="modals js-modal">
+            <button class="js-modal-close">Return</button>
+            <p>This Nationwide</p>
+        </div>
+        <div id="modal-coding" class="modals js-modal">
+            <button class="js-modal-close">Return</button>
+            <p>This Nationwide</p>
+        </div>
+        <div id="modal-coldcases" class="modals js-modal">
+            <button class="js-modal-close">Return</button>
+            <p>This Nationwide</p>
+        </div>
+        <div id="modal-music" class="modals js-modal">
+            <button class="js-modal-close">Return</button>
+            <p>This Nationwide</p>
+        </div>
+        <div id="modal-puzzles" class="modals js-modal">
+            <button class="js-modal-close">Return</button>
+            <p>This Nationwide</p>
+        </div>
+        <div id="modal-hiking" class="modals js-modal">
+            <button class="js-modal-close">Return</button>
+            <p>This Nationwide</p>
+        </div>
+        <div id="modal-travelling" class="modals js-modal">
+            <button class="js-modal-close">Return</button>
+            <p>This Nationwide</p>
+        </div>
+        <div id="modal-scifi" class="modals js-modal">
+            <button class="js-modal-close">Return</button>
+            <p>This Nationwide</p>
+        </div>
+        <div id="modal-technology" class="modals js-modal">
+            <button class="js-modal-close">Return</button>
+            <p>This Nationwide</p>
+        </div>
         
         <div id="modal-nationwide" class="modals js-modal">
             <button class="js-modal-close">Return</button>
@@ -454,10 +495,10 @@
                     <img src="cobra.png" alt="brand" class="cobra-img">
                     <span id="navbarheader">LukeDelaney</span>
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav-dropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon blue"></span>
                 </button>
-                <div class="collapse navbar-collapse nav" >
+                <div class="collapse navbar-collapse nav" id="navbar-nav-dropdown">
                     <div class="navbar-nav ml-auto nav">
                         <a class="nav-item nav-link nav" href="#aca">Academics</a>
                         <a class="nav-item nav-link nav" href="#work">Past Lives</a>
@@ -479,26 +520,21 @@
                 
                 <div class="cloud">
                     <p>
-                        <button data-target="modal-" class="cloud-buttons small-text js-modal-open">photography</button>
-                        <button data-target="modal-" class="cloud-buttons larger-text js-modal-open">Mandarin</button>
-                        <button data-target="modal-" class="cloud-buttons small-text js-modal-open">guitar</button>
+                        <button data-target="modal-rugby" class="cloud-buttons small-text js-modal-open">Rugby</button>
+                        <button data-target="modal-icehockey" class="cloud-buttons larger-text js-modal-open">IceHockey</button>
+                        <button data-target="modal-coding" class="cloud-buttons small-text js-modal-open">Coding</button>
                     </p>
                     <p>
-                        <button data-target="modal-" class="cloud-buttons larger-text js-modal-open">Shanghai</button>
-                        <button data-target="modal-" class="cloud-buttons medium-text js-modal-open">video games</button>
-                        <button data-target="modal-" class="cloud-buttons large-text js-modal-open">travelling</button>
-                        <button data-target="modal-" class="cloud-buttons small-text js-modal-open">reading</button>
+                        <button data-target="modal-coldcases" class="cloud-buttons larger-text js-modal-open">ColdCases</button>                      
+                        <button data-target="modal-music" class="cloud-buttons larger-text js-modal-open">Music</button>
+                        <button data-target="modal-puzzles" class="cloud-buttons medium-text js-modal-open">Puzzles</button>
+                        <button data-target="modal-hiking" class="cloud-buttons large-text js-modal-open">Hiking</button>
                     </p>
                     <p>
-                        <button data-target="modal-" class="cloud-buttons medium-text js-modal-open">sketching</button>
-                        <button data-target="modal-" class="cloud-buttons large-text js-modal-open">sci-fi</button>
-                        <button data-target="modal-" class="cloud-buttons large-text js-modal-open">software developer</button>
-                        <button data-target="modal-" class="cloud-buttons larger-text js-modal-open">Dean's list</button>
-                    </p>
-                    <p>
-                        <button data-target="modal-" class="cloud-buttons medium-text js-modal-open">radiation lab</button>
-                        <button data-target="modal-" class="cloud-buttons medium-text js-modal-open">graphic novels</button>
-                        <button data-target="modal-" class="cloud-buttons small-text js-modal-open">USAD team coach</button>
+                        <button data-target="modal-travelling" class="cloud-buttons medium-text js-modal-open">Travelling</button>
+                        <button data-target="modal-scifi" class="cloud-buttons large-text js-modal-open">Sci-Fi</button>
+                        <button data-target="modal-technology" class="cloud-buttons large-text js-modal-open">Technology</button>
+                        
                     </p>
                 </div>
                 
@@ -510,16 +546,16 @@
                 <div class="aca-title"><h2>Academics</h2></div>
                 
                 <div class="nology-img"><img src="/app/luke/school/nologysquare.png" alt="nology logo"></div>
-                
-                <div class="uni-img"><img src="/app/luke/school/USW.jpg" alt="USW logo"></div>
-                
-                <div class="alban-img"><img src="/app/luke/school/st-albans.jpg" alt="st-albans logo"></div>
-                
                 <div class="nology-text">
                     <p><strong>2018-2019</strong></p>
                     <p><em>_nology</em></p>
                     <p>Current student on _nology's tech conversion course.</p>
                 </div>
+                <div class="uni-img"><img src="/app/luke/school/USW.jpg" alt="USW logo"></div>
+                
+                <div class="alban-img"><img src="/app/luke/school/st-albans.jpg" alt="st-albans logo"></div>
+                
+                
                 
                 <div class="uni-text">
                     <p><strong>2013-2017</strong></p>
@@ -615,27 +651,6 @@
             <section id="ref">
                 
                 <div class="ref-title"><h2>People who knew me</h2></div>
-                
-                <!-- <div class="ref-2">
-                    <p><strong>Papa John's</strong></p>
-                    <ul>
-                        <li>Name: Lauren cloud</li>
-                        <li>Position: Manager</li>
-                        <li>address: </li>
-                        <li>telephone: 07478592438</li>
-                        <li>Email: l.cloud@pjs.com</li>
-                    </ul>
-                </div>
-                <div class="ref-1">
-                    <p><strong>IBM</strong></p>
-                    <ul>
-                        <li>Name: Rob Kewley</li>
-                        <li>Poistion: Head Service Delivery Manager</li>
-                        <li>Address: </li>
-                        <li>Telephone: </li>
-                        <li>email:</li>
-                    </ul>
-                </div> -->
                 
                 <table class="table table-borderless table-hover">
                     <caption>References and their details</caption>
