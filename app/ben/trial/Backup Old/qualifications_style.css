@@ -1,0 +1,37 @@
+#qualifications {
+  justify-items: center;
+  font-size: 16px;
+}
+
+#qualifications > article {
+  margin: 0.75em;
+}
+
+#qualifications .date {
+  display: block;
+  font-size: 0.7em;
+  margin-bottom: 0.125em;
+}
+
+#qualifications li {
+  max-width: 25em;
+  font-size: 0.875em;
+  text-align: left;
+  margin: 0 auto;
+}
+
+#qualifications .options {
+  display: inline;
+  float: right;
+  font-size: 0.75em;
+}
+
+#qualifications .grade {
+  font-weight: 600;
+  font-size: 1.33em;
+}
+
+#qualifications .just-grade {
+  display: inline;
+  float: right;
+}
