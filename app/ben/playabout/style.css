@@ -35,12 +35,15 @@
 }
 
 .active-about #about #about-content,
-.active-skills #skills #skills-content,
 .active-work #work #work-content,
 .active-contact #contact #contact-content,
 .active-hobbies #hobbies #hobbies-content,
 .active-qualifications #qualifications #qualifications-content {
   display: block;
+}
+
+.active-skills #skills-content {
+  display: grid;
 }
 
 ul {
@@ -155,7 +158,7 @@ ul {
   grid-area: other;
 }
 
-@media only screen and (min-width: 1068px) {
+@media only screen and (min-width: 1230px) {
   #skills-content {
     grid-template-areas: "tech other";
     grid-template-columns: 1fr 1fr;
