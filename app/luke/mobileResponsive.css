@@ -1,4 +1,4 @@
-@media only screen and (max-width: 570px) {
+/* @media only screen and (max-width: 570px) {
   html {
     scroll-behavior: smooth;
   }
@@ -7,7 +7,6 @@
     font-family: 'Raleway', sans-serif;
     text-align: justify;
     background-color: white;
-    margin: 30px 30px 30px 30px;
     background-image: url(https://bit.ly/2RhRnjw);
     background-size: cover;
     background-position: center;
@@ -209,4 +208,4 @@
     float: right;
     text-align: right;
   }
-}
+} */
