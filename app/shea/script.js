@@ -51,11 +51,11 @@ function showSection(section) {
 }
 
 $("#toggle1").click(function(){
-    $("#bspp").slideToggle();
+    $("#tefl").slideToggle();
 });
 
 $("#toggle2").click(function(){
-    $("#tefl").slideToggle();
+    $("#bspp").slideToggle();
 });
 
 $('.js-modal-close').click(function(){

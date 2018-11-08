@@ -1,8 +1,8 @@
 :root {
-  --color-dark: #365256;
-  --color-med: #81b2b9;
-  --color-lightest: white;
-  --color-light: #9edde6;
+  --color-dark: #1b6dff;
+  --color-med: #b7d7ff;
+  --color-lightest: #a0bbbf;
+  --color-light: white;
   --color-darkest: black;
   --size-smallest: 1px;
   --size-small: 5px;
@@ -386,27 +386,6 @@ ul {
 #qualifications-content .just-grade {
   display: inline;
   float: right;
-}
-
-:root {
-  --color-dark: #365256;
-  --color-med: #81b2b9;
-  --color-lightest: white;
-  --color-light: #9edde6;
-  --color-darkest: black;
-  --size-smallest: 1px;
-  --size-small: 5px;
-  --size-med: 10px;
-  --size-large: 16px;
-  --size-largest: 24px;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-  font-family: 'Roboto Condensed', sans-serif;
 }
 
 h2 {
