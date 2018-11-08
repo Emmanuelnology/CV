@@ -91,7 +91,7 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width:100%;
+  width: 100%;
   justify-content: space-between;
   margin-top: 78px;
 }
@@ -99,14 +99,15 @@ a {
 .left-container,
 .right-container {
   width: 20%;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.3);
   border: none;
   color: rgba(255, 255, 255, 0.8);
   text-align: center;
+  display: none;
 }
 
 a:hover {
-  transform:scale(1.2);
+  transform: scale(1.2);
   color: white;
   text-decoration: none;
 }
@@ -345,6 +346,25 @@ footer {
     top: 0;
     text-transform: initial;
     z-index: 9;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 78px;
+  }
+
+  .left-container,
+  .right-container {
+    width: 15%;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    display: block;
   }
 
   nav > a {

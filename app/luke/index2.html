@@ -1,0 +1,714 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="pop-up.js"></script>
+    <link rel="stylesheet" type="text/css" href="desktopResponive.css">
+    <!-- <link rel="stylesheet" type="text/css" href="tabletResponive.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="mobileResponsive.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="buttons.css">
+        <link rel="stylesheet" type="text/css" href="mobileButtons.css"> -->
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> C.V</title>
+        
+        <style>
+            
+            #top {
+                height: 0px;
+            }
+            
+            nav {
+                background-color: white;
+            }
+            
+            .cobra-img {
+                height: 50px;
+                width: 50px;
+                display:inline-block;
+            }
+            
+            nav .blue {
+                color: rgb(23,32,159) !important;
+                display: inline-block;
+            }
+            
+            #navbarheader {
+                font-size: 35px;
+            }
+            
+            
+            
+            div.cloud {
+                text-align: center;
+                width: 100%;
+                margin: 0 auto;
+                padding: 0;
+            }
+            
+            div.cloud div {
+                display: inline-flex;
+                padding: 1%;
+            }
+            
+            .cloud-buttons {
+                color: white;
+                background-color: rgba(0,0,0,0);
+                border: 0px;
+                line-height: 10px;
+                padding:20px;
+                margin: 0;
+
+            }
+            
+            .cloud-buttons:hover {
+                font-weight: 800;
+                background-color: white;
+                color: rgb(23,32,159);
+                border-radius: 10px;
+                cursor: pointer;
+                overflow: visible;
+            }
+            
+            .small-text {
+                font-size: small;
+            }
+            
+            .larger-text {
+                font-size: larger;
+            }
+            
+            #aca {
+                display: grid;
+                grid-template-areas:
+                "aca-title aca-title aca-title aca-title"
+                "nology-img nology-img nology-text nology-text"
+                "uni-img uni-img uni-text uni-text"
+                "alban-img alban-img alban-text alban-text"
+                "programming-title programming-title personal-title personal-title"
+                "programming-img programming-img devils-img gaming-img"
+                "programming-img programming-img music-img rugby-img";
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-gap: 10px;
+                width: 100%;
+                margin: 0 auto;
+                text-align: justify;
+            }
+            
+            strong {
+                font-size: 25px;
+            }
+            
+            em {
+                font-size: 22px;
+            }
+            
+            #aca div img {
+                
+                width: 25%;
+                min-width: 100px;
+                max-width: 300px;
+                background-color: rgba(0,0,0,0);
+                border: 0;
+            }
+            
+            .aca-title,
+            .programming-title,
+            .personal-title,
+            .past-title,
+            .ref-title,
+            .con-title {
+                text-align: center;
+                padding: 50px 0;
+            }
+            
+            .aca-title {
+                grid-area: aca-title
+            }
+            
+            .nology-img {
+                grid-area: nology-img;
+                text-align: right;
+                height:100%;
+            }
+            
+            .uni-img {
+                grid-area: uni-img;
+                text-align: right;
+            }
+            
+            .alban-img {
+                grid-area: alban-img;
+                text-align: right;
+            }
+            
+            .nology-text {
+                grid-area: nology-text;
+            }
+            
+            .uni-text {
+                grid-area: uni-text;
+            }
+            
+            .alban-text {
+                grid-area: alban-text;
+            }
+            
+            .programming-title {
+                grid-area: programming-title;
+            }
+            
+            .programming-img {
+                grid-area: programming-img;
+                text-align: center;
+            }
+            
+            
+            
+            .personal-title {
+                grid-area: personal-title;
+            }
+            
+            
+            .devils-img {
+                grid-area: devils-img;
+                text-align: center;
+                height: 100%;
+            }
+            
+            .gaming-img {
+                grid-area: gaming-img;
+                text-align: center;
+            }
+            
+            .music-img {
+                grid-area: music-img;
+                text-align: center;
+            }
+            
+            .rugby-img {
+                grid-area: rugby-img;
+                text-align: center;
+            }
+            
+            #work {
+                display: grid;
+                grid-template-areas:
+                "past-title past-title past-title past-title"
+                "nationwide-date papa-date dominoes-date ibm-date"
+                "nationwide-img papa-img dominoes-img ibm-img"
+                "nationwide-modal papa-modal dominoes-modal ibm-modal";
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+            
+            .past-title {
+                grid-area: past-title;
+                text-align: center;
+            }
+            
+            .nationwide-date {
+                grid-area: nationwide-date;
+                text-align: center;
+            }
+            
+            .papa-date {
+                grid-area: papa-date;
+                text-align: center; 
+            }
+            
+            .dominoes-date {
+                grid-area: dominoes-date;
+                text-align: center;
+            }
+            
+            .ibm-date {
+                grid-area: ibm-date;
+                text-align: center;
+            }
+            
+            .nationwide-img {
+                grid-area: nationwide-img;
+                text-align: center;
+            }
+            
+            .papa-img {
+                grid-area: papa-img;
+                text-align: center;
+            }
+            
+            .dominoes-img {
+                grid-area: dominoes-img;
+                text-align: center;
+            }
+            
+            .ibm-img {
+                grid-area: ibm-img;
+                text-align: center;
+            }
+            
+            
+            .timeline-buttons {
+                color: white;
+                background-color: rgba(0,0,0,0);
+                border: 0px;
+            }
+            
+            .timeline-buttons:hover {
+                font-weight: 800;
+                cursor: pointer;
+            }
+            
+            .modals {
+                display: none;
+                position: fixed;
+                left: 20%;
+                right: 20%;
+                top: 100px;
+                bottom: 60px;
+                background-color:rgb(23,32,159);
+                padding: 20px;
+                border: 5px solid white;
+                border-radius: 20px;
+                z-index: 5;
+                color: white;
+                padding: 5%;
+            }
+            
+            .js-modal-close {
+                background-color: white;
+                color: rgb(23,32,159);
+                border: 0px;
+                border-radius: 20px;
+                height: 40px;
+                width: 70px;
+            }
+            
+            .nationwide-modal {
+                grid-area: nationwide-modal;
+                text-align: center;
+            }
+            
+            .papa-modal {
+                grid-area: papa-modal;
+                text-align: center;
+            }
+            
+            .dominoes-modal {
+                grid-area: dominoes-modal;
+                text-align: center;
+            }
+            
+            .ibm-modal {
+                grid-area: ibm-modal;
+                text-align: center;
+            }
+            
+            /* #ref {
+                display: grid;
+                grid-template-areas:
+                "ref-title ref-title"
+                "ref-2 ref-1";
+                grid-template-columns: 1fr 1fr;
+            }
+            
+            .ref-title {
+                grid-area: ref-title;
+            }
+            
+            .ref-2 {
+                grid-area: ref-2;
+            }
+            
+            .ref-1 {
+                grid-area: ref-1;
+            }
+            
+            .spna.ref {
+                float: right;
+            } */
+            
+            .table {
+                width: 60%;
+                margin: 0 auto;
+                text-align: left;
+                
+            }
+            
+            @media only screen and (max-width: 547px) {
+                #aca {
+                    display: grid;
+                    grid-template-areas:
+                    "aca-title aca-title"
+                    "nology-img nology-text"
+                    "uni-img uni-text"
+                    "alban-img alban-text"
+                    "programming-title programming-title"
+                    "programming-img programming-img"
+                    "programming-img programming-img"
+                    "personal-title personal-title"
+                    "devils-img gaming-img"
+                    "music-img rugby-img";
+                    grid-template-columns: 1fr 1fr;
+                    grid-gap: 10px;
+                    width: 100%;
+                    margin: 0 auto;
+                    text-align: justify;
+                }
+                
+            }
+            
+            @media only screen and (max-width: 368px) {
+                #aca {
+                    display: grid;
+                    grid-template-areas:
+                    "aca-title aca-title"
+                    "nology-img nology-img"
+                    "nology-text nology-text"
+                    "uni-img uni-img"
+                    "uni-text uni-text"
+                    "alban-img alban-img"
+                    "alban-text alban-text"
+                    "programming-title programming-title"
+                    "programming-img programming-img"
+                    "programming-img programming-img"
+                    "personal-title personal-title"
+                    "devils-img gaming-img"
+                    "music-img rugby-img";
+                    grid-template-columns: 1fr 1fr;
+                    grid-gap: 10px;
+                    width: 100%;
+                    margin: 0 auto;
+                    text-align: justify;
+                }
+                
+                .nology-img {
+                    text-align: center;
+                }
+                
+                .uni-img {
+                    text-align: center;
+                }
+                
+                .alban-img {
+                    text-align: center;
+                }
+                
+                .table {
+                    font-size: 12px;
+                }
+                
+            }
+            
+            @media only screen and (max-width: 550px) {
+                #work {
+                    display: grid;
+                    grid-template-areas:
+                    "past-title past-title"
+                    "nationwide-date papa-date"
+                    "nationwide-img papa-img"
+                    "nationwide-modal papa-modal"
+                    "dominoes-date ibm-date"
+                    "dominoes-img ibm-img"
+                    "dominoes-modal ibm-modal";
+                    grid-template-columns: 1fr 1fr;
+                }
+            }
+            
+        </style>
+        
+        
+    </head>
+    <body>
+        
+        <div id="modal-nationwide" class="modals js-modal">
+            <button class="js-modal-close">Return</button>
+            <p>This Nationwide</p>
+        </div>
+        <div id="modal-papa" class="modals js-modal">
+            <button class="js-modal-close">Return</button>
+            <p>This Papa</p>
+        </div>
+        <div id="modal-dominoes" class="modals js-modal">
+            <button class="js-modal-close">Return</button>
+            <p>This Dominoes</p>
+        </div>
+        <div id="modal-ibm" class="modals js-modal">
+            <button class="js-modal-close">Return</button>
+            <p>This IBM</p>
+        </div>
+        
+        
+        <div id="top"></div>
+        <!-- <header>
+            <h1>Luke Delaney's C.V.</h1>
+        </header> -->
+        
+        <nav class="navbar navbar-expand-md sticky-top navbar-light">
+            <div class="container">
+                
+                <a class="navbar-brand blue" href="#top">
+                    <img src="cobra.png" alt="brand" class="cobra-img">
+                    <span id="navbarheader">LukeDelaney</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon blue"></span>
+                </button>
+                <div class="collapse navbar-collapse nav" >
+                    <div class="navbar-nav ml-auto nav">
+                        <a class="nav-item nav-link nav" href="#aca">Academics</a>
+                        <a class="nav-item nav-link nav" href="#work">Past Lives</a>
+                        <a class="nav-item nav-link nav" href="#ref">References</a>
+                        <a class="nav-item nav-link nav" href="#con">Contact Info</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+        
+        
+        <main>
+            <!-- About me section -->
+            <section id="about" class="fifty">
+                <h2>Get to know me</h2>
+                
+                
+                
+                <div class="cloud">
+                    <p>
+                        <button data-target="modal-" class="cloud-buttons small-text js-modal-open">photography</button>
+                        <button data-target="modal-" class="cloud-buttons larger-text js-modal-open">Mandarin</button>
+                        <button data-target="modal-" class="cloud-buttons small-text js-modal-open">guitar</button>
+                    </p>
+                    <p>
+                        <button data-target="modal-" class="cloud-buttons larger-text js-modal-open">Shanghai</button>
+                        <button data-target="modal-" class="cloud-buttons medium-text js-modal-open">video games</button>
+                        <button data-target="modal-" class="cloud-buttons large-text js-modal-open">travelling</button>
+                        <button data-target="modal-" class="cloud-buttons small-text js-modal-open">reading</button>
+                    </p>
+                    <p>
+                        <button data-target="modal-" class="cloud-buttons medium-text js-modal-open">sketching</button>
+                        <button data-target="modal-" class="cloud-buttons large-text js-modal-open">sci-fi</button>
+                        <button data-target="modal-" class="cloud-buttons large-text js-modal-open">software developer</button>
+                        <button data-target="modal-" class="cloud-buttons larger-text js-modal-open">Dean's list</button>
+                    </p>
+                    <p>
+                        <button data-target="modal-" class="cloud-buttons medium-text js-modal-open">radiation lab</button>
+                        <button data-target="modal-" class="cloud-buttons medium-text js-modal-open">graphic novels</button>
+                        <button data-target="modal-" class="cloud-buttons small-text js-modal-open">USAD team coach</button>
+                    </p>
+                </div>
+                
+            </section>
+            
+            
+            <section id="aca">
+                <!-- Work and academic experience -->
+                <div class="aca-title"><h2>Academics</h2></div>
+                
+                <div class="nology-img"><img src="/app/luke/school/nologysquare.png" alt="nology logo"></div>
+                
+                <div class="uni-img"><img src="/app/luke/school/USW.jpg" alt="USW logo"></div>
+                
+                <div class="alban-img"><img src="/app/luke/school/st-albans.jpg" alt="st-albans logo"></div>
+                
+                <div class="nology-text">
+                    <p><strong>2018-2019</strong></p>
+                    <p><em>_nology</em></p>
+                    <p>Current student on _nology's tech conversion course.</p>
+                </div>
+                
+                <div class="uni-text">
+                    <p><strong>2013-2017</strong></p>
+                    <p><em>University of South Wales</em></p>
+                    <p>BA forensic accounting 2:2</p>
+                </div>
+                
+                <div class="alban-text">
+                    <p><strong>2005-2013</strong></p>
+                    <p><em>St-Alban's RC High School</em></p>
+                    <p>Business A-Level (D), Music BTEC (Distinction)</p>
+                    <p>9 GCSE's (C-E) including Maths, Science, and English</p>
+                </div>
+                
+                <div class="programming-title"><h2>Programming</h2></div>
+                
+                <div class="programming-img"> 
+                    <img src="/app/luke/pro/css3.jpg" alt="css3" class="pro-img btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="CSS">
+                    <img src="/app/luke/pro/html5.png" alt="html5" class="pro-img btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="HTML">
+                    <img src="/app/luke/pro/javascript.jpg" alt="javascript" class="pro-img btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="JavaScript">
+                    <img src="/app/luke/pro/python.png" alt="python" class="pro-img btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Python">
+                    <img src="/app/luke/pro/react.png" alt="react" class="pro-img btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="React">
+                    <img src="/app/luke/pro/angular.png" alt="angular" class="pro-img btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Angular">
+                    <img src="/app/luke/pro/bootstrap.png" alt="bootstrap" class="pro-img btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Bootstrap">
+                </div>
+                
+                <div class="personal-title"><h2>Personal Interests</h2></div>
+                
+                <div class="devils-img">
+                    <img src="/app/luke//personal/devils.png" alt="Cardiff devils ice hockey" class="per-img">
+                </div>
+                
+                <div class="gaming-img">
+                    <img src="/app/luke//personal/gaming.jpeg" alt="gaming" class="per-img">
+                </div>
+                
+                <div class="music-img">
+                    <img src="/app/luke/personal/musiclogo.png" alt="music" class="per-img">
+                </div>
+                
+                <div class="rugby-img">
+                    <img src="/app/luke/personal/WRU.png" alt="Welsh rugby" class="per-img">
+                </div>
+                
+                
+            </section>
+            <section id="work">
+                <div class="past-title"><h2>Past lives</h2></div>
+                
+                
+                
+                <div class="nationwide-date">
+                    <p><strong>2018 - Present</strong></p>
+                </div>
+                <div class="nationwide-img">
+                    <img class="img" src="../luke/pictures/nbs.jpg" alt="nationwide logo">
+                </div>
+                <div class="nationwide-modal">
+                    <button data-target="modal-nationwide" class="timeline-buttons js-modal-open">See More</button> 
+                </div>
+                
+                <div class="papa-date">
+                    <p><strong>2017-2018</strong></p>
+                </div>
+                <div class="papa-img">
+                    <img class="img" src="../luke/pictures/pjs.png" alt="papa john's logo">
+                </div>
+                <div class="papa-modal">
+                    <button data-target="modal-papa" class="timeline-buttons js-modal-open">See More</button>
+                </div>
+                
+                <div class="dominoes-date">
+                    <p><strong>2016-2017</strong></p>
+                </div>
+                <div class="dominoes-img">    
+                    <img class="img" src="../luke/pictures/dominos.png" alt="Dominoes logo">
+                </div>
+                <div class="dominoes-modal">
+                    <button data-target="modal-dominoes" class="timeline-buttons js-modal-open">See More</button>
+                </div>
+                
+                <div class="ibm-date">
+                    <p><strong>2015-2016</strong></p>
+                </div>
+                <div class="ibm-img">
+                    <img class="timeline-img3 img" src="../luke/pictures/ibm.png" alt="IBM logo">
+                </div>
+                <div class="ibm-modal">
+                    <button data-target="modal-ibm" class="timeline-buttons js-modal-open">See More</button>
+                </div>
+                
+            </section>
+            <section id="ref">
+                
+                <div class="ref-title"><h2>People who knew me</h2></div>
+                
+                <!-- <div class="ref-2">
+                    <p><strong>Papa John's</strong></p>
+                    <ul>
+                        <li>Name: Lauren cloud</li>
+                        <li>Position: Manager</li>
+                        <li>address: </li>
+                        <li>telephone: 07478592438</li>
+                        <li>Email: l.cloud@pjs.com</li>
+                    </ul>
+                </div>
+                <div class="ref-1">
+                    <p><strong>IBM</strong></p>
+                    <ul>
+                        <li>Name: Rob Kewley</li>
+                        <li>Poistion: Head Service Delivery Manager</li>
+                        <li>Address: </li>
+                        <li>Telephone: </li>
+                        <li>email:</li>
+                    </ul>
+                </div> -->
+                
+                <table class="table table-borderless table-hover">
+                    <caption>References and their details</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col">Papa John's</th>
+                            <th scope="col">IBM</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Name</th>
+                            <td>Lauren Cloud</td>
+                            <td>Rob Kewley</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Position</th>
+                            <td>Manager</td>
+                            <td>Head of service Delivery Manager</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Phone</th>
+                            <td>07478592438</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Email</th>
+                            <td>l.cloud@pjs.com</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </section>
+            <div class="con-title"><h2 id="con">Let's talk</h2></div>
+            <span>
+                <p>
+                    <a href="mailto:luke.delaney@nology.io" title="E-mail me"><i class="fa fa-at"></i></a>
+                    <a href="https://uk.linkedin.com/in/delaneyluke" target="_blank" title="Linked in"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://github.com/thatwelshfella" target="_blank" title="Github"><i class="fa fa-github"></i></a>
+                    <a href="https://twitter.com/thatwelshfella" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a>
+                </p> 
+            </span>
+            <div class="map">
+                <iframe src="https://bit.ly/2DcPb9S" allowfullscreen></iframe>   
+            </div>
+        </main>
+        
+        <footer> &copy;2018 Luke Delaney&#32;|&#32;<a href="#" class="cv">Download C.V.</a>&#32;|</footer>
+    </div>
+</body>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<script>
+    
+    $('.js-modal-close').click(function(){
+        $('.js-modal').slideUp();
+        $('body').css('overflow', 'auto');
+    });
+    
+    $('.js-modal-open').click(function(){
+        var modalID = $(this).attr('data-target');
+        $('#' + modalID).slideDown();
+        $('body').css('overflow', 'hidden');
+    });
+    
+    
+</script>
+
+
+</html>
