@@ -252,6 +252,7 @@ ul.skillslist {
     height: 10vh;
     width: 35vw;
     font-size: 1.8vw;
+    padding-bottom: 0.2em;
   }
 
   #toggle {
