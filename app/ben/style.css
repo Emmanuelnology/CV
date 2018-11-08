@@ -1,6 +1,6 @@
 :root {
   --color-dark: #1b6dff;
-  --color-med: #b7d7ff;
+  --color-med: #eef6ff;
   --color-lightest: #a0bbbf;
   --color-light: white;
   --color-darkest: black;
@@ -51,7 +51,7 @@ ul {
 }
 
 #grid {
-  opacity: 0.7;
+  opacity: 1;
 }
 
 #title {
@@ -257,7 +257,7 @@ ul {
   padding: 0.15em;
 }
 
-@media only screen and (min-width: 520px) {
+@media only screen and (min-width: 585px) {
   #work,
   .active-work #work:hover {
     background-color: var(--color-light);
@@ -447,7 +447,6 @@ ul {
 }
 
 main {
-  opacity: 0.7;
   color: var(--color-dark);
   min-height: 100vh;
 }
