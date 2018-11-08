@@ -8,7 +8,7 @@ body {
   position: relative;
   right: 0;
   left: 0;
-  width: 100%;
+  max-width: 100%;
 }
 
 /* Title style */
@@ -54,10 +54,20 @@ a {
 .flex-container {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  flex-grow: 70%;
+  width: 100%;
+  border: solid black;
+  margin-left: 0;
 }
 
-/* Start link position */
+/* Text in section style */
 .central {
   font-family: 'Roboto', Sans-Serif;
-  color: pink;
+}
+
+/* Texts distance style */
+small {
+  padding: 2em;
+  padding-top: 2em;
 }
