@@ -317,6 +317,7 @@ nav ul {
 }
 
 #navtext {
+  display: none;
   font-size: 15px;
   color: white;
   font-family: 'Fauna One', serif;
@@ -476,6 +477,7 @@ section {
     width: 120px;
     position: static;
     text-align: initial;
+    display: block;
   }
 
   #brain {
@@ -534,6 +536,7 @@ section {
   #navtext {
     width: 100%;
     text-align: right;
+    display: block;
   }
 }
 
