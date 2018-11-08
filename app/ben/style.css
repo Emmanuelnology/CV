@@ -19,17 +19,9 @@
   font-family: 'Roboto Condensed', sans-serif;
 }
 
-h1 {
-  text-align: center;
-  font-size: 34px;
-}
-
-h2 {
-  text-align: center;
-  font-size: 22px;
-}
-
 body {
+  margin: 0;
+  height: 100vh;
   background-image: url('bg.jpg');
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -41,211 +33,404 @@ body {
   min-height: 100vh;
 }
 
+h1,
+h2,
+p {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3em;
+  vertical-align: middle;
+}
+
+h2 {
+  font-size: 34px;
+  vertical-align: middle;
+}
+
+.grid-cell {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.grid-cell #about-content,
+.grid-cell #skills-content,
+.grid-cell #work-content,
+.grid-cell #contact-content,
+.grid-cell #hobbies-content,
+.grid-cell #qualifications-content {
+  display: none;
+}
+
+.active-about #about #about-content,
+.active-skills #skills #skills-content,
+.active-work #work #work-content,
+.active-contact #contact #contact-content,
+.active-hobbies #hobbies #hobbies-content,
+.active-qualifications #qualifications #qualifications-content {
+  display: block;
+}
+
 ul {
   list-style: none;
 }
 
 #grid {
-  display: grid;
-  grid-template-areas: "header" "about" "skills" "work" "contact" "hobbies" "qualifications";
-  grid-template-columns: 100fr;
   opacity: 0.7;
+}
+
+#title {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+}
+
+#about,
+#work,
+#hobbies,
+.active-about #about:hover,
+.active-work #work:hover,
+.active-hobbies #hobbies:hover {
+  background-color: var(--color-med);
+  padding: var(--size-med);
   color: var(--color-dark);
-  min-height: 100vh;
+  cursor: context-menu;
 }
 
-#header {
-  grid-area: header;
+#skills,
+#contact,
+#qualifications,
+.active-skills #skills:hover,
+.active-contact #contact:hover,
+.active-qualifications #qualifications:hover {
+  background-color: var(--color-light);
+  padding: var(--size-med);
+  color: var(--color-dark);
+  cursor: context-menu;
+}
+
+#about:hover,
+#work:hover,
+#hobbies:hover,
+#skills:hover,
+#contact:hover,
+#qualifications:hover,
+#title:hover {
   background-color: var(--color-dark);
   color: var(--color-light);
-  font-size: 3em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   cursor: pointer;
 }
 
+/* About styling */
 #about {
-  grid-area: about;
-  background-color: var(--color-med);
-  padding: var(--size-med);
-  display: none;
+  font-size: 14px;
 }
 
-#about-closed {
-  grid-area: about;
-  background-color: var(--color-med);
-  padding: var(--size-med);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
+#about .large {
+  font-weight: 600;
 }
 
-#skills {
-  grid-area: skills;
-  background-color: var(--color-light);
-  padding: var(--size-med);
-  display: none;
+/* Sills styling */
+#skills-content {
+  font-size: 16px;
 }
 
-#skills-closed {
-  grid-area: skills;
-  background-color: var(--color-light);
-  padding: var(--size-med);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
+#skills-content h3 {
+  width: 300px;
+  margin-bottom: 0.625em;
 }
 
+#skills-content ul {
+  list-style: none;
+  text-align: left;
+  margin: 0 0.875em;
+}
+
+#skills-content li {
+  width: 300px;
+  font-weight: 600;
+  padding-bottom: 0.875em;
+}
+
+#skills-content li > div {
+  display: block;
+  text-align: justify;
+  font-size: 0.875em;
+  font-weight: 100;
+  padding: 0 0.625em;
+  margin-top: 0.2em;
+}
+
+#skills-content .stars {
+  float: right;
+  font-size: 0.8em;
+  padding: 0;
+  margin: 0;
+}
+
+#skills-content {
+  display: grid;
+  grid-template-areas:
+    "key key2"
+    "tech other";
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+#skills-content h2 {
+  grid-area: key;
+}
+
+#skills-content h5 {
+  grid-area: key2;
+}
+
+#skills-content #tech {
+  float: left;
+  width: 100%;
+}
+
+#skills-content #other {
+  float: left;
+  width: 100%;
+  padding-top: 10px;
+  border-top: 1px solid black;
+}
+
+@media only screen and (min-width: 1260px) {
+  #skills-content #tech {
+    width: 50%;
+    padding: 5px;
+  }
+
+  #skills-content #other {
+    width: 50%;
+    border-top: none;
+    padding: 5px;
+  }
+}
+
+/* Work styling */
 #work {
-  grid-area: work;
-  background-color: var(--color-med);
-  padding: var(--size-med);
-  display: none;
-}
-
-#work-closed {
-  grid-area: work;
-  background-color: var(--color-med);
-  padding: var(--size-med);
+  margin: 0;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
+  color: var(--color-dark);
 }
 
+#work .timeline {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+
+#work .timeline > div {
+  width: 50%;
+  position: relative;
+  padding: 1em;
+}
+
+#work .timeline > div:nth-child(even) {
+  border-left: 0.125em var(--color-dark) solid;
+}
+
+#work .timeline > div:nth-child(odd) {
+  border-right: 0.125em var(--color-dark) solid;
+  text-align: right;
+}
+
+#work .timeline > .emptytop {
+  padding-top: 0.5em;
+  margin-top: 0.6em;
+}
+
+#work .timeline > .emptytop,
+#work .timeline > .empty {
+  display: flex;
+  align-items: flex-end;
+  font-weight: 600;
+  font-size: 1.142em;
+  padding-bottom: 0.4em;
+}
+
+#work .timeline > .emptytop:nth-child(even),
+#work .timeline > .empty {
+  border-bottom: 0.125em solid var(--color-dark);
+}
+
+#work .timeline > .content {
+  border-top: 0.125em solid var(--color-dark);
+  padding-top: 0.25em;
+}
+
+#work .timeline > .contentlast {
+  padding-bottom: 0.5em;
+}
+
+#work .timeline > .empty:nth-child(even)::before,
+#work .timeline > .emptylast:nth-child(even)::before {
+  content: " ";
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  border: 0.25em solid var(--color-dark);
+  background-color: #7bacb3;
+  position: absolute;
+  top: -0.75em;
+  left: -0.875em;
+}
+
+#work .timeline > .content:nth-child(even)::before {
+  content: " ";
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  border: 0.25em solid var(--color-dark);
+  background-color: #7bacb3;
+  position: absolute;
+  top: -0.875em;
+  left: -0.875em;
+}
+
+#work ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#work li {
+  padding: 0.15em;
+}
+
+/* Contact styling */
 #contact {
-  grid-area: contact;
-  background-color: var(--color-light);
-  padding: var(--size-med);
-  display: none;
+  text-align: center;
+  font-size: 16px;
 }
 
-#contact-closed {
-  grid-area: contact;
-  background-color: var(--color-light);
-  padding: var(--size-med);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
+#contact section {
+  margin: 1em;
 }
 
-#hobbies {
-  grid-area: hobbies;
-  background-color: var(--color-med);
-  padding: var(--size-med);
-  display: none;
+#contact ul {
+  list-style: none;
 }
 
-#hobbies-closed {
-  grid-area: hobbies;
-  background-color: var(--color-med);
-  padding: var(--size-med);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
+#contact li {
+  padding: 0.125em;
 }
 
-#qualifications {
-  grid-area: qualifications;
-  background-color: var(--color-light);
-  padding: var(--size-med);
-  display: none;
+#contact .enlarges:hover {
+  font-size: 1.2em;
 }
 
-#qualifications-closed {
-  grid-area: qualifications;
-  background-color: var(--color-light);
-  padding: var(--size-med);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
+#contact a {
+  color: inherit;
+  font-size: 0.875em;
 }
 
-#about-closed:hover,
-#work-closed:hover,
-#hobbies-closed:hover {
-  background-color: var(--color-dark);
-  color: var(--color-med);
+#contact address {
+  font-style: unset;
 }
 
-#skills-closed:hover,
-#contact-closed:hover,
-#qualifications-closed:hover {
+#contact article {
+  display: inline;
+}
+
+#contact .fab {
+  font-size: 3.125em;
+  margin: 0 0.1em;
+}
+
+#contact .fab:hover {
+  font-size: 3.75em;
+}
+
+#contact .fa-linkedin {
+  color: #0274b3;
+}
+
+#contact .fa-facebook-square {
+  color: #4267b2;
+}
+
+#contact .fa-twitter-square {
+  color: #28aae1;
+}
+
+#contact .fa-github-sqare {
+  color: #24292e;
+}
+
+#contact .button {
   background-color: var(--color-dark);
   color: var(--color-light);
+  border: none;
+  display: inline-block;
+  font-size: 18px;
+  border-radius: 20px;
+  padding: 7px 17px;
+  margin: 10px;
+  width: 205px;
 }
 
-@media only screen and (min-width: 425px) {
-  #grid {
-    grid-template-areas: "header header" "about skills" "work contact" "hobbies qualifications";
-    grid-template-columns: 50fr 50fr;
-  }
-
-  header {
-    font-size: 3.5em;
-  }
-
-  #work,
-  #work-closed {
-    background-color: var(--color-light);
-  }
-
-  #work-closed:hover {
-    background-color: var(--color-dark);
-    color: var(--color-light);
-  }
-
-  #contact,
-  #contact-closed {
-    background-color: var(--color-med);
-  }
-
-  #contact-closed:hover {
-    background-color: var(--color-dark);
-    color: var(--color-med);
-  }
+#contact .button:hover {
+  opacity: 0.75;
+  color: white;
+  cursor: pointer;
 }
 
-@media only screen and (min-width: 596px) {
-  header {
-    font-size: 4em;
-  }
+/* Hobbies styling */
+#hobbies {
+  font-size: 16px;
+  text-align: center;
 }
 
-@media only screen and (min-width: 768px) {
-  #grid {
-    grid-template-areas: "header header header" "about skills work" "contact hobbies qualifications";
-    grid-template-columns: 33fr 34fr 33fr;
-    grid-template-rows: 4fr 9fr 9fr;
-  }
+#hobbies i {
+  margin-top: 0.75em;
+}
 
-  header {
-    font-size: 4.5em;
-  }
+#hobbies li {
+  font-size: 0.875em;
+}
 
-  #work,
-  #work-closed {
-    background-color: var(--color-med);
-  }
+/* Qualifications styling */
+#qualifications {
+  justify-items: center;
+  font-size: 16px;
+}
 
-  #work-closed:hover {
-    background-color: var(--color-dark);
-    color: var(--color-med);
-  }
+#qualifications > article {
+  margin: 0.75em;
+}
 
-  #contact,
-  #contact-closed {
-    background-color: var(--color-light);
-  }
+#qualifications .date {
+  display: block;
+  font-size: 0.7em;
+  margin-bottom: 0.125em;
+}
 
-  #contact-closed:hover {
-    background-color: var(--color-dark);
-    color: var(--color-light);
-  }
+#qualifications li {
+  max-width: 25em;
+  font-size: 0.875em;
+  text-align: left;
+  margin: 0 auto;
+}
+
+#qualifications .options {
+  display: inline;
+  float: right;
+  font-size: 0.75em;
+}
+
+#qualifications .grade {
+  font-weight: 600;
+  font-size: 1.33em;
+}
+
+#qualifications .just-grade {
+  display: inline;
+  float: right;
 }
