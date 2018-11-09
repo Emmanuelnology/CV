@@ -279,6 +279,8 @@ main {
   bottom: 0;
   left: 0;
   right: 0;
+  padding-bottom: 80px;
+  padding-top: 60px;
 }
 
 .item .bottom::before {
@@ -304,6 +306,10 @@ main {
   text-align: center;
   height: 100%;
   width: 100%;
+}
+
+ul {
+  list-style-type: none;
 }
 
 #nology {
