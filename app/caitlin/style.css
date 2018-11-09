@@ -21,9 +21,9 @@ body {
 h1 {
   text-align: center;
   vertical-align: middle;
-  padding: 10vh;
+  /* padding: 10vh; */
   margin: 30vh 0 0 0;
-  font-size: 3em;
+  font-size: 2em;
 }
 
 nav {
@@ -75,7 +75,7 @@ a {
 #top-panel {
   color: white;
   margin: 0;
-  height: 100vh;
+  height: 80vh;
 }
 
 #top-panel > header {
@@ -300,6 +300,13 @@ footer {
   #extra-curricular > div > div {
     min-width: 50%;
   }
+  h1 {
+    font-size: 3em;
+  }
+
+  #top-panel {
+    height: 93vh;
+  }
 
   #cheer {
     border-right: 10px solid transparent;
@@ -359,6 +366,10 @@ footer {
     margin: 0;
     font-size: 1em;
     padding: 1em;
+  }
+
+  h1 {
+    font-size: 3.5em;
   }
 
   #extra-curricular > div {
