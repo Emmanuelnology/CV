@@ -245,15 +245,23 @@ ul.skillslist {
       "indicator map"
       "infopanel map";
     grid-template-columns: 1fr 3fr;
+    font-size: 1.4vw;
   }
 
   #sectionindicator {
     height: 10vh;
     width: 35vw;
+    font-size: 1.8vw;
+    padding-left: 0.2em;
+    padding-bottom: 0.2em;
   }
 
   #toggle {
     display: none;
+  }
+
+  h2 {
+    font-size: 3vw;
   }
 
   #container {

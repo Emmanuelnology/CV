@@ -57,17 +57,22 @@ a {
   justify-content: center;
   flex-grow: 70%;
   width: 100%;
-  border: solid black;
   margin-left: 0;
 }
 
-/* Text in section style */
-.central {
+/* Section width to seperate from icons, and style */
+li > div {
+  width: 100%;
   font-family: 'Roboto', Sans-Serif;
 }
 
-/* Texts distance style */
+/* Distance number width */
 small {
-  padding: 2em;
-  padding-top: 2em;
+  width: 30%;
+  margin-bottom: 0;
+}
+
+/* Lines padding */
+hr {
+  top: 2em;
 }

@@ -1,0 +1,39 @@
+/*
+
+Usage:
+
+Make sure you have the right number of sub elements and have assigned the class to the parent element
+
+<div class="u-flex-2">
+  <div>
+    First 1
+  </div>
+  <div>
+    First 2
+  </div>
+</div>
+
+*/
+
+.u-flex-2,
+.u-flex-3 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.u-flex-2 > * {
+  flex-basis: 50%;
+  box-sizing: border-box;
+}
+
+.u-flex-3 > * {
+  flex-basis: 33.3333%;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 600px) {
+  .u-flex-2 > *,
+  .u-flex-3 > * {
+    flex-basis: 100%;
+  }
+}
