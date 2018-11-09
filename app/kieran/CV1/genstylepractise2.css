@@ -1,7 +1,7 @@
 :root {
-  --tab-background: linear-gradient(rgb(138, 36, 151), rgb(157, 91, 211), rgb(192, 217, 255));
+  --tab-background: linear-gradient(rgb(138, 36, 151), rgb(157,91,211), rgb(188, 226, 255));
   --tab-color: white;
-}
+   }
 
 * {
   box-sizing: border-box;

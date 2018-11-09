@@ -19,13 +19,14 @@
 #hobbies { grid-area: e; }
 #qualifications { grid-area: f; }
 
-@media only screen and (min-width: 530px) {
+@media only screen and (min-width: 585px) {
   #grid {
     grid-template-areas:
       "t t t t t t"
       "a a a b b b"
       "c c c d d d"
       "e e e f f f";
+    grid-template-columns: 16.67fr 16.67fr 16.66fr 16.67fr 16.66fr 16.67fr;
   }
 
   #grid .grid-cell {
@@ -41,47 +42,47 @@
     grid-template-areas:
       "t t t t t t"
       "a a a a b b"
-      "c c c d d d"
-      "e e e f f f";
+      "c c c c d d"
+      "e e e e f f";
   }
 
   #grid.active-skills {
     grid-template-areas:
       "t t t t t t"
       "a a b b b b"
-      "c c c d d d"
-      "e e e f f f";
+      "c c d d d d"
+      "e e f f f f";
   }
 
   #grid.active-work {
     grid-template-areas:
       "t t t t t t"
-      "a a a b b b"
+      "a a a a b b"
       "c c c c d d"
-      "e e e f f f";
+      "e e e e f f";
   }
 
   #grid.active-contact {
     grid-template-areas:
       "t t t t t t"
-      "a a a b b b"
+      "a a b b b b"
       "c c d d d d"
-      "e e e f f f";
+      "e e f f f f";
   }
 
   #grid.active-hobbies {
     grid-template-areas:
       "t t t t t t"
-      "a a a b b b"
-      "c c c d d d"
+      "a a a a b b"
+      "c c c c d d"
       "e e e e f f";
   }
 
   #grid.active-qualifications {
     grid-template-areas:
       "t t t t t t"
-      "a a a b b b"
-      "c c c d d d"
+      "a a b b b b"
+      "c c d d d d"
       "e e f f f f";
   }
 
@@ -94,12 +95,13 @@
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 768px) {
   #grid {
     grid-template-areas:
       "t t t t t t t t t"
       "a a a b b b c c c"
       "d d d e e e f f f";
+    grid-template-columns: 11.11fr 11.11fr 11.11fr 11.11fr 11.12fr 11.11fr 11.11fr 11.11fr 11.11fr;
   }
 
   #grid .grid-cell {
@@ -115,41 +117,41 @@
     grid-template-areas:
       "t t t t t t t t t"
       "a a a a a b b c c"
-      "d d d e e e f f f";
+      "d d d d d e e f f";
   }
 
   #grid.active-skills {
     grid-template-areas:
       "t t t t t t t t t"
       "a a b b b b b c c"
-      "d d d e e e f f f";
+      "d d e e e e e f f";
   }
 
   #grid.active-work {
     grid-template-areas:
       "t t t t t t t t t"
       "a a b b c c c c c"
-      "d d d e e e f f f";
+      "d d e e f f f f f";
   }
 
   #grid.active-contact {
     grid-template-areas:
       "t t t t t t t t t"
-      "a a a b b b c c c"
+      "a a a a a b b c c"
       "d d d d d e e f f";
   }
 
   #grid.active-hobbies {
     grid-template-areas:
       "t t t t t t t t t"
-      "a a a b b b c c c"
+      "a a b b b b b c c"
       "d d e e e e e f f";
   }
 
   #grid.active-qualifications {
     grid-template-areas:
       "t t t t t t t t t"
-      "a a a b b b c c c"
+      "a a b b c c c c c"
       "d d e e f f f f f";
   }
 
