@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+.u-flex-50{
+    display: flex;
+    flex-basis: 50%;
+}
+
+.u-flex-50 *{
+    flex: 1;
+}
+
+@media only screen and (max-width:400px) {
+    .u-flex-50 {
+    flex-basis:100%;
+    }
+}
+</style>
+
+<body>
+<main>
+    <div class="u-flex-50">
+    <div>
+    First 1
+    </div>
+    <div>
+    FIrst 2
+    </div>
+    </div>
+
+    <div class="u-flex-50">
+    <div>
+        Different 1
+    </div>
+    <div>
+        DIfferent 2
+    </div>
+    </div>
+</main>
+</body>
+</html>
