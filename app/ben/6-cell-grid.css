@@ -19,7 +19,7 @@
 #hobbies { grid-area: e; }
 #qualifications { grid-area: f; }
 
-@media only screen and (min-width: 520px) {
+@media only screen and (min-width: 585px) {
   #grid {
     grid-template-areas:
       "t t t t t t"
