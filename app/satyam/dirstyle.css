@@ -3,12 +3,18 @@
   font-family: 'Roboto', Sans-Serif;
 }
 
+/* Max-width on mobile */
+@media only screen and (max-width: 600px) {
+  body {
+      max-width: 98vh;
+  }
+}
+
 body {
   margin: 0;
   position: relative;
   right: 0;
   left: 0;
-  max-width: 100%;
 }
 
 /* Title style */
@@ -45,7 +51,7 @@ div > a {
 .beginning {
   background-color: #4285f4;
   margin: 0;
-  padding-left: 8em;
+  padding-left: 7em;
   font-family: 'Roboto', Sans-Serif !important;
 }
 
