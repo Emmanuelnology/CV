@@ -18,6 +18,7 @@ h2 {
   font-size: 4em;
   border: solid rgb(6, 6, 82);
   border-style: double;
+
   /* margin-left: 8em;
   margin-top: 0.8em;
   max-width: 9em; */
@@ -79,7 +80,7 @@ h3 {
   color: white;
   background-color: none;
   position: absolute;
-  top: 70%;
+  top: 55vh;
   text-align: center;
   left: 0;
   width: 100%;
@@ -98,7 +99,12 @@ h3 {
 header {
   text-align: center;
   font-family: 'Days One';
-  margin-top: 6em;
+  position: absolute;
+  top: 80vh;
+  left: 0;
+  right: 0;
+  font-size: 0.75em;
+  color: white;
 }
 
 .happyname {
@@ -115,16 +121,16 @@ header {
 }
 
 .arrow {
-  margin-top: 6%;
+  margin-top: 92.5vh;
   margin-left: 50%;
   margin-right: 17%;
   margin-bottom: 5%;
-  justify-content: center;
 }
 
+/*
 .small {
   margin-top: 48%;
-}
+} */
 
 .bounce {
   -moz-animation: bounce 2s infinite;
@@ -339,18 +345,26 @@ form textarea {
 }
 
 @media only screen and (max-width: 550px) {
-  
   nav > audio {
     display: none;
   }
 
   .emmanuel {
-    position: relative;
-    top: 0%;
+    position: absolute;
+    top: 25vh;
+    font-size: 1.7em;
   }
 
-  section{
+  section {
     color: red;
+  }
+
+  header {
+    position: absolute;
+    top: 72.5vh;
+    left: 0;
+    right: 0;
+    font-size: 0.75em;
   }
 
   .multi {
@@ -388,21 +402,26 @@ form textarea {
   .arrow {
     display: none;
   }
-
 }
 
-@media only screen and (min-width: 551px) and (max-width: 800px){
-  
+@media only screen and (min-width: 551px) and (max-width: 800px) {
   nav > audio {
     display: none;
   }
 
   .emmanuel {
-    position: relative;
-    top:0%;
+    position: absolute;
+    top: 30vh;
   }
-  
-  section{
+
+  header {
+    position: absolute;
+    top: 75vh;
+    left: 0;
+    right: 0;
+  }
+
+  section {
     color: red;
   }
 
@@ -411,7 +430,7 @@ form textarea {
   }
 
   .multi > div {
-    margin: 0px;
+    margin: 0;
     flex: 100% !important;
     margin: 1em;
   }
@@ -441,5 +460,4 @@ form textarea {
   .arrow {
     display: none;
   }
-
 }

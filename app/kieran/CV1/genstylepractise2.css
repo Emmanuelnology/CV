@@ -91,25 +91,30 @@ main {
 }
 
 .aboutmelabel {
-  background-color: pink;
+  background-image: var(--tab-background);
   margin-left: 1%;
+  color: var(--tab-color);
 }
 
 .worklabel {
-  background-color: lightgreen;
+  background-image: var(--tab-background);
+  color: var(--tab-color);
 }
 
 .projectslabel {
-  background-color: lightgoldenrodyellow;
+  background-image: var(--tab-background);
+  color: var(--tab-color);
 }
 
 .nowlabel {
-  background-color: #dd90e8;
+  background-image: var(--tab-background);
+  color: var(--tab-color);
 }
 
 .contactlabel {
-  background-color: rgb(82, 222, 219);
+  background-image: var(--tab-background);
   margin-right: 1%;
+  color: var(--tab-color);
 }
 
 footer {
