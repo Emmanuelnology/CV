@@ -27,10 +27,10 @@
       "c c c d d d"
       "e e e f f f";
     grid-template-columns: 16.67fr 16.67fr 16.66fr 16.67fr 16.66fr 16.67fr;
+    grid-auto-rows: 16vh 28vh 28vh 28vh;
   }
 
   #grid .grid-cell {
-    min-height: 28vh;
     min-width: 30vw;
   }
 
@@ -44,6 +44,7 @@
       "a a a a b b"
       "c c c c d d"
       "e e e e f f";
+    grid-auto-rows: auto auto auto auto;
   }
 
   #grid.active-skills {
@@ -52,6 +53,7 @@
       "a a b b b b"
       "c c d d d d"
       "e e f f f f";
+    grid-auto-rows: 16vh auto auto auto;
   }
 
   #grid.active-work {
@@ -60,6 +62,7 @@
       "a a a a b b"
       "c c c c d d"
       "e e e e f f";
+    grid-auto-rows: 16vh auto auto auto;
   }
 
   #grid.active-contact {
@@ -68,6 +71,7 @@
       "a a b b b b"
       "c c d d d d"
       "e e f f f f";
+    grid-auto-rows: 16vh auto auto auto;
   }
 
   #grid.active-hobbies {
@@ -76,6 +80,7 @@
       "a a a a b b"
       "c c c c d d"
       "e e e e f f";
+    grid-auto-rows: 16vh auto auto auto;
   }
 
   #grid.active-qualifications {
@@ -84,6 +89,7 @@
       "a a b b b b"
       "c c d d d d"
       "e e f f f f";
+    grid-auto-rows: 16vh auto auto auto;
   }
 
   #grid.active-title {
@@ -92,6 +98,7 @@
       "a a a b b b"
       "c c c d d d"
       "e e e f f f";
+    grid-auto-rows: 16vh 28vh 28vh 28vh;
   }
 }
 
@@ -102,10 +109,10 @@
       "a a a b b b c c c"
       "d d d e e e f f f";
     grid-template-columns: 11.11fr 11.11fr 11.11fr 11.11fr 11.12fr 11.11fr 11.11fr 11.11fr 11.11fr;
+    grid-auto-rows: 20vh 40vh 40vh;
   }
 
   #grid .grid-cell {
-    min-height: 40vh;
     min-width: 20vw;
   }
 
@@ -118,6 +125,7 @@
       "t t t t t t t t t"
       "a a a a a b b c c"
       "d d d d d e e f f";
+    grid-auto-rows: 20vh 50vh auto;
   }
 
   #grid.active-skills {
@@ -125,6 +133,7 @@
       "t t t t t t t t t"
       "a a b b b b b c c"
       "d d e e e e e f f";
+    grid-auto-rows: 20vh auto auto;
   }
 
   #grid.active-work {
@@ -132,6 +141,7 @@
       "t t t t t t t t t"
       "a a b b c c c c c"
       "d d e e f f f f f";
+    grid-auto-rows: 20vh auto auto;
   }
 
   #grid.active-contact {
@@ -139,6 +149,7 @@
       "t t t t t t t t t"
       "a a a a a b b c c"
       "d d d d d e e f f";
+    grid-auto-rows: 20vh auto auto;
   }
 
   #grid.active-hobbies {
@@ -146,6 +157,7 @@
       "t t t t t t t t t"
       "a a b b b b b c c"
       "d d e e e e e f f";
+    grid-auto-rows: 20vh auto auto;
   }
 
   #grid.active-qualifications {
@@ -153,6 +165,7 @@
       "t t t t t t t t t"
       "a a b b c c c c c"
       "d d e e f f f f f";
+    grid-auto-rows: 20vh auto auto;
   }
 
   #grid.active-title {
@@ -160,5 +173,6 @@
       "t t t t t t t t t"
       "a a a b b b c c c"
       "d d d e e e f f f";
+    grid-auto-rows: 20vh 40vh 40vh;
   }
 }
