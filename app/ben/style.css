@@ -97,16 +97,17 @@ ul {
 
 /* About styling */
 #about-content {
-  font-size: 14px;
+  font-size: var(--size-large);
+  font-size: 0.875em;
 }
 
 #about-content .large {
-  font-weight: 600;
+  font-weight: 400;
 }
 
 /* Skills styling */
 #skills-content {
-  font-size: 16px;
+  font-size: var(--size-large);
   display: grid;
   grid-template-areas: "tech" "other";
   grid-template-columns: 1fr;
@@ -126,7 +127,7 @@ ul {
 
 #skills-content li {
   width: 300px;
-  font-weight: 600;
+  font-weight: 400;
   padding-bottom: 0.875em;
 }
 
@@ -170,12 +171,13 @@ ul {
   margin: 0;
   display: flex;
   color: var(--color-dark);
+  font-size: var(--size-large);
 }
 
 #work-content .timeline {
   display: flex;
   flex-wrap: wrap;
-  font-size: 14px;
+  font-size: 0.875em;
 }
 
 #work-content .timeline > div {
@@ -202,7 +204,7 @@ ul {
 #work-content .timeline > .empty {
   display: flex;
   align-items: flex-end;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1.142em;
   padding-bottom: 0.4em;
 }
@@ -257,46 +259,10 @@ ul {
   padding: 0.15em;
 }
 
-@media only screen and (min-width: 585px) {
-  #work,
-  .active-work #work:hover {
-    background-color: var(--color-light);
-  }
-
-  #contact,
-  .active-contact #contact:hover {
-    background-color: var(--color-med);
-  }
-
-  #work-content .timeline > .empty:nth-child(even)::before,
-  #work-content .timeline > .emptylast:nth-child(even)::before,
-  #work-content .timeline > .content:nth-child(even)::before {
-    background-color: var(--color-light);
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  #work,
-  .active-work #work:hover {
-    background-color: var(--color-med);
-  }
-
-  #contact,
-  .active-contact #contact:hover {
-    background-color: var(--color-light);
-  }
-
-  #work-content .timeline > .empty:nth-child(even)::before,
-  #work-content .timeline > .emptylast:nth-child(even)::before,
-  #work-content .timeline > .content:nth-child(even)::before {
-    background-color: var(--color-med);
-  }
-}
-
 /* Contact styling */
 #contact-content {
   text-align: center;
-  font-size: 16px;
+  font-size: var(--size-large);
 }
 
 #contact-content section {
@@ -331,10 +297,6 @@ ul {
 #contact-content .fab {
   font-size: 3.125em;
   margin: 0 0.1em;
-}
-
-#contact-content .fab:hover {
-  font-size: 3.75em;
 }
 
 #contact-content .fa-linkedin {
@@ -373,7 +335,7 @@ ul {
 
 /* Hobbies styling */
 #hobbies-content {
-  font-size: 16px;
+  font-size: var(--size-large);
   text-align: center;
 }
 
@@ -388,7 +350,7 @@ ul {
 /* Qualifications styling */
 #qualifications-content {
   justify-items: center;
-  font-size: 16px;
+  font-size: var(--size-large);
 }
 
 #qualifications-content > article {
@@ -415,7 +377,7 @@ ul {
 }
 
 #qualifications-content .grade {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1.33em;
 }
 
@@ -461,4 +423,58 @@ ul {
 main {
   color: var(--color-dark);
   min-height: 100vh;
+}
+
+@media only screen and (min-width: 585px) {
+  #work,
+  .active-work #work:hover {
+    background-color: var(--color-light);
+  }
+
+  #contact,
+  .active-contact #contact:hover {
+    background-color: var(--color-med);
+  }
+
+  #about-content .large {
+    font-weight: 600;
+  }
+
+  #skills-content li {
+    font-weight: 600;
+  }
+
+  #work-content .timeline > .emptytop,
+  #work-content .timeline > .empty {
+    font-weight: 600;
+  }
+
+  #work-content .timeline > .empty:nth-child(even)::before,
+  #work-content .timeline > .emptylast:nth-child(even)::before,
+  #work-content .timeline > .content:nth-child(even)::before {
+    background-color: var(--color-light);
+  }
+
+  #qualifications-content .grade {
+    font-weight: 600;
+    font-size: 1.33em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #work,
+  .active-work #work:hover {
+    background-color: var(--color-med);
+  }
+
+  #contact,
+  .active-contact #contact:hover {
+    background-color: var(--color-light);
+  }
+
+  #work-content .timeline > .empty:nth-child(even)::before,
+  #work-content .timeline > .emptylast:nth-child(even)::before,
+  #work-content .timeline > .content:nth-child(even)::before {
+    background-color: var(--color-med);
+  }
 }
