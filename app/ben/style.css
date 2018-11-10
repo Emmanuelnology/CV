@@ -267,6 +267,13 @@ ul {
   .active-contact #contact:hover {
     background-color: var(--color-med);
   }
+
+  #work-content .timeline > .empty:nth-child(even)::before,
+  #work-content .timeline > .emptylast:nth-child(even)::before,
+  #work-content .timeline > .content:nth-child(even)::before {
+  background-color: var(--color-light);
+  }
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -278,6 +285,12 @@ ul {
   #contact,
   .active-contact #contact:hover {
     background-color: var(--color-light);
+  }
+
+  #work-content .timeline > .empty:nth-child(even)::before,
+  #work-content .timeline > .emptylast:nth-child(even)::before,
+  #work-content .timeline > .content:nth-child(even)::before {
+  background-color: var(--color-med);
   }
 }
 
