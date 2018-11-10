@@ -153,6 +153,7 @@ ul {
 
 #tech {
   grid-area: tech;
+  margin-bottom: 0.75em;
 }
 
 #other {
@@ -260,6 +261,10 @@ ul {
 }
 
 /* Contact styling */
+#contact h2 {
+  margin-bottom: 0;
+}
+
 #contact-content {
   text-align: center;
   font-size: var(--size-large);
@@ -348,6 +353,10 @@ ul {
 }
 
 /* Qualifications styling */
+#qualifications h2 {
+  margin-bottom: 0.25em;
+}
+
 #qualifications-content {
   justify-items: center;
   font-size: var(--size-large);
@@ -389,6 +398,7 @@ ul {
 h2 {
   text-align: center;
   font-size: 34px;
+  margin: var(--size-large);
 }
 
 h3 {
