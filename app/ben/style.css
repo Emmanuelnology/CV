@@ -271,9 +271,8 @@ ul {
   #work-content .timeline > .empty:nth-child(even)::before,
   #work-content .timeline > .emptylast:nth-child(even)::before,
   #work-content .timeline > .content:nth-child(even)::before {
-  background-color: var(--color-light);
+    background-color: var(--color-light);
   }
-
 }
 
 @media only screen and (min-width: 768px) {
@@ -290,7 +289,7 @@ ul {
   #work-content .timeline > .empty:nth-child(even)::before,
   #work-content .timeline > .emptylast:nth-child(even)::before,
   #work-content .timeline > .content:nth-child(even)::before {
-  background-color: var(--color-med);
+    background-color: var(--color-med);
   }
 }
 
