@@ -80,7 +80,7 @@ h3 {
   color: white;
   background-color: none;
   position: absolute;
-  top: 70%;
+  top: 55vh;
   text-align: center;
   left: 0;
   width: 100%;
@@ -99,7 +99,12 @@ h3 {
 header {
   text-align: center;
   font-family: 'Days One';
-  margin-top: 6em;
+  position: absolute;
+  top: 80vh;
+  left: 0;
+  right: 0;
+  font-size: 0.75em;
+  color: white;
 }
 
 .happyname {
@@ -116,16 +121,16 @@ header {
 }
 
 .arrow {
-  margin-top: 6%;
+  margin-top: 92.5vh;
   margin-left: 50%;
   margin-right: 17%;
   margin-bottom: 5%;
-  justify-content: center;
 }
 
+/*
 .small {
   margin-top: 48%;
-}
+} */
 
 .bounce {
   -moz-animation: bounce 2s infinite;
@@ -345,12 +350,21 @@ form textarea {
   }
 
   .emmanuel {
-    position: relative;
-    top: 0%;
+    position: absolute;
+    top: 25vh;
+    font-size: 1.7em;
   }
 
   section {
     color: red;
+  }
+
+  header {
+    position: absolute;
+    top: 72.5vh;
+    left: 0;
+    right: 0;
+    font-size: 0.75em;
   }
 
   .multi {
@@ -396,8 +410,15 @@ form textarea {
   }
 
   .emmanuel {
-    position: relative;
-    top: 0;
+    position: absolute;
+    top: 30vh;
+  }
+
+  header {
+    position: absolute;
+    top: 75vh;
+    left: 0;
+    right: 0;
   }
 
   section {
