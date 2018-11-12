@@ -6,7 +6,7 @@
     integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
     crossorigin="anonymous"></script>
     
-    <title>Ben Tomaney</title>
+    <title>Ben Tomaney's CV</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
     crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
@@ -15,9 +15,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+    <div id="blocker"></div>    
+    <aside class="js-modal" id="js-gift-shop">        
+        <i class="js-modal-close far fa-times-circle"></i>
+        <div>
+            Gift Shop Assistant, Avon Valley Railway (May 2017 &ndash; September 2017)
+        </div>
+        <ul>
+            <li>
+                Served and advised customers about products and pricing information, whilst offering excellent customer service.
+            </li>
+            <li>
+                Trusted to use a till and card machine, to handle money and in the balancing process.
+            </li>
+            <li>
+                Stacked and restocked shelves in and organised and attractive manner.
+            </li>
+        </ul>
+    </aside>
     <main class="active-f" id="grid">
         <section class="grid-cell" id="title" data-target="active-title">
-            <h1> Ben Tomaney's CV</h1>
+            <h1> Ben Tomaney</h1>
         </section>
         <section class="grid-cell" id="about" data-target="active-about">
             <h2>About Me</h2>
@@ -53,6 +71,17 @@
                         </li>
                         <li>
                             CSS
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div>Created an interactive CV.</div>
+                        </li>
+                        <li>
+                            JavaScript
                             <div class="stars">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -264,16 +293,13 @@
                     <div class="content">
                         <ul>
                             <li>
-                                Served and advised customers about products and pricing information, whilst offering excellent customer service.
+                                Sold gifts, souvenirs and refreshments to the public.
                             </li>
-                            <li>
-                                Trusted to use a till and card machine, to handle money and in the balancing process.
-                            </li>
-                            <li>
-                                Stacked and restocked shelves in and organised and attractive manner.
+                            <li class="js-modal-open" id="js-gift-shop-open">
+                                Find out more
                             </li>
                         </ul>
-                    </div> 
+                    </div>
                     <div class="content">
                         <ul>
                             <li>
@@ -533,6 +559,7 @@
     </footer>
     
     <script src="6-cell-grid.js"></script>
+    <script src="modals.js"></script>
 </body>
 
 </html>
