@@ -266,26 +266,32 @@
                     </q> - Colin Powell
                 </h3>
                 <div class="multi">
-                    <div class="bordure">image</div>
                     <div class="large-flex bordure">
-                        <button class="trigger"><img src="bristol-jam.jfif" alt="jam"></button>
-                            <div class="modal">
-                                <div class="modal-content">
-                                    <span class="close-button">×</span>
-                                    <h3>Social Media Officer</h3>
-                                    <h4>University of Bristol Sustainability Jam, Bristol</h4>
-                                    <h5>03/2018 - Current</h5>
-                                    <p>
-                                        <ul>
-                                            <li>Society organising sustainability projects and local environmental activism in Bristol.</li>
-                                            <li>Achievement: Raised awareness of sustainability issues among communities.</li>
-                                        </ul>
-                                    </p>
-                                </div>
+                        <a href="#open-modal1"><img src="bristol-jam.jfif" alt="jam"></a>
+                        <div id="open-modal1" class="modal-dialog">
+                            <div>
+                                <a href="#close" title="Close" class="close">X</a>
+                                <h3>Social Media Officer</h3>
+                                <h4>University of Bristol Sustainability Jam</h4>
+                                <h5>03/2018 - Current</h5>
+                                <p>Society organising sustainability projects and local environmental activism in Bristol.</p>
+                                <p>Achievement: Raised awareness of sustainability issues among communities.</p>
                             </div>
+                        </div>
+
+                        <a href="#open-modal2"><img src="circle.jpg" alt="circle"></a>                        
+                        <div id="open-modal2" class="modal-dialog">
+                            <div>
+                                <a href="#close" title="Close" class="close">X</a>
+                                <h3>Student Brand Ambassador</h3>
+                                <h4>Circle Pay</h4>
+                                <h5>03/2018 - 08/2018</h5>
+                                <p>Promotion of the mobile application on university campuses and on social media.</p>
+                                <p>Achievement: Achieved 30+ successful referrals to the mobile application.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
             </div>
         </section>
 
@@ -402,23 +408,6 @@
     </main>
 
     <script>
-        var modal = document.querySelector(".modal");
-        var trigger = document.querySelector(".trigger");
-        var closeButton = document.querySelector(".close-button");
-
-        function toggleModal() {
-            modal.classList.toggle("show-modal");
-        }
-
-        function windowOnClick(event) {
-            if (event.target === modal) {
-            toggleModal();
-            }
-        }
-
-        trigger.addEventListener("click", toggleModal);
-        closeButton.addEventListener("click", toggleModal);
-        window.addEventListener("click", windowOnClick);
     </script>
 
     <footer>
