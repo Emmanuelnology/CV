@@ -316,6 +316,12 @@ ul {
   background-size: cover;
 }
 
+/* Background image of education section */
+#educationkas {
+  background-image: url('kas-top.JPG');
+  background-size: cover;
+}
+
 /* Form styleand background */
 .message {
   background-image: url('sky.jfif');
