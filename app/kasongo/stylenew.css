@@ -13,7 +13,7 @@ body {
 }
 
 h2 {
-  color: rgb(59, 61, 199);
+  color: rgb(74, 49, 219);
   text-align: center;
   font-size: 4em;
   border: solid rgb(6, 6, 82);
@@ -293,7 +293,7 @@ ul {
 
 /* Skills section with an image */
 #skillkas {
-  background-image: url('kas-wood.jpg');
+  background-image: url('sky.jfif');
   background-size: cover;
   background-position: 0;
 }
@@ -324,7 +324,7 @@ ul {
 
 /* Form styleand background */
 .message {
-  background-image: url('sky.jfif');
+  background-image: url('kas-wood.jpg');
   background-size: cover;
 }
 
@@ -339,6 +339,10 @@ form input {
   justify-content: center;
 }
 
+form label {
+  color: rgb(87, 87, 206);
+}
+
 form textarea {
   background-color: rgb(141, 179, 216);
   justify-content: center;
@@ -348,6 +352,7 @@ form textarea {
   margin-top: 2em;
   padding-bottom: 2em;
   font-size: 1.5em;
+  color: rgb(87, 87, 206);
 }
 
 @media only screen and (max-width: 550px) {
