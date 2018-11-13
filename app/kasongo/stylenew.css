@@ -13,11 +13,12 @@ body {
 }
 
 h2 {
-  color: rgb(74, 49, 219);
+  color: rgb(49, 52, 219);
   text-align: center;
   font-size: 4em;
   border: solid rgb(6, 6, 82);
   border-style: double;
+  margin-top: 0.8em;
 
   /* margin-left: 8em;
   margin-top: 0.8em;
