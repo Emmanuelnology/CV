@@ -19,6 +19,8 @@ h2 {
   border: solid rgb(6, 6, 82);
   border-style: double;
   margin-top: 0.8em;
+  padding-top: 0;
+  padding-bottom: 0;
 
   /* margin-left: 8em;
   margin-top: 0.8em;
@@ -394,7 +396,8 @@ form textarea {
   }
 
   div > h2 {
-    padding: 1em;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   div > h3 {
@@ -452,7 +455,8 @@ form textarea {
   }
 
   div > h2 {
-    padding: 1em;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   div > h3 {
