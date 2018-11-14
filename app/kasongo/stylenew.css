@@ -267,14 +267,19 @@ ul {
 
 /* Map same size as section */
 .map {
-  width: 50vh;
-  height: 50vh;
+  width: 90%;
+  height: 90%;
 }
 
 /* My photos with the same size as the box */
 .kasface {
-  max-width: 90%;
-  max-height: 90%;
+  width: 50vh;
+  height: 40vh;
+}
+
+.photography {
+  width: 10vh;
+  height: 40vh;
 }
 
 /* Social links in line and central and below contact section */
