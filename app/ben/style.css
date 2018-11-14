@@ -106,9 +106,9 @@ ul {
 .js-modal {
   display: none;
   position: fixed;
-  top: 25%;
-  right: 25%;
-  width: 50%;
+  top: 35%;
+  right: 5%;
+  width: 90%;
   background-color: var(--color-light);
   z-index: 3;
   border-radius: 1em;
@@ -492,6 +492,11 @@ main {
 }
 
 @media only screen and (min-width: 585px) {
+  .js-modal {
+    right: 15%;
+    width: 70%;
+  }
+
   #work,
   .active-work #work:hover {
     background-color: var(--color-light);
@@ -528,6 +533,11 @@ main {
 }
 
 @media only screen and (min-width: 768px) {
+  .js-modal {
+    right: 25%;
+    width: 50%;
+  }
+
   #work,
   .active-work #work:hover {
     background-color: var(--color-med);
