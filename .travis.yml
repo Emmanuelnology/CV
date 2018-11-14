@@ -10,6 +10,7 @@ notifications:
   webhooks:
     urls:
       - https://webhook.site/f43038d6-0f67-4e7a-bdb0-bc9c4ecbee2b
+      - https://us-central1-build-monitor-c2cac.cloudfunctions.net/buildMessage
     on_success: always # default: always
     on_failure: always # default: always
     on_start: always   # default: never
