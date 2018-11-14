@@ -5,17 +5,125 @@
     src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
     crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="6-cell-grid.css">
-    <link rel="stylesheet" href="style.css">
+    
+    <title>Ben Tomaney's CV</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
     crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link rel="stylesheet" href="6-cell-grid.css" >
+    <link rel="stylesheet" href="style.css" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ben Tommaney</title>
 </head>
 <body>
+    <div id="blocker"></div>
+    <aside class="js-modal" id="js-huboo">
+        <i class="js-modal-close far fa-times-circle"></i>
+        <div>
+            Warehouse Assistant, Huboo (September 2018 &ndash; October 2018)
+        </div>
+        <ul>
+            <li>
+                Located and carefully packaged a large variety of items, before sorting and despatching them as mail.
+            </li>
+            <li>
+                Reliably booked in incoming items, individually labelling them and storing them in their correct location.
+            </li>
+            <li>
+                Rearranged, tidied and organised shelves in order to optimise efficiency of both despatching and booking in.
+            </li>
+        </ul>
+    </aside>
+    <aside class="js-modal" id="js-tutoring">
+        <i class="js-modal-close far fa-times-circle"></i>
+        <div>
+            Casual Teaching Assistant, University of Bath (September 2017 &ndash; May 2018)
+        </div>
+        <ul>
+            <li>
+                Utilised both written and verbal communication skills to explain new mathematical concepts.
+            </li>
+            <li>
+                Marked both written worksheets and MATLAB code on a weekly basis and assisted with the marking of MATLAB coursework.
+            </li>
+            <li>
+                Liaised with unit conveyors about overall student progress and any potential issues raised by students.
+            </li>
+        </ul>
+    </aside>
+    <aside class="js-modal" id="js-gift-shop">
+        <i class="js-modal-close far fa-times-circle"></i>
+        <div>
+            Gift Shop Assistant, Avon Valley Railway (May 2017 &ndash; September 2017)
+        </div>
+        <ul>
+            <li>
+                Served and advised customers about products and pricing information, whilst offering excellent customer service.
+            </li>
+            <li>
+                Trusted to use a till and card machine, to handle money and in the balancing process.
+            </li>
+            <li>
+                Stacked and restocked shelves in and organised and attractive manner.
+            </li>
+        </ul>
+    </aside>
+    <aside class="js-modal" id="js-tti">
+        <i class="js-modal-close far fa-times-circle"></i>
+        <div>
+            Travelling Ticket Inspector, Avon Valley Railway (May 2017 &ndash; September 2017)
+        </div>
+        <ul>
+            <li>
+                Checked and sold tickets to customers, whilst also providing information about the railway.
+            </li>
+            <li>
+                Carried out health and safety procedures to ensure the safety and comfort of all passengers.
+            </li>
+            <li>
+                Assisted school parties and disabled travellers both during the journey and on the platforms.
+            </li>
+            <li>
+                Kept the train clean and tidy at all times and displayed relevant seat reservation labels.
+            </li>
+        </ul>
+    </aside>
+    <aside class="js-modal" id="js-cricket">
+        <i class="js-modal-close far fa-times-circle"></i>
+        <div>
+            Cricket Coach, The Ribbon School, Murton (May 2014 &ndash; June 2016)
+        </div>
+        <ul>
+            <li>
+                Expanded leadership skills by introducing and coaching cricket to nine to eleven year olds.
+            </li>
+            <li>
+                Safely managed teams of ten children at district and county competitions whilst reliably umpiring games between different schools.
+            </li>
+            <li>
+                Encouraged and developed healthy relationships between the school and local cricket club.
+            </li>
+        </ul>
+    </aside>
+    <aside class="js-modal" id="js-beavers">
+        <i class="js-modal-close far fa-times-circle"></i>            
+        <div>
+            Assistant Beaver Leader, 5th Durham City Scouts (May 2012 &ndash; June 2014)
+        </div>
+        <ul>
+            <li>
+                Helped a small group of young children safely explore the local community and gain badges.
+            </li>
+            <li>
+                Planned a safe and exciting programme of games, crafts and life skills sessions for six to eight year olds.
+            </li>
+            <li>
+                Maintained positive relationships with other troop leaders and parents/carers of the children.
+            </li>
+        </ul>
+    </aside>
     <main class="active-f" id="grid">
         <section class="grid-cell" id="title" data-target="active-title">
-            <h1> Ben Tomaney's CV</h1>
+            <h1> Ben Tomaney</h1>
         </section>
         <section class="grid-cell" id="about" data-target="active-about">
             <h2>About Me</h2>
@@ -33,8 +141,8 @@
             </div>
         </section>
         <section class="grid-cell" id="skills" data-target="active-skills">
-            <h2>Skills</h2>
-            <div id="skills-content">   
+            <h2>Key Skills</h2>
+            <div id="skills-content">
                 <div id="tech">
                     <h3>Techincal Skills</h3>
                     <ul>
@@ -51,6 +159,17 @@
                         </li>
                         <li>
                             CSS
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div>Created an interactive CV.</div>
+                        </li>
+                        <li>
+                            JavaScript
                             <div class="stars">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -135,7 +254,7 @@
                     </ul>
                 </div>
                 <div id="other">
-                    <h3>Other Skills</h3>
+                    <h3> Other Skills </h3>
                     <ul>
                         <li>
                             Problem Solving
@@ -149,7 +268,7 @@
                             <div>Rigorously logical and analytical thinking.</div>
                         </li>
                         <li>
-                            <p>Time Management</p>
+                            Time Management
                             <div class="stars">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -160,7 +279,7 @@
                             <div>Managed workloads during university with multiple exams and courseworks.</div>
                         </li>
                         <li>
-                            <p>Written Communication</p>
+                            Written Communication
                             <div class="stars">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -171,7 +290,7 @@
                             <div>Clear and concise arguments in dissertation and coursework reports.</div>
                         </li>
                         <li>
-                            <p>Verbal Communication</p>
+                            Verbal Communication
                             <div class="stars">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -184,7 +303,7 @@
                             </div>
                         </li>
                         <li>
-                            <p>Teamwork</p>
+                            Teamwork
                             <div class="stars">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -195,7 +314,7 @@
                             <div>Group coursework projects and volunteering roles at Avon Valley Railway and 5th Durham City Scouts.</div>
                         </li>
                         <li>
-                            <p>Solo Focus</p>
+                            Solo Focus
                             <div class="stars">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -212,8 +331,7 @@
             </div>
         </section>
         <section class="grid-cell" id="work" data-target="active-work">
-            <h2>Work &amp; Volunteering</h2>
-            <h2>Experience</h2>
+            <h2>Work &amp; Volunteering Experience</h2>
             <div id="work-content">
                 <div class="timeline">
                     <div class="emptytop"></div>
@@ -227,13 +345,10 @@
                         <div>
                             <ul>
                                 <li>
-                                    Located and carefully packaged a large variety of items, before sorting and despatching them as mail.
+                                    Helped in the storage and postage of a wide range of items.
                                 </li>
-                                <li>
-                                    Reliably booked in incoming items, individually labelling them and storing them in their correct location.
-                                </li>
-                                <li>
-                                    Rearranged, tidied and organised shelves in order to optimise efficiency of both despatching and booking in.
+                                <li class="js-modal-open" id="js-huboo-open">
+                                    Find out more
                                 </li>
                             </ul>
                         </div>
@@ -242,15 +357,9 @@
                         <ul>
                             <li>
                                 Tutored a group of nine first-year mathematics students in discrete mathematics, cryptography and coding.
-                            </li>
-                            <li>
-                                Utilised both written and verbal communication skills to explain new mathematical concepts.
-                            </li>
-                            <li>
-                                Marked both written worksheets and MATLAB code on a weekly basis and assisted with the marking of MATLAB coursework.
-                            </li>
-                            <li>
-                                Liaised with unit conveyors about overall student progress and any potential issues raised by students.
+                            </li>                            
+                            <li class="js-modal-open" id="js-tutoring-open">
+                                Find out more
                             </li>
                         </ul>
                     </div>
@@ -263,29 +372,20 @@
                     <div class="content">
                         <ul>
                             <li>
-                                Served and advised customers about products and pricing information, whilst offering excellent customer service.
+                                Sold gifts, souvenirs and refreshments to the public.
                             </li>
-                            <li>
-                                Trusted to use a till and card machine, to handle money and in the balancing process.
-                            </li>
-                            <li>
-                                Stacked and restocked shelves in and organised and attractive manner.
+                            <li class="js-modal-open" id="js-gift-shop-open">
+                                Find out more
                             </li>
                         </ul>
-                    </div> 
+                    </div>
                     <div class="content">
                         <ul>
                             <li>
-                                Checked and sold tickets to customers, whilst also providing information about the railway.
-                            </li>
-                            <li>
-                                Carried out health and safety procedures to ensure the safety and comfort of all passengers.
-                            </li>
-                            <li>
-                                Assisted school parties and disabled travellers both during the journey and on the platforms.
-                            </li>
-                            <li>
-                                Kept the train clean and tidy at all times and displayed relevant seat reservation labels.
+                                Responsible for checking tickets and safely looking after passangers.
+                            </li>                            
+                            <li class="js-modal-open" id="js-tti-open">
+                                Find out more
                             </li>
                         </ul>
                     </div>
@@ -298,26 +398,20 @@
                     <div class="content">
                         <ul>
                             <li>
-                                Expanded leadership skills by introducing and coaching cricket to nine to eleven year olds.
+                                Helped year 5 and year 6 children develop some basic cricket skills.
                             </li>
-                            <li>
-                                Safely managed teams of ten children at district and county competitions whilst reliably umpiring games between different schools.
-                            </li>
-                            <li>
-                                Encouraged and developed healthy relationships between the school and local cricket club.
+                            <li class="js-modal-open" id="js-cricket-open">
+                                Find out more
                             </li>
                         </ul>
                     </div>
                     <div class="content contentlast">
                         <ul>
                             <li>
-                                Safely supervised and encouraged children during a range of indoor and outdoor activities.
+                                Supervised and encouraged children during a range of indoor and outdoor activities.
                             </li>
-                            <li>
-                                Planned a safe and exciting programme of games, crafts and life skills sessions for six to eight year olds.
-                            </li>
-                            <li>
-                                Maintained positive relationships with other troop leaders and parents/carers of the children.
+                            <li class="js-modal-open" id="js-beavers-open">
+                                Find out more
                             </li>
                         </ul>
                     </div>
@@ -326,46 +420,50 @@
             </div>
         </section>
         <section class="grid-cell" id="contact" data-target="active-contact">
-            <h2>Contact</h2>
+            <h2>Contact Me</h2>
             <div id="contact-content">
-                <h3>My Information</h3>
-                <ul>
-                    <li class="enlarges">
-                        <i class="fas fa-envelope-open"></i>
-                        <a href="mailto:ben.tomaney@hotmail.com?subject=Interactive%20CV%20Response&amp;body=Dear%20Ben&#44">ben.tomaney@hotmail.com</a>
-                    </li>
-                    <li class="enlarges">
-                        <i class="fas fa-phone"></i>
-                        <a href="tel:07904001054">07904001054</a>
-                    </li>
-                    <li class="enlarges">
-                        <address>
-                            <i class="fas fa-map-marker-alt"></i>
-                            <a href="https://www.google.co.uk/maps/place/Bath/" target="_blank">Bath</a>
-                        </address>
-                    </li>
-                </ul>
-                <h2>Social Media</h2>
-                <article>
-                    <a href="https://uk.linkedin.com/in/ben-tomaney-974464159" target="_blank">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                </article>
-                <article>
-                    <a href="https://www.facebook.com/ben3296" target="_blank">
-                        <i class="fab fa-facebook-square"></i>
-                    </a>
-                </article>
-                <article>
-                    <a href="https://twitter.com/bpt3296" target="_blank">
-                        <i class="fab fa-twitter-square"></i>
-                    </a>
-                </article>
-                <article>
-                    <a href="https://github.com/BenTomaney" target="_blank">
-                        <i class="fab fa-github-square"></i>
-                    </a>
-                </article>
+                <section>
+                    <h3>My Information</h3>
+                    <ul>
+                        <li class="enlarges">
+                            <i class="fas fa-envelope-open"></i>
+                            <a href="mailto:ben.tomaney@hotmail.com?subject=Interactive%20CV%20Response&amp;body=Dear%20Ben&#44">ben.tomaney@hotmail.com</a>
+                        </li>
+                        <li class="enlarges">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:07904001054">07904001054</a>
+                        </li>
+                        <li class="enlarges">
+                            <address>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <a href="https://www.google.co.uk/maps/place/Bath/" target="_blank">Bath</a>
+                            </address>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Social Media</h3>
+                    <article>
+                        <a href="https://uk.linkedin.com/in/ben-tomaney-974464159" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </article>
+                    <article>
+                        <a href="https://www.facebook.com/ben3296" target="_blank">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                    </article>
+                    <article>
+                        <a href="https://twitter.com/bpt3296" target="_blank">
+                            <i class="fab fa-twitter-square"></i>
+                        </a>
+                    </article>
+                    <article>
+                        <a href="https://github.com/BenTomaney" target="_blank">
+                            <i class="fab fa-github-square"></i>
+                        </a>
+                    </article>
+                </section>
                 <section>
                     <a class="button" href="mailto:ben.tomaney@hotmail.com?subject=Interactive%20CV%20Response&amp;body=Dear%20Ben&#44">
                         Message Me Directly
@@ -389,51 +487,51 @@
             </div>
         </section>
         <section class="grid-cell" id="qualifications" data-target="active-qualifications">
-            <h2>Qualifications</h2>
+            <h2>Qualifications &amp; Awards</h2>
             <div id="qualifications-content">
                 <article>
-                        <h2>University of Bath <span class="date">(2014 &ndash; 2018)</span></h2>
-                        <ul>
-                            <li>
-                                Master of Mathematics (with honours)
-                                <div class="options">
-                                    <span class="grade">1st</span> 2:1 2:2 3rd
-                                </div>
-                            </li>
-                            <li>
-                                Final Year Project
-                                <div class="options">
-                                    <span class="grade">1st</span> 2:1 2:2 3rd
-                                </div>
-                            </li>
-                            <li>
-                                First Year
-                                <div class="options">
-                                    <span class="grade">1st</span> 2:1 2:2 3rd
-                                </div>
-                            </li>
-                            <li>
-                                Second Year
-                                <div class="options">
-                                    <span class="grade">1st</span> 2:1 2:2 3rd
-                                </div>
-                            </li>
-                            <li>
-                                Third Year
-                                <div class="options">
-                                    <span class="grade">1st</span> 2:1 2:2 3rd
-                                </div>
-                            </li>
-                            <li>
-                                Fourth Year
-                                <div class="options">
-                                    <span class="grade">1st</span> 2:1 2:2 3rd
-                                </div>
-                            </li>
-                        </ul>
+                    <h3>University of Bath <span class="date">(2014 &ndash; 2018)</span></h3>
+                    <ul>
+                        <li>
+                            Master of Mathematics (with honours)
+                            <div class="options">
+                                <span class="grade">1st</span> 2:1 2:2 3rd
+                            </div>
+                        </li>
+                        <li>
+                            Final Year Project
+                            <div class="options">
+                                <span class="grade">1st</span> 2:1 2:2 3rd
+                            </div>
+                        </li>
+                        <li>
+                            First Year
+                            <div class="options">
+                                <span class="grade">1st</span> 2:1 2:2 3rd
+                            </div>
+                        </li>
+                        <li>
+                            Second Year
+                            <div class="options">
+                                <span class="grade">1st</span> 2:1 2:2 3rd
+                            </div>
+                        </li>
+                        <li>
+                            Third Year
+                            <div class="options">
+                                <span class="grade">1st</span> 2:1 2:2 3rd
+                            </div>
+                        </li>
+                        <li>
+                            Fourth Year
+                            <div class="options">
+                                <span class="grade">1st</span> 2:1 2:2 3rd
+                            </div>
+                        </li>
+                    </ul>
                 </article>
                 <article>
-                    <h2 >Durham Johnston Comprehensive School <span class="date">(2007 &ndash; 2014)</span></h2>
+                    <h3>Durham Johnston Comprehensive School <span class="date">(2007 &ndash; 2014)</span></h3>
                     <ul>
                         <li>
                             A Level Mathematics
@@ -474,7 +572,7 @@
                     </ul>
                 </article>
                 <article>
-                    <h2>Other Qualifications &amp; Awards</h2>
+                    <h3>Other Qualifications &amp; Awards</h3>
                     <ul>
                         <li>
                             Piano
@@ -528,6 +626,7 @@
     </footer>
     
     <script src="6-cell-grid.js"></script>
+    <script src="modals.js"></script>
 </body>
 
 </html>

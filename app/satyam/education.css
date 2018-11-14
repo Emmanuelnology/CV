@@ -146,10 +146,6 @@ p {
   padding: 1.5% 0%;
 }
 
-.navbuttons {
-  padding: 0 15%;
-}
-
 #startnav,
 .start,
 .directions {
@@ -245,20 +241,31 @@ ul.skillslist {
       "indicator map"
       "infopanel map";
     grid-template-columns: 1fr 3fr;
+    font-size: 1.3vw;
   }
 
   #sectionindicator {
     height: 10vh;
     width: 35vw;
+    font-size: 1.8vw;
+    padding-left: 0.2em;
   }
 
   #toggle {
     display: none;
   }
 
+  h2 {
+    font-size: 3vw;
+  }
+
   #container {
     background-image: none;
     height: 7.5vh;
+  }
+
+  p {
+    padding: 0.5em;
   }
 
   #education {

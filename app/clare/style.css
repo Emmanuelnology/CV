@@ -62,6 +62,7 @@ li {
 /* Grid Item */
 .container > section {
   padding: 4%;
+  background-image: url('img/asfalt-light.png');
 }
 
 section > ul {
@@ -72,36 +73,30 @@ section > ul {
 
 /** FLIP CARD COLOURS **/
 
-.red,
-.blue,
-.yellow,
-.white {
+.card-flip {
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  position: relative;
   background-color: transparent;
   perspective: 1000px;
 }
 
-.inner {
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-  position: relative;
-}
-
-.inner:hover,
-.inner:active {
+.card-flip:hover,
+.card-flip:active {
   transform: rotateY(180deg);
 }
 
-.inner:hover > .front,
-.inner:active > .front {
+.card-flip:hover > .front,
+.card-flip:active > .front {
   display: none;
 }
 
-.inner > .back {
+.card-flip > .back {
   display: none;
 }
 
-.inner:hover > .back,
-.inner:active > .back {
+.card-flip:hover > .back,
+.card-flip:active > .back {
   display: block;
 }
 
@@ -134,6 +129,6 @@ section > ul {
 
 @media screen and (max-width: 500px) {
   .container {
-    grid-template-columns: repeat(1, 100%);
+    grid-template-columns: 100%;
   }
 }
