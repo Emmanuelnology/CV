@@ -13,7 +13,7 @@ body {
 }
 
 h2 {
-  color: rgb(49, 52, 219);
+  color: rgb(116, 119, 240);
   text-align: center;
   font-size: 4em;
   border: solid rgb(6, 6, 82);
@@ -29,7 +29,7 @@ h2 {
 
 h3 {
   text-align: center;
-  color: rgb(87, 87, 206);
+  color: rgb(141, 141, 223);
 }
 
 /* Columns equally spaced */
