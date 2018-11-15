@@ -240,7 +240,7 @@ ul {
 
 /* In-section text font */
 .text {
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 
 /* Background image for about me */
@@ -265,21 +265,16 @@ ul {
   margin-right: 7px;
 }
 
-/* Map same size as section */
-.map {
-  width: 90%;
-  height: 90%;
-}
-
-/* My photos with the same size as the box */
-.kasface {
-  width: 50vh;
-  height: 40vh;
-}
-
+/* My photos and map with the same size as the box */
 .photography {
-  width: 10vh;
-  height: 40vh;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex: 1;
+}
+
+.kasface {
+  max-height: 300px;
 }
 
 /* Social links in line and central and below contact section */
@@ -296,10 +291,6 @@ ul {
   background-position: 0;
 }
 
-.apropo {
-  margin-bottom: -1.2em;
-}
-
 /* Skills section with an image */
 #skillkas {
   background-image: url('sky.jfif');
@@ -314,9 +305,9 @@ ul {
 
 /* Font size and spacing for my skills */
 .myskill {
-  font-size: 1.1em;
+  font-size: 1.2em;
   height: 30%;
-  width: 90%;
+  width: 100vh;
 }
 
 /* Background image of employment section */
