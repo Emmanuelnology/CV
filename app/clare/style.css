@@ -62,6 +62,7 @@ li {
 /* Grid Item */
 .container > section {
   padding: 4%;
+  background-image: url('img/asfalt-light.png');
 }
 
 section > ul {

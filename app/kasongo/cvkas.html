@@ -6,12 +6,28 @@
         <link href="https://fonts.googleapis.com/css?family=Days One" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
-    <body>
-        <main>
+
+    <body onload="myFunction()">
+        <div id="loader"></div>
+        <div id="myloader" class="animate-bottom">
             <form>
-                <h1>Loading.....</h1>
+                <img src="hello.gif" alt="hi" class="hello">
                 <button><a href="kasongo.html">Click here and be prepared for the unexpected</a></button>
-            </form>                          
-        </main>
+            </form> 
+        </div>
     </body>
+
+    <script>
+        var myVar;
+            
+        function myFunction() {
+            myVar = setTimeout(showPage, 3000);
+        }
+            
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myloader").style.display = "block";
+        }
+    </script>
+            
 </html>
