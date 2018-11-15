@@ -53,7 +53,7 @@ nav li {
   border: 1px solid black;
 }
 
-.nav-img-div{
+.nav-img-div {
   height: 100%;
   width: 15%;
   position: absolute;
@@ -95,7 +95,6 @@ nav li {
 #nav-travelling {
   background-image: url('shoes.png');
 }
-
 
 main {
   display: none;
