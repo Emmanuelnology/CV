@@ -49,6 +49,7 @@ h1,
 h2 {
   background-color: black;
   color: #fff;
+  height: 7.5vh;
 }
 
 h2 {
@@ -91,23 +92,14 @@ aside {
   grid-area: aboutme;
   float: right;
   background-color: #fff;
-  opacity: 0.5;
   font-size: 1.3em;
   border-radius: 5px;
-}
-
-aside:hover {
-  opacity: 1;
 }
 
 aside div {
   display: inline-block;
   padding: 0 5px;
   text-align: center;
-}
-
-aside h2 {
-  height: 5.5vh;
 }
 
 #about-content a {
@@ -191,13 +183,8 @@ aside h2 {
   display: none;
   grid-area: content;
   background-color: #fff;
-  opacity: 0.5;
   height: 45vh;
   border-radius: 5px;
-}
-
-.content:hover {
-  opacity: 1;
 }
 
 #infolist {
@@ -290,7 +277,7 @@ aside h2 {
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 9fr;
     grid-gap: 2.5%;
-    background-image: url('DSC05280.jpg');
+    background-image: url('DSC05280.JPG');
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -342,6 +329,11 @@ aside h2 {
   aside {
     height: 70%;
     font-size: 0.9em;
+    opacity: 0.5;
+  }
+
+  aside:hover {
+    opacity: 1;
   }
 
   aside h2 {
@@ -379,6 +371,11 @@ aside h2 {
 
   .content {
     height: 70%;
+    opacity: 0.5;
+  }
+
+  .content:hover {
+    opacity: 1;
   }
 
   .content-link {

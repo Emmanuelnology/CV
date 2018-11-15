@@ -1,0 +1,186 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  padding: 0;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 30px;
+  font-size: 8vw;
+  min-width: 200px;
+  text-transform: capitalize;
+  font-family: 'Crimson Text', serif;
+  font-weight: 800;
+  background-image: url('5006.png');
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.3em;
+  margin: 0;
+  min-width: 100px;
+}
+
+nav {
+  background-image: url('5006.png');
+  background-repeat: repeat;
+  background-attachment: fixed;
+  text-transform: lowercase;
+  padding: 0;
+  height: 150px;
+  float: center;
+}
+
+nav ul {
+  height: 40px;
+  margin: 0;
+  list-style-type: none;
+  text-transform: uppercase;
+  float: center;
+  padding-left: 0;
+  width: 100%;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 0;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding-top: 2%;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  width: 10%;
+  font-size: 15px;
+  text-align: center;
+  height: 150px;
+}
+
+nav li:hover {
+  font-weight: 1000;
+  position: relative;
+  top: -15px;
+  height: 165px;
+}
+
+ul li div.labelwrite {
+  transform: rotate(90deg);
+  margin-top: 15px;
+}
+
+main {
+  margin: 0;
+  padding: 40px;
+  border-top: 2px solid black;
+  font-family: 'Crimson Text', serif;
+  text-align: center;
+  min-height: 500px;
+}
+
+.aboutmelabel {
+  background-image: var(--tab-background);
+  margin-left: 1%;
+  color: var(--tab-color);
+}
+
+.worklabel {
+  background-image: var(--tab-background);
+  color: var(--tab-color);
+}
+
+.projectslabel {
+  background-image: var(--tab-background);
+  color: var(--tab-color);
+}
+
+.nowlabel {
+  background-image: var(--tab-background);
+  color: var(--tab-color);
+}
+
+.contactlabel {
+  background-image: var(--tab-background);
+  margin-right: 1%;
+  color: var(--tab-color);
+}
+
+footer {
+  background-image: url('5006.png');
+  background-repeat: repeat;
+  background-attachment: fixed;
+  text-align: center;
+  margin: 0;
+  padding: 30px;
+  padding-bottom: 10%;
+  text-transform: capitalize;
+  border-top: 2px solid black;
+  font-family: 'Crimson Text', serif;
+  font-weight: 400;
+  vertical-align: bottom 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  color: white;
+}
+
+@media only screen and (min-width: 1014px) {
+  nav {
+    text-transform: lowercase;
+    padding: 0;
+    height: 40px;
+    float: center;
+  }
+
+  nav ul {
+    height: 40px;
+    margin: 0;
+    list-style-type: none;
+    text-transform: uppercase;
+    font-size: smaller;
+    float: center;
+    padding-left: 0;
+    width: 100%;
+  }
+
+  nav li {
+    display: inline-block;
+    margin: 0 0;
+    height: 40px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding-top: 10px;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    width: 15%;
+    max-width: 200px;
+    min-width: 111px;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  ul li div.labelwrite {
+    transform: rotate(0deg);
+    margin-top: 0;
+  }
+
+  nav li:hover {
+    font-weight: 1000;
+    position: relative;
+    top: -15px;
+    height: 55px;
+  }
+}

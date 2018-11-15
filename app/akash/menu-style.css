@@ -33,7 +33,7 @@ button {
 }
 
 button:hover {
-  transform: scale(1.3);
+  transform: scale(1.2);
 }
 
 .modal {
@@ -48,6 +48,12 @@ button:hover {
   font-family: 'Montserrat';
   padding: 20px;
   text-align: center;
+}
+
+.modal img {
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 20px;
 }
 
 .modal h3 {
@@ -186,40 +192,20 @@ li > div {
   display: inline;
 }
 
-/* .right {
-  display: inline;
-  float: right;
-} */
-
-/* li > img {
-  width: 70px;
-  height: 70px;
-  border-radius: 10px;
-} */
-
 .fas.fa-star {
   font-size: 1.5em;
 }
 
-/* li > span {
-  text-align: center;
-} */
-
-/* li {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin-bottom: 15px;
-} */
-
-/* .description {
-  flex: 1;
-  padding-left: 20px;
-  padding-top: 20px;
-} */
-
 .info-block {
   display: block;
+}
+
+.extra-margin {
+  margin-bottom: 48px;
+}
+
+.skills-margin {
+  margin-bottom: 60px;
 }
 
 .info-block img {
@@ -258,6 +244,26 @@ li > div {
   margin-top: 15px;
   display: block;
   color: rgb(77, 139, 99);
+}
+
+.center-contact {
+  width: 100%;
+  text-align: center;
+}
+
+.center-contact i {
+  font-size: 2em;
+  margin: 10px;
+  color: rgb(212, 0, 0);
+}
+
+.center-contact i:hover {
+  transform: scale(1.3);
+}
+
+.center-contact h5 {
+  margin: 0 auto;
+  font-size: 1.5em;
 }
 
 @media only screen and (min-width: 480px) {
@@ -303,34 +309,15 @@ li > div {
   }
 
   ul {
-    list-style-type: none;
-    font-family: 'Montserrat';
     font-size: 1.25em;
-    padding: 0;
-  }
-
-  .flex-container {
-    display: flex;
-    flex-direction: column;
-    padding-top: 150px;
-    padding-left: 10px;
-    padding-right: 10px;
-    justify-content: space-between;
   }
 
   .box {
-    width: 100%;
-    margin: 0 auto;
-    margin-bottom: 40px;
     padding: 0 35px;
   }
 
   .title {
-    font-family: 'Lobster';
-    color: black;
     font-size: 2.5em;
-    display: flex;
-    flex-direction: row;
   }
 
   li > img {
@@ -341,49 +328,25 @@ li > div {
 
   .info-block img {
     height: 85px;
-    width: auto;
-    float: left;
     margin-right: 10px;
   }
 
-  /* .media-box {
-    min-width: 0;
-    margin: -10px;
-    margin: 0 50px;
+  .center-contact i {
+    font-size: 3em;
+    margin: 10px;
   }
 
-  img {
-    width: 650px;
-    max-width: 100%;
-    max-height: 450px;
-    margin-top: 15px;
-  } */
+  .center-contact h5 {
+    margin: 0 auto;
+    font-size: 2em;
+  }
 }
 
 @media only screen and (min-width: 1004px) {
-  #diamond {
-    width: 70%;
-    left: 15%;
-  }
-
   .content {
-    margin: 0 auto;
     width: 100%;
     max-width: 1100px;
     background: rgb(157, 224, 180);
-  }
-
-  #diamond {
-    background-image: url('diamond.png');
-    background-size: 100% 100%;
-    width: 90%;
-    height: 250px;
-    position: absolute;
-    bottom: -125px;
-    left: 5%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
   .lobster {
@@ -391,30 +354,16 @@ li > div {
   }
 
   .flex-container {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding-top: 150px;
     padding-left: 50px;
     padding-right: 50px;
-    justify-content: space-between;
   }
 
   .box {
     width: 45%;
     padding: 0;
   }
-
-  /* .media-box {
-    min-width: 0;
-    margin: 0;
-  }
-
-  img {
-    width: 450px;
-    max-width: 100%;
-    max-height: 450px;
-  } */
 
   .title {
     font-size: 3em;
@@ -427,33 +376,22 @@ li > div {
   }
 
   ul {
-    list-style-type: none;
-    font-family: 'Montserrat';
     font-size: 1.25em;
-    padding: 0;
   }
 
   .info-block img {
     height: 90px;
-    width: auto;
-    float: left;
-    margin-right: 10px;
   }
 
   .title {
-    font-family: 'Lobster';
-    color: black;
     font-size: 3em;
-    display: flex;
-    flex-direction: row;
   }
 
   .modal {
     position: absolute;
     top: 20%;
-    bottom: 40%;
-    left: 30%;
-    right: 30%;
+    left: 35%;
+    right: 35%;
     background-color: white;
     z-index: 3;
     border-radius: 20px;

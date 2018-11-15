@@ -1,15 +1,16 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
 <!-- By Caitlin Whiteley -->
 <head>
 
     <title>Caitlins CV</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
     <link href="timeline.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
 
 </head>
 <body>
@@ -21,17 +22,36 @@
         <p class="sub-heading">Curriculum Vitae</p>
     </div>
 
-    <div id="navbar">
-        <nav>
-            <a href="#about-me" > About me </a>
-            <a href="#education-section" > Education </a>
-            <a href="#education-section" > Work experience </a>
-            <a href="#skills" > Skills </a>
-            <a href="#awards"> Awards </a>
-            <a href="#extra-curricular" > Hobbies </a>
-            <a href="#contact-me" > Contact details </a>
-        </nav>
-    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-bar-burger" aria-controls="nav-bar-burger" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav-bar-burger">
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item pr-4">
+            <a class="nav-link" href="#about-me">About me <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item pr-4">
+            <a class="nav-link" href="#education-section">Education</a>
+            </li>
+            <li class="nav-item pr-4">
+            <a class="nav-link" href="#education-section">Work experience</a>
+            </li>
+            <li class="nav-item pr-4">
+            <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item pr-4">
+            <a class="nav-link" href="#awards">Awards</a>
+            </li>
+            <li class="nav-item pr-4">
+            <a class="nav-link" href="#extra-curricular">Hobbies</a>
+            </li>
+            <li class="nav-item pr-4">
+            <a class="nav-link " href="#contact-me">Contact details</a>
+            </li>
+        </ul>
+        </div>
+    </nav>
 
     <div id="blocker"></div>
     <div class="modal">
@@ -46,9 +66,9 @@
         <div>
             <button class="js-modal-open"> <img src="photo-of-me.jpg" alt="a photo of myself"> </button>
             <div>I am logical, creative, hard-working and conscientious. 
-                Finding elegant solutions to problems using my programming skills – 
+                Finding elegant solutions to problems using my programming skills &#8210; 
                 from tackling mathematical problems with Python to enhancing the 
-                smooth running of operations in a food factory using VBA - is what 
+                smooth running of operations in a food factory using VBA &#8210; is what 
                 I enjoy doing.  Working in the retail and hospitality industries 
                 has taught me the importance of good and effective customer relations.
                 Outside of work, sport is my other focus.  As a member of a successful 
@@ -69,9 +89,20 @@
 
             <div id="education">
 
+                <h3> _Nology <i class="fa fa-desktop" id="nology-icon"></i>  </h3>
+                <ul>
+                    <li class="dates">October 2018 - January 2019</li>
+                    <li> Technology conversion course </li>
+                    <li> The _nology course has equipped me with skills in
+                        HTML, CSS and JavaScript, as well as working on projects
+                        clients throughout the 12 weeks. Collaborating with the
+                        other students and clients to produce creative designs and clean 
+                        codes has given me invaluable experience. </li>
+                </ul>
+
                 <h3> Durham university <i class="fa fa-graduation-cap" id="dur-icon"></i>  </h3>
                 <ul>
-                    <li class="dates">2015 - 2018</li>
+                    <li class="dates">October 2015 - June 2018</li>
                     <li> BSci Mathematics </li>
                     <li> During my first year at Durham, I studied
                     Maths and Physics as a joint honours degree,
@@ -83,7 +114,7 @@
 
                 <h3>  Hayesfield Girls&#39; School <i class="fa fa-graduation-cap" id="hayesfield-icon"></i> </h3>
                 <ul>
-                    <li class="dates"> 2007 - 2015</li>
+                    <li class="dates"> September 2007 - June 2015</li>
                     <li> A levels: A*AAB in Maths, Further Maths,
                         Physics and Chemistry respectively. </li>
                     <li> GCSEs: 8A*s, 4As. At GSCE, I was awarded the
@@ -95,6 +126,7 @@
             </div>
 
             <div id="col2">
+                <hr id="nology-hr">
                 <hr id="durham-hr">
                 <hr id="hayesfield-hr">
             </div>
@@ -188,10 +220,18 @@
     <section id="skills" class="bgcbeige">
 
         <h2> Skills </h2>
-
+    <div id="skill-con">
         <div id="skills-box">
-
             <ul>
+                <li class="rotate-text">
+                    <div>
+                        <div> Beginner </div>
+                        <div> Familiar </div>
+                        <div> Proficient </div>
+                        <div> Expert </div>
+                        <div> Master</div>
+                    </div>
+                </li>
                 <li> HTML
                     <div class="score">
                         <i class="fa fa-star" aria-hidden="true"></i>
@@ -250,13 +290,22 @@
                     </div>
                 </li>
             </ul>
-
         </div>
 
         <div id="skills-description">
-
+            <ul>
+                <li>
+                    I learnt and put into practice skills in HTML, CSS and JavaScript for three months as part of the Nology course.
+                </li>
+                <li>
+                    I used Python in my 3rd year dissertation project to conduct computational research and plot my results. I then used LaTex to write it up.
+                </li>
+                <li>
+                    During my 9 week summer internship I taught myself how to program in VBA and put my skills into practice.
+                </li>
+            </ul>
         </div>
-
+    </div>
     </section>
 
 
@@ -267,6 +316,9 @@
         <ul>
             <li>
                 <i class="fa fa-trophy"></i> Cheerleading level 5 group stunt University national champions, 2017
+            </li>
+            <li>
+                <i class="fa fa-trophy"></i> Passed driving test, 2015
             </li>
             <li>
                 <i class="fa fa-trophy"></i> April Payne prize for Mathematics, 2013, awarded by my school for 
@@ -351,7 +403,7 @@
                 </div>
 
                 <div class="back">
-                    <h3> Other sports, achievments and interests </h3>
+                    <h3> Other sports and interests </h3>
                     <ul>
                         <li> <i class="fa fa-ship"></i> Sailing </li>
                         <li> <i class="fa fa-snowflake-o"></i> Keen skiier </li>
@@ -362,12 +414,9 @@
                     </ul>
                 </div>
             </div>
-
         </div>
 
     </section>
-
-
 
     <section id="contact-me" class="bgcgrey">
 
@@ -433,9 +482,11 @@
         </ul>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
     <script src="j-query.js" type="text/JavaScript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 </body>
 </html>

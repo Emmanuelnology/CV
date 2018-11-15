@@ -20,11 +20,11 @@ body,
   background-size: cover;
   min-height: 100vh;
   width: 100vw;
-  opacity: 0.8;
+  filter: brightness(0.6);
 }
 
 #logo {
-  background-color: black;
+  background-color: #111;
   width: auto;
   display: inline-block;
   display: block;
@@ -36,6 +36,10 @@ body,
   position: absolute;
   color: white;
   padding: 20px;
+}
+
+img {
+  filter: brightness(0.9);
 }
 
 #logo p {
@@ -76,12 +80,21 @@ body,
 }
 
 .form {
-  background-color: gray;
+  background-color: #666;
 }
 
 .sign-in {
   text-align: center;
   margin: 0;
+  margin-top: 20px;
+  border-radius: 5px;
+  font-weight: 700;
+  padding: 10px;
+  box-shadow: 0 0 20px 5px rgba(145, 13, 13, 0.75);
+}
+
+#logo .sign-in p {
+  font-size: 30px;
 }
 
 a {
@@ -95,5 +108,15 @@ a div {
 
 a:hover div {
   background-color: #910d0d;
-  color: white;
+  box-shadow: none;
+}
+
+#paper-cv {
+  padding-top: 25px;
+}
+
+#download {
+  text-align: center;
+  padding: 5px;
+  box-shadow: 0 0 20px 5px rgba(145, 13, 13, 0.75);
 }

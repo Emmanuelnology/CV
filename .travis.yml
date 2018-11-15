@@ -2,8 +2,18 @@ language: php
 sudo: enabled
 before_install:
 - npm install -g htmllint-cli
-- npm install stylelint
+- npm install -g stylelint
 script:
-  - npm run lint
+  - htmllint app/**/*.html
+  - stylelint app/**/*.css
 notifications:
   slack: nology-uk:je0I2B8Zeu6UZTn3HwEGXNjd
+  webhooks:
+    urls:
+      - https://webhook.site/f43038d6-0f67-4e7a-bdb0-bc9c4ecbee2b
+      - https://us-central1-build-monitor-c2cac.cloudfunctions.net/buildMessage
+    on_success: always # default: always
+    on_failure: always # default: always
+    on_start: always   # default: always
+    on_cancel: always # default: always
+    on_error: always # default: always

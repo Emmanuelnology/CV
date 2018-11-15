@@ -1,0 +1,285 @@
+body {
+  font-family: 'Roboto', Sans-Serif;
+  margin: 0;
+}
+
+main {
+  display: grid;
+  grid-template-areas:
+    "indicator"
+    "container"
+    "infopanel";
+}
+
+#container {
+  grid-area: container;
+}
+
+#sectionindicator {
+  grid-area: indicator;
+}
+
+#infopanel {
+  grid-area: infopanel;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  padding: 2% 5%;
+  margin: 0;
+  text-align: center;
+  border-top: 0.7px solid rgb(214, 214, 214);
+  font-size: 0.75em;
+}
+
+#sglogo {
+  width: 70%;
+}
+
+#loading {
+  width: 30%;
+}
+
+#startnav {
+  color: #fff;
+  background-color: #4285f4;
+  border: 1px solid #4285f4;
+}
+
+#welcomescreen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  height: fit-content;
+  opacity: 0.9;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+#container {
+  background-image: url('googlecv/mapbackground.jpg');
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 290px;
+}
+
+#topsearchbar {
+  background-color: #fff;
+  display: flex;
+  padding: 2% 4%;
+  margin: 8px 4px;
+  border-radius: 4px;
+}
+
+#close {
+  margin-left: auto;
+}
+
+#searchinput {
+  margin: 0% 5%;
+}
+
+#sectionindicator {
+  background-color: #34a853;
+  color: #fff;
+}
+
+.image-carousel img {
+  height: 80px;
+}
+
+.image-carousel {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  overflow-x: scroll;
+}
+
+#infopanel {
+  font-size: 0.85em;
+  line-height: 1.5;
+  padding: 1% 3% 3%;
+  background-color: #fff;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: rgb(145, 145, 145);
+}
+
+#toggle {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  color: rgb(214, 214, 214);
+}
+
+.name {
+  color: #000;
+}
+
+.rating {
+  color: rgb(231, 113, 27);
+}
+
+.color-text {
+  color: #188038;
+}
+
+#bottomnav {
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1.5% 0%;
+}
+
+#startnav,
+.start,
+.directions {
+  font-size: 0.85em;
+  border-radius: 20px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.start {
+  color: #4285f4;
+  background-color: #fff;
+  border: 1px solid #4285f4;
+}
+
+.directions {
+  color: #fff;
+  background-color: #4285f4;
+  border: 1px solid #4285f4;
+}
+
+.highlight {
+  background: yellow;
+}
+
+.hide {
+  display: none;
+}
+
+#socialmedia {
+  border-top: 0.7px solid rgb(214, 214, 214);
+  text-decoration: none;
+  margin: 0 auto;
+  padding: 1.5%;
+  font-size: 1.3em;
+  display: flex;
+  justify-content: space-around;
+  flex-grow: 1;
+}
+
+#linkedin {
+  color: rgb(0, 119, 181);
+}
+
+#github {
+  color: #000;
+}
+
+#email {
+  text-decoration: none;
+  color: rgb(0, 172, 237);
+}
+
+#facebook {
+  color: rgb(72, 103, 170);
+}
+
+.pin {
+  color: #4285f4;
+}
+
+#sectionindicator {
+  display: flex;
+}
+
+.leftarrow {
+  font-size: 3em;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul.skillslist {
+  text-align: center;
+}
+
+.score {
+  color: rgb(231, 113, 27);
+  box-sizing: border-box;
+  display: inline;
+  margin: 25px;
+}
+
+#large-map {
+  display: none;
+}
+
+@media only screen and (min-width: 650px) {
+  main {
+    display: grid;
+    grid-template-areas:
+      "indicator map"
+      "infopanel map";
+    grid-template-columns: 1fr 3fr;
+    font-size: 1.3vw;
+  }
+
+  #sectionindicator {
+    height: 10vh;
+    width: 35vw;
+    font-size: 1.8vw;
+    padding-left: 0.2em;
+  }
+
+  #toggle {
+    display: none;
+  }
+
+  h2 {
+    font-size: 3vw;
+  }
+
+  #container {
+    background-image: none;
+    height: 7.5vh;
+  }
+
+  p {
+    padding: 0.5em;
+  }
+
+  #education {
+    display: block;
+  }
+
+  #large-map {
+    display: block;
+    background-image: url('g1.png');
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    grid-area: map;
+  }
+}

@@ -83,6 +83,7 @@
   opacity: 0.8;
   text-align: center;
   margin-bottom: 40%;
+  margin-top: 20px;
 }
 
 /* .years > div::after {
@@ -121,34 +122,49 @@
   grid-auto-columns: 0 10px 25px 1fr;
 }
 
-#durham-hr {
+#nology-hr {
   width: 15px;
-  height: 38%;
+  height: 9%;
   border-top: none;
-  background: rgb(125, 96, 230);
+  background: rgb(156, 134, 236);
   border-radius: 3px;
   position: relative;
-  top: 10%;
+  top: 0;
+  margin: 0;
+}
+
+#nology-icon {
+  color: rgb(156, 134, 236);
+}
+
+#durham-hr {
+  width: 15px;
+  height: 40%;
+  border-top: none;
+  background: rgb(103, 73, 211);
+  border-radius: 3px;
+  position: relative;
+  top: 4%;
   margin: 0;
 }
 
 #dur-icon {
-  color: rgb(125, 96, 230);
+  color: rgb(103, 73, 211);
 }
 
 #hayesfield-hr {
   width: 15px;
-  height: 49%;
+  height: 44%;
   border-top: none;
-  background: rgb(48, 28, 139);
+  background: rgb(38, 20, 116);
   border-radius: 3px;
   position: relative;
-  top: 13%;
+  top: 7%;
   margin: 0;
 }
 
 #hayesfield-icon {
-  color: rgb(48, 28, 139);
+  color: rgb(38, 20, 116);
 }
 
 #hare-hr {
@@ -159,7 +175,7 @@
   border-radius: 3px;
   margin-left: 10px;
   position: relative;
-  top: 4%;
+  top: 7%;
 }
 
 #hare-icon {
@@ -174,7 +190,7 @@
   border-radius: 3px;
   margin-left: 10px;
   position: relative;
-  top: 15%;
+  top: 17.5%;
 }
 
 #ebs-icon {
@@ -189,7 +205,7 @@
   border-radius: 3px;
   margin-left: 10px;
   position: relative;
-  top: 43%;
+  top: 46%;
 }
 
 #waitrose-icon {

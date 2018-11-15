@@ -1,4 +1,4 @@
-@media only screen and (max-width: 570px) {
+/* @media only screen and (max-width: 570px) {
   html {
     scroll-behavior: smooth;
   }
@@ -7,7 +7,6 @@
     font-family: 'Raleway', sans-serif;
     text-align: justify;
     background-color: white;
-    margin: 30px 30px 30px 30px;
     background-image: url(https://bit.ly/2RhRnjw);
     background-size: cover;
     background-position: center;
@@ -90,34 +89,28 @@
     text-decoration: none;
   }
 
+  .border {
+    border-bottom: 3px white solid;
+  }
+
   .timeline {
-    display: grid;
-    grid-template-areas: "one two thr for fiv";
-    grid-auto-columns: auto;
+    position: relative;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    bottom: 100px;
   }
 
-  .timeline span div {
-    position: absolute;
-    border: 1px black solid;
-    background-color: white;
-    height: 25px;
-    width: 25px;
-    border-radius: 50%;
+  .img {
     position: relative;
-    top: -12.5px;
-    z-index: -1;
+    width: 100px;
+    height: 100px;
+    border-radius: 15%;
   }
 
-  .circleOne,
-  .circleTwo,
-  .circleThr,
-  .circleFor {
-    border-bottom: 1px white solid;
-    width: 100%;
-    position: relative;
-    left: 27.5px;
-    z-index: -1;
+  .timeline-img3 {
+    border: 2px lightgrey solid;
   }
 
   .ref {
@@ -172,7 +165,7 @@
 
   .aca-con-2 {
     display: grid;
-    grid-template-areas: "aw-box pro-box";
+    grid-template-areas: "pro-box pro-box";
     grid-template-columns: 50% 50%;
   }
 
@@ -215,4 +208,4 @@
     float: right;
     text-align: right;
   }
-}
+} */
