@@ -102,11 +102,21 @@ a {
 }
 
 a div {
-  background-color: #f50;
+  background-color: red;
   color: white;
 }
 
 a:hover div {
   background-color: #910d0d;
   box-shadow: none;
+}
+
+#paper-cv {
+  padding-top: 25px;
+}
+
+#download {
+  text-align: center;
+  padding: 5px;
+  box-shadow: 0 0 20px 5px rgba(145, 13, 13, 0.75);
 }
