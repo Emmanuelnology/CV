@@ -1,12 +1,12 @@
 var i = 0;
 var j = 0;
 var txt = 'george.webster@yourcompany.com';
-var txt2 = 'Pa$$word';
+var txt2 = 'Pa$$word123';
 var speed = 50;
 
 function delay(){
-    setTimeout(typeWriter1, 2000);
-    setTimeout(typeWriter2, 4500);
+    setTimeout(typeWriter1, 1500);
+    setTimeout(typeWriter2, 4000);
 }
 
 function typeWriter1() {
