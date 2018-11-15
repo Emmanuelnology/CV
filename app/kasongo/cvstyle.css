@@ -8,13 +8,10 @@ body {
   margin: 0;
 }
 
-form {
-  padding-top: 8em;
-  text-align: center;
-}
-
 .hello {
   padding-bottom: 1.5em;
+  padding-top: 8em;
+  justify-content: center;
 }
 
 button {
@@ -26,6 +23,7 @@ button {
 a {
   text-decoration: none;
   color: rgb(161, 203, 252);
+  text-align: center;
 }
 
 /* Center the loader */
