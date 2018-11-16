@@ -131,11 +131,6 @@ header {
   margin-bottom: 5%;
 }
 
-/*
-.small {
-  margin-top: 48%;
-} */
-
 .bounce {
   -moz-animation: bounce 2s infinite;
   -webkit-animation: bounce 2s infinite;
@@ -274,7 +269,7 @@ ul {
 }
 
 .kasface {
-  max-height: 300px;
+  max-height: 260px;
 }
 
 /* Social links in line and central and below contact section */
@@ -532,6 +527,6 @@ form textarea {
 }
 
 .mod-image {
-  width: 72px;
+  width: 75px;
   height: 80px;
 }
