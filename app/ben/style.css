@@ -95,18 +95,73 @@ ul {
   cursor: pointer;
 }
 
+.js-modal-open {
+  text-decoration: underline;
+}
+
+.js-modal-open:hover {
+  cursor: pointer;
+}
+
+.js-modal {
+  display: none;
+  position: fixed;
+  top: 35%;
+  right: 5%;
+  width: 90%;
+  background-color: var(--color-light);
+  z-index: 3;
+  border-radius: 1em;
+  border: 0.25em solid var(--color-dark);
+  color: var(--color-dark);
+  padding: 0.5em;
+  text-align: center;
+}
+
+.js-modal i {
+  font-size: 1.5em;
+  float: right;
+}
+
+.js-modal i:hover {
+  cursor: pointer;
+}
+
+.js-modal div {
+  font-weight: 600;
+  padding: 0.625em;
+  font-size: 1.142em;
+}
+
+.js-modal li {
+  font-size: 0.875em;
+  padding: 0.125em;
+}
+
+#blocker {
+  display: none;
+  background-color: rgb(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
 /* About styling */
 #about-content {
-  font-size: 14px;
+  font-size: var(--size-large);
+  font-size: 0.875em;
 }
 
 #about-content .large {
-  font-weight: 600;
+  font-weight: 400;
 }
 
 /* Skills styling */
 #skills-content {
-  font-size: 16px;
+  font-size: var(--size-large);
   display: grid;
   grid-template-areas: "tech" "other";
   grid-template-columns: 1fr;
@@ -126,7 +181,7 @@ ul {
 
 #skills-content li {
   width: 300px;
-  font-weight: 600;
+  font-weight: 400;
   padding-bottom: 0.875em;
 }
 
@@ -152,6 +207,7 @@ ul {
 
 #tech {
   grid-area: tech;
+  margin-bottom: 0.75em;
 }
 
 #other {
@@ -170,12 +226,13 @@ ul {
   margin: 0;
   display: flex;
   color: var(--color-dark);
+  font-size: var(--size-large);
 }
 
 #work-content .timeline {
   display: flex;
   flex-wrap: wrap;
-  font-size: 14px;
+  font-size: 0.875em;
 }
 
 #work-content .timeline > div {
@@ -202,7 +259,7 @@ ul {
 #work-content .timeline > .empty {
   display: flex;
   align-items: flex-end;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1.142em;
   padding-bottom: 0.4em;
 }
@@ -215,10 +272,12 @@ ul {
 #work-content .timeline > .content {
   border-top: 0.125em solid var(--color-dark);
   padding-top: 0.25em;
+  min-height: 7em;
 }
 
 #work-content .timeline > .contentlast {
   padding-bottom: 0.5em;
+  min-height: 0.5em;
 }
 
 #work-content .timeline > .empty:nth-child(even)::before,
@@ -257,34 +316,14 @@ ul {
   padding: 0.15em;
 }
 
-@media only screen and (min-width: 585px) {
-  #work,
-  .active-work #work:hover {
-    background-color: var(--color-light);
-  }
-
-  #contact,
-  .active-contact #contact:hover {
-    background-color: var(--color-med);
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  #work,
-  .active-work #work:hover {
-    background-color: var(--color-med);
-  }
-
-  #contact,
-  .active-contact #contact:hover {
-    background-color: var(--color-light);
-  }
-}
-
 /* Contact styling */
+#contact h2 {
+  margin-bottom: 0;
+}
+
 #contact-content {
   text-align: center;
-  font-size: 16px;
+  font-size: var(--size-large);
 }
 
 #contact-content section {
@@ -319,10 +358,6 @@ ul {
 #contact-content .fab {
   font-size: 3.125em;
   margin: 0 0.1em;
-}
-
-#contact-content .fab:hover {
-  font-size: 3.75em;
 }
 
 #contact-content .fa-linkedin {
@@ -361,7 +396,7 @@ ul {
 
 /* Hobbies styling */
 #hobbies-content {
-  font-size: 16px;
+  font-size: var(--size-large);
   text-align: center;
 }
 
@@ -374,9 +409,13 @@ ul {
 }
 
 /* Qualifications styling */
+#qualifications h2 {
+  margin-bottom: 0.25em;
+}
+
 #qualifications-content {
   justify-items: center;
-  font-size: 16px;
+  font-size: var(--size-large);
 }
 
 #qualifications-content > article {
@@ -403,7 +442,7 @@ ul {
 }
 
 #qualifications-content .grade {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1.33em;
 }
 
@@ -415,6 +454,7 @@ ul {
 h2 {
   text-align: center;
   font-size: 34px;
+  margin: var(--size-large);
 }
 
 h3 {
@@ -449,4 +489,68 @@ ul {
 main {
   color: var(--color-dark);
   min-height: 100vh;
+}
+
+@media only screen and (min-width: 585px) {
+  .js-modal {
+    right: 15%;
+    width: 70%;
+  }
+
+  #work,
+  .active-work #work:hover {
+    background-color: var(--color-light);
+  }
+
+  #contact,
+  .active-contact #contact:hover {
+    background-color: var(--color-med);
+  }
+
+  #about-content .large {
+    font-weight: 600;
+  }
+
+  #skills-content li {
+    font-weight: 600;
+  }
+
+  #work-content .timeline > .emptytop,
+  #work-content .timeline > .empty {
+    font-weight: 600;
+  }
+
+  #work-content .timeline > .empty:nth-child(even)::before,
+  #work-content .timeline > .emptylast:nth-child(even)::before,
+  #work-content .timeline > .content:nth-child(even)::before {
+    background-color: var(--color-light);
+  }
+
+  #qualifications-content .grade {
+    font-weight: 600;
+    font-size: 1.33em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .js-modal {
+    right: 25%;
+    width: 50%;
+  }
+
+  #work,
+  .active-work #work:hover {
+    background-color: var(--color-med);
+  }
+
+  #contact,
+  .active-contact #contact:hover {
+    background-color: var(--color-light);
+  }
+
+  #work-content .timeline > .empty:nth-child(even)::before,
+  #work-content .timeline > .emptylast:nth-child(even)::before,
+  #work-content .timeline > .content:nth-child(even)::before {
+    background-color: var(--color-med);
+  }
 }

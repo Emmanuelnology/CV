@@ -60,9 +60,78 @@ nav .right a:hover {
 }
 
 nav .menu {
+  display: -webkit-flex;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.content {
+  flex: 1;
+  overflow: auto;
+  align-items: flex-start;
+}
+
+.box {
+  min-width: 200px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.item {
+  position: relative;
+  background-color: gray;
+  display: inline-block;
+  text-align: center;
+  height: 100px;
+  width: 200px;
+  background-size: cover;
+}
+
+.item:hover {
+  height: 200px;
+  width: 400px;
+  transition: 0.5s;
+}
+
+.item p {
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+  color: white;
+}
+
+.item .bottom {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.item .bottom::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f078";
+  font-weight: 900;
+}
+
+.item:hover .bottom {
+  display: block;
+}
+
+.item a {
+  color: white;
+}
+
+.item a:hover {
+  color: red;
+}
+
+.content {
+  color: red;
+  text-align: center;
+  height: 100%;
+  width: 100%;
 }
 
 .burger-menu {
@@ -238,79 +307,6 @@ main {
   display: flex;
   flex-direction: column;
 } */
-
-.content {
-  flex: 1;
-  overflow: auto;
-}
-
-.box {
-  min-width: 200px;
-  display: flex;
-  align-items: flex-end;
-}
-
-.item {
-  position: relative;
-  background-color: gray;
-  display: inline-block;
-  text-align: center;
-  height: 100px;
-  width: 200px;
-  background-size: cover;
-}
-
-.item:hover {
-  height: 200px;
-  width: 400px;
-  transition: 0.5s;
-}
-
-.item p {
-  margin: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  font-size: 20px;
-  color: white;
-}
-
-.item .bottom {
-  display: none;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding-bottom: 80px;
-  padding-top: 60px;
-}
-
-.item .bottom::before {
-  font-family: "Font Awesome 5 Free";
-  content: "\f078";
-  font-weight: 900;
-}
-
-.item:hover .bottom {
-  display: block;
-}
-
-.item a {
-  color: white;
-}
-
-.item a:hover {
-  color: red;
-}
-
-.content {
-  color: red;
-  text-align: center;
-  height: 100%;
-  width: 100%;
-}
-
-ul {
-  list-style-type: none;
-}
 
 #nology {
   background-image: url("img/logos/nology-logo.jpg");
