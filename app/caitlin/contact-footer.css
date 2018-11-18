@@ -1,0 +1,33 @@
+#contact-me li {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#contact-me li:nth-child(even) {
+  margin: 0;
+}
+
+.contact-links:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+#contact-me i {
+  font-size: 2em;
+}
+
+footer li {
+  margin: 0 1em;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+}

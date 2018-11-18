@@ -1,0 +1,58 @@
+.skills-container {
+  justify-content: center;
+}
+  
+.skills-container > h2 {
+  grid-area: heading;
+}
+
+.skill-rating {
+  grid-area: skill-rating;
+  text-align: center;
+}
+
+.skill-rating i {
+  margin: 0 3px;
+}
+
+.skill-list {
+  grid-area: skill-list;
+  text-align: right;
+}
+
+.skill-explanations {
+  grid-area: explanation;
+}
+
+.skill-explanations li {
+  padding: 0 15px 15px 15px;
+  text-align: justify;
+}
+
+.descriptions {
+  grid-area: descriptions;
+  padding: 0;
+  text-align: left;
+  font-size: 0.8em;
+}
+
+.descriptions ul {
+  transform: rotate(270deg);
+}
+
+.descriptions li {
+  margin-bottom: 5px;
+  padding-left: 45px;
+}
+
+.skills-container {
+  margin: 0;
+  display: grid;
+  grid-template-areas:
+    "heading heading"
+    ". descriptions"
+    "skill-list skill-rating"
+    "explanation explanation";
+  grid-template-columns: 130px 150px;
+  grid-template-rows: 40px 100px 210px;
+}

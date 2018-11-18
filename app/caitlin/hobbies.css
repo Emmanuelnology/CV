@@ -1,0 +1,47 @@
+#awards li{
+  margin-top: 20px;
+}
+
+#awards li:first-child {
+  margin-top: 30px;
+}
+
+#extra-curricular li {
+  margin: 15px;
+}
+
+#extra-curricular > div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#extra-curricular > div > div {
+  flex: 1;
+  min-width: 100%;
+}
+
+#extra-curricular > div > div:first-child {
+  margin-top: 30px;
+}
+
+#extra-curricular img {
+  height: 90%;
+  width: 100%;
+  overflow: hidden;
+  display: block;
+  margin: auto auto;
+  border-radius: 7px;
+  object-fit: cover;
+}
+
+#extra-curricular h3 {
+  margin: 0;
+  text-align: center;
+  padding: 0.7em 0;
+}
+
+#extra-curricular ul {
+  margin: 0 0 2.5em 0;
+  text-align: justify;
+  font-size: 0.9em;
+}
