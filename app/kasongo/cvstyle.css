@@ -6,11 +6,19 @@ body {
   font-family: 'Days One';
   padding-bottom: 0;
   margin: 0;
+  display: flex;
+  flex: 1;
+  display: block;
+}
+
+h1 {
+  color: rgb(28, 30, 83);
+  font-size: 2.5em;
 }
 
 .hello {
   padding-bottom: 1.5em;
-  padding-top: 8.1em;
+  padding-top: 5.1em;
   justify-content: center;
 }
 
@@ -18,12 +26,21 @@ button {
   background-color: rgb(39, 121, 202, 0.6);
   font-size: 2.5em;
   font-family: 'Days One';
+  margin-bottom: 0;
 }
 
 a {
   text-decoration: none;
   color: rgb(161, 203, 252);
   text-align: center;
+}
+
+/* Image size on mobile */
+@media only screen and (min-width: 1px) and (max-width: 500px) {
+  .hello {
+    width: 230px;
+    height: 240px;
+  }
 }
 
 /* Center the loader */
