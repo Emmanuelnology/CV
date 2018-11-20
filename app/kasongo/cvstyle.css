@@ -38,7 +38,7 @@ a {
 /* Image size on mobile */
 @media only screen and (min-width: 1px) and (max-width: 500px) {
   .hello {
-    width: 230px;
+    width: 250px;
     height: 240px;
   }
 }
