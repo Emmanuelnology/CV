@@ -317,6 +317,13 @@ ul {
   background-size: cover;
 }
 
+/* Background image of award section */
+#awardkas {
+  background-image: url('kas-clean.jpg');
+  background-size: cover;
+}
+
+/* Background image of hobbies section */
 #hobbievolun {
   background-image: url('track.jfif');
   background-size: cover;
