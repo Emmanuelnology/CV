@@ -330,7 +330,7 @@ ul {
 }
 
 /* Form style and background */
-.message {
+#goodbye {
   background-image: url('kas-wood.jpg');
   background-size: cover;
 }

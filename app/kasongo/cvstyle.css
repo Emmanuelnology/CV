@@ -35,6 +35,10 @@ a {
   text-align: center;
 }
 
+img {
+  opacity: 0.5;
+}
+
 /* Image size on mobile */
 @media only screen and (min-width: 1px) and (max-width: 500px) {
   .hello {
