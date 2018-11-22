@@ -276,7 +276,7 @@ ul {
 .social {
   width: 100%;
   text-align: center;
-  padding-bottom: 3.2em;
+  padding-bottom: 2.5m;
 }
 
 /* About me section with an image, margin below about me text */
@@ -317,8 +317,20 @@ ul {
   background-size: cover;
 }
 
-/* Form styleand background */
-.message {
+/* Background image of award section */
+#awardkas {
+  background-image: url('kas-clean.jpg');
+  background-size: cover;
+}
+
+/* Background image of hobbies section */
+#hobbievolun {
+  background-image: url('track.jfif');
+  background-size: cover;
+}
+
+/* Form style and background */
+#goodbye {
   background-image: url('kas-wood.jpg');
   background-size: cover;
 }
