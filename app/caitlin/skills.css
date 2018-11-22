@@ -1,7 +1,7 @@
 .skills-container {
   justify-content: center;
 }
-  
+
 .skills-container > h2 {
   grid-area: heading;
 }

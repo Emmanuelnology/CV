@@ -1,7 +1,7 @@
 main > section {
   padding: 40px 35px 35px 35px;
 }
-  
+
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -44,6 +44,7 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
 .bgcgrey {
   background-color: rgba(210, 199, 211, 0.9);
 }
@@ -51,6 +52,7 @@ a {
 .bgcbeige {
   background-color: rgba(245, 245, 220, 0.9);
 }
+
 .italics {
   font-style: italic;
 }
