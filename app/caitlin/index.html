@@ -3,69 +3,88 @@
 <!-- By Caitlin Whiteley -->
 <head>
 
-    <title>Caitlins CV</title>
+    <title>Caitlin's CV</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link href="style.css" rel="stylesheet">
+    
     <link href="timeline.css" rel="stylesheet">
+
+    <link href="general-formatting.css" rel="stylesheet">
+    <link href="skills.css" rel="stylesheet">
+    <link href="about-me.css" rel="stylesheet">
+    <link href="header-nav-bar.css" rel="stylesheet">
+    <link href="achievements.css" rel="stylesheet">
+    <link href="hobbies.css" rel="stylesheet">
+    <link href="contact-footer.css" rel="stylesheet">
+
+    <link href="style.css" rel="stylesheet">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
 </head>
 <body>
 
-    <div class="top-panel" id="top-panel">
-        <header>
-            <h1><i class="fa fa-graduation-cap"> Caitlin Whiteley </i> </h1>
-        </header>
+    <header>
+        <h1> <i class="fa fa-graduation-cap"></i> <span> Caitlin Whiteley </span></h1>
         <p class="sub-heading">Curriculum Vitae</p>
-    </div>
+    </header>
 
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-bar-burger" aria-controls="nav-bar-burger" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+    <nav class="navbar navbar-collapse navbar-expand-lg navbar-dark sticky-top">
+        <button 
+            class="navbar-toggler" 
+            data-toggle="collapse" 
+            data-target="#nav-bar-burger" 
+            aria-controls="nav-bar-burger" 
+            aria-expanded="false" 
+        >
+            <div class="nav-container" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
         </button>
+
         <div class="collapse navbar-collapse" id="nav-bar-burger">
-        <ul class="navbar-nav mx-auto">
-            <li class="nav-item pr-4">
-            <a class="nav-link" href="#about-me">About me <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item pr-4">
-            <a class="nav-link" href="#education-section">Education</a>
-            </li>
-            <li class="nav-item pr-4">
-            <a class="nav-link" href="#education-section">Work experience</a>
-            </li>
-            <li class="nav-item pr-4">
-            <a class="nav-link" href="#skills">Skills</a>
-            </li>
-            <li class="nav-item pr-4">
-            <a class="nav-link" href="#awards">Awards</a>
-            </li>
-            <li class="nav-item pr-4">
-            <a class="nav-link" href="#extra-curricular">Hobbies</a>
-            </li>
-            <li class="nav-item pr-4">
-            <a class="nav-link " href="#contact-me">Contact details</a>
-            </li>
-        </ul>
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item pr-4">
+                    <a class="nav-link" href="#about-me-anchor">About me <span class="sr-only">(current)</span></a>
+                </li>
+                    <li class="nav-item pr-4">
+                <a class="nav-link" href="#edu-grid">Education</a>
+                    </li>
+                <li class="nav-item pr-4">
+                    <a class="nav-link" href="#work-grid">Work experience</a>
+                    </li>
+                <li class="nav-item pr-4">
+                    <a class="nav-link" href="#skills-anchor">Skills</a>
+                </li>
+                <li class="nav-item pr-4">
+                    <a class="nav-link" href="#awards-anchor">Awards</a>
+                </li>
+                <li class="nav-item pr-4">
+                    <a class="nav-link" href="#curricular-anchor">Hobbies</a>
+                </li>
+                <li class="nav-item pr-4">
+                    <a class="nav-link " href="#contact-info">Contact details</a>
+                </li>
+            </ul>
         </div>
     </nav>
 
-    <div id="blocker"></div>
-    <div class="modal">
-        Content
-        <button class="js-modal-close"> <i class="fa fa-times"></i> Close </button>
-    </div>
 
     <main>
 
     <section id="about-me" class="bgcbeige">
-        <h2> About me </h2>
+        <h2 id="about-me-anchor"> About me </h2>
         <div>
-            <button class="js-modal-open"> <img src="photo-of-me.jpg" alt="a photo of myself"> </button>
-            <div>I am logical, creative, hard-working and conscientious. 
+            <button class="photo-button">
+                <img src="photo-of-me.jpg" alt="a photo of myself"> 
+            </button>
+            <div>
+                I am logical, creative, hard-working and conscientious. 
                 Finding elegant solutions to problems using my programming skills &#8210; 
                 from tackling mathematical problems with Python to enhancing the 
                 smooth running of operations in a food factory using VBA &#8210; is what 
@@ -76,7 +95,7 @@
                 commit to an intensive training schedule is as important as my gymnastic 
                 skills.
             </div>
-            <button class="js-modal-open"> <img src="another-photo-of-me.jpg" alt="another photo of myslef"> </button>
+            <button class="photo-button"> <img src="another-photo-of-me.jpg" alt="another photo of myslef"> </button>
         </div>
     </section>
 
@@ -219,99 +238,114 @@
 
     <section id="skills" class="bgcbeige">
 
-        <h2> Skills </h2>
-    <div id="skill-con">
-        <div id="skills-box">
-            <ul>
-                <li class="rotate-text">
-                    <div>
-                        <div> Beginner </div>
-                        <div> Familiar </div>
-                        <div> Proficient </div>
-                        <div> Expert </div>
-                        <div> Master</div>
-                    </div>
-                </li>
-                <li> HTML
-                    <div class="score">
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                    </div>
-                </li>
-                <li> CSS
-                    <div class="score">
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                    </div>
-                </li>
-                <li> JavaScript
-                    <div class="score">
-                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                    </div>
-                </li>
+        
+        <div class="skills-container">
+            
+            <h2 id="skills-anchor">Skills</h2>
 
-                <li> Python
-                    <div class="score">
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                    </div>
-                </li>
+            <div class="descriptions">
+                <ul>
+                    <li> Beginner </li>
+                    <li> Elementary </li>
+                    <li> Intermediate </li>
+                    <li> Advanced </li>
+                    <li> Expert </li>
+                </ul>
+            </div>
 
-                <li> LaTex
-                    <div class="score">
+            <div class="skill-rating">
+                <ul class="skillslist">
+                    <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                    </li>
+                    <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                    </li>
+                    <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                    </li>
+                    <li>
                         <i class="fa fa-star" aria-hidden="true"></i>
                         <i class="fa fa-star" aria-hidden="true"></i>
                         <i class="fa fa-star" aria-hidden="true"></i>
                         <i class="fa fa-star" aria-hidden="true"></i>
                         <i class="fa fa-star-o" aria-hidden="true"></i>
-                    </div>
-                </li>
+                    </li>
+                    <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                    </li>
+                    <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                    </li>
+                    <li>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                    </li>
+                </ul>
+            </div>
 
-                <li> Excel VBA
-                    <div class="score">
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                        <i class="fa fa-star-o" aria-hidden="true"></i>
-                    </div>
-                </li>
-            </ul>
+            <div class="skill-list">
+                <ul>
+                    <li> HTML </li>
+                    <li> CSS </li>
+                    <li> JavaScript </li>
+                    <li> Python </li>
+                    <li> LaTex</li>
+                    <li> Excel VBA </li>
+                    <li> Microsoft Office </li>
+                </ul>
+            </div>
+
+            <div class="skill-explanations"> 
+                <ul>
+                    <li>
+                        I learnt and put into practice skills in <span class="bold">HTML</span>, 
+                        <span class="bold">CSS</span> and <span class="bold">JavaScript</span> 
+                        for three months as part of the Nology course.
+                    </li>
+                    <li>
+                        I used <span class="bold">Python</span> in my 3rd year dissertation project to conduct 
+                        computational research and plot my results. I then used 
+                        <span class="bold">LaTex</span> to write it up.
+                    </li>
+                    <li>
+                        During my 9 week summer internship I taught myself how to program 
+                        in <span class="bold">VBA</span> and put my skills into practice.
+                    </li>
+                </ul>
+            </div>
+
         </div>
-
-        <div id="skills-description">
-            <ul>
-                <li>
-                    I learnt and put into practice skills in HTML, CSS and JavaScript for three months as part of the Nology course.
-                </li>
-                <li>
-                    I used Python in my 3rd year dissertation project to conduct computational research and plot my results. I then used LaTex to write it up.
-                </li>
-                <li>
-                    During my 9 week summer internship I taught myself how to program in VBA and put my skills into practice.
-                </li>
-            </ul>
-        </div>
-    </div>
+    
     </section>
 
 
     <section id="awards" class="bgcgrey">
 
-        <h2> Awards and achievments </h2>
+        <h2 id="awards-anchor"> Awards and achievments </h2>
 
         <ul>
             <li>
@@ -342,7 +376,7 @@
 
 
     <section id="extra-curricular" class="bgcbeige">
-        <h2 id="curric-heading"> Hobbies </h2>
+        <h2 id="curricular-anchor"> Hobbies </h2>
 
         <div>
             <div id="cheer"> 
@@ -463,12 +497,6 @@
 
     </section>
 
-
-    <!-- <section id="references">
-        <h2> References </h2>
-        <p> References available upon request </p>
-        <button> Click to request </button>
-    </section> -->
 
     </main>
 
