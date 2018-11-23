@@ -404,6 +404,10 @@ form textarea {
     font-size: 0.8em;
   }
 
+  p {
+    font-size: 0.8em;
+  }
+
   .kasface {
     max-width: 24vh;
     max-height: 27vh;
