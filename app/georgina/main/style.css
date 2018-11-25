@@ -58,11 +58,9 @@ nav li {
   width: 15%;
   position: absolute;
   right: 5%;
-  border: 2px red solid;
 }
 
 .nav-menu {
-  border: 2px red solid;
   position: relative;
   height: 20%;
   background-position: center;
