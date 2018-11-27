@@ -408,6 +408,11 @@ form textarea {
     font-size: 0.8em;
   }
 
+  /* In-section text font */
+  .text {
+    font-size: 0.8em;
+  }
+
   .kasface {
     max-width: 24vh;
     max-height: 27vh;
