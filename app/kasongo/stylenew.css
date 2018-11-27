@@ -1,6 +1,8 @@
 /* Border over all the page, body and title style */
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  overflow: scroll;
   margin: 0;
   padding: 0;
 }
