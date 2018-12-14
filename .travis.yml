@@ -2,9 +2,10 @@ language: php
 sudo: enabled
 before_install:
 - npm install -g htmllint-cli
-- npm install stylelint
+- npm install -g stylelint
 script:
-  - npm run lint
+  - htmllint app/**/*.html
+  - stylelint app/**/*.css
 notifications:
   slack: nology-uk:je0I2B8Zeu6UZTn3HwEGXNjd
   webhooks:

@@ -53,6 +53,49 @@ nav li {
   border: 1px solid black;
 }
 
+.nav-img-div {
+  height: 100%;
+  width: 15%;
+  position: absolute;
+  right: 5%;
+  border: 2px red solid;
+}
+
+.nav-menu {
+  border: 2px red solid;
+  position: relative;
+  height: 20%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: white;
+  font-size: large;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#nav-skills {
+  background-image: url('brain.png');
+}
+
+#nav-story {
+  background-image: url('lips.png');
+}
+
+#nav-aboutme {
+  background-image: url('heart.png');
+}
+
+#nav-contact {
+  background-image: url('phone.png');
+}
+
+#nav-travelling {
+  background-image: url('shoes.png');
+}
+
 main {
   display: none;
   background-color: rgba(225, 225, 225, 0.95);
