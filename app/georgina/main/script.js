@@ -1,7 +1,10 @@
 var nav = {
     contact: {
         link: $("#js-contact"),
-        content: $("#contact")
+        content: $("#contact"),
+        hoverIn: function () {
+            $('#gee').attr('src',"geephone.png"); 
+        }
     },
     story: {
         link: $("#js-story"),
@@ -13,7 +16,6 @@ var nav = {
     skills: {
         link: $("#js-skills"),
         content: $("#skills"),
-        div: $("#brain"),
         hoverIn: function () {
             $('#gee').attr('src',"gee.brain.png"); 
         }
@@ -23,11 +25,15 @@ var nav = {
         content: $("#aboutme"),
         hoverIn: function () {
             $('#gee').attr('src',"gee.heart.png"); 
-        }
+        },
+      
     },
     hobbies: {
         link: $("#js-hobbies"),
-        content: $("#hobbies")
+        content: $("#hobbies"),
+        hoverIn: function () {
+            $('#gee').attr('src',"geeshoes.png"); 
+        },
     }
 }
 
@@ -72,14 +78,23 @@ function hoverOut() {
 $('#js-skills').hover(nav.skills.hoverIn,hoverOut);   
 $('#js-story').hover(nav.story.hoverIn,hoverOut);   
 $('#js-aboutme').hover(nav.aboutme.hoverIn,hoverOut);   
+$('#js-hobbies').hover(nav.hobbies.hoverIn,hoverOut);   
+$('#js-contact').hover(nav.contact.hoverIn,hoverOut);   
 
 
-$('#js-skills').click(function () {
-    $('#gee').attr('src',"gee.brain.png"); 
-});
-$('#js-story').click(function () {
-    $('#gee').attr('src',"gee.lips.png"); 
-});
+// $('#js-skills').click(function () {
+//     $('#gee').attr('src',"gee.brain.png"); 
+// });
+// $('#js-story').click(function () {
+//     $('#gee').attr('src',"gee.lips.png"); 
+// });
 $('#js-aboutme').click(function () {
     $('#gee').attr('src',"gee.heart.png"); 
 });
+
+$(function() {
+    $('.js-skills').click(function(){
+      $("#gee").attr('src',"gee.brain.png");
+      return false;
+    });
+   })

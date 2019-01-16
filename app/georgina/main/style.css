@@ -3,6 +3,7 @@
 
 * {
   box-sizing: border-box;
+  font-family: 'Fauna One', serif;
 }
 
 ul {
@@ -15,13 +16,13 @@ a,
 a:visited {
   color: inherit;
   text-decoration-line: none;
-  font-family: 'Fauna One', serif;
   padding: 6px;
+  color: white;
+  font-size: 15px;
 }
 
 body {
   margin: 0;
-  font-family: 'Fauna One', serif;
   display: grid;
   grid-template-areas: "me";
   grid-template-columns: 1fr;
@@ -41,20 +42,20 @@ nav {
   position: fixed;
 }
 
-nav ul {
+/* nav ul {
   display: flex;
-}
+} */
 
-nav li {
+/* nav li {
   flex-grow: 1;
   text-align: center;
   background-color: white;
   padding: 10px;
   border: 1px solid black;
-}
+} */
 
 .nav-img-div {
-  height: 100%;
+  height: 90%;
   width: 15%;
   position: absolute;
   right: 5%;
@@ -66,12 +67,14 @@ nav li {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  text-shadow: #000 0 0 10px;
   color: white;
   font-size: large;
   font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 #nav-skills {
@@ -94,6 +97,15 @@ nav li {
   background-image: url('shoes.png');
 }
 
+/* .poseGee {
+  background-image: url('geePose.png');
+  background-size: cover;
+  height: 500px;
+  position: absolute;
+  z-index: 8;
+
+} */
+
 main {
   display: none;
   background-color: rgba(225, 225, 225, 0.95);
@@ -112,6 +124,7 @@ main {
   top: 0;
   right: 10px;
   padding: 5px;
+  color: black;
 }
 
 .fa-times {
@@ -119,7 +132,6 @@ main {
 }
 
 h1 {
-  font-family: 'Fauna One', serif;
   text-align: center;
   font-size: 35px;
   padding: 0;
@@ -130,7 +142,6 @@ h1 {
 
 h2 {
   text-align: center;
-  font-family: 'Fauna One', serif;
   font-size: 20px;
   color: black;
   margin: 0;
@@ -140,7 +151,6 @@ header h3 {
   text-align: center;
   margin-top: 5px;
   margin-bottom: 50px;
-  font-family: 'Fauna One', serif;
   font-size: 15px;
 }
 
@@ -166,7 +176,6 @@ header h3 {
 
 .info li {
   margin: 20px 0;
-  font-family: 'Fauna One', serif;
   font-size: 18px;
   color: white;
 }
@@ -203,7 +212,6 @@ header h3 {
 .skills-panel h2 {
   text-transform: uppercase;
   margin-top: 5px;
-  font-family: 'Fauna One', serif;
   font-size: 20px;
 }
 
@@ -216,7 +224,6 @@ header h3 {
   border-width: 2px;
   border-bottom-style: dotted;
   padding: 5px;
-  font-family: 'Fauna One', serif;
 }
 
 .skills-panel {
@@ -229,7 +236,6 @@ header h3 {
 }
 
 .me {
-  font-family: 'Fauna One', serif;
   position: relative;
   text-align: center;
   margin-top: 10px;
@@ -290,7 +296,6 @@ header h3 {
 .skills-panel h2 {
   text-transform: uppercase;
   margin-top: 5px;
-  font-family: 'Fauna One', serif;
 }
 
 .skills-panel ul {
@@ -302,7 +307,6 @@ header h3 {
   border-width: 2px;
   border-bottom-style: dotted;
   padding: 5px;
-  font-family: 'Fauna One', serif;
   font-size: 18px;
 }
 
@@ -357,91 +361,6 @@ nav ul {
   padding-left: 6.5px;
 }
 
-#navtext {
-  display: none;
-  font-size: 15px;
-  color: white;
-  font-family: 'Fauna One', serif;
-  width: 120px;
-  position: static;
-}
-
-.rollover {
-  height: 50px;
-  width: 100%;
-  position: absolute;
-  color: white;
-  font-size: large;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(6, 174, 213, 0.3);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.rollover a {
-  display: inline-block;
-  text-decoration: none;
-}
-
-#brain {
-  top: 8vh;
-  background-image: url('brain.png');
-}
-
-#lips {
-  top: 24vh;
-  background-image: url('lips.png');
-}
-
-#lips:hover {
-  position: fixed;
-  position: absolute;
-}
-
-#heart {
-  top: 40vh;
-  background-image: url('heart.png');
-}
-
-#heart:hover {
-  position: fixed;
-  position: absolute;
-}
-
-#phone-div {
-  display: inline-block;
-  height: 50px;
-  width: 50%;
-  position: absolute;
-  top: 63vh;
-  text-align: right;
-}
-
-#phone {
-  position: absolute;
-  width: 110px;
-  right: 0;
-  background-image: url('phone.png');
-}
-
-#phone a:hover {
-  padding: 0;
-}
-
-#plane {
-  top: 86vh;
-  background-image: url('shoes.png');
-}
-
-#plane:hover {
-  position: fixed;
-  position: absolute;
-}
-
 section {
   padding: 20px;
   display: none;
@@ -458,11 +377,6 @@ section {
     padding-left: 0;
     text-align: right;
   }
-
-  #navtext {
-    width: 100%;
-    text-align: right;
-  }
 }
 
 @media only screen and (min-width: 750px) {
@@ -474,23 +388,6 @@ section {
 
   nav {
     width: 33.3%;
-  }
-
-  .rollover {
-    background-color: transparent;
-  }
-
-  .rollover:hover {
-    cursor: pointer;
-    background-color: rgba(6, 174, 213, 0.3);
-  }
-
-  .rollover a {
-    display: none;
-  }
-
-  .rollover:hover a {
-    display: inline-block;
   }
 
   #closebutton {
@@ -513,53 +410,6 @@ section {
     padding-left: 6.5px;
     text-align: initial;
   }
-
-  #navtext {
-    width: 120px;
-    position: static;
-    text-align: initial;
-    display: block;
-  }
-
-  #brain {
-    background-image: none;
-  }
-
-  #brain:hover {
-    background-image: url('brain.png');
-  }
-
-  #lips {
-    background-image: none;
-  }
-
-  #lips:hover {
-    background-image: url('lips.png');
-  }
-
-  #heart {
-    background-image: none;
-  }
-
-  #heart:hover {
-    background-image: url('heart.png');
-  }
-
-  #phone {
-    background-image: none;
-  }
-
-  #phone:hover {
-    background-image: url('phone.png');
-  }
-
-  #plane {
-    background-image: none;
-  }
-
-  #plane:hover {
-    background-image: url('shoes.png');
-  }
 }
 
 @media only screen and (min-width: 1125px) {
@@ -572,12 +422,6 @@ section {
     width: 100%;
     padding-left: 0;
     text-align: right;
-  }
-
-  #navtext {
-    width: 100%;
-    text-align: right;
-    display: block;
   }
 }
 
