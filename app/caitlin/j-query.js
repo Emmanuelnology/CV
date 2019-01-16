@@ -4,14 +4,10 @@ $("#extra-curricular > div > div").flip({
     axis: 'y'
 });
 
-$('.js-modal-close').click(function(){
-    $('.modal').fadeOut();
-    $('#blocker').fadeOut();
-    $('body').css('overflow','auto');
-})
+function myFunction(x) {
+    x.classList.toggle("change");
+}
 
-$('.js-modal-open').click(function(){
-    $('.modal').fadeIn();
-    $('#blocker').fadeIn();
-    $('body').css('overflow','hidden');
-})
+$('#show-menu').click(function() {
+    $('#menu').slideToggle();
+});

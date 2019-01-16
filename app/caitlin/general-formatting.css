@@ -1,0 +1,62 @@
+main > section {
+  padding: 40px 35px 35px 35px;
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-image: url(gym.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 100vh;
+  position: relative;
+  font-family: 'raleway';
+}
+
+h2 {
+  text-align: center;
+  margin-top: -80px;
+  padding-top: 80px;
+}
+
+h3 {
+  font-size: 1.1em;
+  text-transform: capitalize;
+  margin: 1em 0 0.3em 0;
+}
+
+p {
+  font-style: normal;
+  color: #525151;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.bgcgrey {
+  background-color: rgba(210, 199, 211, 0.9);
+}
+
+.bgcbeige {
+  background-color: rgba(245, 245, 220, 0.9);
+}
+
+.italics {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
