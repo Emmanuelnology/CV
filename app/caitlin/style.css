@@ -16,13 +16,14 @@ body {
   min-height: 100vh;
   position: relative;
   font-family: 'raleway';
+  overflow: scroll;
 }
 
 h1 {
   text-align: center;
   vertical-align: middle;
-  margin: 30vh 0 0 0;
-  font-size: 2em;
+  margin: 10vh 0 0 0;
+  font-size: 1.5em;
 }
 
 nav {
@@ -71,13 +72,9 @@ a {
   font-style: italic;
 }
 
-#top-panel {
+header {
   color: white;
-  margin: 0;
   height: 80vh;
-}
-
-#top-panel > header {
   padding: 0.05em;
   font-size: 30px;
   margin: 10px 10px 0 10px;
@@ -298,14 +295,28 @@ footer {
 @media only screen and (min-width: 500px) {
   #extra-curricular > div > div {
     min-width: 50%;
+    margin-top: 30px;
   }
 
   h1 {
-    font-size: 3em;
+    font-size: 2em;
+    padding-top: 35vh;
   }
 
-  #top-panel {
-    height: 93vh;
+  #education-section {
+    font-size: 1em;
+  }
+
+  .skills-container {
+    margin: 0;
+    display: grid;
+    grid-template-areas:
+      ". heading heading ."
+      ". . descriptions ."
+      ". skill-list skill-rating ."
+      "explanation explanation explanation explanation";
+    grid-template-columns: 1fr 130px 150px 1fr;
+    grid-template-rows: 40px 100px 210px;
   }
 
   #cheer {
@@ -317,18 +328,23 @@ footer {
   }
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 725px) {
+  header {
+    height: 100vh;
+  }
+
   nav {
     text-align: center;
-    background-color: rgb(9, 139, 133);
+    background-color: var(--nav-vol);
     position: sticky;
     top: 0;
     text-transform: initial;
     z-index: 9;
+    margin-top: -78px;
   }
 
   nav > a {
-    background-color: rgb(9, 139, 133);
+    background-color: var(--nav-vol);
     border: none;
     color: white;
     padding: 15px 32px;
@@ -359,6 +375,23 @@ footer {
     min-width: 33.33%;
     border: 0;
   }
+
+  .skill-explanations {
+    vertical-align: center;
+    font-size: 1.7vw;
+  }
+
+  .skills-container {
+    margin: 0;
+    display: grid;
+    grid-template-areas:
+      "heading heading heading"
+      ". descriptions ."
+      "skill-list skill-rating explanation";
+    grid-template-columns: 130px 150px 50%;
+    grid-template-rows: 40px 100px auto;
+    grid-gap: 10px;
+  }
 }
 
 @media only screen and (min-width: 950px) {
@@ -366,10 +399,6 @@ footer {
     margin: 0;
     font-size: 1em;
     padding: 1em;
-  }
-
-  h1 {
-    font-size: 3.5em;
   }
 
   #extra-curricular > div {
@@ -390,6 +419,18 @@ footer {
     margin: 0;
   }
 
+  #about-me img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .skill-explanations {
+    vertical-align: center;
+    font-size: 1.3vw;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
   #about-me img {
     width: 250px;
     height: 250px;

@@ -1,0 +1,19 @@
+#about-me > div {
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo-button {
+  background-color: transparent;
+  border: none;
+  margin: 20px;
+}
+
+#about-me img {
+  border-radius: 50%;
+  width: 13em;
+  border: 3px solid black;
+}
